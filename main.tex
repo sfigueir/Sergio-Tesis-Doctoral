@@ -1,0 +1,98 @@
+\documentclass[letterpaper,12pt,openright]{report}
+
+%Para incluir subsubsection en la tabla de contenidos
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{anysize}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{csquotes}
+\usepackage{color,soul}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{glossaries}
+\usepackage{amsmath,amssymb}
+
+
+%PAPER PLOS ONE
+\usepackage[table]{xcolor} % color can be used to apply background shading to table cells only
+\usepackage{array} % array package and thick rules for tables
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{xspace}
+\usepackage{stmaryrd}
+\usepackage{times}
+\usepackage{caption}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{multirow,tabularx}
+\usepackage{tikz}
+%\usepackage{pgfplots}
+
+\include{macros}
+
+\marginsize{4cm}{2.5cm}{2.5cm}{2.5cm}
+\graphicspath{ {figuras/} {figuras/plosone/} {figuras/pre/} {figuras/brm/} }
+
+\fancyhf{}
+
+\title{Aprendizaje automático a partir de cuerpos de datos ralos: un enfoque basado en la inferencia bayesiana} 
+\author{Sergio Romano} 
+
+\makeatletter 
+\let\newtitle\@title
+\let\newauthor\@author
+\makeatother
+
+\AtBeginDocument{\renewcommand{\contentsname}{Índice}}
+
+\usepackage{pdfpages}
+
+\begin{document}
+
+\newgeometry{top=30mm, bottom=10mm} 
+    \include{portada}
+\restoregeometry 
+
+\pagenumbering{roman}
+    \include{caps/dedicatoria}
+    \include{caps/agradecimientos}
+    \include{caps/abstract_es}
+    \include{caps/abstract_en}
+\tableofcontents
+
+%\addcontentsline{toc}{chapter}{\textbf{Índice de figuras}} 
+%\listoffigures %Opcional: Comentar si se desea
+%\addcontentsline{toc}{chapter}{\textbf{Índice de tablas}} 
+%\listoftables %Opcional: Comentar si se desea
+
+\setlength{\parskip}{0.5em}
+
+\pagenumbering{arabic}
+    \include{caps/introduccion}
+    \include{caps/binario}
+    \include{caps/seleccion}
+    \include{caps/actualizacion}
+    \include{caps/marco}
+    \include{caps/conclusiones}
+    \include{papers/plos_one_final}
+    \include{papers/pre_final}
+    \include{papers/behavior_research_methods}
+    \include{papers/plos_comp_bio}
+    \bibliographystyle{apalike}
+    \bibliography{biblio}
+    \addcontentsline{toc}{chapter}{Bibliografía}
+    
+
+\end{document}

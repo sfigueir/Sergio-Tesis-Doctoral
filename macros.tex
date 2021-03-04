@@ -1,0 +1,110 @@
+%PAPER PLOS ONE
+\newcommand{\gram}{\mathcal G}
+\newcommand{\Prog}{{\rm Prog}}
+\newcommand{\prog}{{\rm prog}}
+\newcommand{\geom}{\mathcal Geo}
+\newcommand{\figref}[1]{Fig~\ref{#1}}
+
+% create "+" rule type for thick vertical lines
+\newcolumntype{+}{!{\vrule width 2pt}}
+
+% create \thickcline for thick horizontal lines of variable length
+\newlength\savedwidth
+\newcommand\thickcline[1]{%
+  \noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+  \cline{#1}%
+  \noalign{\vskip\arrayrulewidth}%
+  \noalign{\global\arrayrulewidth\savedwidth}%
+}
+
+% \thickhline command for thick horizontal lines that span the table
+\newcommand\thickhline{\noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+\hline
+\noalign{\global\arrayrulewidth\savedwidth}}
+
+
+%PAPER PRE
+\newcommand{\start}{\textsc{start}}
+\newcommand{\bool}{\textsc{bool}}
+\newcommand{\atom}{\textsc{atom}}
+\newcommand{\oxor}{\oplus}
+\newcommand{\oand}{\wedge}
+\newcommand{\oor}{\vee}
+\newcommand{\grambool}{\ensuremath{{\sf P}}\xspace}
+\newcommand{\gramboolxor}{\ensuremath{{\sf P}^\oxor}\xspace}
+\newcommand{\controla}{$\con^1$\xspace}
+\newcommand{\controlb}{$\con^2_c$\xspace}
+\newcommand{\controlc}{$\con^3_c$\xspace}
+\newcommand{\controld}{$\con^4_c$\xspace}
+\newcommand{\targeta} {$\con^1$\xspace}
+\newcommand{\targetb} {$\con^2_t$\xspace}
+\newcommand{\targetc} {$\con^3_t$\xspace}
+\newcommand{\targetd} {$\con^4_t$\xspace}
+\newcommand{\testa}   {$\con^5$\xspace}
+\newcommand{\testb}   {$\con^6$\xspace}
+
+\newcommand{\sem}[1]{\llbracket #1\rrbracket}
+\newcommand{\vars}{{\sf Vars}}
+%\newcommand{\con}{{\mathcal C}}
+%\newcommand{\mdl}[1]{\textsc{mdl}_{#1}}
+
+
+%% BRM
+\usepackage[textwidth=0.89in,textsize=scriptsize]{todonotes}
+ \newcommand{\sergio}[1]{\todo[color=red!20]{{\bf Sergio:} #1}\xspace}
+ \newcommand{\romano}[1]{\todo[color=blue!20]{{\bf Romano:} #1}\xspace}
+ \newcommand{\pablo}[1]{\todo[color=orange!20]{{\bf Pablo:} #1}\xspace}
+ \newcommand{\widesergio}[1]{\todo[inline,color=red!20]{{\bf Sergio:} #1}}
+
+ \newcommand{\santi}[1]{\todo[color=green!20]{{\bf Santi:} #1}\xspace}
+ \newcommand{\widesanti}[1]{\todo[inline,color=green!20]{{\bf Santi:} #1}}
+
+%\newcommand{\marcaEnTabla}{{\bullet}}%\checkmark
+
+\usepackage{setspace}
+\doublespacing
+\usepackage{breakcites}
+\usepackage{lineno}
+
+
+\usepackage{tabularx,multirow}
+\usepackage[page]{appendix}
+\usepackage{macros}
+
+\usepackage{enumitem}% Permite poner cosas del tipo \begin{enumerate}[label=\Alph*]
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+%\fancyhf{}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt} % para que no ponga la línea del header.
+\fancyfoot{}
+\rhead{\thepage} % esquina superior derecha
+
+
+
+\usepackage{pgfgantt}
+\usetikzlibrary{decorations.pathmorphing, shadows, shadings}
+
+\hypersetup{
+    colorlinks=true,   % color instead of boxes
+    citecolor=blue,    % cite links in blue
+    linkcolor=blue,    % other internal links in gray
+%    linktocpage,         % in TOC, LOF and LOT, the link is on the page number
+}
+
+
+\theoremstyle{plain}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem} %%% Original
+
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{observation}[theorem]{Observation} 
+\newtheorem{sketch}[theorem]{Sketch} 
+\newtheorem{acknowledgements}[theorem]{Acknowledgements}
+%
+\newtheorem{fact}[theorem]{Fact}
