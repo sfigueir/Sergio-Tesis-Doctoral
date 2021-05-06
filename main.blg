@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: portada.aux
+A level-1 auxiliary file: caps/dedicatoria.aux
+A level-1 auxiliary file: caps/agradecimientos.aux
+A level-1 auxiliary file: caps/abstract_es.aux
+A level-1 auxiliary file: caps/abstract_en.aux
+A level-1 auxiliary file: caps/introduccion.aux
+A level-1 auxiliary file: caps/binario.aux
+A level-1 auxiliary file: caps/seleccion.aux
+A level-1 auxiliary file: caps/actualizacion.aux
+A level-1 auxiliary file: caps/marco.aux
+A level-1 auxiliary file: caps/conclusiones.aux
+A level-1 auxiliary file: papers/plos_one_final.aux
+A level-1 auxiliary file: papers/pre_final.aux
+A level-1 auxiliary file: papers/behavior_research_methods.aux
+A level-1 auxiliary file: papers/plos_comp_bio.aux
+The style file: apalike.bst
+Database file #1: biblio.bib
+You've used 90 entries,
+            1935 wiz_defined-function locations,
+            1021 strings with 18692 characters,
+and the built_in function-call counts, 35469 in all, are:
+= -- 3503
+> -- 1323
+< -- 59
++ -- 472
+- -- 432
+* -- 3091
+:= -- 6148
+add.period$ -- 272
+call.type$ -- 90
+change.case$ -- 651
+chr.to.int$ -- 88
+cite$ -- 90
+duplicate$ -- 1318
+empty$ -- 2570
+format.name$ -- 565
+if$ -- 6894
+int.to.chr$ -- 3
+int.to.str$ -- 0
+missing$ -- 100
+newline$ -- 452
+num.names$ -- 272
+pop$ -- 510
+preamble$ -- 1
+purify$ -- 662
+quote$ -- 0
+skip$ -- 1003
+stack$ -- 0
+substring$ -- 2757
+swap$ -- 138
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 518
+warning$ -- 0
+while$ -- 318
+width$ -- 0
+write$ -- 1162

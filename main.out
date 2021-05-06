@@ -1,0 +1,85 @@
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Conectivismo y teor\355a computacional de la mente}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Lenguaje del pensamiento}{chapter.1}% 3
+\BOOKMARK [2][-]{subsection.1.2.1}{Gram\341ticas}{section.1.2}% 4
+\BOOKMARK [2][-]{subsection.1.2.2}{Composici\363n}{section.1.2}% 5
+\BOOKMARK [3][-]{subsubsection.1.2.2.1}{Longitud M\355nima de Descripci\363n}{subsection.1.2.2}% 6
+\BOOKMARK [3][-]{subsubsection.1.2.2.2}{Ciencia Cognitiva Bayesiana}{subsection.1.2.2}% 7
+\BOOKMARK [0][-]{chapter.2}{Lenguaje del pensamiento en secuencias binarias}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Trabajos Previos}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Modelo}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Experimento}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.4}{Resultados}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.5}{Discusi\363n}{chapter.2}% 13
+\BOOKMARK [0][-]{chapter.3}{Validaci\363n bayesiana de gram\341ticas para el lenguaje del pensamiento}{}% 14
+\BOOKMARK [1][-]{section.3.1}{M\351todo}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.2}{Aplicaci\363n al lenguaje de geometr\355a}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.3}{Resultados}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.4}{Discusi\363n}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.5}{Anexo: Probando el teorema de codificaci\363n}{chapter.3}% 19
+\BOOKMARK [0][-]{chapter.4}{Actualizaci\363n bayesiana de gram\341ticas para el lenguaje del pensamiento}{}% 20
+\BOOKMARK [1][-]{section.4.1}{M\351todo}{chapter.4}% 21
+\BOOKMARK [2][-]{subsection.4.1.1}{Lenguaje l\363gico}{section.4.1}% 22
+\BOOKMARK [2][-]{subsection.4.1.2}{Modelo libre}{section.4.1}% 23
+\BOOKMARK [2][-]{subsection.4.1.3}{Modelo est\341tico}{section.4.1}% 24
+\BOOKMARK [2][-]{subsection.4.1.4}{Modelo din\341mico}{section.4.1}% 25
+\BOOKMARK [1][-]{section.4.2}{Experimento}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.3}{Resultados}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.4}{Discusi\363n}{chapter.4}% 28
+\BOOKMARK [0][-]{chapter.5}{Un nuevo marco para estudiar los sesgos de aprendizaje de conceptos en el lenguaje del pensamiento}{}% 29
+\BOOKMARK [1][-]{section.5.1}{M\351todo}{chapter.5}% 30
+\BOOKMARK [2][-]{subsection.5.1.1}{Experimento}{section.5.1}% 31
+\BOOKMARK [2][-]{subsection.5.1.2}{Representaci\363n}{section.5.1}% 32
+\BOOKMARK [2][-]{subsection.5.1.3}{Hip\363tesis}{section.5.1}% 33
+\BOOKMARK [1][-]{section.5.2}{Resultados}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.3}{Discusi\363n}{chapter.5}% 35
+\BOOKMARK [0][-]{chapter.6}{BORRAR: Bayesian validation of grammar productions for the language of thought}{}% 36
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 37
+\BOOKMARK [1][-]{section.6.2}{Bayesian inference for LoT's productions}{chapter.6}% 38
+\BOOKMARK [1][-]{section.6.3}{The Language of Geometry: Geo}{chapter.6}% 39
+\BOOKMARK [2][-]{subsection.6.3.1}{Geo's original experiment}{section.6.3}% 40
+\BOOKMARK [2][-]{subsection.6.3.2}{Extending Geo's grammar}{section.6.3}% 41
+\BOOKMARK [2][-]{subsection.6.3.3}{Inference results for Geo}{section.6.3}% 42
+\BOOKMARK [1][-]{section.6.4}{Coding Theorem}{chapter.6}% 43
+\BOOKMARK [2][-]{subsection.6.4.1}{The formal statement}{section.6.4}% 44
+\BOOKMARK [2][-]{subsection.6.4.2}{Testing the Coding Theorem for Geo}{section.6.4}% 45
+\BOOKMARK [2][-]{subsection.6.4.3}{Coding Theorem Results}{section.6.4}% 46
+\BOOKMARK [1][-]{section.6.5}{Discussion}{chapter.6}% 47
+\BOOKMARK [1][-]{section.6.6}{Supporting information}{chapter.6}% 48
+\BOOKMARK [0][-]{chapter.7}{BORRAR: Towards a more flexible Language of Thought: Bayesian grammar updates after each concept exposure}{}% 49
+\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 50
+\BOOKMARK [1][-]{section.7.2}{The logical setting}{chapter.7}% 51
+\BOOKMARK [1][-]{section.7.3}{Experiment}{chapter.7}% 52
+\BOOKMARK [1][-]{section.7.4}{Model-Free Results}{chapter.7}% 53
+\BOOKMARK [1][-]{section.7.5}{Model}{chapter.7}% 54
+\BOOKMARK [2][-]{subsection.7.5.1}{Static Model}{section.7.5}% 55
+\BOOKMARK [2][-]{subsection.7.5.2}{Dynamic Model}{section.7.5}% 56
+\BOOKMARK [1][-]{section.7.6}{Results}{chapter.7}% 57
+\BOOKMARK [1][-]{section.7.7}{Discussion}{chapter.7}% 58
+\BOOKMARK [1][-]{section.7.8}{Conclusion}{chapter.7}% 59
+\BOOKMARK [0][-]{chapter.8}{Un marco l\363gico para estudiar aprendizaje de conceptos en presencia de explicaciones m\372ltiples}{}% 60
+\BOOKMARK [1][-]{section.8.1}{Experiment}{chapter.8}% 61
+\BOOKMARK [2][-]{subsection.8.1.1}{Participants}{section.8.1}% 62
+\BOOKMARK [2][-]{subsection.8.1.2}{Experiment setup}{section.8.1}% 63
+\BOOKMARK [2][-]{subsection.8.1.3}{Experiment trials}{section.8.1}% 64
+\BOOKMARK [1][-]{section.8.2}{Methodology}{chapter.8}% 65
+\BOOKMARK [2][-]{subsection.8.2.1}{Preregistration and data}{section.8.2}% 66
+\BOOKMARK [2][-]{subsection.8.2.2}{Representational details}{section.8.2}% 67
+\BOOKMARK [2][-]{subsection.8.2.3}{Details of the experiment's structure}{section.8.2}% 68
+\BOOKMARK [3][-]{subsubsection.8.2.3.1}{Introduction and explanation}{subsection.8.2.3}% 69
+\BOOKMARK [3][-]{subsubsection.8.2.3.2}{The learning phase}{subsection.8.2.3}% 70
+\BOOKMARK [3][-]{subsubsection.8.2.3.3}{The training\205feedback phase}{subsection.8.2.3}% 71
+\BOOKMARK [3][-]{subsubsection.8.2.3.4}{The generalization phase}{subsection.8.2.3}% 72
+\BOOKMARK [2][-]{subsection.8.2.4}{Notes on the experiment design}{section.8.2}% 73
+\BOOKMARK [1][-]{section.8.3}{Results}{chapter.8}% 74
+\BOOKMARK [2][-]{subsection.8.3.1}{Hypothesis I}{section.8.3}% 75
+\BOOKMARK [2][-]{subsection.8.3.2}{Hypothesis II}{section.8.3}% 76
+\BOOKMARK [2][-]{subsection.8.3.3}{Hypothesis III}{section.8.3}% 77
+\BOOKMARK [2][-]{subsection.8.3.4}{Hypothesis IV}{section.8.3}% 78
+\BOOKMARK [2][-]{subsection.8.3.5}{MDL bias}{section.8.3}% 79
+\BOOKMARK [1][-]{section.8.4}{Discussion}{chapter.8}% 80
+\BOOKMARK [1][-]{section.1.Alph0.1}{Exclusion criteria and data processing}{chapter.8}% 81
+\BOOKMARK [1][-]{section.1.Alph0.2}{Pilot}{chapter.8}% 82
+\BOOKMARK [1][-]{section.1.Alph0.3}{Technical results}{chapter.8}% 83
+\BOOKMARK [0][-]{chapter.9}{BORRAR: A theory of memory for binary sequences: Evidence for a mental compression algorithm in humans}{}% 84
+\BOOKMARK [0][-]{chapter*.50}{Bibliograf\355a}{}% 85

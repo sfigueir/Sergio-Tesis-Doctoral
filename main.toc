@@ -1,0 +1,97 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{2}{chapter.1}
+\contentsline {section}{\numberline {1.1}Conectivismo y teor\IeC {\'\i }a computacional de la mente}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Lenguaje del pensamiento}{3}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Gram\IeC {\'a}ticas}{3}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Composici\IeC {\'o}n}{3}{subsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.2.1}Longitud M\IeC {\'\i }nima de Descripci\IeC {\'o}n}{3}{subsubsection.1.2.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2.2}Ciencia Cognitiva Bayesiana}{3}{subsubsection.1.2.2.2}
+\contentsline {chapter}{\numberline {2}Lenguaje del pensamiento en secuencias binarias}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Trabajos Previos}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Modelo}{4}{section.2.2}
+\contentsline {section}{\numberline {2.3}Experimento}{4}{section.2.3}
+\contentsline {section}{\numberline {2.4}Resultados}{4}{section.2.4}
+\contentsline {section}{\numberline {2.5}Discusi\IeC {\'o}n}{4}{section.2.5}
+\contentsline {chapter}{\numberline {3}Validaci\IeC {\'o}n bayesiana de gram\IeC {\'a}ticas para el lenguaje del pensamiento}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}M\IeC {\'e}todo}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}Aplicaci\IeC {\'o}n al lenguaje de geometr\IeC {\'\i }a}{5}{section.3.2}
+\contentsline {section}{\numberline {3.3}Resultados}{5}{section.3.3}
+\contentsline {section}{\numberline {3.4}Discusi\IeC {\'o}n}{5}{section.3.4}
+\contentsline {section}{\numberline {3.5}Anexo: Probando el teorema de codificaci\IeC {\'o}n}{5}{section.3.5}
+\contentsline {chapter}{\numberline {4}Actualizaci\IeC {\'o}n bayesiana de gram\IeC {\'a}ticas para el lenguaje del pensamiento}{6}{chapter.4}
+\contentsline {section}{\numberline {4.1}M\IeC {\'e}todo}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Lenguaje l\IeC {\'o}gico}{7}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Modelo libre}{7}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Modelo est\IeC {\'a}tico}{7}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Modelo din\IeC {\'a}mico}{7}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}Experimento}{7}{section.4.2}
+\contentsline {section}{\numberline {4.3}Resultados}{7}{section.4.3}
+\contentsline {section}{\numberline {4.4}Discusi\IeC {\'o}n}{7}{section.4.4}
+\contentsline {chapter}{\numberline {5}Un nuevo marco para estudiar los sesgos de aprendizaje de conceptos en el lenguaje del pensamiento}{8}{chapter.5}
+\contentsline {section}{\numberline {5.1}M\IeC {\'e}todo}{9}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Experimento}{9}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Representaci\IeC {\'o}n}{9}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Hip\IeC {\'o}tesis}{9}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Resultados}{9}{section.5.2}
+\contentsline {section}{\numberline {5.3}Discusi\IeC {\'o}n}{9}{section.5.3}
+\contentsline {chapter}{\numberline {6}BORRAR: Bayesian validation of grammar productions for the language of thought}{10}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{10}{section.6.1}
+\contentsline {section}{\numberline {6.2}Bayesian inference for LoT's productions}{14}{section.6.2}
+\contentsline {section}{\numberline {6.3}The Language of Geometry: $\mathcal Geo$}{18}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}$\mathcal Geo$'s original experiment}{21}{subsection.6.3.1}
+\contentsline {paragraph}{Participants}{21}{section*.7}
+\contentsline {paragraph}{Procedure}{21}{section*.8}
+\contentsline {subsection}{\numberline {6.3.2}Extending $\mathcal Geo$'s grammar}{22}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Inference results for $\mathcal Geo$}{23}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Coding Theorem}{27}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}The formal statement}{28}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Testing the Coding Theorem for \relax \mathversion {bold}{$\mathcal Geo$}}{29}{subsection.6.4.2}
+\contentsline {paragraph}{The Kolmogorov complexity relative to \relax \mathversion {bold}{$\mathcal Geo$}}{29}{section*.14}
+\contentsline {paragraph}{The probability relative to \relax \mathversion {bold}{$\mathcal Geo$}}{29}{section*.15}
+\contentsline {subsection}{\numberline {6.4.3}Coding Theorem Results}{31}{subsection.6.4.3}
+\contentsline {section}{\numberline {6.5}Discussion}{32}{section.6.5}
+\contentsline {section}{\numberline {6.6}Supporting information}{34}{section.6.6}
+\contentsline {chapter}{\numberline {7}BORRAR: Towards a more flexible Language of Thought: Bayesian grammar updates after each concept exposure}{38}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introduction}{38}{section.7.1}
+\contentsline {section}{\numberline {7.2}The logical setting}{42}{section.7.2}
+\contentsline {section}{\numberline {7.3}Experiment}{44}{section.7.3}
+\contentsline {section}{\numberline {7.4}Model-Free Results}{47}{section.7.4}
+\contentsline {section}{\numberline {7.5}Model}{48}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Static Model}{49}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Dynamic Model}{51}{subsection.7.5.2}
+\contentsline {section}{\numberline {7.6}Results}{53}{section.7.6}
+\contentsline {section}{\numberline {7.7}Discussion}{58}{section.7.7}
+\contentsline {section}{\numberline {7.8}Conclusion}{60}{section.7.8}
+\contentsline {chapter}{\numberline {8}Un marco l\IeC {\'o}gico para estudiar aprendizaje de conceptos en presencia de explicaciones m\IeC {\'u}ltiples}{61}{chapter.8}
+\contentsline {section}{\numberline {8.1}Experiment}{6}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Participants}{6}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Experiment setup}{7}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}Experiment trials}{12}{subsection.8.1.3}
+\contentsline {section}{\numberline {8.2}Methodology}{17}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Preregistration and data}{17}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Representational details}{17}{subsection.8.2.2}
+\contentsline {paragraph}{Features\textemdash propositional variables}{18}{section*.34}
+\contentsline {paragraph}{Elements (boxes)\textemdash valuations.}{18}{section*.36}
+\contentsline {paragraph}{Undetermined concepts\textemdash sets of positive/negative valuations.}{19}{section*.38}
+\contentsline {paragraph}{(Hidden) concepts\textemdash formulas.}{20}{section*.40}
+\contentsline {subsection}{\numberline {8.2.3}Details of the experiment's structure}{20}{subsection.8.2.3}
+\contentsline {subsubsection}{\numberline {8.2.3.1}Introduction and explanation}{23}{subsubsection.8.2.3.1}
+\contentsline {subsubsection}{\numberline {8.2.3.2}The learning phase}{23}{subsubsection.8.2.3.2}
+\contentsline {subsubsection}{\numberline {8.2.3.3}The training\textendash feedback phase}{24}{subsubsection.8.2.3.3}
+\contentsline {subsubsection}{\numberline {8.2.3.4}The generalization phase}{25}{subsubsection.8.2.3.4}
+\contentsline {subsection}{\numberline {8.2.4}Notes on the experiment design}{26}{subsection.8.2.4}
+\contentsline {paragraph}{Building adequate semantic representations for our logic.}{27}{section*.44}
+\contentsline {paragraph}{Ordering of positive and negative examples.}{27}{section*.45}
+\contentsline {section}{\numberline {8.3}Results}{28}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Hypothesis~\ref {Hip:AndOverOr}}{28}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Hypothesis \ref {Hip:FeatureBiasStickiness}}{30}{subsection.8.3.2}
+\contentsline {subsection}{\numberline {8.3.3}Hypothesis \ref {Hip:FeatureBiasTimeAdvantage}}{32}{subsection.8.3.3}
+\contentsline {subsection}{\numberline {8.3.4}Hypothesis \ref {Hip:StickinessFeatureOperator}}{34}{subsection.8.3.4}
+\contentsline {subsection}{\numberline {8.3.5}MDL bias}{35}{subsection.8.3.5}
+\contentsline {section}{\numberline {8.4}Discussion}{35}{section.8.4}
+\contentsline {paragraph}{Open Practices Statement.}{40}{section*.48}
+\contentsline {section}{\numberline {.1}Exclusion criteria and data processing}{53}{section.1.Alph0.1}
+\contentsline {section}{\numberline {.2}Pilot}{54}{section.1.Alph0.2}
+\contentsline {section}{\numberline {.3}Technical results}{55}{section.1.Alph0.3}
+\contentsline {chapter}{\numberline {9}BORRAR: A theory of memory for binary sequences: Evidence for a mental compression algorithm in humans}{59}{chapter.9}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{149}{chapter*.50}
