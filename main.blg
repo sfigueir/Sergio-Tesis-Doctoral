@@ -18,9 +18,11 @@ A level-1 auxiliary file: papers/behavior_research_methods.aux
 A level-1 auxiliary file: papers/plos_comp_bio.aux
 The style file: apalike.bst
 Database file #1: biblio.bib
+Warning--I didn't find a database entry for "juslin2003cue"
+Warning--I didn't find a database entry for "juslin2003exemplar"
 You've used 90 entries,
             1935 wiz_defined-function locations,
-            1021 strings with 18692 characters,
+            1023 strings with 18723 characters,
 and the built_in function-call counts, 35469 in all, are:
 = -- 3503
 > -- 1323
@@ -59,3 +61,4 @@ warning$ -- 0
 while$ -- 318
 width$ -- 0
 write$ -- 1162
+(There were 2 warnings)
