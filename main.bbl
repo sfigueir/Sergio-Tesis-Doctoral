@@ -178,6 +178,11 @@ Gershman, S.~J., Horvitz, E.~J., and Tenenbaum, J.~B. (2015).
   brains, minds, and machines.
 \newblock {\em Science}, 349(6245):273--278.
 
+\bibitem[Ghahramani, 2015]{ghahramani2015probabilistic}
+Ghahramani, Z. (2015).
+\newblock Probabilistic machine learning and artificial intelligence.
+\newblock {\em Nature}, 521(7553):452.
+
 \bibitem[Goldsmith, 2001]{goldsmith2001unsupervised}
 Goldsmith, J. (2001).
 \newblock Unsupervised learning of the morphology of a natural language.
@@ -258,11 +263,21 @@ Lake, B.~M., Salakhutdinov, R., and Tenenbaum, J.~B. (2015).
 \newblock Human-level concept learning through probabilistic program induction.
 \newblock {\em Science}, 350(6266):1332--1338.
 
+\bibitem[Lake et~al., 2017]{lake2017building}
+Lake, B.~M., Ullman, T.~D., Tenenbaum, J.~B., and Gershman, S.~J. (2017).
+\newblock Building machines that learn and think like people.
+\newblock {\em Behavioral and Brain Sciences}, 40.
+
 \bibitem[Landau et~al., 1981]{landau1981spatial}
 Landau, B., Gleitman, H., and Spelke, E. (1981).
 \newblock Spatial knowledge and geometric representation in a child blind from
   birth.
 \newblock {\em Science}, 213(4513):1275--1278.
+
+\bibitem[LeCun et~al., 2015]{lecun2015deep}
+LeCun, Y., Bengio, Y., and Hinton, G. (2015).
+\newblock Deep learning.
+\newblock {\em nature}, 521(7553):436.
 
 \bibitem[Lee et~al., 2012]{lee2012navigation}
 Lee, S.~A., Sovrano, V.~A., and Spelke, E.~S. (2012).
@@ -438,6 +453,10 @@ Rosch, E., Simpson, C., and Miller, R.~S. (1976).
 \newblock Structural bases of typicality effects.
 \newblock {\em Journal of Experimental Psychology: Human perception and
   performance}, 2(4):491.
+
+\bibitem[Russell and Norvig, 2002]{russell2002artificial}
+Russell, S. and Norvig, P. (2002).
+\newblock Artificial intelligence: a modern approach.
 
 \bibitem[Schyns et~al., 1998]{schyns1998development}
 Schyns, P.~G., Goldstone, R.~L., and Thibaut, J.-P. (1998).

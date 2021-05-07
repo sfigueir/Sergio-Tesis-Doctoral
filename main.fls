@@ -539,6 +539,9 @@ OUTPUT main.toc
 OUTPUT caps/introduccion.aux
 INPUT caps/introduccion.tex
 INPUT caps/introduccion.tex
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 OUTPUT caps/binario.aux
 INPUT caps/binario.tex
 INPUT caps/binario.tex
@@ -583,7 +586,6 @@ INPUT ./figuras/plosone/Fig1-eps-converted-to.pdf
 INPUT ./figuras/plosone/Fig1-eps-converted-to.pdf
 INPUT ./figuras/plosone/Fig1-eps-converted-to.pdf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
@@ -601,8 +603,6 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/stmaryrd/stmary10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/stmaryrd/stmary7.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT figuras/plosone/Fig2.eps
 INPUT ./figuras/plosone/Fig2.eps
 INPUT ./figuras/plosone/Fig2.eps
