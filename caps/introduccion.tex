@@ -1,25 +1,80 @@
 \chapter{Introducción}
 \label{intro}
-\section{Conectivismo y teoría computacional de la mente}
-Explicar conectivismo y teoría computacional de la mente.
-Debate similiradid/estadistica y simbolico
-Aparición de Probabilistic Language of Thought
-Idea a desarrollar (tomado de la wikipedia)
 
-Mientras el conexionismo se hacía cada vez más popular en la década de 1980, hubo una reacción contraria por parte de algunos investigadores, incluyendo a Jerry Fodor, Steven Pinker y otros. Argumentaban que el conexionismo tal y como se estaba desarrollando corría el peligro de olvidar lo que ellos veían como los progresos realizados por el enfoque clásico de la inteligencia artificial en los campos de la ciencia cognitiva y la psicología. La inteligencia artificial convencional argumenta que la mente opera mediante la realización de operaciones simbólicas puramente formales, como una máquina de Turing. Algunos investigadores señalaron que la tendencia hacia el conexionismo era un error, ya que significaba una reversión hacia el asociacionismo y el abandono de la idea de un lenguaje del pensamiento.
+En las últimas dos décadas distintas técnicas de ingeniería reversa del aprendizaje en humanos han inspirado con éxito distintos algoritmos de inteligencia artificial \cite{russell2002artificial}. Los avances recientes en las técnicas de aprendizaje profundo han logrado resultados notables en numerosos dominios como reconocimiento visual de objetos, el reconocimiento automático del habla, la búsqueda de respuestas y las traducciones automáticas \cite{lecun2015deep}. En la mayoría de estos enfoques, el resultado y el objeto del proceso de aprendizaje es una función estadística de reconocimiento de patrones específicos en los datos. Sin embargo, en muchas situaciones, el aprendizaje humano implica la construcción de modelos estructurados de conocimiento abstracto a partir de pocos datos, y este tipo de sistemas no han sido capaces de imitar esa habilidad \cite{lake2017building}.
 
-La reciente popularidad de los sistemas dinámicos en la filosofía de la mente (debido a las obras de autores como Tim van Gelder) ha añadido una nueva perspectiva al debate, algunos autores argumentan ahora que cualquier división entre el conexionismo y la IA convencional queda mejor caracterizada como una división entre la IA convencional y los sistemas dinámicos.
+¿Cómo pueden las personas adquirir un vasto universo de conceptos con muy poca exposición aparente? Una posible solución a este enigma, conocida como el problema de Platón ~\cite{chomsky1986knowledge, chomsky2006cognitive}, surge del aprendizaje automático probabilístico. Este enfoque está arrojando algo de luz sobre cómo los humanos pueden construir modelos y abstracciones bajo incertidumbre y a partir de datos escasos \cite{tenenbaum2011grow,ghahramani2015probabilistic}, y está renovando la hipótesis de Jerry Fodor que afirma que el pensamiento toma forma en una especie de lenguaje mental del pensamiento (LoT, por sus siglas en inglés) compuesto por un conjunto limitado de símbolos atómicos que se pueden combinar para formar estructuras más complejas siguiendo reglas combinatorias \cite{fodor1975language}.
+
+Nuestra investigación se suscribe a uno de las líneas actuales del aprendizaje automático probabilístico conocido como programación probabilística, un esquema general para expresar modelos probabilísticos y métodos de inferencia como programas informáticos \cite{ghahramani2015probabilistic}. Esto significa que en nuestros modelos asumimos que el LoT es un lenguaje de programación capaz de generar programas para modelar conceptos en el mundo. Con nuestro trabajo pretendemos mejorar nuestro entendimiento del proceso de aprendizaje a partir de cuerpos ralos de datos y desarrollar nuevos métodos y algoritmos de programación probabilística para replicar esta notable capacidad humana. 
+
+En la sección..... (acá se explicaría capítulo por capítulo)
+
+
+\section{Teoría computacional de la mente}
+\textbf{Explicar critica conexionismo y surgimiento teoría computacional de la mente.} \\
+\textbf{Breve mención a críticas del conectivismo a partir del 80 (Fodor y Steven Pinker). Reversión al asociacionismo.}\\
+\textbf{Explicar Simbólico}\\
+
+"The infite use of finite means" (Humboldt's sobre el lenguaje)
+
+1) How does abstract knowledge guide learning and inference from sparse data?
+Bayesian inference in probabilistic generative models
+
+2) What form does that knowledge take, across different domains and tasks?
+Probabilities defined over richly structured symbolic representations: spaces, graphs, grammars, logical predicates
+
+3) How is that knowledge itself constructed / updated / validated?
+Hierarchical models, transfer learning, herramientas papers
+
+
+Los investigadores han modelado estas categorías mentales o clases conceptuales con dos enfoques clásicos: en términos de similitud con un ejemplo genérico o prototipo \cite{rosch1999principles, nosofsky1986attention, rosch1976structural, rosch1975family} o basándose en una representación simbólica de reglas \cite{boole1854investigation, fodor1975language, gentner1983structure}.
+
+Enfoques simbólicos como la hipótesis del \textit{lenguaje del pensamiento} (LoT, por sus siglas en ingés) \cite{fodor1975language}, afirman que el pensamiento toma forma en una especie de lenguaje mental, compuesto por un conjunto limitado de símbolos atómicos que pueden combinarse para formar estructuras más complejas. siguiendo reglas combinatorias.
+
+\textbf{Explicar críticas a simbólico} \cite{blackburn1984spreading, loewer1991meaning, knowles1998language, aydede1997language} \\
+
 
 \section{Lenguaje del pensamiento}
-Profundizar Fodor
+
+\textbf{Profundizar Fodor y Cognición. Aparición de Probabilistic Language of Thought}\\
+
+A pesar de las críticas y objeciones, los enfoques simbólicos en general --- y la hipótesis de LoT en particular --- han ganado una atención renovada con resultados recientes que podrían explicar el aprendizaje a través de diferentes dominios como inferencia estadística sobre un espacio de hipótesis estructurado composicionalmente \cite{tenenbaum2011grow, piantadosi2016four}.
+
+El LoT no es necesariamente único. De hecho, la forma que adopta se ha modelado de muchas formas diferentes según el dominio del problema: aprendizaje de conceptos numéricos \cite{piantadosi2012bootstrapping}, aprendizaje de secuencias \cite{marie2016, yildirim2015learning, romano2013language}, aprendizaje de conceptos visuales \cite{ellis2015unsupervised}, aprendizaje de teorías \cite{ullman2012theory}, etc.
+
+Si bien los marcos pueden diferir en cómo se puede implementar un LoT computacionalmente, todos comparten la propiedad de estar construidos a partir de un conjunto de símbolos y reglas atómicos mediante los cuales se pueden combinar para formar expresiones nuevas y más complejas. 
+
+La mayoría de los estudios de LoT se han centrado en el aspecto compositivo del lenguaje, que se ha modelado dentro de un \cite{tenenbaum2011grow} bayesiano o un marco \cite{marie2016, goldsmith2002probabilistic, romano2013language, goldsmith2001unsupervised} de longitud mínima de descripción (MDL).
+
+El método común es definir una gramática con un conjunto de producciones basadas en operaciones que son intuitivas para los investigadores y luego estudiar cómo diferentes procesos de inferencia coinciden con patrones regulares en el aprendizaje humano. Un estudio reciente \cite{piantadosi2016logical} pone el foco en el proceso de cómo elegir empíricamente el conjunto de producciones y cómo diferentes definiciones de LoT pueden crear diferentes patrones de aprendizaje. 
+
 
 \subsection{Gramáticas}
-Explicar gramáticas
-Explicar diferencia entre sintaxis y semántica
+
+
+\textbf{Explicar gramáticas}\\
+\textbf{Explicar diferencia entre sintaxis y semántica}\\
+
+El proyecto de análisis bayesiano del aprendizaje de conceptos de modelos LoT utilizando inferencia bayesiana en un espacio de hipótesis estructurado gramaticalmente \cite{goodman2008rational}. Cada propuesta de LoT suele formalizarse mediante una gramática libre de contexto $ \gram $ que define las funciones o programas válidos que se pueden generar, como en cualquier otro lenguaje de programación. Un programa es un árbol de derivación de $ \gram $ que debe interpretarse o ejecutarse de acuerdo con una semántica determinada para obtener una descripción real del concepto en la tarea cognitiva en cuestión. Por lo tanto, cada concepto es luego representado por cualquiera de los programas que lo describen y se define un proceso de inferencia bayesiano para inferir de los datos observados la distribución de programas válidos en $ \gram $ que describen los conceptos.
 
 \subsection{Composición}
+Los lenguajes combinatorios pueden describir un vasto conjunto de conceptos a partir de un pequeño conjunto de primitivas. Esto se puede entender en un ejemplo relativamente simple en el dominio de las formas. Un lenguaje combinatorio y simbólico similar a Logo ~\cite{abelson1974logo} puede combinar operaciones como "mover", "pluma arriba", "pluma abajo" o "rotar" para generar un conjunto infinito de expresiones (o programas) que, cuando se evalúa, puede transmitir todo tipo de formas.
+
+Un lenguaje que describe conceptos (como formas) también proporciona una noción natural de su complejidad \cite{kolmogorov1968three}. Un concepto es simple, relativo a ese lenguaje, cuando puede describirse mediante un programa corto. Por el contrario, es complejo cuando todas sus descripciones requieren una larga secuencia de instrucciones. Por ejemplo, en el caso del lenguaje Logo, un cuadrado puede simplemente instruirse como un bucle de cuatro desplazamientos seguidos de rotaciones de 90 grados. En este lenguaje, el icono de un rostro se implementará mediante un programa mucho más largo y, por lo tanto, será más complejo. Sin embargo, este concepto sería más sencillo cuando se describiera en un lenguaje en el que el icono de un rostro (o los símbolos de nariz, boca, etc.) estén disponibles como primitivos en el lenguaje.
+
+En el dominio de los conceptos booleanos, se estudió una amplia gama de variedades lógicas de conceptos en ~\cite{feldman2003simplicity}, revelando una ley sorprendentemente simple: la dificultad subjetiva de un concepto booleano para un aprendiz humano es directamente proporcional a la longitud del programa compatible más corto en el lenguaje de la lógica proposicional (es decir, variables booleanas combinadas con los operadores \textit{and}, \textit {or} y \textit{not}). Este resultado puede sugerir que el LoT humano está equipado con reglas y símbolos similares a los que se encuentran en la lógica proposicional. De hecho, la correlación entre la dificultad subjetiva de los conceptos y su complejidad se ha utilizado como vehículo general para estudiar el LoT humano en varios dominios ~\cite{piantadosi2016logical, leeuwenberg1971perceptual, amalric2017language, romano2018, lupyan2007language}. Aunque a menudo está implícito, la estrategia general es (\textit{1)} asumir un idioma; (\textit{2)} encontrar el programa compatible más corto para algunos conceptos en ese idioma; (\textit{3)} comparar la duración de estos programas con la dificultad subjetiva de los conceptos; y finalmente (\textit{4)} repetir este proceso para varios idiomas dentro de un universo de posibles candidatos y elegir el idioma que mejor se ajuste en \textit{(3)}. Como se mencionó anteriormente, la longitud del programa depende de las primitivas del lenguaje en el que está escrito este programa, por lo que diferentes lenguajes hacen diferentes predicciones.
+
+Una pregunta natural, sin embargo, es si las primitivas de una LoT son universales --tanto a través de diferentes individuos como a lo largo del desarrollo-- o si, en cambio, el repertorio semántico de un lenguaje es dinámico y está moldeado por la experiencia. De hecho, es probable que nuestra capacidad para representar automáticamente conceptos booleanos de manera sucinta no se deba a un lenguaje proposicional eficiente innato en nuestra mente. En cambio, proponemos que esta capacidad surge como un subproducto de nuestro cerebro que aprende rápidamente representaciones eficientes de los conceptos que generalmente encontramos en la vida cotidiana. 
+
+Nuestra pregunta de investigación es: ¿con qué rapidez podemos adaptar nuestros mecanismos de aprendizaje cuando nos encontramos con un nuevo dominio en el que nuestras representaciones a priori ya no son eficientes? Examinamos la hipótesis de que los humanos tienen la capacidad de recombinar rápidamente proposiciones en su LoT, agregando nuevas primitivas a su lenguaje. En otras palabras, ese aprendizaje conduce a un proceso de compilación de rutinas en funciones dentro de el LoT.
+
+En el ejemplo del lenguaje Logo se puede imaginar que si las producciones que dibujan cuadrados son muy frecuentes, sería eficaz dedicar un nuevo símbolo a esta producción. El nuevo símbolo "cuadrado" es una construcción jerárquica de "segundo orden" de las primitivas de "primer orden" del lenguaje. Tiene un costo (de incrementar el léxico del lenguaje) pero en el nuevo lenguaje, dibujar un cuadrado puede ser instanciado con un programa muy corto (es decir, "cuadrado") y por lo tanto usa menos memoria. De hecho, un lenguaje de nivel superior nos permite alcanzar un nivel superior de abstracción al liberar la memoria y el poder de procesamiento, haciendo así pensables pensamientos más complejos ~\cite{minsky1967computation, murphy1988comprehending}.
+
+La mayor parte del trabajo en la literatura sobre LoT, aunque incluye naturalmente un mecanismo de aprendizaje, tiende a acercarse al LoT como un sistema estable que deben descubrir los experimentadores, que prueban diferentes plantillas candidatas y seleccionan la que mejor se ajusta a los datos después del entrenamiento ~\cite{goodman2008rational, kemp2012exploring, piantadosi2016logical}. Aún así, queda por descubrir cómo las diferentes trayectorias de la experiencia pueden dar forma a la adquisición de manera diferente y pueden cambiar constantemente el repertorio de un LoT después de cada exposición.
+
+
 \subsubsection{Longitud Mínima de Descripción}
-mdl
-complejidad de kolmogorov
+\textbf{MDL}\\
+\textbf{Complejidad de kolmogorov}\\
 \subsubsection{Ciencia Cognitiva Bayesiana}
-rational analysis
+\textbf{Rational analysis y plot}\\
