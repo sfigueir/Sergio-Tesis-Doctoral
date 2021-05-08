@@ -261,68 +261,90 @@ En un escenario en el que tanto las características como los operadores se repi
 \end{hyp}
 
 
-\section{Methodology}\label{Sec:AdditionalMethodology}
+% \section{Methodology}\label{Sec:AdditionalMethodology}
+\section{Metodología}\label{Sec:AdditionalMethodology}
 
 
-\subsection{Preregistration and data}
-This study's methodology, data collection procedures, sample size, exclusion criteria, and hypotheses were preregistered on the Open Science Framework (OSF) in advance of the data collection and analysis. The preregistration can be accessed at \url{https://osf.io/mgex3}, while the obtained data and the experiment played by the participants is available at \url{https://osf.io/gtuwp/}.
+% \subsection{Preregistration and data}
+\subsection{Preregistración y datos}
 
-In this work we also make some exploratory (not preregistered) analyses: we correct for verbal explanations that are not consistent with a positive interpretation of the concept for Hypothesis~\ref{Hip:AndOverOr}, we exclude outliers from the analysis in Hypothesis~\ref{Hip:FeatureBiasTimeAdvantage}, and we consider the effect of the participant's learning history  beyond the immediately previous trial in Hypothesis~\ref{Hip:FeatureBiasStickiness}. We also explicitly analyse, in this framework of multiple consistent explanations, the difference in revealed difficulty between rules of greatly differing minimal length.
+% This study's methodology, data collection procedures, sample size, exclusion criteria, and hypotheses were preregistered on the Open Science Framework (OSF) in advance of the data collection and analysis. The preregistration can be accessed at \url{https://osf.io/mgex3}, while the obtained data and the experiment played by the participants is available at \url{https://osf.io/gtuwp/}.
+La metodología de este estudio, los procedimientos de recopilación de datos, el tamaño de la muestra, los criterios de exclusión y las hipótesis se registraron previamente en el Open Science Framework (OSF) antes de la recopilación y el análisis de los datos. Se puede acceder a la preregistración en \url{https://osf.io/mgex3}, mientras que los datos obtenidos y el experimento realizado por los participantes están disponibles en \url{https://osf.io/gtuwp/}.
+
+% In this work we also make some exploratory (not preregistered) analyses: we correct for verbal explanations that are not consistent with a positive interpretation of the concept for Hypothesis~\ref{Hip:AndOverOr}, we exclude outliers from the analysis in Hypothesis~\ref{Hip:FeatureBiasTimeAdvantage}, and we consider the effect of the participant's learning history  beyond the immediately previous trial in Hypothesis~\ref{Hip:FeatureBiasStickiness}. We also explicitly analyse, in this framework of multiple consistent explanations, the difference in revealed difficulty between rules of greatly differing minimal length.
+En este trabajo también realizamos algunos análisis exploratorios (no prerregistrados): corregimos las explicaciones verbales que no eran consistentes con una interpretación positiva del concepto para la Hipótesis~\ref{Hip:AndOverOr}, excluimos los valores atípicos del análisis en la Hipótesis~\ref{Hip:FeatureBiasTimeAdvantage}, y consideramos el efecto del historial de aprendizaje del participante más allá de la prueba inmediatamente anterior en la Hipótesis~\ref{Hip:FeatureBiasStickiness}. También analizamos explícitamente, en este marco de múltiples explicaciones consistentes, la diferencia en la dificultad revelada entre reglas de longitud mínima muy diferente.
+
+% \subsection{Representational details}\label{sub:experimentdetails} 
+\subsection{Detalles de representación}\label{sub:experimentdetails} 
 
 
-\subsection{Representational details}\label{sub:experimentdetails} 
+% The underlying mathematical structure of the trials uses propositional variables, valuations, and sets of valuations. However, these are not shown abstractly, but rather are represented via correspondences to features (symbols), elements (boxes), and concepts (collections of elements). 
+La estructura matemática subyacente de las pruebas utiliza variables proposicionales, valuaciones y conjuntos de valuaciones. Sin embargo, estos no se muestran de forma abstracta, sino que se representan mediante correspondencias con características (símbolos), elementos (cajas) y conceptos (colecciones de elementos).
 
+% We next describe details of the representations used for the experiment and its competing concepts.
+A continuación, describimos los detalles de las representaciones utilizadas para el experimento y sus conceptos en competencia.
 
-The underlying mathematical structure of the trials uses propositional variables, valuations, and sets of valuations. However, these are not shown abstractly, but rather are represented via correspondences to features (symbols), elements (boxes), and concepts (collections of elements). 
+% \paragraph{Features\textemdash propositional variables}
+\paragraph{Características\textemdash variables proposicionales}
 
-We next describe details of the representations used for the experiment and its competing concepts.
+% The experiment encompasses eight propositional variables: $p_1,\dots,p_8$. Each variable can take one of two possible values, and these values are graphically represented by icons. For instance, $p_1$ can be assigned icon `A' or icon `B', representing the values 1 (positive) and 0 (negative) respectively, $p_3$ can be assigned a `$+$' icon or `$\times$' icon  representing 1 and 0 respectively, and so on. 
+El experimento abarca ocho variables proposicionales: $ p_1, \dots, p_8 $. Cada variable puede tomar uno de dos valores posibles, y estos valores están representados gráficamente por iconos. Por ejemplo, a $ p_1 $ se le puede asignar el icono `A' o el icono `B', que representan los valores 1 (positivo) y 0 (negativo) respectivamente, a $ p_3 $ se le puede asignar un icono `$ + $' o el ícono `$\times$' que representa 1 y 0 respectivamente, y así sucesivamente.
 
-
-\paragraph{Features\textemdash propositional variables}
-The experiment encompasses eight propositional variables: $p_1,\dots,p_8$. Each variable can take one of two possible values, and these values are graphically represented by icons. For instance, $p_1$ can be assigned icon `A' or icon `B', representing the values 1 (positive) and 0 (negative) respectively, $p_3$ can be assigned a `$+$' icon or `$\times$' icon  representing 1 and 0 respectively, and so on. 
-
-Figure~\ref{Figure:references} shows the pairs of values for each of the eight propositional variables. The assignment of pairs of icons to propositional variables is randomized at the start of the experiment, and does not vary within the experiment. 
-The reason to choose icons instead of (colored) values 0,1 is to avoid the possibility of mentally learning a concept using `counting' or other operators not present in propositional logic. For example, showing explicit $\{0,1\}$ values, a possible explanation for a concept could be {\em more than 3 ones}, but such a description would be much harder in the icon-based representation, since different propositional variables have no symbols in common. In \S\ref{Experiment_design} we discuss more details on these considerations.
+% Figure~\ref{Figure:references} shows the pairs of values for each of the eight propositional variables. The assignment of pairs of icons to propositional variables is randomized at the start of the experiment, and does not vary within the experiment. 
+% The reason to choose icons instead of (colored) values 0,1 is to avoid the possibility of mentally learning a concept using `counting' or other operators not present in propositional logic. For example, showing explicit $\{0,1\}$ values, a possible explanation for a concept could be {\em more than 3 ones}, but such a description would be much harder in the icon-based representation, since different propositional variables have no symbols in common. In \S\ref{Experiment_design} we discuss more details on these considerations.
+La Figura~\ref{Figure:references} muestra los pares de valores para cada una de las ocho variables proposicionales. La asignación de pares de iconos a las variables proposicionales es aleatoria al comienzo del experimento y no varía dentro del experimento.
+La razón para elegir iconos en lugar de valores (de color) 0, 1 es para evitar la posibilidad de aprender mentalmente un concepto usando `conteo' u otros operadores que no están presentes en la lógica proposicional. Por ejemplo, mostrando valores $ \{0,1 \} $ explícitos, una posible explicación para un concepto podría ser {\em más de 3 unos}, pero tal descripción sería mucho más difícil en la representación basada en iconos, ya que diferentes variables proposicionales carecen de símbolos en común. En \S\ref{Experiment_design} discutimos más detalles sobre estas consideraciones.
 
 \begin{figure}[h!]
 \begin{center}
-    	\includegraphics[scale=2]{papers/images_behavior_research_methods/Features8.png}
-	\caption{Pictured above are the features, the visual representation of the positive and negative values of the propositional variables. The upper row represents positive values of the propositional variables, while the lower row represents their negation.}
-	 \label{Figure:references}
+    \includegraphics[scale=2]{papers/images_behavior_research_methods/Features8.png}
+	\caption{
+	% Pictured above are the features, the visual representation of the positive and negative values of the propositional variables. The upper row represents positive values of the propositional variables, while the lower row represents their negation.
+	En la imagen de arriba se muestran las características, la representación visual de los valores positivos y negativos de las variables proposicionales. La fila superior representa valores positivos de las variables proposicionales, mientras que la fila inferior representa su negación.}
+	\label{Figure:references}
 \end{center}
 \end{figure}
 
 
-\paragraph{Elements (boxes)\textemdash valuations.} A valuation over the propositional variables is visually represented as a square/box with the values (icons) of all propositional variables set at random positions inside the square. We call such representation an `element' (see Figure~\ref{Figure:element} for an example of such an element). The reason for choosing this representation is to avoid directional biases that could influence learning, and to exclude ordering and other operators from the language of thought (see \S\ref{Experiment_design} for more details). 
-Each time an element is shown (in particular, within the loop in the training-feedback) a new random position is chosen for the propositional features inside it.
-%
+% \paragraph{Elements (boxes)\textemdash valuations.} A valuation over the propositional variables is visually represented as a square/box with the values (icons) of all propositional variables set at random positions inside the square. We call such representation an `element' (see Figure~\ref{Figure:element} for an example of such an element). The reason for choosing this representation is to avoid directional biases that could influence learning, and to exclude ordering and other operators from the language of thought (see \S\ref{Experiment_design} for more details). 
+% Each time an element is shown (in particular, within the loop in the training-feedback) a new random position is chosen for the propositional features inside it.
+\paragraph{Elementos (cajas)\textemdash valuaciones.} Una valuación sobre las variables proposicionales se representa visualmente como un cuadrado/caja con los valores (iconos) de todas las variables proposicionales colocadas en posiciones aleatorias dentro de la caja. Llamamos a esta representación un `elemento' (ver Figura~\ref{Figure:element} para ver un ejemplo de tal elemento). La razón para elegir esta representación es evitar sesgos direccionales que podrían influir en el aprendizaje y excluir el orden y otros operadores del lenguaje del pensamiento (consultar \S\ref{Experiment_design} para obtener más detalles).
+Cada vez que se muestra un elemento (en particular, dentro del ciclo en la etapa de entrenamiento-{\em feedback}) se elige una nueva posición aleatoria para las características proposicionales dentro de él.
+
 
 \begin{figure}[h!] 
 \begin{center}
-    	\includegraphics[scale=0.6]{papers/images_behavior_research_methods/BordeNeutro.PNG}
-	\caption{An element. This box containing features is the visual representation of a valuation over six propositional variables. Here the box appears with a neutral border, but boxes in the experiment always appear with a border that denotes whether they are positive or negative examples. The position of the symbols is irrelevant for the concepts, and is randomly assigned.}
+    \includegraphics[scale=0.6]{papers/images_behavior_research_methods/BordeNeutro.PNG}
+	\caption{
+	% An element. This box containing features is the visual representation of a valuation over six propositional variables. Here the box appears with a neutral border, but boxes in the experiment always appear with a border that denotes whether they are positive or negative examples. The position of the symbols is irrelevant for the concepts, and is randomly assigned.
+	Un elemento. Esta caja que contiene características es la representación visual de una valuación sobre seis variables proposicionales. Aquí la caja aparece con un borde neutro, pero las cajas del experimento siempre aparecen con un borde que denota si son ejemplos positivos o negativos. La posición de los símbolos es irrelevante para los conceptos y se asigna al azar.}
 	\label{Figure:element} 
 \end{center}
 \end{figure}
 
 
-\paragraph{Undetermined concepts\textemdash sets of positive/negative valuations.}\label{IncompleteConcepts} The concept shown in the learning stage of a trial corresponds to two non-overlapping sets of valuations, and these two sets do not cover all possible valuations. This is represented as a sequence of `in' and `out' elements, with no information given on elements that are not shown. % (that does not show all possibilities). 
-At the learning stage, shown `in' elements (positive examples) are represented as a green box and shown `out' elements (negative examples) as a red box. See Figure~\ref{Figure:training} for an example of a tagged sequence of elements used in the learning stage. Each time the concept is presented, we shuffle the order in which their positive and negative examples are shown, but always presenting all positive examples first (also, each valuation is assigned new random positions for the features inside the corresponding box). 
+% \paragraph{Undetermined concepts\textemdash sets of positive/negative valuations.}\label{IncompleteConcepts} The concept shown in the learning stage of a trial corresponds to two non-overlapping sets of valuations, and these two sets do not cover all possible valuations. This is represented as a sequence of `in' and `out' elements, with no information given on elements that are not shown.  At the learning stage, shown `in' elements (positive examples) are represented as a green box and shown `out' elements (negative examples) as a red box. See Figure~\ref{Figure:training} for an example of a tagged sequence of elements used in the learning stage. Each time the concept is presented, we shuffle the order in which their positive and negative examples are shown, but always presenting all positive examples first (also, each valuation is assigned new random positions for the features inside the corresponding box). 
+\paragraph{Conceptos indeterminados\textemdash conjuntos de valuaciones positivas/negativas.} \label{IncompleteConcepts} El concepto que se muestra en la etapa de aprendizaje de una prueba corresponde a dos conjuntos de valuaciones que no se superponen, y estos dos conjuntos no cubren todas las valuaciones posibles. Esto se representa como una secuencia de elementos `adentro' y `afuera', sin información sobre los elementos que no se muestran. En la etapa de aprendizaje, los elementos `adentro' (ejemplos positivos) se representan como una caja con borde verde y los elementos `afuera (ejemplos negativos) como una caja con borde rojo. Consultar la Figura~\ref{Figure:training} para ver un ejemplo de una secuencia etiquetada de elementos utilizados en la etapa de aprendizaje. Cada vez que se presenta el concepto, barajamos el orden en el que se muestran sus ejemplos positivos y negativos, pero siempre presentando todos los ejemplos positivos primero (además, a cada valuación se le asignan nuevas posiciones aleatorias para las características dentro de la caja correspondiente).
 
 \begin{figure}[h!] 
 \begin{center}
-    	\includegraphics[scale=0.35]{papers/images_behavior_research_methods/Learning.PNG}
-	\caption{A sequence of positive and negative examples in a learning stage, corresponding to Trial 1.  A green border informs the participant that the element belongs to the concept, while a red-bordered one informs that it does not belong to the concept. In this case, the examples could be explained as either `boxes containing both an upwards pointing arrow and a question mark' or as `boxes that contain a circle or a plus sign', but note that these two rules determine different concepts over the complete set of possible elements.}
+    \includegraphics[scale=0.35]{papers/images_behavior_research_methods/Learning.PNG}
+	\caption{
+	% A sequence of positive and negative examples in a learning stage, corresponding to Trial 1.  A green border informs the participant that the element belongs to the concept, while a red-bordered one informs that it does not belong to the concept. In this case, the examples could be explained as either `boxes containing both an upwards pointing arrow and a question mark' or as `boxes that contain a circle or a plus sign', but note that these two rules determine different concepts over the complete set of possible elements.
+	Una secuencia de ejemplos positivos y negativos en una etapa de aprendizaje, correspondiente a la Prueba 1. Un borde verde informa al participante que el elemento pertenece al concepto, mientras que un borde rojo informa que no pertenece al concepto. En este caso, los ejemplos podrían explicarse como `cajas que contienen una flecha que apunta hacia arriba y un signo de interrogación' o como `cajas que contienen un círculo o un signo más', pero hay que tener en cuenta que estas dos reglas determinan conceptos diferentes sobre el conjunto completo de posibles elementos.}
 	\label{Figure:training}
 \end{center}
 \end{figure}
 
-\paragraph{(Hidden) concepts\textemdash formulas.}
-Over the full set of valuations, a concept is simply the set of valuations that positively describe it. The two hidden concepts for each trial correspond to the valid and minimal generalizations that can be made from the incomplete concepts. They can be described as the semantics of the two propositional formulas (rules) that can be used to explain the incomplete concept (see Table~\ref{trial_table}); while these rules coincide over the incomplete universe shown in the learning stage, they differ over the set of all valuations. For more details, recall the beginning of \S\ref{Subsec:ExperimentFlow} and its Item~\ref{item:LearningStage}. For technical details, see \S\ref{Sec:MainTheoremConcept}.
+% \paragraph{(Hidden) concepts\textemdash formulas.}
+% Over the full set of valuations, a concept is simply the set of valuations that positively describe it. The two hidden concepts for each trial correspond to the valid and minimal generalizations that can be made from the incomplete concepts. They can be described as the semantics of the two propositional formulas (rules) that can be used to explain the incomplete concept (see Table~\ref{trial_table}); while these rules coincide over the incomplete universe shown in the learning stage, they differ over the set of all valuations. For more details, recall the beginning of \S\ref{Subsec:ExperimentFlow} and its Item~\ref{item:LearningStage}. For technical details, see \S\ref{Sec:MainTheoremConcept}.
+\paragraph{Conceptos (ocultos)\textemdash fórmulas.}
+Sobre el conjunto completo de valuaciones, un concepto es simplemente el conjunto de valuaciones que lo describen positivamente. Los dos conceptos ocultos para cada prueba corresponden a las generalizaciones válidas y mínimas que se pueden hacer a partir de los conceptos incompletos. Pueden describirse como la semántica de las dos fórmulas proposicionales (reglas) que pueden usarse para explicar el concepto incompleto (ver Tabla~\ref{trial_table}); si bien estas reglas coinciden en el universo incompleto que se muestra en la etapa de aprendizaje, difieren en el conjunto de todas las valuaciones. Para obtener más detalles, recuerde el comienzo de \S\ref{Subsec:ExperimentFlow} y su Item~\ref{item:LearningStage}. Para obtener detalles técnicos, consultar \S\ref{Sec:MainTheoremConcept}.
 
 \bigskip
 
-In Table~\ref{tab:glosario} we summarize the main logical terminology used to define formal semantics, and its representational counterpart adopted in our experimental setup.
+% In Table~\ref{tab:glosario} we summarize the main logical terminology used to define formal semantics, and its representational counterpart adopted in our experimental setup.
+En la Tabla~\ref{tab:glosario} resumimos la principal terminología lógica usada para definir la semántica formal, y su contraparte representacional adoptada en nuestra configuración experimental.
 
 \widesanti{Parte (no toda) de esta tabla puede ser mandada al primer capítulo, dado que comparte mucho con el paper de PRE. habría que unificar nomenclatura entre PRE y BRM.}
 \begin{table}[]

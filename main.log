@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.15)  7 MAY 2021 15:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.15)  8 MAY 2021 10:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5049,14 +5049,14 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 
 <papers/images_behavior_research_methods/experimentscheme2_sp.pdf, id=2050, 466
-.74374pt x 403.5075pt>
+.74374pt x 406.51875pt>
 File: papers/images_behavior_research_methods/experimentscheme2_sp.pdf Graphic 
 file (type pdf)
 
 <use papers/images_behavior_research_methods/experimentscheme2_sp.pdf>
 Package pdftex.def Info: papers/images_behavior_research_methods/experimentsche
 me2_sp.pdf used on input line 101.
-(pdftex.def)             Requested size: 326.71838pt x 282.45332pt.
+(pdftex.def)             Requested size: 326.71838pt x 284.56117pt.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 108.
 Package babel Info: Redefining spanish shorthand >>
@@ -5391,30 +5391,30 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.16}) has
 l.254 
        [16]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 264.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 264.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 264.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 264.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 264.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 264.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 267.
+(babel)             in language  on input line 269.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 267.
+(babel)             in language  on input line 269.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 267.
+(babel)             in language  on input line 269.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 267.
+(babel)             in language  on input line 269.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 267.
+(babel)             in language  on input line 269.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 267.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 268.
+(babel)             in language  on input line 269.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 272.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -5423,1234 +5423,1241 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 276.
 pdfTeX warning (ext4): destination with the same identifier (name{page.17}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.271 
+l.276 
        [17]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 273.
+(babel)             in language  on input line 278.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 273.
+(babel)             in language  on input line 278.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 273.
+(babel)             in language  on input line 278.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 273.
+(babel)             in language  on input line 278.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 273.
+(babel)             in language  on input line 278.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 273.
+(babel)             in language  on input line 278.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 286.
+(babel)             in language  on input line 297.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 286.
+(babel)             in language  on input line 297.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 286.
+(babel)             in language  on input line 297.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 286.
+(babel)             in language  on input line 297.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 286.
+(babel)             in language  on input line 297.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 286.
+(babel)             in language  on input line 297.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 286.
+(babel)             in language  on input line 297.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 286.
+(babel)             in language  on input line 297.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 286.
+(babel)             in language  on input line 297.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 286.
+(babel)             in language  on input line 297.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 286.
+(babel)             in language  on input line 297.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 286.
+(babel)             in language  on input line 297.
 pdfTeX warning (ext4): destination with the same identifier (name{page.18}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.286 
+l.297 
        [18]
-<papers/images_behavior_research_methods/Features8.png, id=2355, 97.8054pt x 21
+<papers/images_behavior_research_methods/Features8.png, id=2354, 97.8054pt x 21
 .4401pt>
 File: papers/images_behavior_research_methods/Features8.png Graphic file (type 
 png)
  <use papers/images_behavior_research_methods/Features8.png>
 Package pdftex.def Info: papers/images_behavior_research_methods/Features8.png 
-used on input line 289.
+used on input line 300.
 (pdftex.def)             Requested size: 195.61029pt x 42.88007pt.
 
-<papers/images_behavior_research_methods/BordeNeutro.PNG, id=2358, 164.86594pt 
+<papers/images_behavior_research_methods/BordeNeutro.PNG, id=2357, 164.86594pt 
 x 165.61874pt>
 File: papers/images_behavior_research_methods/BordeNeutro.PNG Graphic file (typ
 e png)
  <use papers/images_behavior_research_methods/BordeNeutro.PNG>
 Package pdftex.def Info: papers/images_behavior_research_methods/BordeNeutro.PN
-G used on input line 302.
+G used on input line 317.
 (pdftex.def)             Requested size: 98.9203pt x 99.37201pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 328.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 328.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 328.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 328.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 328.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 328.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 328.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 328.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 328.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 328.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 328.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 328.
 pdfTeX warning (ext4): destination with the same identifier (name{page.19}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.311 
+l.328 
        [19 <./papers/images_behavior_research_methods/Features8.png>]
-<papers/images_behavior_research_methods/Learning.PNG, id=2368, 1108.8928pt x 3
+<papers/images_behavior_research_methods/Learning.PNG, id=2367, 1108.8928pt x 3
 35.00156pt>
 File: papers/images_behavior_research_methods/Learning.PNG Graphic file (type p
 ng)
  <use papers/images_behavior_research_methods/Learning.PNG>
 Package pdftex.def Info: papers/images_behavior_research_methods/Learning.PNG u
-sed on input line 314.
+sed on input line 331.
 (pdftex.def)             Requested size: 388.1183pt x 117.25229pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 343.
 pdfTeX warning (ext4): destination with the same identifier (name{page.20}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.322 
-       [20 <./papers/images_behavior_research_methods/BordeNeutro.PNG> <./paper
-s/images_behavior_research_methods/Learning.PNG>]
+l.343 
+       [20 <./papers/images_behavior_research_methods/BordeNeutro.PNG>]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 327.
+ine 349.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 328.
+               Default added (so using `tbp') on input line 350.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--373
+Underfull \hbox (badness 10000) in paragraph at lines 393--395
 []\T1/ptm/b/n/12 Concepto in-de-ter-mi-na-do\T1/ptm/m/n/12 (+20) : un par
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 371--373
+Underfull \hbox (badness 1540) in paragraph at lines 393--395
 \T1/ptm/m/n/12 (+20) re-pre-sen-tan los va-lo-res `po-si-ti-vos' y
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--373
+Underfull \hbox (badness 10000) in paragraph at lines 393--395
 
  []
 
 
-LaTeX Warning: Float too large for page by 165.92462pt on input line 386.
+LaTeX Warning: Float too large for page by 165.92462pt on input line 408.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 413.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 413.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 413.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 413.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 413.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 413.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 pdfTeX warning (ext4): destination with the same identifier (name{page.21}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.399 
-       [21]
+l.416 
+       [21 <./papers/images_behavior_research_methods/Learning.PNG>]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 416.
 pdfTeX warning (ext4): destination with the same identifier (name{page.22}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.399 
+l.416 
        [22]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 409.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 409.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 409.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 409.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 409.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 409.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 409.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 409.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 409.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 409.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 409.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 409.
+(babel)             in language  on input line 427.
 pdfTeX warning (ext4): destination with the same identifier (name{page.23}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.409 W
-       hen the subject indicates they have finished reading the instructions...
-[23]
+l.427 
+       [23]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 413.
+(babel)             in language  on input line 428.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 413.
+(babel)             in language  on input line 428.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 413.
+(babel)             in language  on input line 428.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 413.
+(babel)             in language  on input line 428.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 413.
+(babel)             in language  on input line 428.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 413.
+(babel)             in language  on input line 428.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 435.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 435.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 435.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 435.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 435.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 435.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 440.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 440.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 440.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 440.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 440.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 440.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 440.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 440.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 440.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 440.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 440.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 440.
 pdfTeX warning (ext4): destination with the same identifier (name{page.24}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.421 
+l.440 
        [24]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 446.
 
-<papers/images_behavior_research_methods/SelectionSeparadosIguales.png, id=2418
+<papers/images_behavior_research_methods/SelectionSeparadosIguales.png, id=2417
 , 255.95625pt x 109.91063pt>
 File: papers/images_behavior_research_methods/SelectionSeparadosIguales.png Gra
 phic file (type png)
 
 <use papers/images_behavior_research_methods/SelectionSeparadosIguales.png>
 Package pdftex.def Info: papers/images_behavior_research_methods/SelectionSepar
-adosIguales.png used on input line 430.
+adosIguales.png used on input line 452.
 (pdftex.def)             Requested size: 153.57492pt x 65.94687pt.
 
-<papers/images_behavior_research_methods/FeedBack2SeleccionParcial.PNG, id=2420
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<papers/images_behavior_research_methods/FeedBack2SeleccionParcial.PNG, id=2419
 , 329.73187pt x 219.82124pt>
 File: papers/images_behavior_research_methods/FeedBack2SeleccionParcial.PNG Gra
 phic file (type png)
 
 <use papers/images_behavior_research_methods/FeedBack2SeleccionParcial.PNG>
 Package pdftex.def Info: papers/images_behavior_research_methods/FeedBack2Selec
-cionParcial.PNG used on input line 440.
+cionParcial.PNG used on input line 462.
 (pdftex.def)             Requested size: 164.86552pt x 109.91034pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 448.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 448.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 448.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 448.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 448.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 448.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 451.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 451.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 451.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 451.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 451.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 451.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 451.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 451.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 451.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 451.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 451.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 451.
+(babel)             in language  on input line 470.
 pdfTeX warning (ext4): destination with the same identifier (name{page.25}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.451 
-       [25 <./papers/images_behavior_research_methods/SelectionSeparadosIguales
-.png>]
+l.470 \subsubsection
+                    {The generalization phase}\label{Subsection:generalization}
+[25]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 455.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 455.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 455.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 455.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 455.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 455.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 473.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 473.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 473.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 473.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 473.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 473.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 473.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 473.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 473.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 473.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 473.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 473.
 pdfTeX warning (ext4): destination with the same identifier (name{page.26}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.458 
-       [26 <./papers/images_behavior_research_methods/FeedBack2SeleccionParcial
-.PNG>]
+l.473 
+       [26 <./papers/images_behavior_research_methods/SelectionSeparadosIguales
+.png> <./papers/images_behavior_research_methods/FeedBack2SeleccionParcial.PNG>
+]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 477.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 477.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 477.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 477.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 477.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 477.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 481.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 481.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 481.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 481.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 481.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 481.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 481.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 481.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 481.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 481.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 481.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 481.
 pdfTeX warning (ext4): destination with the same identifier (name{page.27}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.463 
-       [27]
+l.481 \paragraph
+                {Building adequate semantic representations for our logic.}
+[27]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 476.
+(babel)             in language  on input line 490.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 476.
+(babel)             in language  on input line 490.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 476.
+(babel)             in language  on input line 490.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 476.
+(babel)             in language  on input line 490.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 476.
+(babel)             in language  on input line 490.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 476.
+(babel)             in language  on input line 490.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 479.
+(babel)             in language  on input line 490.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 479.
+(babel)             in language  on input line 490.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 479.
+(babel)             in language  on input line 490.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 479.
+(babel)             in language  on input line 490.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 479.
+(babel)             in language  on input line 490.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 479.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 481.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 481.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 481.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 481.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 481.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 481.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 481.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 481.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 481.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 481.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 481.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 481.
+(babel)             in language  on input line 490.
 pdfTeX warning (ext4): destination with the same identifier (name{page.28}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.481 
+l.490 
        [28]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 485.
+(babel)             in language  on input line 498.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 485.
+(babel)             in language  on input line 498.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 485.
+(babel)             in language  on input line 498.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 485.
+(babel)             in language  on input line 498.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 485.
+(babel)             in language  on input line 498.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 485.
+(babel)             in language  on input line 498.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 485.
+(babel)             in language  on input line 501.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 485.
+(babel)             in language  on input line 501.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 485.
+(babel)             in language  on input line 501.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 485.
+(babel)             in language  on input line 501.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 485.
+(babel)             in language  on input line 501.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 485.
+(babel)             in language  on input line 501.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 503.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 503.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 503.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 503.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 503.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 503.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 503.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 503.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 503.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 503.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 503.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 503.
 pdfTeX warning (ext4): destination with the same identifier (name{page.29}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.485 
+l.503 
        [29]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 486.
+(babel)             in language  on input line 508.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 486.
+(babel)             in language  on input line 508.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 486.
+(babel)             in language  on input line 508.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 486.
+(babel)             in language  on input line 508.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 486.
+(babel)             in language  on input line 508.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 486.
+(babel)             in language  on input line 508.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 490.
+(babel)             in language  on input line 510.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 490.
+(babel)             in language  on input line 510.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 490.
+(babel)             in language  on input line 510.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 490.
+(babel)             in language  on input line 510.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 490.
+(babel)             in language  on input line 510.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 490.
+(babel)             in language  on input line 510.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 490.
+(babel)             in language  on input line 510.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 490.
+(babel)             in language  on input line 510.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 490.
+(babel)             in language  on input line 510.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 490.
+(babel)             in language  on input line 510.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 490.
+(babel)             in language  on input line 510.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 490.
+(babel)             in language  on input line 510.
 pdfTeX warning (ext4): destination with the same identifier (name{page.30}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.490 
+l.510 
        [30]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 494.
+(babel)             in language  on input line 516.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 494.
+(babel)             in language  on input line 516.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 494.
+(babel)             in language  on input line 516.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 494.
+(babel)             in language  on input line 516.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 494.
+(babel)             in language  on input line 516.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 494.
+(babel)             in language  on input line 516.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 494.
+(babel)             in language  on input line 516.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 494.
+(babel)             in language  on input line 516.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 494.
+(babel)             in language  on input line 516.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 494.
+(babel)             in language  on input line 516.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 494.
+(babel)             in language  on input line 516.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 494.
+(babel)             in language  on input line 516.
 pdfTeX warning (ext4): destination with the same identifier (name{page.31}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.494 
+l.516 
        [31]
-<papers/images_behavior_research_methods/results_1.png, id=2474, 1157.32375pt x
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 518.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 518.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 518.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 518.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 518.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 518.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 518.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 518.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 518.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 518.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 518.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 518.
+pdfTeX warning (ext4): destination with the same identifier (name{page.32}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.518 
+       [32]
+<papers/images_behavior_research_methods/results_1.png, id=2477, 1157.32375pt x
  292.09125pt>
 File: papers/images_behavior_research_methods/results_1.png Graphic file (type 
 png)
  <use papers/images_behavior_research_methods/results_1.png>
 Package pdftex.def Info: papers/images_behavior_research_methods/results_1.png 
-used on input line 499.
+used on input line 521.
 (pdftex.def)             Requested size: 428.20308pt x 108.07205pt.
 
-<papers/images_behavior_research_methods/results_2.pdf, id=2475, 913.4125pt x 3
+<papers/images_behavior_research_methods/results_2.pdf, id=2478, 913.4125pt x 3
 01.125pt>
 File: papers/images_behavior_research_methods/results_2.pdf Graphic file (type 
 pdf)
  <use papers/images_behavior_research_methods/results_2.pdf>
 Package pdftex.def Info: papers/images_behavior_research_methods/results_2.pdf 
-used on input line 507.
+used on input line 529.
 (pdftex.def)             Requested size: 456.70514pt x 150.56212pt.
 
-Overfull \hbox (27.35304pt too wide) in paragraph at lines 507--508
+Overfull \hbox (27.35304pt too wide) in paragraph at lines 529--530
  [] 
  []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 514.
+(babel)             in language  on input line 536.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 514.
+(babel)             in language  on input line 536.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 514.
+(babel)             in language  on input line 536.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 514.
+(babel)             in language  on input line 536.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 514.
+(babel)             in language  on input line 536.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 514.
+(babel)             in language  on input line 536.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 517.
+(babel)             in language  on input line 539.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 517.
+(babel)             in language  on input line 539.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 517.
+(babel)             in language  on input line 539.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 517.
+(babel)             in language  on input line 539.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 517.
+(babel)             in language  on input line 539.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 517.
+(babel)             in language  on input line 539.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 517.
+(babel)             in language  on input line 539.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 517.
+(babel)             in language  on input line 539.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 517.
+(babel)             in language  on input line 539.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 517.
+(babel)             in language  on input line 539.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 517.
+(babel)             in language  on input line 539.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 517.
-pdfTeX warning (ext4): destination with the same identifier (name{page.32}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.517 
-       [32]
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 517.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 517.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 517.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 517.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 517.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 517.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 517.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 517.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 517.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 517.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 517.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 517.
+(babel)             in language  on input line 539.
 pdfTeX warning (ext4): destination with the same identifier (name{page.33}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.517 
-       [33 <./papers/images_behavior_research_methods/results_1.png> <./papers/
-images_behavior_research_methods/results_2.pdf>]
+l.539 
+       [33 <./papers/images_behavior_research_methods/results_1.png>]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 520.
+(babel)             in language  on input line 542.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 520.
+(babel)             in language  on input line 542.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 520.
+(babel)             in language  on input line 542.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 520.
+(babel)             in language  on input line 542.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 520.
+(babel)             in language  on input line 542.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 520.
+(babel)             in language  on input line 542.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 522.
+(babel)             in language  on input line 544.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 522.
+(babel)             in language  on input line 544.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 522.
+(babel)             in language  on input line 544.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 522.
+(babel)             in language  on input line 544.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 522.
+(babel)             in language  on input line 544.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 522.
+(babel)             in language  on input line 544.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 522.
+(babel)             in language  on input line 544.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 522.
+(babel)             in language  on input line 544.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 522.
+(babel)             in language  on input line 544.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 522.
+(babel)             in language  on input line 544.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 522.
+(babel)             in language  on input line 544.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 522.
+(babel)             in language  on input line 544.
 pdfTeX warning (ext4): destination with the same identifier (name{page.34}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.522 
-       [34]
+l.544 
+       [34 <./papers/images_behavior_research_methods/results_2.pdf>]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 547.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 547.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 547.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 547.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 547.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 547.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 529.
+(babel)             in language  on input line 551.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 529.
+(babel)             in language  on input line 551.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 529.
+(babel)             in language  on input line 551.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 529.
+(babel)             in language  on input line 551.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 529.
+(babel)             in language  on input line 551.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 529.
+(babel)             in language  on input line 551.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 529.
+(babel)             in language  on input line 551.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 529.
+(babel)             in language  on input line 551.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 529.
+(babel)             in language  on input line 551.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 529.
+(babel)             in language  on input line 551.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 529.
+(babel)             in language  on input line 551.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 529.
+(babel)             in language  on input line 551.
 pdfTeX warning (ext4): destination with the same identifier (name{page.35}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.529 
+l.551 
        [35]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 534.
+(babel)             in language  on input line 556.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 534.
+(babel)             in language  on input line 556.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 534.
+(babel)             in language  on input line 556.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 534.
+(babel)             in language  on input line 556.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 534.
+(babel)             in language  on input line 556.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 534.
+(babel)             in language  on input line 556.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 538.
+(babel)             in language  on input line 560.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 538.
+(babel)             in language  on input line 560.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 538.
+(babel)             in language  on input line 560.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 538.
+(babel)             in language  on input line 560.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 538.
+(babel)             in language  on input line 560.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 538.
+(babel)             in language  on input line 560.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 538.
+(babel)             in language  on input line 560.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 538.
+(babel)             in language  on input line 560.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 538.
+(babel)             in language  on input line 560.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 538.
+(babel)             in language  on input line 560.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 538.
+(babel)             in language  on input line 560.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 538.
+(babel)             in language  on input line 560.
 pdfTeX warning (ext4): destination with the same identifier (name{page.36}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.538 
+l.560 
        [36]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 563.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 563.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 563.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 563.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 563.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 563.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 563.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 563.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 563.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 563.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 563.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 563.
 pdfTeX warning (ext4): destination with the same identifier (name{page.37}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.549 
+l.563 
        [37]
 
-LaTeX Warning: Citation `juslin2003cue' on page 38 undefined on input line 550.
+LaTeX Warning: Citation `juslin2003cue' on page 38 undefined on input line 572.
 
 
 
 LaTeX Warning: Citation `juslin2003exemplar' on page 38 undefined on input line
- 550.
+ 572.
 
 
 LaTeX Warning: Citation `juslin2003exemplar' on page 38 undefined on input line
- 550.
+ 572.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 551.
+(babel)             in language  on input line 573.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 551.
+(babel)             in language  on input line 573.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 551.
+(babel)             in language  on input line 573.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 551.
+(babel)             in language  on input line 573.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 551.
+(babel)             in language  on input line 573.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 551.
+(babel)             in language  on input line 573.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 551.
+(babel)             in language  on input line 573.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 551.
+(babel)             in language  on input line 573.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 551.
+(babel)             in language  on input line 573.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 551.
+(babel)             in language  on input line 573.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 551.
+(babel)             in language  on input line 573.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 551.
+(babel)             in language  on input line 573.
 pdfTeX warning (ext4): destination with the same identifier (name{page.38}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.551 
+l.573 
        [38]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 559.
+(babel)             in language  on input line 577.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 559.
+(babel)             in language  on input line 577.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 559.
+(babel)             in language  on input line 577.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 559.
+(babel)             in language  on input line 577.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 559.
+(babel)             in language  on input line 577.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 559.
+(babel)             in language  on input line 577.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 559.
+(babel)             in language  on input line 577.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 559.
+(babel)             in language  on input line 577.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 559.
+(babel)             in language  on input line 577.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 559.
+(babel)             in language  on input line 577.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 559.
+(babel)             in language  on input line 577.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 559.
+(babel)             in language  on input line 577.
 pdfTeX warning (ext4): destination with the same identifier (name{page.39}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.559 
+l.577 
        [39]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 565.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 565.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 565.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 565.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 565.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 565.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 565.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 565.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 565.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 565.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 565.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 565.
+(babel)             in language  on input line 583.
 pdfTeX warning (ext4): destination with the same identifier (name{page.40}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.565 
+l.583 
        [40]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 570.
+(babel)             in language  on input line 592.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 570.
+(babel)             in language  on input line 592.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 570.
+(babel)             in language  on input line 592.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 570.
+(babel)             in language  on input line 592.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 570.
+(babel)             in language  on input line 592.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 570.
+(babel)             in language  on input line 592.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 570.
+(babel)             in language  on input line 592.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 570.
+(babel)             in language  on input line 592.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 570.
+(babel)             in language  on input line 592.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 570.
+(babel)             in language  on input line 592.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 570.
+(babel)             in language  on input line 592.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 570.
+(babel)             in language  on input line 592.
 pdfTeX warning (ext4): destination with the same identifier (name{page.41}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.570 \newpage
+l.592 \newpage
                [41]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 571.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 571.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 571.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 571.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 571.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 571.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 571.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 571.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 571.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 571.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 571.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 571.
+(babel)             in language  on input line 593.
 pdfTeX warning (ext4): destination with the same identifier (name{page.42}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.571 \begin{appendices}
+l.593 \begin{appendices}
                          [42
 
 ]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 572.
+(babel)             in language  on input line 594.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 572.
+(babel)             in language  on input line 594.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 572.
+(babel)             in language  on input line 594.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 572.
+(babel)             in language  on input line 594.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 572.
+(babel)             in language  on input line 594.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 572.
+(babel)             in language  on input line 594.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 584.
+(babel)             in language  on input line 606.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 584.
+(babel)             in language  on input line 606.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 584.
+(babel)             in language  on input line 606.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 584.
+(babel)             in language  on input line 606.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 584.
+(babel)             in language  on input line 606.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 584.
+(babel)             in language  on input line 606.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 587.
+(babel)             in language  on input line 609.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 587.
+(babel)             in language  on input line 609.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 587.
+(babel)             in language  on input line 609.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 587.
+(babel)             in language  on input line 609.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 587.
+(babel)             in language  on input line 609.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 587.
+(babel)             in language  on input line 609.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 587.
+(babel)             in language  on input line 609.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 587.
+(babel)             in language  on input line 609.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 587.
+(babel)             in language  on input line 609.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 587.
+(babel)             in language  on input line 609.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 587.
+(babel)             in language  on input line 609.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 587.
+(babel)             in language  on input line 609.
 pdfTeX warning (ext4): destination with the same identifier (name{page.43}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.587 
+l.609 
        [43]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 595.
+(babel)             in language  on input line 617.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 595.
+(babel)             in language  on input line 617.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 595.
+(babel)             in language  on input line 617.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 595.
+(babel)             in language  on input line 617.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 595.
+(babel)             in language  on input line 617.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 595.
+(babel)             in language  on input line 617.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 599.
+(babel)             in language  on input line 621.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 599.
+(babel)             in language  on input line 621.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 599.
+(babel)             in language  on input line 621.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 599.
+(babel)             in language  on input line 621.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 599.
+(babel)             in language  on input line 621.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 599.
+(babel)             in language  on input line 621.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 599.
+(babel)             in language  on input line 621.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 599.
+(babel)             in language  on input line 621.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 599.
+(babel)             in language  on input line 621.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 599.
+(babel)             in language  on input line 621.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 599.
+(babel)             in language  on input line 621.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 599.
+(babel)             in language  on input line 621.
 pdfTeX warning (ext4): destination with the same identifier (name{page.44}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.599 
+l.621 
        [44]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 618.
+(babel)             in language  on input line 640.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 618.
+(babel)             in language  on input line 640.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 618.
+(babel)             in language  on input line 640.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 618.
+(babel)             in language  on input line 640.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 618.
+(babel)             in language  on input line 640.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 618.
+(babel)             in language  on input line 640.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 618.
+(babel)             in language  on input line 640.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 618.
+(babel)             in language  on input line 640.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 618.
+(babel)             in language  on input line 640.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 618.
+(babel)             in language  on input line 640.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 618.
+(babel)             in language  on input line 640.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 618.
+(babel)             in language  on input line 640.
 pdfTeX warning (ext4): destination with the same identifier (name{page.45}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.618 
+l.640 
        [45]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 638.
+(babel)             in language  on input line 660.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 638.
+(babel)             in language  on input line 660.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 638.
+(babel)             in language  on input line 660.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 638.
+(babel)             in language  on input line 660.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 638.
+(babel)             in language  on input line 660.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 638.
+(babel)             in language  on input line 660.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 638.
+(babel)             in language  on input line 660.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 638.
+(babel)             in language  on input line 660.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 638.
+(babel)             in language  on input line 660.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 638.
+(babel)             in language  on input line 660.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 638.
+(babel)             in language  on input line 660.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 638.
+(babel)             in language  on input line 660.
 pdfTeX warning (ext4): destination with the same identifier (name{page.46}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.638 
+l.660 
        [46]
-Overfull \hbox (3.75247pt too wide) in paragraph at lines 652--656
+Overfull \hbox (3.75247pt too wide) in paragraph at lines 674--678
 []\T1/ptm/m/n/12 (-20) From the hy-pot-he-ses we know that the-re is a va-ria-b
 le $\OML/cmm/m/it/12 p[] \OMS/cmsy/m/n/12 2 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
  '[]\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 n[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12  \OT
@@ -6658,34 +6665,34 @@ le $\OML/cmm/m/it/12 p[] \OMS/cmsy/m/n/12 2 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
  []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 661.
+(babel)             in language  on input line 683.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 661.
+(babel)             in language  on input line 683.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 661.
+(babel)             in language  on input line 683.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 661.
+(babel)             in language  on input line 683.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 661.
+(babel)             in language  on input line 683.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 661.
+(babel)             in language  on input line 683.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 661.
+(babel)             in language  on input line 683.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 661.
+(babel)             in language  on input line 683.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 661.
+(babel)             in language  on input line 683.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 661.
+(babel)             in language  on input line 683.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 661.
+(babel)             in language  on input line 683.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 661.
+(babel)             in language  on input line 683.
 pdfTeX warning (ext4): destination with the same identifier (name{page.47}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.661 
+l.683 
        [47])
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 91.
@@ -6734,7 +6741,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
-<figuras/manuscript_pcb.pdf, id=2609, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2608, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf>
@@ -6745,7 +6752,7 @@ File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 Package pdftex.def Info: figuras/manuscript_pcb.pdf used on input line 3.
 (pdftex.def)             Requested size: 597.67143pt x 844.83423pt.
 
-<figuras/manuscript_pcb.pdf, id=2612, page=1, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2611, page=1, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 1>
@@ -6804,7 +6811,7 @@ l.3 \includepdf[pages=-]{manuscript_pcb.pdf}
 
 
 ]
-<figuras/manuscript_pcb.pdf, id=2617, page=2, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2615, page=2, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 2>
@@ -6854,7 +6861,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page1 used on input line 3
 .
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [50 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2647, page=3, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2646, page=3, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 3>
@@ -6904,7 +6911,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page2 used on input line 3
 .
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [51 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2651, page=4, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2650, page=4, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 4>
@@ -6954,7 +6961,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page3 used on input line 3
 .
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [52 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2655, page=5, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2654, page=5, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 5>
@@ -7004,7 +7011,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page4 used on input line 3
 .
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [53 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2659, page=6, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2658, page=6, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 6>
@@ -7054,7 +7061,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page5 used on input line 3
 .
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [54 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2664, page=7, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2663, page=7, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 7>
@@ -7104,7 +7111,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page6 used on input line 3
 .
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [55 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2676, page=8, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2675, page=8, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 8>
@@ -7154,7 +7161,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page7 used on input line 3
 .
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [56 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2680, page=9, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2679, page=9, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 9>
@@ -7204,7 +7211,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page8 used on input line 3
 .
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [57 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2684, page=10, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2683, page=10, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 10>
@@ -7254,7 +7261,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page9 used on input line 3
 .
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [58 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2693, page=11, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2692, page=11, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 11>
@@ -7304,7 +7311,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page10 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [59 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2697, page=12, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2696, page=12, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 12>
@@ -7354,7 +7361,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page11 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [60 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2702, page=13, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2701, page=13, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 13>
@@ -7404,7 +7411,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page12 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [61 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2706, page=14, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2705, page=14, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 14>
@@ -7454,7 +7461,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page13 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [62 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2710, page=15, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2709, page=15, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 15>
@@ -7504,7 +7511,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page14 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [63 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2714, page=16, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2713, page=16, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 16>
@@ -7554,7 +7561,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page15 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [64 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2718, page=17, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2717, page=17, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 17>
@@ -7604,7 +7611,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page16 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [65 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2722, page=18, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2721, page=18, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 18>
@@ -7654,7 +7661,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page17 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [66 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2727, page=19, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2726, page=19, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 19>
@@ -7704,7 +7711,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page18 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [67 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2754, page=20, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2753, page=20, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 20>
@@ -7754,7 +7761,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page19 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [68 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2763, page=21, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2762, page=21, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 21>
@@ -7804,7 +7811,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page20 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [69 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2770, page=22, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2769, page=22, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 22>
@@ -7848,7 +7855,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page21 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [70 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2775, page=23, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2774, page=23, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 23>
@@ -7892,7 +7899,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page22 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [71 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2790, page=24, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2789, page=24, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 24>
@@ -7936,7 +7943,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page23 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [72 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2802, page=25, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2800, page=25, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 25>
@@ -7980,7 +7987,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page24 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [73 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2807, page=26, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2806, page=26, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 26>
@@ -8024,7 +8031,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page25 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [74 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2812, page=27, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2811, page=27, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 27>
@@ -8068,7 +8075,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page26 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [75 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2817, page=28, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2816, page=28, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 28>
@@ -8112,7 +8119,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page27 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [76 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2822, page=29, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2821, page=29, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 29>
@@ -8156,7 +8163,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page28 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [77 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2827, page=30, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2826, page=30, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 30>
@@ -8200,7 +8207,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page29 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [78 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2836, page=31, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2835, page=31, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 31>
@@ -8244,7 +8251,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page30 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [79 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2846, page=32, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2845, page=32, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 32>
@@ -8288,7 +8295,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page31 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [80 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2851, page=33, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2850, page=33, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 33>
@@ -8332,7 +8339,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page32 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [81 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2856, page=34, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2855, page=34, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 34>
@@ -8376,7 +8383,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page33 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [82 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2863, page=35, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2862, page=35, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 35>
@@ -8420,7 +8427,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page34 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [83 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2868, page=36, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2867, page=36, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 36>
@@ -8464,7 +8471,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page35 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [84 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2877, page=37, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2876, page=37, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 37>
@@ -8508,7 +8515,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page36 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [85 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2882, page=38, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2881, page=38, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 38>
@@ -8552,7 +8559,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page37 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [86 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2887, page=39, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2886, page=39, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 39>
@@ -8596,7 +8603,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page38 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [87 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2892, page=40, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2891, page=40, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 40>
@@ -8640,7 +8647,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page39 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [88 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2897, page=41, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2896, page=41, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 41>
@@ -8684,7 +8691,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page40 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [89 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2902, page=42, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2901, page=42, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 42>
@@ -8728,7 +8735,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page41 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [90 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2908, page=43, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2907, page=43, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 43>
@@ -8772,7 +8779,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page42 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [91 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2916, page=44, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2915, page=44, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 44>
@@ -8816,7 +8823,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page43 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [92 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2921, page=45, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2920, page=45, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 45>
@@ -8860,7 +8867,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page44 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [93 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2931, page=46, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2930, page=46, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 46>
@@ -8904,7 +8911,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page45 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [94 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2936, page=47, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2935, page=47, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 47>
@@ -8948,7 +8955,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page46 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [95 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2944, page=48, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2943, page=48, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 48>
@@ -8992,7 +8999,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page47 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [96 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2950, page=49, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2949, page=49, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 49>
@@ -9036,7 +9043,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page48 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [97 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2955, page=50, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2954, page=50, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 50>
@@ -9080,7 +9087,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page49 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [98 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2965, page=51, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2964, page=51, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 51>
@@ -9124,7 +9131,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page50 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [99 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2970, page=52, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2969, page=52, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 52>
@@ -9168,7 +9175,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page51 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [100 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2975, page=53, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2974, page=53, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 53>
@@ -9212,7 +9219,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page52 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [101 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2981, page=54, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2979, page=54, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 54>
@@ -9256,7 +9263,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page53 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [102 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2987, page=55, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2986, page=55, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 55>
@@ -9300,7 +9307,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page54 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [103 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=2995, page=56, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2994, page=56, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 56>
@@ -9344,7 +9351,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page55 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [104 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3000, page=57, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=2999, page=57, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 57>
@@ -9388,7 +9395,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page56 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [105 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3164, page=58, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3163, page=58, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 58>
@@ -9432,7 +9439,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page57 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [106 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3169, page=59, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3168, page=59, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 59>
@@ -9476,7 +9483,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page58 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [107 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3174, page=60, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3173, page=60, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 60>
@@ -9520,7 +9527,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page59 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [108 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3183, page=61, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3182, page=61, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 61>
@@ -9564,7 +9571,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page60 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [109 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3188, page=62, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3187, page=62, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 62>
@@ -9608,7 +9615,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page61 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [110 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3193, page=63, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3192, page=63, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 63>
@@ -9652,7 +9659,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page62 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [111 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3198, page=64, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3197, page=64, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 64>
@@ -9696,7 +9703,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page63 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [112 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3203, page=65, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3202, page=65, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 65>
@@ -9740,7 +9747,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page64 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [113 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3208, page=66, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3207, page=66, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 66>
@@ -9784,7 +9791,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page65 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [114 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3214, page=67, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3213, page=67, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 67>
@@ -9828,7 +9835,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page66 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [115 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3219, page=68, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3218, page=68, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 68>
@@ -9872,7 +9879,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page67 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [116 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3224, page=69, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3223, page=69, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 69>
@@ -9916,7 +9923,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page68 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [117 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3229, page=70, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3228, page=70, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 70>
@@ -9960,7 +9967,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page69 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [118 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3234, page=71, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3233, page=71, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 71>
@@ -10004,7 +10011,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page70 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [119 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3239, page=72, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3238, page=72, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 72>
@@ -10048,7 +10055,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page71 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [120 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3245, page=73, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3244, page=73, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 73>
@@ -10092,7 +10099,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page72 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [121 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3250, page=74, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3249, page=74, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 74>
@@ -10136,7 +10143,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page73 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [122 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3268, page=75, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3267, page=75, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 75>
@@ -10180,7 +10187,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page74 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [123 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3273, page=76, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3272, page=76, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 76>
@@ -10224,7 +10231,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page75 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [124 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3278, page=77, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3277, page=77, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 77>
@@ -10268,7 +10275,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page76 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [125 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3283, page=78, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3282, page=78, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 78>
@@ -10312,7 +10319,7 @@ Package pdftex.def Info: figuras/manuscript_pcb.pdf, page77 used on input line
 3.
 (pdftex.def)             Requested size: 562.94345pt x 795.74474pt.
  [126 <./figuras/manuscript_pcb.pdf>]
-<figuras/manuscript_pcb.pdf, id=3289, page=79, 597.6729pt x 844.83629pt>
+<figuras/manuscript_pcb.pdf, id=3288, page=79, 597.6729pt x 844.83629pt>
 File: figuras/manuscript_pcb.pdf Graphic file (type pdf)
 
 <use figuras/manuscript_pcb.pdf, page 79>
@@ -10721,7 +10728,7 @@ LaTeX Info: Redefining \% on input line 26.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 97B553EC9611F154DD5003627674DDFF;6243.
+(rerunfilecheck)             Checksum: FAB56E7CC37A542CB9AA11139E8B8C9B;6253.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -10731,11 +10738,11 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 32365 strings out of 493089
- 592344 string characters out of 6134841
- 796525 words of memory out of 5000000
+ 32368 strings out of 493089
+ 592374 string characters out of 6134841
+ 795646 words of memory out of 5000000
  34240 multiletter control sequences out of 15000+600000
- 122468 words of font info for 351 fonts, out of 8000000 for 9000
+ 122693 words of font info for 353 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,20n,82p,3036b,757s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not ex
@@ -10817,10 +10824,10 @@ r/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/201
 5/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (219 pages, 5631582 bytes).
+Output written on main.pdf (219 pages, 5632006 bytes).
 PDF statistics:
- 3539 PDF objects out of 3580 (max. 8388607)
- 2693 compressed objects within 27 object streams
+ 3538 PDF objects out of 3580 (max. 8388607)
+ 2692 compressed objects within 27 object streams
  410 named destinations out of 1000 (max. 500000)
  57689 words of extra memory for PDF output out of 61914 (max. 10000000)
 
