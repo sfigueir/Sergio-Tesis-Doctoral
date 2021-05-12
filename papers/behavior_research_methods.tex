@@ -644,12 +644,12 @@ Usually, concept-learning biases have been studied in an isolated manner: the pa
 
 We decided to collect data for up to 3 weeks or until we reached a total of 100 participants. Via restrictions on the platform where the experiment was conducted, participants that took more than 4 hours or who did not complete all the trials were automatically excluded from the analysis. We were also prepared to exclude afterward the results from those participants whose verbal explanations denoted the use of external aids or methods outside the scope of the paper, such as using external help or taking screenshots of the concept, but there were no clear-cut cases of that behaviour ($N=0$).  
 
- Additionally, while our preregistered exclusion criteria did not encompass the potential cases of written explanations that were legitimate but indicative of use of rules extraneous to propositional logic or to our semantic framework, in the end we did not detect any of these cases. This encouraging result is weakly indicative of the usefulness of our careful considerations for building adequate semantic representations, as mentioned in Section~\ref{Experiment_design}. For the comprehensive written explanations of the participants, we refer the reader to the uploaded raw data at \url{https://osf.io/gtuwp/}.  
+Additionally, while our preregistered exclusion criteria did not encompass the potential cases of written explanations that were legitimate but indicative of use of rules extraneous to propositional logic or to our semantic framework, in the end we did not detect any of these cases. This encouraging result is weakly indicative of the usefulness of our careful considerations for building adequate semantic representations, as mentioned in Section~\ref{Experiment_design}. For the comprehensive written explanations of the participants, we refer the reader to the uploaded raw data at \url{https://osf.io/gtuwp/}.  
 
 
 Balanced division into the two groups was handled via the psiTurk library, which decides the group a new worker will be assigned to, based on the current number of completed experiments in each group. 
 
- We ignored individual trails from participants that in the generalization stage chose a generalization inconsistent with any valid explanation (but this did not provoke the exclusion of other independent trials by the same participant). See Section~\ref{Results} for details. 
+We ignored individual trails from participants that in the generalization stage chose a generalization inconsistent with any valid explanation (but this did not provoke the exclusion of other independent trials by the same participant). See Section~\ref{Results} for details. 
 
 
 \section{Pilot} \label{subsection:resultsPilot}
@@ -672,7 +672,6 @@ We say that a valuation $v$ satisfies a formula~$\varphi$ if $v(\varphi)=1$. We 
 Given a propositional formula $\varphi$, we define $\variables{\varphi}$ as the set of variables that appear in it. For example, if $\varphi_{e} = p_1 \lor (p_2 \land \lnot p_2)$, then $\variables{\varphi_e} = \{p_1, p_2\}$.
 
 We say that a formula $\varphi$ is variable-minimal if there is no other formula $\psi$ such that the truth values of $\varphi$ and $\psi$ coincide over all valuations and $\variables{\psi} \subsetneq \variables{\varphi}$. For example, the previous $\varphi_e$ is not variable-minimal, since it is equivalent to $\psi = p_1$, which uses one less propositional variable. 
-
 
 We begin by proving a very basic lemma for illustrative purposes. 
 \begin{lemma}\label{lemma:InterseccionUnionConceptos}
