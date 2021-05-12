@@ -55,29 +55,44 @@ En la siguiente sección, formalizaremos este procedimiento y luego lo aplicarem
 
 %Finally, even with the recent surge of popularity of Bayesian inference and MDL in cognitive science, there are --to the best of our knowledge-- no practical attempts to close the gap between probabilistic and complexity approaches to LoT models.
 
-Finalmente, incluso con el reciente aumento de popularidad de la inferencia Bayesiana y el MDL en las ciencias cognitivas, 
+Finalmente, incluso con el reciente aumento de popularidad de la inferencia Bayesiana y el MDL en la ciencia cognitiva, no hay --- hasta donde sabemos---, intentos prácticos de cerrar la brecha entre ambos enfoques.
 
-The theory of computation, through Levin's Coding Theorem \cite{levin1974laws}, exposes a remarkable relationship between the {\em Kolmogorov complexity} of a sequence and its {\em universal probability}, largely used in algorithmic information theory. Although both metrics are actually non-computable and defined over a universal prefix Turing Machine, we can apply both ideas to other non-universal Turing Machines in the same way that the concept of complexity used in MDL can be computed for specific, non-universal languages.
+%The theory of computation, through Levin's Coding Theorem \cite{levin1974laws}, exposes a remarkable relationship between the {\em Kolmogorov complexity} of a sequence and its {\em universal probability}, largely used in algorithmic information theory. Although both metrics are actually non-computable and defined over a universal prefix Turing Machine, we can apply both ideas to other non-universal Turing Machines in the same way that the concept of complexity used in MDL can be computed for specific, non-universal languages.
 
-In this work, we examine the extent to which this theoretical prediction for infinite sequences holds empirically for a specific LoT, the \textit{language of geometry}. Although the inverse logarithmic relationship between both metrics is proved for universal languages in the Coding Theorem, testing this same property for a particular non-universal language shows that the language shares some interesting properties of general languages. This constitutes a first step towards a formal link between probability and complexity modeling frameworks for LoTs.
+La teoría de la computabilidad, a través del Teorema de Codificación de Levin \cite{levin1974laws}, expone una notable relación entre la {\em complejidad de Kolmogorov} de una secuencia (que es la base del cálculo del MDL) y su {\em probabilidad universal}, la cual es ampliamente utilizada en la teoría algorítmica de la información. Aunque ambas métricas resultan no computables y se encuentran definidas sobre una Máquina Universal de Turing libre de prefijos, podemos aplicar estas ideas a otras Máquinas de Turing no universales de la misma manera que el concepto de complejidad es utilizado para el cálculo de MDL en lenguajes específicos no universales. 
 
-\section{Bayesian inference for LoT's productions}
+%In this work, we examine the extent to which this theoretical prediction for infinite sequences holds empirically for a specific LoT, the \textit{language of geometry}. Although the inverse logarithmic relationship between both metrics is proved for universal languages in the Coding Theorem, testing this same property for a particular non-universal language shows that the language shares some interesting properties of general languages. This constitutes a first step towards a formal link between probability and complexity modeling frameworks for LoTs.
 
-The project of Bayesian analysis of the LoT models concept learning using Bayesian inference in a grammatically structured hypothesis space \cite{goodman2008rational}. Each LoT proposal is usually formalized by a context free grammar $\gram$ that defines the valid functions or programs that can be generated, like in any other programming language. A program is a derivation tree of $\gram$ that needs to be interpreted or executed according to a given semantics in order to get an actual description of the concept in the cognitive task at hand. Therefore, each concept is then represented by any of the programs that describe it and a Bayesian inference process is defined in order to infer from the observed data the distribution of valid programs in $\gram$ that describes the concepts.
+En este trabajo también examinamos hasta qué punto esta predicción teórica para secuencias infinitas se preserva empíricamente para un LoT específico, el \textit{lenguaje de geometría}. Aunque la relación logarítmica inversa entre ambas métricas está probada para lenguas universales en el Teorema de Codificación, probar esta misma propiedad para un lenguaje no universal particular muestra que el lenguaje comparte algunas propiedades interesantes con los lenguajes generales. Esto constituye un primer paso hacia un vínculo formal entre el modelado de probabilidad y el de complejidad para el LoT.
 
-As explained above, our aim is to derive the productions of $\gram$ from the data, instead of just conjecturing them using a priori knowledge about the task. Prior work on LoTs has fit probabilities of productions in a context free grammar using Bayesian inference, however, the focus has been put in integrating out the production probabilities to better predict the data without changing the grammar definition \cite{piantadosi2016logical}. Here, we want to study if the inference process could let us decide which productions can be safely pruned from the grammar. We introduce a generic method that can be used on any grammar to select and test the proper set of productions. Instead of using a fixed grammar and adjusting the probabilities of the productions to predict the data, we use Bayesian inference to rule out productions with probability lower than a certain threshold. This allows the researcher to validate the adequacy of the productions she has chosen for the grammar or even define one that is broad enough to express different regularities and let the method select the best set for the observed data.
+%\section{Bayesian inference for LoT's productions}
+\section{Inferencia Bayesiana para las producciones del LoT}
 
+%The project of Bayesian analysis of the LoT models concept learning using Bayesian inference in a grammatically structured hypothesis space \cite{goodman2008rational}. Each LoT proposal is usually formalized by a context free grammar $\gram$ that defines the valid functions or programs that can be generated, like in any other programming language. A program is a derivation tree of $\gram$ that needs to be interpreted or executed according to a given semantics in order to get an actual description of the concept in the cognitive task at hand. Therefore, each concept is then represented by any of the programs that describe it and a Bayesian inference process is defined in order to infer from the observed data the distribution of valid programs in $\gram$ that describes the concepts.
 
-To infer the probability for each production based on the observed data, we need to add a vector of probabilities $\theta$ associated with each production in order to convert the context free grammar $\gram$ into a probabilistic context free grammar (PCFG) \cite{manning1999foundations}.
+El proyecto de análisis Bayesiano del LoT modela el aprendizaje de conceptos utilizando la inferencia Bayesiana en un espacio de hipótesis estructurado a partir de una gramática \cite{goodman2008rational}. Cada propuesta de LoT suele formalizarse mediante una gramática libre de contexto $\gram$ que define las funciones o programas válidos que se pueden generar, como en cualquier otro lenguaje de programación. Aquí, un programa es un árbol de derivación de $\gram$ que necesita ser interpretado o ejecutado de acuerdo a una semántica dada para obtener una descripción real del concepto en la tarea cognitiva en cuestión. Por lo tanto, cada concepto puede ser representado por cualquiera de los programas que lo describen al ejecutarse, y un proceso de inferencia Bayesiano es definido para calcular la distribución de los programas válidos de $\gram$ que describen los conceptos a explicar.
 
-Let $D = (d_1, d_2, \dots, d_n)$ denote the list of concepts produced by the subjects in an experiment. This means that each $d_i$ is a concept produced by a subject in each trial. Then, $P(\theta \mid D)$, the posterior probability of the weights of each production after the observed data, can be calculated by marginalizing over the possible programs that compute $D$:
+%As explained above, our aim is to derive the productions of $\gram$ from the data, instead of just conjecturing them using a priori knowledge about the task. Prior work on LoTs has fit probabilities of productions in a context free grammar using Bayesian inference, however, the focus has been put in integrating out the production probabilities to better predict the data without changing the grammar definition \cite{piantadosi2016logical}. Here, we want to study if the inference process could let us decide which productions can be safely pruned from the grammar. We introduce a generic method that can be used on any grammar to select and test the proper set of productions. Instead of using a fixed grammar and adjusting the probabilities of the productions to predict the data, we use Bayesian inference to rule out productions with probability lower than a certain threshold. This allows the researcher to validate the adequacy of the productions she has chosen for the grammar or even define one that is broad enough to express different regularities and let the method select the best set for the observed data.
+
+Como se explicó anteriormente, nuestro objetivo es derivar las producciones de $\gram$ a partir de los datos, en lugar de sólo conjeturarlas utilizando un conocimiento a priori sobre la tarea. Otros trabajos previos en LoT ajustaron las probabilidades de las producciones de las gramáticas libres de contexto utilizando inferencia Bayesiana \cite{piantadosi2016logical}, sin embargo, han puesto el foco en la integración de las probabilidades de producción para predecir mejor los datos y no en cambiar la definición de las gramáticas. Aquí queremos estudiar si el proceso de inferencia podría permitirnos decidir qué producciones de la gramática pueden podarse con seguridad. Para esto, introducimos un método genérico que puede utilizarse en cualquier gramática para seleccionar y probar el conjunto adecuado de producciones. En lugar de usar una gramática fija y ajustar las probabilidades de las producciones para predecir los datos, utilizamos la inferencia Bayesiana para remover las producciones con una probabilidad inferior a cierto umbral. Esto permite al investigador validar lo adecuado de las producciones que ha elegido para la gramática o incluso definir una que sea lo suficientemente amplia como para expresar diferentes regularidades y dejar que el método seleccione el mejor conjunto a partir de los datos observados.   
+
+%To infer the probability for each production based on the observed data, we need to add a vector of probabilities $\theta$ associated with each production in order to convert the context free grammar $\gram$ into a probabilistic context free grammar (PCFG) \cite{manning1999foundations}.
+
+Para inferir la probabilidad de cada producción a partir de los datos observados, necesitamos agregar un vector de probabilidades $\theta$ asociado con cada producción para convertir a la gramática libre de contexto $\gram$ en una gramática probabilística libre de contexto (PCFG) \cite{manning1999foundations}.
+
+%Let $D = (d_1, d_2, \dots, d_n)$ denote the list of concepts produced by the subjects in an experiment. This means that each $d_i$ is a concept produced by a subject in each trial. Then, $P(\theta \mid D)$, the posterior probability of the weights of each production after the observed data, can be calculated by marginalizing over the possible programs that compute $D$:
+
+Sea $D = (d_1, d_2, \dots, d_n)$ la lista de conceptos producidos por los sujetos en un experimento. Esto significa que cada $d_i$ es un concepto producido por un sujeto en cada ensayo. Luego, $P(\theta \mid D)$, la probabilidad a posteriori de los pesos de cada producción después de observar los datos, se puede calcular marginalizando sobre los posibles programas que computan $D$:
+
 %
 \begin{equation}
 \label{eqA}
 P(\theta \mid D) = \sum_{\Prog} P(\Prog,\theta \mid D),
-\end{equation} where each $\Prog  = (p_1, p_2, \cdots, p_n)$ is a possible set of programs such that each $p_i$ computes the corresponding concept $d_i$.
+\end{equation} donde cada $\Prog  = (p_1, p_2, \cdots, p_n)$ es un posible conjunto de programas tales que cada $p_i$ computa el correspondiente concepto $d_i$.
+%where each $\Prog  = (p_1, p_2, \cdots, p_n)$ is a possible set of programs such that each $p_i$ computes the corresponding concept $d_i$.
 
-We can use Bayesian inference to learn the corresponding programs $\Prog$ and the vector $\theta$ for each production in the grammar, applying Bayes rule in the following way:
+%We can use Bayesian inference to learn the corresponding programs $\Prog$ and the vector $\theta$ for each production in the grammar, applying Bayes rule in the following way:
+Podemos usar la inferencia Bayesiana para aprender los programas correspondientes $\Prog$ y el vector $\theta$ para cada producción de la gramática, aplicando la regla de Bayes de la siguiente manera:
 %
 \begin{equation}
 \label{eq:mainB}
@@ -85,7 +100,9 @@ P(\Prog,\theta \mid D) \propto P(D \mid \Prog)\ P(\Prog \mid \theta)\ P(\theta),
 \end{equation}
 %
 
-Sampling the set of programs from $P(\Prog \mid \theta)$ forces an inductive bias which is needed to handle uncertainty under sparse data. Here we use a standard prior for programs that is common in the LoT literature to introduce a syntactic complexity bias that favors shorter programs \cite{goodman2008rational,overlan2017learning}. Intuitively, the probability of sampling a certain program is proportional to the product of the production rules that were used to generate such program, and therefore inversely proportional to the size of the derivation tree. Formally, it is defined as:
+%Sampling the set of programs from $P(\Prog \mid \theta)$ forces an inductive bias which is needed to handle uncertainty under sparse data. Here we use a standard prior for programs that is common in the LoT literature to introduce a syntactic complexity bias that favors shorter programs \cite{goodman2008rational,overlan2017learning}. Intuitively, the probability of sampling a certain program is proportional to the product of the production rules that were used to generate such program, and therefore inversely proportional to the size of the derivation tree. Formally, it is defined as:
+
+Muestrear el conjunto de programas de $P(\Prog \mid \theta)$ fuerza un sesgo inductivo que es necesario para manejar la incertidumbre frente a datos escasos. Aquí usamos un estándar previo para los programas que es común en la literatura de LoT para introducir un sesgo de complejidad sintáctica que favorece programas más cortos \cite{goodman2008rational,overlan2017learning}. Intuitivamente, la probabilidad de muestreo de un determinado programa es proporcional al producto de las reglas de producción que se utilizaron para generar dicho programa y, por lo tanto, inversamente proporcional al tamaño del árbol de derivación. Formalmente, se define como:
 
 %
 \begin{equation}
@@ -93,212 +110,283 @@ Sampling the set of programs from $P(\Prog \mid \theta)$ forces an inductive bia
 P(\Prog \mid \theta)\ = \prod\limits_{i = 1}^n P(p_i \mid \theta),
 \end{equation}
 %
-where $P(p_i \mid \theta) = \prod\limits_{r \in G} \theta^{f_r(p_i)}_{r}$ is the probability of the program $p_i$ in the grammar, and $f_r(p_i)$ is the number of occurrences of the production $r$ in program $p_i$.
+donde $P(p_i \mid \theta) = \prod\limits_{r \in G} \theta^{f_r(p_i)}_{r}$ es la probabilidad del programa $p_i$ en la gramática, y $f_r(p_i)$ es el número de ocurrencias de la producción $r$ en el programa $p_i$.
+%where $P(p_i \mid \theta) = \prod\limits_{r \in G} \theta^{f_r(p_i)}_{r}$ is the probability of the program $p_i$ in the grammar, and $f_r(p_i)$ is the number of occurrences of the production $r$ in program $p_i$.
 
-In \eqref{eq:mainB}, $P(\theta)$ is a Dirichlet prior over the productions of the grammar. By using the term $P(\theta)$ we are abusing notation for simplicity. The proper term would be $P(\theta \mid \alpha)$ to express a Dirichlet prior with $\alpha \in \mathbb{R}^\ell$ its associated concentration vector hyper-parameter where $\ell$ is the number of productions in the grammar. This hierarchical Dirichlet prior has sometimes been replaced with a uniform prior on productions as it shows no significant differences in prediction results \cite{piantadosi2012bootstrapping,yildirim2015learning}. However, here we will use the Dirichlet prior to be able to infer the production probabilities from this more flexible model.
+%In \eqref{eq:mainB}, $P(\theta)$ is a Dirichlet prior over the productions of the grammar. By using the term $P(\theta)$ we are abusing notation for simplicity. The proper term would be $P(\theta \mid \alpha)$ to express a Dirichlet prior with $\alpha \in \mathbb{R}^\ell$ its associated concentration vector hyper-parameter where $\ell$ is the number of productions in the grammar. This hierarchical Dirichlet prior has sometimes been replaced with a uniform prior on productions as it shows no significant differences in prediction results \cite{piantadosi2012bootstrapping,yildirim2015learning}. However, here we will use the Dirichlet prior to be able to infer the production probabilities from this more flexible model.
 
-The likelihood function is straightforward. It does not use any free parameter to account for perception errors in the observation. This forces that only programs that compute the exact concept are taken into account, and it can be easily calculated as follows:
+En \eqref{eq:mainB}, $P(\theta)$ es una Dirichlet que se utiliza como distribución a priori sobre las producciones de la gramática. Al utilizar el término $P(\theta)$ estamos abusando de la notación por simplicidad. El término adecuado sería $P(\theta \mid \alpha)$ para expresar la distribución a priori con $\alpha \in \mathbb{R}^\ell$ su hiperparámetro que actúa como vector de concentración asociado donde $\ell$ es el número de producciones de la gramática. Esta distribución a proiri ha sido también reemplazada por una distribución uniforme, ya que no muestra diferencias significativas en resultados de predicción \cite{piantadosi2012bootstrapping,yildirim2015learning}. Sin embargo, aquí utilizaremos la distribución Dirichlet para poder inferir las probabilidades de producción a partir de este modelo más flexible.
+
+%The likelihood function is straightforward. It does not use any free parameter to account for perception errors in the observation. This forces that only programs that compute the exact concept are taken into account, and it can be easily calculated as follows:
+
+La función de verosimilitud es sencilla. No utiliza ningún parámetro libre para contabilizar errores de percepción en la observación. Esto obliga a que sólo los programas que computan el concepto exacto se tengan en cuenta, y puede ser fácilmente calculada de la siguiente manera:
 \begin{equation}
 \label{eqD}
 P(D \mid \Prog)\ = \prod\limits_{i = 1}^n P(d_i \mid p_i),
 \end{equation}
-where $P(d_i \mid p_i) = 1 $ if the program $p_i$ computes $d_i$, and 0 otherwise.
+donde $P(d_i \mid p_i) = 1 $ si el programa $p_i$ computa $d_i$, y 0 en caso contrario.
+%where $P(d_i \mid p_i) = 1 $ if the program $p_i$ computes $d_i$, and 0 otherwise.
 
-Calculating $P(\theta \mid D)$ directly is, however, not tractable since it requires to sum over all possible combinations of programs $\Prog$ for each of the possible values of $\theta$. To this aim, then, we used a Gibbs Sampling \cite{geman1984stochastic} algorithm for PCFGs via Markov Chain Monte Carlo (MCMC) similar to the one proposed at \cite{johnson2007bayesian}, which alternates in each step of the chain between the two conditional distributions:
+%Calculating $P(\theta \mid D)$ directly is, however, not tractable since it requires to sum over all possible combinations of programs $\Prog$ for each of the possible values of $\theta$. To this aim, then, we used a Gibbs Sampling \cite{geman1984stochastic} algorithm for PCFGs via Markov Chain Monte Carlo (MCMC) similar to the one proposed at \cite{johnson2007bayesian}, which alternates in each step of the chain between the two conditional distributions:
+
+Sin embargo, calcular $P(\theta \mid D)$ de manera directa no es manejable ya que requiere sumar todas las posibles combinaciones de programas $\Prog$ para cada uno de los posibles valores de $\theta$. Para este objetivo, utilizamos entonces el algoritmo de muestreo de Gibbs \cite{geman1984stochastic} para PCFGs a través del Método de Monte Carlo basado en cadenas de Markov (MCMC, por sus siglas en inglés) similar al propuesto en \cite{johnson2007bayesian}, el cual alterna en cada paso de la cadena entre las dos distribuciones condicionales:
 %
 \begin{eqnarray}
 \label{eqE}
 P(\Prog \mid \theta, D) &=& \prod\limits_{i=1}^n P(p_i \mid d_i, \theta).\\
 P(\theta \mid \Prog, D) &=& P_D(\theta \mid f(\Prog) + \alpha).
 \end{eqnarray}
-Here, $P_D$ is the Dirichlet distribution where the positions of the vector $\alpha$ were updated by counting the occurrences of the corresponding productions for all programs $p_i \in \Prog$.
+%Here, $P_D$ is the Dirichlet distribution where the positions of the vector $\alpha$ were updated by counting the occurrences of the corresponding productions for all programs $p_i \in \Prog$.
+Aquí, $P_D$ es la distribución Dirichlet donde las posiciones del vector $\alpha$ fueron actualizadas contando las ocurrencias de las producciones correspondientes para todos los programas $p_i \in \Prog$.
 
-In the next section, we apply this method to a specific LoT. We add a new set of ad-hoc productions to the grammar that can explain regularities but are not related to the cognitive task. Intuitively, these ad-hoc productions should not be part of the human LoT repertory, still all of them can be used in many possible programs to express each concept.
+%In the next section, we apply this method to a specific LoT. We add a new set of ad-hoc productions to the grammar that can explain regularities but are not related to the cognitive task. Intuitively, these ad-hoc productions should not be part of the human LoT repertory, still all of them can be used in many possible programs to express each concept.
 
-So far, Probabilistic LoT approaches have been successful to model concept learning from few examples \cite{tenenbaum2011grow,piantadosi2016four}. However, this does not mean that Bayesian models would be able to infer the syntax of the model's grammar from sparse data. Here we test such hypothesis. If the method is effective, it should assign a low probability to the ad-hoc productions and instead favor the original set of productions selected by the researchers for the cognitive task. This would not only provide additional empirical evidence about the adequacy of the choice of the original productions for the selected LoT but, more importantly, about the usefulness of Bayesian inference for validating the set of productions involved in different LoTs.
+En la siguiente sección, aplicamos este método a un LoT específico. Agregamos un nuevo conjunto ad-hoc de producciones a la gram'atica original que puedan explicar regularidades pero que no están relacionadas con la tarea cognitiva. Intuitivamente, estas producciones ad-hoc no deberían formar parte del repertorio del LoT, aún así, todas ellas pueden usarse en muchos programas posibles para expresar cada uno de los conceptos.
 
-\section{The Language of Geometry: $\geom$}
+%So far, Probabilistic LoT approaches have been successful to model concept learning from few examples \cite{tenenbaum2011grow,piantadosi2016four}. However, this does not mean that Bayesian models would be able to infer the syntax of the model's grammar from sparse data. Here we test such hypothesis. If the method is effective, it should assign a low probability to the ad-hoc productions and instead favor the original set of productions selected by the researchers for the cognitive task. This would not only provide additional empirical evidence about the adequacy of the choice of the original productions for the selected LoT but, more importantly, about the usefulness of Bayesian inference for validating the set of productions involved in different LoTs.
 
-The \textit{language of geometry}, $\geom$ \cite{marie2016}, is a probabilistic generator of sequences of movements on a regular octagon like the one in \figref{fig:circle}. It has been used to model human sequence predictions in adults, preschoolers, and adult members of an indigene group in the Amazon. As in other LoT domains, different models have been proposed for similar spatial sequence domains like the one in \cite{yildirim2015learning}. Although both successfully model the sequences in their experiments, they propose different grammars for their models (in particular, \cite{marie2016} contains productions for expressing symmetry reflections). This difference can be explained by the particularities of each experiment. On the one hand, \cite{marie2016} categorized the sequences in 12 groups based on their complexity, displayed them in an octagon and evaluate the performance of a diverse population to extrapolate them. On the other hand, \cite{yildirim2015learning} categorized the sequences in 4 groups, displayed them in an heptagon and evaluate the performance of adults not just to predict how the sequence continues, but to transfer the knowledge from the learned sequence across auditory and visual domains. Despite the domains not being equal, the differences in the grammars strengths the need for automatic methods to test and validate multiple grammars for the same domain in the LoT community.
+Hasta ahora, los enfoques probabilísticos del LoT han tenido éxito para modelar el aprendizaje de conceptos a partir de pocos ejemplos \cite{tenenbaum2011grow,piantadosi2016four}. Sin embargo, esto no significa que los modelos Bayesianos puedan inferir la sintaxis de la gramática a partir de datos escasos. Aquí probamos esta hipótesis. Si el método es eficaz, debería asignar una probabilidad baja las producciones ad-hoc y en su lugar favorecer el conjunto original de producciones seleccionadas por los investigadores para la tarea cognitiva. Esto no sólo proporcionaría evidencia empírica adicional sobre la idoneidad de la elección original de producciones para el LoT, sino que ---más importante--- brindaría evidencia sobre la utilidad de la inferencia Bayesiana para validar el conjunto de producciones involucradas en diferentes LoTs. 
+
+%\section{The Language of Geometry: $\geom$}
+\section{El lenguaje de geometría: $\geom$}
+
+%The \textit{language of geometry}, $\geom$ \cite{marie2016}, is a probabilistic generator of sequences of movements on a regular octagon like the one in \figref{fig:circle}. It has been used to model human sequence predictions in adults, preschoolers, and adult members of an indigene group in the Amazon. As in other LoT domains, different models have been proposed for similar spatial sequence domains like the one in \cite{yildirim2015learning}. Although both successfully model the sequences in their experiments, they propose different grammars for their models (in particular, \cite{marie2016} contains productions for expressing symmetry reflections). This difference can be explained by the particularities of each experiment. On the one hand, \cite{marie2016} categorized the sequences in 12 groups based on their complexity, displayed them in an octagon and evaluate the performance of a diverse population to extrapolate them. On the other hand, \cite{yildirim2015learning} categorized the sequences in 4 groups, displayed them in an heptagon and evaluate the performance of adults not just to predict how the sequence continues, but to transfer the knowledge from the learned sequence across auditory and visual domains. Despite the domains not being equal, the differences in the grammars strengths the need for automatic methods to test and validate multiple grammars for the same domain in the LoT community.
+
+El \textit{lenguaje de geometría}, $\geom$ \cite{marie2016}, es un generador probabilístico de secuencias de movimientos en un octágono regular como el de la figura \figref{fig:circle}. Se ha usado para modelar predicciones de secuencias humanas en adultos y preescolares de Francia y miembros adultos de un grupo indígena en la Amazonia. Como en otros dominios de LoT, se han propuesto para el dominio de secuencias espaciales diferentes modelos como el de \cite{yildirim2015learning}. Aunque ambos modelan con éxito las secuencias en sus experimentos, proponen diferentes gramáticas para sus modelos (en particular, \cite{marie2016} contiene producciones para expresar reflexiones o simetrías). Esta diferencia se puede explicar por las particularidades de cada experimento. Por un lado, en \cite{marie2016} categorizaron secuencias en 12 grupos en función de su complejidad, mostrándolos en un octágono y evaluando el desempeño en una población diversa para extrapolar las secuencias. Por otro lado, en \cite{yildirim2015learning} categorizaron las secuencias en 4 grupos, mostrándolos en un heptágono y evaluando el desempeño de adultos no sólo para predecir cómo continúan las secuencias, sino también para transferir el conocimiento de la secuencia aprendida a través de estímulos visuales y auditivos. A pesar de que los dominios no son iguales, las diferencias en las gramáticas refuerzan la necesidad para métodos automáticos que permitan probar y validar múltiples gramáticas para el mismo dominio en la comunidad que estudia el LoT.
 
 \begin{figure}[!ht]
    \includegraphics[width=0.4\textwidth]{Fig1}
-   \caption{{\bf Possible sequence positions and reflection axes.} $\Sigma$ points around a circle to map current position in the octagon, and the reflection axes.}\label{fig:circle}
+   %\caption{{\bf Possible sequence positions and reflection axes.} $\Sigma$ points around a circle to map current position in the octagon, and the reflection axes.}\label{fig:circle}
+   \caption{{\bf Posibles posiciones de la secuencia y ejes de reflexión} $\Sigma$ apunta alrededor de un círculo para mapear la posición actual en el octágono y los ejes de reflexión}\label{fig:circle}
 \end{figure}
 
+%The production rules of grammar $\geom$ were selected based on previous claims of the universality of certain human geometrical knowledge  \cite{izard2011geometry,dehaene2006core,dillon2013core} such as spatial notions \cite{landau1981spatial,lee2012navigation} and detection of symmetries \cite{westphal2012production,machilsen2009role}.
 
-The production rules of grammar $\geom$ were selected based on previous claims of the universality of certain human geometrical knowledge  \cite{izard2011geometry,dehaene2006core,dillon2013core} such as spatial notions \cite{landau1981spatial,lee2012navigation} and detection of symmetries \cite{westphal2012production,machilsen2009role}.
+Las reglas de producción de la gramática $\geom$ fueron seleccionadas en base a afirmaciones previa de la universalidad de cierto conocimiento geométrico humano \cite{izard2011geometry,dehaene2006core,dillon2013core} como nociones espaciales \cite{landau1981spatial,lee2012navigation} y detección de geometrías \cite{westphal2012production,machilsen2009role}.
 
-With these production rules, sequences are described by concatenating or repeating sequence of movements in the octagon. The original set of productions is shown in Table~\ref{table:originalgrammar} and --besides the concatenation and repetition operators-- it includes the following family of atomic geometrical transition productions: anticlockwise movements, staying at the same location, clockwise movements and symmetry movements.
+%With these production rules, sequences are described by concatenating or repeating sequence of movements in the octagon. The original set of productions is shown in Table~\ref{table:originalgrammar} and --besides the concatenation and repetition operators-- it includes the following family of atomic geometrical transition productions: anticlockwise movements, staying at the same location, clockwise movements and symmetry movements.
+
+Con estas reglas de producción, las secuencias se describen concatenando o repitiendo secuencias de movimientos en el octágono. El conjunto original de producciones se muestra en la Tabla~\ref{table:originalgrammar} y --además de los operadores de concatenación y repetición-- incluye la siguiente familia de producciones atómicas de transición geométrica: movimientos en sentido antihorario, permanecer en la misma ubicación, movimientos en sentido horario y movimientos de simetría.
 
 \begin{table}[!ht]
 \centering
-\caption{{\bf Original grammar}}
+\caption{{\bf Gramática original}}
 \label{table:originalgrammar}
 \resizebox{\columnwidth}{!}{%
 \begin{tabular}{lll|l}
-\\{\bf Start production} \\
+\\{\bf Producción inicial} \\
 \thickhline
-START & $\rightarrow$ & [INST] & start symbol \\
+START & $\rightarrow$ & [INST] & símbolo inicial \\
 \hline
-\\ {\bf Basic productions} \\
+\\ {\bf Producciones básicas} \\
 \thickhline
-INST  & $\rightarrow$ & ATOMIC & atomic production \\
-INST  & $\rightarrow$ & INST,INST & concatenation \\
-INST  & $\rightarrow$ & $\text{REP[INST]}^n$ & repeat family with $n \in [2,8]$ \\
+INST  & $\rightarrow$ & ATOMIC & producción atómica \\
+INST  & $\rightarrow$ & INST,INST & concatenación \\
+INST  & $\rightarrow$ & $\text{REP[INST]}^n$ & familia repetir con $n \in [2,8]$ \\
 
-REP  & $\rightarrow$ & REP0 & simple repeat \\
+REP  & $\rightarrow$ & REP0 & repetición simple \\
 
-REP  & $\rightarrow$ & REP1$<$ATOMIC$>$ & repeat with starting point variation using ATOMIC\\
+REP  & $\rightarrow$ & REP1$<$ATOMIC$>$ & repetir con variación del punto de inicio usando ATOMIC\\
 
-REP  & $\rightarrow$ & REP2$<$ATOMIC$>$ & repeat with resulting sequence variation using ATOMIC\\
+REP  & $\rightarrow$ & REP2$<$ATOMIC$>$ & repetir con variación de la secuencia resultante usando ATOMIC\\
 \hline
 \\ {\bf Atomic productions} \\
 \thickhline
-ATOMIC  & $\rightarrow$ & -1 & next element anticlockwise (ACW) \\
-ATOMIC  & $\rightarrow$ & -2 & second element ACW \\
-ATOMIC  & $\rightarrow$ & -3 & third element ACW \\
-ATOMIC  & $\rightarrow$ & +0 & stays at same location \\
-ATOMIC  & $\rightarrow$ & +1 & next element clockwise (CW)\\
-ATOMIC  & $\rightarrow$ & +2 & second element CW \\
-ATOMIC  & $\rightarrow$ & +3 & third element CW \\
-ATOMIC  & $\rightarrow$ & A & symmetry around one diagonal axis \\
-ATOMIC  & $\rightarrow$ & B & symmetry around the other diagonal axis \\
-ATOMIC  & $\rightarrow$ & H & horizontal symmetry \\
-ATOMIC  & $\rightarrow$ & V & vertical symmetry \\
-ATOMIC  & $\rightarrow$ & P & rotational symmetry \\
+ATOMIC  & $\rightarrow$ & -1 & siguiente elemento en sentido antihorario (ACW) \\
+ATOMIC  & $\rightarrow$ & -2 & segundo elemento ACW \\
+ATOMIC  & $\rightarrow$ & -3 & tercer elemento ACW \\
+ATOMIC  & $\rightarrow$ & +0 & permanecer en la misma posición \\
+ATOMIC  & $\rightarrow$ & +1 & siguiente elemento en sentido horario (CW)\\
+ATOMIC  & $\rightarrow$ & +2 & segundo elemento CW \\
+ATOMIC  & $\rightarrow$ & +3 & tercer elemento CW \\
+ATOMIC  & $\rightarrow$ & A & simetría alrededor de un eje diagonal \\
+ATOMIC  & $\rightarrow$ & B & simetría alrededor del otro eje diagonal \\
+ATOMIC  & $\rightarrow$ & H & simetría horizontal \\
+ATOMIC  & $\rightarrow$ & V & simetría vertical \\
+ATOMIC  & $\rightarrow$ & P & simetría rotacional \\
 \hline
 \end{tabular}}
 \end{table}
 
-The language actually supports not just a simple $n$ times repetition of a block of productions, but it also supports two more complex productions in the repetition family: repeating with a change in the starting point after each cycle and repeating with a change to the resulting sequence after each cycle. More details about the formal syntax and semantics can be found in \cite{marie2016}, though they are not needed here.
+%The language actually supports not just a simple $n$ times repetition of a block of productions, but it also supports two more complex productions in the repetition family: repeating with a change in the starting point after each cycle and repeating with a change to the resulting sequence after each cycle. More details about the formal syntax and semantics can be found in \cite{marie2016}, though they are not needed here.
 
-Each program $p$ generated by the grammar describes a mapping $\Sigma\to\Sigma^+$, for $\Sigma=\{0,\dots,7\}$. Here, $\Sigma^+$ represents the set of all (non empty) finite sequences over the alphabet $\Sigma$, which can be understood as a finite sequence of points in the octagon. These programs must then be executed or interpreted from a starting point in order to get the resulting sequence of points. Let $p = \textrm{[+1,+1]}$ be a program, then $p(0)$ is the result of executing $p$ starting from point $0$ (that is, sequence $1,2$) and $p(4)$ is the result of executing the same program starting from point $4$ in the octagon (sequence $5,6$).
+El lenguaje en realidad admite no sólo una simple repetición $n$ veces de un bloque de producciones, también admite dos producciones más complejas en la familia de repeticiones: repitiendo con un cambio en el punto de inicio después de cada ciclo y repitiendo con un cambio en la secuencia resultante después de cada ciclo. Más detalles sobre la sintaxis formal y la semántica se pueden encontrar en \cite{marie2016}, aunque no son necesarios aquí. 
 
+%Each program $p$ generated by the grammar describes a mapping $\Sigma\to\Sigma^+$, for $\Sigma=\{0,\dots,7\}$. Here, $\Sigma^+$ represents the set of all (non empty) finite sequences over the alphabet $\Sigma$, which can be understood as a finite sequence of points in the octagon. These programs must then be executed or interpreted from a starting point in order to get the resulting sequence of points. Let $p = \textrm{[+1,+1]}$ be a program, then $p(0)$ is the result of executing $p$ starting from point $0$ (that is, sequence $1,2$) and $p(4)$ is the result of executing the same program starting from point $4$ in the octagon (sequence $5,6$).
 
-Each sequence can be described with many different programs: from a simple concatenation of atomic productions to more compressed forms using repetitions. For example, to move through all the octagon clockwise one point at a time starting from point $0$, one can use $\textrm{[+1,+1,+1,+1,+1,+1,+1,+1]}(0)$ or $\textrm{[REP[+1]}^8](0)$ or $\textrm{[REP[+1]}^7,\textrm{+1]}(0)$, etc. To alternate $8$ times between points $6$ and $7$, one can use a reflection production like $\textrm{[REP[A]}^8](6)$, or $\textrm{[REP[+1,-1]}^4](6)$.
+Cada programa $p$ generado por la gramática describe un mapeo $\Sigma\to\Sigma^+$, para $\Sigma=\{0,\dots,7\}$. Aquí, $\Sigma^+$ representa el conjunto de todas las secuencias finitas (no vacías) sobre el alfabeto $\Sigma$, que puede entenderse como una secuencia finita de puntos en el octágono. Estos programas luego deben ejecutarse o interpretarse desde un punto de partida para obtener como resultado la secuencia de puntos. Sea $p = \textrm{[+1,+1]}$ un programa, entonces $p(0)$ es el resultado de ejecutar $p$ a partir del punto $0$ (es decir, la secuencia $1,2$) y $p(4)$ es el resultado de ejecutar el mismo programa a partir del punto $4$ del octágono (es decir, la secuencia $5,6$).
 
-\subsection{$\geom$'s original experiment}
+%Each sequence can be described with many different programs: from a simple concatenation of atomic productions to more compressed forms using repetitions. For example, to move through all the octagon clockwise one point at a time starting from point $0$, one can use $\textrm{[+1,+1,+1,+1,+1,+1,+1,+1]}(0)$ or $\textrm{[REP[+1]}^8](0)$ or $\textrm{[REP[+1]}^7,\textrm{+1]}(0)$, etc. To alternate $8$ times between points $6$ and $7$, one can use a reflection production like $\textrm{[REP[A]}^8](6)$, or $\textrm{[REP[+1,-1]}^4](6)$.
 
-To infer the productions from the observed data, we used the original data from the experiment in \cite{marie2016}. In the experiment, volunteers were exposed to a series of spatial sequences defined on an octagon and were asked to predict future locations. The sequences were selected according to their MDL in the \textit{language of geometry} so that each sequence could be easily described with few productions.
+Cada secuencia se puede describir con muchos programas diferentes: desde una simple concatenación de producciones atómicas a formas más comprimidas utilizando repeticiones. Por ejemplo, para moverse a través de todo el octágono en el sentido de las agujas del reloj, un punto a la vez comenzando desde el punto $0$, uno puede utilizar $\textrm{[+1,+1,+1,+1,+1,+1,+1,+1]}(0)$ o $\textrm{[REP[+1]}^8](0)$ o $\textrm{[REP[+1]}^7,\textrm{+1]}(0)$, etc. Para alternar $8$ veces entre los puntos $6$ y $7$, uno puede utilizar una producción de reflexión como $\textrm{[REP[A]}^8](6)$, o $\textrm{[REP[+1,-1]}^4](6)$.
 
-\paragraph{Participants} The data used in this work comes, except otherwise stated, from Experiment 1 in which participants were 23 French adults (12 female, mean age $= 26.6$, age range $= 20 - 46$) with college-level education.
-Data from Experiment 2 is later used when comparing adults and children results. In the later, participants where 24 preschoolers (minimal age $= 5.33$, max $= 6.29$, mean $= 5.83 \pm 0.05$).
+%\subsection{$\geom$'s original experiment}
+\subsection{Experimento original de $\geom$}
 
-\paragraph{Procedure} On each trial, the first two points from the sequence were flashed sequentially in the octagon and the user had to click on the next location. If the subject selected the correct location, she was asked to continue with the next point until the eight points of the sequences were completed. If there was an error at any point, the mistake was corrected, the sequence flashed again from the first point to the corrected point and the user asked to predict the next location. Each $d_i \in \Sigma^8$ from our dataset $D$ is thus the sequence of eight positions clicked in each subject's trial. The detailed procedure can be found in the cited work.
+%To infer the productions from the observed data, we used the original data from the experiment in \cite{marie2016}. In the experiment, volunteers were exposed to a series of spatial sequences defined on an octagon and were asked to predict future locations. The sequences were selected according to their MDL in the \textit{language of geometry} so that each sequence could be easily described with few productions.
 
-\subsection{Extending $\geom$'s grammar}
+Para inferir las producciones a partir de los datos observados, utilizamos los datos originales del experimento en \cite{marie2016}. En el experimento, los voluntarios fueron expuestos a una serie de secuencias espaciales definidas en un octágono y se les pidió que pronosticaran ubicaciones futuras. Las secuencias se seleccionaron de acuerdo con su MDL en el \textit{lenguaje de geometría} para que cada secuencia pueda ser descripta fácilmente con pocas producciones.
 
-We will now expand the original set of productions in $\geom$ with a new set of productions that can also express regularities but are not related to any geometrical intuitions to test our Bayesian inference model.
+%\paragraph{Participants} The data used in this work comes, except otherwise stated, from Experiment 1 in which participants were 23 French adults (12 female, mean age $= 26.6$, age range $= 20 - 46$) with college-level education. Data from Experiment 2 is later used when comparing adults and children results. In the later, participants where 24 preschoolers (minimal age $= 5.33$, max $= 6.29$, mean $= 5.83 \pm 0.05$).
 
-In Table~\ref{table:adhoc} we show the new set of productions which includes instructions like moving to the point whose label is the square of the current location's label, or using the current point location $i$ to select the $i^\text{th}$digit of a well-known number like $\pi$ or Chaitin's number (calculated for a particular universal Turing Machine and programs up to 84 bits long \cite{calude2002computing}). All digits are returned in arithmetic module 8 to get a valid point for the next position. For example, $\textrm{PI}(0)$  returns the first digit of $\pi$, that is $\textrm{PI}(0)= 3 \mod({8}) = 3$; and $\textrm{PI}(1) = 1$.
+\paragraph{Participantes:} Los datos utilizados en este trabajo provienen, salvo que se indique lo contrario, del Experimento 1 en el que los participantes eran 23 adultos franceses (12 mujeres, edad media $= 26.6$, rango de edad $= 20 - 46$) con educación de nivel universitario. Los datos del Experimento 2 se utilizan más adelante cuando se comparan los resultados de adultos y niños. En el último, los participantes fueron 24 niños en edad preescolar (edad mínima $= 5.33$, edad máxima $= 6.29$, media $= 5.83 \pm 0.05$).
+
+%\paragraph{Procedure} On each trial, the first two points from the sequence were flashed sequentially in the octagon and the user had to click on the next location. If the subject selected the correct location, she was asked to continue with the next point until the eight points of the sequences were completed. If there was an error at any point, the mistake was corrected, the sequence flashed again from the first point to the corrected point and the user asked to predict the next location. Each $d_i \in \Sigma^8$ from our dataset $D$ is thus the sequence of eight positions clicked in each subject's trial. The detailed procedure can be found in the cited work.
+
+\paragraph{Procedimiento:} En cada prueba, los dos primeros puntos de la secuencia se muestran con un destello de manera secuencial en el octágono y el usuario tiene que hacer clic luego en la siguiente ubicación. Si el sujeto selecciona la ubicación correcta, se le pide que continúe con el siguiente punto hasta que los ocho puntos de la secuencia se completan. Si hubo un error en algún momento, se corrige el error, la secuencia vuelve a mostrarse desde el primer punto hasta el punto corregido y se le solicita al usuario predecir la siguiente ubicación. Cada $d_i \in \Sigma^8$ de nuestro conjunto de datos $D$ es, por tanto, la secuencia de las ocho posiciones que hizo clic en cada prueba cada sujeto. El procedimiento detallado se puede encontrar en el citado trabajo.
+
+%\subsection{Extending $\geom$'s grammar}
+\subsection{Extendiendo la gramática de $\geom$}
+
+%We will now expand the original set of productions in $\geom$ with a new set of productions that can also express regularities but are not related to any geometrical intuitions to test our Bayesian inference model.
+
+Ahora ampliaremos el conjunto original de producciones en $\geom$ con un nuevo conjunto de producciones que también pueden expresar regularidades pero que no están relacionadas con ninguna intuición geométrica para probar nuestro modelo de inferencia Bayesiano.
+
+%In Table~\ref{table:adhoc} we show the new set of productions which includes instructions like moving to the point whose label is the square of the current location's label, or using the current point location $i$ to select the $i^\text{th}$digit of a well-known number like $\pi$ or Chaitin's number (calculated for a particular universal Turing Machine and programs up to 84 bits long \cite{calude2002computing}). All digits are returned in arithmetic module 8 to get a valid point for the next position. For example, $\textrm{PI}(0)$  returns the first digit of $\pi$, that is $\textrm{PI}(0)= 3 \mod({8}) = 3$; and $\textrm{PI}(1) = 1$.
+
+En la Tabla~\ref{table:adhoc} mostramos el nuevo conjunto de producciones que incluye instrucciones tales como moverse al punto cuya ubicación es el cuadrado de la ubicación actual, o utilizar el punto actual $i$ para seleccionar el $i^\text{th}$dígito de un número conocido como $\pi$ o el número de Chaitín (calculado para una máquina universal de Turing particular y programas de hasta 84 bits \cite{calude2002computing}). Todos los dígitos se devuelven en módulo aritmético 8 para obtener una posición válida. Por ejemplo, $\textrm{PI}(0)$ retorna el primer dígito de $\pi$, es decir $\textrm{PI}(0)= 3 \mod({8}) = 3$; y $\textrm{PI}(1) = 1$.
 
 \begin{table}[!ht]
 \centering
-\caption{{\bf Ad-hoc productions}}
+\caption{{\bf Producciones ad-hoc}}
 \label{table:adhoc}
 \begin{tabular}{lll|l}
 \thickhline
-ATOMIC  & $\rightarrow$ & DOUBLE & $($location $*\ 2) \mod 8$  \\
-ATOMIC  & $\rightarrow$ & -DOUBLE & $($location $* -2) \mod 8$ \\
-ATOMIC  & $\rightarrow$ & SQUARE & $($location$^2) \mod 8$ \\
-ATOMIC  & $\rightarrow$ & GAMMA & $\Gamma($location$+1) \mod 8$ \\
-ATOMIC  & $\rightarrow$ & PI & location-th digit of $\pi$ \\
-ATOMIC  & $\rightarrow$ & EULER & location-th digit of $e$ \\
-ATOMIC  & $\rightarrow$ & GOLD & location-th digit of $\phi$ \\
-ATOMIC  & $\rightarrow$ & PYTH & location-th digit of $\sqrt{2}$ \\
-ATOMIC  & $\rightarrow$ & KHINCHIN & location-th digit of Khinchin's constant \\
-ATOMIC  & $\rightarrow$ & GLAISHER &  location-th digit of Glaisher's constant \\
-ATOMIC  & $\rightarrow$ & CHAITIN & location-th digit of Chaitin Omega's constant \\
+ATOMIC  & $\rightarrow$ & DOUBLE & $($ubicación $*\ 2) \mod 8$  \\
+ATOMIC  & $\rightarrow$ & -DOUBLE & $($ubicación $* -2) \mod 8$ \\
+ATOMIC  & $\rightarrow$ & SQUARE & $($ubicación$^2) \mod 8$ \\
+ATOMIC  & $\rightarrow$ & GAMMA & $\Gamma($ubicación$+1) \mod 8$ \\
+ATOMIC  & $\rightarrow$ & PI & ubicación-ésimo dígito de $\pi$ \\
+ATOMIC  & $\rightarrow$ & EULER & ubicación-ésimo dígito de $e$ \\
+ATOMIC  & $\rightarrow$ & GOLD & ubicación-ésimo dígito de $\phi$ \\
+ATOMIC  & $\rightarrow$ & PYTH & ubicación-ésimo dígito de$\sqrt{2}$ \\
+ATOMIC  & $\rightarrow$ & KHINCHIN & ubicación-ésimo dígito de la constante de Khinchin\\
+ATOMIC  & $\rightarrow$ & GLAISHER & ubicación-ésimo dígito de la constante de Glaisher\\
+ATOMIC  & $\rightarrow$ & CHAITIN & ubicación-ésimo dígito de la constante de Chaitín Omega\\
 \hline
 \end{tabular}
 \end{table}
 
-\subsection{Inference results for $\geom$}
+%\subsection{Inference results for $\geom$}
+\subsection{Resultados de inferencia para $\geom$}
 
-To let the MCMC converge faster (and to later compare the concept's probability with their corresponding MDL), we generated all the programs that explain each of the observed sequences from the experiment. In this way, we are able to sample from the exact distribution $P(p_i \mid d_i, \theta)$ by sampling from a multinomial distribution of all the possible programs $p_i$ that compute $d_i$, where each $p_i$ has probability of occurrence equal to $P(p_i \mid \theta)$.
+%To let the MCMC converge faster (and to later compare the concept's probability with their corresponding MDL), we generated all the programs that explain each of the observed sequences from the experiment. In this way, we are able to sample from the exact distribution $P(p_i \mid d_i, \theta)$ by sampling from a multinomial distribution of all the possible programs $p_i$ that compute $d_i$, where each $p_i$ has probability of occurrence equal to $P(p_i \mid \theta)$.
 
-To get an idea of the expressiveness of the grammar to generate different programs for a sequence and the cost of computing them, it is worth mentioning that there are more than 159 million programs that compute the 292 unique sequences generated by the subjects in the experiment, and that for each sequence there is an average of 546,713 programs (min = $10,749$, max = $5,500,026$, $\sigma$ = $693,618$).
+Para permitir que la MCMC converja más rápido (y luego comparar la probabilidad del concepto con su correspondiente MDL), generamos todos los programas que explican cada una de las secuencias observadas del experimento. De esta manera, podemos tomar muestras de la distribución $P(p_i \mid d_i, \theta)$ por muestreo de una distribución multinomial de todos los posibles programas $p_i$ que computan $d_i$, donde cada $p_i$ tiene una probabilidad de ocurrencia igual a $P(p_i \mid \theta)$.
 
+%To get an idea of the expressiveness of the grammar to generate different programs for a sequence and the cost of computing them, it is worth mentioning that there are more than 159 million programs that compute the 292 unique sequences generated by the subjects in the experiment, and that for each sequence there is an average of 546,713 programs (min = $10,749$, max = $5,500,026$, $\sigma$ = $693,618$).
 
-\figref{fig:inferredtheta} shows the inferred $\theta$ for the observed sequences from subjects, with a unit concentration parameter for the Dirichlet prior, $\alpha = (1, \dots, 1)$. Each bar shows the mean probability and the standard error of each of the atomic productions after 50 steps of the MCMC, leaving the first 10 steps out as burn-in.
+Para tener una intuición de la expresividad de la gramática para para generar diferentes programas para una secuencia y el costo de calcularlos, vale la pena mencionar que hay más de 159 millones de programas que computan las 292 secuencias únicas generadas por los sujetos en el experimento y que, para cada secuencia, hay un promedio de 546,713 programas (mín = $10,749$, máx = $5,500,026$, $\sigma$ = $693,618$).
+
+%\figref{fig:inferredtheta} shows the inferred $\theta$ for the observed sequences from subjects, with a unit concentration parameter for the Dirichlet prior, $\alpha = (1, \dots, 1)$. Each bar shows the mean probability and the standard error of each of the atomic productions after 50 steps of the MCMC, leaving the first 10 steps out as burn-in.
+
+La \figref{fig:inferredtheta} muestra el $\theta$ inferido para las secuencias observadas de los sujetos, con el hiperparámetro de la Dirichlet inicial en $\alpha = (1, \dots, 1)$. Cada barra muestra la probabilidad media y el error estándar de cada una de las producciones atómicas después de 50 pasos de la MCMC, dejando fuera los primeros 10 pasos como iteraciones de \textit{burn-in}.
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=0.4\textwidth]{Fig2}
-    \caption{\bf{Inferred $\theta_i$.} Inferred probability for each production in the grammar}
+    %\caption{\bf{Inferred $\theta_i$.} Inferred probability for each production in the grammar}
+    \caption{\bf{$\theta_i$ inferido} Probabilidad inferida para cada producción de la gramática}
     \label{fig:inferredtheta}
 \end{figure}
 
-Although 50 steps might seem low for a MCMC algorithm to converge, our method calculated $P(p_i \mid d_i, \theta)$ exactly in order to speed up convergence and to be able to later compare the probability with the complexity from the original MDL model.  In \figref{fig:convergetheta}, we show an example trace for four MCMC runs for $\theta_{\text{+0}}$, which corresponds to the atomic production +0, but is representative of the behavior of all $\theta_i$. (see \nameref{S1_Fig} for the full set of productions).
+Aunque 50 pasos puedan parecer bajos para que converja un algoritmo de MCMC, nuestro método calculó $P(p_i \mid d_i, \theta)$ de manera exacta para acelerar la convergencia y para poder luego comparar la probabilidad con la complejidad del modelo MDL original. En la \figref{fig:convergetheta}, mostramos una traza de ejemplo para cuatro ejecuciones de MCMC para $\theta_{\text{+0}}$, que corresponde al valor atómico de la producción +0, pero es representativo del comportamiento de todos los $\theta_i$. (consulte los \nameref{S1_Fig} para las trazas del conjunto entero de producciones).
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=0.4\textwidth]{Fig3}
-    \caption{{\bf Inferred $\theta_{\text{+0}}$.} Inferred probability for +0 production at each step in four MCMC chains.}
+    %\caption{{\bf Inferred $\theta_{\text{+0}}$.} Inferred probability for +0 production at each step in four MCMC chains.}
+    \caption{{\bf $\theta_{\text{+0}}$ inferido.} Probabilidad inferida para +0 en cada paso para cuatro cadenas de MCMC.}
     \label{fig:convergetheta}
 \end{figure}
 
-\figref{fig:inferredtheta} shows a remarkable difference between the probability of the productions that were originally used based on geometrical intuitions and the ad-hoc productions. The plot also shows that each clockwise production has almost the same probability as its corresponding anticlockwise production, and a similar relation appears between horizontal and vertical symmetry (H and V) and symmetries around diagonal axes (A and B). This is important because the original experiment was designed to balance such behavior; the inferred grammar reflects this.
+%\figref{fig:inferredtheta} shows a remarkable difference between the probability of the productions that were originally used based on geometrical intuitions and the ad-hoc productions. The plot also shows that each clockwise production has almost the same probability as its corresponding anticlockwise production, and a similar relation appears between horizontal and vertical symmetry (H and V) and symmetries around diagonal axes (A and B). This is important because the original experiment was designed to balance such behavior; the inferred grammar reflects this.
 
-\figref{fig:thetaGrouped} shows the same inferred $\theta$ but grouped according to production family. Grouping stresses the low probability of all the ad-hoc productions, but also shows an important difference between REP and the rest of the productions, particularly the simple concatenation of productions (CONCAT). This indicates that the \textit{language of geometry} is capable of reusing simpler structures that capture geometrical meaning to explain the observed data, a key aspect of a successful model of LoT.
+La \figref{fig:inferredtheta} muestra una diferencia notable entre la probabilidad de las producciones que se utilizaron originalmente sobre la base de intuiciones geométricas y las producciones ad-hoc. El gráfico muestra también que cada producción en el sentido horario tiene casi la misma probabilidad que su correspondiente producción en sentido antihorario, y una relación similar aparece entre la simetría horizontal y la vertical (H y V) y las simetrías alrededor de los ejes diagonales (A y B). Esto es importante porque el experimento original fue diseñado para equilibrar tal comportamiento y la gramática inferida lo refleja también.
+
+%\figref{fig:thetaGrouped} shows the same inferred $\theta$ but grouped according to production family. Grouping stresses the low probability of all the ad-hoc productions, but also shows an important difference between REP and the rest of the productions, particularly the simple concatenation of productions (CONCAT). This indicates that the \textit{language of geometry} is capable of reusing simpler structures that capture geometrical meaning to explain the observed data, a key aspect of a successful model of LoT.
+
+La \figref{fig:thetaGrouped} muestra el mismo $\theta$ inferido pero agrupado según su familia de producción. El agrupamiento destaca la baja probabilidad de todas las producciones ad-hoc, pero también muestra una diferencia importante entre REP y el resto de las producciones, particularmente respecto de la simple concatenación de producción (CONCAT). Esto indica que el lenguaje de geometría es capaz de reutilizar estructuras más simples que captura el significado geométrico para explicar los datos observados, un aspecto clave de un modelo exitoso de LoT que también se ve reflejado en la gramática inferida.
 
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.4\textwidth]{Fig4}
-    \caption{{\bf Inferred $\theta_i$ grouped by family.} Inferred probability for each production in the grammar grouped by family.}
+    \caption{{\bf $\theta_i$ inferido agrupado por familia.} Probabilidad inferida para cada producción en la gramática, agrupada por familia.}
     \label{fig:thetaGrouped}
 \end{figure}
 
-We then ran the same inference method using observed sequences from other experiments but only with the original grammar productions (i.e.\ setting aside the ad-hoc productions). We compared the result of inferring over our previously analyzed sequences generated by adults with sequences generated by children (experiment 2 from  \cite{marie2016}) and the actual expected sequences for an ideal player.
+%We then ran the same inference method using observed sequences from other experiments but only with the original grammar productions (i.e.\ setting aside the ad-hoc productions). We compared the result of inferring over our previously analyzed sequences generated by adults with sequences generated by children (experiment 2 from  \cite{marie2016}) and the actual expected sequences for an ideal player.
 
-\figref{fig:adultVsChildren} shows the probabilities for each atomic production that is inferred after each population. The figure denotes that different populations can converge to different probabilities and thus different LoTs. Specifically, it is worth mentioning that the ideal learner indeed uses more repetition productions than simple concatenations when compared to adults. In the same way, adults use more repetitions than children. This could mean that the ideal learner is capable of reproducing the sequences by recursively embedding other smaller programs, whereas adults and children more so have problems understanding or learning the smaller concept that can explain all the sequences from the experiments, which is consistent with the results from the MDL model in \cite{marie2016}.
+Luego ejecutamos el mismo método de inferencia utilizando las secuencia observadas en otros experimentos, pero sólo con las producciones gramaticales originales (es decir, dejando de lado las producciones ad-hoc). Comparamos el resultado de inferir sobre nuestras secuencias previamente analizadas (que habían sido generadas por adultos) con aquellas generadas por niños (el Experimento 2 de   \cite{marie2016}) y con las secuencias esperadas para un jugador ideal.
+
+%\figref{fig:adultVsChildren} shows the probabilities for each atomic production that is inferred after each population. The figure denotes that different populations can converge to different probabilities and thus different LoTs. Specifically, it is worth mentioning that the ideal learner indeed uses more repetition productions than simple concatenations when compared to adults. In the same way, adults use more repetitions than children. This could mean that the ideal learner is capable of reproducing the sequences by recursively embedding other smaller programs, whereas adults and children more so have problems understanding or learning the smaller concept that can explain all the sequences from the experiments, which is consistent with the results from the MDL model in \cite{marie2016}.
+
+La \figref{fig:adultVsChildren} muestra las probabilidades para cada producción atómica que se infieren de los datos de cada población. La figura denota que diferentes poblaciones pueden converger a diferentes probabilidades y, por tanto, a diferentes LoT. Específicamente, vale la pena mencionar que el sujeto ideal de hecho utiliza más producciones de repetición que simples concatenaciones en comparación con los adultos. Del mismo modo, los adultos utilizan más repeticiones que los niños. Esto podría significar que el sujeto ideal es capaz de reproducir las secuencias reutilizando de manera recursiva otros programas más pequeños, mientras que los adultos y los niños tienen más problemas para comprender o aprender el programa más pequeño que puede explicar cada una de las secuencias de los experimentos, lo cuál es consistente con los resultados del modelo de MDL en \cite{marie2016}.
 
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.4\textwidth]{Fig5}
-    \caption{{\bf Inferred $\theta_i$ for ideal learner, adults and children.} Inferred probability for each production in the grammar for different population data.}
+    %\caption{{\bf Inferred $\theta_i$ for ideal learner, adults and children.} Inferred probability for each production in the grammar for different population data.}
+    \caption{{\bf $\theta_i$ inferido para el sujeto ideal, adultos y niños} Probabilidad inferida para cada producción de la gramática para las diferentes poblaciones.}
     \label{fig:adultVsChildren}
 \end{figure}
 
-It is worth mentioning that in \cite{marie2016} the complete grammar for the \textit{language of geometry} could explain adults' behavior but had problems to reproduce the children's patterns for some sequences. However, they also showed that penalizing the rotational symmetry (P) could adequately explain children's behavior. In \figref{fig:adultVsChildren}, we see that the mean value of (P) for children is 0.06 whereas in adults it's 0.05 (a two-sample t-test reveals t = -12.6, p = 10-19). This might not necessarily be contradictory, as the model for children in \cite{marie2016} was used to predict the next symbol of a sequence after seeing its prefix by adding a penalization for extensions that use the rotational symmetry in the {\em minimal} program of each sequence. On the other hand, the Bayesian model in this work tries to explain the observed sequences produced by children considering the probability of a sequence summing over {\em all} the possible programs that can generate it and not just the ones with minimal size. Thus, a production like (P) that might not be part of the minimal program for a sequence might not necessarily be less probable when considering the entire distribution of programs for that same sequence.
+%It is worth mentioning that in \cite{marie2016} the complete grammar for the \textit{language of geometry} could explain adults' behavior but had problems to reproduce the children's patterns for some sequences. However, they also showed that penalizing the rotational symmetry (P) could adequately explain children's behavior. In \figref{fig:adultVsChildren}, we see that the mean value of (P) for children is 0.06 whereas in adults it's 0.05 (a two-sample t-test reveals t = -12.6, p = 10-19). This might not necessarily be contradictory, as the model for children in \cite{marie2016} was used to predict the next symbol of a sequence after seeing its prefix by adding a penalization for extensions that use the rotational symmetry in the {\em minimal} program of each sequence. On the other hand, the Bayesian model in this work tries to explain the observed sequences produced by children considering the probability of a sequence summing over {\em all} the possible programs that can generate it and not just the ones with minimal size. Thus, a production like (P) that might not be part of the minimal program for a sequence might not necessarily be less probable when considering the entire distribution of programs for that same sequence.
 
-\section{Coding Theorem}
+Cabe mencionar que en \cite{marie2016} la gramática completa para el \textit{lenguaje de geometría} podía explicar el comportamiento de los adultos, pero tenía problemas para reproducir los patrones de los niños para algunas secuencias. Sin embargo, también demostraron que penalizar a la simetría rotacional (P) podría explicar adecuadamente el comportamiento de los niños. En la \figref{fig:adultVsChildren}, vemos que el valor medio de (P) para niños es 0.06 mientras que en adultos es 0.05 (una prueba-t de dos muestras revela que t = -12.6, p = 10-19). Esto puede no ser necesariamente contradictorio, ya que el modelo para niños en \cite{marie2016} se utilizó para predecir el siguiente símbolo de una secuencia después de ver su prefijo agregando una penalización para extensiones que usan la simetría rotacional (P) \textit{en el programa mínimo} de cada secuencia. Por otro lado, el modelo Bayesiano en este trabajo intenta explicar las secuencias observadas producidas por los niños considerando la probabilidad de una secuencia a partir de sumar todos los posibles programas que la pueden generar \textit{y no sólo en los de tamaño mínimo}. Así, una producción como (P) que podría no ser parte del programa mínimo para una secuencia, puede no ser necesariamente menos probable cuando se considera la distribución total de programas para esa misma secuencia.
+
+%\section{Coding Theorem}
+\section{Teorema de codificación}
 \label{sec:coding}
 
-For each phenomenon there can always be an extremely large, possibly infinite, number of explanations. In a LoT model, this space is constrained by the grammar $\gram$ that defines the valid hypotheses in the language. Still, one has to define how a hypothesis is chosen among all possibilities. Following Occam's razor, one should choose the simplest hypothesis amongst all the possible ones that explain a phenomenon. In cognitive science, the MDL framework has been widely used to model such bias in human cognition, and in \textit{the language of geometry} in particular \cite{marie2016}. The MDL framework is based on the ideas of information theory \cite{shannon48}, Kolmogorov complexity \cite{kolmogorov1968three} and Solomonoff induction \cite{solomonoff1964formal}.
+%For each phenomenon there can always be an extremely large, possibly infinite, number of explanations. In a LoT model, this space is constrained by the grammar $\gram$ that defines the valid hypotheses in the language. Still, one has to define how a hypothesis is chosen among all possibilities. Following Occam's razor, one should choose the simplest hypothesis amongst all the possible ones that explain a phenomenon. In cognitive science, the MDL framework has been widely used to model such bias in human cognition, and in \textit{the language of geometry} in particular \cite{marie2016}. The MDL framework is based on the ideas of information theory \cite{shannon48}, Kolmogorov complexity \cite{kolmogorov1968three} and Solomonoff induction \cite{solomonoff1964formal}.
 
-Occam's razor was formalized by Solomonoff \cite{solomonoff1964formal} in his theory of universal inductive inference, which proposes a universal prediction method that successfully approximates any distribution $\mu$ based on previous observations, with the only assumption of $\mu$ being computable. In short, Solomonoff's theory uses all programs (in the form of prefix Turing machines) that can describe previous observations of a sequence to calculate the probability of the next symbols in an optimal fashion, giving more weight to shorter programs. Intuitively, simpler theories with low complexity have higher probability than theories with higher complexity. Formally, this relationship is described by the Coding Theorem \cite{levin1974laws}, which closes the gap between the concepts of Kolmogorov complexity and probability theory. However, LoT models that define a probabilistic distribution for their hypotheses do not attempt to compare it with a complexity measure of the hypotheses like the ones used in MDL, nor the other way around.
+Para cada fenómeno siempre puede haber un número extremadamente grande, posiblemente infinito, de explicaciones. En un modelo de LoT, este espacio está limitado por la gramática $\gram$ que define las hipótesis válidas en el lenguaje. Aún así, hay que definir cómo se elige una hipótesis entre todas las posibles. Siguiendo el principio de la navaja de Ockham, se debe elegir la hipótesis más simple entre todas las posibles que explican un fenómeno. En ciencia cognitiva, y en el lenguaje de geometría en particular, la MDL se suele utilizar para modelar tal sesgo en la cognición humana. La MDL se basa sobre las ideas de la teoría de la información \cite{shannon48}, la complejidad de Kolmogorov \cite{kolmogorov1968three} y la inducción de Solomonoff \cite{solomonoff1964formal}.
 
-In what follows we formalize the Coding Theorem (for more information, see \cite{li2013introduction}) and test it experimentally. To the best our knowledge, this is the first attempt to validate these ideas for a particular (non universal) language. The reader should note that we are not validating the theorem itself as it has already been proved for universal Turing Machines. Here, we are testing whether the inverse logarithmic relationship between the probability and complexity holds true when defined for a specific non universal language.
+%Occam's razor was formalized by Solomonoff \cite{solomonoff1964formal} in his theory of universal inductive inference, which proposes a universal prediction method that successfully approximates any distribution $\mu$ based on previous observations, with the only assumption of $\mu$ being computable. In short, Solomonoff's theory uses all programs (in the form of prefix Turing machines) that can describe previous observations of a sequence to calculate the probability of the next symbols in an optimal fashion, giving more weight to shorter programs. Intuitively, simpler theories with low complexity have higher probability than theories with higher complexity. Formally, this relationship is described by the Coding Theorem \cite{levin1974laws}, which closes the gap between the concepts of Kolmogorov complexity and probability theory. However, LoT models that define a probabilistic distribution for their hypotheses do not attempt to compare it with a complexity measure of the hypotheses like the ones used in MDL, nor the other way around.
 
-\subsection{The formal statement}
+El principio de la navaja de Ockham fue formalizado por Solomonoff \cite{solomonoff1964formal} en su teoría universal de la inferencia inductiva, que propone un método de predicción universal que aproxima cualquier distribución $\mu$ a partir de observaciones previas, con el único supuesto de que $\mu$ sea computable. En resumen, la teoría de Solomonoff utiliza todos los programas (en la forma de máquinas de Turing de prefijo) %SANTI / SERGIO: Es esa la traducción? 
+que pueden describir las observaciones previas de una secuencia para calcular la probabilidad de los siguientes símbolos de una manera óptima, dando más peso a los programas más cortos. Intuitivamente, las teorías más simples, con baja complejidad, tienen mayor probabilidad que las teorías de mayor complejidad. Formalmente, esta relación es descrita en el Teorema de codificación \cite{levin1974laws},  que cierra la brecha entre los conceptos de complejidad de Kolmogorov y la teoría de probabilidad. Sin embargo, los modelos de LoT que definen una distribución probabilística para sus hipótesis no han intentado compararla con una medida de complejidad de las hipótesis como las que se usan en MDL, ni al revés.
 
-Let $M$ be a prefix Turing machine --by {\em prefix} we mean that if $M(x)$ is defined, then $M$ is undefined for every proper extension of $x$.
-%
-Let $P_M(x)$ be the probability that the machine $M$ computes output $x$ when the input is filled-up with the results of fair coin tosses, and let $K_M(x)$ be the {\em Kolmogorov complexity of $x$ relative to $M$}, which is defined as the length of the shortest program which outputs $x$, when executed on $M$. The Coding Theorem states that for every string $x$ we have
+%In what follows we formalize the Coding Theorem (for more information, see \cite{li2013introduction}) and test it experimentally. To the best our knowledge, this is the first attempt to validate these ideas for a particular (non universal) language. The reader should note that we are not validating the theorem itself as it has already been proved for universal Turing Machines. Here, we are testing whether the inverse logarithmic relationship between the probability and complexity holds true when defined for a specific non universal language.
+
+A continuación, formalizamos el Teorema de Codificación (para obtener más información, consulte \cite{li2013introduction}) y lo probamos experimentalmente. Hasta donde sabemos, este es el primer intento para validad estas ideas para un lenguaje particular (no universal). El lector debe tener en cuenta que no estamos validando el teorema en sí, dado que ya ha sido probado para Máquinas de Turing universales. Aquí estamos probando si la relación logarítmica inversa entre la probabilidad y la complejidad podría mantenerse cuando se definen para un lenguaje específico no universal.
+
+%\subsection{The formal statement}
+\subsection{La definición formal}
+
+%Let $M$ be a prefix Turing machine --by {\em prefix} we mean that if $M(x)$ is defined, then $M$ is undefined for every proper extension of $x$. Let $P_M(x)$ be the probability that the machine $M$ computes output $x$ when the input is filled-up with the results of fair coin tosses, and let $K_M(x)$ be the {\em Kolmogorov complexity of $x$ relative to $M$}, which is defined as the length of the shortest program which outputs $x$, when executed on $M$. The Coding Theorem states that for every string $x$ we have
+
+Sea $M$ una Máquina de Turing de prefijo --por {\em prefijo} nos referimos a que si $M(x)$ está definida, entonces $M$ está indefinida para cualquier extensión de $x$. Sea $P_M(x)$ la probabilidad de que la máquina $M$ compute la salida $x$ cuando la entrada se llena con los resultados de los lanzamientos de una moneda justa, y sea $K_M(x)$ la {\em complejidad de Kolmogorov de $x$ relativa a $M$}, que se define como la longitud del programa más corto que genera $x$, cuando se ejecuta en $M$. El Teorema de Codificación establece que, por cada cadena $x$ tenemos:
 %
 \begin{equation}
 \label{eqF}
 \log \frac{1}{P_U(x)} = K_U(x)
 \end{equation}
 %
-up to an additive constant, whenever $U$ is a {\em universal} prefix Turing machine --by {\em universal} we mean a machine which is capable of simulating every other Turing machine; it can be understood as the underlying (Turing-complete) chosen programming language. It is important to remark that neither $P_U$, nor $K_U$ are computable, which means that such mappings cannot be obtained through effective means. However, for specific (non-universal) machines $M$, one can, indeed, compute both $P_M$ and $K_M$.
+%up to an additive constant, whenever $U$ is a {\em universal} prefix Turing machine --by {\em universal} we mean a machine which is capable of simulating every other Turing machine; it can be understood as the underlying (Turing-complete) chosen programming language. It is important to remark that neither $P_U$, nor $K_U$ are computable, which means that such mappings cannot be obtained through effective means. However, for specific (non-universal) machines $M$, one can, indeed, compute both $P_M$ and $K_M$.
+hasta una constante aditiva, siempre que $U$ sea una Máquina Universal de Turing de prefijo --por {\em Universal} nos referimos a una máquina que es capaz de simular cualquier otra máquina de Turing; puede entenderse como el lenguaje de programación elegido subyacente (Turing-completo)--. Es importante señalar que ni $P_U$, ni $K_U$ son computables, lo que significa que tal mapeo no puede obtenerse por medios efectivos. Sin embargo, para máquinas específicas (no universales) $M$, uno puede --de hecho-- calcular tanto $P_M$ como $K_M$.
 
-\subsection{Testing the Coding Theorem for \boldmath{$\geom$}}
+%\subsection{Testing the Coding Theorem for \boldmath{$\geom$}}
+\subsection{Probando el teorema de codificación para \boldmath{$\geom$}}
 
-Despite the fact that $P_M$ and $K_M$ are defined over a Turing Machine $M$, the reader should note that a LoT is not usually formalized with a Turing Machine, but instead as a programming language with its own syntax of valid programs and semantics of execution, which stipulates how to compute a concept from a program. However, one can understand programming languages as defining an equivalent (not necessarily universal) Turing Machine model, and a LoT as defining its equivalent (not necessarily universal) Turing Machine $\gram$. In short, machines and languages are interchangeable in this context: they both specify the programs/terms, which are symbolic objects that, in turn, describe semantic objects, namely, strings.
+%Despite the fact that $P_M$ and $K_M$ are defined over a Turing Machine $M$, the reader should note that a LoT is not usually formalized with a Turing Machine, but instead as a programming language with its own syntax of valid programs and semantics of execution, which stipulates how to compute a concept from a program. However, one can understand programming languages as defining an equivalent (not necessarily universal) Turing Machine model, and a LoT as defining its equivalent (not necessarily universal) Turing Machine $\gram$. In short, machines and languages are interchangeable in this context: they both specify the programs/terms, which are symbolic objects that, in turn, describe semantic objects, namely, strings.
 
+A pesar de que $P_M$ y $K_M$ están definidas sobre una máquina de Turing $M$, el lector debe tener en cuenta que un LoT no se suele formalizar con una máquina de Turing, sino como un lenguaje de programación con su propia sintaxis de programas válidos y su propia semántica de ejecución que estipula cómo calcular un concepto a partir de un programa válido. Sin embargo, uno puede entender los lenguajes de programación como la definición de una máquina de Turing equivalente (no necesariamente universal), y a un LoT como un lenguaje que define a su equivalente máquina de Turing $\gram$ (no necesariamente universal), En resumen, las máquinas y los lenguajes son intercambiables en este  sentido: ambas especifican los programas / términos, los cuales son objetos simbólicos que --a su vez-- describen objetos semánticos (a saber, cadenas). 
 
-\paragraph{The Kolmogorov complexity relative to \boldmath{$\geom$}}
+%\paragraph{The Kolmogorov complexity relative to \boldmath{$\geom$}}
 
-In \cite{marie2016}, the Minimal Description Length was used to model the combination of productions from the \textit{language of geometry} into concepts by defining a Kolmogorov complexity relative to the {\em language of geometry}, which we denote $K_{\geom}$.
-$K_{\geom}(x)$ is the minimal size of an expression in the grammar of $\geom$ which describes $x$. The formal definition of `size' can be found in the cited work but in short: each of the atomic productions adds a fixed cost of $2$ units; using any of the repetition productions to iterate $n$ times a list of other productions adds the cost of the list, plus $\lfloor \log(n) \rfloor$; and joining two lists with a concatenation costs the same as the sum of the costs of both lists.
+\paragraph{La complejidad de Kolmogorov relativa a \boldmath{$\geom$}:}
+%In \cite{marie2016}, the Minimal Description Length was used to model the combination of productions from the \textit{language of geometry} into concepts by defining a Kolmogorov complexity relative to the {\em language of geometry}, which we denote $K_{\geom}$. $K_{\geom}(x)$ is the minimal size of an expression in the grammar of $\geom$ which describes $x$. The formal definition of `size' can be found in the cited work but in short: each of the atomic productions adds a fixed cost of $2$ units; using any of the repetition productions to iterate $n$ times a list of other productions adds the cost of the list, plus $\lfloor \log(n) \rfloor$; and joining two lists with a concatenation costs the same as the sum of the costs of both lists.
 
-\paragraph{The probability relative to \boldmath{$\geom$}}
-On the other hand, with the Bayesian model specified in this work, we can define $P(x \mid \geom, \theta)$ which is the probability of a string $x$ relative to $\geom$ and its vector of probabilities for each of the productions.
+En \cite{marie2016}, la longitud mínima de descripción (MDL) se utilizó para modelar la combinación de las producciones del \textit{lenguaje de geometría} en conceptos mediante la definición de una complejidad de Kolmogorov relativa al {\em lenguaje de geometría}, la cual denotamos como $K_{\geom}$. $K_{\geom}(x)$ es el tamaño mínimo de una expresión en la gramática de $\geom$ que describe $x$. La definición formal de `tamaño' se puede encontrar en el trabajo citado, pero en resumen: cada una de las producciones atómicas agrega un costo fijo de $2$ unidades; utilizando cualquiera de las producciones de repetición para iterar $n$ veces una lista de otras producciones agrega el costo de esta lista más $\lfloor \log(n) \rfloor$; y unir dos listas con una concatenación cuesta lo mismo que la suma de los costos de ambas listas.
 
-For the sake of simplicity, we will use $P_{\geom}(x)$ to denote $P(x \mid \geom, \theta)$ when $\theta$ is the inferred probability from the observed adult sequences from the experiment.
+%\paragraph{The probability relative to \boldmath{$\geom$}} On the other hand, with the Bayesian model specified in this work, we can define $P(x \mid \geom, \theta)$ which is the probability of a string $x$ relative to $\geom$ and its vector of probabilities for each of the productions.
+
+\paragraph{La probabilidad relativa \boldmath{$\geom$}:} Por otro lado, con el modelo Bayesiano especificado en este trabajo, podemos definir $P(x \mid \geom, \theta)$ que es la probabilidad de una cadena $x$ relativa a $\geom$ y el vector de probabilidades para cada una de las producciones.
+
+%For the sake of simplicity, we will use $P_{\geom}(x)$ to denote $P(x \mid \geom, \theta)$ when $\theta$ is the inferred probability from the observed adult sequences from the experiment.
+En aras de la simplicidad, usaremos $P_{\geom}(x)$ para denotar $P(x \mid \geom, \theta)$ cuando $\theta$ es la probabilidad inferida de las secuencias de adultos observadas en el experimento.
 %
 \begin{eqnarray}
 \label{eqG}
@@ -307,35 +395,48 @@ P_{\geom}(x) &=& P(x \mid \geom, \theta)\\
 &\propto &\sum_{prog} P(x \mid \prog) P(\prog \mid \theta).
 \end{eqnarray}
 %
-Here, we calculate both $P_{\geom}(x)$ and $K_{\geom(x)}$ in an exact way (note that $\geom$, seen as a programming language, is not Turing-complete). In this section, we show an experimental equivalence between such measures which is consistent with the Coding Theorem. We should stress, once more, that the theorem does not predict that this relationship should hold for a specific non-universal Turing Machine.
+
+%Here, we calculate both $P_{\geom}(x)$ and $K_{\geom(x)}$ in an exact way (note that $\geom$, seen as a programming language, is not Turing-complete). In this section, we show an experimental equivalence between such measures which is consistent with the Coding Theorem. We should stress, once more, that the theorem does not predict that this relationship should hold for a specific non-universal Turing Machine.
+
+Aquí, calculamos tanto $P_{\geom}(x)$ como $K_{\geom(x)}$ de una manera exacta (tenga en cuenta que $\geom$, visto como un lenguaje de programación, no es Turing-completo). En esta sección, mostramos un experimento de equivalencia entre tales medidas que es consistente con el Teorema de Codificación. Queremos enfatizar, una vez más, que el teorema no predice que está relación deba mantenerse para una máquina de Turing específica no universal.
 
 
-To calculate $P_{\geom}(x)$ we are not interested in the normalization factor of $P(x \mid \prog) P(\prog \mid \theta)$ because we are just trying to measure the relationship between $P_{\geom}$ and $K_{\geom}$ in terms of the Coding Theorem. Note, however, that calculating $P_{\geom}(x)$ involves calculating all programs that compute each of the sequences as in our previous experiment. To make this tractable we calculated $P_{\geom}(x)$ for 10,000 unique random sequences for each of the possible sequence lengths from the experiment (i.e., up to eight). When the length of the sequence did not allow 10,000 unique combinations, we used all the possible sequences of that length.
+%To calculate $P_{\geom}(x)$ we are not interested in the normalization factor of $P(x \mid \prog) P(\prog \mid \theta)$ because we are just trying to measure the relationship between $P_{\geom}$ and $K_{\geom}$ in terms of the Coding Theorem. Note, however, that calculating $P_{\geom}(x)$ involves calculating all programs that compute each of the sequences as in our previous experiment. To make this tractable we calculated $P_{\geom}(x)$ for 10,000 unique random sequences for each of the possible sequence lengths from the experiment (i.e., up to eight). When the length of the sequence did not allow 10,000 unique combinations, we used all the possible sequences of that length.
 
-\subsection{Coding Theorem Results}
+Para calcular $P_{\geom}(x)$ no nos interesa el factor de normalización de $P(x \mid \prog) P(\prog \mid \theta)$ porque sólo estamos tratando de medir la relación entre $P_{\geom}$ y $K_{\geom}$ en términos del Teorema de Codificación. Sin embargo, tenga en cuenta que el cálculo de $P_{\geom}(x)$ implica calcular todos los programas que computan cada una de las secuencias como en nuestro experimento anterior. Para hacer esto tratable, calculamos $P_{\geom}(x)$ para 10,000 secuencias aleatorias únicas para cada una de las posibles longitudes de las secuencias del experimento (es decir, hasta ocho). Cuando la longitud de la secuencia no permitió 10,000 combinaciones únicas, utilizamos todas las posibles secuencias de esa longitud.
 
-\figref{fig:codR} shows the mean probability $P_{\geom}(x)$ for all sequences $x$ with the same value of $K_{\geom(x)}$ and length between 4 and 8 ($|x| \in \left[4,8 \right]$) for all generated sequences $x$. The data is plotted with a logarithmic scale for the x-axis, illustrating the inverse logarithmic relationship between $K_{\geom}(x)$ and $P_{\geom}(x)$. The fit is very good, with $R^2=.99$, $R^2=.94$, $R^2=.97$, $R^2=.99$ and $R^2=.98$ for \figref{fig:codR}A, \figref{fig:codR}B, \figref{fig:codR}C, \figref{fig:codR}D and \figref{fig:codR}E, respectively.
+%\subsection{Coding Theorem Results}
+\subsection{Resultados del Teorema de Codificación}
+
+%\figref{fig:codR} shows the mean probability $P_{\geom}(x)$ for all sequences $x$ with the same value of $K_{\geom(x)}$ and length between 4 and 8 ($|x| \in \left[4,8 \right]$) for all generated sequences $x$. The data is plotted with a logarithmic scale for the x-axis, illustrating the inverse logarithmic relationship between $K_{\geom}(x)$ and $P_{\geom}(x)$. The fit is very good, with $R^2=.99$, $R^2=.94$, $R^2=.97$, $R^2=.99$ and $R^2=.98$ for \figref{fig:codR}A, \figref{fig:codR}B, \figref{fig:codR}C, \figref{fig:codR}D and \figref{fig:codR}E, respectively.
+
+La \figref{fig:codR} muestra la probabilidad media $P_{\geom}(x)$ para todas las secuencias $x$ con el mismo valor de $K_{\geom(x)}$ y una longitud entre 4 y 8 ($|x| \in \left[4,8 \right]$) para todas las secuencias generadas $x$. Los datos se trazan con una escala logarítmica para el eje x, ilustrando la relación logarítmica inversa entre $K_{\geom}(x)$ y $P_{\geom}(x)$. El ajuste es muy bueno, con $R^2=.99$, $R^2=.94$, $R^2=.97$, $R^2=.99$ y $R^2=.98$ para \figref{fig:codR}A, \figref{fig:codR}B, \figref{fig:codR}C, \figref{fig:codR}D y \figref{fig:codR}E, respectivamente.
 
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.4\textwidth]{Fig6}
-    \caption{{\bf Mean probability $P_{\geom}(x)$.} Mean probability $P_{\geom}(x)$ for all sequences $x$ with the same complexity.
-    Subfigure A: Sequences with $|x| = 4$.
-    Subfigure B: Sequences with $|x| = 5$.
-    Subfigure C: Sequences with $|x| = 6$.
-    Subfigure D: Sequences with $|x| = 7$.
-    Subfigure E: Sequences with $|x| = 8$.}
+    \caption{{\bf Probabilidad media $P_{\geom}(x)$.} Probabilidad media $P_{\geom}(x)$ para todas las secuencias $x$ con la misma complejidad.
+    Subfigura A: Secuencias con $|x| = 4$.
+    Subfigura B: Secuencias con $|x| = 5$.
+    Subfigura C: Secuencias con $|x| = 6$.
+    Subfigura D: Secuencias con $|x| = 7$.
+    Subfigura E: Secuencias con $|x| = 8$.}
     \label{fig:codR}
 \end{figure}
 
-This relationship between the complexity $K_{\geom}$ and the probability $P_{\geom}$ defined for finite sequences in the \textit{language of geometry}, matches the theoretical prediction for infinite sequences in universal languages described in the Coding Theorem. At the same time, it captures the Occam's razor intuition that the simpler sequences one can produce or explain with this language are also the more probable.
+%This relationship between the complexity $K_{\geom}$ and the probability $P_{\geom}$ defined for finite sequences in the \textit{language of geometry}, matches the theoretical prediction for infinite sequences in universal languages described in the Coding Theorem. At the same time, it captures the Occam's razor intuition that the simpler sequences one can produce or explain with this language are also the more probable.
 
-\figref{fig:codK:8} and \figref{fig:codP:8} show the histogram of $P_{\geom}(x)$ and $K_{\geom}(x)$, respectively, for sequences with length = 8 to get a better insight about both measures. The histogram of the rest of the sequence's lengths are included in \nameref{S2_Fig} and \nameref{S3_Fig} for completeness, and they all show the same behavior.
+Esta relación entre la complejidad $K_{\geom}$ y la probabilidad $P_{\geom}$ definidas para secuencias finitas en el \textit{lenguaje de geometría}, coincide con al predicción teórica para secuencias infinitas en lenguajes universales descrita en el Teorema de Codificación. Al mismo tiempo, captura la intuición de la navaja de Ockham por la cual las secuencias más simples que uno puede producir o explicar en este idioma son también las más probables.
+
+%\figref{fig:codK:8} and \figref{fig:codP:8} show the histogram of $P_{\geom}(x)$ and $K_{\geom}(x)$, respectively, for sequences with length = 8 to get a better insight about both measures. The histogram of the rest of the sequence's lengths are included in \nameref{S2_Fig} and \nameref{S3_Fig} for completeness, and they all show the same behavior.
+
+En \figref{fig:codK:8} y \figref{fig:codP:8} se muestra el histograma de $P_{\geom}(x)$ y $K_{\geom}(x)$, respectivamente, para secuencias de longitud = 8 para obtener una mejor idea de ambas distribuciones. El histograma del resto de las longitudes de la secuencia se incluyen en \nameref{S2_Fig} y \nameref{S3_Fig} por completitud, y todos muestran el mismo comportamiento.
 
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.4\textwidth]{Fig7}
-    \caption{{\bf Histogram of complexity $K_{\geom}(x)$.} Histogram of complexity for sequences $x$ with $|x| = 8$.}
+    %\caption{{\bf Histogram of complexity $K_{\geom}(x)$.} Histogram of complexity for sequences $x$ with $|x| = 8$.}
+    \caption{{\bf Histograma de complejidad de $K_{\geom}(x)$.} Histograma de complejidad para secuencias $x$ con $|x| = 8$.}
     \label{fig:codK:8}
 \end{figure}
 
@@ -343,47 +444,65 @@ This relationship between the complexity $K_{\geom}$ and the probability $P_{\ge
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.4\textwidth]{Fig8}
-    \caption{{\bf Histogram of probability $P_{\geom}(x)$.} Histogram of probability for sequences $x$ with $|x| = 8$.}
+    %\caption{{\bf Histogram of probability $P_{\geom}(x)$.} Histogram of probability for sequences $x$ with $|x| = 8$.}
+    \caption{{\bf Histograma de probabilidad $P_{\geom}(x)$.} Histograma de probabilidad para secuencias $x$ con $|x| = 8$.}
     \label{fig:codP:8}
 \end{figure}
 
+%\section{Discussion}
+\section{Discusión}
 
-\section{Discussion}
+%We have presented a Bayesian inference method to select the set of productions for a LoT and test its effectiveness in the domain of a geometrical cognition task. We have shown that this method is useful to distinguish between arbitrary ad-hoc productions and productions that were intuitively selected to mimic human abilities in such domain.
 
-We have presented a Bayesian inference method to select the set of productions for a LoT and test its effectiveness in the domain of a geometrical cognition task. We have shown that this method is useful to distinguish between arbitrary ad-hoc productions and productions that were intuitively selected to mimic human abilities in such domain.
+Hemos presentado un método de inferencia Bayesiano para seleccionar el conjunto de producciones para un LoT y probado su eficacia en el dominio de una tarea de cognición geométrica. Mostramos que este método es útil para distinguir entre producciones ad-hoc arbitrarias y producciones que fueron seleccionadas intuitivamente para imitar las habilidades humanas en ese dominio.
 
-The proposal to use Bayesian models tied to PCFG grammars in a LoT is not new. However, previous work has not used the inferred probabilities to gain more insight about the grammar definition in order to modify it. Instead, it had usually integrated out the production probabilities to better predict the data, and even found that hierarchical priors for grammar productions show no significant differences in prediction results over uniform priors \cite{piantadosi2012bootstrapping,yildirim2015learning}.
+%The proposal to use Bayesian models tied to PCFG grammars in a LoT is not new. However, previous work has not used the inferred probabilities to gain more insight about the grammar definition in order to modify it. Instead, it had usually integrated out the production probabilities to better predict the data, and even found that hierarchical priors for grammar productions show no significant differences in prediction results over uniform priors \cite{piantadosi2012bootstrapping,yildirim2015learning}.
 
-We believe that inferring production probabilities can help prove the adequacy of the grammar, and can further lead to a formal mechanism for selecting the correct set of productions when it is not clear what a proper set should be. Researchers could use a much broader set of productions than what might seem intuitive or relevant for the domain and let the hierarchical Bayesian inference framework select the best subset.
+La propuesta de utilizar modelos Bayesianos vinculados a gramáticas PCFG en un LoT no es nueva. Sin embargo, trabajos anteriores no han utilizado las probabilidades inferidas para obtener más información sobre la definición de la gramática y modificarla. En cambio, han integrado usualmente las probabilidades de producción para predecir mejor los datos e incluso se mostró que el uso de distribuciones a priori jerárquicas para las producciones gramaticales no muestran diferencias significativas en los resultados de predicción que al utilizar distribuciones a priori uniformes \cite{piantadosi2012bootstrapping,yildirim2015learning}.
 
-Selecting a broader set of productions still leaves some arbitrary decisions to be made. However, it can help to build a more robust methodology that --combined with other ideas like testing grammars with different productions for the same task \cite{piantadosi2016logical}-- could provide more evidence of the adequacy of the proposed LoT.
+%We believe that inferring production probabilities can help prove the adequacy of the grammar, and can further lead to a formal mechanism for selecting the correct set of productions when it is not clear what a proper set should be. Researchers could use a much broader set of productions than what might seem intuitive or relevant for the domain and let the hierarchical Bayesian inference framework select the best subset.
 
-Having a principled method for defining grammars in LoTs is a crucial aspect for their success because slightly different grammars can lead to different results, as has been shown in \cite{piantadosi2016logical}.
+Creemos que inferir probabilidades de producción puede ayudar a demostrar lo adecuado de una gramática para un dominio, y puede conducir a un mecanismo formal para seleccionar el conjunto correcto de producciones cuando no está claro cuál debería ser el conjunto correcto. Los investigadores podrían utilizar un conjunto de producciones más amplios que aquellas que parezcan intuitivas o relevantes para el dominio y dejar que la inferencia Bayesiana seleccione el mejor subconjunto.
 
-The experimental data used in this work was designed at \cite{marie2016} to understand how humans encode visuo-spatial sequences as structured expressions. As future research, we plan to perform a specific experiment to test these ideas in a broader range of domains. Additionally, data from more domains is needed to demonstrate if this method could also be used to effectively prove whether different people use different LoT productions as outlined in \figref{fig:adultVsChildren}.
+%Selecting a broader set of productions still leaves some arbitrary decisions to be made. However, it can help to build a more robust methodology that --combined with other ideas like testing grammars with different productions for the same task \cite{piantadosi2016logical}-- could provide more evidence of the adequacy of the proposed LoT.
 
-Finally, we showed an empirical equivalence between the complexity of a sequence in a minimal description length (MDL) model and the probability of the same sequence in a Bayesian inference model which is consistent with the theoretical relationship described in the Coding Theorem. This opens an opportunity to bridge the gap between these two approaches that had been described ad complementary by some authors \cite{mackay2003information}.
+La selección de un conjunto más amplio de producciones todavía deja algunas decisiones arbitrarias por tomar. Sin embargo, puede ayudar a construir una metodología más sólida que --combinada con otras ideas como probar gramáticas con diferentes producciones para la misma tarea \cite{piantadosi2016logical}-- podría proporcionar más evidencia de la idoneidad del LoT propuesto.
 
+%Having a principled method for defining grammars in LoTs is a crucial aspect for their success because slightly different grammars can lead to different results, as has been shown in \cite{piantadosi2016logical}.
 
-\section{Supporting information}
+Tener un método basado en principios para definir gramáticas en LoTs es un aspecto crucial para su éxito porque gramáticas ligeramente diferentes pueden conducir a resultados muy diversos como se ha demostrado en \cite{piantadosi2016logical}.
+
+%The experimental data used in this work was designed at \cite{marie2016} to understand how humans encode visuo-spatial sequences as structured expressions. As future research, we plan to perform a specific experiment to test these ideas in a broader range of domains. Additionally, data from more domains is needed to demonstrate if this method could also be used to effectively prove whether different people use different LoT productions as outlined in \figref{fig:adultVsChildren}.
+
+Los datos experimentales utilizados en este trabajo fueron diseñados en \cite{marie2016} para comprender cómo los humanos codifican secuencias visuoespaciales como expresiones estructuradas. Como investigaciones futuras, debería realizarse experimentos específicos para probar estas ideas en un rango de dominios más amplios. Además, se necesitan aún más experimentos para probar la efectividad del método para ver si permite individualizar las diferencias de las producciones de los LoTs para distintas poblaciones como se describió en \figref{fig:adultVsChildren}.
+
+%Finally, we showed an empirical equivalence between the complexity of a sequence in a minimal description length (MDL) model and the probability of the same sequence in a Bayesian inference model which is consistent with the theoretical relationship described in the Coding Theorem. This opens an opportunity to bridge the gap between these two approaches that had been described ad complementary by some authors \cite{mackay2003information}.
+
+Finalmente, mostramos una equivalencia empírica entre la complejidad de una secuencia en un modelo de longitud de descripción mínima (MDL) y la probabilidad de la misma secuencia en un modelo de inferencia Bayesiano, lo cual es consistente con la relación teórica descrita en el Teorema de Codificación. Esto abre una oportunidad para cerrar la brecha entre estos dos enfoques que han sido descritos como complementarios por algunos autores \cite{mackay2003information}.
+
+%\section{Supporting information}
+\section{Información de soporte}
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=0.8\textwidth]{S1Fig}
-    \caption{\bf{MCMC steps for $\geom$'s productions.} MCMC steps for the rest of $\geom$'s grammar productions.}
+    %\caption{\bf{MCMC steps for $\geom$'s productions.} MCMC steps for the rest of $\geom$'s grammar productions.}
+    \caption{\bf{Pasos de MCMC para las producciones de $\geom$} Pasos de MCMC para el resto de las producciones de la gramática $\geom$}
     \label{S1_Fig}
 \end{figure}
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=0.8\textwidth]{S2Fig}
-    \caption{\bf{Histograms of complexity $K_{\geom}(x)$}. Histograms of  complexity for sequences with length between 4 and 8.}
+    %\caption{\bf{Histograms of complexity $K_{\geom}(x)$}. Histograms of  complexity for sequences with length between 4 and 8.}
+    \caption{\bf{Histogramas de complejidad $K_{\geom}(x)$}. Histogramas de complejidad para secuencias con longitud entre 4 y 8.}
     \label{S2_Fig}
 \end{figure}
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=0.8\textwidth]{S3Fig}
-    \caption{\bf{Histograms of probability $P_{\geom}(x)$}. Histograms of  probability for sequences with length between 4 and 8.}
+    %\caption{\bf{Histograms of probability $P_{\geom}(x)$}. Histograms of  probability for sequences with length between 4 and 8.}
+    \caption{\bf{Histogramas de probabilidad $P_{\geom}(x)$}. Histogramas de probabilidad para secuencias con longitud entre 4 y 8.}
     \label{S3_Fig}
 \end{figure}
