@@ -419,6 +419,10 @@ INPUT papers/behavior_research_methods.aux
 INPUT papers/behavior_research_methods.aux
 INPUT papers/plos_comp_bio.aux
 INPUT papers/plos_comp_bio.aux
+INPUT app_behavior_research_methods.aux
+INPUT app_behavior_research_methods.aux
+INPUT app_behavior_research_methods.aux
+INPUT app_behavior_research_methods.aux
 OUTPUT main.aux
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
@@ -806,8 +810,6 @@ INPUT ./papers/images_behavior_research_methods/results_1_sp.pdf
 INPUT papers/images_behavior_research_methods/results_2_sp.pdf
 INPUT ./papers/images_behavior_research_methods/results_2_sp.pdf
 INPUT ./papers/images_behavior_research_methods/results_2_sp.pdf
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmrc8t.vf
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 OUTPUT papers/plos_comp_bio.aux
 INPUT papers/plos_comp_bio.tex
 INPUT papers/plos_comp_bio.tex
@@ -1376,6 +1378,14 @@ INPUT figuras/manuscript_pcb.pdf
 INPUT ./figuras/manuscript_pcb.pdf
 INPUT figuras/manuscript_pcb.pdf
 INPUT ./figuras/manuscript_pcb.pdf
+OUTPUT app_behavior_research_methods.aux
+INPUT app_behavior_research_methods.tex
+INPUT app_behavior_research_methods.tex
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmrc8t.vf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+OUTPUT app_behavior_research_methods.aux
+INPUT app_behavior_research_methods.tex
+INPUT app_behavior_research_methods.tex
 INPUT main.bbl
 INPUT main.bbl
 INPUT main.aux
@@ -1409,6 +1419,10 @@ INPUT papers/behavior_research_methods.aux
 INPUT papers/behavior_research_methods.aux
 INPUT papers/plos_comp_bio.aux
 INPUT papers/plos_comp_bio.aux
+INPUT app_behavior_research_methods.aux
+INPUT app_behavior_research_methods.aux
+INPUT app_behavior_research_methods.aux
+INPUT app_behavior_research_methods.aux
 INPUT ./main.out
 INPUT ./main.out
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc

@@ -15,11 +15,13 @@ A level-1 auxiliary file: caps/conclusiones.aux
 A level-1 auxiliary file: papers/plos_one_final.aux
 A level-1 auxiliary file: papers/pre_final.aux
 A level-1 auxiliary file: papers/behavior_research_methods.aux
-White space in argument---line 94 of file papers/behavior_research_methods.aux
- : \citation{hoffman2010costs
- :                            }
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: papers/plos_comp_bio.aux
+A level-1 auxiliary file: app_behavior_research_methods.aux
+Already encountered file app_behavior_research_methods.aux
+---line 64 of file main.aux
+ : \@input{app_behavior_research_methods.aux
+ :                                          }
+I'm skipping whatever remains of this command
 The style file: apalike.bst
 Database file #1: biblio.bib
 Warning--I didn't find a database entry for "juslin2003cue"
@@ -27,7 +29,7 @@ Warning--I didn't find a database entry for "juslin2003exemplar"
 Warning--empty journal in russell2002artificial
 You've used 94 entries,
             1935 wiz_defined-function locations,
-            1042 strings with 19197 characters,
+            1043 strings with 19230 characters,
 and the built_in function-call counts, 36839 in all, are:
 = -- 3630
 > -- 1384
