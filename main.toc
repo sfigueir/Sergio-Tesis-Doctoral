@@ -36,33 +36,33 @@
 \contentsline {section}{\numberline {5.3}Discusi\IeC {\'o}n}{16}{section.5.3}
 \contentsline {chapter}{\numberline {6}BORRAR: Validaci\IeC {\'o}n Bayesiana de producciones gramaticales para el lenguaje del pensamiento}{18}{chapter.6}
 \contentsline {section}{\numberline {6.1}Introducci\IeC {\'o}n}{18}{section.6.1}
-\contentsline {section}{\numberline {6.2}Bayesian inference for LoT's productions}{22}{section.6.2}
-\contentsline {section}{\numberline {6.3}The Language of Geometry: $\mathcal Geo$}{26}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}$\mathcal Geo$'s original experiment}{29}{subsection.6.3.1}
-\contentsline {paragraph}{Participants}{29}{section*.7}
-\contentsline {paragraph}{Procedure}{29}{section*.8}
-\contentsline {subsection}{\numberline {6.3.2}Extending $\mathcal Geo$'s grammar}{30}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Inference results for $\mathcal Geo$}{31}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Coding Theorem}{35}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}The formal statement}{36}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Testing the Coding Theorem for \relax \mathversion {bold}{$\mathcal Geo$}}{37}{subsection.6.4.2}
-\contentsline {paragraph}{The Kolmogorov complexity relative to \relax \mathversion {bold}{$\mathcal Geo$}}{37}{section*.14}
-\contentsline {paragraph}{The probability relative to \relax \mathversion {bold}{$\mathcal Geo$}}{37}{section*.15}
-\contentsline {subsection}{\numberline {6.4.3}Coding Theorem Results}{39}{subsection.6.4.3}
-\contentsline {section}{\numberline {6.5}Discussion}{40}{section.6.5}
-\contentsline {section}{\numberline {6.6}Supporting information}{42}{section.6.6}
-\contentsline {chapter}{\numberline {7}BORRAR: Towards a more flexible Language of Thought: Bayesian grammar updates after each concept exposure}{46}{chapter.7}
-\contentsline {section}{\numberline {7.1}Introduction}{46}{section.7.1}
-\contentsline {section}{\numberline {7.2}The logical setting}{50}{section.7.2}
-\contentsline {section}{\numberline {7.3}Experiment}{52}{section.7.3}
-\contentsline {section}{\numberline {7.4}Model-Free Results}{55}{section.7.4}
-\contentsline {section}{\numberline {7.5}Model}{56}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}Static Model}{57}{subsection.7.5.1}
-\contentsline {subsection}{\numberline {7.5.2}Dynamic Model}{59}{subsection.7.5.2}
-\contentsline {section}{\numberline {7.6}Results}{61}{section.7.6}
-\contentsline {section}{\numberline {7.7}Discussion}{66}{section.7.7}
-\contentsline {section}{\numberline {7.8}Conclusion}{68}{section.7.8}
-\contentsline {chapter}{\numberline {8}Un marco l\IeC {\'o}gico para estudiar aprendizaje de conceptos en presencia de explicaciones m\IeC {\'u}ltiples}{69}{chapter.8}
+\contentsline {section}{\numberline {6.2}Inferencia Bayesiana para las producciones del LoT}{22}{section.6.2}
+\contentsline {section}{\numberline {6.3}El lenguaje de geometr\IeC {\'\i }a: $\mathcal Geo$}{26}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Experimento original de $\mathcal Geo$}{29}{subsection.6.3.1}
+\contentsline {paragraph}{Participantes:}{30}{section*.7}
+\contentsline {paragraph}{Procedimiento:}{30}{section*.8}
+\contentsline {subsection}{\numberline {6.3.2}Extendiendo la gram\IeC {\'a}tica de $\mathcal Geo$}{31}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Resultados de inferencia para $\mathcal Geo$}{32}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Teorema de codificaci\IeC {\'o}n}{36}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}La definici\IeC {\'o}n formal}{37}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Probando el teorema de codificaci\IeC {\'o}n para \relax \mathversion {bold}{$\mathcal Geo$}}{38}{subsection.6.4.2}
+\contentsline {paragraph}{La complejidad de Kolmogorov relativa a \relax \mathversion {bold}{$\mathcal Geo$}:}{38}{section*.14}
+\contentsline {paragraph}{La probabilidad relativa \relax \mathversion {bold}{$\mathcal Geo$}:}{39}{section*.15}
+\contentsline {subsection}{\numberline {6.4.3}Resultados del Teorema de Codificaci\IeC {\'o}n}{40}{subsection.6.4.3}
+\contentsline {section}{\numberline {6.5}Discusi\IeC {\'o}n}{41}{section.6.5}
+\contentsline {section}{\numberline {6.6}Informaci\IeC {\'o}n de soporte}{44}{section.6.6}
+\contentsline {chapter}{\numberline {7}BORRAR: Towards a more flexible Language of Thought: Bayesian grammar updates after each concept exposure}{47}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introduction}{47}{section.7.1}
+\contentsline {section}{\numberline {7.2}The logical setting}{51}{section.7.2}
+\contentsline {section}{\numberline {7.3}Experiment}{53}{section.7.3}
+\contentsline {section}{\numberline {7.4}Model-Free Results}{56}{section.7.4}
+\contentsline {section}{\numberline {7.5}Model}{57}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Static Model}{58}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Dynamic Model}{60}{subsection.7.5.2}
+\contentsline {section}{\numberline {7.6}Results}{62}{section.7.6}
+\contentsline {section}{\numberline {7.7}Discussion}{67}{section.7.7}
+\contentsline {section}{\numberline {7.8}Conclusion}{69}{section.7.8}
+\contentsline {chapter}{\numberline {8}Un marco l\IeC {\'o}gico para estudiar aprendizaje de conceptos en presencia de explicaciones m\IeC {\'u}ltiples}{70}{chapter.8}
 \contentsline {section}{\numberline {8.1}Experimento}{6}{section.8.1}
 \contentsline {subsection}{\numberline {8.1.1}Participantes}{6}{subsection.8.1.1}
 \contentsline {subsection}{\numberline {8.1.2}Configuraci\IeC {\'o}n del experimento}{7}{subsection.8.1.2}
@@ -85,13 +85,13 @@
 \contentsline {section}{\numberline {8.3}Resultados}{27}{section.8.3}
 \contentsline {subsection}{\numberline {8.3.1}Hip\IeC {\'o}tesis~\ref {Hip:AndOverOr}}{27}{subsection.8.3.1}
 \contentsline {subsection}{\numberline {8.3.2}Hip\IeC {\'o}tesis \ref {Hip:FeatureBiasStickiness}}{29}{subsection.8.3.2}
-\contentsline {subsection}{\numberline {8.3.3}Hypothesis \ref {Hip:FeatureBiasTimeAdvantage}}{32}{subsection.8.3.3}
-\contentsline {subsection}{\numberline {8.3.4}Hypothesis \ref {Hip:StickinessFeatureOperator}}{32}{subsection.8.3.4}
-\contentsline {subsection}{\numberline {8.3.5}MDL bias}{33}{subsection.8.3.5}
-\contentsline {section}{\numberline {8.4}Discussion}{34}{section.8.4}
-\contentsline {paragraph}{Open Practices Statement.}{39}{section*.50}
-\contentsline {section}{\numberline {.1}Exclusion criteria and data processing}{45}{section.1.Alph0.1}
-\contentsline {section}{\numberline {.2}Pilot}{46}{section.1.Alph0.2}
-\contentsline {section}{\numberline {.3}Technical results}{47}{section.1.Alph0.3}
-\contentsline {chapter}{\numberline {9}BORRAR: A theory of memory for binary sequences: Evidence for a mental compression algorithm in humans}{51}{chapter.9}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{142}{chapter*.51}
+\contentsline {subsection}{\numberline {8.3.3}Hip\IeC {\'o}tesis \ref {Hip:FeatureBiasTimeAdvantage}}{32}{subsection.8.3.3}
+\contentsline {subsection}{\numberline {8.3.4}Hip\IeC {\'o}tesis \ref {Hip:StickinessFeatureOperator}}{33}{subsection.8.3.4}
+\contentsline {subsection}{\numberline {8.3.5}El sesgo de MDL}{34}{subsection.8.3.5}
+\contentsline {section}{\numberline {8.4}Discusi\IeC {\'o}n}{34}{section.8.4}
+\contentsline {paragraph}{Declaraci\IeC {\'o}n de pr\IeC {\'a}ctiacas abiertas.}{40}{section*.53}
+\contentsline {section}{\numberline {.1}Exclusion criteria and data processing}{46}{section.1.Alph0.1}
+\contentsline {section}{\numberline {.2}Pilot}{47}{section.1.Alph0.2}
+\contentsline {section}{\numberline {.3}Technical results}{48}{section.1.Alph0.3}
+\contentsline {chapter}{\numberline {9}BORRAR: A theory of memory for binary sequences: Evidence for a mental compression algorithm in humans}{52}{chapter.9}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{143}{chapter*.54}

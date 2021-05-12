@@ -623,6 +623,8 @@ INPUT ./figuras/plosone/Fig3-eps-converted-to.pdf
 INPUT ./figuras/plosone/Fig3-eps-converted-to.pdf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT figuras/plosone/Fig4.eps
 INPUT ./figuras/plosone/Fig4.eps
 INPUT ./figuras/plosone/Fig4.eps
@@ -632,8 +634,6 @@ INPUT ./figuras/plosone/Fig4.eps
 INPUT ./figuras/plosone/Fig4-eps-converted-to.pdf
 INPUT ./figuras/plosone/Fig4-eps-converted-to.pdf
 INPUT ./figuras/plosone/Fig4-eps-converted-to.pdf
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT figuras/plosone/Fig5.eps
 INPUT ./figuras/plosone/Fig5.eps
 INPUT ./figuras/plosone/Fig5.eps

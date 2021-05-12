@@ -15,6 +15,10 @@ A level-1 auxiliary file: caps/conclusiones.aux
 A level-1 auxiliary file: papers/plos_one_final.aux
 A level-1 auxiliary file: papers/pre_final.aux
 A level-1 auxiliary file: papers/behavior_research_methods.aux
+White space in argument---line 94 of file papers/behavior_research_methods.aux
+ : \citation{hoffman2010costs
+ :                            }
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: papers/plos_comp_bio.aux
 The style file: apalike.bst
 Database file #1: biblio.bib
@@ -62,4 +66,4 @@ warning$ -- 1
 while$ -- 328
 width$ -- 0
 write$ -- 1211
-(There were 3 warnings)
+(There was 1 error message)
