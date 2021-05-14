@@ -16,7 +16,7 @@
 \usepackage{subcaption}
 \usepackage{hyperref}
 \usepackage{glossaries}
-\usepackage{amsmath,amssymb}
+\usepackage{amsmath,amssymb,amsthm}
 
 
 %PAPER PLOS ONE
@@ -60,6 +60,13 @@
 \usepackage{pdfpages}
 
 \begin{document}
+\theoremstyle{definition}\newtheorem{definicion}[theorem]{Definición}
+\theoremstyle{theorem}\newtheorem{teorema}[theorem]{Teorema}
+\theoremstyle{theorem}\newtheorem{corolario}[theorem]{Corolario}
+\theoremstyle{theorem}\newtheorem{proposicion}[theorem]{Proposición}
+\theoremstyle{theorem}\newtheorem{lema}[theorem]{Lema}
+\theoremstyle{theorem}\newtheorem{hecho}[theorem]{Hecho}
+
 
 \newgeometry{top=30mm, bottom=10mm} 
     \include{portada}
@@ -91,7 +98,6 @@
     \include{papers/behavior_research_methods}
     \include{papers/plos_comp_bio}
     \appendix
-    \chapter{(Capítulo \ref{chapter:BRM})}
     \include{app_behavior_research_methods}
     \bibliographystyle{apalike}
     \bibliography{biblio}

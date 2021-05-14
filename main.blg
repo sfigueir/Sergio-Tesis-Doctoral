@@ -17,11 +17,6 @@ A level-1 auxiliary file: papers/pre_final.aux
 A level-1 auxiliary file: papers/behavior_research_methods.aux
 A level-1 auxiliary file: papers/plos_comp_bio.aux
 A level-1 auxiliary file: app_behavior_research_methods.aux
-Already encountered file app_behavior_research_methods.aux
----line 64 of file main.aux
- : \@input{app_behavior_research_methods.aux
- :                                          }
-I'm skipping whatever remains of this command
 The style file: apalike.bst
 Database file #1: biblio.bib
 Warning--I didn't find a database entry for "juslin2003cue"
@@ -68,4 +63,4 @@ warning$ -- 1
 while$ -- 328
 width$ -- 0
 write$ -- 1211
-(There was 1 error message)
+(There were 3 warnings)

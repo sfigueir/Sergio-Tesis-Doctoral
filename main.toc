@@ -49,7 +49,7 @@
 \contentsline {paragraph}{La complejidad de Kolmogorov relativa a \relax \mathversion {bold}{$\mathcal Geo$}:}{38}{section*.14}
 \contentsline {paragraph}{La probabilidad relativa \relax \mathversion {bold}{$\mathcal Geo$}:}{39}{section*.15}
 \contentsline {subsection}{\numberline {6.4.3}Resultados del Teorema de Codificaci\IeC {\'o}n}{40}{subsection.6.4.3}
-\contentsline {section}{\numberline {6.5}Discusi\IeC {\'o}n}{41}{section.6.5}
+\contentsline {section}{\numberline {6.5}Discusi\IeC {\'o}n}{42}{section.6.5}
 \contentsline {section}{\numberline {6.6}Informaci\IeC {\'o}n de soporte}{44}{section.6.6}
 \contentsline {chapter}{\numberline {7}BORRAR: Towards a more flexible Language of Thought: Bayesian grammar updates after each concept exposure}{47}{chapter.7}
 \contentsline {section}{\numberline {7.1}Introduction}{47}{section.7.1}
@@ -68,7 +68,7 @@
 \contentsline {subsection}{\numberline {8.1.2}Configuraci\IeC {\'o}n del experimento}{7}{subsection.8.1.2}
 \contentsline {subsection}{\numberline {8.1.3}Ensayos experimentales}{12}{subsection.8.1.3}
 \contentsline {section}{\numberline {8.2}Metodolog\IeC {\'\i }a}{16}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Preregistraci\IeC {\'o}n y datos}{16}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.1}Pre-registro y datos}{16}{subsection.8.2.1}
 \contentsline {subsection}{\numberline {8.2.2}Detalles de representaci\IeC {\'o}n}{17}{subsection.8.2.2}
 \contentsline {paragraph}{Caracter\IeC {\'\i }sticas\textemdash variables proposicionales}{17}{section*.34}
 \contentsline {paragraph}{Elementos (cajas)\textemdash valuaciones.}{18}{section*.36}
@@ -91,12 +91,8 @@
 \contentsline {section}{\numberline {8.4}Discusi\IeC {\'o}n}{34}{section.8.4}
 \contentsline {paragraph}{Declaraci\IeC {\'o}n de pr\IeC {\'a}cticas abiertas.}{40}{section*.53}
 \contentsline {chapter}{\numberline {9}BORRAR: A theory of memory for binary sequences: Evidence for a mental compression algorithm in humans}{45}{chapter.9}
-\contentsline {chapter}{\numberline {A}Ap\IeC {\'e}ndices del cap\IeC {\'\i }tulo \ref {chapter:BRM}}{125}{appendix.Alph1}
-\contentsline {section}{\numberline {B.1}Exclusion criteria and data processing}{133}{section.Alph2.1}
-\contentsline {section}{\numberline {B.2}Pilot}{134}{section.Alph2.2}
-\contentsline {section}{\numberline {B.3}Technical results}{135}{section.Alph2.3}
-\contentsline {chapter}{\numberline {B}Ap\IeC {\'e}ndices del cap\IeC {\'\i }tulo \ref {chapter:BRM}}{132}{appendix.Alph2}
-\contentsline {section}{\numberline {B.1}Exclusion criteria and data processing}{133}{section.Alph2.1}
-\contentsline {section}{\numberline {B.2}Pilot}{134}{section.Alph2.2}
-\contentsline {section}{\numberline {B.3}Technical results}{135}{section.Alph2.3}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{150}{appendix*.54}
+\contentsline {chapter}{\numberline {A}(Cap\IeC {\'\i }tulo \ref {chapter:BRM})}{125}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Criterios de exclusi\IeC {\'o}n y tratamiento de datos}{125}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Prueba piloto}{126}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Resultados t\IeC {\'e}cnicos}{127}{section.Alph1.3}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{143}{appendix*.54}
