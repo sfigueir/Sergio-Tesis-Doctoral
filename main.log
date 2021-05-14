@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.15)  14 MAY 2021 17:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.15)  14 MAY 2021 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4894,14 +4894,12 @@ been already used, duplicate ignored
                    \relax 
 l.10 \end{abstract}
                     [1]
-<papers/images_behavior_research_methods/intro_notation_sp.pdf, id=2009, 666.49
-pt x 144.54pt>
-File: papers/images_behavior_research_methods/intro_notation_sp.pdf Graphic fil
-e (type pdf)
+<figuras/../figuras/brm/intro_notation_sp.pdf, id=2009, 666.49pt x 144.54pt>
+File: figuras/../figuras/brm/intro_notation_sp.pdf Graphic file (type pdf)
 
-<use papers/images_behavior_research_methods/intro_notation_sp.pdf>
-Package pdftex.def Info: papers/images_behavior_research_methods/intro_notation
-_sp.pdf used on input line 23.
+<use figuras/../figuras/brm/intro_notation_sp.pdf>
+Package pdftex.def Info: figuras/../figuras/brm/intro_notation_sp.pdf used on i
+nput line 23.
 (pdftex.def)             Requested size: 399.89708pt x 86.72466pt.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 27.
@@ -4962,7 +4960,7 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.36 
-      [2 <./papers/images_behavior_research_methods/intro_notation_sp.pdf>]
+      [2 <./figuras/../figuras/brm/intro_notation_sp.pdf>]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 36.
 Package babel Info: Redefining spanish shorthand >>
@@ -5119,13 +5117,12 @@ been already used, duplicate ignored
                    \relax 
 l.85 
       [6]
-<papers/images_behavior_research_methods/twoconcepts3.pdf, id=2148, 465.74pt x 
-339.2675pt>
-File: papers/images_behavior_research_methods/twoconcepts3.pdf Graphic file (ty
-pe pdf)
- <use papers/images_behavior_research_methods/twoconcepts3.pdf>
-Package pdftex.def Info: papers/images_behavior_research_methods/twoconcepts3.p
-df used on input line 89.
+<figuras/../figuras/brm/twoconcepts3.pdf, id=2148, 465.74pt x 339.2675pt>
+File: figuras/../figuras/brm/twoconcepts3.pdf Graphic file (type pdf)
+
+<use figuras/../figuras/brm/twoconcepts3.pdf>
+Package pdftex.def Info: figuras/../figuras/brm/twoconcepts3.pdf used on input 
+line 89.
 (pdftex.def)             Requested size: 302.72742pt x 220.52126pt.
 LaTeX Font Info:    Try loading font information for T1+phv on input line 98.
 
@@ -5137,14 +5134,12 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<papers/images_behavior_research_methods/experimentscheme2_sp.pdf, id=2154, 629
-.35126pt x 497.86pt>
-File: papers/images_behavior_research_methods/experimentscheme2_sp.pdf Graphic 
-file (type pdf)
-
-<use papers/images_behavior_research_methods/experimentscheme2_sp.pdf>
-Package pdftex.def Info: papers/images_behavior_research_methods/experimentsche
-me2_sp.pdf used on input line 101.
+<figuras/../figuras/brm/experimentscheme2_sp.pdf, id=2154, 629.35126pt x 497.86
+pt>
+File: figuras/../figuras/brm/experimentscheme2_sp.pdf Graphic file (type pdf)
+ <use figuras/../figuras/brm/experimentscheme2_sp.pdf>
+Package pdftex.def Info: figuras/../figuras/brm/experimentscheme2_sp.pdf used o
+n input line 101.
 (pdftex.def)             Requested size: 440.54288pt x 348.49962pt.
 
 Overfull \hbox (11.19078pt too wide) in paragraph at lines 101--102
@@ -5210,7 +5205,7 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.108 
-       [8 <./papers/images_behavior_research_methods/twoconcepts3.pdf>]
+       [8 <./figuras/../figuras/brm/twoconcepts3.pdf>]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 119.
 Package babel Info: Redefining spanish shorthand >>
@@ -5562,26 +5557,23 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.17}) has
                    \relax 
 l.292 
        [17]
-<papers/images_behavior_research_methods/Features8.png, id=2306, 97.8054pt x 21
-.4401pt>
-File: papers/images_behavior_research_methods/Features8.png Graphic file (type 
-png)
- <use papers/images_behavior_research_methods/Features8.png>
-Package pdftex.def Info: papers/images_behavior_research_methods/Features8.png 
-used on input line 300.
+<figuras/../figuras/brm/Features8.png, id=2306, 97.8054pt x 21.4401pt>
+File: figuras/../figuras/brm/Features8.png Graphic file (type png)
+
+<use figuras/../figuras/brm/Features8.png>
+Package pdftex.def Info: figuras/../figuras/brm/Features8.png used on input lin
+e 300.
 (pdftex.def)             Requested size: 195.61029pt x 42.88007pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+<figuras/../figuras/brm/BordeNeutro.PNG, id=2309, 164.86594pt x 165.61874pt>
+File: figuras/../figuras/brm/BordeNeutro.PNG Graphic file (type png)
 
-<papers/images_behavior_research_methods/BordeNeutro.PNG, id=2309, 164.86594pt 
-x 165.61874pt>
-File: papers/images_behavior_research_methods/BordeNeutro.PNG Graphic file (typ
-e png)
- <use papers/images_behavior_research_methods/BordeNeutro.PNG>
-Package pdftex.def Info: papers/images_behavior_research_methods/BordeNeutro.PN
-G used on input line 317.
+<use figuras/../figuras/brm/BordeNeutro.PNG>
+Package pdftex.def Info: figuras/../figuras/brm/BordeNeutro.PNG used on input l
+ine 317.
 (pdftex.def)             Requested size: 98.9203pt x 99.37201pt.
 
 
@@ -5617,13 +5609,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.18}) has
                    \relax 
 l.328 
        [18]
-<papers/images_behavior_research_methods/Learning.PNG, id=2317, 1108.8928pt x 3
-35.00156pt>
-File: papers/images_behavior_research_methods/Learning.PNG Graphic file (type p
-ng)
- <use papers/images_behavior_research_methods/Learning.PNG>
-Package pdftex.def Info: papers/images_behavior_research_methods/Learning.PNG u
-sed on input line 331.
+<figuras/../figuras/brm/Learning.PNG, id=2317, 1108.8928pt x 335.00156pt>
+File: figuras/../figuras/brm/Learning.PNG Graphic file (type png)
+
+<use figuras/../figuras/brm/Learning.PNG>
+Package pdftex.def Info: figuras/../figuras/brm/Learning.PNG used on input line
+ 331.
 (pdftex.def)             Requested size: 388.1183pt x 117.25229pt.
 
 
@@ -5858,28 +5849,26 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 459.
 
-<papers/images_behavior_research_methods/SelectionSeparadosIguales.png, id=2368
-, 255.95625pt x 109.91063pt>
-File: papers/images_behavior_research_methods/SelectionSeparadosIguales.png Gra
-phic file (type png)
-
-<use papers/images_behavior_research_methods/SelectionSeparadosIguales.png>
-Package pdftex.def Info: papers/images_behavior_research_methods/SelectionSepar
-adosIguales.png used on input line 466.
+<figuras/../figuras/brm/SelectionSeparadosIguales.png, id=2368, 255.95625pt x 1
+09.91063pt>
+File: figuras/../figuras/brm/SelectionSeparadosIguales.png Graphic file (type p
+ng)
+ <use figuras/../figuras/brm/SelectionSeparadosIguales.png>
+Package pdftex.def Info: figuras/../figuras/brm/SelectionSeparadosIguales.png u
+sed on input line 466.
 (pdftex.def)             Requested size: 153.57492pt x 65.94687pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<papers/images_behavior_research_methods/FeedBack2SeleccionParcial.PNG, id=2370
-, 329.73187pt x 219.82124pt>
-File: papers/images_behavior_research_methods/FeedBack2SeleccionParcial.PNG Gra
-phic file (type png)
-
-<use papers/images_behavior_research_methods/FeedBack2SeleccionParcial.PNG>
-Package pdftex.def Info: papers/images_behavior_research_methods/FeedBack2Selec
-cionParcial.PNG used on input line 479.
+<figuras/../figuras/brm/FeedBack2SeleccionParcial.PNG, id=2370, 329.73187pt x 2
+19.82124pt>
+File: figuras/../figuras/brm/FeedBack2SeleccionParcial.PNG Graphic file (type p
+ng)
+ <use figuras/../figuras/brm/FeedBack2SeleccionParcial.PNG>
+Package pdftex.def Info: figuras/../figuras/brm/FeedBack2SeleccionParcial.PNG u
+sed on input line 479.
 (pdftex.def)             Requested size: 164.86552pt x 109.91034pt.
 
 
@@ -6175,22 +6164,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.30}) has
                    \relax 
 l.556 
        [30]
-<papers/images_behavior_research_methods/results_1_sp.pdf, id=2419, 913.4125pt 
-x 301.125pt>
-File: papers/images_behavior_research_methods/results_1_sp.pdf Graphic file (ty
-pe pdf)
- <use papers/images_behavior_research_methods/results_1_sp.pdf>
-Package pdftex.def Info: papers/images_behavior_research_methods/results_1_sp.p
-df used on input line 563.
+<figuras/../figuras/brm/results_1_sp.pdf, id=2419, 913.4125pt x 301.125pt>
+File: figuras/../figuras/brm/results_1_sp.pdf Graphic file (type pdf)
+
+<use figuras/../figuras/brm/results_1_sp.pdf>
+Package pdftex.def Info: figuras/../figuras/brm/results_1_sp.pdf used on input 
+line 563.
 (pdftex.def)             Requested size: 365.35854pt x 120.44786pt.
 
-<papers/images_behavior_research_methods/results_2_sp.pdf, id=2420, 913.4125pt 
-x 301.125pt>
-File: papers/images_behavior_research_methods/results_2_sp.pdf Graphic file (ty
-pe pdf)
- <use papers/images_behavior_research_methods/results_2_sp.pdf>
-Package pdftex.def Info: papers/images_behavior_research_methods/results_2_sp.p
-df used on input line 574.
+<figuras/../figuras/brm/results_2_sp.pdf, id=2420, 913.4125pt x 301.125pt>
+File: figuras/../figuras/brm/results_2_sp.pdf Graphic file (type pdf)
+
+<use figuras/../figuras/brm/results_2_sp.pdf>
+Package pdftex.def Info: figuras/../figuras/brm/results_2_sp.pdf used on input 
+line 574.
 (pdftex.def)             Requested size: 456.70514pt x 150.56212pt.
 
 Overfull \hbox (27.35304pt too wide) in paragraph at lines 574--575
@@ -6615,8 +6602,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.41}) has
 <to be read again> 
                    \relax 
 l.98 ...\include{papers/behavior_research_methods}
-                                                   [41 <./papers/images_behavio
-r_research_methods/experimentscheme2_sp.pdf>]
+                                                   [41 <./figuras/../figuras/br
+m/experimentscheme2_sp.pdf>]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 98.
 Package babel Info: Redefining spanish shorthand >>
@@ -6646,9 +6633,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.42}) has
 <to be read again> 
                    \relax 
 l.98 ...\include{papers/behavior_research_methods}
-                                                   [42 <./papers/images_behavio
-r_research_methods/Features8.png> <./papers/images_behavior_research_methods/Bo
-rdeNeutro.PNG> <./papers/images_behavior_research_methods/Learning.PNG>]
+                                                   [42 <./figuras/../figuras/br
+m/Features8.png> <./figuras/../figuras/brm/BordeNeutro.PNG> <./figuras/../figur
+as/brm/Learning.PNG>]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 98.
 Package babel Info: Redefining spanish shorthand >>
@@ -6678,9 +6665,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.43}) has
 <to be read again> 
                    \relax 
 l.98 ...\include{papers/behavior_research_methods}
-                                                   [43 <./papers/images_behavio
-r_research_methods/SelectionSeparadosIguales.png> <./papers/images_behavior_res
-earch_methods/FeedBack2SeleccionParcial.PNG>]
+                                                   [43 <./figuras/../figuras/br
+m/SelectionSeparadosIguales.png> <./figuras/../figuras/brm/FeedBack2SeleccionPa
+rcial.PNG>]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 98.
 Package babel Info: Redefining spanish shorthand >>
@@ -6710,12 +6697,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.44}) has
 <to be read again> 
                    \relax 
 l.98 ...\include{papers/behavior_research_methods}
-                                                   [44 <./papers/images_behavio
-r_research_methods/results_1_sp.pdf> <./papers/images_behavior_research_methods
-/results_2_sp.pdf>]
+                                                   [44 <./figuras/../figuras/br
+m/results_1_sp.pdf> <./figuras/../figuras/brm/results_2_sp.pdf>]
 \openout2 = `papers/plos_comp_bio.aux'.
 
- (./papers/plos_comp_bio.tex
+
+(./papers/plos_comp_bio.tex
 Cap\'{\i }tulo 9.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1.
@@ -10995,9 +10982,9 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 32468 strings out of 493089
- 594391 string characters out of 6134841
- 812908 words of memory out of 5000000
+ 32469 strings out of 493089
+ 593709 string characters out of 6134841
+ 812891 words of memory out of 5000000
  34321 multiletter control sequences out of 15000+600000
  122497 words of font info for 352 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -11081,7 +11068,7 @@ r/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/201
 5/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (224 pages, 5803830 bytes).
+Output written on main.pdf (224 pages, 5803754 bytes).
 PDF statistics:
  3751 PDF objects out of 4296 (max. 8388607)
  2831 compressed objects within 29 object streams
