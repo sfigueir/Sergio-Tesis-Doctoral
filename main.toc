@@ -91,7 +91,7 @@
 \contentsline {section}{\numberline {8.4}Discusi\IeC {\'o}n}{34}{section.8.4}
 \contentsline {paragraph}{Declaraci\IeC {\'o}n de pr\IeC {\'a}cticas abiertas.}{40}{section*.56}
 \contentsline {chapter}{\numberline {9}BORRAR: A theory of memory for binary sequences: Evidence for a mental compression algorithm in humans}{45}{chapter.9}
-\contentsline {chapter}{\numberline {A}(Cap\IeC {\'\i }tulo \ref {chapter:BRM})}{125}{appendix.Alph1}
+\contentsline {chapter}{\numberline {A}Ap\IeC {\'e}ndice del Cap\IeC {\'\i }tulo \ref {chapter:BRM}}{125}{appendix.Alph1}
 \contentsline {section}{\numberline {A.1}Criterios de exclusi\IeC {\'o}n y tratamiento de datos}{125}{section.Alph1.1}
 \contentsline {section}{\numberline {A.2}Prueba piloto}{126}{section.Alph1.2}
 \contentsline {section}{\numberline {A.3}Resultados t\IeC {\'e}cnicos}{127}{section.Alph1.3}
