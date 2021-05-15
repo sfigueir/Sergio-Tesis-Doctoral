@@ -1,9 +1,9 @@
-x
+
 %\section*{Abstract}
 %Probabilistic proposals of Language of Thoughts (LoTs) can explain learning across different domains as statistical inference over a compositionally structured hypothesis space. While frameworks may differ on how a LoT may be implemented computationally, they all share the property that they are built from a set of atomic symbols and rules by which these symbols can be combined.
 %In this work we propose an extra validation step for the set of atomic productions defined by the experimenter. It starts by expanding the defined LoT grammar for the cognitive domain with a broader set of arbitrary productions and then uses Bayesian inference to prune the productions from the experimental data. The result allows the researcher to validate that the resulting grammar still matches the intuitive grammar chosen for the domain. We then test this method in the \textit{language of geometry}, a specific LoT model for geometrical sequence learning. Finally, despite the fact of the geometrical LoT not being a universal (i.e. Turing-complete) language, we show an empirical relation between a sequence's {\em probability} and its {\em complexity} consistent with the theoretical relationship for universal languages described by Levin's Coding Theorem.
 
-\chapter{BORRAR: Validación Bayesiana de producciones gramaticales para el lenguaje del pensamiento}
+\chapter{BORRAR: Validación Bayesiana de producciones gramaticales para el lenguaje del pensamiento}\label{chapter:PO}
 
 \section{Introducción}
 
@@ -480,29 +480,3 @@ Los datos experimentales utilizados en este trabajo fueron diseñados en \cite{m
 
 Finalmente, mostramos una equivalencia empírica entre la complejidad de una secuencia en un modelo de longitud de descripción mínima (MDL) y la probabilidad de la misma secuencia en un modelo de inferencia Bayesiano, lo cual es consistente con la relación teórica descrita en el Teorema de Codificación. Esto abre una oportunidad para cerrar la brecha entre estos dos enfoques que han sido descritos como complementarios por algunos autores \cite{mackay2003information}.
 
-%\section{Supporting information}
-\section{Información de soporte}
-
-\begin{figure}[htpb]
-    \centering
-    \includegraphics[width=0.8\textwidth]{S1Fig}
-    %\caption{\bf{MCMC steps for $\geom$'s productions.} MCMC steps for the rest of $\geom$'s grammar productions.}
-    \caption{\bf{Pasos de MCMC para las producciones de $\geom$} Pasos de MCMC para el resto de las producciones de la gramática $\geom$}
-    \label{S1_Fig}
-\end{figure}
-
-\begin{figure}[htpb]
-    \centering
-    \includegraphics[width=0.8\textwidth]{S2Fig}
-    %\caption{\bf{Histograms of complexity $K_{\geom}(x)$}. Histograms of  complexity for sequences with length between 4 and 8.}
-    \caption{\bf{Histogramas de complejidad $K_{\geom}(x)$}. Histogramas de complejidad para secuencias con longitud entre 4 y 8.}
-    \label{S2_Fig}
-\end{figure}
-
-\begin{figure}[htpb]
-    \centering
-    \includegraphics[width=0.8\textwidth]{S3Fig}
-    %\caption{\bf{Histograms of probability $P_{\geom}(x)$}. Histograms of  probability for sequences with length between 4 and 8.}
-    \caption{\bf{Histogramas de probabilidad $P_{\geom}(x)$}. Histogramas de probabilidad para secuencias con longitud entre 4 y 8.}
-    \label{S3_Fig}
-\end{figure}

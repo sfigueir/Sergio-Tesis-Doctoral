@@ -45,42 +45,43 @@
 \BOOKMARK [2][-]{subsection.6.4.2}{Probando el teorema de codificaci\363n para Geo}{section.6.4}% 45
 \BOOKMARK [2][-]{subsection.6.4.3}{Resultados del Teorema de Codificaci\363n}{section.6.4}% 46
 \BOOKMARK [1][-]{section.6.5}{Discusi\363n}{chapter.6}% 47
-\BOOKMARK [1][-]{section.6.6}{Informaci\363n de soporte}{chapter.6}% 48
-\BOOKMARK [0][-]{chapter.7}{BORRAR: Towards a more flexible Language of Thought: Bayesian grammar updates after each concept exposure}{}% 49
-\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 50
-\BOOKMARK [1][-]{section.7.2}{The logical setting}{chapter.7}% 51
-\BOOKMARK [1][-]{section.7.3}{Experiment}{chapter.7}% 52
-\BOOKMARK [1][-]{section.7.4}{Model-Free Results}{chapter.7}% 53
-\BOOKMARK [1][-]{section.7.5}{Model}{chapter.7}% 54
-\BOOKMARK [2][-]{subsection.7.5.1}{Static Model}{section.7.5}% 55
-\BOOKMARK [2][-]{subsection.7.5.2}{Dynamic Model}{section.7.5}% 56
-\BOOKMARK [1][-]{section.7.6}{Results}{chapter.7}% 57
-\BOOKMARK [1][-]{section.7.7}{Discussion}{chapter.7}% 58
-\BOOKMARK [1][-]{section.7.8}{Conclusion}{chapter.7}% 59
-\BOOKMARK [0][-]{chapter.8}{Un marco l\363gico para estudiar aprendizaje de conceptos en presencia de explicaciones m\372ltiples}{}% 60
-\BOOKMARK [1][-]{section.8.1}{Experimento}{chapter.8}% 61
-\BOOKMARK [2][-]{subsection.8.1.1}{Participantes}{section.8.1}% 62
-\BOOKMARK [2][-]{subsection.8.1.2}{Configuraci\363n del experimento}{section.8.1}% 63
-\BOOKMARK [2][-]{subsection.8.1.3}{Ensayos experimentales}{section.8.1}% 64
-\BOOKMARK [1][-]{section.8.2}{Metodolog\355a}{chapter.8}% 65
-\BOOKMARK [2][-]{subsection.8.2.1}{Pre-registro y datos}{section.8.2}% 66
-\BOOKMARK [2][-]{subsection.8.2.2}{Detalles de representaci\363n}{section.8.2}% 67
-\BOOKMARK [2][-]{subsection.8.2.3}{Detalles de la estructura del experimento}{section.8.2}% 68
-\BOOKMARK [3][-]{subsubsection.8.2.3.1}{Introducci\363n y explicaci\363n}{subsection.8.2.3}% 69
-\BOOKMARK [3][-]{subsubsection.8.2.3.2}{La fase de aprendizaje}{subsection.8.2.3}% 70
-\BOOKMARK [3][-]{subsubsection.8.2.3.3}{La fase de entrenamiento\205feedback}{subsection.8.2.3}% 71
-\BOOKMARK [3][-]{subsubsection.8.2.3.4}{La fase de generalizaci\363n}{subsection.8.2.3}% 72
-\BOOKMARK [2][-]{subsection.8.2.4}{Notas sobre el dise\361o del experimento}{section.8.2}% 73
-\BOOKMARK [1][-]{section.8.3}{Resultados}{chapter.8}% 74
-\BOOKMARK [2][-]{subsection.8.3.1}{Hip\363tesis I}{section.8.3}% 75
-\BOOKMARK [2][-]{subsection.8.3.2}{Hip\363tesis II}{section.8.3}% 76
-\BOOKMARK [2][-]{subsection.8.3.3}{Hip\363tesis III}{section.8.3}% 77
-\BOOKMARK [2][-]{subsection.8.3.4}{Hip\363tesis IV}{section.8.3}% 78
-\BOOKMARK [2][-]{subsection.8.3.5}{El sesgo de MDL}{section.8.3}% 79
-\BOOKMARK [1][-]{section.8.4}{Discusi\363n}{chapter.8}% 80
-\BOOKMARK [0][-]{chapter.9}{BORRAR: A theory of memory for binary sequences: Evidence for a mental compression algorithm in humans}{}% 81
-\BOOKMARK [0][-]{appendix.Alph1}{Ap\351ndice del Cap\355tulo 8}{}% 82
-\BOOKMARK [1][-]{section.Alph1.1}{Criterios de exclusi\363n y tratamiento de datos}{appendix.Alph1}% 83
-\BOOKMARK [1][-]{section.Alph1.2}{Prueba piloto}{appendix.Alph1}% 84
-\BOOKMARK [1][-]{section.Alph1.3}{Resultados t\351cnicos}{appendix.Alph1}% 85
-\BOOKMARK [0][-]{appendix*.60}{Bibliograf\355a}{}% 86
+\BOOKMARK [0][-]{chapter.7}{BORRAR: Towards a more flexible Language of Thought: Bayesian grammar updates after each concept exposure}{}% 48
+\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 49
+\BOOKMARK [1][-]{section.7.2}{The logical setting}{chapter.7}% 50
+\BOOKMARK [1][-]{section.7.3}{Experiment}{chapter.7}% 51
+\BOOKMARK [1][-]{section.7.4}{Model-Free Results}{chapter.7}% 52
+\BOOKMARK [1][-]{section.7.5}{Model}{chapter.7}% 53
+\BOOKMARK [2][-]{subsection.7.5.1}{Static Model}{section.7.5}% 54
+\BOOKMARK [2][-]{subsection.7.5.2}{Dynamic Model}{section.7.5}% 55
+\BOOKMARK [1][-]{section.7.6}{Results}{chapter.7}% 56
+\BOOKMARK [1][-]{section.7.7}{Discussion}{chapter.7}% 57
+\BOOKMARK [1][-]{section.7.8}{Conclusion}{chapter.7}% 58
+\BOOKMARK [0][-]{chapter.8}{Un marco l\363gico para estudiar aprendizaje de conceptos en presencia de explicaciones m\372ltiples}{}% 59
+\BOOKMARK [1][-]{section.8.1}{Experimento}{chapter.8}% 60
+\BOOKMARK [2][-]{subsection.8.1.1}{Participantes}{section.8.1}% 61
+\BOOKMARK [2][-]{subsection.8.1.2}{Configuraci\363n del experimento}{section.8.1}% 62
+\BOOKMARK [2][-]{subsection.8.1.3}{Ensayos experimentales}{section.8.1}% 63
+\BOOKMARK [1][-]{section.8.2}{Metodolog\355a}{chapter.8}% 64
+\BOOKMARK [2][-]{subsection.8.2.1}{Pre-registro y datos}{section.8.2}% 65
+\BOOKMARK [2][-]{subsection.8.2.2}{Detalles de representaci\363n}{section.8.2}% 66
+\BOOKMARK [2][-]{subsection.8.2.3}{Detalles de la estructura del experimento}{section.8.2}% 67
+\BOOKMARK [3][-]{subsubsection.8.2.3.1}{Introducci\363n y explicaci\363n}{subsection.8.2.3}% 68
+\BOOKMARK [3][-]{subsubsection.8.2.3.2}{La fase de aprendizaje}{subsection.8.2.3}% 69
+\BOOKMARK [3][-]{subsubsection.8.2.3.3}{La fase de entrenamiento\205feedback}{subsection.8.2.3}% 70
+\BOOKMARK [3][-]{subsubsection.8.2.3.4}{La fase de generalizaci\363n}{subsection.8.2.3}% 71
+\BOOKMARK [2][-]{subsection.8.2.4}{Notas sobre el dise\361o del experimento}{section.8.2}% 72
+\BOOKMARK [1][-]{section.8.3}{Resultados}{chapter.8}% 73
+\BOOKMARK [2][-]{subsection.8.3.1}{Hip\363tesis I}{section.8.3}% 74
+\BOOKMARK [2][-]{subsection.8.3.2}{Hip\363tesis II}{section.8.3}% 75
+\BOOKMARK [2][-]{subsection.8.3.3}{Hip\363tesis III}{section.8.3}% 76
+\BOOKMARK [2][-]{subsection.8.3.4}{Hip\363tesis IV}{section.8.3}% 77
+\BOOKMARK [2][-]{subsection.8.3.5}{El sesgo de MDL}{section.8.3}% 78
+\BOOKMARK [1][-]{section.8.4}{Discusi\363n}{chapter.8}% 79
+\BOOKMARK [0][-]{chapter.9}{BORRAR: A theory of memory for binary sequences: Evidence for a mental compression algorithm in humans}{}% 80
+\BOOKMARK [0][-]{appendix.Alph1}{Ap\351ndice del Cap\355tulo 6}{}% 81
+\BOOKMARK [1][-]{section.Alph1.1}{Informaci\363n de soporte}{appendix.Alph1}% 82
+\BOOKMARK [0][-]{appendix.Alph2}{Ap\351ndice del Cap\355tulo 8}{}% 83
+\BOOKMARK [1][-]{section.Alph2.1}{Criterios de exclusi\363n y tratamiento de datos}{appendix.Alph2}% 84
+\BOOKMARK [1][-]{section.Alph2.2}{Prueba piloto}{appendix.Alph2}% 85
+\BOOKMARK [1][-]{section.Alph2.3}{Resultados t\351cnicos}{appendix.Alph2}% 86
+\BOOKMARK [0][-]{appendix*.60}{Bibliograf\355a}{}% 87

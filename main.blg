@@ -16,6 +16,7 @@ A level-1 auxiliary file: papers/plos_one_final.aux
 A level-1 auxiliary file: papers/pre_final.aux
 A level-1 auxiliary file: papers/behavior_research_methods.aux
 A level-1 auxiliary file: papers/plos_comp_bio.aux
+A level-1 auxiliary file: app_plos_one.aux
 A level-1 auxiliary file: app_behavior_research_methods.aux
 The style file: apalike.bst
 Database file #1: biblio.bib
@@ -24,7 +25,7 @@ Warning--I didn't find a database entry for "juslin2003exemplar"
 Warning--empty journal in russell2002artificial
 You've used 94 entries,
             1935 wiz_defined-function locations,
-            1043 strings with 19230 characters,
+            1044 strings with 19246 characters,
 and the built_in function-call counts, 36839 in all, are:
 = -- 3630
 > -- 1384
