@@ -452,6 +452,13 @@ INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/trans
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translator-months-dictionary/translator-months-dictionary-English.dict
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 OUTPUT portada.aux
 INPUT portada.tex
 INPUT portada.tex
@@ -463,7 +470,6 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
-INPUT /usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
@@ -543,9 +549,6 @@ OUTPUT main.toc
 OUTPUT caps/introduccion.aux
 INPUT caps/introduccion.tex
 INPUT caps/introduccion.tex
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 OUTPUT caps/binario.aux
 INPUT caps/binario.tex
 INPUT caps/binario.tex
@@ -626,9 +629,6 @@ INPUT ./figuras/plosone/Fig3-eps-converted-to.pdf
 INPUT ./figuras/plosone/Fig3-eps-converted-to.pdf
 INPUT ./figuras/plosone/Fig3-eps-converted-to.pdf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT figuras/plosone/Fig4.eps
 INPUT ./figuras/plosone/Fig4.eps
 INPUT ./figuras/plosone/Fig4.eps

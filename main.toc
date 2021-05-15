@@ -39,15 +39,15 @@
 \contentsline {section}{\numberline {6.2}Inferencia Bayesiana para las producciones del LoT}{21}{section.6.2}
 \contentsline {section}{\numberline {6.3}El lenguaje de geometr\IeC {\'\i }a: $\mathcal Geo$}{25}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Experimento original de $\mathcal Geo$}{28}{subsection.6.3.1}
-\contentsline {paragraph}{Participantes:}{29}{section*.7}
-\contentsline {paragraph}{Procedimiento:}{29}{section*.8}
+\contentsline {paragraph}{Participantes:}{29}{section*.8}
+\contentsline {paragraph}{Procedimiento:}{29}{section*.9}
 \contentsline {subsection}{\numberline {6.3.2}Extendiendo la gram\IeC {\'a}tica de $\mathcal Geo$}{30}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Resultados de inferencia para $\mathcal Geo$}{31}{subsection.6.3.3}
 \contentsline {section}{\numberline {6.4}Teorema de codificaci\IeC {\'o}n}{35}{section.6.4}
 \contentsline {subsection}{\numberline {6.4.1}La definici\IeC {\'o}n formal}{36}{subsection.6.4.1}
 \contentsline {subsection}{\numberline {6.4.2}Probando el teorema de codificaci\IeC {\'o}n para \relax \mathversion {bold}{$\mathcal Geo$}}{37}{subsection.6.4.2}
-\contentsline {paragraph}{La complejidad de Kolmogorov relativa a \relax \mathversion {bold}{$\mathcal Geo$}:}{37}{section*.14}
-\contentsline {paragraph}{La probabilidad relativa \relax \mathversion {bold}{$\mathcal Geo$}:}{38}{section*.15}
+\contentsline {paragraph}{La complejidad de Kolmogorov relativa a \relax \mathversion {bold}{$\mathcal Geo$}:}{37}{section*.15}
+\contentsline {paragraph}{La probabilidad relativa \relax \mathversion {bold}{$\mathcal Geo$}:}{38}{section*.16}
 \contentsline {subsection}{\numberline {6.4.3}Resultados del Teorema de Codificaci\IeC {\'o}n}{39}{subsection.6.4.3}
 \contentsline {section}{\numberline {6.5}Discusi\IeC {\'o}n}{41}{section.6.5}
 \contentsline {chapter}{\numberline {7}BORRAR: Towards a more flexible Language of Thought: Bayesian grammar updates after each concept exposure}{44}{chapter.7}
@@ -69,18 +69,18 @@
 \contentsline {section}{\numberline {8.2}Metodolog\IeC {\'\i }a}{16}{section.8.2}
 \contentsline {subsection}{\numberline {8.2.1}Pre-registro y datos}{16}{subsection.8.2.1}
 \contentsline {subsection}{\numberline {8.2.2}Detalles de representaci\IeC {\'o}n}{17}{subsection.8.2.2}
-\contentsline {paragraph}{Caracter\IeC {\'\i }sticas\textemdash variables proposicionales}{17}{section*.37}
-\contentsline {paragraph}{Elementos (cajas)\textemdash valuaciones.}{18}{section*.39}
-\contentsline {paragraph}{Conceptos indeterminados\textemdash conjuntos de valuaciones positivas/negativas.}{19}{section*.41}
-\contentsline {paragraph}{Conceptos (ocultos)\textemdash f\IeC {\'o}rmulas.}{19}{section*.43}
+\contentsline {paragraph}{Caracter\IeC {\'\i }sticas\textemdash variables proposicionales}{17}{section*.38}
+\contentsline {paragraph}{Elementos (cajas)\textemdash valuaciones.}{18}{section*.40}
+\contentsline {paragraph}{Conceptos indeterminados\textemdash conjuntos de valuaciones positivas/negativas.}{19}{section*.42}
+\contentsline {paragraph}{Conceptos (ocultos)\textemdash f\IeC {\'o}rmulas.}{19}{section*.44}
 \contentsline {subsection}{\numberline {8.2.3}Detalles de la estructura del experimento}{20}{subsection.8.2.3}
 \contentsline {subsubsection}{\numberline {8.2.3.1}Introducci\IeC {\'o}n y explicaci\IeC {\'o}n}{22}{subsubsection.8.2.3.1}
 \contentsline {subsubsection}{\numberline {8.2.3.2}La fase de aprendizaje}{23}{subsubsection.8.2.3.2}
 \contentsline {subsubsection}{\numberline {8.2.3.3}La fase de entrenamiento\textendash {\em feedback}}{24}{subsubsection.8.2.3.3}
 \contentsline {subsubsection}{\numberline {8.2.3.4}La fase de generalizaci\IeC {\'o}n}{24}{subsubsection.8.2.3.4}
 \contentsline {subsection}{\numberline {8.2.4}Notas sobre el dise\IeC {\~n}o del experimento}{25}{subsection.8.2.4}
-\contentsline {paragraph}{Construyendo representaciones sem\IeC {\'a}nticas adecuadas para nuestra l\IeC {\'o}gica.}{26}{section*.49}
-\contentsline {paragraph}{Orden de ejemplos positivos y negativos.}{27}{section*.50}
+\contentsline {paragraph}{Construyendo representaciones sem\IeC {\'a}nticas adecuadas para nuestra l\IeC {\'o}gica.}{26}{section*.50}
+\contentsline {paragraph}{Orden de ejemplos positivos y negativos.}{27}{section*.51}
 \contentsline {section}{\numberline {8.3}Resultados}{27}{section.8.3}
 \contentsline {subsection}{\numberline {8.3.1}Hip\IeC {\'o}tesis~\ref {Hip:AndOverOr}}{27}{subsection.8.3.1}
 \contentsline {subsection}{\numberline {8.3.2}Hip\IeC {\'o}tesis \ref {Hip:FeatureBiasStickiness}}{29}{subsection.8.3.2}
@@ -88,7 +88,7 @@
 \contentsline {subsection}{\numberline {8.3.4}Hip\IeC {\'o}tesis \ref {Hip:StickinessFeatureOperator}}{33}{subsection.8.3.4}
 \contentsline {subsection}{\numberline {8.3.5}El sesgo de MDL}{34}{subsection.8.3.5}
 \contentsline {section}{\numberline {8.4}Discusi\IeC {\'o}n}{34}{section.8.4}
-\contentsline {paragraph}{Declaraci\IeC {\'o}n de pr\IeC {\'a}cticas abiertas.}{40}{section*.56}
+\contentsline {paragraph}{Declaraci\IeC {\'o}n de pr\IeC {\'a}cticas abiertas.}{40}{section*.57}
 \contentsline {chapter}{\numberline {9}BORRAR: A theory of memory for binary sequences: Evidence for a mental compression algorithm in humans}{45}{chapter.9}
 \contentsline {chapter}{\numberline {A}Ap\IeC {\'e}ndice del Cap\IeC {\'\i }tulo \ref {chapter:PO}}{125}{appendix.Alph1}
 \contentsline {section}{\numberline {A.1}Informaci\IeC {\'o}n de soporte}{125}{section.Alph1.1}
@@ -96,4 +96,4 @@
 \contentsline {section}{\numberline {B.1}Criterios de exclusi\IeC {\'o}n y tratamiento de datos}{129}{section.Alph2.1}
 \contentsline {section}{\numberline {B.2}Prueba piloto}{130}{section.Alph2.2}
 \contentsline {section}{\numberline {B.3}Resultados t\IeC {\'e}cnicos}{131}{section.Alph2.3}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{147}{appendix*.60}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{147}{appendix*.61}
