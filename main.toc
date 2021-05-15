@@ -56,13 +56,13 @@
 \contentsline {section}{\numberline {7.2}The logical setting}{51}{section.7.2}
 \contentsline {section}{\numberline {7.3}Experiment}{53}{section.7.3}
 \contentsline {section}{\numberline {7.4}Model-Free Results}{57}{section.7.4}
-\contentsline {section}{\numberline {7.5}Model}{59}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}Static Model}{59}{subsection.7.5.1}
+\contentsline {section}{\numberline {7.5}Model}{58}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Static Model}{60}{subsection.7.5.1}
 \contentsline {subsection}{\numberline {7.5.2}Dynamic Model}{62}{subsection.7.5.2}
 \contentsline {section}{\numberline {7.6}Results}{64}{section.7.6}
 \contentsline {section}{\numberline {7.7}Discussion}{68}{section.7.7}
-\contentsline {section}{\numberline {7.8}Conclusion}{70}{section.7.8}
-\contentsline {chapter}{\numberline {8}Un marco l\IeC {\'o}gico para estudiar aprendizaje de conceptos en presencia de explicaciones m\IeC {\'u}ltiples}{71}{chapter.8}
+\contentsline {section}{\numberline {7.8}Conclusion}{71}{section.7.8}
+\contentsline {chapter}{\numberline {8}Un marco l\IeC {\'o}gico para estudiar aprendizaje de conceptos en presencia de explicaciones m\IeC {\'u}ltiples}{72}{chapter.8}
 \contentsline {section}{\numberline {8.1}Experimento}{6}{section.8.1}
 \contentsline {subsection}{\numberline {8.1.1}Participantes}{6}{subsection.8.1.1}
 \contentsline {subsection}{\numberline {8.1.2}Configuraci\IeC {\'o}n del experimento}{7}{subsection.8.1.2}
