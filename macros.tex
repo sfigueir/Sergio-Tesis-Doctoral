@@ -45,54 +45,45 @@
 
 \newcommand{\sem}[1]{\llbracket #1\rrbracket}
 \newcommand{\vars}{{\sf Vars}}
-%\newcommand{\con}{{\mathcal C}}
-%\newcommand{\mdl}[1]{\textsc{mdl}_{#1}}
+\newcommand{\con}{C}
+\newcommand{\mdl}[1]{\textsc{mdl}_{#1}}
 
 
 %% BRM
-\usepackage[textwidth=0.89in,textsize=scriptsize]{todonotes}
- \newcommand{\sergio}[1]{\todo[color=red!20]{{\bf Sergio:} #1}\xspace}
- \newcommand{\romano}[1]{\todo[color=blue!20]{{\bf Romano:} #1}\xspace}
- \newcommand{\pablo}[1]{\todo[color=orange!20]{{\bf Pablo:} #1}\xspace}
- \newcommand{\widesergio}[1]{\todo[inline,color=red!20]{{\bf Sergio:} #1}}
-
- \newcommand{\santi}[1]{\todo[color=green!20]{{\bf Santi:} #1}\xspace}
- \newcommand{\widesanti}[1]{\todo[inline,color=green!20]{{\bf Santi:} #1}}
-
 %\newcommand{\marcaEnTabla}{{\bullet}}%\checkmark
 
-\usepackage{setspace}
-\doublespacing
-\usepackage{breakcites}
-\usepackage{lineno}
+% \usepackage{setspace}
+% \doublespacing
+% \usepackage{breakcites}
+% \usepackage{lineno}
 
 
-\usepackage{tabularx,multirow}
-\usepackage[page]{appendix}
-\usepackage{macros}
+% \usepackage{tabularx,multirow}
+% \usepackage[page]{appendix}
+% \usepackage{macros}
 
 \usepackage{enumitem}% Permite poner cosas del tipo \begin{enumerate}[label=\Alph*]
 
-\usepackage{fancyhdr}
+% \usepackage{fancyhdr}
 
-\pagestyle{fancy}
-%\fancyhf{}
-\fancyhead{}
-\renewcommand{\headrulewidth}{0pt} % para que no ponga la línea del header.
-\fancyfoot{}
-\rhead{\thepage} % esquina superior derecha
+% \pagestyle{fancy}
+% %\fancyhf{}
+% \fancyhead{}
+% \renewcommand{\headrulewidth}{0pt} % para que no ponga la línea del header.
+% \fancyfoot{}
+% \rhead{\thepage} % esquina superior derecha
 
 
 
-\usepackage{pgfgantt}
-\usetikzlibrary{decorations.pathmorphing, shadows, shadings}
+% \usepackage{pgfgantt}
+% \usetikzlibrary{decorations.pathmorphing, shadows, shadings}
 
-\hypersetup{
-    colorlinks=true,   % color instead of boxes
-    citecolor=blue,    % cite links in blue
-    linkcolor=blue,    % other internal links in gray
-%    linktocpage,         % in TOC, LOF and LOT, the link is on the page number
-}
+% \hypersetup{
+%     colorlinks=true,   % color instead of boxes
+%     citecolor=blue,    % cite links in blue
+%     linkcolor=blue,    % other internal links in gray
+% %    linktocpage,         % in TOC, LOF and LOT, the link is on the page number
+% }
 
 
 \theoremstyle{plain}
@@ -108,3 +99,27 @@
 \newtheorem{acknowledgements}[theorem]{Acknowledgements}
 %
 \newtheorem{fact}[theorem]{Fact}
+
+\theoremstyle{definition}\newtheorem{definicion}[theorem]{Definición}
+\newtheorem{teorema}[theorem]{Teorema}
+\newtheorem{corolario}[theorem]{Corolario}
+\newtheorem{proposicion}[theorem]{Proposición}
+\newtheorem{lema}[theorem]{Lema}
+\newtheorem{hecho}[theorem]{Hecho}
+
+
+
+\newcommand{\varA}{p_1}
+\newcommand{\varB}{p_2}
+\newcommand{\varC}{p_3}
+\newcommand{\varD}{p_4}
+\newcommand{\varE}{p_5}
+\newcommand{\varF}{p_6}
+\newcommand{\varG}{p_7}
+\newcommand{\varH}{p_8}
+
+\newcommand{\AND}{\ensuremath{\land}\xspace}
+\newcommand{\OR}{\ensuremath{\lor}\xspace}
+
+\newcommand{\variables}[1]{\ensuremath{\textsc{var}(#1)}}% Para mencionar variables de una f\'ormula
+\newcommand{\propvars}{\textsc{Prop}}
