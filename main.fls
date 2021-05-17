@@ -644,13 +644,13 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/stmaryrd/stmary10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmrc8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmrc8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmrc8t.tfm
+INPUT figuras/../figuras/pre/notacion.pdf
+INPUT ./figuras/../figuras/pre/notacion.pdf
+INPUT ./figuras/../figuras/pre/notacion.pdf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmrc8t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
-INPUT figuras/../figuras/pre/notacion.pdf
-INPUT ./figuras/../figuras/pre/notacion.pdf
-INPUT ./figuras/../figuras/pre/notacion.pdf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
