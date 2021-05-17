@@ -665,6 +665,8 @@ INPUT ./figuras/pre/semaforos2.pdf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmbc8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmbc8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmbc8t.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmbc8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
@@ -678,6 +680,10 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT figuras/../figuras/pre/experimento_PRE.pdf
 INPUT ./figuras/../figuras/pre/experimento_PRE.pdf
 INPUT ./figuras/../figuras/pre/experimento_PRE.pdf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmbc8t.vf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT figuras/pre/model_free-3.pdf
 INPUT ./figuras/pre/model_free-3.pdf
 INPUT ./figuras/pre/model_free-3.pdf
@@ -707,7 +713,6 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmbi8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmbi8t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmbi8r.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm

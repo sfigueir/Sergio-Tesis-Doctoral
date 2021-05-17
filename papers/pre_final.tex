@@ -155,7 +155,24 @@ que expresa que $x_1$ es verdadero o $x_2$ es verdadero, pero no ambas puede des
 \vspace{-0.4cm}
 \end{table*}
 
-\widesanti{Unifiqué notacion de conceptos con BRMLlamemos $C^1, C^2$ a los conceptos, en analogía con BRM (o bien cambiemos BRM)}
+
+
+\begin{table}[]\small
+\begin{tabular}{|c|c||c|c|c||c|c|c|}
+\hline
+\textbf{}                 & \textbf{Prueba} & \textbf{\begin{tabular}[c]{@{}c@{}}Grupo\\ Objetivo\end{tabular}} & \textbf{$\mdl{\gramboolxor}$} & \textbf{$\mdl{\grambool}$} & \textbf{\begin{tabular}[c]{@{}c@{}}Grupo\\ Control\end{tabular}} & \textbf{$\mdl{\gramboolxor}$} & \textbf{$\mdl{\grambool}$} \\ \hline
+\multirow{4}{*}{\parbox[t]{2mm}{\rotatebox[origin=c]{90}{\bf Entrenamiento\ \ \ \ \ \\ \ \  }}} & 1               & \begin{tabular}[c]{@{}c@{}}\targeta \\ $x_{i}$\end{tabular}                     & 1              & 1               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \cline{2-8} 
+                          & 2               & \begin{tabular}[c]{@{}c@{}}\targetb\\ $x_{i} \oxor x_{j}$\end{tabular}                     & 3              & 7               & \begin{tabular}[c]{@{}c@{}}\controlb\\ $x_{i} \oor x_{j}$\end{tabular}                    & 3              & 3               \\ \cline{2-8} 
+                          & 3               & \begin{tabular}[c]{@{}c@{}}\targetc \\ $x_{i} \oxor x_{j} \oxor x_{k}$\end{tabular}                     & 5              & 19              & \begin{tabular}[c]{@{}c@{}}\controlc\\ $x_{i} \oor (x_{j} \oand x_{k})$\end{tabular}                    & 5              & 5               \\ \cline{2-8} 
+                          & 4               & \begin{tabular}[c]{@{}c@{}}\targetd\\ $x_{k} \oxor x_{l}$\end{tabular}                     & 3              & 7               & \begin{tabular}[c]{@{}c@{}}\controld\\$x_{k} \oor x_{l}$\end{tabular}                    & 3              & 3               \\ \hline
+\multirow{2}{*}{\parbox[t]{2mm}{\rotatebox[origin=c]{90}{\bf Evaluación}}}     & 5               & \begin{tabular}[c]{@{}c@{}}\testa\\ $x_{i} \oand (x_{j} \oxor x_{k})$\end{tabular}                     & 5              & 9               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \cline{2-8} 
+                          & 6               & \begin{tabular}[c]{@{}c@{}}\testb\\ $x_{i} \oand (x_{j} \oor x_{k})$\end{tabular}                     & 5              & 5               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \hline
+\end{tabular}
+\end{table}
+\widesanti{hice esta tabla como la anterior pero con diseño para que entre. Si te gusta y la querés cambiar, adelante. Solo que antes hay que revisar que tenga los mismos datos!}
+
+
+\widesanti{habría que unificar con BRM las x con las p}
 
 55 participants participated in the experiment over the world wide web using the Amazon Mechanical Turk crowd sourcing platform. All were US residents over the age of 18 and had more than 95\% of past tasks successfully approved by other requesters. 44 participants completed the experiment through all the stages and declared not cheating (using pen, screenshots or a similar method to copy the answers) at the end of the experiment. Only data from these participants were used in the analyses reported below.\footnote{The learning times of all participants can be found in https://figshare.com/s/04d338adbbc4b1e83bf0.}
 
