@@ -18,50 +18,48 @@ A level-1 auxiliary file: papers/behavior_research_methods.aux
 A level-1 auxiliary file: papers/plos_comp_bio.aux
 A level-1 auxiliary file: app_plos_one.aux
 A level-1 auxiliary file: app_behavior_research_methods.aux
-The style file: apalike.bst
+The style file: plain-spanish.bst
 Database file #1: biblio.bib
-Warning--I didn't find a database entry for "juslin2003cue"
-Warning--I didn't find a database entry for "juslin2003exemplar"
 Warning--empty journal in russell2002artificial
-You've used 94 entries,
-            1935 wiz_defined-function locations,
-            1044 strings with 19246 characters,
-and the built_in function-call counts, 36839 in all, are:
-= -- 3630
-> -- 1384
-< -- 61
-+ -- 492
-- -- 452
-* -- 3209
-:= -- 6401
-add.period$ -- 283
-call.type$ -- 94
-change.case$ -- 681
-chr.to.int$ -- 92
-cite$ -- 95
-duplicate$ -- 1372
-empty$ -- 2662
-format.name$ -- 591
-if$ -- 7152
-int.to.chr$ -- 3
-int.to.str$ -- 0
-missing$ -- 104
-newline$ -- 471
-num.names$ -- 284
-pop$ -- 534
+You've used 96 entries,
+            2118 wiz_defined-function locations,
+            1083 strings with 19871 characters,
+and the built_in function-call counts, 31292 in all, are:
+= -- 3099
+> -- 1425
+< -- 7
++ -- 581
+- -- 466
+* -- 2339
+:= -- 5298
+add.period$ -- 290
+call.type$ -- 96
+change.case$ -- 506
+chr.to.int$ -- 0
+cite$ -- 97
+duplicate$ -- 1121
+empty$ -- 2462
+format.name$ -- 466
+if$ -- 6393
+int.to.chr$ -- 0
+int.to.str$ -- 96
+missing$ -- 106
+newline$ -- 482
+num.names$ -- 194
+pop$ -- 424
 preamble$ -- 1
-purify$ -- 692
+purify$ -- 421
 quote$ -- 0
-skip$ -- 1046
+skip$ -- 754
 stack$ -- 0
-substring$ -- 2823
-swap$ -- 141
+substring$ -- 2174
+swap$ -- 146
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 542
+type$ -- 362
 warning$ -- 1
-while$ -- 328
-width$ -- 0
-write$ -- 1211
-(There were 3 warnings)
+while$ -- 334
+width$ -- 98
+write$ -- 1046
+(There was 1 warning)
