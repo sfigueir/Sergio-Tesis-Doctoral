@@ -60,3 +60,7 @@ papers/plos_comp_bio.aux
 papers/plos_one_final.aux
 papers/pre_final.aux
 portada.aux
+macros.fdb_latexmk
+macros.fls
+macros.log
+*.aux
