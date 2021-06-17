@@ -75,30 +75,30 @@ En el ejemplo del lenguaje Logo se puede imaginar que si las producciones que di
 La mayor parte del trabajo en la literatura sobre LoT, aunque incluye naturalmente un mecanismo de aprendizaje, tiende a acercarse al LoT como un sistema estable que deben descubrir los experimentadores, que prueban diferentes plantillas candidatas y seleccionan la que mejor se ajusta a los datos después del entrenamiento ~\cite{goodman2008rational, kemp2012exploring, piantadosi2016logical}. Aún así, queda por descubrir cómo las diferentes trayectorias de la experiencia pueden dar forma a la adquisición de manera diferente y pueden cambiar constantemente el repertorio de un LoT después de cada exposición.
 
 
-\subsection{Teoría algorítmica de la información}
+\section{Teoría algorítmica de la información}
 
 \widesanti{De esto que sigue podés dejar todo, algo o eliminarlo por completo}
 
-Cuando vemos las cadenas 
+Cuando vemos las cadenas de 26 bits
 \begin{align*}
 \sigma_1 &= 10101010101010101010101010,\\
 \sigma_2 &= 00100100001111110110101010, \\
 \sigma_3 &= 11011010010000110101111010,
 \end{align*}
 tenemos la sensación de que la $\sigma_2$ y la $\sigma_3$
-son {\em más difíciles} o {\em más complejas} que la primera. Sin embargo, en términos de
+son {\em más difíciles} o {\em más complejas} que $\sigma_1$. Sin embargo, en términos de
 teoría de la medida, cada una es igual de probable, si provienen de una fuente que emite bits 
 con probabilidad uniforme. 
-La intuición es que las cadenas sencillas tienen patrones reconocibles mientras
+La intuición es que las cadenas sencillas tienen patrones reconocibles (como $\sigma_1$) mientras
 que las más complejas no (o al menos no tienen patrones simples). 
 En efecto, con la información adicional de que $\sigma_2$ se compone de los dígitos de 
-la expansión fraccionaria de $\pi$ en binario, la secuencia, intuitivamente, se vuelve de inmediato más simple que antes. Lo cierto es que $\sigma_3$ fue generada tirando una moneda y anotando 0 si salía cara y 1 si salía ceca. Nuestra intuición también nos dice que lo más probable es que una cadena generada mediante este procedimiento no tenga patrones reconocibles.
+la expansión fraccionaria de $\pi$ en binario, esta secuencia --intuitivamente-- se vuelve de inmediato más simple que antes, puesto que aparece una regla para producirla. Lo cierto es que $\sigma_3$ fue generada tirando una moneda y anotando 0 si salía cara y 1 si salía ceca. Nuestra intuición también nos dice que lo más probable es que una cadena generada mediante este procedimiento no tenga patrones reconocibles.
 
 Entender por qué
 algunas secuencias parecen aleatorias o complejas mientras que otras no, es una cuestión
 profunda y fundamental. Desde principios del siglo {\small XX} se
 empezó a pensar en este problema. Pero cómo transformar nuestra
-intuición de `lo complejo' en una definición matemática no fue una tarea fácil. 
+intuición de `lo complejo' en una definición matemática, y cómo calibrar esta noción, no fue una tarea fácil. 
 Al final, las definiciones que se
 encontraron terminaron estando todas muy relacionadas con los métodos efectivos y con la 
 teoría de la computación.
@@ -132,24 +132,42 @@ universal de referencia) se llama {\em complejidad de Kolmogorov} o
 {\em complejidad de largo de programa}.
 
 Debe
-observarse que en esta definición de complejidad de Kolmogorov hay
-una máquina universal subyacente, esto es, una máquina de Turing
-particular capaz de simular cualquier otra máquina.
-Esta
-máquina universal se usa como referencia para ejecutar los
-mencionados programas. Cuando el dominio de todas las máquinas
-universales es libre de prefijos (es decir, no hay dos programas
+observarse que en esta definición --todavía informal-- 
+de complejidad de Kolmogorov hay
+un lenguaje de descripción subyacente. La teoría algorítmica de la información
+toma a los lenguajes de programación como lenguaje de descripción. Sin embargo, 
+hay que notar que una definición en la misma dirección puede aplicarse para 
+otros objetos en el rol de las cadenas binarias (por ejemplo, conjuntos de valuaciones 
+Booleanas) y otros lenguajes de descripción en el rol de lenguajes de programación
+(por ejemplo, fórmulas de la lógica proposicional). En todo caso, es fundamental
+que los lenguajes de descripción tengan una semántica formal para evitar paradojas
+como la de Berry, que propone definir $n$ como el primer número natural que no sea 
+descriptible con menos de 90 caracteres. Por definición la descripción más corta de $n$ debe tener 
+al menos 91 letras, y sin embargo su definición ``el primer número natural que no sea 
+descriptible con menos de cincuenta caracteres'' evidentemente lo describe y tiene 83 caracteres.
+
+Desde el punto de 
+vista teórico, la riqueza de la Complejidad de Kolmogorov
+aparece cuando el lenguaje de programación subyacente es 
+Turing completo, 
+es decir, es capaz de definir cualquier función parcial
+computable. En la teoría, los lenguajes de programación se
+formalizan con máquinas de Turing y los lenguajes Turing completos
+como máquinas universales. 
+Cuando el dominio de los programas (máquinas) es libre de prefijos (es decir, no hay dos programas
 que terminan en dónde uno es una extensión propia del otro)
 hablamos de complejidad de Kolmogorov {\em libre de prefijos}
 (denotada con $K$) y cuando no se impone ninguna restricción en
 el dominio, hablamos de complejidad de Kolmogorov plana (denotada
-con $C$).
-Esta noción de complejidad es absoluta, pues si bien existe una
-complejidad distinta por cada máquina universal subyacente, todas
-estas son iguales salvo una constante aditiva \cite{C94,LV97}.
+con $C$). La necesidad de trabajar con dominios libres de prefijos es
+técnica y está vinculada con la utilidad de la complejidad de Kolmogorov 
+para definir nociones de aleatoriedad.
+% Esta noción de complejidad es absoluta, pues si bien existe una
+% complejidad distinta por cada máquina universal subyacente, todas
+% estas son iguales salvo una constante aditiva \cite{C94,LV97}.
 
 A continuación veremos las definiciones formales de la Complejidad de Kolmogorov y de los
-principales condimentos de la Teoría algorítmica de la información.
+principales elementos de la Teoría algorítmica de la información.
 
 % Los orígenes del estudio de la aleatoriedad algorítmica se remontan
 % a los trabajos de von Mises de principios del siglo {\small XX}
@@ -197,11 +215,303 @@ principales condimentos de la Teoría algorítmica de la información.
 % Es interesante el hecho de que la idea de {\em procedimiento
 % efectivo} está involucrada en todas las definiciones de aleatoriedad. 
 
-\subsubsection{Complejidad de Kolmogorov}
+\subsection{Complejidad de Kolmogorov}
 \widesanti{Introducir la noción formal. Empezar por $K_M$, con $M$ una máquina específica. Luego la $K_U$, con $U$ universal. Dar la versión plana y la libre de prefijos (puesto que esa es la que se usa para el coding theorem). Dar el coding theorem sin demo, solo enunciado.}
 
 
 \widesanti{Podés retomar los ejemplos de $\sigma_1$, $\sigma_2$, $\sigma_3$ de más arriba y explicar que programas cortos los generan. O podés exagerarlos a más bits. Esto da idea de la diferencia entre la descripción y lo descripto (aunque es cierto que la tesis es sobre aprendizaje con POCOS datos...) Para los programas, alcanza con un pseudo código o incluso descripción informal, pero dado que es una tesis en computación, también podés usar un lenguaje verdadero, Python, ponele. Podés también poner alguna otra cadena, $\sigma_4$ en donde haga falta anidar loops, porque eso es importante para el cap 2. Por ejemplo, 000111000 1 000111000 1 000111000}
+
+
+\widesanti{Esto que sigue es parte de mi tesis. Podés simplemente traducirlo y dejarlo tal cual. 
+Ojo que hay cosas de más... y muchos comandos latex :P}
+
+
+In this section we introduce the plain and \pfree \kolcomp and we
+mention some known results and standard notation that will be used
+repeatedly in the rest of this thesis. Some other important
+results will be introduced when necessary.
+
+In algorithmic information theory, programs are regarded as
+algorithmic descriptions of strings. As we mentioned in
+section~\ref{intro:sec:recursion}, we say that a program $\pra$
+{\em $\M$-describes} a string $\sta$ when it is executed in a
+Turing machine $\M$ and produces $\sta$ as output. In general
+there is more than one program describing the same output $\sta$.
+The idea of the \kolcomp introduced in~\cite{kolmogorov1965three,solomonoff1964formal,chaitin1975theory} is to
+take the length of a shortest description as a measure of the
+complexity of the string.
+
+\begin{definicion}[Plain \kolcomp]\label{intro:def:plainC}
+$\CM\colon\words \to \nat$, 
+the {\em plain
+\kolcomp with respect to the Turing machine $\M$}, is defined as
+$$
+\CM(\sta)=
+    \begin{cases}
+    \min \{\len{\pra}\colon \M(\pra)=\sta \} & \textrm{if $\sta$ is in the range of $\M$};\\
+    \infty & \textrm{otherwise.}
+    \end{cases}
+$$
+\end{definicion}
+If we restrict ourselves to partial \rec functions with \pfree
+domain, we can think of  {\em
+\pfree Turing machines} (independently introduced by
+Levin~\cite{L71,L73}, Schnorr~\cite{S71} and Chaitin~\cite{chaitin1975theory})
+as the formalism to compute them. Chaitin thought of a convenient
+device to compute exactly all \pfree machines. This device is just
+like a classical Turing machines but the input tape is a bit
+primitive: the input head moves only to the right and there is no
+blank end-marker delimiting the end of the input. So a \pfree
+machine starting with the input head in the first bit of the input
+$\pra$ may eventually try to read beyond the end of $\pra$ and if
+this happens, it simply crashes (i.e.\ it becomes undefined) and
+it stays in that error state forever. Therefore, for a \pfree
+machine $\M$ to succeed in the computation, it needs to somehow
+figure out by itself where the end of the input is.
+% no extension of a valid program is a valid program.
+This is the reason why this device is sometimes called {\em
+self-delimiting} machine. In this model, if a given input is
+defined, all its extensions are undefined. It can be shown that
+this restricted architecture of Turing machines compute exactly
+all partial \rec functions with \pfree domain. The {\em the \pfree
+\kolcomp}~\cite{levin1974laws,G74,chaitin1975theory} is defined in the same way as in
+Definition~\ref{intro:def:plainC} but relative to \pfree
+machines:
+
+\begin{definicion}[\Pfree \kolcomp]\label{intro:def:prefixK}
+\index{Program-size complexity@\kolcomp!prefix@\pfree}
+\glossary{$\KM$}$\KM\colon\words \to \nat$, the {\em \pfree
+\kolcomp with respect to the \pfree machine $\M$}, is defined as
+$$
+\KM(\sta)=
+    \begin{cases}
+    \min \{\len{\pra}\colon \M(\pra)=\sta \} & \textrm{if $\sta$ is in the range of $\M$};\\
+    \infty & \textrm{otherwise.}
+    \end{cases}
+$$
+\end{definicion}
+The two complexity functions $\C$ and $\K$ have been used for
+different purposes
+% Under some situations it is more adequate to use \pfree \kolcomp instead of plain \kolcomp
+(for more details, see~\cite{DHBook} and~\cite{LV97}). In this
+thesis we will mainly use \pfree \kolcomp, but in some sections we
+will also work with the plain version.
+
+There are two traditions of notation in the \kolcomp community as
+regards the plain/\pfree versions: the $C$/$K$ tradition and the
+$K$/$H$ tradition. In recent years it seems that the $C$/$K$
+notation appears more often in both the complexity and the
+recursion theory literature. In this document, we follow the
+$C$/$K$ notation.
+
+\bigskip
+
+Observe that it does not matter if the list in
+(\ref{intro:eqn:enumPRfunctions}) is an enumeration of all
+classical machines or all \pfree machines (both have a finite
+table of instructions, so they can be effectively listed). The
+machine $\V$ defined in (\ref{intro:eqn:usualUniversalMachine})
+exists in both cases and in the second, $\V$ is also \pfree.
+
+
+The classical notion of universality from computability theory is
+redefined in the algorithmic information theory. We will use the
+word {\em \opt} for denoting machines like $\V$ defined in
+(\ref{intro:eqn:usualUniversalMachine}) that somehow simulate
+every other machine at no noticeable extra cost in the length.
+
+\begin{definicion}[\Optity]\label{intro:def:optimal}
+\index{Turing!machine!universal@\opt} $\U$ is a {\em \opt} \pfree
+(resp.\ classical) Turing machine if and only if
+$$
+(\forall e)(\exists c_e)(\forall \pra)(\exists \prb_{e,\pra})\,
+[\U(\prb_{e,\pra})=\T_e(\pra) \ \wedge \len{\prb_{e,\pra}}\leq
+\len{\pra}+c_e],
+$$
+where $\T_0,\T_1,\T_2,\dots$ is an enumeration of all the \pfree
+(resp.\ classical) Turing machines
+\end{definicion}
+
+When working with oracles, $\U$ will be \opt if it may simulate
+{\em any} other machine with {\em any} oracle, so it is {\em
+universally universal}. In the case of an \pfree \opt machine,
+$\U^A$ will be \pfree for all $A\subseteq\nat$.
+
+In general we use the same letter $\U$ for denoting both a
+classical \opt machine and a \pfree \opt machine; it will always
+be clear from the context which one we refer to. In~\cite{chaitin1975theory}
+Chaitin called these machines {\em optimal universal}, because
+they permit us to define the \kolcomp in an {\em optimal} way:
+
+\begin{teorema}[Invariance]\label{intro:thm:invariance}
+\index{Invariance Theorem} If $\U$ is \opt \pfree (resp.\
+classical) Turing machine then for any \pfree (resp.\ classical)
+Turing machine $\M$ there is a constant $c$ such that for all
+$\sta\in\words$, $\KU(\sta)\leq \KM(\sta)+c$ (resp.\
+$\CU(\sta)\leq \CM(\sta)+c$).
+\end{teorema}
+
+Hence for any two \pfree \opt machines $\U$ and $\V$, the \pfree
+\kolcomp with respect to $\U$ and $\V$ is the same up to an
+additive constant, i.e.\ there is some constant $c$ such that
+$\abs{\KU(\sta)-\KV(\sta)}\leq c$ for any $\sta\in\words$. Of
+course the same is true for classical machines and $\C$. If there
+is no need to refer to the underlying \opt machine $\U$, one just
+writes \glossary{$\K$}$\K$ for $\KU$ and \glossary{$\C$}$\C$ for
+$\CU$. In this way, $\K$ and $\C$ become an {\em absolute} measure
+of the complexity of the strings.
+
+To illustrate some useful application of the Invariance Theorem,
+let us see some upper bounds for $\K$ and $\C$. Imagine a
+classical machine $\M$ that reads the input $\sta$ and writes
+$\sta$ as its own output. Then $\CM(\sta)=\len{\sta}$ for all
+$\sta\in\words$ and by the Invariance
+Theorem~\ref{intro:thm:invariance} this shows that for all $\sta$,
+$\C(\sta)\leq \len{\sta}+c$ for some constant $c$. With \pfree
+machines the situation is a bit different because the machine has
+to discover by itself where the end of the input is. Suppose $\U$
+is any \opt \pfree machine and suppose $\pra_\sta$ is a minimal
+$\U$-description of $\len{\sta}$. This just means that
+$\U(\pra_\sta)=\len{\sta}$ and $\len{\pra_\sta}=\K(\len{\sta})$.
+Then there is a \pfree machine $\N$ that with input
+$\pra_\sta\sta$ can do the following: fist simulate $\U$ step by
+step. Each time $\U$ asks for reading one more bit, $\N$ obeys and
+reads from its own input. Eventually $\U$ will read the whole
+$\pra_\sta$ and will terminate with $\U(\pra_\sta)=\len{\sta}$ as
+output. Now $\N$ (which is still running) knows that exactly
+$\len{\sta}$ more bits need to be read from the input. So $\N$
+reads $\len{\sta}$ bits from the input and recovers $\sta$.
+Afterwards, $\N$ writes $\sta$ in the output and terminates. This
+shows that $\N(\pra_\sta\sta)=\sta$. Of course, if the input is
+wrong, the computation may go wrong, for example $\N$ can try to
+read beyond the end of the input and then crashes. However, when
+the input is of the form $\pra_\sta\sta$, $\N$ always outputs
+$\sta$. By the invariance Theorem \ref{intro:thm:invariance} this
+shows that $\K(\sta)\leq \len{\pra_\sta\sta} + d =
+\K(\len{\sta})+\len{\sta}+d$ for some constant $d$. These upper
+bounds on $\C$ and $\K$ will be repeatedly used in the thesis. We
+will also use that for any $n$ there is a string $\sta$ of length
+$n$ such that $\K(\sta)\geq n$. This is true because there are at
+most $2^n-1$ programs of length less than $n$ but $2^n$ strings of
+length $n$. The same holds for $\C$. In fact,
+Chaitin~\cite{chaitin1975theory,C87b} showed that there is a constant $c$ such
+that for all $d\in\nat$ and all $n$
+$$
+\size{\{ \sta \colon \len{\sta}=n \wedge \K(\sta)\leq n + \K(n)-d
+\}} \leq 2^{n-d+c}
+$$
+This result is usually called \index{Counting Theorem}Counting
+Theorem, tells us that only a small fraction of all the strings of
+length $n$ have \pfree \kolcomp below $n+\K(n)-d$, when we take
+$d$ much bigger than $c$.
+Observe that if we let $d=n-b$, we obtain
+$$
+\size{\{ \sta \colon \len{\sta}=n \wedge \K(\sta)\leq \K(n)+b
+\}} \leq 2^{b+c}
+$$
+and this last upper bound depends on $b$ and $c$, but not on $n$.
+
+As we explained in the last paragraph, one way to bound the
+\kolcomp is to explicitly design specific machines, like $\M$ or
+$\N$ and explain their behavior. Another powerful method to
+implicitly build \pfree machines and upper bound the \pfree
+\kolcomp is via a Kraft-Chaitin set. This method consists of an
+effective interpretation of an inequality of Kraft~\cite{K49}:
+
+\begin{definicion}[Kraft-Chaitin set]\label{intro:KCset}
+\index{Kraft-Chaitin} A \ce\ set
+$$
+W=\{\pair{n_0}{\sta_0}, \pair{n_1}{\sta_1},
+\pair{n_2}{\sta_2},\dots\},
+$$
+where $n_i\in\nat$ and $\sta_i\in \words$, is a {\em Kraft-Chaitin
+set} if $\wt{W}\leq 1$, where \glossary{$\wt{W}$}$\wt{W}=
+\sum_{i\in\nat} 2^{-n_i}$ is the {\em weight} of $W$. The pairs
+enumerated into such a set $W$ are called {\em axioms}.
+\end{definicion}
+
+The Kraft-Chaitin Theorem can be found in Levin's
+Thesis~\cite{L71} and in~\cite{levin1974laws}, Schnorr also included a
+version of it in~\cite{S73} and Chaitin~\cite{chaitin1975theory} gave the first
+proof explicitly for \pfree \kolcomp. This theorem states that
+from a Kraft-Chaitin set $W$ like the one described in the above
+Definition~\ref{intro:KCset}, we can effectively obtain a \pfree
+machine $\M$ such that for each $i$ there is a $\pra_i$ of length
+$n_i$ with $\M(\pra_i)\downarrow=\sta_i$, and $\M(\prb)\uparrow$
+unless $\prb=\pra_i$ for some~$i$. Observe that the machine $\M$
+is built in an implicit way: we only need to specify the lengths
+of the programs we want. In particular, the Kraft-Chaitin Theorem
+states that there is a constant $c$ such that for all $i$,
+$\K(\sta_i)\leq\min\{m\colon\pair{m}{\sta_i}\in W\}+c$.
+
+\bigskip
+
+\subsection{El teorema de la codificación}
+
+The complexity $\K$ is related with the probability that a \pfree
+machine $\M$ outputs a given string $\sta$. This last magnitude is
+defined as \glossary{$P$}
+\begin{eqnarray}
+P_{\M}(\sta)&=&\measure{\open{\{\pra\colon\M(\pra)=\sta\}}}\nonumber\\
+&=&\sum_{\pra\colon\M(\pra)=\sta}2^{-\len{\pra}}.\label{intro:eqn:coding}
+\end{eqnarray}
+Clearly, for all $\sta$, $2^{-\K(\sta)}\leq P_{\U}(\sta)$, since a
+shorter $\M$-description of $\sta$ already contributes to the sum
+in equation (\ref{intro:eqn:coding}). The following result, due to
+Levin \cite{levin1974laws}, G\'acs \cite{G74} and Chaitin, \cite{chaitin1975theory} known
+as the {\em Coding Theorem}, states that the other inequality is
+also true, except for a multiplicative constant
+
+\begin{teorema}[\index{Coding Theorem}Coding Theorem]\label{intro:thm:coding} For each \pfree machine $\M$, one
+may effectively find a constant $c$ such that $ (\forall
+\sta\in\words)\ 2^{c-\K(\sta)}\geq P_{\M}(\sta). $
+\end{teorema}
+For more information in the Coding Theorem, see \cite{LV97} and
+\cite{DHBook}.
+
+\bigskip
+
+\index{Program-size complexity@\kolcomp!\computable@\comp
+approximation} Although $\K$ and $\C$ are not \comp functions,
+they can be \recly approximated from above using the step by step
+approximation of $\U$. \glossary{$\K_s$}$\K_s(\sta)$ is the
+approximation at stage $s$ of $\K(\sta)$ defined by
+$\K_s(\sta)=\min\{\len{\pra}\colon
+\U_s(\pra)=\sta\}\cup\{\infty\}$. Observe that
+$\K_s(\sta)\to\K(\sta)$ when $s\to\infty$.
+ The same holds for
+\glossary{$\C_s$}${\C_s}$.
+
+
+Machines can be relativized to oracles. For any $\M^A$, a \pfree
+machine $\M$ relativized to an oracle $A$, $\domain {\M^A}$ has to
+be \pfree. The Definition~\ref{intro:def:prefixK} of \kolcomp can
+be relativized to oracles:
+
+\begin{definicion}[Relativized \pfree \kolcomp]\label{intro:def:prefixKwithOracle}
+\index{Program-size complexity@\kolcomp!relativized}
+\glossary{$\KM^A$}$\KM^A\colon\words \to \nat$, the {\em \pfree
+\kolcomp with respect to the \pfree machine $\M$ and relative to
+oracle $A$}, is defined as
+$$
+\KM^A(\sta)=
+    \begin{cases}
+    \min \{\len{\pra}\colon \M^A(\pra)=\sta \} & \textrm{if $\sta$ is in the range of $\M^A$};\\
+    \infty & \textrm{otherwise.}
+    \end{cases}
+$$
+\end{definicion}
+
+Definition~\ref{intro:def:plainC} of $\CM$ also adapts
+straightforwardly to \glossary{$\CM^A$}$\CM^A$. Again, when there
+is no need to refer to the underlying \opt machine, we just write
+\glossary{$\C^A$}$\C^A$ and \glossary{$\K^A$}$\K^A$. Having an
+oracle $A$ gives more power for compressing strings, so $\K^A$ is
+always smaller than $\K$ up to an additive constant. The same
+holds for $\C^A$ and $\C$.
+
+
+
 
 \subsubsection{Un lenguaje concreto: el lenguaje de geometría}
 

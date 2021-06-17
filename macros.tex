@@ -110,7 +110,8 @@
 %
 \newtheorem{fact}[theorem]{Fact}
 
-\theoremstyle{definition}\newtheorem{definicion}[theorem]{Definición}
+\theoremstyle{definition}
+\newtheorem{definicion}[theorem]{Definición}
 \newtheorem{teorema}[theorem]{Teorema}
 \newtheorem{corolario}[theorem]{Corolario}
 \newtheorem{proposicion}[theorem]{Proposición}
@@ -133,3 +134,86 @@
 
 \newcommand{\variables}[1]{\ensuremath{\textsc{var}(#1)}}% Para mencionar variables de una f\'ormula
 \newcommand{\propvars}{\textsc{Prop}}
+
+
+
+% DE LA TESIS DE SANTIAGO (EN INTRO)
+% NAMES
+\newcommand{\kolcomp}{Kolmogorov complexity\xspace}
+\newcommand{\Kolcomp}{Kolmogorov complexity\xspace}
+\newcommand{\pfree}{prefix-free\xspace}
+\newcommand{\Pfree}{Prefix-free\xspace}
+
+
+% SETS
+\newcommand{\nat}{\mathbb{N}}
+\newcommand{\natplus}{\mathds{N}^+}
+\newcommand{\rea}{\mathds{R}}
+\newcommand{\rat}{\mathds{Q}}
+%\newcommand{\voc}{\{0,1\}}
+\newcommand{\voc}{2}
+\newcommand{\words}{\voc^{<\omega}}
+\newcommand{\wordsn}[1]{\voc^{#1}}
+\newcommand{\wordsupton}[1]{\voc^{\leq{#1}}}
+\newcommand{\cantor}{\voc^{\omega}}
+\newcommand{\mix}{\voc^{\leq\omega}}
+\newcommand{\emptystring}{\lambda}
+
+% STRINGS AND PROGRAMS
+\newcommand{\sta}{\sigma}
+\newcommand{\stb}{\tau}
+\newcommand{\stc}{\chi}
+\newcommand{\pra}{\rho}
+\newcommand{\prb}{\gamma}
+\newcommand{\prc}{\nu}
+
+% KOLMOGOROV COMPLEXITIES
+\newcommand{\K}{K} %Prefix Kolmogorov complexity
+\newcommand{\C}{C} %Plain Kolmogorov complexity
+\newcommand{\Ktime}[1]{\K_{#1}} %Prefix Kolmogorov complexity at step
+\newcommand{\CU}{\C_{\U}} %Plain Kolmogorov complexity based on U
+\newcommand{\CM}{\C_{\M}} %Plain Kolmogorov complexity based on M
+\newcommand{\Ctime}[1]{C_{#1}} %Plain Kolmogorov complexity at step
+\newcommand{\KU}{\K_{\U}} %Prefix Kolmogorov complexity based on U
+\newcommand{\KV}{\K_{\V}} %Prefix Kolmogorov complexity based on V
+\newcommand{\KM}{\K_{\M}} %Prefix Kolmogorov complexity based on U
+
+% MACHINES
+\newcommand{\U}{{\bf U}}  % universal machine U
+\newcommand{\Us}{\U_s}  % machine U at step s
+\newcommand{\Ut}{\U_t}  % machine U at step t
+\newcommand{\Uu}{\U_u}  % machine U at step u
+\newcommand{\Utime}[1]{\U_{#1}}  % machine U at certain time
+\newcommand{\V}{{\bf V}}  % universal machine V
+\newcommand{\Vs}{\V_s}  % machine V at step s
+\newcommand{\W}{{\bf W}}  % universal machine W
+\newcommand{\M}{{\bf M}}  % particular machine M
+\newcommand{\N}{{\bf N}}  % particular machine M
+\newcommand{\Ms}{{\bf M}_s}  % particular machine M at step s
+\newcommand{\Mt}{{\bf M}_t}  % particular machine M at step t
+\newcommand{\Mu}{{\bf M}_u}  % particular machine M at step u
+\newcommand{\T}{{\bf T}}  % enumeration of Turing machines
+\newcommand{\Uinf}{{\U}^\infty}
+\newcommand{\Uinft}{{\U}^\infty_t}
+
+\newcommand{\size}[1]{\| #1 \|} % number of elements of a set
+\newcommand{\len}[1]{| #1 |} % length of a string
+\newcommand{\rec}{computable\xspace}
+\newcommand{\recly}{computably\xspace}
+\newcommand{\comp}{computable\xspace}
+\newcommand{\comply}{computably\xspace}
+\newcommand{\ce}{c.e.\xspace}
+
+\newcommand{\opt}{universal\xspace}
+\newcommand{\Opt}{Universal\xspace}
+\newcommand{\optity}{universality\xspace}
+\newcommand{\Optity}{Universality\xspace}
+\newcommand{\abs}[1]{\left| #1 \right|} % absolute value
+%\newcommand{\abs}[1]{| #1 |} % absolute value
+\newcommand{\then}{\Rightarrow}
+\newcommand{\pair}[2]{\langle #1 , #2 \rangle}
+\newcommand{\wt}[1]{{\rm wt}\left(#1\right)} % weight of a set (for example, a Kraft-Chaitin set
+\newcommand{\dup}[1]{\overline{#1}} % interleave 0s except in the last position.
+\newcommand{\measure}[1]{\mu\left(#1\right)}
+\newcommand{\open}[1]{ #1\cantor } %open set
+\newcommand{\domain}{\qopname\relax{no}{dom}}

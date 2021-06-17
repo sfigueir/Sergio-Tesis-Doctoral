@@ -60,36 +60,69 @@
 \citation{kolmogorov1965three}
 \citation{solomonoff1964formal}
 \citation{chaitin1969length}
-\citation{C94}
-\citation{LV97}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.3}Teoría algorítmica de la información}{7}{subsection.1.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}Teoría algorítmica de la información}{7}{section.1.3}\protected@file@percent }
 \@writefile{tdo}{\contentsline {todo}{{\bf  Santi:} De esto que sigue podés dejar todo, algo o eliminarlo por completo}{7}{section*.10}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.3.1}Complejidad de Kolmogorov}{8}{subsubsection.1.2.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.1}Complejidad de Kolmogorov}{8}{subsection.1.3.1}\protected@file@percent }
 \@writefile{tdo}{\contentsline {todo}{{\bf  Santi:} Introducir la noción formal. Empezar por $K_M$, con $M$ una máquina específica. Luego la $K_U$, con $U$ universal. Dar la versión plana y la libre de prefijos (puesto que esa es la que se usa para el coding theorem). Dar el coding theorem sin demo, solo enunciado.}{8}{section*.11}\protected@file@percent }
 \@writefile{tdo}{\contentsline {todo}{{\bf  Santi:} Podés retomar los ejemplos de $\sigma _1$, $\sigma _2$, $\sigma _3$ de más arriba y explicar que programas cortos los generan. O podés exagerarlos a más bits. Esto da idea de la diferencia entre la descripción y lo descripto (aunque es cierto que la tesis es sobre aprendizaje con POCOS datos...) Para los programas, alcanza con un pseudo código o incluso descripción informal, pero dado que es una tesis en computación, también podés usar un lenguaje verdadero, Python, ponele. Podés también poner alguna otra cadena, $\sigma _4$ en donde haga falta anidar loops, porque eso es importante para el cap 2. Por ejemplo, 000111000 1 000111000 1 000111000}{8}{section*.12}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.3.2}Un lenguaje concreto: el lenguaje de geometría}{8}{subsubsection.1.2.3.2}\protected@file@percent }
-\@writefile{tdo}{\contentsline {todo}{{\bf  Santi:} Pego acá esto por si sirve. Quizá tenga sentido dar la semántica formal, dado que nunca apareció en ningún lado y que el cap 2 lo necesita en su versión simplificada.}{8}{section*.13}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces The symbols of $\Sigma $ around a circle, and the reflection axes.\relax }}{9}{figure.caption.14}\protected@file@percent }
+\@writefile{tdo}{\contentsline {todo}{{\bf  Santi:} Esto que sigue es parte de mi tesis. Podés simplemente traducirlo y dejarlo tal cual. Ojo que hay cosas de más... y muchos comandos latex :P}{8}{section*.13}\protected@file@percent }
+\citation{kolmogorov1965three}
+\citation{solomonoff1964formal}
+\citation{chaitin1975theory}
+\citation{L71}
+\citation{L73}
+\citation{S71}
+\citation{chaitin1975theory}
+\citation{levin1974laws}
+\citation{G74}
+\citation{chaitin1975theory}
+\citation{DHBook}
+\citation{LV97}
+\newlabel{intro:def:plainC}{{1}{9}{Plain \kolcomp }{theorem.1}{}}
+\newlabel{intro:def:prefixK}{{2}{9}{\Pfree \kolcomp }{theorem.2}{}}
+\citation{chaitin1975theory}
+\newlabel{intro:def:optimal}{{3}{10}{\Optity }{theorem.3}{}}
+\newlabel{intro:thm:invariance}{{4}{10}{Invariance}{theorem.4}{}}
+\citation{chaitin1975theory}
+\citation{C87b}
+\citation{K49}
+\citation{L71}
+\citation{levin1974laws}
+\citation{S73}
+\citation{chaitin1975theory}
+\citation{levin1974laws}
+\citation{G74}
+\citation{chaitin1975theory}
+\citation{LV97}
+\citation{DHBook}
+\newlabel{intro:KCset}{{5}{12}{Kraft-Chaitin set}{theorem.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.2}El teorema de la codificación}{12}{subsection.1.3.2}\protected@file@percent }
+\newlabel{intro:eqn:coding}{{1.1}{12}{El teorema de la codificación}{equation.1.3.1}{}}
+\newlabel{intro:thm:coding}{{6}{12}{Coding Theorem}{theorem.6}{}}
+\newlabel{intro:def:prefixKwithOracle}{{7}{13}{Relativized \pfree \kolcomp }{theorem.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.2.1}Un lenguaje concreto: el lenguaje de geometría}{13}{subsubsection.1.3.2.1}\protected@file@percent }
+\@writefile{tdo}{\contentsline {todo}{{\bf  Santi:} Pego acá esto por si sirve. Quizá tenga sentido dar la semántica formal, dado que nunca apareció en ningún lado y que el cap 2 lo necesita en su versión simplificada.}{13}{section*.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Syntax.}{13}{section*.16}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces The symbols of $\Sigma $ around a circle, and the reflection axes.\relax }}{14}{figure.caption.15}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:circle}{{1.1}{9}{The symbols of $\Sigma $ around a circle, and the reflection axes.\relax }{figure.caption.14}{}}
-\@writefile{toc}{\contentsline {paragraph}{Syntax.}{9}{section*.15}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Semantics.}{9}{section*.16}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Examples.}{11}{section*.17}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Complexity.}{11}{section*.18}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Program size.}{12}{section*.20}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Kolmogorov complexity.}{12}{section*.21}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.3.3}El teorema de la codificación}{12}{subsubsection.1.2.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.3.4}Inferencia de Solomonoff}{12}{subsubsection.1.2.3.4}\protected@file@percent }
-\@writefile{tdo}{\contentsline {todo}{{\bf  Santi:} Algo corto. Está bien explicado en el Vitanyi}{12}{section*.22}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces The strings used in the experiment, its complexity and all minimal programs describing it. NO SE SI SIRVEN DE ALGO PARA LA TESIS\relax }}{13}{figure.caption.19}\protected@file@percent }
-\newlabel{fig:strings}{{1.2}{13}{The strings used in the experiment, its complexity and all minimal programs describing it. NO SE SI SIRVEN DE ALGO PARA LA TESIS\relax }{figure.caption.19}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.3.5}MDL}{14}{subsubsection.1.2.3.5}\protected@file@percent }
-\@writefile{tdo}{\contentsline {todo}{{\bf  Santi:} Acá hay varios trabajos para referenciar. Se puede mover parte de la intro de capítulo 2. Sería bueno poner la descripción del lenguaje de geometría, como ejemplo de lenguaje específico no Turing completo que describe secuencias espaciales. Estaría bueno dar la semántica formal (yo la tenía en algún lado), puesto que es una tesis en computación. Esta misma semántica se vuelve a dar en el cap 2, pero simplificada, dado que son solo 2 puntos.}{14}{section*.23}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.4}Ciencia Cognitiva Bayesiana}{14}{subsection.1.2.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.4.1}Rational analysis y plot}{14}{subsubsection.1.2.4.1}\protected@file@percent }
+\newlabel{fig:circle}{{1.1}{14}{The symbols of $\Sigma $ around a circle, and the reflection axes.\relax }{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {paragraph}{Semantics.}{14}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Examples.}{15}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Complexity.}{16}{section*.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Program size.}{17}{section*.21}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Kolmogorov complexity.}{17}{section*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.2.2}El teorema de la codificación}{17}{subsubsection.1.3.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.2.3}Inferencia de Solomonoff}{17}{subsubsection.1.3.2.3}\protected@file@percent }
+\@writefile{tdo}{\contentsline {todo}{{\bf  Santi:} Algo corto. Está bien explicado en el Vitanyi}{17}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.2.4}MDL}{17}{subsubsection.1.3.2.4}\protected@file@percent }
+\@writefile{tdo}{\contentsline {todo}{{\bf  Santi:} Acá hay varios trabajos para referenciar. Se puede mover parte de la intro de capítulo 2. Sería bueno poner la descripción del lenguaje de geometría, como ejemplo de lenguaje específico no Turing completo que describe secuencias espaciales. Estaría bueno dar la semántica formal (yo la tenía en algún lado), puesto que es una tesis en computación. Esta misma semántica se vuelve a dar en el cap 2, pero simplificada, dado que son solo 2 puntos.}{17}{section*.24}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.3}Ciencia Cognitiva Bayesiana}{17}{subsection.1.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.3.1}Rational analysis y plot}{17}{subsubsection.1.3.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces The strings used in the experiment, its complexity and all minimal programs describing it. NO SE SI SIRVEN DE ALGO PARA LA TESIS\relax }}{18}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:strings}{{1.2}{18}{The strings used in the experiment, its complexity and all minimal programs describing it. NO SE SI SIRVEN DE ALGO PARA LA TESIS\relax }{figure.caption.20}{}}
 \@setckpt{caps/introduccion}{
-\setcounter{page}{15}
-\setcounter{equation}{0}
+\setcounter{page}{19}
+\setcounter{equation}{1}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
@@ -98,8 +131,8 @@
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
 \setcounter{chapter}{1}
-\setcounter{section}{2}
-\setcounter{subsection}{4}
+\setcounter{section}{3}
+\setcounter{subsection}{3}
 \setcounter{subsubsection}{1}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
@@ -112,14 +145,14 @@
 \setcounter{subtable}{0}
 \setcounter{Item}{0}
 \setcounter{Hfootnote}{0}
-\setcounter{bookmark@seq@number}{13}
+\setcounter{bookmark@seq@number}{14}
 \setcounter{parentequation}{0}
 \setcounter{su@anzahl}{0}
 \setcounter{LT@tables}{0}
 \setcounter{LT@chunks}{0}
 \setcounter{FancyVerbLine}{0}
-\setcounter{theorem}{0}
-\setcounter{@todonotes@numberoftodonotes}{11}
+\setcounter{theorem}{7}
+\setcounter{@todonotes@numberoftodonotes}{12}
 \setcounter{AM@survey}{0}
 \setcounter{section@level}{3}
 }
