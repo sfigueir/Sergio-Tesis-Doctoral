@@ -12,6 +12,7 @@
 
 %How can children acquire a vast universe of concepts with seemingly very little exposure? One possible solution to this conundrum, known as the Plato Problem~\cite{chomsky1986knowledge,chomsky2006cognitive}, builds on the human capacity to describe concepts --and more generally of all elements of thought-- through the use of a symbolic and combinatorial mental language~\cite{newell1980physical}, referred as {\em language of thought} (LoT)~\cite{fodor1975language}.
 
+\intro{material para intro, pero dejar algo de relleno acá}{
 ¿Cómo pueden los niños adquirir un vasto universo de conceptos con muy poca exposición aparente? Una posible solución a esta pregunta, conocida como el problema de Platón ~\cite{chomsky1986knowledge,chomsky2006cognitive}, se base en la capacidad humana para describir concepto (y en general cualquier elemento del pensamiento) mediante el uso de un lenguaje mental con elementos simbólicos combinatorios~\cite{newell1980physical}, conocido en la literatura como el {\em lenguaje del pensamiento} (LoT, por sus siglas en inglés)~\cite{fodor1975language}.
 
 %Combinatorial languages can describe a vast set of concepts from a small set of primitives. This can be understood in a relatively simple example in the domain of shapes. A combinatorial and symbolic language similar to Logo~\cite{abelson1974logo} can combine operations such as ``move", ``pen up", ``pen down" or ``rotate" to generate an infinite set of expressions (or programs) which, when evaluated, can convey all sort of shapes.
@@ -21,6 +22,7 @@ Los lenguajes combinatorios pueden describir un vasto conjunto de conceptos a pa
 %A language describing concepts (like shapes) also provides a natural notion of their complexity \cite{kolmogorov1968three}. A concept is simple, relative to that language, when it can be described by a short program. On the contrary, it is complex when all its descriptions require a long sequence of instructions. For example, in the case of the Logo language, a square can simply be instructed as a loop of four displacements followed by rotations of 90 degrees. In this language, the icon of a face will be implemented by a significant lengthier program and hence will be more complex.  However, this concept would be simpler when described in a language in which the icon of a face (or the symbols for nose, mouth, etc.) are available as primitives in the language.
 
 Un lenguaje que describe conceptos (como las formas) también proporciona una noción natural de su complejidad \cite{kolmogorov1968three}. Un concepto es simple, relativo a ese lenguaje, cuando puede ser descrito por un programa corto. Por el contrario, es complejo cuando todas sus descripciones requieren una larga secuencia de instrucciones. Por ejemplo, en el caso de Logo, un cuadrado se puede instrumentar simplemente como un bucle de cuatro desplazamientos seguidos de rotaciones de 90 grados. En cambio, describir una cara requerirá de un programa más largo y, por lo tanto, será un concepto más complejo de describir. Sin embargo, este concepto se podría describir de manera más simple en un lenguaje en el que el icono de una cara (o de una nariz, boca, etc.) estuvieran disponibles como primitivas de ese lenguaje. 
+}
 
 %In the domain of Boolean concepts, a wide range of logical varieties of concepts was studied in~\cite{feldman2003simplicity}, revealing a surprisingly simple `law': the subjective difficulty of a Boolean concept for a human learner is directly proportional to the length of the shortest compatible program in the language of propositional logic (i.e.\ Boolean variables combined with the operators \textit{and}, \textit{or} and \textit{not}). This result may suggest that human LoT is equipped with rules and symbols similar to those found in propositional logic. Indeed, the correlation between the subjective difficulty of concepts and their complexity has been used as a general vehicle to study human LoT in various domains ~\cite{piantadosi2016logical,leeuwenberg1971perceptual,amalric2017language,romano2018,lupyan2007language}. Although often implicit, the general strategy is to (\textit{1)} assume a language; (\textit{2)} find the shortest compatible program for some concepts in that language; (\textit{3)} compare the length of these programs with the subjective difficulty of the concepts; and finally (\textit{4)} repeat this process for various languages within a universe of possible candidates and choose the language that gives the best match in \textit{(3)}. As mentioned before, the length of the program depends on the primitives of the language in which this program is written, so different languages make different predictions.
 
@@ -52,6 +54,7 @@ En nuestro experimento, los participantes se dividen en dos grupos de tal manera
 %We consider two propositional logics, both containing only four  propositional variables $\vars=\{x_1, x_2, x_3, x_4\}$. \grambool is defined over the signature $\oand$, $\oor$ and $\lnot$, and \gramboolxor is defined over the signature $\oand$, $\oor$, $\lnot$ and $\oxor$. As one can see from the grammars defined in Fig.~\ref{PCFG}, the only difference between \grambool and \gramboolxor is that the latter has an additional operator $\oxor$.  
 
 Consideramos dos lógicas proposicionales, ambas contienen sólo cuatro variables proposicionales  $\vars=\{x_1, x_2, x_3, x_4\}$. \grambool se define con los operadores $\oand$, $\oor$ y $\lnot$, y \gramboolxor se define con los operadores $\oand$, $\oor$, $\lnot$ y $\oxor$. Como se puede ver en las gramáticas definidas en la Figura~\ref{PCFG}, la única diferencia entre \grambool y \gramboolxor es que la última tiene un operador adicional: $\oxor$.  
+\santi{arraglar tabla}
  \begin{figure}[h!]
 \centering
 \small\vspace{-.3cm}
@@ -80,9 +83,9 @@ Consideramos dos lógicas proposicionales, ambas contienen sólo cuatro variable
       \label{PCFG}
    \end{figure}
 
-\santi{toda esta parte de semantica y MDL puede ir en intro. Es comun con el trabajo de BRM. Acá está con más detalle que en BRM}
 
 %The semantics of $\oand$, $\oor$ and $\lnot$ are standard: conjunction, disjunction and negation, respectively. We let $\oxor$ denote the exclusive disjunction. As usual, $v\models \varphi$, represents that the formula $\varphi$ is true for the valuation $v:\vars\to\{0,1\}$ and we denote the {\em semantics} of $\varphi$ by $\sem{\varphi}=\{v\colon v\models\varphi\}$. A {\em concept} $\con$ is a set of valuations $\vars\to\{0,1\}$. The complement of $\con$ is denoted $\overline \con$ and is defined as $\overline \con=\{0,1\}^\vars\setminus \con$. Observe that $\#\con+\#\overline \con=16$. We say that a formula $\varphi$ is {\em compatible} with concept $\con$ if $\sem{\varphi}=\con$. We regard logics as languages for describing concepts. Any concept $\con$ has infinitely many descriptions, namely, all formulas $\varphi$ such that $\sem{\varphi}=\con$. 
+\intro{toda esta parte de semántica y MDL puede ir en intro. Es común con el trabajo de BRM. Acá está con más detalle que en BRM. Sería bueno dar la gramática y semántica formal, incluyendo notación $\sem{.}$ (y usarlo en BRM, cosa que no hicimos en el paper)}{
 
 La semántica de $\oand$, $\oor$ y $\lnot$ son estándar: conjunción, disyunción y negación, respectivamente. Mientras que $\oxor$ denota la disyunción exclusiva. Como de costumbre, $v\models \varphi$, representa que la formula $\varphi$ es verdadera para la valuación $v:\vars\to\{0,1\}$ y denotamos la {\em semántica} de $\varphi$ con $\sem{\varphi}=\{v\colon v\models\varphi\}$. Un {\em concepto} $\con$ es un conjunto de valuaciones $\vars\to\{0,1\}$. El complemento de $\con$ se denota $\overline \con$ y se define como $\overline \con=\{0,1\}^\vars\setminus \con$. Observar que $\#\con+\#\overline \con=16$. Decimos que una fórmula $\varphi$ es {\em compatible} con el concepto $\con$ si $\sem{\varphi}=\con$. De esta manera, consideramos la lógica proposicional como un lenguaje para describir conceptos. Cualquier concepto $\con$ tiene entonces infinitas descripciones: todas las fórmulas $\varphi$ tal que $\sem{\varphi}=\con$. 
 
@@ -93,12 +96,12 @@ En la Figura~\ref{semaforos} representamos un concepto $\con$ (las variables est
 %We will often identify concepts with any formula compatible with it, so we will talk of ``concept $\varphi$'' to refer to ``concept $\sem{\varphi}$''. However, it should be noted that a concept is a semantic object that has many descriptions in the logical language.
 
 A menudo identificaremos conceptos con cualquier fórmula compatible con ella, por lo que hablaremos de ``concepto $\varphi$'' para referirnos a ``concepto $\sem{\varphi}$''. Sin embargo, cabe señalar que un concepto es un objeto semántico que tiene muchas descripciones en el lenguaje.
+}
 
 \includegraphics[scale=.6]{../figuras/pre/notacion.pdf}
 \widesanti{Sergio, esta imagen es nueva. Pienso que puede dar coherencia con BRM. Puede remplazar a la figura anterior. Hay que actualizar notación en el texto y cambiar $x_i$ por $p_i$, etc. Cuando se presente la figura análoga en BRM, podes mandar un cf. a esta}
 
-%A lower bound for the complexity of a concept in a given logic corresponds to the shortest description of that concept, that is, its minimum description length (MDL).
-Un límite inferior para la complejidad de un concepto en una lógica dada corresponde a la descripción más corta de ese concepto, es decur, su longtud mínima de descripción (MDL).
+
 
  \begin{figure}[t!]
  \vspace{-0.5cm}
@@ -108,7 +111,11 @@ Un límite inferior para la complejidad de un concepto en una lógica dada corre
   \caption{Ejemplo de un concepto $\con$, como se muestra en el experimento. Variables en $\vars=\{x_1,x_2,x_3,x_4\}$ corresponden a la presencia de una luz de color en el objeto ($x_{1}=$ verde, $x_2=$ azul, $x_3=$ rojo, $x_4=$ naranja). Los objetos (valuaciones) que pertenecen a $\con$ se resaltan con un bordo en negrita. $\con$ puede describirse mediante $x_1\oand x_2$. Como en un semáforo, cada color está fijado siempre en la misma posición.}
   \label{semaforos}
 \end{figure}
-   
+
+\intro{esta parte también puede ir a intro. es común a BRM. misma gramática}{
+%A lower bound for the complexity of a concept in a given logic corresponds to the shortest description of that concept, that is, its minimum description length (MDL).
+Un límite inferior para la complejidad de un concepto en una lógica dada corresponde a la descripción más corta de ese concepto, es decir, su longitud mínima de descripción (MDL).
+
 %The {\em size} of a formula $\varphi$ is denoted $|\varphi|$ and it is defined as the number of operators plus the number of atoms (i.e.\ possibly negated propositional symbols), that is: $|x_i|=|\lnot x_i|=1$ for $i=1\dots 4$ and $|\varphi_1*\varphi_2|=|\varphi_1|+|\varphi_2|+1$ for $*\in\{\oand,\oor,\oxor\}$. For ${\sf L} \in\{\grambool,\gramboolxor\}$ and a concept $\con$ we define the {\em minimum description length of $\con$ with respect to $\mathcal {\sf L}$} as
 El {\em tamaño} de una fórmula $\varphi$ se denota como $|\varphi|$ y se define como el número de operadores más el número de átomos (símbolos proposicionales posiblemente negados), es decir: $|x_i|=|\lnot x_i|=1$ para $i=1\dots 4$ y $|\varphi_1*\varphi_2|=|\varphi_1|+|\varphi_2|+1$ para $*\in\{\oand,\oor,\oxor\}$. Para ${\sf L} \in\{\grambool,\gramboolxor\}$ y un concepto $\con$ definimos la {\em la longitud mínima de descripción de $\con$ con respecto a $\mathcal {\sf L}$} como:
 $$
@@ -121,6 +128,8 @@ Como $\grambool$ es un sublenguaje de $\gramboolxor$, tenemos que $\mdl{\gramboo
 $
 %which expresses that $x_1$ is true or $x_2$ is true but not both can be described in \gramboolxor as $\varphi=x_{1} \oxor x_{2}$, of length 3. In fact, one can check that this is the shortest formula compatible with $\con$, and so $\mdl{\gramboolxor}(\con)=3$. If we now switch to \grambool, we can no longer describe $\con$ as $x_{1} \oxor x_{2}$, since $\oxor$ is not part of its signature. However, in \grambool, the concept $\con$ may be described by  formula $\psi=(x_{1} \oand \neg x_{2}) \oor (x_{2} \oand \neg x_{1})$, of size 7. Since this formula has minimal size, we have that $\mdl{\grambool}(\con)=7$.
 que expresa que $x_1$ es verdadero o $x_2$ es verdadero, pero no ambas puede describirse en \gramboolxor como $\varphi=x_{1} \oxor x_{2}$, de tamaño 3. De hecho, se puede comprobar que esta es la fórmula más corta compatible con $\con$, por lo que $\mdl{\gramboolxor}(\con)=3$. Si ahora cambiamos a \grambool, ya no podemos describir a $\con$ como $x_{1} \oxor x_{2}$, dado que $\oxor$ no es parte del lenguaje. Sin embargo, en \grambool, el concepto $\con$ puede describirse mediante la fórmula $\psi=(x_{1} \oand \neg x_{2}) \oor (x_{2} \oand \neg x_{1})$, de tamaño 7. Dado que esta fórmula tiene tamaño mínimo para ese concepto en \grambool, tenemos que $\mdl{\grambool}(\con)=7$.
+
+}
 
 \section{Experimento}
 
