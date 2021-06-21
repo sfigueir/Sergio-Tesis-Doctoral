@@ -57,9 +57,10 @@ Consideramos dos lógicas proposicionales, ambas contienen sólo cuatro variable
 \santi{arraglar tabla}
  \begin{figure}[h!]
 \centering
-\small\vspace{-.3cm}
+\small
+{\bf Gramática para \grambool}
 \begin{tabular}{ccc}
-\begin{minipage}[h]{0,2\textwidth}
+\begin{minipage}[h]{0,4\textwidth}
 \begin{eqnarray*}
 \start &\to&\bool\\
 \bool &\to&(\bool \oand \bool) \\
@@ -70,16 +71,29 @@ Consideramos dos lógicas proposicionales, ambas contienen sólo cuatro variable
 &
 \ \quad
 &
-\begin{minipage}[h]{0,2\textwidth}
-\ \quad Para $i=1,2,3,4$
+\begin{minipage}[h]{0,4\textwidth}
+\ \qquad Para $i=1,2,3,4$
 \begin{eqnarray*}
 \atom &\to& x_i \\
 \atom &\to&\lnot x_i 
 \end{eqnarray*}
 \end{minipage}
 \end{tabular}
+
+\bigskip
+
+{\bf Gramática para \gramboolxor}
+
+Mismas reglas que para \grambool más la siguiente regla:
+
+\begin{minipage}[h]{0,4\textwidth}
+\begin{eqnarray*}
+\bool &\to&(\bool \oxor \bool) \\
+\end{eqnarray*}
+\end{minipage}
+
       %\caption{The context free grammar for language \grambool.  Language \gramboolxor has an extra rule: $\bool\  \to\ (\bool \oxor \bool)$}
-      \caption{La gramática libre de contexto para el lenguaje \grambool.  El lenguaje \gramboolxor tiene una producción extra: $\bool\  \to\ (\bool \oxor \bool)$}
+      \caption{Las gramáticas libres de contexto para los lenguaje \grambool y \gramboolxor.}
       \label{PCFG}
    \end{figure}
 
@@ -166,19 +180,20 @@ que expresa que $x_1$ es verdadero o $x_2$ es verdadero, pero no ambas puede des
 \end{table*}
 
 
-
+\begin{center}
 \begin{table}[]\small
 \begin{tabular}{|c|c||c|c|c||c|c|c|}
 \hline
 \textbf{}                 & \textbf{Prueba} & \textbf{\begin{tabular}[c]{@{}c@{}}Grupo\\ Objetivo\end{tabular}} & \textbf{$\mdl{\gramboolxor}$} & \textbf{$\mdl{\grambool}$} & \textbf{\begin{tabular}[c]{@{}c@{}}Grupo\\ Control\end{tabular}} & \textbf{$\mdl{\gramboolxor}$} & \textbf{$\mdl{\grambool}$} \\ \hline
-\multirow{4}{*}{\parbox[t]{2mm}{\rotatebox[origin=c]{90}{\bf Entrenamiento\ \ \ \ \ \\ \ \  }}} & 1               & \begin{tabular}[c]{@{}c@{}}\targeta \\ $x_{i}$\end{tabular}                     & 1              & 1               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \cline{2-8} 
+\multirow{4}{*}{\parbox[t]{2mm}{\rotatebox[origin=c]{90}{Entrenamiento\ \ \ \ \ \\ \ \  }}} & 1               & \begin{tabular}[c]{@{}c@{}}\targeta \\ $x_{i}$\end{tabular}                     & 1              & 1               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \cline{2-8} 
                           & 2               & \begin{tabular}[c]{@{}c@{}}\targetb\\ $x_{i} \oxor x_{j}$\end{tabular}                     & 3              & 7               & \begin{tabular}[c]{@{}c@{}}\controlb\\ $x_{i} \oor x_{j}$\end{tabular}                    & 3              & 3               \\ \cline{2-8} 
                           & 3               & \begin{tabular}[c]{@{}c@{}}\targetc \\ $x_{i} \oxor x_{j} \oxor x_{k}$\end{tabular}                     & 5              & 19              & \begin{tabular}[c]{@{}c@{}}\controlc\\ $x_{i} \oor (x_{j} \oand x_{k})$\end{tabular}                    & 5              & 5               \\ \cline{2-8} 
                           & 4               & \begin{tabular}[c]{@{}c@{}}\targetd\\ $x_{k} \oxor x_{l}$\end{tabular}                     & 3              & 7               & \begin{tabular}[c]{@{}c@{}}\controld\\$x_{k} \oor x_{l}$\end{tabular}                    & 3              & 3               \\ \hline
-\multirow{2}{*}{\parbox[t]{2mm}{\rotatebox[origin=c]{90}{\bf Evaluación}}}     & 5               & \begin{tabular}[c]{@{}c@{}}\testa\\ $x_{i} \oand (x_{j} \oxor x_{k})$\end{tabular}                     & 5              & 9               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \cline{2-8} 
+\multirow{2}{*}{\parbox[t]{2mm}{\rotatebox[origin=c]{90}{Evaluación}}}     & 5               & \begin{tabular}[c]{@{}c@{}}\testa\\ $x_{i} \oand (x_{j} \oxor x_{k})$\end{tabular}                     & 5              & 9               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \cline{2-8} 
                           & 6               & \begin{tabular}[c]{@{}c@{}}\testb\\ $x_{i} \oand (x_{j} \oor x_{k})$\end{tabular}                     & 5              & 5               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \hline
 \end{tabular}
 \end{table}
+\end{center}
 \widesanti{hice esta tabla como la anterior pero con diseño para que entre. Si te gusta y la querés cambiar, adelante. Solo que antes hay que revisar que tenga los mismos datos!}
 
 
