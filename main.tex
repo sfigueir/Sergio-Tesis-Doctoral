@@ -89,27 +89,33 @@ Puse en magenta cosas que pueden ir parte II
 
 \color{black}
 
+\bigskip
 
-Me gustaría unificar notación en toda la tesis. Propuesta (obviamnete se puede cambiar fácil porque son comandos)
+Me gustaría unificar notación en toda la tesis. 
 
-lenguajes/gramáticas:
+Propuesta (obviamente se puede cambiar fácil porque son comandos)
 
-\gramgeo para lenguaje de geometría. No está hecho.
+Lenguajes/gramáticas:
+\begin{itemize}
+\item \gramgeo para lenguaje de geometría. No está hecho.
 
-\grambin para lenguaje de binario (sub gramática del anteirior). no está hecho en cap 2.
+\item \grambin para lenguaje de binario (sub gramática del anteirior). no está hecho en cap 2.
 
-\grambool para lenguaje de proposicional sin xor. Estaba hecho en el paper de PRE (cap 4) pero fuimos muy informales en el paper de BRM (cap 5)
+\item \grambool para lenguaje de proposicional sin xor. Ya está usado así en el paper de PRE (cap 4) pero fuimos muy informales en el paper de BRM (cap 5). Sería bueno formalizar la notación ahí
 
-\gramboolxor para lenguaje de proposicional con xor. Idem.
+\item \gramboolxor para lenguaje de proposicional con xor. Ya está usado así en el paper de PRE (cap 4) y no se usa en otro lado.
+\end{itemize}
 
-complejidades:
 
-\mdlbin para MDL relativo a \grambin . Este reemplazo ya está hecho en cap 2
+Complejidades:
 
-\mdl{\grambool} para complejidad relativa a \grambool. Estaba usado en PRE pero falta usarlo ene BRM
+\begin{itemize}
+\item \mdlbin para complejidad relativa a \grambin . Este reemplazo ya está hecho en cap 2 (ver comentario en parte I)
 
-\mdl{\gramboolxor} para complejidad relativa a \gramboolxor. Está usado en PRE y solo se usa en PRE.
+\item \mdl{\grambool} para complejidad relativa a \grambool. Estaba usado en PRE pero falta usarlo ene BRM
 
+\item \mdl{\gramboolxor} para complejidad relativa a \gramboolxor. Está usado en PRE y solo se usa en PRE.
+\end{itemize}
 
 
 \newgeometry{top=30mm, bottom=10mm} 
@@ -132,73 +138,24 @@ complejidades:
 
 \pagenumbering{arabic}
     \include{caps/introduccion}
-
     \part{Aprendizaje de secuencias}
-    \color{blue}
-    Propuesta: acá poner la gramática y semántica FORMAL del lenguaje de geometría y su simplificación para cadenas binarias
-
-    Sería todo lo que esté en blue en cap 1, 2, 3
-
-    Eg:
-
-    Definir  gramáticas   \gramgeo y    \grambin acá y también \mdlbin acá
-
-    Para la semántica de los programas $P$ se puede también usar $\sem{P}$, como hacemos con las fórmulas, pero en este caso, la semántica de un programa es una secuencia en el octágono (o binaria). Habría que definir $\sem{P}$ relativo a un punto inicial $n\in\{0\dots 7\}$ de cómputo: 
-    por ejemplo. algo como $\llbracket$\verb#+1#$\rrbracket_n= n+1 \mod 8$.% no me anda usar \verb adentro de \sem :( No deja usar \verb en modo math
-
-    Antes lo llamamos $P(n)$, pero creo que es mejor llamarlo $\sem{P}_n$, asi $\sem{.}$ siempre quiere decir semántica (con fórmulas o secuencias)
-
-    Podemos definir \mdlbinfrag adentro del cap 3 porque es muy particular
-
-    usar este font \verb#[+2]^4# para programas
-
-    en cap 2 cambié ``la complejidad LoT", ``complejidad LoT", etc por comando mdlbin y cambié  ``complejidad LoT de fragmentos" por comando mdlbinfrag
-
-
-
-
-    \color{black}
-
-
-    \include{caps/binario}
-    \include{caps/seleccion}
-
+        \include{caps/parte1}
+        \include{caps/binario}
+        \include{caps/seleccion}
     \part{Aprendizaje de conceptos booleanos}
-    \color{magenta}
-    Propuesta: acá poner la gramática y semántica de la lógica proposicional
-
-    Sería todo lo que está en magenta en los caps 4 y 5.
-
-    Eg:
-    
-    Fig \ref{PCFG}, solo la parte de \grambool pero con una cantidad no acotad de proposiciones em ve de fijarlas en 4 . No incluir \gramboolxor acá.
-
-    Definir formalmente $\sem{\varphi}$
-
-    Definir el tamaño de la formula. Usar notación común para cap 4 y 5
-
-    definir  \mdl{\grambool} para complejidad relativa a \grambool, pero dejar la definición de
-      \mdl{\gramboolxor} para complejidad relativa a \gramboolxor adentro del cap 4 porque solo aparece ahí. 
-
-
-
-
-
-    \color{black}
-
-    \include{caps/actualizacion}
-    \include{caps/marco}
-    \include{caps/conclusiones}
+        \include{caps/parte2}
+        \include{caps/actualizacion}
+        \include{caps/marco}
+        \include{caps/conclusiones} 
     %\include{papers/plos_one_final}
     %\include{papers/pre_final}
     %\include{papers/behavior_research_methods}
     %\include{papers/plos_comp_bio}
-    
     \part{Apéndices}
-    \appendix
-    \include{app_plos_comp_bio}
-    \include{app_plos_one}
-    \include{app_behavior_research_methods}
+        \appendix
+        \include{app_plos_comp_bio}
+        \include{app_plos_one}
+        \include{app_behavior_research_methods}
     \bibliographystyle{plain-spanish}
     %\bibliographystyle{apa}
     \bibliography{biblio}
