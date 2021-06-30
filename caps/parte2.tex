@@ -17,8 +17,9 @@
     definir  \mdlbool para complejidad relativa a \grambool, pero dejar la definición de
       \mdlboolxor para complejidad relativa a \gramboolxor adentro del cap 4 porque solo aparece ahí. 
 
+\color{black}
 
------------------ ASI ES COMO ME IMAGINO LA DEFINICION DE LOGICA PROP. HABRRÍA QUE HACER ALGO PARECIDO EN PARTE I CON LENG GEOM. ADEMÁS, EN CAP 4 TENEMOS QUE AGREGAR REGLA DEL XOR SIGUIENDO ESTE ESQUEMA (REGLA GRAMATICAL, SEMÁNTICA, TAMAÑO, COMPLEJIDAD, Y TODO CON EJEMPLOS PARA QUE LA LECTURA SEA MAS AMENA).-----------------------
+----------------------------------------
 
 \paragraph{La gramática \grambool.}
 Para un conjunto fijo $\propvars=\{p_1,\dots,p_k\}$ de variables proposicionales, definimos la gramática de la lógica proposicional $\grambool$ del siguiente modo
@@ -53,7 +54,7 @@ Esta definición formaliza la idea intuitiva de los operadores de conjunción ($
 
 Llamamos {\em concepto} a un conjunto de valuaciones sobre la gramática \grambool. Puesto que el conjunto de conectivos de \grambool es adecuado, cualquier concepto $\+C$ podrá ser expresado por una fórmula $\varphi\in\grambool$, en el sentido de que $\sem{\varphi}=\+C$. De hecho, para cada concepto $\+C$ existirán infinitas fórmulas que lo expresan.
 
-\paragraph{Complejidad para \grambool.} Definimos $|\varphi|$, el tamaño de la fórmula $\varphi\in\grambool$, del siguiente modo:
+\paragraph{Complejidad para \grambool.} Definimos $|\varphi|$, el {\em tamaño} de la fórmula $\varphi\in\grambool$, del siguiente modo:
 \begin{eqnarray*}
 |p_i| &\eqdef& 1\\
 |\lnot p_i| &\eqdef& 1\\

@@ -45,3 +45,256 @@ En el presente estudio, probamos la hipótesis de que el mismo lenguaje, cuando 
 
 Teniendo en cuenta este LoT, para cada secuencia, uno puede encontrar la expresión más simple que lo describa y su complejidad asociada (análoga a CK). La complejidad es calculada como una suma ponderada por el costo fijo asociada a cada primitiva (\verb#+0# y \verb#B#). Como en el lenguaje original~\cite{amalric2017language}, el costo adicional de repetir una instrucción $n$ veces corresponde a $\lceil \log_{10} n \rceil$, es decir, el número de dígitos necesarios para codificar el número en notación decimal. El valor relativo de esos dos costos es tal que incluso una sola repetición comprime una expresión: \verb#+0^2# se supone que es una expresión más comprimida que la simple concatenación de \verb#+0,+0# (ver información en~\cite{amalric2017language} para detalles). Como resultado, el lenguaje favorece una descripción abstracta de secuencias basada en en la cantidad máxima de repeticiones anidadas, disociando de manera fuerte la longitud de una secuencia con su complejidad.
 \color{black}
+
+--------------------------------------------------------
+
+\paragraph{La gramática \gramgeo.}
+Definimos la gramática para el {\em lenguaje de geometría} $\grambool$ del siguiente modo:
+
+\begin{center}
+\begin{tabular}{cc}
+
+    \begin{minipage}[t]{0.35\textwidth}
+    {\bf Símbolo inicial}
+
+    \medskip
+
+    \begin{tabular}{rcl}
+    \start & $\to$ & \verb#[#\inst\verb#]# %& símbolo inicial 
+    \end{tabular}
+
+    \bigskip
+
+    {\bf Producciones básicas}
+
+    \medskip
+
+    \begin{tabular}{rcl}
+    \inst  & $\to$ & \atom %& producción atómica 
+    \\
+    \inst  & $\to$ & \inst\verb#,#\inst %& concatenación 
+    \\
+    \inst  & $\to$ & \rep\verb#[#\inst\verb#]^#$k$%& familia repetir con $n \in [2,8]$ 
+    \\
+    \rep  & $\to$ & \verb#REP0# %& repetición simple 
+    \\
+
+    \rep  & $\to$ & \verb#REP1<#\atom\verb#># %& repetir con variación del punto de inicio usando ATOMIC
+    \\
+    \rep  & $\to$ & \verb#REP2<#\atom\verb#># %& repetir con variación de la secuencia resultante usando ATOMIC
+    \\
+    \end{tabular}
+    \end{minipage}
+    
+    \begin{minipage}[t]{0.35\textwidth}
+
+    {\bf Producciones atómicas}
+
+    \medskip
+
+    \begin{tabular}{rcl}
+    \atom  & $\to$ & \verb#-1# %& siguiente elemento en sentido antihorario (ACW) 
+    \\
+    \atom  & $\to$ & \verb#-2# %& segundo elemento ACW 
+    \\
+    \atom  & $\to$ & \verb#-3# %& tercer elemento ACW 
+    \\
+    \atom  & $\to$ & \verb#+0# %& permanecer en la misma posición 
+    \\
+    \atom  & $\to$ & \verb#+1# %& siguiente elemento en sentido horario (CW)
+    \\
+    \atom  & $\to$ & \verb#+2# %& segundo elemento CW 
+    \\
+    \atom  & $\to$ & \verb#+3# %& tercer elemento CW 
+    \\
+    \atom  & $\to$ & \verb#A # %& simetría alrededor de un eje diagonal 
+    \\
+    \atom  & $\to$ & \verb#B # %& simetría alrededor del otro eje diagonal 
+    \\
+    \atom  & $\to$ & \verb#H # %& simetría horizontal 
+    \\
+    \atom  & $\to$ & \verb#V # %& simetría vertical 
+    \\
+    \atom  & $\to$ & \verb#P # %& simetría rotacional 
+    \end{tabular}
+    \end{minipage}
+\end{tabular}
+\end{center}
+
+\noindent donde $k$ es la representación en decimal de un número natural en el intervalo $\{2,\dots,8\}$.
+
+
+Los {\em programas} de \gramgeo serán las palabras del lenguaje definido por \gramgeo. Usaremos indistintamente \gramgeo para referirnos a la gramática o al lenguaje que representa (quedando siempre claro del contexto cuál de las dos aplica).
+
+\paragraph{La semántica de \gramgeo.}
+Los programas por sí solos no tienen semántica, sino que la semántica viene dada por un par $(P,n)$, donde $P$ es un programa de \gramgeo y $n$ es un número natural entre 0 y 7. Denotaremos con $\sem{P}_n$ a la semántica de tal par, y será una secuencia no vacía de números naturales sobre el alfabeto $\{0,\dots,7\}$. Intuitivamente, $\sem{P}_n$ representa o describe un camino  en el octágono de la Figura \ref{fig:circle}, cuando se `ejecuta' $P$ a partir del punto $n$. El mismo programa $P$ podrá describir distintas secuencias dependiendo del valor de $n$. 
+\widesanti{ACA ALGO MAS DE BLA BLA INTUITIVO}
+
+\begin{figure}[ht]
+\begin{center}
+\begin{tikzpicture}[scale=.6]
+\draw (-3,0) -- (3,0) node[above]{$H$};
+\draw (0,-3) -- (0,3) node[above]{$V$};
+\draw (-2.121320344,-2.121320344) -- (2.121320344,2.121320344) node[above right]{$B$};
+\draw (2.121320344, -2.121320344) -- (-2.121320344,2.121320344) node[above left]{$A$};
+\node at (0.765366865,  1.847759065) [circle,draw, scale=.5, fill, label=67.5:$0$]{};
+\node at (1.847759065   , 0.765366865) [circle,draw, scale=.5, fill, label=22.5:$1$]{};
+\node at (1.847759065   , -0.765366865) [circle,draw, scale=.5, fill, label=-22.5:$2$]{};
+\node at (0.765366865   , -1.847759065) [circle,draw, scale=.5, fill, label=-67.5:$3$]{};
+\node at (-0.765366865, -1.847759065) [circle,draw, scale=.5, fill, label=-112.5:$4$]{};
+\node at (-1.847759065, -0.765366865) [circle,draw, scale=.5, fill, label=-157.5:$5$]{};
+\node at (-1.847759065, 0.765366865) [circle,draw, scale=.5, fill, label=-202.5:$6$]{};
+\node at (-0.765366865, 1.847759065) [circle,draw, scale=.5, fill, label=-247.5:$7$]{};
+\draw (0,0) circle (2cm);
+\end{tikzpicture}
+\end{center}
+   \caption{El octógono sobre el que \gramgeo describe caminos}\label{fig:circle}
+\end{figure}
+
+Se puede ver de la definición de la gramática \gramgeo que un programa $P$ será siempre de la forma 
+
+\begin{center}
+$P=$\verb#[# $I_1$ \verb#,# \dots \verb#,# $I_\ell$ \verb#]#
+\end{center}
+
+\noindent donde las $I_i$ serán {\em instrucciones} derivadas de \inst. Por comodidad, definiremos también la semántica sobre el conjunto de de instrucciones, es decir definiremos $\sem{I}_n$, donde $I$ es una instrucción. Una {\em instrucción atómica} es cualquiera derivada del símbolo \atom\ en la gramática \gramgeo.
+
+La definición de la semántica formal la veremos más adelante. 
+Por ahora veamos informalmente la semántica de cada instrucción atómica: 
+\begin{itemize}
+\item \verb#-1# representa siguiente elemento en sentido antihorario (SAH)
+
+\item \verb#-2# representa el segundo elemento SAH
+
+\item \verb#-3# representa el tercer elemento SAH 
+
+\item \verb#+0# representa permanecer en la misma posición
+
+\item \verb#+1# representa el siguiente elemento en sentido horario (SH)
+ 
+\item \verb#+2# representa el segundo elemento SH
+
+\item \verb#+3# representa el tercer elemento SH 
+
+\item \verb#A# representa la simetría sobre un eje diagonal
+
+\item \verb#B# representa la simetría sobre el otro eje diagonal 
+
+\item \verb#H# representa la simetría horizontal 
+
+\item \verb#V# representa la simetría vertical 
+
+\item \verb#P# representa la simetría rotacional 
+\end{itemize}
+
+Además, \gramgeo tiene tres formas de repeticiones de (sub)programas:
+
+\begin{itemize}
+\item Si $P=$\verb#[# $I_1$ \verb#,# \dots \verb#,# $I_\ell$ \verb#]# es un programa, la ejecución de \verb#REP0#$P$\verb#^#$k$ desde $n$ será equivalente a la ejecución del siguiente programa desde $n$: 
+\begin{center}
+\verb#[# $I_1$ \verb#,# \dots \verb#,# $I_\ell$ \verb#,# 
+         $I_1$ \verb#,# \dots \verb#,# $I_\ell$ \verb#,#
+         $\dots$ \verb#,# 
+         $I_1$ \verb#,# \dots \verb#,# $I_\ell$ \verb#]#
+\end{center} ESTO NO SE SI ESTA BIEN
+que tiene $k$ copias de $P$.
+\noindent Por ejemplo...
+
+
+
+\item Si $A$ es una instrucción atómica y $P$ es un programa, la ejecución del programa 
+\verb#REP1<#$A$\verb#>#$P$\verb#^#$k$ desde $n$ será...
+
+\item Si $A$ es una instrucción atómica y $P$ es un programa, la ejecución del programa 
+\verb#REP2<#$A$\verb#>#$P$\verb#^#$k$ desde $n$ será...
+
+\end{itemize}
+
+Dado $\alpha$ un programa o una instrucción, y dado $n\in\{0,\dots,7\}$, definimos ahora formalmente $\sem{\alpha}_n$, la {\em semántica de $\alpha$ a partir de $n$}, recursivamente en la complejidad del árbol sintáctico de $\alpha$ en la gramática \gramgeo.
+
+Definimos primero la semántica de las instrucciones atómicas de la siguiente forma:
+
+\begin{tabular}{cc}
+    \begin{minipage}[t]{0.45\textwidth}
+        \begin{itemize}
+        \item $\llbracket$\verb#+0#$\rrbracket_n  \eqdef  n$ 
+        \item $\llbracket$\verb#+1#$\rrbracket_n  \eqdef  n+1 \mod 8$  
+        \item $\llbracket$\verb#-1#$\rrbracket_n  \eqdef  n-1 \mod 8$  
+        \item $\llbracket$\verb#+2#$\rrbracket_n  \eqdef  n+2 \mod 8$  
+        \item $\llbracket$\verb#-2#$\rrbracket_n  \eqdef  n-2 \mod 8$  
+        \item $\llbracket$\verb#+3#$\rrbracket_n  \eqdef  n+3 \mod 8$  
+        \item $\llbracket$\verb#-3#$\rrbracket_n  \eqdef  n-3 \mod 8$  
+        \end{itemize}
+    \end{minipage}
+    &
+    \begin{minipage}[t]{0.45\textwidth}
+        \begin{itemize}
+        \item $\llbracket$\verb#P#$ \rrbracket_n  \eqdef  4+n \mod 8$  
+        \item $\llbracket$\verb#H#$ \rrbracket_n  \eqdef  3-n \mod 8$  
+        \item $\llbracket$\verb#V#$ \rrbracket_n  \eqdef  7-n \mod 8$  
+        \item $\llbracket$\verb#A#$ \rrbracket_n  \eqdef  5-n \mod 8$  
+        \item $\llbracket$\verb#B#$ \rrbracket_n  \eqdef  1-n \mod 8$  
+        \end{itemize}
+    \end{minipage}
+\end{tabular}
+
+\medskip
+
+La semántica de las otras instrucciones (salvo la regla de que introduce `\verb#,#') es la siguiente:
+\begin{itemize}
+\item Si $I=$ \verb#REP0#$P$\verb#^#$k$, con $P$ un programa, 
+definimos 
+$\sem{I}_n$......
+
+
+\item Si $I=$ \verb#REP1<#$A$\verb#>#$P$\verb#^#$k$, con $P$ un programa y $A$ una instrucción atómica, 
+definimos 
+$\sem{I}_n$......
+
+\item Si $I=$ \verb#REP2<#$A$\verb#>#$P$\verb#^#$k$, con $P$ un programa y $A$ una instrucción atómica, 
+definimos 
+$\sem{I}_n$......
+\end{itemize}
+
+Finalmente, si $P=$ \verb#[# $I$ \verb#]#, entonces $\sem{P}_n\eqdef\sem{I}_n$, y si
+\begin{center}
+$P=$\verb#[# $I_1$ \verb#,# $I_2$ \verb#,# \dots \verb#,# $I_\ell$ \verb#]#
+\end{center}
+con $\ell>1$,
+entonces
+
+\begin{center}
+$\sem{P}_n \eqdef \sem{I_1}_n \concat \llbracket$
+\verb#[# $I_2$ \verb#,# \dots \verb#,# $I_\ell$ \verb#]#
+$\rrbracket_m$
+\end{center}
+
+\noindent donde $m\in\{0,\dots,7\}$ es el último símbolo de la secuencia $\sem{I_1}_n$ y $\cdot\concat\cdot$ representa la concatenación de secuencias.
+
+
+\paragraph{Complejidad para \gramgeo.} 
+Si $\alpha$ es un programa o una instrucción de \gramgeo, definimos el {\em tamaño} de $\alpha$, notado $|\alpha|$ de la siguiente manera:
+%
+\begin{itemize}
+\item Si $\alpha$ es una instrucción atómica, $|\alpha|\eqdef 2$.
+
+\item Si $\alpha$ es una instrucción de la forma 
+\verb#REP0#$P$\verb#^#$k$, con $P$ un programa, 
+entonces $|\alpha|\eqdef |P|+\lceil \log k\rceil$.
+
+\item Si $\alpha$ es una instrucción de la forma 
+\verb#REP1<#$A$\verb#>#$P$\verb#^#$k$ o de la forma 
+\verb#REP1<#$A$\verb#>#$P$\verb#^#$k$ 
+con $P$ un programa y $A$ una instrucción atómica, 
+entonces $|\alpha|\eqdef |P|+\lceil \log k\rceil+|A|$.
+
+\item Si $\alpha$ es un programa de la forma
+\verb#[# $I_1$ \verb#,# $I_2$ \verb#,# \dots \verb#,# $I_\ell$ \verb#]#
+entonces $|\alpha|\eqdef \sum_{i=1}^\ell|I_i|$.
+\end{itemize}
+%
+Si $s$ es una secuencia no vacía sobre $\{0,\dots,7\}$, definimos la {\em $\gramgeo$-complejidad de la descripción mínima} de $s$, notada $\mdlgeo(s)$, como el tamaño del programa que, ejecutado desde 0, produce la secuencia $s$, es decir,
+$$
+\mdlgeo(s)\eqdef\min\{|P|\mid P\in\gramgeo,\sem{P}_0=s\}.
+$$
+Por ejemplo, ..............
