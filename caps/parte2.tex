@@ -33,15 +33,15 @@ Para un conjunto fijo $\propvars=\{p_1,\dots,p_k\}$ de variables proposicionales
 \end{eqnarray*}
 donde $i\in\{1,\dots,k\}$.
 
-Las {\em fórmulas} de \grambool serán las palabras del lenguaje definido por \grambool.
+Las {\em fórmulas} de \grambool serán las palabras del lenguaje definido por \grambool. Usaremos indistintamente \grambool para referirnos a la gramática o al lenguaje que representa (quedando siempre claro del contexto cuál de las dos aplica).
 
 
 \paragraph{La semántica de \grambool.}
-Una {\em valuación} es una función $v:\propvars\to\{0,1\}$. Equivalentemente, una valuación puede ser vista como un vector $v$ en $\{0,1\}^k$, donde notamos con $v(i)$ a la $i$-ésima coordenada de $v$. Informalmente, una valuación asigna valores de verdad a las variables proposicionales de $\propvars$ (la $i$-ésima coordenada de una valuación $v$ es $1$ si y solo si la variable proposicional $p_i$ es verdadera) y permite derivar el valor de verdad de fórmulas de $\grambool$.  
+Una {\em valuación} es una función $v:\propvars\to\{0,1\}$. Equivalentemente, una valuación puede ser vista como un vector $v$ en $\{0,1\}^k$, donde notamos con $v(i)$ a la $i$-ésima coordenada de $v$. Informalmente, una valuación asigna valores de verdad a las variables proposicionales de $\propvars$ (la $i$-ésima coordenada de una valuación $v$ es $1$ si y solo si la variable proposicional $p_i$ es verdadera según $v$) y permite derivar el valor de verdad de fórmulas de $\grambool$.  
 
 La {\em semántica} de una fórmula $\varphi$ será un conjunto (finito) de valuaciones sobre $\propvars$. Intuitivamente, este conjunto será su {\em extensión}, es decir, el conjunto de valuaciones (sobre el conjunto \propvars) que hacen verdadera a $\varphi$. 
 %
-Formalmente, la semántica de una fórmula $\varphi$ de $\grambool$ (para el conjunto $\propvars$ fijo) se nota $\sem{\varphi}$ y se define del siguiente modo:
+Formalmente, la semántica de una fórmula $\varphi\in\grambool$ (para el conjunto $\propvars$ fijo) se nota $\sem{\varphi}$ y se define recursivamente del siguiente modo:
 %
 \begin{eqnarray*}
 \sem{p_i} &=& \{ v\in\{0,1\}^k \mid v(i)=1\}\\
@@ -49,9 +49,11 @@ Formalmente, la semántica de una fórmula $\varphi$ de $\grambool$ (para el con
 \sem{\varphi\wedge\psi} &=& \sem{\varphi}\cap\sem{\varphi}\\
 \sem{\varphi\vee\psi} &=& \sem{\varphi}\cup\sem{\varphi}
 \end{eqnarray*}
-Esta definición formaliza la idea intuitiva de los operadores de conjunción ($\wedge$), y disyunción ($\vee$). Observar que en \grambool la negación solo aparece enfrente de una variable proposicional. Por ejemplo, si $k=3$, es decir $\propvars=\{p_1,p_2,p_3\}$, entonces $\sem{p_2}=\{(0,1,0), (1,1,0), (0,1,1), (1,1,1)\}$,  $\sem{p_3}=\{(0,0,1), (0,1,1), (1,0,1), (1,1,1)\}$, y $\sem{p_2\wedge p_3}=\{(0,1,1), (1,1,1)\}$.
+Esta definición formaliza la idea intuitiva de los operadores de conjunción ($\wedge$), y disyunción ($\vee$). Observar que en \grambool la negación solo aparece en frente de una variable proposicional. Por ejemplo, si $k=3$ (es decir, $\propvars=\{p_1,p_2,p_3\}$) entonces $\sem{p_2}=\{(0,1,0), (1,1,0), (0,1,1), (1,1,1)\}$,  $\sem{p_3}=\{(0,0,1), (0,1,1), (1,0,1), (1,1,1)\}$, y $\sem{p_2\wedge p_3}=\{(0,1,1), (1,1,1)\}$.
 
-\paragraph{Complejidad para \grambool.} Definimos $|\varphi|$, el tamaño de la fórmula $\varphi$ de \grambool, del siguiente modo:
+Llamamos {\em concepto} a un conjunto de valuaciones sobre la gramática \grambool. Puesto que el conjunto de conectivos de \grambool es adecuado, cualquier concepto $\+C$ podrá ser expresado por una fórmula $\varphi\in\grambool$, en el sentido de que $\sem{\varphi}=\+C$. De hecho, para cada concepto $\+C$ existirán infinitas fórmulas que lo expresan.
+
+\paragraph{Complejidad para \grambool.} Definimos $|\varphi|$, el tamaño de la fórmula $\varphi\in\grambool$, del siguiente modo:
 \begin{eqnarray*}
 |p_i| &\eqdef& 1\\
 |\lnot p_i| &\eqdef& 1\\
