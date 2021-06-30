@@ -18,6 +18,39 @@
       \mdl{\gramboolxor} para complejidad relativa a \gramboolxor adentro del cap 4 porque solo aparece ahí. 
 
 
+----------------- ASI ES COMO ME IMAGINO LA DEFINICION DE LOGICA PROP. HABRRÍA QUE HACER ALGO PARECIDO EN PARTE I CON LENG GEOM. ADEMÁS, EN CAP 4 TENEMOS QUE AGREGAR REGLA DEL XOR SIGUIENDO ESTE ESQUEMA (REGLA GRAMATICAL, SEMÁNTICA, EJEMPLO).-----------------------
+
+\paragraph{La gramática \grambool.}
+Para un conjunto fijo $\propvars=\{p_1,\dots,p_k\}$ de variables proposicionales, definimos la gramática de la lógica proposicional $\grambool$ del siguiente modo
+%
+\begin{eqnarray*}
+\start &\to&\bool\\
+\bool &\to&(\bool \oand \bool) \\
+\bool &\to&(\bool \oor \bool) \\
+\bool &\to&\atom\\
+\atom &\to& p_i \\
+\atom &\to&\lnot p_i 
+\end{eqnarray*}
+donde $i\in\{1,\dots,k\}$.
+
+Las {\em fórmulas} de \grambool serán las palabras del lenguaje definido por \grambool.
+
+
+\paragraph{La semántica de \grambool.}
+Una {\em valuación} es una función $v:\propvars\to\{0,1\}$. Equivalentemente, una valuación puede ser vista como un vector $v$ en $\{0,1\}^k$, donde notamos con $v(i)$ a la $i$-ésima coordenada de $v$. Informalmente, una valuación asigna valores de verdad a las variables proposicionales de $\propvars$ (la $i$-ésima coordenada de una valuación $v$ es $1$ si y solo si la variable proposicional $p_i$ es verdadera) y permite derivar el valor de verdad de fórmulas de $\grambool$.  
+
+La {\em semántica} de una fórmula $\varphi$ será un conjunto (finito) de valuaciones sobre $\propvars$. Intuitivamente, este conjunto será su {\em extensión}, es decir, el conjunto de valuaciones (sobre el conjunto \propvars) que hacen verdadera a $\varphi$. 
+%
+Formalmente, la semántica de una fórmula $\varphi$ de $\grambool$ (para el conjunto $\propvars$ fijo) se nota $\sem{\varphi}$ y se define del siguiente modo:
+%
+\begin{eqnarray*}
+\sem{p_i} &=& \{ v\in\{0,1\}^k \mid v(i)=1\}\\
+\sem{\lnot p_i} &=& \{ v\in\{0,1\}^k \mid v(i)=0\}\\
+\sem{\varphi\wedge\psi} &=& \sem{\varphi}\cap\sem{\varphi}\\
+\sem{\varphi\vee\psi} &=& \sem{\varphi}\cup\sem{\varphi}
+\end{eqnarray*}
+Esta definición formaliza la idea intuitiva de los operadores de conjunción ($\wedge$), y disyunción ($\vee$). Observar que en \grambool la negación solo aparece enfrente de una variable proposicional. Por ejemplo, si $k=3$, es decir $\propvars=\{p_1,p_2,p_3\}$, entonces $\sem{p_2}=\{(0,1,0), (1,1,0), (0,1,1), (1,1,1)\}$,  $\sem{p_3}=\{(0,0,1), (0,1,1), (1,0,1), (1,1,1)\}$, y $\sem{p_2\wedge p_3}=\{(0,1,1), (1,1,1)\}$.
+
 
 
 
