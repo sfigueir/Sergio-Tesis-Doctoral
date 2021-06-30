@@ -14,11 +14,11 @@
 
     Definir el tamaño de la formula. Usar notación común para cap 4 y 5
 
-    definir  \mdl{\grambool} para complejidad relativa a \grambool, pero dejar la definición de
-      \mdl{\gramboolxor} para complejidad relativa a \gramboolxor adentro del cap 4 porque solo aparece ahí. 
+    definir  \mdlbool para complejidad relativa a \grambool, pero dejar la definición de
+      \mdlboolxor para complejidad relativa a \gramboolxor adentro del cap 4 porque solo aparece ahí. 
 
 
------------------ ASI ES COMO ME IMAGINO LA DEFINICION DE LOGICA PROP. HABRRÍA QUE HACER ALGO PARECIDO EN PARTE I CON LENG GEOM. ADEMÁS, EN CAP 4 TENEMOS QUE AGREGAR REGLA DEL XOR SIGUIENDO ESTE ESQUEMA (REGLA GRAMATICAL, SEMÁNTICA, EJEMPLO).-----------------------
+----------------- ASI ES COMO ME IMAGINO LA DEFINICION DE LOGICA PROP. HABRRÍA QUE HACER ALGO PARECIDO EN PARTE I CON LENG GEOM. ADEMÁS, EN CAP 4 TENEMOS QUE AGREGAR REGLA DEL XOR SIGUIENDO ESTE ESQUEMA (REGLA GRAMATICAL, SEMÁNTICA, TAMAÑO, COMPLEJIDAD, Y TODO CON EJEMPLOS PARA QUE LA LECTURA SEA MAS AMENA).-----------------------
 
 \paragraph{La gramática \grambool.}
 Para un conjunto fijo $\propvars=\{p_1,\dots,p_k\}$ de variables proposicionales, definimos la gramática de la lógica proposicional $\grambool$ del siguiente modo
@@ -51,7 +51,19 @@ Formalmente, la semántica de una fórmula $\varphi$ de $\grambool$ (para el con
 \end{eqnarray*}
 Esta definición formaliza la idea intuitiva de los operadores de conjunción ($\wedge$), y disyunción ($\vee$). Observar que en \grambool la negación solo aparece enfrente de una variable proposicional. Por ejemplo, si $k=3$, es decir $\propvars=\{p_1,p_2,p_3\}$, entonces $\sem{p_2}=\{(0,1,0), (1,1,0), (0,1,1), (1,1,1)\}$,  $\sem{p_3}=\{(0,0,1), (0,1,1), (1,0,1), (1,1,1)\}$, y $\sem{p_2\wedge p_3}=\{(0,1,1), (1,1,1)\}$.
 
+\paragraph{Complejidad para \grambool.} Definimos $|\varphi|$, el tamaño de la fórmula $\varphi$ de \grambool, del siguiente modo:
+\begin{eqnarray*}
+|p_i| &\eqdef& 1\\
+|\lnot p_i| &\eqdef& 1\\
+|\varphi*\psi| &\eqdef& 1+|\varphi|+|\psi|
+\end{eqnarray*}
+donde $*\in\{\wedge,\vee\}$.
 
+Si $\+C$ es un conjunto de valuaciones sobre $\propvars$, definimos la {\em $\grambool$-complejidad de la descripción mínima} de $\+C$, notada $\mdlbool(\+C)$, como el tamaño de la fórmula más corta cuya semántica es $\+C$, es decir,
+$$
+\mdlbool(\+C)\eqdef\min\{|\varphi|\mid \varphi\in\grambool,\sem{\varphi}=\+C\}.
+$$
+Por ejemplo, se puede ver que si $\+C=\{(0,1,1), (1,1,1)\}$, entonces $\mdlbool(\+C)=3$, que corresponde a la fórmula minimal $p_2\wedge p_3$, de tamaño 3. Observar que la complejidad de un concepto se refiere al tamaño de alguna de las fórmulas minimales cuya semántica coincide con dicho concepto, pero que podría haber más de una fórmula minimal.
 
 
     \color{black}
