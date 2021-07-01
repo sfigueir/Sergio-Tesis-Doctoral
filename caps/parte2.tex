@@ -22,8 +22,9 @@
 ----------------------------------------
 
 \paragraph{La gramática \grambool.}
-Para un conjunto fijo $\propvars=\{p_1,\dots,p_k\}$ de variables proposicionales, definimos la gramática de la lógica proposicional $\grambool$ del siguiente modo
+Para un conjunto fijo $\propvars=\{p_1,\dots,p_k\}$ de variables proposicionales, definimos la gramática de la lógica proposicional $\grambool$ en la Figura \ref{fig:grambool}.
 %
+\begin{figure}
 \begin{eqnarray*}
 \start &\to&\bool\\
 \bool &\to&(\bool \oand \bool) \\
@@ -33,6 +34,8 @@ Para un conjunto fijo $\propvars=\{p_1,\dots,p_k\}$ de variables proposicionales
 \atom &\to&\lnot p_i 
 \end{eqnarray*}
 donde $i\in\{1,\dots,k\}$.
+\caption{La gramática \grambool para la lógica proposicional.}
+\end{figure}\label{fig:grambool}
 
 Las {\em fórmulas} de \grambool serán las palabras del lenguaje definido por \grambool. Usaremos indistintamente \grambool para referirnos a la gramática o al lenguaje que representa (quedando siempre claro del contexto cuál de las dos aplica).
 
