@@ -252,7 +252,7 @@ principales elementos de la Teoría algorítmica de la información.
 % Es interesante el hecho de que la idea de {\em procedimiento
 % efectivo} está involucrada en todas las definiciones de aleatoriedad. 
 
-\subsection{Complejidad de Kolmogorov}
+\subsection{Complejidad de Kolmogorov} \label{INTRO:KOLMOGOROV}
 \widesanti{Introducir la noción formal. Empezar por $K_M$, con $M$ una máquina específica. Luego la $K_U$, con $U$ universal. Dar la versión plana y la libre de prefijos (puesto que esa es la que se usa para el coding theorem). Dar el coding theorem sin demo, solo enunciado.}
 
 
@@ -885,6 +885,9 @@ $$
 \widesanti{Acá hay varios trabajos para referenciar. Se puede mover parte de la intro de capítulo 2. Sería bueno poner la descripción del lenguaje de geometría, como ejemplo de lenguaje específico no Turing completo que describe secuencias espaciales. Estaría bueno dar la semántica formal (yo la tenía en algún lado), puesto que es una tesis en computación. Esta misma semántica se vuelve a dar en el cap 2, pero simplificada, dado que son solo 2 puntos.} 
 
 \subsection{Ciencia Cognitiva Bayesiana}
+\label{INTRO:BAYES}
 \subsubsection{Rational analysis y plot}
 
+Aunque el estudio actual se basa en el uso de un lenguaje fijo, con reglas y pesos asociados, alguna evidencia sugiere que una mejor descripción del comportamiento se puede lograr incorporando un componente probabilístico al modelado. Este enfoque, defendido por~\cite{piantadosi2016four} bajo el término lenguaje de pensamiento probabilístico (pLoT), consiste en utilizar inferencia probabilística bayesiana para estimar la probabilidad de la existencia de algún conjunto de reglas (un lenguaje formal propuesto), dada los datos observados. Se ha demostrado que es especialmente eficaz para modelar el aprendizaje de conceptos,por ejemplo, replicando los patrones de errores a lo largo del aprendizaje~\cite{goodman2008rational,piantadosi2012bootstrapping,piantadosi2016logical}. Este enfoque también se adoptó para investigar cómo los seres humanos evalúan la aleatoriedad en su entorno. Los sesgos humanos en los juicios subjetivos de aleatoriedad~\cite{f114,f115} podrían explicarse asumiendo que la representación de la aleatoriedad resulta de una inferencia estadística sobre los procesos que generaron la secuencia, es decir, una estimación de la probabilidad de que un proceso regular dado lo produjo~\cite{f21}. Un buen ajuste al comportamiento humano fue obtenido sin utilizar toda la potencia de las máquinas de Turing, sino simplemente autómatas de estado finito con una pila, que son capaces de reconocer la repetición, la alternancia o la simetría~\cite{f18,f117}. Por lo tanto, a pesar de las diferencias fundamentales (en particular, los lenguajes deterministas versus probabilísticos), la teoría pLOT comparte con nuestro enfoque la necesidad de considerar tipos similares de operaciones primitivas. Dados los fuertes vínculos entre aleatoriedad y complejidad subjetivas, podemos esperar razonablemente que nuestro lenguaje formal también puede predecir si un patrón se percibe como aleatorio o no; esta posibilidad permanece para ser probado en trabajos futuros.
 
+Como se mencionó anteriormente, el enfoque pLOT permite encontrar los conceptos y reglas más probables en un espacio de hipótesis estructurado gramaticalmente que contiene varios candidatos utilizando la inferencia bayesiana, parece ser un enfoque muy prometedor para ese propósito~\cite{goodman2008rational,piantadosi2016four,romano2018bayesian}. 
