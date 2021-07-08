@@ -55,7 +55,7 @@ Formalmente, la semántica de una fórmula $\varphi\in\grambool$ (para el conjun
 \end{eqnarray*}
 Esta definición formaliza la idea intuitiva de los operadores de conjunción ($\wedge$), y disyunción ($\vee$). Observar que en \grambool la negación solo aparece en frente de una variable proposicional. Por ejemplo, si $k=3$ (es decir, $\propvars=\{p_1,p_2,p_3\}$) entonces $\sem{p_2}=\{(0,1,0), (1,1,0), (0,1,1), (1,1,1)\}$,  $\sem{p_3}=\{(0,0,1), (0,1,1), (1,0,1), (1,1,1)\}$, y $\sem{p_2\wedge p_3}=\{(0,1,1), (1,1,1)\}$.
 
-Llamamos {\em concepto} a un conjunto de valuaciones sobre la gramática \grambool. Puesto que el conjunto de conectivos de \grambool es adecuado, cualquier concepto $\+C$ podrá ser expresado por una fórmula $\varphi\in\grambool$, en el sentido de que $\sem{\varphi}=\+C$. De hecho, para cada concepto $\+C$ existirán infinitas fórmulas que lo expresan.
+Llamamos {\em concepto} a un conjunto de valuaciones sobre la gramática \grambool. Puesto que el conjunto de conectivos de \grambool es adecuado, cualquier concepto $\con$ podrá ser expresado por una fórmula $\varphi\in\grambool$, en el sentido de que $\sem{\varphi}=\con$. De hecho, para cada concepto $\con$ existirán infinitas fórmulas que lo expresan.
 
 \paragraph{Complejidad para \grambool.} Definimos $|\varphi|$, el {\em tamaño} de la fórmula $\varphi\in\grambool$, del siguiente modo:
 \begin{eqnarray*}
@@ -65,11 +65,11 @@ Llamamos {\em concepto} a un conjunto de valuaciones sobre la gramática \grambo
 \end{eqnarray*}
 donde $*\in\{\wedge,\vee\}$.
 
-Si $\+C$ es un conjunto de valuaciones sobre $\propvars$, definimos la {\em $\grambool$-complejidad de la descripción mínima} de $\+C$, notada $\mdlbool(\+C)$, como el tamaño de la fórmula más corta cuya semántica es $\+C$, es decir,
+Si $\con$ es un conjunto de valuaciones sobre $\propvars$, definimos la {\em $\grambool$-complejidad de la descripción mínima} de $\con$, notada $\mdlbool(\con)$, como el tamaño de la fórmula más corta cuya semántica es $\con$, es decir,
 $$
-\mdlbool(\+C)\eqdef\min\{|\varphi|\mid \varphi\in\grambool,\sem{\varphi}=\+C\}.
+\mdlbool(\con)\eqdef\min\{|\varphi|\mid \varphi\in\grambool,\sem{\varphi}=\con\}.
 $$
-Por ejemplo, se puede ver que si $\+C=\{(0,1,1), (1,1,1)\}$, entonces $\mdlbool(\+C)=3$, que corresponde a la fórmula minimal $p_2\wedge p_3$, de tamaño 3. Observar que la complejidad de un concepto se refiere al tamaño de alguna de las fórmulas minimales cuya semántica coincide con dicho concepto, pero que podría haber más de una fórmula minimal.
+Por ejemplo, se puede ver que si $\con=\{(0,1,1), (1,1,1)\}$, entonces $\mdlbool(\con)=3$, que corresponde a la fórmula minimal $p_2\wedge p_3$, de tamaño 3. Observar que la complejidad de un concepto se refiere al tamaño de alguna de las fórmulas minimales cuya semántica coincide con dicho concepto, pero que podría haber más de una fórmula minimal.
 
 
     \color{black}
