@@ -64,7 +64,7 @@
 \cfoot{\thepage}
 \rfoot{}
 
-\title{Aprendizaje automático a partir de cuerpos de datos ralos: un enfoque basado en el lenguaje del pensamiento} 
+\title{Técnicas y modelos del lenguaje del pensamiento para el aprendizaje automático a partir de cuerpos de datos ralos} 
 \author{Sergio Romano} 
 
 \makeatletter 
@@ -77,26 +77,7 @@
 \usepackage{pdfpages}
 
 \begin{document}
-\widesanti{tendríamos que revisar el título.  No me convence lo de `bayesiano'. Se puede cambiar respecto al plan. Tal vez `basado en descripciones mínimas' o `basado en lot'? O simplemente sin la parte del `basado en'. Pensemos }
 
-\widesanti{borré el archivo macros.sty. hacía ruido y solo servían unas pocas cosas que pase al marcos.tex}
-
-\widesanti{cambié al estilo book, que es más lindo. ¿Hay que usar report?}
-
-\widesanti{bibliografía en estilo plain y en castellano}
-
-\widesanti{cambié a oneside}
-
-
-\intro{puse en rojo cosas de los capitulos que pueden subir a la intro. nunca arrancar y ya: hay que dejar texto de relleno en los capítulos y/o referenciar a al sección de la intro que corresponda. el hilo tiene que ser el mismo, solo que cambiamos de lugar cosas y sacamos factores comunes.}{}
-
-\bigskip
-
-{\bf Una cosa que se puede pensar es dividir a la tesis en 3 partes. En la parte I (=caps 2 y 3), dar las definiciones de gramática de lenguaje de geometría y secuencias binarias, complejidad para ese lenguaje, etc. En la parte II (=caps 4 y 5) dar la definición de fórmula proposicional, concepto y complejidad de fórmulas. En la parte III irían los apéndices.
-De este modo, evitamos poner en la intro cosas que solo sirven para unos capítulos. Si no te gusta, todo lo de partes I y II pueden ir en intro, pero no es la mejor factorizacón.}
-
-\color{blue}
-Puse en blue cosas que pueden ir a parte I
 
 \color{magenta}
 Puse en magenta cosas que pueden ir parte II
@@ -111,9 +92,8 @@ Propuesta (obviamente se puede cambiar fácil porque son comandos)
 
 Lenguajes/gramáticas:
 \begin{itemize}
-\item \gramgeo para lenguaje de geometría. No está hecho.
-
-\item \grambin para lenguaje de binario (sub gramática del anteirior). no está hecho en cap 2.
+\item \gramgeo para lenguaje de geometría.
+\item \grambin para lenguaje de binario
 
 \item \grambool para lenguaje de proposicional sin xor. Ya está usado así en el paper de PRE (cap 4) pero fuimos muy informales en el paper de BRM (cap 5). Sería bueno formalizar la notación ahí
 
@@ -124,7 +104,7 @@ Lenguajes/gramáticas:
 Complejidades:
 
 \begin{itemize}
-\item \mdlbin para complejidad relativa a \grambin . Este reemplazo ya está hecho en cap 2 (ver comentario en parte I)
+\item \mdlbin para complejidad relativa a \grambin .
 
 \item \mdl{\grambool} para complejidad relativa a \grambool. Estaba usado en PRE pero falta usarlo ene BRM
 
@@ -137,10 +117,10 @@ Complejidades:
 \restoregeometry 
 
 \pagenumbering{roman}
-    \include{caps/dedicatoria}
-    \include{caps/agradecimientos}
     \include{caps/abstract_es}
     \include{caps/abstract_en}
+    \include{caps/dedicatoria}
+    \include{caps/agradecimientos}
 \tableofcontents
 
 %\addcontentsline{toc}{chapter}{\textbf{Índice de figuras}} 

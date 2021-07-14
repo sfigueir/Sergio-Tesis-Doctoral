@@ -76,6 +76,29 @@ La mayoría de los estudios de LoT se han centrado en el aspecto compositivo del
 
 El método común es definir una gramática con un conjunto de producciones basadas en operaciones que son intuitivas para los investigadores y luego estudiar cómo diferentes procesos de inferencia coinciden con patrones regulares en el aprendizaje humano. Un estudio reciente \cite{piantadosi2016logical} pone el foco en el proceso de cómo elegir empíricamente el conjunto de producciones y cómo diferentes definiciones de LoT pueden crear diferentes patrones de aprendizaje. 
 
+\paragraph{Otro Ubicar}
+
+\intro{a intro}{
+%Researchers have modeled these mental categories or conceptual classes with two classical approaches: in terms of similarity to a generic example or prototype~\cite{rosch1999principles,nosofsky1986attention,rosch1976structural,rosch1975family} or based on a symbolic/rule-like representation~\cite{boole1854investigation,fodor1975language,gentner1983structure}.
+Los investigadores han modelado estas categorías mentales o clases conceptuales con dos enfoques clásicos: en términos de su similitud con un ejemplo genérico o prototipo~\cite{rosch1999principles,nosofsky1986attention,rosch1976structural,rosch1975family} o basados en una representación simbólica a través de reglas ~\cite{boole1854investigation,fodor1975language,gentner1983structure}.
+
+%Symbolic approaches like the \textit{language of thought} (LoT) hypothesis~\cite{fodor1975language}, claim that thinking takes form in a sort of mental language, composed of a limited set of atomic symbols that can be combined to form more complex structures following combinatorial rules.
+
+Enfoques simbólicos como la hipótesis del \textit{lenguaje del pensamiento} (LoT, por sus siglas en inglés)~\cite{fodor1975language}, afirman que el pensamiento toma forma en una especie de lenguaje mental compuesto por un conjunto limitado de símbolos atómicos que se pueden combinar para formar estructuras más complejas siguiendo reglas combinatorias.
+
+%Despite criticisms and objections~\cite{blackburn1984spreading,loewer1991meaning,knowles1998language,aydede1997language}, symbolic approaches ---in general--- and the LoT hypothesis ---in particular--- have gained some renewed attention with recent results that might explain learning across different domains as statistical inference over a compositionally structured hypothesis space~\cite{tenenbaum2011grow,piantadosi2016four}.
+
+A pesar de las críticas y objeciones~\cite{blackburn1984spreading,loewer1991meaning,knowles1998language,aydede1997language}, los enfoques simbólicos --en general-- y la hipótesis LoT --en particular-- han ganado una atención renovada con resultados recientes que podrían explicar el proceso de aprendizaje en diferentes dominios como un proceso de inferencia estadística sobre un espacio de hipótesis estructurado y componible~\cite{tenenbaum2011grow,piantadosi2016four}.
+
+%The LoT is not necessarily unique. In fact, the form that it takes has been modeled in many different ways depending on the problem domain: numerical concept learning~\cite{piantadosi2012bootstrapping}, sequence learning~\cite{amalric2017language,yildirim2015learning,romano2013language}, visual concept learning~\cite{ellis2015unsupervised}, theory learning~\cite{ullman2012theory}, etc.
+
+El LoT no es necesariamente único. De hecho, la forma que toma ha sido modelada de muchas formas diferentes dependiendo del dominio del problema: aprendizaje de conceptos numéricos~\cite{piantadosi2012bootstrapping}, aprendizaje de secuencias~\cite{amalric2017language,yildirim2015learning,romano2013language}, aprendizaje visual de conceptos~\cite{ellis2015unsupervised}, aprendizaje de teorías~\cite{ullman2012theory}, etc.
+
+%While frameworks may differ on how a LoT may be implemented computationally, they all share the property of being built from a set of atomic symbols and rules by which they can be combined to form new and more complex expressions.
+
+Si bien los trabajos pueden diferir en cómo se puede implementar un LoT computacionalmente, todos comparten la propiedad de estar construidos a partir de un conjunto de símbolos atómicos y reglas por las que se los pueden combinar para formar expresiones nuevas y más complejas.
+}
+
 \paragraph{Ubicar}
 
 \intro{mandar a intro}{
@@ -547,333 +570,6 @@ oracle $A$ gives more power for compressing strings, so $\K^A$ is
 always smaller than $\K$ up to an additive constant. The same
 holds for $\C^A$ and $\C$.
 
-
-
-
-\color{blue}
-{\bf Para mandar a parte I (si te gusta la separación en partes) o para dejar acá. Quizá tenga sentido dar la semántica formal, dado que nunca apareció en ningún lado y que el cap 2 lo necesita en su versión simplificada. Revisar esto que sigue, porque tenía errores. Vero de qué forma conviene explicar la semántica FORMAL.}
-
-\subsubsection{Un lenguaje concreto: el lenguaje de geometría}
-
-
-We define a simple programming language called {\em language of geometry}, $\+LG$, whose programs describe mappings $\Sigma\to\Sigma^+$, for $\Sigma=\{0,\dots,7\}$.
-A program $p$, on input $n\in\Sigma$ (regarded as a natural number), is represented as $p(n)$, and it is a nonempty string formed by symbols in $\Sigma$. The strings in $\Sigma^+$ should be better thought to represent paths along the points in a circle, as depicted in Figure \ref{fig:circle}. $\+LG$ will contain instructions that can navigate the circle from one point to another and then to another and so on, jumping from one point to another a fixed number of steps, both clockwise or counterclockwise, and using the reflection over some axes. It also contains some structures to repeat certain paths.
-
-\begin{figure}[ht]
-\begin{center}
-\begin{tikzpicture}[scale=.6]
-\draw (-3,0) -- (3,0) node[above]{$H$};
-\draw (0,-3) -- (0,3) node[above]{$V$};
-\draw (-2.121320344,-2.121320344) -- (2.121320344,2.121320344) node[above right]{$B$};
-\draw (2.121320344, -2.121320344) -- (-2.121320344,2.121320344) node[above left]{$A$};
-\node at (0.765366865,  1.847759065) [circle,draw, scale=.5, fill, label=67.5:$0$]{};
-\node at (1.847759065   , 0.765366865) [circle,draw, scale=.5, fill, label=22.5:$1$]{};
-\node at (1.847759065   , -0.765366865) [circle,draw, scale=.5, fill, label=-22.5:$2$]{};
-\node at (0.765366865   , -1.847759065) [circle,draw, scale=.5, fill, label=-67.5:$3$]{};
-\node at (-0.765366865, -1.847759065) [circle,draw, scale=.5, fill, label=-112.5:$4$]{};
-\node at (-1.847759065, -0.765366865) [circle,draw, scale=.5, fill, label=-157.5:$5$]{};
-\node at (-1.847759065, 0.765366865) [circle,draw, scale=.5, fill, label=-202.5:$6$]{};
-\node at (-0.765366865, 1.847759065) [circle,draw, scale=.5, fill, label=-247.5:$7$]{};
-\draw (0,0) circle (2cm);
-\end{tikzpicture}
-\end{center}
-   \caption{The symbols of $\Sigma$ around a circle, and the reflection axes.}\label{fig:circle}
-\end{figure}
-
-
-We first define the syntax of $\+LG$ and then introduce its formal semantics.
-
-\paragraph{Syntax.}
-The set of {\em instructions} is defined as
-$$
-\+I=\{+0,+1,+2,+3,-1,-2,-3,P,A,B,H,V\}.
-$$
-A {\em program} $p$ is a list of the form $[p_1,p_2,\dots,p_\ell]$, where each $p_i$ is either an instruction in $\+I$, or an expression of the form $q^s$, or $q^s\langle i\rangle$, or $q^s\{i\}$, where where $q$ is a program, $s$ is the decimal representation of some positive integer, and  $i\in\+I$.
-%
-%
-%
-%\begin{enumerate}
-%\item an instruction in $\+I$
-%\item an expression of the form $q^s$, where $q$ is a program and $s$ is the decimal representation of some positive integer
-%\item an expression of the form $q^s\langle i\rangle$, where $q$ is a program, $s$ is the decimal representation of some positive integer, and  $i\in\Sigma$
-%\item an expression of the form $q^s\{i\}$, where $q$ is a program, $s$ is the decimal representation of some posirive integer, and  $i\in\Sigma$
-%\end{enumerate}
-
-
-\paragraph{Semantics.}
-The idea is that any program $p$ of $\+LG$ on input $n$ describes a string in $\Sigma^+$. The instructions in $\+I$ will allow us to navigate from a given point $n$ into another, and the expressions of the form $q^s$, or $q^s\langle i\rangle$, or $q^s\{i\}$ will represent three kind of loops, which will allow us to repeat a given pattern along the circle.
-
-Let $p=[p_1,\dots,p_\ell]$ be a program of $\+LG$ and let $n$ be a number in $\{0,\dots,7\}$. We define the string $p(n)\in\Sigma^+$ recursively in the complexity of $p$:
-\begin{itemize}
-\item If $\ell=1$ and $p_1\in\+I$ then $p(n)$ is defined as follows:
-	\begin{itemize}
-	\item $[+0](n)\eqdef  n$ (no change)
-	\item $[+1] (n) \eqdef   n+1 \mod 8$ (move 1 clockwise)
-	\item $[-1] (n) \eqdef   n-1 \mod 8$ (move 1 counterclockwise)
-	\item $[+2] (n) \eqdef   n+2 \mod 8$ (move 2 clockwise)
-	\item $[-2] (n) \eqdef   n-2 \mod 8$ (move 2 counterclockwise)
-	\item $[+3] (n) \eqdef   n+3 \mod 8$ (move 3 clockwise)
-	\item $[-3] (n) \eqdef   n-3 \mod 8$ (move 3 counterclockwise)
-	\item $[P](n)\eqdef  4+n \mod 8$ (move to the opposite point)
-	\item $[H](n)\eqdef  3-n \mod 8$ (reflect over $H$)
-	\item $[V](n)\eqdef  7-n \mod 8$ (reflect over $V$)
-	\item $[A](n)\eqdef  5-n \mod 8$ (reflect over $A$)
-	\item $[B](n)\eqdef  1-n \mod 8$ (reflect over $B$)
-	\end{itemize}
-
-\item If $\ell=1$ and $p_1\notin\+I$ then $p(n)$ is recursively defined as follows:
-
-	\begin{itemize}
-	\item If $p_1=q^s$, then
-	$$
-	p(n)\eqdef q(n_0)\dots q(n_{s-1}),
-	$$
-	where $n_0\eqdef n$ and $n_{k+1}$ is the last symbol of $q(n_k)$. In other words, $q^s$ on input $n$ represents a path given by:
-	%
-	\begin{quote}\em
-	start in $n$ and repeat $s$ times the path represented by $q$.
-	\end{quote}
-	
-	\item if $p_1=q^s\langle i\rangle$ and  $q(n)=x^0_1\dots x^0_k$ (for $x^k_j\in\Sigma$), then
-	$$
-	p(n)\eqdef x^0_1\dots x^0_k \ x^1_1\dots x^1_k \dots x^{s-1}_1\dots x^{s-1}_k,
-	$$
-	where $x^{k+1}_j\eqdef [i](x^k_j)$. In other words, $q^s\langle i\rangle$ on input $n$ represents a path given by:
-	%
-	\begin{quote}\em
-	follow the path represented by $q$ starting in $n$. Say this is path $\sigma_0$. Then construct a path $\sigma_1$ which consists of applying $i$ to each single point of $\sigma_0$. Repeat this until you reach $\sigma_{s-1}$
-	\end{quote}
-	
-	\item if $p_1=q^s\{i\}$ and  $q(n)=x_1\dots x_k$ (for $x_j\in\Sigma$), then
-	$$
-	p(n)\eqdef q(n_0)\ q(n_1)\dots q(n_{s-1}),
-	$$
-	where $n_0\eqdef n$ and $n_{k+1}\eqdef [i](n_k)$. In other words, $q^s\{ i\}$ on input $n$ represents a path given by:
-	%
-	\begin{quote}\em
-	repeat $s$ times the following:  starting in $n$, follow the path represented by $q$, and set $n:=[i](n)$.
-	\end{quote}
-	
-	
-	
-	\end{itemize}
-	
-
-
-
-\item Suppose $\ell>1$ and let $m$ be the last symbol of $p_1(n)$. We define
-$$
-p(n)\eqdef p_1(n) \ [p_2,\dots,p_\ell](m).
-$$
-%that is, the concatenation of $[p_1,\dots,p_{k-1}](n)$ and $p_k(m)$.
-
-\end{itemize}
-
-\paragraph{Examples.}
-Let us see some examples:
-
-\begin{itemize}
-\item $[+1,-1](1)=21$
-
-\item $[+0]^4(3)$ is the concatenation of $[+0](3)$ (which is $3$), $[+0](3)$, $[+0](3)$ and $[+0](3)$, i.e.\ $[+0]^4(3)=3333$.
-
-\item $[+1]^4(0)$ is the concatenation of $[+1](0)$ (which is 1), $[+1](1)$ (which is 2), $[+1](2)$ (which is 3) and $[+1](3)$ (which is 4), i.e.\ $[+1]^4(0)=1234$.
-
-\item $[+1,-1]^3(1)$ is the concatenation of $[+1,-1](1)$ (which is $21$), $[+1,-1](1)$ and  $[+1,-1](1)$, i.e.\  $[+1,-1]^3(1)=21212121$.
-
-\item $[[+1]^4,[-2,[+1]^3]^2](0)$ is the concatenation of $[+1]^4(0)$ (which is $1234$) and $[-2,[+1]^3]^2(4)$. Now this one last is the concatenation of $[-2,[+1]^3](4)$ (which is $2345$) and $[-2,[+1]^3](5)$ (which is $3456$). In total we have $[[+1]^4,[-2,[+1]^3]^2](0)=123423453456$.
-
-\item $[[[+1]^4]^3\langle +1\rangle ](0)$ is the concatenation of $[[+1]^4](0)$ (which is $1234$), $[+1](1)\ [+1](2)\ [+1](3)\ [+1](4)$ (which is $2345$), and $[+1](2)\ [+1](3)\ [+1](4)\ [+1](5)$ (which is $3456$). In total, we have $[[[+1]^4]^3\langle +1\rangle ](0) = 123423453456$.
-
-\item $[[[+1]^4]^2\langle B\rangle](0)$ is the concatenation of $[[+1]^4](0)$ (which is $1234$) and $[B](1)\ [B](2)\ [B](3)\ [B](4)$ (which is $0765$). In total we have $[[[+1]^4]^2\langle B\rangle](0) = 12340765$.
-
-\item $[[[V]^2]^4\{-1\}] (3)$ is the concatenation of $[[V]^2](3)$ (which is $43$), $[[V]^2](n_1)$ (for $n_1=[-1](3)=2$, which is $52$), $[[V]^2](n_2)$ (for $n_2=[-1](n_1)=1$, which is $61$), and $[[V]^2](n_3)$ (for $n_3=[-1](n_2)=0$, which is $70$). In total we have $[[[V]^2]^4\{-1\}] (3)= 43526170$.
-\end{itemize}
-
-
-\paragraph{Complexity.}
-We define a Kolmogorov complexity relative to $\+LG$, that is, a measure of succinctness of a given string $\sigma\in\Sigma^+$ when the language of description is $\+LG$. Those strings which admit a small program describing it will have small complexity, and those strings which can only be described by large programs will have high complexity.
-
-Before defining formally the notion of complexity, we need to formalize the idea of {\em size} of a program. Let $p=[p_1,\dots,p_\ell]$ be a program.
-With $|p|$ we denote the {\em size} of $p$ . Roughly, $|p|$ is the number of letters needed to write down $p$. Formally, $|p|$ is defined as follows:
-%
-\begin{itemize}
-\item If $\ell=1$ and $p_1\in\+I$ then $|p|\eqdef 2$.
-
-\item If $\ell=1$ and $p_1\notin\+I$ then $|p|$ is recursively defined as follows:
-%
-	\begin{itemize}
-	\item If $p_1=q^s$, then $|p|\eqdef |q|+\lceil \log s\rceil$
-	\item if $p_1=q^s\langle i\rangle$ or $p_1=q^s\{ i\}$, then $|p|\eqdef |q|+\lceil \log s\rceil+|[i]|$
-%	\item if $p_1=q^s\{ i\}$, then $|p|\eqdef |q|+\lceil \log s\rceil+|[i]|$
-	\end{itemize}
-
-\item If $\ell>1$ then $|p|\eqdef |p_1|+|[p_2,\dots, p_\ell]|$
-\end{itemize}
-
-Let $\sigma\in\Sigma^+$. We define the {\em complexity} of $\sigma$, notated $K(\sigma)$, as the size of the smaller program which on input $0$ describes $\sigma$, that is,
-%
-%For a given string $\sigma\in\Sigma^+$ we define the {\em complexity of $\sigma$ wrt $j\in\{0,\dots,7\}$}, notated $K_j(\sigma)$ as the size of the shortest program $p$ such that $p(j)=\sigma$.
-$$
-K(\sigma)\eqdef \min\{|p|\colon p(0)=\sigma\}.
-$$
-In Figure \ref{fig:strings} we show the complexity of some strings $\sigma$ and all programs $p$ such that $p(0)=\sigma$ and $|p|=K(\sigma)$.
-
-\begin{figure}
-\noindent{\small 
-\begin{tabular}[t]{p{11em} p{11em} p{11em} p{11em}}
-%
-\begin{tabular}[t]{|p{10em}|}\hline
-\bf Repeat+1\\
-$01234567$\\
-$K=5$\\
-\hline
-$[+0,[+1]^7]$\\
-$[[+0]^8\langle +1\rangle ]$\\
-$[[+0]^8\{+1\}]$
-\\\hline\end{tabular}
-&
-\begin{tabular}[t]{|p{10em}|}\hline
-\bf Repeat+2\\
-$02460246$\\
-$K=5$\\
-\hline
-$[+0,[+2]^7]$\\
-$[[+0]^8\langle +2\rangle ]$\\
-$[[+0]^8\{+2\}]$
-\\\hline\end{tabular}
-&
-\begin{tabular}[t]{|p{10em}|}\hline
-\bf Alternate\\
-$0213243546576071$\\
-$K=7$\\
-\hline
-$[[+0,+2]^8\langle+1\rangle]$\\ 
-$[[+0,+2]^8\{+1\}]$
-\\\hline\end{tabular}
-&
-\begin{tabular}[t]{|p{10em}|}\hline
-\bf 2points\\
-$02020202$\\
-$K=7$\\
-\hline
-$[[+0,+2]^4\langle +0\rangle ]$\\
-$[[+0,+2]^4\{+0\}]$
-\\\hline\end{tabular}
-\\
-\\
-\begin{tabular}[t]{|p{10em}|}\hline
-\bf 2arcs\\
-$01237654$\\
-$K=8$\\
-\hline
-$[[+0,[+1]^3]^2\langle V\rangle ]$\\
-$[[[+0]^4\langle +1\rangle ]^2\langle V\rangle ]$\\
-$[[[+0]^4\{+1\}]^2\langle V\rangle ]$
-\\\hline\end{tabular}
-&
-\begin{tabular}[t]{|p{10em}|}\hline
-\bf 2squares\\
-$02467135$\\
-$K=8$\\
-\hline
-$ [[+0,[+2]^3]^2\langle -1\rangle ]$\\
-$[[[+0]^4\langle +2\rangle ]^2\langle -1\rangle ]$\\
-$[[[+0]^4\{+2\}]^2\langle -1\rangle ]$\\
-$[[+0,[+2]^3]^2\{-1\}]$\\
-$[[[+0]^4\langle +2\rangle ]^2\{-1\}]$\\
-$[[[+0]^4\{+2\}]^2\{-1\}]$\\
-$[[+0,[+2]^3]^2\{V\}]$\\
-$[[[+0]^4\langle +2\rangle ]^2\{V\}]$\\
-$[[[+0]^4\{+2\}]^2\{V\}]$
-\\\hline\end{tabular}
-&
-\begin{tabular}[t]{|p{10em}|}\hline
-\bf 4points\\
-$02360236$\\
-$K=11$\\
-\hline
-$[[+0,+2,+1,+3]^2\langle +0\rangle ]$\\
-$[[+0,+2,+1,B]^2\langle +0\rangle ]$\\
-$[[+0,+2,A,+3]^2\langle +0\rangle ]$\\
-$[[+0,+2,A,B]^2\langle +0\rangle ]$\\
-$[[+0,+2,+1,+3]^2\{+0\}]$\\
-$[[+0,+2,+1,B]^2\{+0\}]$\\
-$[[+0,+2,A,+3]^2\{+0\}]$\\
-$[[+0,+2,A,B]^2\{+0\}]$
-\\\hline\end{tabular}
-&
-\begin{tabular}[t]{|p{10em}|}\hline
-\bf 4segments\\
-$01726354$\\
-$K=7$\\
-\hline
-$[[+0,B]^4\{-1\}]$
-\\\hline\end{tabular}
-\\
-\\
-\begin{tabular}[t]{|p{10em}|}\hline
-\bf 4diagonals\\
-$04152637$\\
-$K=7$\\
-\hline
-$[[+0,P]^4\langle +1\rangle ]$\\
-$[[+0,P]^4\{+1\}]$
-\\\hline\end{tabular}
-&
-\begin{tabular}[t]{|p{10em}|}\hline
-\bf 2rectangles\\
-$05416327$\\
-$K=10$\\
-\hline
-$[[[+0,-3]^2\langle P\rangle ]^2\langle -2\rangle ]$\\
-$[[[+0,A]^2\langle P\rangle ]^2\langle -2\rangle ]$\\
-$[[[+0,-3]^2\{P\}]^2\langle -2\rangle ]$\\
-$[[[+0,A]^2\{P\}]^2\langle -2\rangle ]$\\
-$[[[+0,-3]^2\langle P\rangle ]^2\{-2\}]$\\
-$[[[+0,-3]^2\{P\}]^2\{-2\}]$
-\\\hline\end{tabular}
-&
-\begin{tabular}[t]{|p{10em}|}\hline
-\bf 2crosses\\
-$04512673$\\
-$K=7$\\
-\hline
-$[[+0,P]^4\langle -3\rangle ]$\\
-$[[+0,P]^4\{-3\}]$
-\\\hline\end{tabular}
-&
-\end{tabular}}
-\caption{The strings used in the experiment, its complexity and all minimal programs describing it. NO SE SI SIRVEN DE ALGO PARA LA TESIS}\label{fig:strings}
-\end{figure}
-
-
-\paragraph{Program size.}
-
-Let $|P|$ denote the size of the program $P$.
-
-\begin{itemize}
-\item If $P$ is an atomic program then $|P|=2$
-\item If $P$ and $Q$ are programs, then $|P\concat Q|=|P|+|Q|$
-\item If $Q$ is a program and $s\in \NN$, then $|[Q^s]|=|Q|+\lceil n\rceil$
-\item If $Q$ is a program, $s\in \NN$, and $i$ is an atomic instruction then $|[Q^s\langle i\rangle]|=|Q|+\lceil n\rceil + |i|$
-\item If $Q$ is a program then $[|\pref\ Q]|=|Q|$
-\end{itemize}
-
-\paragraph{Kolmogorov complexity.}
-
-For a string $\sigma\in \{0,\dots,7\}^+$, we define the Kolmogorov
-complexity of $\sigma$ relative to $j$ by
-$$
-K_j(\sigma)\eqdef \min\{|P|\colon P(j)=\sigma\}.
-$$
-
-The Kolmogorov complexity of $\sigma\in \{0,\dots,7\}^+$ is defined by
-$$
-K(\sigma)\eqdef \min\{K_j(\sigma) \mid j\in\{0,\dots,7\}\}.
-$$
-
-\color{black}
 
 \subsubsection{El teorema de la codificación}
 
