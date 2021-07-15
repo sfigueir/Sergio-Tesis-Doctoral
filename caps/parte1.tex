@@ -155,6 +155,10 @@ Además, \gramgeo tiene tres producciones que representan distintas formas de re
 
 \end{center}
 
+\widesanti{Es cierto que esto que sigue queda repetido con la def. formal. No me convence. Propongo que se explique la semántica de estas dos repeticiones con un programita en cualquier pseudo códico imperativo con un ciclo y unos 'prints'. Creo que va a quedar más claro .
+
+Sería más ordenado contar todo esto sin recurrir a la notación de $\sem{}$, que se reservaría para la def. formal}
+
 \item Si $A$ es una instrucción atómica y $P$ es un programa, la ejecución del programa 
 \verb#REP1<#$A$\verb#>[#$P$\verb#]^#$k$ desde $n$ será equivalente a primero obtener la secuencia $\sigma_0$ resultante de ejecutar $P$ desde el punto $n$ (es decir, $\sem{P}_n$) y luego ejecutar $A$ desde cada punto de $\sigma_0$ para obtener $\sigma_1$, y repetir el procedimiento aplicando $A$ a cada punto de la última secuencia resultante hasta obtener $\sigma_{k-1}$. Es decir, con $\cdot\concat\cdot$ representando la concatenación de secuencias, entonces:
 
@@ -316,15 +320,17 @@ $= 43 \ \ \concat \ \ \llbracket$\verb#-1#$\rrbracket_4 \concat \llbracket$\verb
 
 En el cuadro~\ref{PART1:Tabla:MDL} mostramos la complejidad \mdlgeo(s) para algunas secuencias $s$ junto con distintos programas $p \in$ \gramgeo tal que $\sem{p}_0=s$ y $|p|=\mdlgeo(s) $.
 
+
+
 \begin{table}[h!]
 \centering
-\begin{tabular}{lcll}
-\multicolumn{1}{c}{\bf{s}   } & \multicolumn{1}{c}{\mdlgeo(s)} & \multicolumn{1}{c}{Posible $p$} & Otro posible $p$ \\ \hline
-\textbf{01234567} &  7      &  \verb#[+0,REP0[+1]^7]# &  \verb#[REP1<+1>[+0]^8]# \\ \hline
-\textbf{02460246} &  7      &  \verb#[+0,REP0[+2]^7]# &  \verb#[REP2<+2>[+0]^8]# \\ \hline
-\textbf{04512673} &  8      &  \verb#[REP1<-3>[+0,P]^4]# &  \verb#[REP2<-3>[+0,P]^4]# \\ \hline
-\textbf{0213243546576071} &  9      &  \verb#[REP1<+1>[+0,+2]^8]# &  \verb#[REP2<+1>[+0,+2]^8]# \\ \hline
-\textbf{02360236} &  11      &  \verb#[REP1<+0>[+0,+2,A,B]^2]# &  \verb#[REP1<+0>[+0,+2,+1,+3]^2]# \\ \hline
+\begin{tabular}{lcl}
+\multicolumn{1}{c}{ \boldmath{$s$}   } & \multicolumn{1}{c}{$\mdlgeo(s)$} & \multicolumn{1}{c}{Posibles $p$}  \\ \hline
+\textbf{01234567} &  7      &  \begin{minipage}[t]{5cm}\verb#[+0,REP0[+1]^7]# \\  \verb#[REP1<+1>[+0]^8]#\end{minipage} \\ \hline
+\textbf{02460246} &  7      &  \begin{minipage}[t]{5cm}\verb#[+0,REP0[+2]^7]# \\  \verb#[REP2<+2>[+0]^8]#\end{minipage} \\ \hline
+\textbf{04512673} &  8      &  \begin{minipage}[t]{5cm}\verb#[REP1<-3>[+0,P]^4]# \\  \verb#[REP2<-3>[+0,P]^4]#\end{minipage} \\ \hline
+\textbf{0213243546576071} &  9 &  \begin{minipage}[t]{5cm}\verb#[REP1<+1>[+0,+2]^8]# \\  \verb#[REP2<+1>[+0,+2]^8]#\end{minipage} \\ \hline
+\textbf{02360236} &  11      &  \begin{minipage}[t]{5cm}\verb#[REP1<+0>[+0,+2,A,B]^2]# \\  \verb#[REP1<+0>[+0,+2,+1,+3]^2]#\end{minipage} \\ \hline
 \end{tabular}
 \caption{Secuencias $s$ y posibles $p$ con $\sem{p}_0=s$ y $|p|=\mdlgeo(s)$} \label{PART1:Tabla:MDL}
 \end{table}
