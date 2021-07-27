@@ -355,49 +355,6 @@ Pasar la def. de prefix machines, prefix complexity y coding thm al cap 3
 }
 
 
-
-\begin{definicion}[\Pfree \kolcomp]\label{intro:def:prefixK}
-\index{Program-size complexity@\kolcomp!prefix@\pfree}
-\glossary{$\KM$}$\KM\colon\words \to \nat$, the {\em \pfree
-\kolcomp with respect to the \pfree machine $\M$}, is defined as
-$$
-\KM(\sta)=
-    \begin{cases}
-    \min \{\len{\pra}\colon \M(\pra)=\sta \} & \textrm{if $\sta$ is in the range of $\M$};\\
-    \infty & \textrm{otherwise.}
-    \end{cases}
-$$
-\end{definicion}
-The two complexity functions $\C$ and $\K$ have been used for
-different purposes
-% Under some situations it is more adequate to use \pfree \kolcomp instead of plain \kolcomp
-(for more details, see~\cite{DHBook} and~\cite{LV97}). In this
-thesis we will mainly use \pfree \kolcomp, but in some sections we
-will also work with the plain version.
-
-There are two traditions of notation in the \kolcomp community as
-regards the plain/\pfree versions: the $C$/$K$ tradition and the
-$K$/$H$ tradition. In recent years it seems that the $C$/$K$
-notation appears more often in both the complexity and the
-recursion theory literature. In this document, we follow the
-$C$/$K$ notation.
-
-\bigskip
-
-Observe that it does not matter if the list in
-(\ref{intro:eqn:enumPRfunctions}) is an enumeration of all
-classical machines or all \pfree machines (both have a finite
-table of instructions, so they can be effectively listed). The
-machine $\V$ defined in (\ref{intro:eqn:usualUniversalMachine})
-exists in both cases and in the second, $\V$ is also \pfree.
-
-
-The classical notion of universality from computability theory is
-redefined in the algorithmic information theory. We will use the
-word {\em \opt} for denoting machines like $\V$ defined in
-(\ref{intro:eqn:usualUniversalMachine}) that somehow simulate
-every other machine at no noticeable extra cost in the length.
-
 \begin{definicion}[\Optity]\label{intro:def:optimal}
 \index{Turing!machine!universal@\opt} $\U$ is a {\em \opt} \pfree
 (resp.\ classical) Turing machine if and only if
@@ -525,73 +482,6 @@ states that there is a constant $c$ such that for all $i$,
 $\K(\sta_i)\leq\min\{m\colon\pair{m}{\sta_i}\in W\}+c$.
 
 \bigskip
-
-\subsection{El teorema de la codificación}
-
-The complexity $\K$ is related with the probability that a \pfree
-machine $\M$ outputs a given string $\sta$. This last magnitude is
-defined as \glossary{$P$}
-\begin{eqnarray}
-P_{\M}(\sta)&=&\measure{\open{\{\pra\colon\M(\pra)=\sta\}}}\nonumber\\
-&=&\sum_{\pra\colon\M(\pra)=\sta}2^{-\len{\pra}}.\label{intro:eqn:coding}
-\end{eqnarray}
-Clearly, for all $\sta$, $2^{-\K(\sta)}\leq P_{\U}(\sta)$, since a
-shorter $\M$-description of $\sta$ already contributes to the sum
-in equation (\ref{intro:eqn:coding}). The following result, due to
-Levin \cite{levin1974laws}, G\'acs \cite{G74} and Chaitin, \cite{chaitin1975theory} known
-as the {\em Coding Theorem}, states that the other inequality is
-also true, except for a multiplicative constant
-
-\begin{teorema}[\index{Coding Theorem}Coding Theorem]\label{intro:thm:coding} For each \pfree machine $\M$, one
-may effectively find a constant $c$ such that $ (\forall
-\sta\in\words)\ 2^{c-\K(\sta)}\geq P_{\M}(\sta). $
-\end{teorema}
-For more information in the Coding Theorem, see \cite{LV97} and
-\cite{DHBook}.
-
-\bigskip
-
-\index{Program-size complexity@\kolcomp!\computable@\comp
-approximation} Although $\K$ and $\C$ are not \comp functions,
-they can be \recly approximated from above using the step by step
-approximation of $\U$. \glossary{$\K_s$}$\K_s(\sta)$ is the
-approximation at stage $s$ of $\K(\sta)$ defined by
-$\K_s(\sta)=\min\{\len{\pra}\colon
-\U_s(\pra)=\sta\}\cup\{\infty\}$. Observe that
-$\K_s(\sta)\to\K(\sta)$ when $s\to\infty$.
- The same holds for
-\glossary{$\C_s$}${\C_s}$.
-
-
-Machines can be relativized to oracles. For any $\M^A$, a \pfree
-machine $\M$ relativized to an oracle $A$, $\domain {\M^A}$ has to
-be \pfree. The Definition~\ref{intro:def:prefixK} of \kolcomp can
-be relativized to oracles:
-
-\begin{definicion}[Relativized \pfree \kolcomp]\label{intro:def:prefixKwithOracle}
-\index{Program-size complexity@\kolcomp!relativized}
-\glossary{$\KM^A$}$\KM^A\colon\words \to \nat$, the {\em \pfree
-\kolcomp with respect to the \pfree machine $\M$ and relative to
-oracle $A$}, is defined as
-$$
-\KM^A(\sta)=
-    \begin{cases}
-    \min \{\len{\pra}\colon \M^A(\pra)=\sta \} & \textrm{if $\sta$ is in the range of $\M^A$};\\
-    \infty & \textrm{otherwise.}
-    \end{cases}
-$$
-\end{definicion}
-
-Definition~\ref{intro:def:plainC} of $\CM$ also adapts
-straightforwardly to \glossary{$\CM^A$}$\CM^A$. Again, when there
-is no need to refer to the underlying \opt machine, we just write
-\glossary{$\C^A$}$\C^A$ and \glossary{$\K^A$}$\K^A$. Having an
-oracle $A$ gives more power for compressing strings, so $\K^A$ is
-always smaller than $\K$ up to an additive constant. The same
-holds for $\C^A$ and $\C$.
-
-
-\subsubsection{El teorema de la codificación}
 
 
 \subsubsection{Inducción de Solomonoff}
