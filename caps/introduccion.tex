@@ -313,6 +313,23 @@ $$
     \end{cases}
 $$
 \end{definicion}
+
+\widesanti{aca aclaro qué es un conjunto libre de prefijos.
+
+For
+$\sta,\stb\in\words$, we write
+\glossary{$\preceq$}$\sta\preceq\stb$ when $\sta$ is a prefix of
+$\stb$, that is $\len{\sta}\leq\len{\stb}$ and $\sta(i)=\stb(i)$
+for all $i\in\{0,\dots,\len{\sta}-1 \}$. We write
+\glossary{$\prec$}$\sta\prec\stb$ when $\sta$ is a proper prefix
+of $\stb$, that is $\sta\preceq \stb$ and $\sta\not=\stb$. A set
+of strings $A$ is {\em \pfree} if there are no two strings $\sta$
+and $\stb$ in $A$ such that $\sta\prec\stb$. A set
+$T\subseteq\words$ is a \index{tree} {\em tree} if for all
+$\sta,\stb\in\words$ if $\sta\in T$ and $\stb\prec\sta$ then
+$\stb\in T$.
+}
+
 If we restrict ourselves to partial \rec functions with \pfree
 domain, we can think of  {\em
 \pfree Turing machines} (independently introduced by
