@@ -472,31 +472,31 @@ implicitly build \pfree machines and upper bound the \pfree
 \kolcomp is via a Kraft-Chaitin set. This method consists of an
 effective interpretation of an inequality of Kraft~\cite{K49}:
 
-\begin{definicion}[Kraft-Chaitin set]\label{intro:KCset}
-\index{Kraft-Chaitin} A \ce\ set
-$$
-W=\{\pair{n_0}{\sta_0}, \pair{n_1}{\sta_1},
-\pair{n_2}{\sta_2},\dots\},
-$$
-where $n_i\in\nat$ and $\sta_i\in \words$, is a {\em Kraft-Chaitin
-set} if $\wt{W}\leq 1$, where \glossary{$\wt{W}$}$\wt{W}=
-\sum_{i\in\nat} 2^{-n_i}$ is the {\em weight} of $W$. The pairs
-enumerated into such a set $W$ are called {\em axioms}.
-\end{definicion}
+%\begin{definicion}[Kraft-Chaitin set]\label{intro:KCset}
+%\index{Kraft-Chaitin} A \ce\ set
+%$$
+%W=\{\pair{n_0}{\sta_0}, \pair{n_1}{\sta_1},
+%\pair{n_2}{\sta_2},\dots\},
+%$$
+%where $n_i\in\nat$ and $\sta_i\in \words$, is a {\em %Kraft-Chaitin
+%set} if $\wt{W}\leq 1$, where \glossary{$\wt{W}$}$\wt{W}=
+%\sum_{i\in\nat} 2^{-n_i}$ is the {\em weight} of $W$. The %pairs
+%enumerated into such a set $W$ are called {\em axioms}.
+%\end{definicion}
 
-The Kraft-Chaitin Theorem can be found in Levin's
-Thesis~\cite{L71} and in~\cite{levin1974laws}, Schnorr also included a
-version of it in~\cite{S73} and Chaitin~\cite{chaitin1975theory} gave the first
-proof explicitly for \pfree \kolcomp. This theorem states that
-from a Kraft-Chaitin set $W$ like the one described in the above
-Definition~\ref{intro:KCset}, we can effectively obtain a \pfree
-machine $\M$ such that for each $i$ there is a $\pra_i$ of length
-$n_i$ with $\M(\pra_i)\downarrow=\sta_i$, and $\M(\prb)\uparrow$
-unless $\prb=\pra_i$ for some~$i$. Observe that the machine $\M$
-is built in an implicit way: we only need to specify the lengths
-of the programs we want. In particular, the Kraft-Chaitin Theorem
-states that there is a constant $c$ such that for all $i$,
-$\K(\sta_i)\leq\min\{m\colon\pair{m}{\sta_i}\in W\}+c$.
+%The Kraft-Chaitin Theorem can be found in Levin's
+%Thesis~\cite{L71} and in~\cite{levin1974laws}, Schnorr also included a
+%version of it in~\cite{S73} and Chaitin~\cite{chaitin1975theory} gave the first
+%proof explicitly for \pfree \kolcomp. This theorem states that
+%from a Kraft-Chaitin set $W$ like the one described in the above
+%Definition~\ref{intro:KCset}, we can effectively obtain a \pfree
+%machine $\M$ such that for each $i$ there is a $\pra_i$ of length
+%$n_i$ with $\M(\pra_i)\downarrow=\sta_i$, and $\M(\prb)\uparrow$
+%unless $\prb=\pra_i$ for some~$i$. Observe that the machine $\M$
+%is built in an implicit way: we only need to specify the lengths
+%of the programs we want. In particular, the Kraft-Chaitin Theorem
+%states that there is a constant $c$ such that for all $i$,
+%$\K(\sta_i)\leq\min\{m\colon\pair{m}{\sta_i}\in W\}+c$.
 
 \bigskip
 
