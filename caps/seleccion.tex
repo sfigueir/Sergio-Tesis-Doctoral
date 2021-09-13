@@ -121,18 +121,17 @@ En la siguiente sección, aplicamos este método a \gramgeo. Agregamos un nuevo 
 Hasta ahora, los enfoques probabilísticos del \lot han tenido éxito para modelar el aprendizaje de conceptos a partir de pocos ejemplos~\cite{tenenbaum2011grow,piantadosi2016four}. Sin embargo, esto no significa que los modelos bayesianos puedan inferir la sintaxis de la gramática a partir de datos escasos. Aquí probamos esta hipótesis. Si el método es eficaz, debería asignar una probabilidad baja las producciones ad-hoc y en su lugar favorecer el conjunto original de producciones seleccionadas por los investigadores para la tarea cognitiva. Esto no sólo proporcionaría evidencia empírica adicional sobre la idoneidad de la elección original de producciones para el \lot, sino que --más importante-- brindaría evidencia sobre la utilidad de la inferencia bayesiana para validar el conjunto de producciones involucradas en diferentes LoTs. 
 
 %\section{The Language of Geometry: $\gramgeo$}
-\section{El lenguaje de geometría: $\gramgeo$}
+\section{El lenguaje de geometría: \gramgeo}
 
 %The \textit{language of geometry}, $\gramgeo$~\cite{amalric2017language}, is a probabilistic generator of sequences of movements on a regular octagon like the one in Figura~\ref{fig:circle}. It has been used to model human sequence predictions in adults, preschoolers, and adult members of an indigene group in the Amazon. As in other LoT domains, different models have been proposed for similar spatial sequence domains like the one in~\cite{yildirim2015learning}. Although both successfully model the sequences in their experiments, they propose different grammars for their models (in particular,~\cite{amalric2017language} contains productions for expressing symmetry reflections). This difference can be explained by the particularities of each experiment. On the one hand,~\cite{amalric2017language} categorized the sequences in 12 groups based on their complexity, displayed them in an octagon and evaluate the performance of a diverse population to extrapolate them. On the other hand,~\cite{yildirim2015learning} categorized the sequences in 4 groups, displayed them in an heptagon and evaluate the performance of adults not just to predict how the sequence continues, but to transfer the knowledge from the learned sequence across auditory and visual domains. Despite the domains not being equal, the differences in the grammars strengths the need for automatic methods to test and validate multiple grammars for the same domain in the LoT community.
 
-Como hemos visto al inicio del ??\sergio{Parte?}, $\gramgeo$~\cite{amalric2017language} permite describir secuencias de movimientos en un octágono regular. Las reglas de producción de la gramática de $\gramgeo$ fueron seleccionadas en base a afirmaciones previas de la universalidad de cierto conocimiento geométrico humano~\cite{izard2011geometry,dehaene2006core,dillon2013core} tales como nociones espaciales~\cite{landau1981spatial,lee2012navigation} y detección de geometrías~\cite{westphal2012production,machilsen2009role}.
+Como hemos visto al inicio de la Parte I, \gramgeo~\cite{amalric2017language} permite describir secuencias de movimientos en un octágono regular. Las reglas de producción de la gramática de \gramgeo fueron seleccionadas en base a afirmaciones previas de la universalidad de cierto conocimiento geométrico humano~\cite{izard2011geometry,dehaene2006core,dillon2013core} tales como nociones espaciales~\cite{landau1981spatial,lee2012navigation} y detección de geometrías~\cite{westphal2012production,machilsen2009role}.
 
 \gramgeo se ha usado para modelar predicciones de secuencias humanas en adultos y preescolares franceses y miembros adultos de un grupo indígena en la Amazonia. Como en otros dominios de \lot, se han propuesto para el dominio de secuencias espaciales diferentes modelos como el de~\cite{yildirim2015learning}. Aunque ambos modelan con éxito las secuencias en sus experimentos, proponen diferentes gramáticas para sus modelos (en particular,~\cite{amalric2017language} contiene producciones para expresar reflexiones o simetrías). Esta diferencia se puede explicar por las particularidades de cada experimento. Por un lado, en~\cite{amalric2017language} se categorizaron secuencias en 12 grupos en función de su complejidad, mostrándolas en un octágono y evaluando el desempeño en una población diversa que debía extrapolarlas. Por otro lado, en~\cite{yildirim2015learning} categorizaron las secuencias en 4 grupos, mostrándolos en un heptágono y evaluando el desempeño de adultos no sólo para predecir cómo continúan las secuencias, sino también para transferir el conocimiento de la secuencia aprendida a través de estímulos visuales y auditivos. A pesar de que los dominios no son iguales, las diferencias en las gramáticas refuerzan la necesidad de métodos automáticos que permitan probar y validar múltiples gramáticas para el mismo dominio en la comunidad que estudia el \lot.
 
-\widesergio{Unificar gramgeo con matematica y sin matematica}
 
 %\subsection{$\gramgeo$'s original experiment}
-\subsection{Experimento original de $\gramgeo$}
+\subsection{Experimento original de \gramgeo}
 
 %To infer the productions from the observed data, we used the original data from the experiment in~\cite{amalric2017language}. In the experiment, volunteers were exposed to a series of spatial sequences defined on an octagon and were asked to predict future locations. The sequences were selected according to their MDL in the \textit{language of geometry} so that each sequence could be easily described with few productions.
 
@@ -147,11 +146,11 @@ Para inferir las producciones a partir de los datos observados, utilizamos los d
 \paragraph{Procedimiento.} En cada prueba, los dos primeros puntos de la secuencia se muestran con un destello de manera secuencial en el octágono y el sujeto tiene que hacer clic luego en la siguiente ubicación. Si el sujeto selecciona la ubicación correcta, se le pide que continúe con el siguiente punto hasta que los ocho puntos de la secuencia se completan. Si hubo un error en algún momento, se corrige el error, la secuencia vuelve a mostrarse desde el primer punto hasta el punto corregido y se le solicita al individuo predecir la siguiente ubicación. Cada $d_i \in \Sigma^8$ de nuestro conjunto de datos $D$ es, por tanto, la secuencia de las ocho posiciones en las que hizo clic en cada prueba cada sujeto. El procedimiento detallado se puede encontrar en el citado trabajo.
 
 %\subsection{Extending $\gramgeo$'s grammar}
-\subsection{Extendiendo la gramática de $\gramgeo$}
+\subsection{Extendiendo la gramática de \gramgeo}
 
 %We will now expand the original set of productions in $\gramgeo$ with a new set of productions that can also express regularities but are not related to any geometrical intuitions to test our Bayesian inference model.
 
-Ahora ampliaremos el conjunto original de producciones en $\gramgeo$ con un nuevo conjunto de producciones que también pueden expresar regularidades pero que no están relacionadas con ninguna intuición geométrica para probar nuestro modelo de inferencia bayesiano, llamamos a esta nueva gramática \gramgeoprima.
+Ahora ampliaremos el conjunto original de producciones en \gramgeo con un nuevo conjunto de producciones que también pueden expresar regularidades pero que no están relacionadas con ninguna intuición geométrica para probar nuestro modelo de inferencia bayesiano, llamamos a esta nueva gramática \gramgeoprima.
 
 
 \paragraph{La gramática \gramgeoprima.}
@@ -299,7 +298,7 @@ Para todas las constantes numéricas de las definiciones de las instrucciones ad
 Utilizaremos la misma definición para \mdlgeo, manteniendo el mismo valor para las instrucciones atómicas ad-hoc que para las instrucciones atómicas originales.
 
 %\subsection{Inference results for $\gramgeo$}
-\subsection{Resultados de inferencia para $\gramgeoprima$}
+\subsection{Resultados de inferencia para \gramgeoprima}
 
 %To let the MCMC converge faster (and to later compare the concept's probability with their corresponding MDL), we generated all the programs that explain each of the observed sequences from the experiment. In this way, we are able to sample from the exact distribution $P(p_i \mid d_i, \theta)$ by sampling from a multinomial distribution of all the possible programs $p_i$ that compute $d_i$, where each $p_i$ has probability of occurrence equal to $P(p_i \mid \theta)$.
 
@@ -390,9 +389,23 @@ A continuación, formalizamos el Teorema de Codificación (para obtener más inf
 
 %Let $M$ be a prefix Turing machine --by {\em prefix} we mean that if $M(x)$ is defined, then $M$ is undefined for every proper extension of $x$. Let $P_M(x)$ be the probability that the machine $M$ computes output $x$ when the input is filled-up with the results of fair coin tosses, and let $K_M(x)$ be the {\em Kolmogorov complexity of $x$ relative to $M$}, which is defined as the length of the shortest program which outputs $x$, when executed on $M$. The Coding Theorem states that for every string $x$ we have
 
-\widesergio{Pasar la definición 2 y el Teorema de Codificación de la intro}
 
-\widesergio{Falta la definición de maquina libre de prefijos}
+Para avanzar en la definición del Teorema de Codificación, necesitaremos primero introducir las máquinas de Turing libres de prefijos ~\cite{L71,L73,S71,chaitin1975theory}. Este dispositivo es como una máquina de Turing clásica, pero la cinta de entrada es un poco más primitiva: el cabezal de entrada se mueve solo hacia la derecha y no hay un blanco al final u otra marcador que delimite el final de la entrada. De esta manera, una máquina libre de prefijos que comienza con el cabezal de entrada en el primer bit de la entrada, puede eventualmente intentar leer más allá del final y, si esto sucede, simplemente falla (es decir, se vuelve indefinida) y permanece en ese estado de error para siempre. Por lo tanto, para que una máquina libre de prefijos $\M$ tenga éxito en el cálculo, necesita averiguar por sí misma dónde está el final de la entrada. Esta es la razón por la que este dispositivo a veces recibe el nombre de máquina autodelimitante. En este modelo, si se define una entrada dada, todas sus extensiones son indefinidas. Se puede demostrar que esta arquitectura restringida de máquinas de Turing calcula exactamente todas las funciones computables parciales con dominio libre de prefijos. La complejidad libre de prefijos de Kolmogorov ~\cite{levin1974laws,G74,chaitin1975theory} se define de la misma manera que en la Definición \ref{intro:def:plainC} pero relativa a máquinas libres de prefijos.
+
+
+\begin{definicion}[Conjunto libre de prefijos]\label{seleccion:def:conjuntolibreprefijos}
+
+Para
+$\sta,\stb\in\words$, escribimos
+\glossary{$\preceq$}$\sta\preceq\stb$ cuando $\sta$ es un prefijo de
+$\stb$, es decir, $\len{\sta}\leq\len{\stb}$ y $\sta(i)=\stb(i)$
+para todo $i\in\{0,\dots,\len{\sta}-1 \}$. Utilizamos
+\glossary{$\prec$}$\sta\prec\stb$ cuando $\sta$ es un prefijo propio de $\stb$, es decir, $\sta\preceq \stb$ y $\sta\not=\stb$. Un conjunto de cadenas $A$ es libre de prefijos si no hay dos cadenas $\sta$
+y $\stb$ en $A$ tal que $\sta\prec\stb$. 
+
+%Un conjunto $T\subseteq\words$ es un \index{tree} {\em árbol} si para todo $\sta,\stb\in\words$ si $\sta\in T$ y $\stb\prec\sta$ entonces $\stb\in T$.
+
+\end{definicion}
 
 \begin{definicion}[Complejidad de Kolmogorov libre de prefijos]\label{seleccion:def:prefixK}
 \glossary{$\KM$}$\KM\colon\words \to \nat$, la complejidad de Kolmogorov libre de prefijos con respecto a la máquina $M$ libre de prefijos se define como:
@@ -405,104 +418,67 @@ $$
 $$
 \end{definicion}
 
-%The two complexity functions $\C$ and $\K$ have been used for different purposes (for more details, see~\cite{DHBook} and~\cite{LV97}). In this thesis we will mainly use \pfree \kolcomp, but in some sections we will also work with the plain version.
 
 %There are two traditions of notation in the \kolcomp community as regards the plain/\pfree versions: the $C$/$K$ tradition and the $K$/$H$ tradition. In recent years it seems that the $C$/$K$ notation appears more often in both the complexity and the recursion theory literature. In this document, we follow the $C$/$K$ notation.
 
 \bigskip
 
-Observe that it does not matter if the list in
-(\ref{intro:eqn:enumPRfunctions}) is an enumeration of all
-classical machines or all \pfree machines (both have a finite
-table of instructions, so they can be effectively listed). The
-machine $\V$ defined in (\ref{intro:eqn:usualUniversalMachine})
-exists in both cases and in the second, $\V$ is also \pfree.
+%Observe that it does not matter if the list in (\ref{intro:eqn:enumPRfunctions}) is an enumeration of all classical machines or all \pfree machines (both have a finite table of instructions, so they can be effectively listed). The machine $\V$ defined in (\ref{intro:eqn:usualUniversalMachine}) exists in both cases and in the second, $\V$ is also \pfree.
 
 
-The classical notion of universality from computability theory is
-redefined in the algorithmic information theory. We will use the
-word {\em \opt} for denoting machines like $\V$ defined in
-(\ref{intro:eqn:usualUniversalMachine}) that somehow simulate
-every other machine at no noticeable extra cost in the length.
+%The classical notion of universality from computability theory is redefined in the algorithmic information theory. We will use the word {\em \opt} for denoting machines like $\V$ defined in(\ref{intro:eqn:usualUniversalMachine}) that somehow simulate every other machine at no noticeable extra cost in the length.
 
-The complexity $\K$ is related with the probability that a \pfree
-machine $\M$ outputs a given string $\sta$. This last magnitude is
-defined as \glossary{$P$}
+Cuando $\M$ es una máquina autodelimitante universal, hablaremos directamente de complejidad de Kolmgorov libre de prefijos y la denotaremos como $\K$. La complejidad $\K$ está relacionada con la probabilidad de que una máquina libre de prefijos produzca una cadena dada. Esta probabilidad se define como \glossary{$P$}:
+
 \begin{eqnarray}
 P_{\M}(\sta)&=&\measure{\open{\{\pra\colon\M(\pra)=\sta\}}}\nonumber\\
 &=&\sum_{\pra\colon\M(\pra)=\sta}2^{-\len{\pra}}.\label{intro:eqn:coding}
 \end{eqnarray}
-Clearly, for all $\sta$, $2^{-\K(\sta)}\leq P_{\U}(\sta)$, since a
-shorter $\M$-description of $\sta$ already contributes to the sum
-in equation (\ref{intro:eqn:coding}). The following result, due to
-Levin \cite{levin1974laws}, G\'acs \cite{G74} and Chaitin, \cite{chaitin1975theory} known
-as the {\em Coding Theorem}, states that the other inequality is
-also true, except for a multiplicative constant
 
-\begin{teorema}[\index{Coding Theorem}Coding Theorem]\label{intro:thm:coding} For each \pfree machine $\M$, one
-may effectively find a constant $c$ such that $ (\forall
+Para todo $\sta$, podemos ver que $2^{-\K(\sta)}\leq P_{\U}(\sta)$, ya que una descripción-$\M$ más corta de $\sta$ ya contribuye a la suma en la ecuación (\ref{intro:eqn:coding}). El siguiente resultado, conocido como el Teorema de la Codificación \cite{levin1974laws,G74,chaitin1975theory}, establece que la otra desigualdad también es verdadera, excepto por una constante multiplicativa.
+
+\begin{teorema}[\index{Coding Theorem}Teorema de Codificación]\label{intro:thm:coding} Para cada máquina libre de prefijos $\M$, se puede encontrar una constante $c$ tal que $ (\forall
 \sta\in\words)\ 2^{c-\K(\sta)}\geq P_{\M}(\sta). $
 \end{teorema}
-For more information in the Coding Theorem, see \cite{LV97} and
+
+Para más información sobre el Teorema de Codificación, se puede consultar \cite{li2013introduction}.
 \cite{DHBook}.
 
 \bigskip
 
-\index{Program-size complexity@\kolcomp!\computable@\comp
-approximation} Although $\K$ and $\C$ are not \comp functions,
-they can be \recly approximated from above using the step by step
-approximation of $\U$. \glossary{$\K_s$}$\K_s(\sta)$ is the
-approximation at stage $s$ of $\K(\sta)$ defined by
-$\K_s(\sta)=\min\{\len{\pra}\colon
-\U_s(\pra)=\sta\}\cup\{\infty\}$. Observe that
-$\K_s(\sta)\to\K(\sta)$ when $s\to\infty$.
- The same holds for
-\glossary{$\C_s$}${\C_s}$.
+%\index{Program-size complexity@\kolcomp!\computable@\comp approximation} Although $\K$ and $\C$ are not \comp functions, they can be \recly approximated from above using the step by step approximation of $\U$. \glossary{$\K_s$}$\K_s(\sta)$ is the approximation at stage $s$ of $\K(\sta)$ defined by $\K_s(\sta)=\min\{\len{\pra}\colon \U_s(\pra)=\sta\}\cup\{\infty\}$. Observe that $\K_s(\sta)\to\K(\sta)$ when $s\to\infty$. The same holds for \glossary{$\C_s$}${\C_s}$.
 
+%Machines can be relativized to oracles. For any $\M^A$, a \pfree machine $\M$ relativized to an oracle $A$, $\domain {\M^A}$ has to be \pfree. The Definition~\ref{intro:def:prefixK} of \kolcomp can be relativized to oracles:
 
-Machines can be relativized to oracles. For any $\M^A$, a \pfree
-machine $\M$ relativized to an oracle $A$, $\domain {\M^A}$ has to
-be \pfree. The Definition~\ref{intro:def:prefixK} of \kolcomp can
-be relativized to oracles:
+%\begin{definicion}[Relativized \pfree \kolcomp]\label{intro:def:prefixKwithOracle}
+%\index{Program-size complexity@\kolcomp!relativized} \glossary{$\KM^A$}$\KM^A\colon\words \to \nat$, the {\em \pfree \kolcomp with respect to the \pfree machine $\M$ and relative to oracle $A$}, is defined as
+%$$
+%\KM^A(\sta)=
+%    \begin{cases}
+%    \min \{\len{\pra}\colon \M^A(\pra)=\sta \} & \textrm{if $\sta$ is in the range of $\M^A$};\\
+%    \infty & \textrm{otherwise.}
+%    \end{cases}
+%$$
+%\end{definicion}
 
-\begin{definicion}[Relativized \pfree \kolcomp]\label{intro:def:prefixKwithOracle}
-\index{Program-size complexity@\kolcomp!relativized}
-\glossary{$\KM^A$}$\KM^A\colon\words \to \nat$, the {\em \pfree
-\kolcomp with respect to the \pfree machine $\M$ and relative to
-oracle $A$}, is defined as
-$$
-\KM^A(\sta)=
-    \begin{cases}
-    \min \{\len{\pra}\colon \M^A(\pra)=\sta \} & \textrm{if $\sta$ is in the range of $\M^A$};\\
-    \infty & \textrm{otherwise.}
-    \end{cases}
-$$
-\end{definicion}
+%Definition~\ref{intro:def:plainC} of $\CM$ also adapts straightforwardly to \glossary{$\CM^A$}$\CM^A$. Again, when there is no need to refer to the underlying \opt machine, we just write \glossary{$\C^A$}$\C^A$ and \glossary{$\K^A$}$\K^A$. Having an oracle $A$ gives more power for compressing strings, so $\K^A$ is always smaller than $\K$ up to an additive constant. The same holds for $\C^A$ and $\C$.
 
-Definition~\ref{intro:def:plainC} of $\CM$ also adapts
-straightforwardly to \glossary{$\CM^A$}$\CM^A$. Again, when there
-is no need to refer to the underlying \opt machine, we just write
-\glossary{$\C^A$}$\C^A$ and \glossary{$\K^A$}$\K^A$. Having an
-oracle $A$ gives more power for compressing strings, so $\K^A$ is
-always smaller than $\K$ up to an additive constant. The same
-holds for $\C^A$ and $\C$.
-
-Sea $M$ una Máquina de Turing libre de prefijos --por {\em libre de prefijo} nos referimos a que si $M(x)$ está definida, entonces $M$ está indefinida para cualquier extensión de $x$. Sea $P_M(x)$ la probabilidad de que la máquina $M$ compute la salida $x$ cuando la entrada se llena con los resultados de los lanzamientos de una moneda justa, y sea $K_M(x)$ la {\em complejidad de Kolmogorov de $x$ relativa a $M$}, que se define como la longitud del programa más corto que genera $x$, cuando se ejecuta en $M$. El Teorema de Codificación establece que, por cada cadena $x$ tenemos:
+%Sea $M$ una Máquina de Turing libre de prefijos --por {\em libre de prefijo} nos referimos a que si $M(x)$ está definida, entonces $M$ está indefinida para cualquier extensión de $x$. Sea $P_M(x)$ la probabilidad de que la máquina $M$ compute la salida $x$ cuando la entrada se llena con los resultados de los lanzamientos de una moneda justa, y sea $K_M(x)$ la {\em complejidad de Kolmogorov de $x$ relativa a $M$}, que se define como la longitud del programa más corto que genera $x$, cuando se ejecuta en $M$. El Teorema de Codificación establece que, por cada cadena $x$ tenemos:
 %
-\begin{equation*}
-\label{eqF}
-\log \frac{1}{P_U(x)} = K_U(x)
-\end{equation*}
+%\begin{equation*}
+%\label{eqF}
+%\log \frac{1}{P_U(x)} = K_U(x)
+%\end{equation*}
 %
 %up to an additive constant, whenever $U$ is a {\em universal} prefix Turing machine --by {\em universal} we mean a machine which is capable of simulating every other Turing machine; it can be understood as the underlying (Turing-complete) chosen programming language. It is important to remark that neither $P_U$, nor $K_U$ are computable, which means that such mappings cannot be obtained through effective means. However, for specific (non-universal) machines $M$, one can, indeed, compute both $P_M$ and $K_M$.
-salvo una constante aditiva, siempre que $U$ sea una Máquina Universal de Turing libre prefijos --por {\em Universal} nos referimos a una máquina que es capaz de simular cualquier otra máquina de Turing; puede entenderse como el lenguaje de programación elegido subyacente (Turing-completo). Es importante señalar que ni $P_U$, ni $K_U$ son computables, lo que significa que tal mapeo no puede obtenerse por medios efectivos. Sin embargo, para máquinas específicas (no universales) $M$, uno puede, de hecho, calcular tanto $P_M$ como $K_M$.
+%salvo una constante aditiva, siempre que $U$ sea una Máquina Universal de Turing libre prefijos --por {\em Universal} nos referimos a una máquina que es capaz de simular cualquier otra máquina de Turing; puede entenderse como el lenguaje de programación elegido subyacente (Turing-completo). Es importante señalar que ni $P_U$, ni $K_U$ son computables, lo que significa que tal mapeo no puede obtenerse por medios efectivos. Sin embargo, para máquinas específicas (no universales) $M$, uno puede, de hecho, calcular tanto $P_M$ como $K_M$.
 
 %\subsection{Testing the Coding Theorem for \boldmath{$\gramgeo$}}
-\subsection{Revisando el teorema de codificación para $\gramgeo$}
+\subsection{Revisando el teorema de codificación para \gramgeo}
 
 %Despite the fact that $P_M$ and $K_M$ are defined over a Turing Machine $M$, the reader should note that a LoT is not usually formalized with a Turing Machine, but instead as a programming language with its own syntax of valid programs and semantics of execution, which stipulates how to compute a concept from a program. However, one can understand programming languages as defining an equivalent (not necessarily universal) Turing Machine model, and a LoT as defining its equivalent (not necessarily universal) Turing Machine $\gram$. In short, machines and languages are interchangeable in this context: they both specify the programs/terms, which are symbolic objects that, in turn, describe semantic objects, namely, strings.
 
-A pesar de que $P_M$ y $K_M$ están definidos sobre una máquina de Turing $M$, el lector debe tener en cuenta que un \lot no se suele formalizar con una máquina de Turing, sino como un lenguaje de programación con su propia sintaxis de programas válidos y su propia semántica de ejecución que estipula cómo calcular un concepto a partir de un programa válido. Sin embargo, uno puede concebir los lenguajes de programación como la definición de una máquina de Turing equivalente (no necesariamente universal), y a un \lot como un lenguaje que define a su equivalente máquina de Turing (no necesariamente universal), En resumen, las máquinas y los lenguajes son intercambiables en este  sentido: ambas especifican los programas/términos, los cuales son objetos simbólicos que, a su vez, describen objetos semánticos (a saber, cadenas). Para \gramgeo ya tenemos definida su medida de $K_M$ a la cual hemos notado \mdlgeo, a continuación definiremos $P_M$ para el mismo lenguaje.
+A pesar de que $P_{\M}$ y $K_{\M}$ están definidos sobre una máquina de Turing $\M$, el lector debe tener en cuenta que un \lot no se suele formalizar con una máquina de Turing, sino como un lenguaje de programación con su propia sintaxis de programas válidos y su propia semántica de ejecución que estipula cómo calcular un concepto a partir de un programa válido. Sin embargo, uno puede concebir los lenguajes de programación como la definición de una máquina de Turing equivalente (no necesariamente universal), y a un \lot como un lenguaje que define a su equivalente máquina de Turing (no necesariamente universal), En resumen, las máquinas y los lenguajes son intercambiables en este  sentido: ambas especifican los programas/términos, los cuales son objetos simbólicos que, a su vez, describen objetos semánticos (a saber, cadenas). Para \gramgeo ya tenemos definida su medida de $K_{\M}$ a la cual hemos notado \mdlgeo, a continuación definiremos $P_{\M}$ para el mismo lenguaje.
 
 %\paragraph{The Kolmogorov complexity relative to \boldmath{$\gramgeo$}}
 
@@ -511,9 +487,9 @@ A pesar de que $P_M$ y $K_M$ están definidos sobre una máquina de Turing $M$, 
 
 %\paragraph{The probability relative to \boldmath{$\gramgeo$}} On the other hand, with the Bayesian model specified in this work, we can define $P(x \mid \gramgeo, \theta)$ which is the probability of a string $x$ relative to $\gramgeo$ and its vector of probabilities for each of the productions.
 
-\paragraph{La probabilidad relativa $\gramgeo$.} 
+\paragraph{La probabilidad relativa \gramgeo.} 
 
-Con el modelo Bayesiano especificado en este capítulo podemos definir $P(x \mid \gramgeo, \theta)$ que es la probabilidad de una cadena $x$ relativa a $\gramgeo$ y el vector de probabilidades para cada una de las producciones.
+Con el modelo Bayesiano especificado en este capítulo podemos definir $P(x \mid \gramgeo, \theta)$ que es la probabilidad de una cadena $x$ relativa a \gramgeo y el vector de probabilidades para cada una de las producciones.
 
 %For the sake of simplicity, we will use $P_{\gramgeo}(x)$ to denote $P(x \mid \gramgeo, \theta)$ when $\theta$ is the inferred probability from the observed adult sequences from the experiment.
 En aras de la simplicidad, usaremos $P_{\gramgeo}(x)$ para denotar $P(x \mid \gramgeo, \theta)$ cuando $\theta$ es la probabilidad inferida de las secuencias de adultos observadas en el experimento.
@@ -528,7 +504,7 @@ P_{\gramgeo}(x) &=& P(x \mid \gramgeo, \theta)\\
 
 %Here, we calculate both $P_{\gramgeo}(x)$ and $K_{\gramgeo(x)}$ in an exact way (note that $\gramgeo$, seen as a programming language, is not Turing-complete). In this section, we show an experimental equivalence between such measures which is consistent with the Coding Theorem. We should stress, once more, that the theorem does not predict that this relationship should hold for a specific non-universal Turing Machine.
 
-Aquí, calculamos tanto $P_{\gramgeo}(x)$ como $\mdlgeo(x)$ de una manera efectiva (tener en cuenta que $\gramgeo$, visto como un lenguaje de programación, no es Turing-completo). En esta sección, mostramos un experimento de equivalencia entre tales medidas que es consistente con el Teorema de Codificación. Queremos enfatizar, una vez más, que el teorema no predice que esta relación deba mantenerse para una máquina de Turing específica no universal.
+Aquí, calculamos tanto $P_{\gramgeo}(x)$ como $\mdlgeo(x)$ de una manera efectiva (tener en cuenta que \gramgeo, visto como un lenguaje de programación, no es Turing-completo). En esta sección, mostramos un experimento de equivalencia entre tales medidas que es consistente con el Teorema de Codificación. Queremos enfatizar, una vez más, que el teorema no predice que esta relación deba mantenerse para una máquina de Turing específica no universal.
 
 
 %To calculate $P_{\gramgeo}(x)$ we are not interested in the normalization factor of $P(x \mid \prog) P(\prog \mid \theta)$ because we are just trying to measure the relationship between $P_{\gramgeo}$ and $\mdlgeo$ in terms of the Coding Theorem. Note, however, that calculating $P_{\gramgeo}(x)$ involves calculating all programs that compute each of the sequences as in our previous experiment. To make this tractable we calculated $P_{\gramgeo}(x)$ for 10,000 unique random sequences for each of the possible sequence lengths from the experiment (i.e., up to eight). When the length of the sequence did not allow 10,000 unique combinations, we used all the possible sequences of that length.

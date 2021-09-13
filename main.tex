@@ -1,5 +1,5 @@
 % \documentclass[a4paper,12pt,openright]{book}
-\documentclass[a4paper,12pt,oneside]{book}
+\documentclass[a4paper,12pt,oneside,spanish]{book}
 
 %Para incluir subsubsection en la tabla de contenidos
 \setcounter{tocdepth}{3}
@@ -7,6 +7,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
+
 \decimalpoint
 \usepackage{graphicx}
 \usepackage{anysize}
@@ -20,6 +21,7 @@
 \usepackage{glossaries}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{fancyvrb}
+\usepackage{algorithm2e}
 
 \usepackage[table]{xcolor} 
 \usepackage{xspace}
@@ -77,40 +79,11 @@
 
 \usepackage{pdfpages}
 
+
+
 \begin{document}
 
 
-\color{magenta}
-Puse en magenta cosas que pueden ir parte II
-
-\color{black}
-
-\bigskip
-
-Me gustaría unificar notación en toda la tesis. 
-
-Propuesta (obviamente se puede cambiar fácil porque son comandos)
-
-Lenguajes/gramáticas:
-\begin{itemize}
-\item \gramgeo para lenguaje de geometría.
-\item \grambin para lenguaje de binario
-
-\item \grambool para lenguaje de proposicional sin xor. Ya está usado así en el paper de PRE (cap 4) pero fuimos muy informales en el paper de BRM (cap 5). Sería bueno formalizar la notación ahí
-
-\item \gramboolxor para lenguaje de proposicional con xor. Ya está usado así en el paper de PRE (cap 4) y no se usa en otro lado.
-\end{itemize}
-
-
-Complejidades:
-
-\begin{itemize}
-\item \mdlbin para complejidad relativa a \grambin .
-
-\item \mdl{\grambool} para complejidad relativa a \grambool. Estaba usado en PRE pero falta usarlo ene BRM
-
-\item \mdl{\gramboolxor} para complejidad relativa a \gramboolxor. Está usado en PRE y solo se usa en PRE.
-\end{itemize}
 
 
 \newgeometry{top=30mm, bottom=10mm} 
@@ -141,7 +114,8 @@ Complejidades:
         \include{caps/parte2}
         \include{caps/actualizacion}
         \include{caps/marco}
-        \include{caps/conclusiones} 
+    \part{Conclusiones}
+        \include{caps/conclusiones}
     %\include{papers/plos_one_final}
     %\include{papers/pre_final}
     %\include{papers/behavior_research_methods}

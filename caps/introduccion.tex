@@ -54,6 +54,24 @@ Los investigadores han modelado estas categorías mentales o clases conceptuales
 
 Enfoques simbólicos como la hipótesis del \textit{lenguaje del pensamiento} (LoT, por sus siglas en ingés) \cite{fodor1975language}, afirman que el pensamiento toma forma en una especie de lenguaje mental, compuesto por un conjunto limitado de símbolos atómicos que pueden combinarse para formar estructuras más complejas. siguiendo reglas combinatorias.
 
+\intro{material para intro, pero dejar algo de relleno acá}{
+%How can children acquire a vast universe of concepts with seemingly very little exposure? One possible solution to this conundrum, known as the Plato Problem~\cite{chomsky1986knowledge,chomsky2006cognitive}, builds on the human capacity to describe concepts --and more generally of all elements of thought-- through the use of a symbolic and combinatorial mental language~\cite{newell1980physical}, referred as {\em language of thought} (\lot)~\cite{fodor1975language}.
+
+¿Cómo pueden los niños adquirir un vasto universo de conceptos con muy poca exposición aparente? Una posible solución a esta pregunta, conocida como el problema de Platón~\cite{chomsky1986knowledge,chomsky2006cognitive}, se basa en la capacidad humana para describir conceptos (y en general cualquier elemento del pensamiento) mediante el uso de un lenguaje mental con elementos simbólicos combinatorios~\cite{newell1980physical}, conocido en la literatura como el {\em lenguaje del pensamiento} (\lot, por sus siglas en inglés)~\cite{fodor1975language}.
+
+%Combinatorial languages can describe a vast set of concepts from a small set of primitives. This can be understood in a relatively simple example in the domain of shapes. A combinatorial and symbolic language similar to Logo~\cite{abelson1974logo} can combine operations such as ``move", ``pen up", ``pen down" or ``rotate" to generate an infinite set of expressions (or programs) which, when evaluated, can convey all sort of shapes.
+
+(Esto párrafo lo usé en intro de Capitulo 4). Los lenguajes combinatorios pueden describir un vasto conjunto de conceptos a partir de un pequeño conjunto de primitivas. Podemos entenderlo con un ejemplo relativamente simple en el dominio de las formas. Un lenguaje combinatorio similar a Logo~\cite{abelson1974logo} puede combinar símbolos de operaciones como ``mover", ``lápiz arriba", ``lápiz abajo" o ``rotar" para generar un conjunto infinito de expresiones (o programas) que, cuando se evalúan, pueden trasmitir todo tipo de formas.
+
+%A language describing concepts (like shapes) also provides a natural notion of their complexity~\cite{kolmogorov1968three}. A concept is simple, relative to that language, when it can be described by a short program. On the contrary, it is complex when all its descriptions require a long sequence of instructions. For example, in the case of the Logo language, a square can simply be instructed as a loop of four displacements followed by rotations of 90 degrees. In this language, the icon of a face will be implemented by a significant lengthier program and hence will be more complex.  However, this concept would be simpler when described in a language in which the icon of a face (or the symbols for nose, mouth, etc.) are available as primitives in the language.
+
+Un lenguaje que describe conceptos (como las formas) también proporciona una noción natural de su complejidad~\cite{kolmogorov1968three}. Un concepto es simple, relativo a ese lenguaje, cuando puede ser descripto por un programa corto. Por el contrario, es complejo cuando todas sus descripciones requieren una secuencia larga de instrucciones. Por ejemplo, en el caso de Logo, un cuadrado se puede codificar simplemente como un bucle de cuatro desplazamientos seguidos de rotaciones de 90 grados. En cambio, describir una cara requerirá de un programa más largo y, por lo tanto, será un concepto más complejo de describir. Sin embargo, este concepto se podría describir de manera más simple en un lenguaje en el que el icono de una cara (o de una nariz, boca, etc.) estuvieran disponibles como primitivas de ese lenguaje. 
+}
+
+\paragraph{Ubicar 4}
+
+La adquisición de conceptos es un aspecto clave y ampliamente estudiado de la cognición diaria humana~\cite{cohen2005handbook, ashby2011human}. Muchos investigadores han afirmado que un sistema de codificación y un conjunto de reglas subyacen a algunas de nuestras habilidades para adquirir conceptos~\cite{nosofsky1994rule, tenenbaum2011grow, maddox1993comparing}, y se ha observado que parece que aprendemos conceptos de objetos con más facilidad cuando hay reglas `más simples' que pueden explicar esas agrupaciones~\cite{shepard1961learning, nosofsky1994comparing, rehder2005eyetracking, lewandowsky2011working, feldman2000minimization, blair2003easy, minda2001prototypes}.
+
 \paragraph{Ubicar 3}
 
 Por lo tanto, investigaciones previas indican que --como mínimo-- dos sistemas distintos pueden ser parte de la base del aprendizaje de secuencias en el cerebro humano: el aprendizaje estadístico y el aprendizaje basado en reglas~\cite{f4,f67,f85}. Lo que se desconoce es si operan de forma independiente y si alguno es favorecido por sobre el otro en función de la naturaleza de la información a codificar. Argumentamos que cualquier intento por descubrir los mecanismos cognitivos específicos detrás del aprendizaje de reglas en humanos, especialmente en comparación con otras especies, debe tener también en cuenta la contribución de un sistema menos abstracto (sin embargo poderoso) de predicción basado en las propiedades estadísticas de los eventos. \sergio{este párrafo es para una intro más general dado que plantea una de las contradicciones principales con las que pivotea LoT}\santi{Sí}
@@ -102,7 +120,7 @@ Si bien los trabajos pueden diferir en cómo se puede implementar un LoT computa
 \paragraph{Ubicar}
 
 \intro{mandar a intro}{
-Un enfoque más formal para la estimación de la complejidad de los patrones, conocido como \textit{complejidad algorítmica}, \textit{complejidad del tamaño del programa} o \textit{complejidad de Kolmogorov} (CK), fue propuesto por Kolmogorov~\cite{kolmogorov1965three}, Chaitin~\cite{f40} y Solomonof~\cite{solomonoff1964formal}, en el marco de la \textit{teoría algorítmica de la información}. Estos matemáticos definieron a la complejidad de una secuencia como la longitud del programa computacional más corto capaz de producirlo. Estrictamente hablando, la complejidad algorítmica se define en relación un lenguaje descriptivo (o lenguaje de programación). Cuando este lenguaje es Turing completo, lo que significa que se puede simular cualquier otra máquina de Turing en él, hablamos de CK universal o CK simplemente. Sin embargo, cuando el lenguaje de codificación tiene un poder expresivo reducido (es decir, cuando es una máquina específica en lugar de una máquina universal), la complejidad algorítmica se puede calcular y utilizar como una medida subjetiva de complejidad~\cite{romano2013language}\sergio{nosotros}. Recientemente, se propuso una aproximación a CK utilizando el \textit{teorema de codificación}, que relaciona la complejidad algorítmica de una secuencia con la probabilidad de que una máquina universal produzca esa secuencia~\cite{f43,f44,f45,f46}. La propuesta proporciona una medida de complejidad algorítmica para un gran conjunto de secuencias cortas. Esta propuesta se presentó como la mejor aproximación de “una medida final de aleatoriedad” y puede reproducir los sesgos observados cuando se les pide a los individuos que juzguen la aleatoriedad de los patrones o que produzcan patrones aleatorios~\cite{f44,f45}.
+Un enfoque más formal para la estimación de la complejidad de los patrones, conocido como \textit{complejidad algorítmica}, \textit{complejidad del tamaño del programa} o \textit{complejidad de Kolmogorov} (CK), fue propuesto por Kolmogorov~\cite{kolmogorov1965three}, Chaitin~\cite{chaitin1969length} y Solomonof~\cite{solomonoff1964formal}, en el marco de la \textit{teoría algorítmica de la información}. Estos matemáticos definieron a la complejidad de una secuencia como la longitud del programa computacional más corto capaz de producirlo. Estrictamente hablando, la complejidad algorítmica se define en relación un lenguaje descriptivo (o lenguaje de programación). Cuando este lenguaje es Turing completo, lo que significa que se puede simular cualquier otra máquina de Turing en él, hablamos de CK universal o CK simplemente. Sin embargo, cuando el lenguaje de codificación tiene un poder expresivo reducido (es decir, cuando es una máquina específica en lugar de una máquina universal), la complejidad algorítmica se puede calcular y utilizar como una medida subjetiva de complejidad~\cite{romano2013language}\sergio{nosotros}. Recientemente, se propuso una aproximación a CK utilizando el \textit{teorema de codificación}, que relaciona la complejidad algorítmica de una secuencia con la probabilidad de que una máquina universal produzca esa secuencia~\cite{f43,f44,f45,f46}. La propuesta proporciona una medida de complejidad algorítmica para un gran conjunto de secuencias cortas. Esta propuesta se presentó como la mejor aproximación de “una medida final de aleatoriedad” y puede reproducir los sesgos observados cuando se les pide a los individuos que juzguen la aleatoriedad de los patrones o que produzcan patrones aleatorios~\cite{f44,f45}.
 }
 
 Como se indicó anteriormente, una propuesta estrictamente relacionada con la CK es que los sujetos humanos comprimen las secuencias internamente, no necesariamente usando un conjunto de instrucciones de un lenguaje universal, sino usando una variedad de primitivas similares a las de una computadora tales como bucles y otras rutinas que forman un \textit{lenguaje del pensamiento} (LoT, por sus siglas en inglés) \santi{Repe} interno específico~\cite{fodor1975language} lo suficientemente fuerte para describir cualquier secuencia del dominio, pero no tan complejo como el de una Máquina de Turing universal y, por lo tanto, lo suficientemente débil como para permitir que la complejidad pueda ser computada de manera exacta. Dicho lenguaje permitiría la combinación de primitivas simples en patrones complejos de encajes o reglas recursivas. Los modelos de LoT se han propuesto muy temprano~\cite{f33}. Simon y Kotovsky~\cite{f48} utilizaron conceptos como ``igual'', ``siguiente'' (en el alfabeto) y la capacidad de recorrer una serie para construir una representación formal de la memoria humana para secuencias de letras (por ejemplo, ``cadaeafa...''). Del mismo modo, Restle~\cite{f37} utilizó las operaciones ``repetir'', ``transposición'' y ``reflexión''. También se utilizaron lenguajes similares basados en repeticiones con variaciones para codificar figuras geométricas lineales y formas 2D y 3D más elaboradas~\cite{f33,leeuwenberg1971perceptual}. Más recientemente, se han utilizado con éxito propuestas similares para estudiar diferentes aspectos del aprendizaje humano, en particular el aprendizaje de conceptos~\cite{feldman2000minimization,f51, piantadosi2012bootstrapping,piantadosi2016four,f54}. \santi{media tesis es sobre esto. Referenciar a los capítulos correspondientes} Se ha mostrado que la complejidad Booleana, es decir, la longitud de la expresión lógica más corta que captura el concepto (una noción estrechamente relacionada con CK) captura el comportamiento humano en el aprendizaje de conceptos lógicos~\cite{feldman2000minimization,feldman2003simplicity}.
@@ -224,7 +242,7 @@ técnica y está vinculada con la utilidad de la complejidad de Kolmogorov
 para definir nociones de aleatoriedad.
 % Esta noción de complejidad es absoluta, pues si bien existe una
 % complejidad distinta por cada máquina universal subyacente, todas
-% estas son iguales salvo una constante aditiva \cite{C94,LV97}.
+% estas son iguales salvo una constante aditiva \cite{C94,li2013introduction}.
 
 A continuación veremos las definiciones formales de la Complejidad de Kolmogorov y de los
 principales elementos de la Teoría algorítmica de la información.
@@ -314,46 +332,6 @@ $$
 $$
 \end{definicion}
 
-\widesanti{aca aclaro qué es un conjunto libre de prefijos.
-
-For
-$\sta,\stb\in\words$, we write
-\glossary{$\preceq$}$\sta\preceq\stb$ when $\sta$ is a prefix of
-$\stb$, that is $\len{\sta}\leq\len{\stb}$ and $\sta(i)=\stb(i)$
-for all $i\in\{0,\dots,\len{\sta}-1 \}$. We write
-\glossary{$\prec$}$\sta\prec\stb$ when $\sta$ is a proper prefix
-of $\stb$, that is $\sta\preceq \stb$ and $\sta\not=\stb$. A set
-of strings $A$ is {\em \pfree} if there are no two strings $\sta$
-and $\stb$ in $A$ such that $\sta\prec\stb$. A set
-$T\subseteq\words$ is a \index{tree} {\em tree} if for all
-$\sta,\stb\in\words$ if $\sta\in T$ and $\stb\prec\sta$ then
-$\stb\in T$.
-}
-
-If we restrict ourselves to partial \rec functions with \pfree
-domain, we can think of  {\em
-\pfree Turing machines} (independently introduced by
-Levin~\cite{L71,L73}, Schnorr~\cite{S71} and Chaitin~\cite{chaitin1975theory})
-as the formalism to compute them. Chaitin thought of a convenient
-device to compute exactly all \pfree machines. This device is just
-like a classical Turing machines but the input tape is a bit
-primitive: the input head moves only to the right and there is no
-blank end-marker delimiting the end of the input. So a \pfree
-machine starting with the input head in the first bit of the input
-$\pra$ may eventually try to read beyond the end of $\pra$ and if
-this happens, it simply crashes (i.e.\ it becomes undefined) and
-it stays in that error state forever. Therefore, for a \pfree
-machine $\M$ to succeed in the computation, it needs to somehow
-figure out by itself where the end of the input is.
-% no extension of a valid program is a valid program.
-This is the reason why this device is sometimes called {\em
-self-delimiting} machine. In this model, if a given input is
-defined, all its extensions are undefined. It can be shown that
-this restricted architecture of Turing machines compute exactly
-all partial \rec functions with \pfree domain. The {\em the \pfree
-\kolcomp}~\cite{levin1974laws,G74,chaitin1975theory} is defined in the same way as in
-Definition~\ref{intro:def:plainC} but relative to \pfree
-machines:
 
 
 

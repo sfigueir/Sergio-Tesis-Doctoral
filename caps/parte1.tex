@@ -9,7 +9,7 @@ El \textit{lenguaje de geometría} permite la generación de programas que puede
 \paragraph{La gramática \gramgeo.}
 En la Figura \ref{fig:gramgeo} definimos la gramática para $\gramgeo$. Los {\em programas} de \gramgeo serán las palabras válidas del lenguaje definido por \gramgeo. Usaremos indistintamente \gramgeo para referirnos a la gramática o al lenguaje que representa (quedando siempre claro del contexto cuál de las dos aplica).
 
-
+\renewcommand{\thefigure}{PI.1}
 \begin{figure}
 \begin{center}
 \begin{tabular}{cc}
@@ -88,6 +88,7 @@ En la Figura \ref{fig:gramgeo} definimos la gramática para $\gramgeo$. Los {\em
 \paragraph{La semántica de \gramgeo.}
 Un programa $P$ por sí solo no tiene semántica, sino que la semántica viene dada por un par $(P,n)$, donde $P$ es un programa válido de \gramgeo y $n$ es un número natural entre 0 y 7. Denotaremos con $\sem{P}_n$ a la semántica de tal par, y será una secuencia no vacía de números naturales sobre el alfabeto $\{0,\dots,7\}$. Intuitivamente, $\sem{P}_n$ representa o describe un camino en el octágono de la Figura \ref{fig:circle}, cuando se `ejecuta' $P$ a partir del punto $n$. El mismo programa $P$ podrá describir distintas secuencias dependiendo del valor de $n$. 
 
+\renewcommand{\thefigure}{PI.2}
 \begin{figure}[ht]
 \begin{center}
 \begin{tikzpicture}[scale=.6]
@@ -145,55 +146,89 @@ $P=$\verb#[# $I_1$ \verb#,# \dots \verb#,# $I_\ell$ \verb#]#
 Además, \gramgeo tiene tres producciones que representan distintas formas de repeticiones de (sub)programas:
 
 \begin{itemize}
-\item Si $P=$\verb#[# $I_1$ \verb#,# \dots \verb#,# $I_\ell$ \verb#]# es un programa, la ejecución de \verb#REP0[#$P$\verb#]^#$k$ desde $n$ será equivalente a la ejecución del siguiente programa desde $n$: 
+\item Si $P$ es un programa, la ejecución de \verb#REP0[#$P$\verb#]^#$k$ desde $n$ será equivalente a la ejecución del siguiente programa: 
 
 \begin{center}
 %\verb#[# \underbrace{ $I_1$ \verb#,# \dots \verb#,# $I_\ell$ \verb#,#
 %         $\dots$ \verb#,# 
 %         $I_1$ \verb#,# \dots \verb#,# $I_\ell$}_\text{$k$ copias de $P$} \verb#]#
-\verb#[# $\underbrace{I_1, \dots, I_l, \dots, I_1, \dots, I_l}_\text{$k$ copias de $P$}$ \verb#]#
+%\verb#[# $\underbrace{I_1, \dots, I_l, \dots, I_1, \dots, I_l}_\text{$k$ copias de $P$}$ \verb#]#
+
+\begin{algorithm}
+  \SetKwFunction{Print}{Print}
+  \For{$i \gets 1$ \KwTo $k$}{
+    $cadena \leftarrow \FuncSty{P(}n\FuncSty{)}$\;
+    \Print{cadena}\;
+    $n \leftarrow$ último símbolo de $cadena$
+    }
+\end{algorithm}
+
 
 \end{center}
 
-\widesanti{Es cierto que esto que sigue queda repetido con la def. formal. No me convence. Propongo que se explique la semántica de estas dos repeticiones con un programita en cualquier pseudo códico imperativo con un ciclo y unos 'prints'. Creo que va a quedar más claro .
 
-Sería más ordenado contar todo esto sin recurrir a la notación de $\sem{}$, que se reservaría para la def. formal}
 
 \item Si $A$ es una instrucción atómica y $P$ es un programa, la ejecución del programa 
-\verb#REP1<#$A$\verb#>[#$P$\verb#]^#$k$ desde $n$ será equivalente a primero obtener la secuencia $\sigma_0$ resultante de ejecutar $P$ desde el punto $n$ (es decir, $\sem{P}_n$) y luego ejecutar $A$ desde cada punto de $\sigma_0$ para obtener $\sigma_1$, y repetir el procedimiento aplicando $A$ a cada punto de la última secuencia resultante hasta obtener $\sigma_{k-1}$. Es decir, con $\cdot\concat\cdot$ representando la concatenación de secuencias, entonces:
+\verb#REP1<#$A$\verb#>[#$P$\verb#]^#$k$ desde $n$ será equivalente a primero obtener la secuencia $\sigma_0$ resultante de ejecutar $P$ desde el punto $n$  y luego ejecutar $A$ desde cada punto de $\sigma_0$ para obtener $\sigma_1$, y repetir el procedimiento aplicando $A$ a cada punto de la última secuencia resultante hasta obtener $\sigma_{k-1}$. Es decir, con $\cdot\concat\cdot$ representando la concatenación de secuencias, entonces:
 
 \begin{center}
+\begin{algorithm}
+  \SetKwFunction{Print}{Print}
+  $cadena \leftarrow \FuncSty{P(}n\FuncSty{)}$\;
+  \Print{cadena}\;
+  \For{$i \gets 2$ \KwTo $k$}{
+        $nueva \ cadena \leftarrow$ cadena vacía \;
+        \ForEach{$simbolo \in cadena$}{
+            $ res \leftarrow$ \FuncSty{A(}$simbolo$\FuncSty{)}\;
+            $nueva \ cadena \leftarrow nueva \ cadena \concat res$\;
+        }
+        $cadena \leftarrow nueva \ cadena$\;
+        \Print{cadena}
+    }
+\end{algorithm}
+\end{center}
 
-$\llbracket$ \verb#REP1<#$A$\verb#>[#$P$\verb#]^#$k$  $\rrbracket_n = \sigma_0 \concat \dots \concat \sigma_{k-1}$
 
-donde
+%$\llbracket$ \verb#REP1<#$A$\verb#>[#$P$\verb#]^#$k$  $\rrbracket_n = \sigma_0 \concat \dots \concat \sigma_{k-1}$
+
+%donde
       
-      $\sigma_0 = \sem{P}_n = x_0^0 \concat \dots \concat x_i^0$
+%      $\sigma_0 = \sem{P}_n = x_0^0 \concat \dots \concat x_i^0$
       
       %$\sigma_1 = \sem{A}_{x_0^0} \dots \sem{A}_{x_i^0} = x_0^1 \dots x_i^1$
       
       %$\sigma_2 = \sem{A}_{x_0^1} \dots \sem{A}_{x_i^1} = x_0^2 \dots x_i^2$
       
-      $\sigma_j = \sem{A}_{x_0^{j-1}} \concat \dots \concat \sem{A}_{x_i^{j-1}} = x_0^j \concat \dots \concat x_i^j$ para todo $j>0$
+%      $\sigma_j = \sem{A}_{x_0^{j-1}} \concat \dots \concat \sem{A}_{x_i^{j-1}} = x_0^j \concat \dots \concat x_i^j$ para todo $j>0$
 
 
-\end{center}
 
 \item Si $A$ es una instrucción atómica y $P$ es un programa, la ejecución del programa 
-\verb#REP2<#$A$\verb#>[#$P$\verb#]^#$k$ desde $n$ será equivalente a primero obtener la secuencia $\sigma_0$ resultante de ejecutar $P$ desde el punto $n$ (es decir, $\sem{P}_n$) y luego volver a ejecutar $P$ desde $\sem{A}_n$ para obtener $\sigma_1$, y repetir el procedimiento hasta obtener $\sigma_{k-1}$. Es decir,
+\verb#REP2<#$A$\verb#>[#$P$\verb#]^#$k$ desde $n$ será equivalente a primero obtener la secuencia $\sigma_0$ resultante de ejecutar $P$ desde el punto $n$ y luego volver a ejecutar $P$ desde $\sem{A}_n$ para obtener $\sigma_1$, y repetir el procedimiento hasta obtener $\sigma_{k-1}$. Es decir,
 
 \begin{center}
-
-$\llbracket$ \verb#REP2<#$A$\verb#>[#$P$\verb#]^#$k$  $\rrbracket_n = \sigma_0 \concat \dots \concat \sigma_{k-1}$
-
-donde
-      
-      $\sigma_i = \sem{P}_{n_i} $
-      
-      con $n_0 = n$ y $n_i = \sem{A}_{n_{i-1}}$ para $i>0$ 
-
-
+\begin{algorithm}
+  \SetKwFunction{Print}{Print}
+  \For{$i \gets 1$ \KwTo $k$}{
+        $cadena \leftarrow$ \FuncSty{P(}$n$\FuncSty{)}\;
+        \Print{cadena}\;
+        $n \leftarrow \FuncSty{A(}n\FuncSty{)}$\;
+    }
+\end{algorithm}
 \end{center}
+
+%\begin{center}
+
+%$\llbracket$ \verb#REP2<#$A$\verb#>[#$P$\verb#]^#$k$  $\rrbracket_n = \sigma_0 \concat \dots \concat \sigma_{k-1}$
+
+%donde
+      
+%      $\sigma_i = \sem{P}_{n_i} $
+      
+%      con $n_0 = n$ y $n_i = \sem{A}_{n_{i-1}}$ para $i>0$ 
+
+
+%\end{center}
 
 \end{itemize}
 
@@ -321,7 +356,7 @@ $= 43 \ \ \concat \ \ \llbracket$\verb#-1#$\rrbracket_4 \concat \llbracket$\verb
 En el cuadro~\ref{PART1:Tabla:MDL} mostramos la complejidad \mdlgeo(s) para algunas secuencias $s$ junto con distintos programas $p \in$ \gramgeo tal que $\sem{p}_0=s$ y $|p|=\mdlgeo(s) $.
 
 
-
+\renewcommand{\thetable}{PI.1}
 \begin{table}[h!]
 \centering
 \begin{tabular}{lcl}
@@ -349,7 +384,7 @@ Para tales secuencias, el lenguaje puede ser despojado de la mayoría de sus ins
 \paragraph{La gramática \grambin.}
 En la Figura \ref{fig:grambin} definimos la gramática para $\grambin$. Los {\em programas} de \grambin serán las palabras válidas del lenguaje definido por \grambin. Al igual que para el lenguaje anterior, usaremos indistintamente \grambin para referirnos a la gramática o al propio lenguaje que representa (quedando siempre claro del contexto cuál de las dos aplica).
 
-
+\renewcommand{\thefigure}{PI.3}
 \begin{figure}
 \begin{center}
 \begin{tabular}{cc}
@@ -464,3 +499,5 @@ $$
 
 El código de ambos lenguajes y del cálculo de las complejidades se encuentra disponible en \hyperref[https://github.com/sromano/language-of-geometry]{\url{https://github.com/sromano/language-of-geometry}}
 
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{figure}}
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}

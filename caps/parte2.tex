@@ -1,30 +1,12 @@
 %!TEX root = ../main.tex
 
-
-    \color{magenta}
-    Propuesta: acá poner la gramática y semántica de la lógica proposicional
-
-    Todo lo que está en magenta en los caps 4 y 5 iría en esta parte 2
-
-    Eg:
-    
-    Fig \ref{PCFG}, solo la parte de \grambool pero con una cantidad no acotad de proposiciones em ve de fijarlas en 4 . No incluir \gramboolxor acá.
-
-    Definir formalmente $\sem{\varphi}$
-
-    Definir el tamaño de la formula. Usar notación común para cap 4 y 5
-
-    definir  \mdlbool para complejidad relativa a \grambool, pero dejar la definición de
-      \mdlboolxor para complejidad relativa a \gramboolxor adentro del cap 4 porque solo aparece ahí. 
-
-\color{black}
-
-----------------------------------------
+En los capítulos \ref{chapter:PRE} y \ref{chapter:BRM} trabajaremos con un mismo modelo de \lot, \grambool, para la representación de conceptos booleanos en el lenguaje de la lógica proposicional que presentamos a continuación.
 
 \paragraph{La gramática \grambool.}
 Para un conjunto fijo $\propvars=\{p_1,\dots,p_k\}$ de variables proposicionales, definimos la gramática de la lógica proposicional $\grambool$ en la Figura \ref{fig:grambool}.
 %
-\begin{figure}
+\renewcommand{\thefigure}{PII.1}
+\begin{figure}[h!]
 \begin{eqnarray*}
 \start &\to&\bool\\
 \bool &\to&(\bool \oand \bool) \\
@@ -35,7 +17,8 @@ Para un conjunto fijo $\propvars=\{p_1,\dots,p_k\}$ de variables proposicionales
 \end{eqnarray*}
 donde $i\in\{1,\dots,k\}$.
 \caption{La gramática \grambool para la lógica proposicional.}
-\end{figure}\label{fig:grambool}
+\label{fig:grambool}
+\end{figure}
 
 Las {\em fórmulas} de \grambool serán las palabras del lenguaje definido por \grambool. Usaremos indistintamente \grambool para referirnos a la gramática o al lenguaje que representa (quedando siempre claro del contexto cuál de las dos aplica).
 
@@ -50,12 +33,12 @@ Formalmente, la semántica de una fórmula $\varphi\in\grambool$ (para el conjun
 \begin{eqnarray*}
 \sem{p_i} &=& \{ v\in\{0,1\}^k \mid v(i)=1\}\\
 \sem{\lnot p_i} &=& \{ v\in\{0,1\}^k \mid v(i)=0\}\\
-\sem{\varphi\wedge\psi} &=& \sem{\varphi}\cap\sem{\varphi}\\
-\sem{\varphi\vee\psi} &=& \sem{\varphi}\cup\sem{\varphi}
+\sem{\varphi\wedge\psi} &=& \sem{\varphi}\cap\sem{\psi}\\
+\sem{\varphi\vee\psi} &=& \sem{\varphi}\cup\sem{\psi}
 \end{eqnarray*}
 Esta definición formaliza la idea intuitiva de los operadores de conjunción ($\wedge$), y disyunción ($\vee$). Observar que en \grambool la negación solo aparece en frente de una variable proposicional. Por ejemplo, si $k=3$ (es decir, $\propvars=\{p_1,p_2,p_3\}$) entonces $\sem{p_2}=\{(0,1,0), (1,1,0), (0,1,1), (1,1,1)\}$,  $\sem{p_3}=\{(0,0,1), (0,1,1), (1,0,1), (1,1,1)\}$, y $\sem{p_2\wedge p_3}=\{(0,1,1), (1,1,1)\}$.
 
-Llamamos {\em concepto} a un conjunto de valuaciones sobre la gramática \grambool. Puesto que el conjunto de conectivos de \grambool es adecuado, cualquier concepto $\con$ podrá ser expresado por una fórmula $\varphi\in\grambool$, en el sentido de que $\sem{\varphi}=\con$. De hecho, para cada concepto $\con$ existirán infinitas fórmulas que lo expresan.
+Llamamos {\em concepto} a un conjunto de valuaciones sobre la gramática \grambool. El complemento de $\con$ se denota $\overline \con$ y se define como $\overline \con=\{0,1\}^\propvars\setminus \con$. Puesto que el conjunto de conectivos de \grambool es adecuado, cualquier concepto $\con$ podrá ser expresado por una fórmula $\varphi\in\grambool$, y diremos que que una fórmula $\varphi$ es {\em compatible} con el concepto $\con$ si $\sem{\varphi}=\con$. A menudo identificaremos conceptos con cualquier fórmula compatible con ella, por lo que hablaremos de ``concepto $\varphi$'' para referirnos a ``concepto $\sem{\varphi}$''. Sin embargo, cabe señalar que para cada concepto $\con$ existirán infinitas fórmulas que lo expresan.
 
 \paragraph{Complejidad para \grambool.} Definimos $|\varphi|$, el {\em tamaño} de la fórmula $\varphi\in\grambool$, del siguiente modo:
 \begin{eqnarray*}
@@ -72,4 +55,130 @@ $$
 Por ejemplo, se puede ver que si $\con=\{(0,1,1), (1,1,1)\}$, entonces $\mdlbool(\con)=3$, que corresponde a la fórmula minimal $p_2\wedge p_3$, de tamaño 3. Observar que la complejidad de un concepto se refiere al tamaño de alguna de las fórmulas minimales cuya semántica coincide con dicho concepto, pero que podría haber más de una fórmula minimal.
 
 
-    \color{black}
+    
+    
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{figure}}
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}    
+
+\widesergio{No incluido, chequear}
+\color{magenta}
+    
+    Todo lo que está en magenta en los caps 4 y 5 iría en esta parte 2
+
+\color{red}
+ACA TENÍA ESTE ARBOL SINTÁCTICO HACHO PARA UNA CHARLA. TAL VER QUIERAS APROVECHARLO ACÁ O EN OTRO LADO
+
+Árbol sintáctico para $((p \oor \lnot q) \oand r)$
+
+
+\begin{tikzpicture}[level/.style={sibling distance = 6cm/#1,
+    level distance = 0.8cm},scale=1.0, transform shape]
+\node  {\start}
+child{
+node {\bool}
+child
+{
+node {$\oand$}
+child {
+node {\bool}
+child    {
+        node {$\oor$} 
+        child
+        {
+        node{\bool}
+        child{
+            node {\atom} 
+            child{
+            node {$p$}
+            }
+        }}
+        child
+        {
+        node{\bool}
+        child{
+            node {\atom}
+            child{
+            node  {$\lnot q$} }
+        }}
+    }}
+    child
+    {
+        node{\bool}
+        child{
+        node{\atom}
+        child{
+        node  {$r$}}}
+    }
+}
+}
+;
+\end{tikzpicture}
+
+
+En la Tabla~\ref{tab:glosario} resumimos la principal terminología lógica usada para definir la semántica formal, y su contraparte representacional adoptada en nuestra configuración experimental.
+
+\begin{table}[]\color{magenta}
+\begin{tabular}{c|c}
+{\bf Terminología matemática}
+&
+{\bf Terminología representacional}
+\\\hline
+\begin{minipage}[t]{0.45\textwidth}
+% {\bf Valuation}: a tuple $\overline v=(v_1,\dots,v_n)$ where each $v_i$ is 0 or 1. 
+{\bf Valuación}: una tupla $\overline v=(v_1,\dots,v_n)$ donde cada $v_i$ es 0 o 1. 
+\end{minipage}
+& 
+\begin{minipage}[t]{0.45\textwidth}
+% {\bf Element}: a square with $n$ symbols inside (see Figure~\ref{Figure:element}). There is an implicit coding shown in  Figure~\ref{Figure:references} (for example, $v_1=1$ is represented by a `A' and  $v_1=0$ is represented by an `B', $v_3=1$ is represented by a `$+$' and  $v_3=0$ is represented by a `$\times$', and so on). 
+{\bf Elemento}: una caja con $n$ símbolos dentro (ver Figura~\ref{Figure:element}). Hay un código implícito en la Figura~\ref{Figure:references} (por ejemplo, $v_1=1$ se representa por una `A' y  $v_1=0$ se representa por una `B', $v_3=1$ se representa por un `$+$' y  $v_3=0$ se representa por un `$\times$', y así sucesivamente). 
+
+\end{minipage} 
+\\\hline
+\begin{minipage}[t]{0.45\textwidth}
+% {\bf Propositional variable}: $p_i$ takes value $v_i$ under valuation $\overline v=(v_1,\dots,v_n).$
+{\bf Variable proposicional}: $p_i$ toma el valor $v_i$ bajo la valuación $\overline v=(v_1,\dots,v_n).$
+\end{minipage}
+&
+\begin{minipage}[t]{0.45\textwidth}
+% {\bf Feature}: $p_i$ is represented, via the implicit coding, by one of the pairs of Figure~\ref{Figure:references} within an element representing $\overline v$.
+{\bf Característica}: $p_i$ se representa, vía la codificación implícita, por uno de los pares de la Figura~\ref{Figure:references} dentro de un elemento que representa $\overline v$.
+\end{minipage}
+\\\hline
+\begin{minipage}[t]{0.45\textwidth}
+% {\bf Concept}: a set $U$ of valuations representing the `positive' ones (for example, $C_1$ in Figure \ref{fig:twoconcepts}). Notice that the negative valuations are just all valuations not in~$U$.\\
+{\bf Concepto}: un conjunto $U$ de valuaciones que representa aquellas que son `positivas' (por ejemplo, $C_1$ en la Figura \ref{fig:twoconcepts}). Notar que las valuaciones negativas son simplemente todas las valuaciones que no están en~$U$.\\
+
+% Observe that any concept $U$ has a corresponding minimal {\bf formula/rule} $\varphi_U$ that characterizes it (i.e.\ $\varphi_U$ is true over the valuations in $U$, and is false over the complement of $U$). 
+Observar que cualquier concepto $U$ tiene una correspondiente {\bf formula/regla} minimal $\varphi_U$ que la caracteriza (es decir, $\varphi_U$ es verdadera para las valuaciones en $U$, y es falsa sobre el complemento de $U$). 
+\end{minipage}&
+\begin{minipage}[t]{0.45\textwidth}
+% {\bf Concept}: any categorization that divides the space of all possible elements in either positive (all those elements that belong to $U$) or negative (elements that do not belong to $U$). 
+{\bf Concepto}: cualquier categorización que divida el espacio de todos los elementos posibles en positivos (todos aquellos elementos que pertenecen a $ U $) o negativos (elementos que no pertenecen a $ U $).
+\end{minipage}
+\\\hline
+\begin{minipage}[t]{0.45\textwidth}
+% {\bf Undetermined concept}: 
+% a pair $\langle U,V\rangle$ of sets of valuations representing the `positive' and `negative' ones respectively such that $U\cap V=\emptyset$ and $U\cup V$ is not the set of all valuations (for example, the pair $\langle C_1\cap C_2, \overline{C_1\cup C_2}\rangle$ in Figure \ref{fig:twoconcepts}).\\
+
+{\bf Concepto indeterminado}:
+un par $ \langle U, V \rangle $ de conjuntos de valuaciones que representan los valores `positivos' y `negativos' respectivamente, de modo que $ U \cap V = \emptyset $ y $ U \cup V $ no es el conjunto de todas las valuaciones (por ejemplo, el par $ \langle C_1 \cap C_2, \overline {C_1 \cup C_2} \rangle $ en la Figura \ref{fig:twoconcepts}). \\
+
+% Observe that an undetermined concept $\langle U,V\rangle$ can be generalized in more than one way by (minimal) formulas $\varphi_1$ and $\varphi_2$ such that {\em a)} $\varphi_i$ ($i=1,2$) is true over all valuations in $U$, and false over all valuations on $V$, and {\em b)} the set {\em all} of positive valuations where $\varphi_1$ is true is different from the set of {\em all} valuations where $\varphi_2$ is true. For example, the undetermined concept shown in each trial $i$ of the experiment can be generalized via the two corresponding minimal formulas $\varphi^i_1$ and $\varphi^i_2$ shown in Table~\ref{trial_table}.
+Observar que un concepto indeterminado $ \langle U, V \rangle $ puede generalizarse de más de una forma mediante fórmulas (mínimas) $ \varphi_1 $ y $ \varphi_2 $ tales que {\em a)} $ \varphi_i $ ($ i = 1,2 $) es verdadera en todas las valuaciones en $ U $, y falsa en todas las valuaciones en $ V $, y {\em b)} el conjunto de {\em todas} las valuaciones positivas donde $ \varphi_1 $ es verdadera es diferente del conjunto de {\em todas} las valuaciones donde $ \varphi_2 $ es verdadera. Por ejemplo, el concepto indeterminado que se muestra en la $ i $-ésima prueba del experimento se puede generalizar mediante las dos fórmulas mínimas correspondientes $ \varphi^i_1 $ y $ \varphi^i_2 $ que se muestran en la Tabla~\ref{trial_table}.
+\end{minipage}
+&
+\begin{minipage}[t]{0.45\textwidth}
+% {\bf Undetermined concept}: a sequence of positive elements (green border)  representing $U$, and negative elements (red border) representing $V$ (see Figure~\ref{Figure:training} for an example). Importantly, $U$ and $V$ do not cover the full universe of possibilities spanned by the features.
+{\bf Concepto indeterminado}: una secuencia de elementos positivos (borde verde) que representan $ U $ y elementos negativos (borde rojo) que representan $ V $ (consultar la Figura~\ref{Figure:training} para un ejemplo). Es importante destacar que $ U $ y $ V $ no cubren todo el universo de posibilidades que abarcan las características.\end{minipage}
+\end{tabular}
+% \caption{Terminology used for explaining the formal semantics of Boolean logic both in mathematical terms and in the representational terms used in the experiment.}
+% \label{tab:glosario}
+\caption {Terminología utilizada para explicar la semántica formal de la lógica booleana tanto en términos matemáticos como en los términos de representación utilizados en el experimento.}
+\label{tab:glosario}
+\end{table}
+
+\widesergio{Utilizar sólo el concepto indeterminado}
+
+\color{black}
+
+      

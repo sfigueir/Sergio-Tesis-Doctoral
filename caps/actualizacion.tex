@@ -10,31 +10,23 @@
 
 \section{Introducción}
 
-%How can children acquire a vast universe of concepts with seemingly very little exposure? One possible solution to this conundrum, known as the Plato Problem~\cite{chomsky1986knowledge,chomsky2006cognitive}, builds on the human capacity to describe concepts --and more generally of all elements of thought-- through the use of a symbolic and combinatorial mental language~\cite{newell1980physical}, referred as {\em language of thought} (\lot)~\cite{fodor1975language}.
 
-\intro{material para intro, pero dejar algo de relleno acá}{
-¿Cómo pueden los niños adquirir un vasto universo de conceptos con muy poca exposición aparente? Una posible solución a esta pregunta, conocida como el problema de Platón~\cite{chomsky1986knowledge,chomsky2006cognitive}, se basa en la capacidad humana para describir conceptos (y en general cualquier elemento del pensamiento) mediante el uso de un lenguaje mental con elementos simbólicos combinatorios~\cite{newell1980physical}, conocido en la literatura como el {\em lenguaje del pensamiento} (\lot, por sus siglas en inglés)~\cite{fodor1975language}.
 
-%Combinatorial languages can describe a vast set of concepts from a small set of primitives. This can be understood in a relatively simple example in the domain of shapes. A combinatorial and symbolic language similar to Logo~\cite{abelson1974logo} can combine operations such as ``move", ``pen up", ``pen down" or ``rotate" to generate an infinite set of expressions (or programs) which, when evaluated, can convey all sort of shapes.
-
-Los lenguajes combinatorios pueden describir un vasto conjunto de conceptos a partir de un pequeño conjunto de primitivas. Podemos entenderlo con un ejemplo relativamente simple en el dominio de las formas. Un lenguaje combinatorio similar a Logo~\cite{abelson1974logo} puede combinar símbolos de operaciones como ``mover", ``lápiz arriba", ``lápiz abajo" o ``rotar" para generar un conjunto infinito de expresiones (o programas) que, cuando se evalúan, pueden trasmitir todo tipo de formas.
-
-%A language describing concepts (like shapes) also provides a natural notion of their complexity~\cite{kolmogorov1968three}. A concept is simple, relative to that language, when it can be described by a short program. On the contrary, it is complex when all its descriptions require a long sequence of instructions. For example, in the case of the Logo language, a square can simply be instructed as a loop of four displacements followed by rotations of 90 degrees. In this language, the icon of a face will be implemented by a significant lengthier program and hence will be more complex.  However, this concept would be simpler when described in a language in which the icon of a face (or the symbols for nose, mouth, etc.) are available as primitives in the language.
-
-Un lenguaje que describe conceptos (como las formas) también proporciona una noción natural de su complejidad~\cite{kolmogorov1968three}. Un concepto es simple, relativo a ese lenguaje, cuando puede ser descripto por un programa corto. Por el contrario, es complejo cuando todas sus descripciones requieren una secuencia larga de instrucciones. Por ejemplo, en el caso de Logo, un cuadrado se puede codificar simplemente como un bucle de cuatro desplazamientos seguidos de rotaciones de 90 grados. En cambio, describir una cara requerirá de un programa más largo y, por lo tanto, será un concepto más complejo de describir. Sin embargo, este concepto se podría describir de manera más simple en un lenguaje en el que el icono de una cara (o de una nariz, boca, etc.) estuvieran disponibles como primitivas de ese lenguaje. 
-}
 
 %In the domain of Boolean concepts, a wide range of logical varieties of concepts was studied in~\cite{feldman2003simplicity}, revealing a surprisingly simple `law': the subjective difficulty of a Boolean concept for a human learner is directly proportional to the length of the shortest compatible program in the language of propositional logic (i.e.\ Boolean variables combined with the operators \textit{and}, \textit{or} and \textit{not}). This result may suggest that human \lot is equipped with rules and symbols similar to those found in propositional logic. Indeed, the correlation between the subjective difficulty of concepts and their complexity has been used as a general vehicle to study human \lot in various domains~\cite{piantadosi2016logical,leeuwenberg1971perceptual,amalric2017language,romano2018,lupyan2007language}. Although often implicit, the general strategy is to (\textit{1)} assume a language; (\textit{2)} find the shortest compatible program for some concepts in that language; (\textit{3)} compare the length of these programs with the subjective difficulty of the concepts; and finally (\textit{4)} repeat this process for various languages within a universe of possible candidates and choose the language that gives the best match in \textit{(3)}. As mentioned before, the length of the program depends on the primitives of the language in which this program is written, so different languages make different predictions.
 
-En el dominio de los conceptos booleanos, se ha estudiado una amplia variedad de conceptos lógicos~\cite{feldman2003simplicity}, revelando una `ley' sorprendentemente simple: la dificultad subjetiva de aprender un concepto booleano para un humano es directamente proporcional a la longitud del programa compatible más corto en el lenguaje de la lógica proposicional (es decir, un lenguaje con símbolos para variables Booleanas que pueden combinarse con los operadores de \textit{conjunción}, \textit{disyunción} y \textit{negación}). Este resultado puede sugerir que el \lot está equipado con reglas y símbolos similares a los que se encuentran en la lógica proposicional. En general, la correlación entre la dificultad subjetiva de los conceptos y su complejidad se ha utilizado como un mecanismo general para estudiar el \lot en varios dominios~\cite{piantadosi2016logical,leeuwenberg1971perceptual,amalric2017language,romano2018bayesian,lupyan2007language}. Aunque a menudo sea de forma implícita, la estrategia general\santi{esta parte de la estrategia sirve también para el cap 3. Se podría poner acá algo que diga que esta estrategia fue criticada en el cap 3} en estos trabajos es: (\textit{1)} suponer un lenguaje; (\textit{2)} encontrar el programa compatible más corto para algunos conceptos en ese lenguaje; (\textit{3)} comparar la longitud de estos programas con la dificultad subjetiva de los conceptos; y finalmente, (\textit{4)} repetir ese proceso para varios lenguajes dentro de un universo de posibles candidatos y elegir el lenguaje que ofrezca la mejor coincidencia en \textit{(3)}. Como se mencionó anteriormente, el tamaño del programa depende de las primitivas del lenguaje en el que está escrito ese programa, por lo tanto, diferentes lenguajes implican diferentes predicciones.
+Como hemos visto en los capítulos anteriores, un lenguaje que describe conceptos también proporciona una noción natural de su complejidad. En el dominio de los conceptos booleanos, se ha estudiado una amplia variedad de conceptos lógicos~\cite{feldman2003simplicity}, revelando una `ley' sorprendentemente simple: la dificultad subjetiva de aprender un concepto booleano para un humano es directamente proporcional a la longitud del programa compatible más corto en el lenguaje de la lógica proposicional (es decir, un lenguaje con símbolos para variables Booleanas que pueden combinarse con los operadores de \textit{conjunción}, \textit{disyunción} y \textit{negación}). Este resultado puede sugerir que el \lot está equipado con reglas y símbolos similares a los que se encuentran en la lógica proposicional.
+
+La correlación entre la dificultad subjetiva de los conceptos y su complejidad se ha utilizado como un mecanismo general para estudiar el \lot en varios dominios~\cite{piantadosi2016logical,leeuwenberg1971perceptual,amalric2017language,romano2018bayesian,lupyan2007language}. Por ejemplo, en el capítulo~\ref{chapter:BIN} comparamos la complejidad \mdlbin con los reportes de complejidad subjetiva de los participantes en el dominio de secuencias binarias.  Aunque a menudo sea de forma implícita, la estrategia en estos trabajos es: (\textit{1)} suponer un lenguaje; (\textit{2)} encontrar el programa compatible más corto (o bajo cierta distribución de probabilidad) para algunos conceptos en ese lenguaje; (\textit{3)} comparar la longitud de estos programas con la dificultad subjetiva de los conceptos; y finalmente, (\textit{4)} repetir ese proceso para varios lenguajes dentro de un universo de posibles candidatos y elegir el lenguaje que ofrezca la mejor coincidencia en \textit{(3)}. 
+
 
 %A natural question, however, is whether the primitives of a \lot are universal --both across different individuals and also throughout development-- or if instead the semantic repertoire of a language is dynamic and shaped by experience. Indeed, it is likely that our ability to automatically represent Boolean concepts in a succinct manner is not due to an innate efficient propositional language in our mind. Instead, we propose that this ability arises as a byproduct of our brain rapidly learning efficient representations for the concepts we usually  encounter in everyday life. Our research question is: how rapidly can we adapt our learning mechanisms when we encounter a new domain in which our a priori representations are no longer efficient? We examine the hypothesis that humans have the ability to rapidly recombine propositions in their \lot, adding new primitives to their language. In other words, that learning leads to a process of compiling routines into functions within the \lot.
 
-Sin embargo, una pregunta natural es si las primitivas de un \lot son universales, tanto a través de diferentes individuos como también a lo largo del desarrollo. O si en cambio, el repertorio de símbolos de un lenguaje es dinámico y está moldeado por la experiencia. De hecho, es probable que nuestra capacidad para representar automáticamente conceptos booleanos de una manera sucinta no se deba a un lenguaje proposicional eficiente innato en nuestra mente. En cambio, es probable que esta habilidad surja como un subproducto del hecho de que nuestro cerebro aprende rápidamente representaciones eficientes para los conceptos que solemos encontrar en la vida cotidiana. La pregunta que guía este capítulo es: ¿qué tan rápido podemos adaptar nuestros mecanismos de aprendizaje cuando nos encontramos con un nuevo dominio en el que nuestras representaciones a priori ya no son eficientes? Examinamos la hipótesis de que los humanos tienen la capacidad de recombinar rápidamente proposiciones en su \lot, agregando nuevas primitivas al lenguaje. En otras palabras, que el aprendizaje conduce a un proceso de compilación de rutinas en nuevos símbolos de funciones dentro del \lot.
+En el capítulo~\ref{chapter:PO} presentamos un mecanismo de validación adicional para robustecer el proceso de selección de un \lot. Sin embargo, una pregunta natural es si las primitivas de un \lot son universales, tanto a través de diferentes individuos como también a lo largo del desarrollo. O si en cambio, el repertorio de símbolos de un lenguaje es dinámico y está moldeado por la experiencia. De hecho, es probable que nuestra capacidad para representar automáticamente conceptos booleanos de una manera sucinta no se deba a un lenguaje proposicional eficiente innato en nuestra mente. En cambio, es probable que esta habilidad surja como un subproducto del hecho de que nuestro cerebro aprende rápidamente representaciones eficientes para los conceptos que solemos encontrar en la vida cotidiana. La pregunta que guía este capítulo es: ¿qué tan rápido podemos adaptar nuestros mecanismos de aprendizaje cuando nos encontramos con un nuevo dominio en el que nuestras representaciones a priori ya no son eficientes? Examinamos la hipótesis de que los humanos tienen la capacidad de recombinar rápidamente proposiciones en su \lot, agregando nuevas primitivas al lenguaje. En otras palabras, que el aprendizaje conduce a un proceso de compilación de rutinas en nuevos símbolos de funciones dentro del \lot.
 
 %In the example of the Logo language one can imagine that if productions which draw squares are very frequent, it would be efficient to devote a new symbol to this production. The new symbol `square' is a hierarchical `second order' construction of the `first order' primitives of the language. It has a cost (of increasing the lexicon of the language) but in the new language, drawing a square can be instantiated with a very short program (namely, `square') and hence uses less memory. Indeed, a higher level language allows us to reach a higher level of abstraction by freeing memory and processing power, thus making more complex thoughts thinkable~\cite{minsky1967computation,murphy1988comprehending}.
 
-En el ejemplo del lenguaje Logo, uno puede imaginar que si las producciones que dibujan los cuadrados son muy frecuentes, entonces sería conveniente dedicar un nuevo símbolo a esta producción. El nuevo símbolo `cuadrado' es una construcción jerárquica de {\em segundo orden} construido a partir de las primitivas de {\em primer orden} del lenguaje. Incrementar los símbolos del lenguaje tiene un costo, pero en el nuevo lenguaje, dibujar un cuadrado puede ser instrumentado con un programa muy corto (simplemente, `cuadrado') y, por tanto, utilizando menos memoria. De esta manera, un lenguaje de nivel superior nos permite alcanzar un mayor nivel de abstracción al liberar memoria y poder de procesamiento, haciendo así que pensamientos más complejos puedan pensarse~\cite{minsky1967computation,murphy1988comprehending}.
+Por ejemplo, si uno utiliza un lenguaje similar al Logo ~\cite{abelson1974logo} para describir figuras, tiene a su disposición símbolos de producciones básicas como `mover', `lápiz arriba', `lápiz abajo' o `rotar' para generar un conjunto infinito de programas que, cuando se evalúan, pueden trasmitir diversas formas. Si los programas que dibujan cuadrados son muy frecuentes, entonces sería conveniente dedicar un nuevo símbolo a esta producción. El nuevo símbolo `cuadrado' es una construcción jerárquica de {\em segundo orden} construido a partir de las primitivas de {\em primer orden} del lenguaje. Incrementar los símbolos del lenguaje tiene un costo, pero en el nuevo lenguaje, dibujar un cuadrado puede ser instrumentado con un programa muy corto (simplemente, `cuadrado') y, por tanto, utilizando menos memoria. De esta manera, un lenguaje de nivel superior nos permite alcanzar un mayor nivel de abstracción al liberar memoria y poder de procesamiento, haciendo así que pensamientos más complejos puedan pensarse~\cite{minsky1967computation,murphy1988comprehending}.
 
 %Most work in the \lot literature, while naturally including a learning mechanism, tends to approach the \lot as a stable system to be unearthed by experimenters, who try different candidate templates and select the one which best fits the data after training~\cite{goodman2008rational,kemp2012exploring,piantadosi2016logical}. Still, how different tracks of experience can shape acquisition differently and can constantly change the repertoire of a \lot after each exposure remains to be discovered.
 
@@ -51,159 +43,120 @@ En nuestro experimento, los participantes se dividen en dos grupos de tal manera
 %\section{The logical setting}
 \section{La configuración Booleana}
 
-%We consider two propositional logics, both containing only four  propositional variables $\propvars=\{x_1, x_2, x_3, x_4\}$. \grambool is defined over the signature $\oand$, $\oor$ and $\lnot$, and \gramboolxor is defined over the signature $\oand$, $\oor$, $\lnot$ and $\oxor$. As one can see from the grammars defined in Figura~\ref{PCFG}, the only difference between \grambool and \gramboolxor is that the latter has an additional operator $\oxor$.  
+En este capítulo, utilizaremos la gramática \grambool con cuatro variables proposicionales, $\propvars=\{p_1,\dots,p_4\}$, y definiremos la gramática \gramboolxor como una extensión de \grambool con el operador adicional $\oxor$ para denotar la disyunción exclusiva.
 
-\color{magenta}
-{\bf 
-ESTA PARTE SE FUE A LA PARTE II, PERO ACA HAY QUE DECIR QUE TRABAJAMOS CON 4 VARIABLES PROPOSICIONALES. Usamos notación $\propvars=\{p_1,\dots,p_4\}$} en parte II y acá con $x$, no sé si vale la pena cambiarlo.
-
-
-Consideramos dos lógicas proposicionales, ambas contienen sólo cuatro variables proposicionales  $\propvars=\{x_1, x_2, x_3, x_4\}$. \grambool se define con los operadores $\oand$, $\oor$ y $\lnot$, y \gramboolxor se define con los operadores $\oand$, $\oor$, $\lnot$ y $\oxor$. Como se puede ver en las gramáticas definidas en la Figura~\ref{PCFG}, la única diferencia entre \grambool y \gramboolxor es que la última tiene un operador adicional: $\oxor$.  
- \begin{figure}[h!]
-\centering
-\small
-{\bf Gramática para \grambool}
-\begin{tabular}{ccc}
-\begin{minipage}[h]{0,4\textwidth}
+\paragraph{La gramática \gramboolxor.}
+Para un conjunto fijo $\propvars=\{p_1,\dots,p_4\}$ de variables proposicionales, definimos la gramática de la lógica proposicional $\gramboolxor$ en la Figura \ref{PCFG}.
+%
+\begin{figure}[h!]
+\begin{center}
+\textbf{PRODUCCIONES ORIGINALES DE \grambool}
+\end{center}
 \begin{eqnarray*}
 \start &\to&\bool\\
 \bool &\to&(\bool \oand \bool) \\
 \bool &\to&(\bool \oor \bool) \\
-\bool &\to&\atom
+\bool &\to&\atom\\
+\atom &\to& p_i \\
+\atom &\to&\lnot p_i
 \end{eqnarray*}
-\end{minipage}
-&
-\ \quad
-&
-\begin{minipage}[h]{0,4\textwidth}
-\ \qquad Para $i=1,2,3,4$
+\begin{center}
+donde $i\in\{1,\dots,4\}$\\
+\textbf{PRODUCCIÓN ADICIONAL}
+\end{center}
 \begin{eqnarray*}
-\atom &\to& x_i \\
-\atom &\to&\lnot x_i 
+\bool &\to&(\bool \oxor \bool)
 \end{eqnarray*}
-\end{minipage}
-\end{tabular}
 
-\bigskip
+\caption{La gramática \gramboolxor para la lógica proposicional.}
+\label{PCFG}
+\end{figure}
+
+Las {\em fórmulas} de \gramboolxor serán las palabras del lenguaje definido por \gramboolxor. Usaremos indistintamente \gramboolxor para referirnos a la gramática o al lenguaje que representa (quedando siempre claro del contexto cuál de las dos aplica).
 
 
-ESTA GRAMÁTICA ES NUEVA. HAY QUE PRESENTARLA DE LA FORMA EN QUE SE PRESENTÓ EN PARTE II SIMPLEMENTE DICIENDO QUE SE AGREGA LA REGLA DE XOR
+\paragraph{La semántica de \gramboolxor.}
 
-AGREGAR SEMÁNTICA PARA XOR, AL ESTILO DE PARTE II. ACLARAR QUE NO CAMBIA LA SEMÁNTICA DE LAS FÓMRULAS SIN EL XOR, Y QUE POR ESO SEGUIMOS USANDO $\sem{\varphi}$ PARA REFERIRNOS A LA SEMÁNTICA, PERO SIN ALCARAR SOBRE QUÉ GRAMÁTICA LO HACEMOS.
+Al igual que en \grambool, la {\em semántica} de una fórmula $\varphi$ será el conjunto (finito) de valuaciones sobre $\propvars$ que hacen verdadera a $\varphi$. Todos los operadores conservan la misma semántica y se agrega la definición formal de $\oxor$ (disyunción exclusiva):
 
-AGREGAR DEFINICION DE MDL RELATIVA A LA NUEVA GRAMATICA (\mdlboolxor) Y DECIR QUE SIEMPRE $\mdlboolxor\leq \mdlbool$.
-
-{\bf Gramática para \gramboolxor}
-
-Mismas reglas que para \grambool más la siguiente regla:
-
-\begin{minipage}[h]{0,4\textwidth}
+%
 \begin{eqnarray*}
-\bool &\to&(\bool \oxor \bool) \\
+\sem{\varphi\oxor\psi} &=& \sem{\varphi\oor\psi}\cap \overline{\sem{\varphi\oand\psi}}\\
 \end{eqnarray*}
-\end{minipage}
 
-      %\caption{The context free grammar for language \grambool.  Language \gramboolxor has an extra rule: $\bool\  \to\ (\bool \oxor \bool)$}
-      \caption{Las gramáticas libres de contexto para los lenguaje \grambool y \gramboolxor.}
-      \label{PCFG}
-   \end{figure}
 
 
 %The semantics of $\oand$, $\oor$ and $\lnot$ are standard: conjunction, disjunction and negation, respectively. We let $\oxor$ denote the exclusive disjunction. As usual, $v\models \varphi$, represents that the formula $\varphi$ is true for the valuation $v:\propvars\to\{0,1\}$ and we denote the {\em semantics} of $\varphi$ by $\sem{\varphi}=\{v\colon v\models\varphi\}$. A {\em concept} $\con$ is a set of valuations $\propvars\to\{0,1\}$. The complement of $\con$ is denoted $\overline \con$ and is defined as $\overline \con=\{0,1\}^\propvars\setminus \con$. Observe that $\#\con+\#\overline \con=16$. We say that a formula $\varphi$ is {\em compatible} with concept $\con$ if $\sem{\varphi}=\con$. We regard logics as languages for describing concepts. Any concept $\con$ has infinitely many descriptions, namely, all formulas $\varphi$ such that $\sem{\varphi}=\con$. 
 
-La semántica de $\oand$, $\oor$ y $\lnot$ son estándar: conjunción, disyunción y negación, respectivamente. Mientras que $\oxor$ denota la disyunción exclusiva. Como de costumbre, $v\models \varphi$, representa que la formula $\varphi$ es verdadera para la valuación $v:\propvars\to\{0,1\}$ y denotamos la {\em semántica} de $\varphi$ con\santi{esta parte se fue a parte II. No es necesario introducir la notación $v\models\varphi$} $\sem{\varphi}=\{v\colon v\models\varphi\}$. Un {\em concepto} $\con$ es un conjunto de valuaciones $\propvars\to\{0,1\}$. El complemento de $\con$ se denota $\overline \con$ y se define como $\overline \con=\{0,1\}^\propvars\setminus \con$. Observar que $\#\con+\#\overline \con=16$. Decimos que una fórmula $\varphi$ es {\em compatible} con el concepto $\con$ si $\sem{\varphi}=\con$. De esta manera, consideramos la lógica proposicional como un lenguaje para describir conceptos. Cualquier concepto $\con$ tiene entonces infinitas descripciones: todas las fórmulas $\varphi$ tal que $\sem{\varphi}=\con$. 
-
-
-
-
-\paragraph*{Ejemplo.}
-%In Figura~\ref{semaforos} we depict a concept $\con$ (variables are represented by colors) such that $\#\con=4$. One can see that the formula $x_3$ is not compatible with $\con$ but $x_1 \oand x_2$, or $x_1 \oand x_2 \oand (x_3 \oor \lnot x_3)$, are compatible with $\con$. $\overline \con$ may be described by $\lnot x_1\oor \lnot x_2$.
-En la Figura~\ref{fig:notacionPRE} representamos un concepto $\con$ (las variables están representadas por colores) tal que $\#\con=4$. Se puede ver que la fórmula $x_3$ no es compatible con $\con$ pero $x_1 \oand x_2$, o $x_1 \oand x_2 \oand (x_3 \oor \lnot x_3)$, sí son compatibles con $\con$. $\overline \con$ puede describirse mediante $\lnot x_1\oor \lnot x_2$.
-
-%We will often identify concepts with any formula compatible with it, so we will talk of ``concept $\varphi$'' to refer to ``concept $\sem{\varphi}$''. However, it should be noted that a concept is a semantic object that has many descriptions in the logical language.
-
-A menudo identificaremos conceptos con cualquier fórmula compatible con ella, por lo que hablaremos de ``concepto $\varphi$'' para referirnos a ``concepto $\sem{\varphi}$''. Sin embargo, cabe señalar que un concepto es un objeto semántico que tiene muchas descripciones en el lenguaje.
-\color{black}
-
-
-
- \begin{figure}[t!]
- \vspace{-0.5cm}
-  \centering
-  \includegraphics[scale=.335]{semaforos2.pdf}
-  %\caption{Example of a concept $\con$, as shown in the experiment. Variables in $\propvars=\{x_1,x_2,x_3,x_4\}$ correspond to the presence of a  color light in the object ($x_{1}=$ green, $x_2=$ blue, $x_3=$ red, $x_4=$ orange). Items (valuations) belonging to $\con$ are highlighted with bold border. $\con$ may be described by $x_1\oand x_2$. As in a traffic light, each color is fixed to each position.}
-  \caption{ESTA FIGURA SE PUEDE IR, DADO QUE ESTÁ LA NUEVA CON MÁS INFO.........Ejemplo de un concepto $\con$, como se muestra en el experimento. Cada valuación sobre $\propvars=\{x_1,x_2,x_3,x_4\}$ se representa como un `semáforo' ($x_{1}=$ verde, $x_2=$ azul, $x_3=$ rojo, $x_4=$ naranja). Que la valuación sea verdadera para $x_i$ se representa con la luz correspondiente a $x_i$ encendida; y que sea falsa, como la luz apagada. Los objetos (valuaciones) que pertenecen a $\con$ se resaltan con un borde en negrita. $\con$ puede describirse mediante $x_1\oand x_2$. Como en un semáforo, cada color está fijado siempre en la misma posición.}
-  \label{semaforos}
-\end{figure}
-
-\color{magenta}
-{\bf esta parte también puede ir a intro o parte 2. es común a BRM. }
 
 %A lower bound for the complexity of a concept in a given logic corresponds to the shortest description of that concept, that is, its minimum description length (MDL).
-Un límite inferior para la complejidad de un concepto en una lógica dada corresponde a la descripción más corta de ese concepto, es decir, su longitud mínima de descripción (MDL).
+%Un límite inferior para la complejidad de un concepto en una lógica dada corresponde a la descripción más corta de ese concepto, es decir, su longitud mínima de descripción (MDL).
 
 %The {\em size} of a formula $\varphi$ is denoted $|\varphi|$ and it is defined as the number of operators plus the number of atoms (i.e.\ possibly negated propositional symbols), that is: $|x_i|=|\lnot x_i|=1$ for $i=1\dots 4$ and $|\varphi_1*\varphi_2|=|\varphi_1|+|\varphi_2|+1$ for $*\in\{\oand,\oor,\oxor\}$. For ${\sf L} \in\{\grambool,\gramboolxor\}$ and a concept $\con$ we define the {\em minimum description length of $\con$ with respect to $\mathcal {\sf L}$} as
-El {\em tamaño} de una fórmula $\varphi$ se denota como $|\varphi|$ y se define como el número de operadores más el número de átomos (símbolos proposicionales posiblemente negados), es decir: $|x_i|=|\lnot x_i|=1$ para $i=1\dots 4$ y $|\varphi_1*\varphi_2|=|\varphi_1|+|\varphi_2|+1$ para $*\in\{\oand,\oor,\oxor\}$. Para ${\sf L} \in\{\grambool,\gramboolxor\}$ y un concepto $\con$ definimos la {\em la longitud mínima de descripción de $\con$ con respecto a $\mathcal {\sf L}$} como:
+
+
+En la Figura~\ref{semaforos} representamos un concepto $\con$ como se muestra en el experimento. Cada objeto (valuación) sobre $\propvars=\{p_1,p_2,p_3,p_4\}$ se representa como un semáforo ($p_1$ = verde, $p_2$ = azul, $p_3$ = rojo, $p_4$ = naranja). Que la valuación sea verdadera para $p_i$ se representa con la luz correspondiente encendida; y que sea falsa, con luz apagada. Los objetos que pertenecen a $\con$ se resaltan con un borde grueso. 
+
+\begin{figure}[h!]
+\includegraphics[scale=.6]{../figuras/pre/notacion.pdf}
+\caption{Ilustración de las características $\{p_1,p_2,p_3,p_4\}$, el ejemplo $(1,0,1,1)$, y un concepto (los ejemplos positivos están marcados con bordes gruesos y los ejemplos negativos con bordes delgados). Se puede ver que la fórmula $p_3$ no es compatible con $\con$ pero $p_1 \oand p_2$, o $p_1 \oand p_2 \oand (p_3 \oor \lnot p_3)$, sí son compatibles con $\con$. $\overline \con$ puede describirse mediante $\lnot p_1\oor \lnot p_2$ }\label{semaforos}
+\end{figure}
+
+%In Figura~\ref{semaforos} we depict a concept $\con$ (variables are represented by colors) such that $\#\con=4$. One can see that the formula $x_3$ is not compatible with $\con$ but $x_1 \oand x_2$, or $x_1 \oand x_2 \oand (x_3 \oor \lnot x_3)$, are compatible with $\con$. $\overline \con$ may be described by $\lnot x_1\oor \lnot x_2$.
+
+\widesergio{Cambiar complejidad y gramática para sólo extender}
+\paragraph{Complejidad para \gramboolxor.} Definimos $|\varphi|$, el {\em tamaño} de la fórmula $\varphi\in\gramboolxor$, del mismo modo que en \grambool pero con un operador adicional :
+\begin{eqnarray*}
+|p_i| &\eqdef& 1\\
+|\lnot p_i| &\eqdef& 1\\
+|\varphi*\psi| &\eqdef& 1+|\varphi|+|\psi|
+\end{eqnarray*}
+donde $*\in\{\wedge,\vee,\oxor\}$.
+
+Si $\con$ es un conjunto de valuaciones sobre $\propvars$, definimos la {\em $\gramboolxor$-complejidad de la descripción mínima} de $\con$, notada $\mdlboolxor(\con)$, como el tamaño de la fórmula más corta cuya semántica es $\con$, es decir,
 $$
-\mdl{\sf L}(\con)=\min\{|\varphi|\colon \varphi\in\mathcal L, \sem{\varphi}=\con\}.
+\mdlboolxor(\con)\eqdef\min\{|\varphi|\mid \varphi\in\gramboolxor,\sem{\varphi}=\con\}.
 $$
+
 Como $\grambool$ es un sublenguaje de $\gramboolxor$, tenemos que $\mdl{\gramboolxor}(\con)\leq\mdl{\grambool}(\con)$ para cualquier concepto $\con$.
 
-   \color{black}
-
-
-ACA EXPLICAR LAS COSAS QUE APARECEN EN LA NUEVA FIGURA \ref{fig:notacionPRE} 
-
-E.G., CÓMO SE REPRESENTA UNA VALUACION, UN CONCEPTO Y QUÉ SON LAS REGLAS. VER CAPTION DE FIG \ref{semaforos}, PERO ESA FIGURA SE VA.
- 
-
-\begin{figure}[t!]
-\includegraphics[scale=.6]{../figuras/pre/notacion.pdf}
-\caption{FIGURA NUEVA....AGREGAR CAPTION}\label{fig:notacionPRE}
-\end{figure}
-\widesanti{Sergio, esta imagen es nueva. Pienso que puede dar coherencia con BRM. Puede remplazar a la figura anterior. Hay que actualizar notación en el texto y cambiar $x_i$ por $p_i$, etc. Cuando se presente la figura análoga en BRM, podes mandar un cf. a esta}
-
-
-\paragraph*{Ejemplo.}El concepto $
-\con=\{v\colon v(x_1)+v(x_2)=1\},
-$
+\paragraph*{Ejemplo.}El concepto $\con=\{$ $(1,0,0,0),$ $(1,0,1,0),$ $(1,0,0,1),$ $(1,0,0,1),$ $(0,1,0,0),$ $(0,1,1,0),$ $(0,1,0,1),$ $(0,1,0,1)$ $\}$,
 %which expresses that $x_1$ is true or $x_2$ is true but not both can be described in \gramboolxor as $\varphi=x_{1} \oxor x_{2}$, of length 3. In fact, one can check that this is the shortest formula compatible with $\con$, and so $\mdl{\gramboolxor}(\con)=3$. If we now switch to \grambool, we can no longer describe $\con$ as $x_{1} \oxor x_{2}$, since $\oxor$ is not part of its signature. However, in \grambool, the concept $\con$ may be described by  formula $\psi=(x_{1} \oand \neg x_{2}) \oor (x_{2} \oand \neg x_{1})$, of size 7. Since this formula has minimal size, we have that $\mdl{\grambool}(\con)=7$.
-que expresa que $x_1$ es verdadero o $x_2$ es verdadero, pero no ambos, puede describirse en \gramboolxor como $\varphi=x_{1} \oxor x_{2}$, de tamaño 3. De hecho, se puede comprobar que esta es la fórmula más corta que describe a $\con$ (en el sentido de que $\sem{\varphi}=\con$), por lo que $\mdl{\gramboolxor}(\con)=3$. Si ahora cambiamos a \grambool, ya no podemos describir a $\con$ como $x_{1} \oxor x_{2}$, dado que $\oxor$ no es parte del lenguaje. Sin embargo, en \grambool, el concepto $\con$ puede describirse mediante la fórmula $\psi=(x_{1} \oand \neg x_{2}) \oor (x_{2} \oand \neg x_{1})$, de tamaño 7. Dado que esta fórmula tiene tamaño mínimo para ese concepto en \grambool, tenemos que $\mdl{\grambool}(\con)=7$.
+que expresa que $p_1$ es verdadero o $p_2$ es verdadero, pero no ambos, puede describirse en \gramboolxor como $\varphi=p_{1} \oxor p_{2}$, de tamaño 3. De hecho, se puede comprobar que esta es la fórmula más corta que describe a $\con$ (en el sentido de que $\sem{\varphi}=\con$), por lo que $\mdl{\gramboolxor}(\con)=3$. Si ahora cambiamos a \grambool, ya no podemos describir a $\con$ como $p_{1} \oxor p_{2}$, dado que $\oxor$ no es parte del lenguaje. Sin embargo, en \grambool, el concepto $\con$ puede describirse mediante la fórmula $\psi=(p_{1} \oand \neg p_{2}) \oor (p_{2} \oand \neg p_{1})$, de tamaño 7. Dado que esta fórmula tiene tamaño mínimo para ese concepto en \grambool, tenemos que $\mdl{\grambool}(\con)=7$.
 
 
 \section{Experimento}
 
 
-\renewcommand*{\arraystretch}{1.2}
-   
-\begin{table*}[!ht]
-\vspace{-0.5cm}
-\centering
-
-\begin{tabular}{|c|l l | c | c |l l | c | c|}
-\hline
-                                   &
-\multicolumn{2}{c|}{\textbf{Grupo objetivo}}       &
-\textbf{$\mdl{\gramboolxor}(\con)$} &
-\textbf{$\mdl{\grambool}(\con)$} &
-\multicolumn{2}{c|}{\textbf{Grupo control}}  &
-\textbf{$\mdl{\gramboolxor}(\con)$} &
-\textbf{$\mdl{\grambool}(\con)$} 
- \\ \hline
-\multirow{4}{*}{\parbox[t]{2mm}{\rotatebox[origin=c]{90}{\bf Entrenamiento}}} & \targeta & $x_{i}$             & 1 & 1                                                                  & \multicolumn{4}{c|}{$\longleftarrow$Ídem}                                                            \\ \cline{2-9}
-                                   &\targetb& $x_{i} \oxor x_{j}$       & 3 & 7 &\controlb& $x_{i} \oor x_{j}$  & 3 & 3                                                                  \\ \cline{2-9}
-                                  &\targetc & $x_{i} \oxor x_{j} \oxor x_{k}$ & 5 & 19 &\controlc& $x_{i} \oor (x_{j} \oand x_{k})$  & 5 & 5 \\ \cline{2-9}
-                                  &\targetd& $x_{k} \oxor x_{l}$       & 3 & 7&\controld&$x_{k} \oor x_{l}$  & 3 & 3                                                                  \\ \hline
-\multirow{2}{*}{\parbox[t]{2mm}{\rotatebox[origin=c]{90}{\bf Evaluación}}}  &\testa& $x_{i} \oand (x_{j} \oxor x_{k})$ & 5 & 9                 & \multicolumn{4}{c|}{$\longleftarrow$Ídem}                                                                                    \\ \cline{2-9}
-                               &\testb& $x_{i} \oand (x_{j} \oor x_{k})$  & 5 & 5         & \multicolumn{4}{c|}{$\longleftarrow$Ídem}                                                                                            \\ \hline
-\end{tabular}
-
-\caption{Secuencia de conceptos presentados en el experimento: \targeta, \targetb, \targetc, \targetd, \testa, \testb para el grupo objetivo y  \controla, \controlb, \controlc, \controld, \testa, \testb para el grupo control. Cada concepto $\con$ está representado por una fórmula mínima $\varphi$ tal que $\sem{\varphi}=\con$. %Numbers $n/m$ on the right indicate $n=\mdl{\gramboolxor}(\con)$ and $m=\mdl{\grambool}(\con)$.
+%\renewcommand*{\arraystretch}{1.2}
+%\begin{table*}[!ht]
+%\vspace{-0.5cm}
+%\centering
+%
+%\begin{tabular}{|c|l l | c | c |l l | c | c|}
+%\hline
+%                                   &
+%\multicolumn{2}{c|}{\textbf{Grupo objetivo}}       &
+%\textbf{$\mdl{\gramboolxor}(\con)$} &
+%\textbf{$\mdl{\grambool}(\con)$} &
+%\multicolumn{2}{c|}{\textbf{Grupo control}}  &
+%\textbf{$\mdl{\gramboolxor}(\con)$} &
+%\textbf{$\mdl{\grambool}(\con)$} 
+% \\ \hline
+%\multirow{4}{*}{\parbox[t]{14mm}{\rotatebox[origin=c]{90}{\bf Entrenamiento}}} & \targeta & $x_{i}$             & 1 & 1                                                                  & \multicolumn{4}{c|}{$\longleftarrow$Ídem}                                                            \\ \cline{2-9}
+%                                   &\targetb& $x_{i} \oxor x_{j}$       & 3 & 7 &\controlb& $x_{i} \oor x_{j}$  & 3 & 3                                                                  \\ \cline{2-9}
+%                                  &\targetc & $x_{i} \oxor x_{j} \oxor x_{k}$ & 5 & 19 &\controlc& $x_{i} \oor (x_{j} \oand x_{k})$  & 5 & 5 \\ \cline{2-9}
+%                                  &\targetd& $x_{k} \oxor x_{l}$       & 3 & 7&\controld&$x_{k} \oor x_{l}$  & 3 & 3                                                                  \\ \hline
+%\multirow{2}{*}{\parbox[t]{2mm}{\rotatebox[origin=c]{90}{\bf Evaluación}}}  &\testa& $x_{i} \oand (x_{j} \oxor x_{k})$ & 5 & 9                 & \multicolumn{4}{c|}{$\longleftarrow$Ídem}                                                                                    \\ \cline{2-9}
+%                               &\testb& $x_{i} \oand (x_{j} \oor x_{k})$  & 5 & 5         & \multicolumn{4}{c|}{$\longleftarrow$Ídem}                                                                                            \\ \hline
+%\end{tabular}
+%
+%\caption{Secuencia de conceptos presentados en el %experimento: \targeta, \targetb, \targetc, \targetd, \testa, %\testb para el grupo objetivo y  \controla, \controlb, %\controlc, \controld, \testa, \testb para el grupo control. %Cada concepto $\con$ está representado por una fórmula %mínima $\varphi$ tal que $\sem{\varphi}=\con$. %Numbers $n/m$ on the right indicate $n=\mdl{\gramboolxor}(\con)$ and $m=\mdl{\grambool}(\con)$.
 %MDL is measured as the number of operators and variables (excluding the \textit{not} operator) of the minimal formula with respect to the specified CFG.
-}
-\label{conceptos}
-\vspace{-0.4cm}
-\end{table*}
+%}
+%\label{conceptos}
+%\vspace{-0.4cm}
+%\end{table*}
 
 
 \begin{center}
@@ -211,19 +164,18 @@ que expresa que $x_1$ es verdadero o $x_2$ es verdadero, pero no ambos, puede de
 \begin{tabular}{|c|c||c|c|c||c|c|c|}
 \hline
 \textbf{}                 & \textbf{Prueba} & \textbf{\begin{tabular}[c]{@{}c@{}}Grupo\\ Objetivo\end{tabular}} & \textbf{$\mdl{\gramboolxor}$} & \textbf{$\mdl{\grambool}$} & \textbf{\begin{tabular}[c]{@{}c@{}}Grupo\\ Control\end{tabular}} & \textbf{$\mdl{\gramboolxor}$} & \textbf{$\mdl{\grambool}$} \\ \hline
-\multirow{4}{*}{\parbox[t]{2mm}{\rotatebox[origin=c]{90}{Entrenamiento\ \ \ \ \ \\ \ \  }}} & 1               & \begin{tabular}[c]{@{}c@{}}\targeta \\ $x_{i}$\end{tabular}                     & 1              & 1               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \cline{2-8} 
-                          & 2               & \begin{tabular}[c]{@{}c@{}}\targetb\\ $x_{i} \oxor x_{j}$\end{tabular}                     & 3              & 7               & \begin{tabular}[c]{@{}c@{}}\controlb\\ $x_{i} \oor x_{j}$\end{tabular}                    & 3              & 3               \\ \cline{2-8} 
-                          & 3               & \begin{tabular}[c]{@{}c@{}}\targetc \\ $x_{i} \oxor x_{j} \oxor x_{k}$\end{tabular}                     & 5              & 19              & \begin{tabular}[c]{@{}c@{}}\controlc\\ $x_{i} \oor (x_{j} \oand x_{k})$\end{tabular}                    & 5              & 5               \\ \cline{2-8} 
-                          & 4               & \begin{tabular}[c]{@{}c@{}}\targetd\\ $x_{k} \oxor x_{l}$\end{tabular}                     & 3              & 7               & \begin{tabular}[c]{@{}c@{}}\controld\\$x_{k} \oor x_{l}$\end{tabular}                    & 3              & 3               \\ \hline
-\multirow{2}{*}{\parbox[t]{2mm}{\rotatebox[origin=c]{90}{Evaluación}}}     & 5               & \begin{tabular}[c]{@{}c@{}}\testa\\ $x_{i} \oand (x_{j} \oxor x_{k})$\end{tabular}                     & 5              & 9               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \cline{2-8} 
-                          & 6               & \begin{tabular}[c]{@{}c@{}}\testb\\ $x_{i} \oand (x_{j} \oor x_{k})$\end{tabular}                     & 5              & 5               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \hline
+\multirow{4}{*}{\parbox[t]{2mm}{\rotatebox[origin=c]{90}{Entrenamiento\ \ \ \ \ \\ \ \  }}} & 1               & \begin{tabular}[c]{@{}c@{}}\targeta \\ $p_{i}$\end{tabular}                     & 1              & 1               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \cline{2-8} 
+                          & 2               & \begin{tabular}[c]{@{}c@{}}\targetb\\ $p_{i} \oxor p_{j}$\end{tabular}                     & 3              & 7               & \begin{tabular}[c]{@{}c@{}}\controlb\\ $p_{i} \oor p_{j}$\end{tabular}                    & 3              & 3               \\ \cline{2-8} 
+                          & 3               & \begin{tabular}[c]{@{}c@{}}\targetc \\ $p_{i} \oxor p_{j} \oxor p_{k}$\end{tabular}                     & 5              & 19              & \begin{tabular}[c]{@{}c@{}}\controlc\\ $p_{i} \oor (p_{j} \oand p_{k})$\end{tabular}                    & 5              & 5               \\ \cline{2-8} 
+                          & 4               & \begin{tabular}[c]{@{}c@{}}\targetd\\ $p_{k} \oxor p_{l}$\end{tabular}                     & 3              & 7               & \begin{tabular}[c]{@{}c@{}}\controld\\$p_{k} \oor p_{l}$\end{tabular}                    & 3              & 3               \\ \hline
+\multirow{2}{*}{\parbox[t]{2mm}{\rotatebox[origin=c]{90}{Evaluación}}}     & 5               & \begin{tabular}[c]{@{}c@{}}\testa\\ $p_{i} \oand (p_{j} \oxor p_{k})$\end{tabular}                     & 5              & 9               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \cline{2-8} 
+                          & 6               & \begin{tabular}[c]{@{}c@{}}\testb\\ $p_{i} \oand (p_{j} \oor p_{k})$\end{tabular}                     & 5              & 5               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \hline
 \end{tabular}
+\caption{Secuencia de conceptos presentados en el experimento: \targeta, \targetb, \targetc, \targetd, \testa, \testb para el grupo objetivo y  \controla, \controlb, \controlc, \controld, \testa, \testb para el grupo control. Cada concepto $\con$ está representado por una fórmula mínima $\varphi$ tal que $\sem{\varphi}=\con$}
+\label{conceptos}
 \end{table}
 \end{center}
-\widesanti{hice esta tabla como la anterior pero con diseño para que entre. Si te gusta y la querés cambiar, adelante. Solo que antes hay que revisar que tenga los mismos datos!!!}
 
-
-\widesanti{habría que unificar con BRM las $x$ con las $p$ (o no). En parte II están presentado con $p$s}
 
 %55 participants participated in the experiment over the world wide web using the Amazon Mechanical Turk crowd sourcing platform. All were US residents over the age of 18 and had more than 95\% of past tasks successfully approved by other requesters. 44 participants completed the experiment through all the stages and declared not cheating (using pen, screenshots or a similar method to copy the answers) at the end of the experiment. Only data from these participants were used in the analyses reported below.\footnote{The learning times of all participants can be found in https://figshare.com/s/04d338adbbc4b1e83bf0.}
 
@@ -235,18 +187,18 @@ Los participantes se dividieron aleatoriamente en un grupo de control ($N=21$) y
 
 %During the learning phase, all 16 items were presented in the screen (in random order), and items belonging to the concept were identified with bold boundaries, as shown in  Figura~\ref{semaforos}. Participants were told that only the items with bold boundaries were `blickets' (or `tufas', etc.: we used different words for each concept in the sequence), and asked them to try to identify what a blicket was. During the testing phase, the 16 items were shuffled in the screen, and participants were asked to click on items that were blickets. If they made mistakes after submitting their answer, they were directed to the feedback phase, in which items that were incorrectly classified were indicated with a red cross. After having studied the feedback, participants were redirected to the testing screen, where items were reshuffled. When every item was correctly classified, participants were asked to give a verbal description of the concept and then continued on to the following concept after a resting period. We characterize the subjective difficulty of each concept as the time the participant spent in learning, testing and feedback phases for that concept (excluding the time spent in the verbal description).
 
-Durante la fase de {\em aprendizaje}, los 16 ejemplos (correspondientes a las 16 valuaciones posibles sobre $\propvars$ se presentaban en la pantalla (en orden aleatorio), y los elementos pertenecientes al concepto se identificaban con los bordes resaltados, como se muestra en la Figura~\ref{fig:notacionPRE}. A los participantes se les decía que sólo los ejemplos resaltados eran `blickets' (o `tufas', etc.: usamos diferentes palabras para cada concepto en la secuencia), y se les pedía que intentaran identificar qué era un `blicket'. Durante la etapa de {\em entrenamiento}, los 16 ejemplos eran mezclados y mostrados en la pantalla, y se les pedía que hicieran clic en aquellos ejemplos que eran blickets. Si al enviar su respuesta cometían errores, se los dirigía a la pantalla de {\em feedback} donde los ejemplos que se clasificaron incorrectamente se marcaban con una cruz roja. Luego de haber estudiado la respuesta, los participantes eran redirigidos a la pantalla de prueba, donde los ejemplos eran nuevamente mezclados y mostrados en pantalla para su selección. Esto se repetía hasta que los participantes seleccionaran correctamente todos los ejemplos. Una vez que la selección era correcta, se les pedía que dieran una descripción verbal del concepto y luego continuaban con el siguiente concepto tras un breve período de descanso. Caracterizamos la dificultad subjetiva de cada concepto como el tiempo que un participante pasó en las fases de {\em aprendizaje} y e {\em entrenamiento-feedback} para cada concepto (excluyendo el tiempo dedicado a la descripción verbal). Una visión esquemática del experimento se puede ver en la Figura~\ref{fig:experimentoPRE}.
+Durante la fase de {\em aprendizaje}, los 16 ejemplos (correspondientes a las 16 valuaciones posibles sobre $\propvars$ se presentaban en la pantalla (en orden aleatorio), y los elementos pertenecientes al concepto se identificaban con los bordes resaltados, como se muestra en la Figura~\ref{semaforos}. A los participantes se les decía que sólo los ejemplos resaltados eran `blickets' (o `tufas', etc.: usamos diferentes palabras para cada concepto en la secuencia), y se les pedía que intentaran identificar qué era un `blicket'. Durante la etapa de {\em entrenamiento}, los 16 ejemplos eran mezclados y mostrados en la pantalla, y se les pedía que hicieran clic en aquellos ejemplos que eran blickets. Si al enviar su respuesta cometían errores, se los dirigía a la pantalla de {\em feedback} donde los ejemplos que se clasificaron incorrectamente se marcaban con una cruz roja. Luego de haber estudiado la respuesta, los participantes eran redirigidos a la pantalla de prueba, donde los ejemplos eran nuevamente mezclados y mostrados en pantalla para su selección. Esto se repetía hasta que los participantes seleccionaran correctamente todos los ejemplos. Una vez que la selección era correcta, se les pedía que dieran una descripción verbal del concepto y luego continuaban con el siguiente concepto tras un breve período de descanso. Caracterizamos la dificultad subjetiva de cada concepto como el tiempo que un participante pasó en las fases de {\em aprendizaje} y e {\em entrenamiento-feedback} para cada concepto (excluyendo el tiempo dedicado a la descripción verbal). Una visión esquemática del experimento se puede ver en la Figura~\ref{fig:experimentoPRE}.
 
 \begin{figure}
 \begin{center}
   \includegraphics[scale=1]{../figuras/pre/experimento_PRE.pdf}
 \end{center}\caption{El esquema de funcionamiento del experimento.}\label{fig:experimentoPRE}
 \end{figure}
-\widesanti{Sergio, esta figura es nueva. Es una adaptación de la de BRM, más simple y con los ejemplos de semáforos. Pienso que puede dar más coherencia a la tesis. Podés confrontarla desde el capítulo de BRM y decir que en BRM es más complejo: (a) mostramos semantica INCOMPLETA (b) hay 2 conceptos en vez de 1 y (c) hay una etapa de GENERALIZACION}
+
 
 %Both groups (target and control), were exposed to 6 concepts. The second, third and fourth concepts are {\em training} concepts, and were different between both groups. The last two concepts are the {\em test} concepts, and were the same for both groups. The first concept was the trivial concept $x_i$ for both groups, which was aimed to get participants started in the task. Importantly, variables (i.e. color lights inside objects in Figura~\ref{semaforos}) were randomized for every concept, so paying selective attention to a specific variable across subsequent concepts was not beneficial for learning the concept sequence.
 
-Ambos grupos (objetivo y control), fueron expuestos a 6 conceptos. El segundo, tercero y cuarto concepto son los conceptos de {\em entrenamiento} y fueron diferentes para cada grupo. Los últimos dos conceptos son los conceptos de {\em evaluación}, y fueron los mismos para ambos grupos. El primer concepto fue el concepto trivial $x_i$ para ambos grupos, cuyo objetivo fue que los participantes se familiarizaran con la tarea. Es importante destacar que las variables (es decir, las luces de color dentro de los ejemplos en la Figura~\ref{fig:notacionPRE}) fueran seleccionadas de manera aleatoria para cada concepto, por lo que prestar atención selectiva a una característica específica a lo largo de la secuencia de conceptos (por ejemplo, la luz roja) no era beneficioso para aprender.
+Ambos grupos (objetivo y control), fueron expuestos a 6 conceptos. El segundo, tercero y cuarto concepto son los conceptos de {\em entrenamiento} y fueron diferentes para cada grupo. Los últimos dos conceptos son los conceptos de {\em evaluación}, y fueron los mismos para ambos grupos. El primer concepto fue el concepto trivial $x_i$ para ambos grupos, cuyo objetivo fue que los participantes se familiarizaran con la tarea. Es importante destacar que las variables (es decir, las luces de color dentro de los ejemplos en la Figura~\ref{semaforos}) fueran seleccionadas de manera aleatoria para cada concepto, por lo que prestar atención selectiva a una característica específica a lo largo de la secuencia de conceptos (por ejemplo, la luz roja) no era beneficioso para aprender.
 
 %As shown in Table~\ref{conceptos}, we presented the target group with training concepts which are succinctly described when $\oxor$ is part of the language, but necessarily described with lengthier formulas if $\oxor$ is absent; more technically, concepts for which $\mdl{\gramboolxor}$ is much smaller than $\mdl{\grambool}$. We also corroborated that for \targetb, \targetc, \targetd and \testa the number of formulas in $\gramboolxor$ with length strictly smaller than $\mdl{\grambool}$ was at least 10 times greater than the number of formulas in $\grambool$ with length equal to $\mdl{\grambool}$.
 
@@ -259,7 +211,7 @@ Los participantes en el grupo control, por otro lado, experimentaron una secuenc
 
 %As shown in Table~\ref{conceptos}, training concepts for the target (xor) group were: $x_{i}$, $x_{i} \oxor x_{j}$, $x_{i} \oxor x_{j} \oxor x_{k}$, and $x_{k} \oxor x_{l}$, called \targeta, \targetb, \targetc and \targetd respectively. Training concepts for the control group were: $x_{i}$, $x_{i} \oor x_{j}$, $x_{i} \oor (x_{j} \oand x_{k})$, and $x_{k} \oor x_{l}$ called \controla, \controlb, \controlc and \controld respectively. We use the indexes \textit{i, j, k, l} instead of numbers because variables were randomized in each trial. $x_{i}$ could stand for $x_1$, $x_2$, $x_3$ or $x_4$, that is, for any of the four colors. After these four concepts, both groups were presented with the same test concepts: $x_{i} \oand (x_{j} \oxor x_{k})$, and $x_{i} \oand (x_{j} \oor x_{k})$, called \testa and \testb respectively.
 
-Como se muestra en la Tabla~\ref{conceptos}, los conceptos de entrenamiento para el grupo objetivo (xor) fueron: $x_{i}$, $x_{i} \oxor x_{j}$, $x_{i} \oxor x_{j} \oxor x_{k}$, y $x_{k} \oxor x_{l}$, llamados \targeta, \targetb, \targetc y \targetd respectivamente. Los conceptos de entrenamiento para el grupo control fueron: $x_{i}$, $x_{i} \oor x_{j}$, $x_{i} \oor (x_{j} \oand x_{k})$, y $x_{k} \oor x_{l}$ llamados \controla, \controlb, \controlc y \controld respectivamente. Usamos los índices \textit{i, j, k, l} en lugar de números porque las variables fueron elegidas de manera aleatoria en cada ensayo. Así, $x_{i}$ podría representar $x_1$, $x_2$, $x_3$ o $x_4$, es decir, cualquiera de los cuatro colores. Después de estos cuatro conceptos, a ambos grupos se les presentaron los mismos conceptos de evaluación: $x_{i} \oand (x_{j} \oxor x_{k})$, y $x_{i} \oand (x_{j} \oor x_{k})$, llamados \testa y \testb respectivamente.
+Como se muestra en la Tabla~\ref{conceptos}, los conceptos de entrenamiento para el grupo objetivo (xor) fueron: $p_{i}$, $p_{i} \oxor p_{j}$, $p_{i} \oxor p_{j} \oxor p_{k}$, y $p_{k} \oxor p_{l}$, llamados \targeta, \targetb, \targetc y \targetd respectivamente. Los conceptos de entrenamiento para el grupo control fueron: $p_{i}$, $p_{i} \oor p_{j}$, $p_{i} \oor (p_{j} \oand p_{k})$, y $p_{k} \oor p_{l}$ llamados \controla, \controlb, \controlc y \controld respectivamente. Usamos los índices \textit{i, j, k, l} en lugar de números porque las variables fueron elegidas de manera aleatoria en cada ensayo. Así, $p_{i}$ podría representar $p_1$, $p_2$, $p_3$ o $p_4$, es decir, cualquiera de los cuatro colores. Después de estos cuatro conceptos, a ambos grupos se les presentaron los mismos conceptos de evaluación: $p_{i} \oand (p_{j} \oxor p_{k})$, y $p_{i} \oand (p_{j} \oor p_{k})$, llamados \testa y \testb respectivamente.
 
 %Choosing which concepts to show the target group in order for them to `learn' the $\oxor$ operator is critical in our experiment. Crucially, the learner must have an option between two alternatives that describe the concept: one that is succinct but uses $\oxor$, or necessarily a much longer one in the absence of $\oxor$. In other words, these concepts must be compatible with short logical formulas if and only if we take \gramboolxor as the language of description. To ensure that this was the case, we enumerated, for each concept, all formulas compatible with it and produced by the \grambool and \gramboolxor grammars up to length 19. For all training concepts of the target group, the shortest compatible formula without $\oxor$ is much longer than the shortest compatible formula with $\oxor$. This is shown in Table\ref{conceptos}.
 
@@ -290,65 +242,13 @@ El grupo objetivo codificó \testa de manera más eficiente que el grupo control
       \caption{Tiempo de aprendizaje del concepto $(a)$ y dificultad pronosticada $(b)$, $(c)$ para los dos conceptos de evaluación (\testa y \testb). Las barras de error son s.e.m.\ entre los sujetos}
       \label{model free}
    \end{figure}
-   
+\sergio{Traducir figura}   
 \section{Modelo}
 
 %When presented with a concept (e.g.~Figura~\ref{semaforos}), our model generates logical formulas and evaluate them to true or false for that concept, keeping the formula only if it is true. To generate formulas, the model uses a symbolic language in which each rule (symbols and operators) is associated with a probability of being used. The probability of generating a formula is proportional to the product of the probabilities of the rules required for building it, and therefore it decreases exponentially with its length. Furthermore, if one of the rules has a very low probability of being used, formulas that require it will also have very low probability.
 
 
-Cuando se le presenta un concepto (por ejemplo, Figura~\ref{semaforos}), nuestro modelo genera fórmulas lógicas y las evalúa como verdaderas o falsas para ese concepto, manteniendo la fórmula sólo si es verdadera. Para generar fórmulas, el modelo utiliza un lenguaje simbólico en el que cada regla de producción (símbolos y operadores) está asociado con una probabilidad de ser utilizada. La probabilidad de generar una fórmula es proporcional al producto de las probabilidades de las reglas requeridas para construirla y, por lo tanto, disminuye exponencialmente con su longitud. Además, si una de las reglas tiene una probabilidad muy baja de ser utilizada, las fórmulas que la requieran también tendrán una probabilidad muy baja.
-
-
-\color{red}
-ACA TENÍA ESTE ARBOL SINTÁCTICO HACHO PARA UNA CHARLA. TAL VER QUIERAS APROVECHARLO ACÁ O EN OTRO LADO
-
-Árbol sintáctico para $((p \oor \lnot q) \oand r)$
-
-
-\begin{tikzpicture}[level/.style={sibling distance = 6cm/#1,
-    level distance = 0.8cm},scale=1.0, transform shape]
-\node  {\start}
-child{
-node {\bool}
-child
-{
-node {$\oand$}
-child {
-node {\bool}
-child    {
-        node {$\oor$} 
-        child
-        {
-        node{\bool}
-        child{
-            node {\atom} 
-            child{
-            node {$p$}
-            }
-        }}
-        child
-        {
-        node{\bool}
-        child{
-            node {\atom}
-            child{
-            node  {$\lnot q$} }
-        }}
-    }}
-    child
-    {
-        node{\bool}
-        child{
-        node{\atom}
-        child{
-        node  {$r$}}}
-    }
-}
-}
-;
-\end{tikzpicture}
-
-\color{black}
+Cuando se le presenta un concepto, nuestro modelo genera fórmulas lógicas y las evalúa como verdaderas o falsas para ese concepto, manteniendo la fórmula sólo si es verdadera. Para generar fórmulas, el modelo utiliza un lenguaje simbólico en el que cada regla de producción (símbolos y operadores) está asociado con una probabilidad de ser utilizada. La probabilidad de generar una fórmula es proporcional al producto de las probabilidades de las reglas requeridas para construirla y, por lo tanto, disminuye exponencialmente con su longitud. Además, si una de las reglas tiene una probabilidad muy baja de ser utilizada, las fórmulas que la requieran también tendrán una probabilidad muy baja.
 
 
 %The \textit{Static model} maintains the rules' probabilities fixed throughout the concept sequence (the 6 concepts in Table~\ref{conceptos}). The \textit{Dynamic model} updates the probabilities after each concept, in order to minimize the expected description length of future concepts, assuming they have similar structure to the concepts learnt so far. We include in this model the $\oxor$ rule a priori in the language, but with vanishing probability of being used. Changes in this probability can be analogously interpreted as the probability that a rational agent without the compiled symbol a priori decides to add the compiled expression as a new primitive into her language. %This means that our model will fit somewhere between the computational and the algorithmic level of analysis by Marr's~\cite{marr1979computational,griffiths2015rational}. It can explain algorithmically how learning occurs, however, adding a new primitive is not modeled entirely at this level. The vanishing probability analogy is sufficient to make the new primitive be highly unlikely to be used without exposure and to allow it to emerge after concepts. Still, it does not explain --at an algorithmic level-- how any new primitive can arise, leaving the mechanics of the language change between the computational and algorithmic level.
@@ -359,9 +259,8 @@ El \textit{modelo estático} mantiene las probabilidades de las reglas fijas a l
 \subsection{Modelo estático}
 
 \newcommand{\form}{\varphi}
-\sergio{esto se explica en PlosOne}
 %Under the \lot assumption,  given a concept $\con$ (e.g.\ Figura~\ref{semaforos}), the probability that an agent uses formula $\form$ to explain this concept is defined by Bayes theorem: 
-Bajo la hipótesis de \lot,  dado un concepto $\con$ (por ejemplo, \ Figura.~\ref{semaforos}), la probabilidad de que un agente use la fórmula $\form$ para explicar el concepto está definida por el teorema de Bayes: 
+Bajo la hipótesis de \lot,  dado un concepto $\con$, la probabilidad de que un agente use la fórmula $\form$ para explicar el concepto está definida por el teorema de Bayes: 
 $$
 P(\form\mid \con) \propto P(\con\mid \form)P(\form).
 \label{Bayes fix}
@@ -382,15 +281,17 @@ P(\con\mid \form)=
 \end{cases}
 $$
 % 1 si $\sem{\form}=\con$ y 0 en caso contrario. 
-En otras palabras, para cualquier concepto dado, sólo las explicaciones que describen este concepto se consideran como posibles explicaciones. Se ha definido la función de verosimilitud de manera más flexible en la literatura~\cite{goodman2008rational,piantadosi2016logical}, permitiendo elementos mal etiquetados. Mantenemos esta definición más simple para reducir el número de parámetros libres del modelo ya que no pretendemos tener en cuenta los errores de etiquetado en nuestro experimento. \sergio{esto se explica en PlosOne}
+En otras palabras, para cualquier concepto dado, sólo las explicaciones que describen este concepto se consideran como posibles explicaciones. Se ha definido la función de verosimilitud de manera más flexible en la literatura~\cite{goodman2008rational,piantadosi2016logical}, permitiendo elementos mal etiquetados. Mantenemos esta definición más simple para reducir el número de parámetros libres del modelo ya que no pretendemos tener en cuenta los errores de etiquetado en nuestro experimento.
 
 %The prior $P(\form)$ is defined by augmenting the context-free grammars shown in Figura~\ref{PCFG} into a probabilistic context-free grammars (PCFG). In the PCFG, each rule has associated a parameter indicating the probability of using that rule. A PCFG can be used to produce logical statements similar to a CFG. Each non-terminal remaining in the statement is expanded using a rule of the PCFG with probability proportional to that rule's associated parameter, until no non-terminals remain in the statement. 
 
-La probabilidad a priori $P(\form)$ se define aumentando las gramáticas libre de contexto (CFG) que se muestran en la Figura~\ref{PCFG} \santi{serán dos figuras ahora: la de la parte 2 y la de este capítulo} en gramáticas probabilísticas libres de contexto (PCFG). En la PCFG, cada regla tiene asociado un parámetro que indica la probabilidad de utilizar esa regla. Se puede utilizar una PCFG para producir enunciados lógicos de manera similar a una CFG. Cada no-terminal en la expresión es expandido usando una regla de la PCFG con probabilidad proporcional al parámetro asociado a la regla hasta que no queden no-terminales en la expresión. \sergio{esto se explica en PlosOne}
+Al igual que en el capítulo \ref{chapter:PO}, la probabilidad a priori $P(\form)$ se define aumentando las gramáticas libre de contexto (CFG) \grambool y \gramboolxor en gramáticas probabilísticas libres de contexto (PCFG). En la PCFG, cada regla tiene asociado un parámetro que indica la probabilidad de utilizar esa regla. Se puede utilizar una PCFG para producir enunciados lógicos de manera similar a una CFG. Cada no-terminal en la expresión es expandido usando una regla de la PCFG con probabilidad proporcional al parámetro asociado a la regla hasta que no queden no-terminales en la expresión.
+
 
 %We assume that the probability that a subject uses formula $\form$ to explain concept $\con$ is proportional to the posterior $P(\form \mid \con)$, and the subjective difficulty $d_\con$ of a concept $\con$ to a participant is proportional to the length of the formula that the participant is using to explain that concept. However, there is no way to know directly which internal formula $\form$ the participant is using (and therefore we do not know $|\form|$). Hence, the most parsimonious approach is to consider the entire posterior distribution $\textbf{P}(\form \mid \con)$ over possible formulas.\footnote{This is equivalent to the Sampling Hypothesis described in~\cite{denison2013rational}, by which participants represent distributions through samples. Similar results are obtained if each participant carries entire probability distributions.}
 
-Suponemos que la probabilidad que un sujeto utilice la fórmula $\form$ para explicar el concepto $\con$ es proporcional a la probabilidad a posteriori $P(\form \mid \con)$, y que la dificultad subjetiva $d_\con$ de un concepto $\con$ para un participante es proporcional a la longitud de la fórmula que el participante está usando para explicar ese concepto. Sin embargo, no hay forma de saber directamente qué fórmula interna $\form$ está utilizando el participante (y, por tanto, no sabemos $|\form|$). Por lo tanto, el enfoque más parsimonioso consiste en considerar la distribución a posteriori $\textbf{P}(\form \mid \con)$ \santi{lo de P en negrita es notación nueva? Pero ojo que después no lo usamos así...}de manera completa sobre todas las posibles fórmulas.\footnote{Esto es equivalente a la hipótesis de muestreo descripta en~\cite{denison2013rational}, por la cual los participantes representan distribuciones a través de muestras. Se obtienen resultados similares si cada participante traslada la distribución de probabilidad completa} \sergio{no estoy seguro de cómo explicarlo}
+Suponemos que la probabilidad de que un sujeto utilice la fórmula $\form$ para explicar el concepto $\con$ es proporcional a la probabilidad a posteriori $P(\form \mid \con)$, y que la dificultad subjetiva $d_\con$ de un concepto $\con$ para un participante es proporcional a la longitud de la fórmula que el participante está usando para explicar ese concepto. Sin embargo, no hay forma de saber directamente qué fórmula interna $\form$ está utilizando el participante (y, por tanto, no sabemos $|\form|$). Por lo tanto, el enfoque más parsimonioso consiste en considerar la distribución a posteriori $P(\form \mid \con)$ de manera completa sobre todas las posibles fórmulas.
+%\footnote{Esto es equivalente a la hipótesis de muestreo descripta en~\cite{denison2013rational}, por la cual los participantes representan distribuciones a través de muestras. Se obtienen resultados similares si cada participante traslada la distribución de probabilidad completa} \sergio{no estoy seguro de cómo explicarlo}
 
 %Given a concept $\con$, the expected length $E_\con$ of the formulas used by the participant is simply
 Dado un concepto $\con$, la longitud esperada $E_\con$ de las fórmulas utilizadas por el participante es simplemente
@@ -443,7 +344,7 @@ Para formalizar la actualización de la PCFG, definimos $P(\form)$ de manera sim
 
 %The prior is specified by the set Dirichlet parameters $\textbf{D}^{0}$ with which we start the experiment ($\textbf{D}^{0}$ represents a vector containing the prior parameters of all rules in the grammar at trial 0). In our experiment, we set the prior Dirichlet parameters of all rules equal to 1, and the parameter of the rule that expands the target operator to a value several orders of magnitude smaller ($\approx 10^{-4}$). This means that the target operator was practically absent at the beginning of the experiment, but it was technically possible to `learn it' by increasing its probability as the experiment developed.
 
-La probabilidad a priori \santi{por las dudas: está bien traducir "prior" como "probabilidad a priori", no?} está especificada como el conjunto de parámetros de la Dirichlet $\textbf{D}^{0}$ con el que iniciamos el experimento ($\textbf{D}^{0}$ representa un vector que contiene los parámetros a priori de todas las reglas para la tarea $0$\santi{pero la tarea 0 no existe... explicar}). En nuestro experimento, establecemos los parámetros a priori de todas las reglas en 1, excepto por el de la regla que expande el operador objetivo $\oxor$ que está establecido con un valor varios órdenes de magnitud menor ($\approx 10^{-4}$). Esto significa que el operador objetivo está prácticamente ausente al comienzo del experimento, pero que es técnicamente posible `aprenderlo' si se aumenta su probabilidad a medida que se desarrolla el experimento.
+La probabilidad a priori está especificada como el conjunto de parámetros de la Dirichlet $\textbf{D}^{1}$ con el que iniciamos el experimento ($\textbf{D}^{1}$ representa un vector que contiene los parámetros a priori de todas las reglas para la tarea 1). En nuestro experimento, establecemos los parámetros a priori de todas las reglas en 1, excepto por el de la regla que expande el operador objetivo $\oxor$ que está establecido con un valor varios órdenes de magnitud menor ($\approx 10^{-4}$). Esto significa que el operador objetivo está prácticamente ausente al comienzo del experimento, pero que es técnicamente posible `aprenderlo' si se aumenta su probabilidad a medida que se desarrolla el experimento.
 
 %Under the Dirichlet model, the prior $P(\form\mid \con^{1},\dots,\con^{t-1})$ can be rewritten using the Dirichlet parameters as $P(\form\mid\textbf{D}^{t})$. Therefore, to know how $P(\form\mid \con)$ updates from trial to trial, we only need to know how $\textbf{D}$ updates from trial to trial.
 
@@ -453,7 +354,7 @@ Bajo el modelo de Dirichlet, la probabilidad a priori $P(\form\mid \con^{1},\dot
 
 El parámetro Dirichlet de la regla $i$ en la tarea $t+1$ es igual al parámetro en la tarea $t$ más la cantidad de veces que se utilizó la regla $i$ para generar todas las fórmulas compatibles con el concepto en la tarea $t$ (definimos a $M_{i}(\form)$ como el número de veces que la regla $i$ es usada para generar la fórmula $\form$), ponderada por la probabilidad a posteriori de cada fórmula en la tarea $t$:
  \begin{equation}
- D_{i}^{t+1}=D_{i}^{t}+\sum_{\sem{\form}=\con^t} P(\form\mid \textbf{D}^{t}) \ M_{i}(\form).
+ D_{i}^{t+1}=D_{i}^{t}+\sum_{\sem{\form}=\con^t} P(\form\mid \textbf{D}^{t}) \ M_{i}(\form). 
  \label{Dirichlet}
  \end{equation}
  %
@@ -482,6 +383,7 @@ Dado el valor a priori bajo del parámetro de la regla $ \oxor $, la probabilida
       }
       \label{results}
 \end{figure}
+\sergio{traducir figura}
 
 \begin{figure}
         \centering
@@ -491,44 +393,42 @@ Dado el valor a priori bajo del parámetro de la regla $ \oxor $, la probabilida
         Evolución de los parámetros de Dirichlet de diferentes reglas después de cada concepto experimentado por el grupo objetivo.
         }
        \label{evol}
-\end{figure}\santi{aca hay alguna diferencia de nomenclatura de conceptos. Prefier llamarlos $C^1, C^2$, o lo que sea igual a BRM}
-
+\end{figure}
 
 % However, the little increment in the $\oxor$ rule after \targetb (see Figura~\ref{evol}) is sufficient for making the formula $x_{k} \oxor x_{l}$ to have higher relative posterior in the next concepts, making the increment in the parameter of the $\oxor$ rule much greater than before. Additionally, the difficulty inferred by the model is much smaller the second time the concept is presented (compare \targetd and \targetb concepts in Figura~\ref{results}), since now the posterior is more evenly distributed between long (without $\oxor$) and short (with $\oxor$) formulas (see Eq. \eqref{expected length}). Finally, when the concept \testa is presented, the learner has completely compiled the $\oxor$ rule into her language, ascribing the formulas that use the $\oxor$ operator a much higher posterior probability relative to the long formulas that do not use the $\oxor$ operator. Therefore, the inferred difficulty for \testa is much smaller than those describing previous concepts, almost as simple as concept \targeta (see Figura~\ref{results}).
-Sin embargo, el pequeño incremento en la regla $ \oxor $ después de \targetb (ver Figura~\Ref{evol}) es suficiente para hacer que la fórmula $x_ {k} \oxor x_{l} $ tenga una probabilidad a posteriori relativa más alta en los siguientes conceptos, haciendo que el incremento en el parámetro de la regla $ \oxor $ sea mucho mayor que antes. Además, la dificultad inferida por el modelo es mucho menor la segunda vez que se presenta el concepto (comparar los conceptos \targetd y \targetb en la Figura~\ref{results}), ya que ahora la probabilidad a posteriori se distribuye más uniformemente entre fórmulas largas (sin $ \oxor $) y fórmulas cortas (con $ \oxor $) (ver la ecuación \eqref{expected length}). Finalmente, cuando se presenta el concepto \testa, el aprendiz\santi{traduje `learner' como `aprendiz'} ha compilado completamente la regla $ \oxor $ en su lenguaje, atribuyendo a las fórmulas que usan el operador $ \oxor $ una probabilidad a posteriori mucho más alta en relación con las fórmulas largas que no usan el operador $ \oxor $. Por lo tanto, la dificultad inferida para \testa es mucho menor que las que describen los conceptos anteriores, casi tan simple como el concepto \targeta (ver Figura~\ref{resultados}).
+Sin embargo, el pequeño incremento en la regla $ \oxor $ después de \targetb (ver Figura~\Ref{evol}) es suficiente para hacer que la fórmula $x_ {k} \oxor x_{l} $ tenga una probabilidad a posteriori relativa más alta en los siguientes conceptos, haciendo que el incremento en el parámetro de la regla $ \oxor $ sea mucho mayor que antes. Además, la dificultad inferida por el modelo es mucho menor la segunda vez que se presenta el concepto (comparar los conceptos \targetd y \targetb en la Figura~\ref{results}), ya que ahora la probabilidad a posteriori se distribuye más uniformemente entre fórmulas largas (sin $ \oxor $) y fórmulas cortas (con $ \oxor $) (ver la ecuación \eqref{expected length}). Finalmente, cuando se presenta el concepto \testa, el aprendiz ha compilado completamente la regla $ \oxor $ en su lenguaje, atribuyendo a las fórmulas que usan el operador $ \oxor $ una probabilidad a posteriori mucho más alta en relación con las fórmulas largas que no usan el operador $ \oxor $. Por lo tanto, la dificultad inferida para \testa es mucho menor que las que describen los conceptos anteriores, casi tan simple como el concepto \targeta (ver Figura~\ref{results}).
 
 % Finally, the strong $\oxor$ acquired by the target group increases the difficulty of \testb relative to the control group (see Figura 3). This occurs because there are several formulas of length 9 that use the $\oxor$ operator (around 6000), significantly increasing the expected difficulty of the concept (see Eq. \eqref{expected length}). For the control group, the posterior probability of these formulas is very low, causing a smaller increase in the expected difficulty.
-Finalmente, la fuerte adquisición de $ \oxor $ por el grupo objetivo aumenta la dificultad de \testb en relación con el grupo de control (ver Figura 3\santi{falta referencia}). Esto ocurre porque hay varias fórmulas de longitud $9$ que usan el operador $ \oxor $ (alrededor de $6000$), lo que aumenta significativamente la dificultad esperada del concepto (ver ecuación \eqref{expected length}). Para el grupo control, la probabilidad a posteriori \santi{traduje `posterior' como `probabilidad a posteriori'} de estas fórmulas es muy baja, provocando un menor aumento de la dificultad esperada.
+Finalmente, la fuerte adquisición de $ \oxor $ por el grupo objetivo aumenta la dificultad de \testb en relación con el grupo de control (ver Figura \ref{results}). Esto ocurre porque hay varias fórmulas de longitud $9$ que usan el operador $ \oxor $ (alrededor de $6000$), lo que aumenta significativamente la dificultad esperada del concepto (ver ecuación \eqref{expected length}). Para el grupo control, la probabilidad a posteriori de estas fórmulas es muy baja, provocando un menor aumento de la dificultad esperada.
 
 % The previous results point to a competition between different rules in the grammar. In our model, competition between $\oxor$ and the other operators is modulated by the initial relative value of the Dirichlet prior of the $\oxor$ rule, and the overall magnitude of the priors of all rules. The initial $\oxor$ prior measures how useful $\oxor$ should be (relative to the other rules) in order to increase the likelihood of using it in the future. If the $\oxor$ prior is too low relative to the priors of other rules, then formulas with $\oxor$ must be much shorter than formulas without $\oxor$ in order for them to have appreciable posterior and increase the $\oxor$ parameter in Eq. \eqref{Dirichlet}. In our experiment, if the prior is smaller $10^{-12}$ (and 1 for all other rules), then the predictions of the dynamic and static model for the target group are approximately equal: the advantage of using $\oxor$ in the target concepts is not enough to increase the likelihood of using $\oxor$. On the other hand, if the $\oxor$ prior is too high, we cannot model the high difficulty of \targetb for the target group and the high difficulty of \testa for the control group. For example, if the $\oxor$ prior is higher than 0.05 (and 1 for all other rules), the difficulty of \targetb and \targetd are approximately equal (corresponding to the short formula with $\oxor$) and also the difficulties of \testa for control and target groups.
-Los resultados anteriores apuntan a una competencia entre diferentes reglas en la gramática. En nuestro modelo, la competencia entre $ \oxor $ y los otros operadores está modulada por el valor relativo inicial de la probabilidad a priori de Dirichlet de la regla $ \oxor $ y la magnitud general de las distribuciones a priori de todas las reglas. La probabilidad a priori inicial del $ \oxor $ mide qué tan útil debería ser $ \oxor $ (en relación con las otras reglas) para aumentar la probabilidad de usarlo en el futuro. Si la probabilidad a priori de $ \oxor $ es demasiado baja en relación con las distribuciones a priori de las otras reglas, entonces las fórmulas con $ \oxor $ deben ser mucho más cortas que las fórmulas sin $ \oxor $ para que tengan una probabilidad a posteriori apreciable y aumenten el parámetro de $ \oxor $ en la ecuación~\eqref{Dirichlet}. En nuestro experimento, si el valor de la probabilidad a priori es menor $ 10^{- 12} $ (y $1$ para todas las demás reglas), entonces las predicciones del modelo dinámico y estático para el grupo objetivo son aproximadamente iguales: la ventaja de usar $ \oxor $ en los conceptos objetivos no es suficiente para aumentar la probabilidad de usar $ \oxor $. Por otro lado, si la probabilidad a priori de $ \oxor $ es demasiado alta, no podemos modelar la alta dificultad de \targetb para el grupo objetivo y la alta dificultad de \testa para el grupo de control. Por ejemplo, si la probabilidad a priori de $ \oxor $ es mayor que $0.05$ (y $1$ para todas las demás reglas), la dificultad de \targetb y \targetd son aproximadamente iguales (correspondientes a la fórmula corta con $ \oxor $) y también las dificultades de \testa para control y grupos objetivo. \santi{traduje `prior' como `probabilidad a priori'. Tal vez haya una mejor traducción (más corta)}
+Los resultados anteriores apuntan a una competencia entre diferentes reglas en la gramática. En nuestro modelo, la competencia entre $ \oxor $ y los otros operadores está modulada por el valor relativo inicial de la probabilidad a priori de Dirichlet de la regla $ \oxor $ y la magnitud general de las distribuciones a priori de todas las reglas. La probabilidad a priori inicial del $ \oxor $ mide qué tan útil debería ser $ \oxor $ (en relación con las otras reglas) para aumentar la probabilidad de usarlo en el futuro. Si la probabilidad a priori de $ \oxor $ es demasiado baja en relación con las distribuciones a priori de las otras reglas, entonces las fórmulas con $ \oxor $ deben ser mucho más cortas que las fórmulas sin $ \oxor $ para que tengan una probabilidad a posteriori apreciable y aumenten el parámetro de $ \oxor $ en la ecuación~\eqref{Dirichlet}. En nuestro experimento, si el valor de la probabilidad a priori es menor $ 10^{- 12} $ (y $1$ para todas las demás reglas), entonces las predicciones del modelo dinámico y estático para el grupo objetivo son aproximadamente iguales: la ventaja de usar $ \oxor $ en los conceptos objetivos no es suficiente para aumentar la probabilidad de usar $ \oxor $. Por otro lado, si la probabilidad a priori de $ \oxor $ es demasiado alta, no podemos modelar la alta dificultad de \targetb para el grupo objetivo y la alta dificultad de \testa para el grupo de control. Por ejemplo, si la probabilidad a priori de $ \oxor $ es mayor que $0.05$ (y $1$ para todas las demás reglas), la dificultad de \targetb y \targetd son aproximadamente iguales (correspondientes a la fórmula corta con $ \oxor $) y también las dificultades de \testa para control y grupos objetivo. 
 
 % The other free parameter that modulates competition is the overall magnitude of the Dirichlet priors, which determines how many times an efficient rule should be encountered before incorporating it. If the magnitude is too high, then observing a useful rule does not significantly change its Dirichlet parameter relative to the others, eliminating from the model the rapid rule acquisition clearly showed by participants. This happens because in Eq. \eqref{Dirichlet} the magnitude of the updates from $t$ to $t+1$ are at most of order $M$, the number of times that operators appear in formulas with high posterior. In our experiment, if all rules have prior equal to 1 and $\oxor$ has 1/1000 we get similar results to the ones in Figura~\ref{results}, but if all rules have prior equal to 10000 and $\oxor$ has 10 the additions to the $\oxor$ parameter are insignificant, so the dynamic and static models make the same predictions for the target group.
 El otro parámetro libre que modula la competencia es la magnitud general de las probabilidades a priori de Dirichlet, que determina cuántas veces se debe encontrar una regla eficiente antes de incorporarla. Si la magnitud es demasiado alta, la observación de una regla útil no cambia significativamente su parámetro de Dirichlet en relación con los demás, eliminando del modelo la rápida adquisición de reglas claramente mostrada por los participantes. Esto sucede porque en la ecuación~\eqref{Dirichlet} la magnitud de las actualizaciones de $ t $ a $ t + 1 $ son como máximo del orden $ M $, el número de veces que los operadores aparecen en fórmulas con probabilidad a posteriori alta. En nuestro experimento, si todas las reglas tienen una probabilidad a priori igual a $1$ y $ \oxor $ tiene una de $1/1000$, obtenemos resultados similares a los de la Figura~\ref{results}, pero si todas las reglas tienen una probabilidad a priori igual a $10000$ y $ \oxor $ tiene $10$, las adiciones al parámetro de $ \oxor $ son insignificantes, por lo que los modelos dinámico y estático hacen las mismas predicciones para el grupo objetivo.
 
 % In our model a large enough exposure to a concepts will increase the Dirichlet parameters without bounds, progressively decreasing learning flexibility. Although our experiment is not long enough to test it, such inflexibility is very unlikely to be true. For example, in the \lot fitting experiment from~\cite{piantadosi2016logical} they found that human Dirichlet priors for most propositional operators are between 0.3 and 3, instead of orders of magnitude higher (as expected by Eq. \eqref{Dirichlet} after exposure to a large number of concepts). Therefore, a more complete model of lifelong language acquisition should include an extra normalization or forgetting parameter that decreases the overall magnitude of the Dirichlet parameters, preserving the high learning flexibility that we observed in our experiment.
-En nuestro modelo, una exposición suficientemente grande a conceptos aumentará los parámetros de Dirichlet sin límites, disminuyendo progresivamente la flexibilidad de aprendizaje. Aunque nuestro experimento no es lo suficientemente largo para probarlo, es muy poco probable que tal inflexibilidad\santi{no me queda claro a qué refiere el 'tal'} sea cierta. Por ejemplo, en el experimento de ajuste de \lot de~\cite{piantadosi2016logical} se encontró que las probabilidades a priori de Dirichlet para humanos para la mayoría de los operadores proposicionales están entre $0.3$ y $3$, en lugar de órdenes de magnitud más altos (como esperaba la ecuación~\eqref{Dirichlet} después de la exposición a una gran cantidad de conceptos). Por lo tanto, un modelo más completo de adquisición del lenguaje a lo largo de la vida debería incluir un parámetro extra de normalización u olvido que disminuya la magnitud general de los parámetros de Dirichlet, preservando la alta flexibilidad de aprendizaje que observamos en nuestro experimento.
+En nuestro modelo, una exposición suficientemente grande a conceptos aumentará los parámetros de Dirichlet sin límites, disminuyendo progresivamente la flexibilidad de aprendizaje. Aunque nuestro experimento no es lo suficientemente largo para probarlo, es poco probable que tal inflexibilidad sea cierta en las personas después de una larga exposición a conceptos. Por ejemplo, en el experimento de ajuste de \lot de~\cite{piantadosi2016logical} se encontró que las probabilidades a priori de Dirichlet para humanos para la mayoría de los operadores proposicionales están entre $0.3$ y $3$, en lugar de órdenes de magnitud más altos (como esperaba la ecuación~\eqref{Dirichlet} después de la exposición a una gran cantidad de conceptos). Por lo tanto, un modelo más completo de adquisición del lenguaje a lo largo de la vida debería incluir un parámetro extra de normalización u olvido que disminuya la magnitud general de los parámetros de Dirichlet, preservando la alta flexibilidad de aprendizaje que observamos en nuestro experimento.
 
 % \section{Discussion}
 \section{Discusión}
 
 % \par We measured the subjective difficulty that participants experience when learning a sequence of concepts. To explain this subjective difficulty, we resource to propositional logic as a  base description language. In the target group we experimented with concepts which can be succinctly described in the base language {\em that also contains an extra operator $\oxor$} for exclusive disjunction but that needed necessarily longer descriptions over the base language (where this operator is absent). On the contrary, the control group is exposed to concepts where $\oxor$ does not help to achieve succinctness.
-Medimos la dificultad subjetiva que experimentan los participantes al aprender una secuencia de conceptos. Para explicar esta dificultad subjetiva, recurrimos a la lógica proposicional como lenguaje de descripción base. En el grupo objetivo, experimentamos con conceptos que pueden describirse sucintamente en el lenguaje base {\em que también contiene un operador adicional $ \oxor $} para la disyunción exclusiva pero que necesita necesariamente descripciones más largas sobre el lenguaje base (donde este operador está ausente). Por el contrario, el grupo de control está expuesto a conceptos donde $ \oxor $ no ayuda a lograr la descripciones más concisas.
+Medimos la dificultad subjetiva que experimentan los participantes al aprender una secuencia de conceptos. Para explicar esta dificultad subjetiva, recurrimos a la lógica proposicional como lenguaje de descripción base. En el grupo objetivo, experimentamos con conceptos que pueden describirse sucintamente en el lenguaje base {\em si se le agrega un operador adicional $ \oxor $} para la disyunción exclusiva pero que necesita descripciones más largas sobre el lenguaje base (donde este operador está ausente). Por el contrario, el grupo de control está expuesto a conceptos donde $ \oxor $ no ayuda a lograr descripciones más concisas.
 
 % Learning times are consistent with the hypothesis that participants in the target group smoothly adopt the $\oxor$ as a new primitive of their \lot in order to absorb the concepts they have been exposed to, with no more incentive than decreasing the expected complexity of future concepts. We do not claim that participants have learned the $\oxor$ operator defined by any specific formula using the previous operators, however, their \lot seems to have constructed an operation that matches the semantics of the exclusive or in order to compress such patterns of data and identify them more efficiently.
 Los tiempos de aprendizaje son consistentes con la hipótesis de que los participantes en el grupo objetivo adoptan sin problemas el $ \oxor $ como una nueva primitiva de su \lot para absorber los conceptos a los que han estado expuestos, sin más incentivo que disminuir la complejidad esperada de futuros conceptos. No afirmamos que los participantes hayan aprendido el operador $ \oxor $ definido por ninguna fórmula específica usando los operadores anteriores, sin embargo, su \lot parece haber construido una operación que coincide con la semántica de la disyunción exclusiva para comprimir tales patrones de datos e identificarlos de manera más eficiente.
 
 % \par Here, we focus on transfer learning effects when learning sequential concepts that share the same hierarchical structure. We acknowledge, however, that several other transfer learning effects are present in human sequential logical concept learning, such as when subsequent concepts differ in the relevant variables (e.g.\  color lights in our experiment)~\cite{blair2009extremely}, when changing the relevant variables in subsequent exclusive disjunctions~\cite{kruschke1996dimensional}, or when two categories are learned in an interleaved or a focused manner~\cite{carvalho2014putting}. However, unlike superficial knowledge about the task (like the frequency of appearance of different symbols and logical operators in the concept sequence), identifying the latent hierarchical structure of concepts have extremely important computational consequences: it allows for exponentially less complex representations~\cite{bengio2013representation,lake2015human}, maximizing the expected value of future computations within resource-bounded constraints~\cite{gershman2015computational}. In our task, in order to focus primarily on the learning process of the $\oxor$ structure, we randomize variables in each trial, such that other kinds of transitions are averaged out across participants. 
-Aquí, nos enfocamos en los efectos del aprendizaje de transferencia al aprender conceptos secuenciales que comparten la misma estructura jerárquica. Sin embargo, reconocemos que varios otros efectos del aprendizaje de transferencia están presentes en el aprendizaje secuencial de conceptos lógicos humanos, como cuando los conceptos posteriores difieren en las variables relevantes (por ejemplo, luces de color en nuestro experimento)~\cite{blair2009extremely}, al cambiar las variables relevantes \santi{acá puede ir un pie para el capítulo siguiente} en disyunciones exclusivas subsecuentes~\cite{kruschke1996dimensional}, o cuando dos categorías se aprenden de forma intercalada o enfocada~\cite{carvalho2014putting}. Sin embargo, a diferencia del conocimiento superficial sobre la tarea (como la frecuencia de aparición de diferentes símbolos y operadores lógicos en la secuencia de conceptos), identificar la estructura jerárquica latente de los conceptos tiene consecuencias computacionales extremadamente importantes: permite representaciones exponencialmente menos complejas~\cite{bengio2013representation,lake2015human}, maximizando el valor esperado de cálculos futuros dentro de restricciones limitadas por recursos~\cite{gershman2015computational}. En nuestra tarea, para centrarnos principalmente en el proceso de aprendizaje de la estructura $ \oxor $, aleatorizamos las variables en cada ensayo, de modo que se promedien otros tipos de transiciones entre los participantes.
+Aquí, nos enfocamos en los efectos del aprendizaje de transferencia al aprender conceptos secuenciales que comparten la misma estructura jerárquica. Sin embargo, reconocemos que varios otros efectos del aprendizaje de transferencia están presentes en el aprendizaje secuencial de conceptos lógicos humanos, como cuando los conceptos posteriores difieren en las variables relevantes (por ejemplo, luces de color en nuestro experimento)~\cite{blair2009extremely}, al cambiar las variables relevantes  en disyunciones exclusivas subsecuentes~\cite{kruschke1996dimensional}, o cuando dos categorías se aprenden de forma intercalada o enfocada~\cite{carvalho2014putting}. Sin embargo, a diferencia del conocimiento superficial sobre la tarea (como la frecuencia de aparición de diferentes símbolos y operadores lógicos en la secuencia de conceptos), identificar la estructura jerárquica latente de los conceptos tiene consecuencias computacionales extremadamente importantes: permite representaciones exponencialmente menos complejas~\cite{bengio2013representation,lake2015human}, maximizando el valor esperado de cálculos futuros dentro de restricciones de recursos  limitados~\cite{gershman2015computational}. En nuestra tarea, para centrarnos principalmente en el proceso de aprendizaje de la estructura $ \oxor $, aleatorizamos las variables en cada ensayo, de modo que se promedien otros tipos de transiciones entre los participantes.
 
 % \par Most \lot studies provide a language that is fixed once trained or inferred over a specific data. We claim that when a specific language beats a second one at fitting some experimental data, what we may be seeing is an effect of prior experience (including from the experiment itself), more than an intrinsic feature of the \lot. This leads to a fundamental difficulty in trying to experimentally uncover what the actual human symbolic substrate of thought is. Experimental results have shown for instance that a grammar with \textit{and, or}, and \textit{not} better explains Boolean concept learning than one with \textit{nand}, despite both being expressively equivalent~\cite{piantadosi2016logical}.  In our view, this cannot be taken to mean anything more than that in the current state of affairs of the world, the \textit{nand} operator is not very useful for compressing information. We have shown that participants can rapidly compile new expressions in their \lot if they begin to be useful, which emphasizes that one cannot simply ignore the order in which concepts are presented to the participant when studying aspects of the \lot.
 La mayoría de los estudios de \lot proporcionan un lenguaje fijo una vez que se entrena o se infiere sobre datos específicos. Afirmamos que cuando un lenguaje específico supera a otro en el ajuste de algunos datos experimentales, lo que podemos estar viendo es un efecto de la experiencia previa (incluso del experimento en sí), más que una característica intrínseca del \lot. Esto conduce a una dificultad fundamental para tratar de descubrir experimentalmente cuál es el sustrato simbólico humano real del pensamiento. Los resultados experimentales han demostrado, por ejemplo, que una gramática con \textit{y}, \textit{o}, y \textit{no} explica mejor el aprendizaje de conceptos booleanos que una con \textit{nand}, a pesar de que ambas son expresivamente equivalentes~\cite{piantadosi2016logical}. En nuestra opinión, esto no puede significar nada más que el hecho de que en el estado actual de las cosas del mundo, el operador \textit{nand} no es muy útil para comprimir información. Hemos demostrado que los participantes pueden compilar rápidamente nuevas expresiones en su \lot si comienzan a ser útiles, lo que enfatiza que no se puede simplemente ignorar el orden en el que se presentan los conceptos al participante cuando se estudian aspectos de la \lot.
 
 % When Fodor proposed the Language of Thought hypothesis~\cite{fodor1975language}, what he had in mind was a symbolic system we all came equipped with from birth. Stating that this language is in fact always flexible might seem in outright contradiction with Fodor's original idea. In fact, what studies in the \lot literature (including this one) are probably probing is one among many languages in a hierarchy of increasing abstraction. As we progress in life, we find some conceptual summaries useful, and compiled them in a more abstract token. It is even likely that there is no proper hierarchy with sharply defined boundaries between levels, but instead a less organized progression of concepts of increasing abstraction, with thought progressing seamlessly using constructs at different levels. he way for a broader understanding of human cognition.
-Cuando Fodor propuso la hipótesis del lenguaje del pensamiento~\cite{fodor1975language}, lo que tenía en mente era un sistema simbólico con el que todos venimos equipados desde que nacimos. Afirmar que este lenguaje es siempre flexible puede parecer en total contradicción con la idea original de Fodor. De hecho, lo que probablemente están investigando los estudios en la literatura de \lot (incluido este) es uno entre muchos lenguajes en una jerarquía de abstracción creciente. A medida que avanzamos en la vida, encontramos útiles algunos resúmenes conceptuales y los compilamos o encapsulamos en una pieza más abstracta. Incluso es probable que no exista una jerarquía adecuada con límites claramente definidos entre niveles, sino una progresión menos organizada de conceptos de creciente abstracción, en donde el pensamiento progresa sin problemas utilizando construcciones en diferentes niveles.
+Cuando Fodor propuso la hipótesis del lenguaje del pensamiento~\cite{fodor1975language}, lo que tenía en mente era un sistema simbólico con el que todos venimos equipados desde que nacimos. Afirmar que este lenguaje es siempre flexible puede parecer una contradicción con la idea original de Fodor. De hecho, lo que probablemente están investigando los estudios en la literatura de \lot (incluido este) es uno entre muchos lenguajes en una jerarquía de abstracción creciente. A medida que avanzamos en la vida, encontramos útiles algunos resúmenes conceptuales y los compilamos o encapsulamos en una pieza más abstracta. Incluso es probable que no exista una jerarquía adecuada con límites claramente definidos entre niveles, sino una progresión menos organizada de conceptos de creciente abstracción, en donde el pensamiento progresa sin problemas utilizando construcciones en diferentes niveles.
 
 % \section{Conclusion}
-\section{Conclusiones}
+%\section{Conclusiones}
 
 % We defined a model to measure the subjective difficulty of learning a sequence of concepts. The model updates the grammar production probabilities between concepts and predicts difficulty as the size of compatible formulas weighted by their posterior probability. This learning mechanism allows to simulate the emergence of a new primitive in the language, as it becomes useful to encode the concepts presented so far. The predicted difficulties strongly resembles the pattern of human learning times in a sequence of concepts that required the $\oxor$ operator in order to be efficiently represented.
-Definimos un modelo para medir la dificultad subjetiva de aprender una secuencia de conceptos. El modelo actualiza las probabilidades de producción gramaticales entre conceptos y predice la dificultad como el tamaño de las fórmulas compatibles ponderado por su probabilidad a posteriori. Este mecanismo de aprendizaje permite simular la aparición de una nueva primitiva en el lenguaje, ya que resulta útil para codificar los conceptos presentados hasta ese momento. Las dificultades predichas se asemejan mucho al patrón de los tiempos de aprendizaje humano en una secuencia de conceptos que requirieron el operador $ \oxor $ para ser representados de manera eficiente.
