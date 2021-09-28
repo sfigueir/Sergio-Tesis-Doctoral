@@ -3,17 +3,17 @@
 \chapter{Introducción}
 \label{intro}
 
-En las últimas dos décadas distintas técnicas de ingeniería reversa del aprendizaje en humanos han inspirado con éxito distintos algoritmos de inteligencia artificial \cite{russell2002artificial}. Los avances recientes en las técnicas de aprendizaje profundo han logrado resultados notables en numerosos dominios como el reconocimiento visual de objetos, el reconocimiento automático del habla, la búsqueda de respuestas y las traducciones automáticas \cite{lecun2015deep}. En la mayoría de estos enfoques, el resultado y el objeto del proceso de aprendizaje es una función estadística de reconocimiento de patrones específicos en los datos. Sin embargo, en muchas situaciones, el aprendizaje humano implica la construcción de modelos estructurados de conocimiento abstracto a partir de pocos datos, y este tipo de sistemas no han sido capaces de imitar esa habilidad\cite{lake2017building}.
+En las últimas dos décadas distintas técnicas de ingeniería reversa del aprendizaje en humanos han inspirado con éxito variados algoritmos de inteligencia artificial~\cite{russell2002artificial}. Los avances recientes en las técnicas de aprendizaje profundo han logrado resultados notables en numerosos dominios como el reconocimiento visual de objetos, el reconocimiento automático del habla, la búsqueda de respuestas y las traducciones automáticas~\cite{lecun2015deep}. En la mayoría de estos enfoques, el resultado y el objeto del proceso de aprendizaje es una función estadística de reconocimiento de patrones específicos en los datos. \santi{antes de pasar a POCOS datos, hay que decir que las técnicas de aprendizaje que mencionaste antes necesitan MUCHOS datos}Sin embargo, en muchas situaciones, el aprendizaje humano implica la construcción de modelos estructurados de conocimiento abstracto a partir de pocos datos, y este tipo de sistemas no han sido capaces de imitar esa habilidad~\cite{lake2017building}.
 
-¿Cómo pueden las personas adquirir un vasto universo de conceptos con muy poca exposición aparente? Una posible solución a este enigma, conocida como el problema de Platón ~\cite{chomsky1986knowledge, chomsky2006cognitive}, surge del aprendizaje automático probabilístico. Este enfoque está arrojando algo de luz sobre cómo los humanos pueden construir modelos y abstracciones bajo incertidumbre y a partir de datos escasos \cite{tenenbaum2011grow,ghahramani2015probabilistic}, y está renovando la hipótesis de Jerry Fodor que afirma que el pensamiento toma forma en una especie de lenguaje mental del pensamiento (\lot, por sus siglas en inglés) compuesto por un conjunto limitado de símbolos atómicos que se pueden combinar para formar estructuras más complejas siguiendo reglas combinatorias \cite{fodor1975language}.
+¿Cómo pueden las personas adquirir un vasto universo de conceptos con muy poca exposición aparente? Una posible solución a este enigma, conocida como el problema de Platón~\cite{chomsky1986knowledge, chomsky2006cognitive}, surge del aprendizaje automático probabilístico. Este enfoque está arrojando algo de luz sobre cómo los humanos pueden construir modelos y abstracciones bajo incertidumbre y a partir de datos escasos~\cite{tenenbaum2011grow,ghahramani2015probabilistic}, y está renovando la hipótesis de Jerry Fodor que afirma que el pensamiento toma forma en una especie de lenguaje mental del pensamiento (\lot, por sus siglas en inglés) compuesto por un conjunto limitado de símbolos atómicos que se pueden combinar para formar estructuras más complejas siguiendo reglas combinatorias~\cite{fodor1975language}.
 
-Nuestra investigación se suscribe a una de las líneas actuales del aprendizaje automático probabilístico conocida como lenguajes del pensamiento probabilísticos \cite{goodman2014concepts}, un esquema general para expresar modelos probabilísticos y métodos de inferencia sobre lenguajes formales. En nuestro caso, como programas informáticos. Esto significa que en nuestros modelos asumimos que el \lot es un lenguaje de programación capaz de generar programas para modelar conceptos en el mundo. Con nuestro trabajo pretendemos mejorar nuestro entendimiento del proceso de aprendizaje a partir de cuerpos ralos de datos y desarrollar nuevos métodos y algoritmos de programación probabilística para replicar esta notable capacidad humana. 
+Nuestra investigación se suscribe a una de las líneas actuales del aprendizaje automático probabilístico conocida como lenguajes del pensamiento probabilísticos~\cite{goodman2014concepts}, un esquema general para expresar modelos probabilísticos y métodos de inferencia sobre lenguajes formales. En nuestro caso, como programas informáticos\santi{esta oración quedó desconectada. ¿a qué aplican los programas informáticos?}. Esto significa que en nuestros modelos asumimos que el \lot es un lenguaje de programación capaz de generar programas para modelar conceptos en el mundo. Con nuestro trabajo pretendemos mejorar nuestro entendimiento del proceso de aprendizaje a partir de cuerpos ralos de datos y desarrollar nuevos métodos y algoritmos de programación probabilística para replicar esta notable capacidad humana. 
 
 
 \section{Aportes de esta tesis}
 
 \paragraph{Una teoría de la memoria para secuencias binarias: evidencia de un algoritmo de compresión mental en humanos~\cite{planton2021memory}.} 
-La capacidad de la memoria de trabajo se puede mejorar recodificando la información memorizada en forma condensada. En el Capítulo~\ref{chapter:BIN}, ponemos a prueba la teoría de que los adultos humanos codifican secuencias binarias de estímulos en la memoria utilizando un \lot y un algoritmo de compresión recursivo. La teoría predice que la complejidad psicológica de una secuencia dada debería ser proporcional a la longitud de su descripción más corta en el lenguaje propuesto \grambin, que puede capturar cualquier patrón anidado de repeticiones y alternancias usando un número limitado de instrucciones. El lenguaje \grambin es una versión simplificada para el dominio de las secuencias binarias del lenguaje de geometría, \gramgeo, propuesto en~\cite{amalric2017language}. Cinco experimentos examinan la capacidad de la teoría para predecir la memoria de los adultos humanos para una variedad de secuencias auditivas y visuales. Pusimos a prueba la memoria utilizando un paradigma de violación de secuencia en el que los participantes intentaron detectar violaciones ocasionales en una secuencia que de otro modo sería fija. Tanto las calificaciones de complejidad subjetiva como el rendimiento de detección de violaciones objetivas fueron bien predichas por nuestra medida teórica de complejidad, que resulta ser la complejidad de Kolmogorov para el lenguaje específico de geometría en cadenas binarias, \grambin. Los resultados apoyan la hipótesis de que, más allá de la extracción de conocimiento estadístico, la codificación de secuencias humanas se basa en una compresión interna que utiliza estructuras anidadas similares a la de las Lenguaje del Pensamiento propuesto.
+La capacidad de la memoria de trabajo se puede mejorar recodificando la información memorizada en forma condensada. En el Capítulo~\ref{chapter:BIN}, ponemos a prueba la teoría de que los adultos humanos codifican secuencias binarias de estímulos en la memoria utilizando un \lot y un algoritmo de compresión recursivo. La teoría predice que la complejidad psicológica de una secuencia dada debería ser proporcional a la longitud de su descripción más corta en el lenguaje propuesto \grambin, que puede capturar cualquier patrón anidado de repeticiones y alternancias usando un número limitado de instrucciones. El lenguaje \grambin es una versión simplificada para el dominio de las secuencias binarias del lenguaje de geometría, \gramgeo, propuesto en~\cite{amalric2017language}. Cinco experimentos examinan la capacidad de la teoría para predecir la memoria de los adultos humanos para una variedad de secuencias auditivas y visuales. Pusimos a prueba la memoria utilizando un paradigma de violación de secuencia en el que los participantes intentaron detectar violaciones ocasionales en una secuencia que de otro modo sería fija\santi{'que de otro modo sería fija' no se entiende}. Tanto las calificaciones de complejidad subjetiva como el rendimiento de detección de violaciones objetivas fueron bien predichas por nuestra medida teórica de complejidad, que resulta ser la complejidad de Kolmogorov para el lenguaje específico de geometría en cadenas binarias, \grambin. Los resultados apoyan la hipótesis de que, más allá de la extracción de conocimiento estadístico, la codificación de secuencias humanas se basa en una compresión interna que utiliza estructuras anidadas similares a las del \lot propuesto.
 
 
 \paragraph{Validación Bayesiana de producciones gramaticales para el \lot~\cite{romano2018bayesian}.} 
@@ -24,28 +24,28 @@ Las propuestas probabilísticas del \lot pueden explicar el aprendizaje en difer
 Los enfoques recientes del aprendizaje de conceptos humanos han combinado con éxito el poder de los sistemas de reglas simbólicos e infinitamente productivos y el aprendizaje estadístico para explicar nuestra capacidad de aprender nuevos conceptos a partir de unos pocos ejemplos. El objetivo de la mayoría de estos estudios es revelar el lenguaje subyacente que estructura estas representaciones y proporciona un sustrato general para el pensamiento. Sin embargo, describir un modelo de pensamiento que se fija una vez entrenado va en contra de la extensa literatura que muestra cómo la experiencia da forma al aprendizaje de conceptos. En el Capítulo~\ref{chapter:PRE} se investiga la plasticidad de estos lenguajes descriptivos simbólicos. Se realiza un experimento de aprendizaje de conceptos que demuestra que los seres humanos pueden cambiar muy rápidamente el repertorio de símbolos que utilizan para identificar conceptos, compilando expresiones que se utilizan con frecuencia en nuevos símbolos del lenguaje. El patrón de tiempos de aprendizaje de conceptos es descrito con precisión por un agente Bayesiano que actualiza racionalmente la probabilidad de compilar una nueva expresión de acuerdo con lo útil que ha sido para comprimir conceptos hasta ahora. Al presentar el \lot como un sistema flexible de reglas, también destacamos las dificultades para precisarlo empíricamente.
 
 \paragraph{Un marco lógico para estudiar los sesgos de aprendizaje de conceptos en presencia de múltiples explicaciones~\cite{tano2021framework}.}
-Cuando las personas buscan comprender conceptos a partir de un conjunto incompleto de ejemplos y contraejemplos, suele haber una cantidad exponencial de reglas de clasificación que pueden clasificar correctamente los datos observados, según las características de los ejemplos que se utilicen para construir estas reglas. Una aproximación mecanicista del aprendizaje de conceptos humanos debería ayudar a explicar cómo los humanos prefieren algunas reglas por sobre otras cuando hay muchas que pueden usarse para clasificar correctamente los datos observados. En el Capítulo~\ref{chapter:BRM}, se explotan las herramientas de la lógica proposicional para desarrollar un marco experimental --continuando y ampliando aquel desarrollado en el Capítulo~\ref{chapter:PRE}-- que controle las reglas mínimas que son \textit{simultáneamente} consistentes con los ejemplos presentados. Por ejemplo, este marco nos permite presentar a los participantes conceptos consistentes con una disyunción \textit{y también} con una conjunción, dependiendo de qué características se usen para construir la regla. Del mismo modo, nos permite presentar conceptos que son simultáneamente consistentes con dos o más reglas de diferente complejidad y que utilizan diferentes características. Es importante destacar que el marco lógico propuesto controla completamente qué reglas mínimas compiten para explicar los ejemplos y es capaz de recuperar las características utilizadas por el participante para construir la regla de clasificación, sin depender de mecanismos complementarios de seguimiento de la atención (por ejemplo, {\em eye-tracking}). Explotamos el marco estudiado en un experimento con una secuencia pruebas competitivas como las mencionadas, e ilustramos la aparición de varios efectos de transferencia que sesgan la atención previa de los participantes a conjuntos específicos de características durante el aprendizaje.
+Cuando las personas buscan comprender conceptos a partir de un conjunto incompleto de ejemplos y contraejemplos, suele haber una cantidad exponencial de reglas de clasificación que pueden clasificar correctamente los datos observados, según las características de los ejemplos que se utilicen para construir estas reglas. Una aproximación mecanicista del aprendizaje de conceptos humanos debería ayudar a explicar cómo los humanos prefieren algunas reglas por sobre otras cuando hay muchas que pueden usarse para clasificar correctamente los datos observados. En el Capítulo~\ref{chapter:BRM}, se explotan las herramientas de la lógica proposicional para desarrollar un marco experimental --continuando y ampliando aquel desarrollado en el Capítulo~\ref{chapter:PRE}-- que controle las reglas mínimas que son \textit{simultáneamente} consistentes con los ejemplos presentados. Por ejemplo, este marco nos permite presentar a los participantes conceptos consistentes con una disyunción \textit{y también} con una conjunción, dependiendo de qué características se usen para construir la regla. Del mismo modo, nos permite presentar conceptos que son simultáneamente consistentes con dos o más reglas de diferente complejidad y que utilizan diferentes características. Es importante destacar que el marco lógico propuesto controla completamente qué reglas mínimas compiten para explicar los ejemplos y es capaz de recuperar las características utilizadas por el participante para construir la regla de clasificación, sin depender de mecanismos complementarios de seguimiento de la atención (por ejemplo, {\em eye-tracking}). Explotamos el marco estudiado en un experimento con una secuencia de pruebas competitivas como las mencionadas, e ilustramos la aparición de varios efectos de transferencia que sesgan la atención previa de los participantes a conjuntos específicos de características durante el aprendizaje.
 
 
 \section{Lenguaje del pensamiento}
 
-El objetivo de programar agentes inteligentes y el estudio de la mente humana han creado preguntas compartidas y sinergias comunes entre los campos de la inteligencia artificial y la ciencia cognitiva \cite{russell2002artificial}. Dentro de estas, la adquisición de conceptos ha resultado un aspecto clave y ampliamente estudiado tanto en la cognición humana como en la inteligencia artificial~\cite{cohen2005handbook, ashby2011human,tenenbaum2011grow}.
+El objetivo de programar agentes inteligentes y el estudio de la mente humana han creado preguntas compartidas y sinergias comunes entre los campos de la inteligencia artificial y la ciencia cognitiva~\cite{russell2002artificial}. Dentro de estas, la adquisición de conceptos ha resultado un aspecto clave y ampliamente estudiado tanto en la cognición humana como en la inteligencia artificial~\cite{cohen2005handbook, ashby2011human,tenenbaum2011grow}.
 
-Los investigadores han modelado el aprendizaje de clases conceptuales para los objetos principalmente con dos enfoques clásicos: en términos de similitud con un ejemplo genérico o prototipo \cite{rosch1999principles, nosofsky1986attention, rosch1976structural, rosch1975family} o basándose en una representación simbólica de reglas \cite{boole1854investigation, fodor1975language, gentner1983structure}.
+Los investigadores han modelado el aprendizaje de clases conceptuales para los objetos principalmente con dos enfoques clásicos: en términos de similitud con un ejemplo genérico o prototipo~\cite{rosch1999principles, nosofsky1986attention, rosch1976structural, rosch1975family} o basándose en una representación simbólica de reglas~\cite{boole1854investigation, fodor1975language, gentner1983structure}.
 
-Los enfoques basados en modelos prototipos proponen que los humanos construyen una representación promedio o protípica para cada clase conceptual y basan la clasificación de un ejemplo en función de la distancia relativa a cada clase \cite{wilson2001encyclopedia}. 
+Los enfoques basados en modelos prototipos proponen que los humanos construyen una representación promedio o protípica para cada clase conceptual y basan la clasificación de un ejemplo en función de la distancia relativa a cada clase~\cite{wilson2001encyclopedia}. 
 
-Los enfoques simbólicos sostienen que los pensamientos son representaciones simbólicas en un lenguaje del pensamiento (\lot) compuesto por un conjunto limitado de símbolos atómicos que pueden combinarse para formar estructuras nuevas y más complejas siguiendo reglas combinatorias \cite{fodor1975language,nosofsky1994rule, tenenbaum2011grow, maddox1993comparing}. \sergio{Explicar critica conexionismo y surgimiento teoría computacional de la mente?} 
+Los enfoques simbólicos sostienen que los pensamientos\santi{sinónimo? para no repetir...} son representaciones simbólicas en un lenguaje del pensamiento (\lot) compuesto por un conjunto limitado de símbolos atómicos que pueden combinarse para formar estructuras nuevas y más complejas siguiendo reglas combinatorias~\cite{fodor1975language,nosofsky1994rule, tenenbaum2011grow, maddox1993comparing}. \sergio{Explicar critica conexionismo y surgimiento teoría computacional de la mente?} 
 
-El \lot no es necesariamente único, la forma que adopta se ha modelado de muchas formas diferentes según el dominio del problema: aprendizaje de conceptos numéricos \cite{piantadosi2012bootstrapping}, aprendizaje de secuencias \cite{amalric2017language, yildirim2015learning, romano2013language}, aprendizaje de conceptos visuales \cite{ellis2015unsupervised}, aprendizaje de teorías \cite{ullman2012theory}, etc. De hecho, en la parte \ref{parte:secuencias} de esta tesis, trabajaremos con dos modelos distintos de \lot para el dominio de secuencias binarias en el capítulo \ref{chapter:BIN}, y para el dominio de secuencias geométricas en el capítulo \ref{chapter:PO}.
+El \lot no es necesariamente único, la forma que adopta se ha modelado de muchas formas diferentes según el dominio del problema: aprendizaje de conceptos numéricos~\cite{piantadosi2012bootstrapping}, aprendizaje de secuencias~\cite{amalric2017language, yildirim2015learning, romano2013language}, aprendizaje de conceptos visuales~\cite{ellis2015unsupervised}, aprendizaje de teorías~\cite{ullman2012theory}, etc. De hecho, en la parte \ref{parte:secuencias} de esta tesis, trabajaremos con dos modelos distintos de \lot: para el dominio de secuencias binarias en el capítulo \ref{chapter:BIN}, y para el dominio de secuencias geométricas en el capítulo~\ref{chapter:PO}.
 
-A pesar de las críticas y objeciones~\cite{blackburn1984spreading,loewer1991meaning,knowles1998language,aydede1997language,wilson2001encyclopedia}\sergio{tiene sentido desarrollarlas? Papers y pagina 171 de The MIT encyclopedia}, los enfoques simbólicos --en general-- y la hipótesis \lot --en particular-- han ganado una atención renovada con resultados recientes que podrían explicar el proceso de aprendizaje en diferentes dominios como un proceso de inferencia estadística sobre un espacio de hipótesis estructurado y componible~\cite{tenenbaum2011grow,piantadosi2016four}. Las investigaciones indican que --como mínimo-- dos sistemas distintos pueden ser parte de la base del aprendizaje de secuencias en el cerebro humano: el aprendizaje estadístico y el aprendizaje basado en reglas~\cite{f4,f67,f85}. Lo que se desconoce es si operan de forma independiente o conjunta, y si alguno es favorecido por sobre el otro en función de la naturaleza de la información a codificar. Argumentamos que cualquier intento por descubrir los mecanismos cognitivos específicos detrás del aprendizaje de reglas en humanos, especialmente en comparación con otras especies, debe tener también en cuenta la contribución de un sistema menos abstracto (sin embargo poderoso) de predicción basado en las propiedades estadísticas de los eventos. 
+A pesar de las críticas y objeciones~\cite{blackburn1984spreading,loewer1991meaning,knowles1998language,aydede1997language,wilson2001encyclopedia}\sergio{tiene sentido desarrollarlas? Papers y pagina 171 de The MIT encyclopedia}, los enfoques simbólicos --en general-- y la hipótesis \lot{ }--en particular-- han ganado una atención renovada con resultados recientes que podrían explicar el proceso de aprendizaje en diferentes dominios como un proceso de inferencia estadística sobre un espacio de hipótesis estructurado y componible~\cite{tenenbaum2011grow,piantadosi2016four}. Las investigaciones indican que --como mínimo-- dos sistemas distintos pueden ser parte de la base del aprendizaje de secuencias\santi{no me quedó claro el hilo conductor. Acá estas hablando de secuencias específicamente pero con los dos enfoques que describiste más arriba? Usás 'aprendizaje estadístico' para referirte a lo que antes llamaste 'enfoque basado en prototipos'?} en el cerebro humano: el aprendizaje estadístico y el aprendizaje basado en reglas~\cite{f4,f67,f85}. Lo que se desconoce es si operan de forma independiente o conjunta, y si alguno es favorecido por sobre el otro en función de la naturaleza de la información a codificar. Argumentamos que cualquier intento por descubrir los mecanismos cognitivos específicos detrás del aprendizaje de reglas en humanos, especialmente en comparación con otras especies, debe tener también en cuenta la contribución de un sistema menos abstracto (sin embargo, poderoso) de predicción basado en las propiedades estadísticas de los eventos. 
 
-Los lenguajes simbólicos pueden describir un vasto conjunto de conceptos a partir de un pequeño conjunto de primitivas y reglas combinatorias. Podemos entenderlo con un ejemplo relativamente simple en el dominio de las formas. Un lenguaje combinatorio similar a Logo~\cite{abelson1974logo} puede combinar símbolos de operaciones como ``mover", ``lápiz arriba", ``lápiz abajo" o ``rotar" para generar un conjunto infinito de expresiones (o programas) que, cuando se evalúan, pueden trasmitir todo tipo de formas.
+Los lenguajes simbólicos pueden describir un vasto conjunto de conceptos a partir de un pequeño conjunto de primitivas y reglas combinatorias. Podemos entenderlo con un ejemplo relativamente simple en el dominio de las formas. Un lenguaje combinatorio similar a Logo~\cite{abelson1974logo} puede combinar símbolos de operaciones como ``mover", ``lápiz arriba", ``lápiz abajo'' o ``rotar" para generar un conjunto infinito de expresiones (o programas) que, cuando se evalúan, pueden trasmitir todo tipo de formas.
 
 Una pregunta natural, sobre la que profundizaremos en la parte \ref{parte:conceptos}, es si las primitivas de un \lot son universales --tanto a través de diferentes individuos como a lo largo del desarrollo-- o si, en cambio, el repertorio semántico de un lenguaje es dinámico y está moldeado por la experiencia. De hecho, es probable que nuestra capacidad para representar automáticamente conceptos de manera sucinta no se deba a un lenguaje eficiente innato en nuestra mente. En cambio, proponemos que esta capacidad surge como un subproducto de nuestro cerebro que aprende rápidamente representaciones eficientes de los conceptos que generalmente encontramos en la vida cotidiana. Examinaremos la hipótesis de que los humanos tienen la capacidad de recombinar rápidamente proposiciones en su \lot, agregando nuevas primitivas a su lenguaje. En otras palabras, ese aprendizaje conduce a un proceso de compilación de rutinas en funciones dentro de el \lot.
 
-En el ejemplo del lenguaje Logo se puede imaginar que si las producciones que dibujan cuadrados son muy frecuentes, sería eficaz dedicar un nuevo símbolo a esta producción. El nuevo símbolo "cuadrado" es una construcción jerárquica de "segundo orden" de las primitivas de "primer orden" del lenguaje. Tiene un costo (de incrementar el léxico del lenguaje) pero en el nuevo lenguaje, dibujar un cuadrado puede ser instanciado con un programa muy corto (es decir, "cuadrado") y por lo tanto usa menos memoria. De hecho, un lenguaje de nivel superior nos permite alcanzar un nivel superior de abstracción al liberar la memoria y el poder de procesamiento, haciendo así pensables pensamientos más complejos ~\cite{minsky1967computation, murphy1988comprehending}.
+En el ejemplo del lenguaje Logo se puede imaginar que si las producciones que dibujan cuadrados son muy frecuentes, sería eficaz dedicar un nuevo símbolo a esta producción. El nuevo símbolo ``cuadrado'' es una construcción jerárquica de {\em segundo orden} de las primitivas de {\em primer orden} del lenguaje. Tiene un costo (el de incrementar el léxico del lenguaje) pero en el nuevo lenguaje, dibujar un cuadrado puede ser instanciado con un programa muy corto (simplemente, {\em cuadrado})\santi{está bien, pero surge la pregunta del tamaño del cuadrado; podemos decir más arriba que compila un cuadrado de tamaño fijo} y por lo tanto usa menos memoria. De hecho, un lenguaje de nivel superior nos permite alcanzar un nivel superior de abstracción al liberar la memoria y el poder de procesamiento, haciendo así pensables pensamientos más complejos~\cite{minsky1967computation, murphy1988comprehending}.
 
 La mayor parte del trabajo en la literatura sobre \lot, aunque incluye naturalmente un mecanismo de aprendizaje, tiende a acercarse al \lot como un sistema estable que deben descubrir los experimentadores, que prueban diferentes plantillas candidatas y seleccionan la que mejor se ajusta a los datos después del entrenamiento ~\cite{goodman2008rational, kemp2012exploring, piantadosi2016logical}. Aún así, queda por descubrir cómo las diferentes trayectorias de la experiencia pueden dar forma a la adquisición de manera diferente y pueden cambiar constantemente el repertorio de un \lot después de cada exposición.
 
@@ -61,12 +61,12 @@ Para poder formalizar la definición del \lot y las nociones de complejidad asoc
 \textbf{Explicar gramáticas}\\
 \textbf{Explicar diferencia entre sintaxis y semántica}\\
 
-El proyecto de análisis bayesiano del aprendizaje de conceptos de modelos LoT utilizando inferencia bayesiana en un espacio de hipótesis estructurado gramaticalmente \cite{goodman2008rational}. Cada propuesta de LoT suele formalizarse mediante una gramática libre de contexto $ \gram $ que define las funciones o programas válidos que se pueden generar, como en cualquier otro lenguaje de programación. Un programa es un árbol de derivación de $ \gram $ que debe interpretarse o ejecutarse de acuerdo con una semántica determinada para obtener una descripción real del concepto en la tarea cognitiva en cuestión. Por lo tanto, cada concepto es luego representado por cualquiera de los programas que lo describen y se define un proceso de inferencia bayesiano para inferir de los datos observados la distribución de programas válidos en $ \gram $ que describen los conceptos.
+El proyecto de análisis bayesiano del aprendizaje de conceptos de modelos LoT utilizando inferencia bayesiana en un espacio de hipótesis estructurado gramaticalmente~\cite{goodman2008rational}. Cada propuesta de LoT suele formalizarse mediante una gramática libre de contexto $ \gram $ que define las funciones o programas válidos que se pueden generar, como en cualquier otro lenguaje de programación. Un programa es un árbol de derivación de $ \gram $ que debe interpretarse o ejecutarse de acuerdo con una semántica determinada para obtener una descripción real del concepto en la tarea cognitiva en cuestión. Por lo tanto, cada concepto es luego representado por cualquiera de los programas que lo describen y se define un proceso de inferencia bayesiano para inferir de los datos observados la distribución de programas válidos en $ \gram $ que describen los conceptos.
 
 \subsection{Composición}
 Los lenguajes combinatorios pueden describir un vasto conjunto de conceptos a partir de un pequeño conjunto de primitivas. Esto se puede entender en un ejemplo relativamente simple en el dominio de las formas. Un lenguaje combinatorio y simbólico similar a Logo ~\cite{abelson1974logo} puede combinar operaciones como "mover", "pluma arriba", "pluma abajo" o "rotar" para generar un conjunto infinito de expresiones (o programas) que, cuando se evalúa, puede transmitir todo tipo de formas.
 
-Un lenguaje que describe conceptos (como formas) también proporciona una noción natural de su complejidad \cite{kolmogorov1968three}. Un concepto es simple, relativo a ese lenguaje, cuando puede describirse mediante un programa corto. Por el contrario, es complejo cuando todas sus descripciones requieren una larga secuencia de instrucciones. Por ejemplo, en el caso del lenguaje Logo, un cuadrado puede simplemente instruirse como un bucle de cuatro desplazamientos seguidos de rotaciones de 90 grados. En este lenguaje, el icono de un rostro se implementará mediante un programa mucho más largo y, por lo tanto, será más complejo. Sin embargo, este concepto sería más sencillo cuando se describiera en un lenguaje en el que el icono de un rostro (o los símbolos de nariz, boca, etc.) estén disponibles como primitivos en el lenguaje.
+Un lenguaje que describe conceptos (como formas) también proporciona una noción natural de su complejidad~\cite{kolmogorov1968three}. Un concepto es simple, relativo a ese lenguaje, cuando puede describirse mediante un programa corto. Por el contrario, es complejo cuando todas sus descripciones requieren una larga secuencia de instrucciones. Por ejemplo, en el caso del lenguaje Logo, un cuadrado puede simplemente instruirse como un bucle de cuatro desplazamientos seguidos de rotaciones de 90 grados. En este lenguaje, el icono de un rostro se implementará mediante un programa mucho más largo y, por lo tanto, será más complejo. Sin embargo, este concepto sería más sencillo cuando se describiera en un lenguaje en el que el icono de un rostro (o los símbolos de nariz, boca, etc.) estén disponibles como primitivos en el lenguaje.
 
 En el dominio de los conceptos booleanos, se estudió una amplia gama de variedades lógicas de conceptos en ~\cite{feldman2003simplicity}, revelando una ley sorprendentemente simple: la dificultad subjetiva de un concepto booleano para un aprendiz humano es directamente proporcional a la longitud del programa compatible más corto en el lenguaje de la lógica proposicional (es decir, variables booleanas combinadas con los operadores \textit{and}, \textit {or} y \textit{not}). Este resultado puede sugerir que el LoT humano está equipado con reglas y símbolos similares a los que se encuentran en la lógica proposicional. De hecho, la correlación entre la dificultad subjetiva de los conceptos y su complejidad se ha utilizado como vehículo general para estudiar el LoT humano en varios dominios ~\cite{piantadosi2016logical, leeuwenberg1971perceptual, amalric2017language, romano2018, lupyan2007language}. Aunque a menudo está implícito, la estrategia general es (\textit{1)} asumir un idioma; (\textit{2)} encontrar el programa compatible más corto para algunos conceptos en ese idioma; (\textit{3)} comparar la duración de estos programas con la dificultad subjetiva de los conceptos; y finalmente (\textit{4)} repetir este proceso para varios idiomas dentro de un universo de posibles candidatos y elegir el idioma que mejor se ajuste en \textit{(3)}. Como se mencionó anteriormente, la longitud del programa depende de las primitivas del lenguaje en el que está escrito este programa, por lo que diferentes lenguajes hacen diferentes predicciones.
 
@@ -86,20 +86,20 @@ En pocas palabras, la suposición es que para minimizar la carga de memoria, los
 
 \widesanti{De esto que sigue podés dejar todo, algo o eliminarlo por completo}
 
-Cuando vemos las cadenas de 26 bits
+\section{Teoría Algorítmica de la Información}
+\widesanti{escribí toda esta sección (28 sept.). Puse ejemplos de programas en pythopn porque me pareció que ayudaba. Si no te gusta, lo sacamos. Obviamente, podes cambiarla como te parezca}
+
+Cuando vemos las palabras de 60 bits
 \begin{align*}
-\sigma_1 &= 10101010101010101010101010,\\
-\sigma_2 &= 00100100001111110110101010, \\
-\sigma_3 &= 11011010010000110101111010,
+\sigma_1 &= 01010101010101010101010101010101010101010101010101010101010,\\
+\sigma_2 &= 00101000101000101000101000101000101000101000101000101000101,\\
+\sigma_3 &= 01111100100011111001010111100011110100000100100011010101010,
 \end{align*}
-tenemos la sensación de que la $\sigma_2$ y la $\sigma_3$
-son {\em más difíciles} o {\em más complejas} que $\sigma_1$. Sin embargo, en términos de
+tenemos la sensación de que  $\sigma_2$ y  $\sigma_3$
+son {\em más difíciles} o {\em más complejas} que $\sigma_1$, y quizá que $\sigma_2$ es más simple que $\sigma_3$. Sin embargo, en términos de
 teoría de la medida, cada una es igual de probable, si provienen de una fuente que emite bits 
 con probabilidad uniforme. 
-La intuición es que las cadenas sencillas tienen patrones reconocibles (como $\sigma_1$) mientras
-que las más complejas no (o al menos no tienen patrones simples). 
-En efecto, con la información adicional de que $\sigma_2$ se compone de los dígitos de 
-la expansión fraccionaria de $\pi$ en binario, esta secuencia --intuitivamente-- se vuelve de inmediato más simple que antes, puesto que aparece una regla para producirla. Lo cierto es que $\sigma_3$ fue generada tirando una moneda y anotando 0 si salía cara y 1 si salía ceca. Nuestra intuición también nos dice que lo más probable es que una cadena generada mediante este procedimiento no tenga patrones reconocibles.
+La intuición es que las palabras sencillas tienen patrones reconocibles (como $\sigma_1$, y, aunque más oculto, $\sigma_2$) mientras que las más complejas no (o al menos no tienen patrones simples). Lo cierto es que $\sigma_3$ fue generada tirando una moneda y anotando 0 si salía cara y 1 si salía ceca. Nuestra intuición también nos dice que lo más probable es que una palabra generada mediante este procedimiento no tenga patrones reconocibles.
 
 Entender por qué
 algunas secuencias parecen aleatorias o complejas mientras que otras no, es una cuestión
@@ -118,10 +118,10 @@ teoría de la computación.
 % que la cadena misma, y las más sencillas son las que admiten un
 % programa sustancialmente más corto. 
 
-La {\em teoría algorítmica de la información}, también
-conocida como {\em teoría de largo de programa} fue iniciada
-independientemente en la década del 60 por Kolmogorov \cite{kolmogorov1965three},
-Solomonoff \cite{solomonoff1964formal} y Chaitin \cite{chaitin1969length}. 
+La Teoría Algorítmica de la Información, también
+conocida como Teoría de Largo de Programa fue iniciada
+independientemente en la década del 60 por Kolmogorov~\cite{kolmogorov1965three},
+Solomonoff~\cite{solomonoff1964formal} y Chaitin~\cite{chaitin1969length}. 
 Esta teoría define una
 noción de complejidad de cada palabra teniendo en cuenta la longitud
 del programa más corto que computa esa palabra. Así, los programas
@@ -142,43 +142,41 @@ Debe
 observarse que en esta definición --todavía informal-- 
 de complejidad de Kolmogorov hay
 un lenguaje de descripción subyacente. La teoría algorítmica de la información
-toma a los lenguajes de programación como lenguaje de descripción. Sin embargo, 
+adopta a los lenguajes de programación como lenguajes de descripción. Sin embargo, 
 hay que notar que una definición en la misma dirección puede aplicarse para 
-otros objetos en el rol de las cadenas binarias (por ejemplo, conjuntos de valuaciones 
+otros objetos en el rol de las palabras binarias (por ejemplo, conjuntos de valuaciones 
 Booleanas) y otros lenguajes de descripción en el rol de lenguajes de programación
 (por ejemplo, fórmulas de la lógica proposicional). En todo caso, es fundamental
 que los lenguajes de descripción tengan una semántica formal para evitar paradojas
 como la de Berry, que propone definir $n$ como el primer número natural que no sea 
-descriptible con menos de 90 caracteres. Por definición la descripción más corta de $n$ debe tener 
-al menos 91 letras, y sin embargo su definición ``el primer número natural que no sea 
-descriptible con menos de cincuenta caracteres'' evidentemente lo describe y tiene 83 caracteres.
+descriptible con menos de 90 caracteres (por definición la descripción más corta de $n$ debe tener al menos 91 letras, y sin embargo su definición ``el primer número natural que no sea descriptible con menos de cincuenta caracteres'' evidentemente lo describe y tiene 83 caracteres).
 
-Desde el punto de 
-vista teórico, la riqueza de la Complejidad de Kolmogorov
-aparece cuando el lenguaje de programación subyacente es 
-Turing completo, 
-es decir, es capaz de definir cualquier función parcial
-computable. En la teoría, los lenguajes de programación se
-formalizan con máquinas de Turing y los lenguajes Turing completos
-como máquinas universales. 
-Cuando el dominio de los programas (máquinas) es libre de prefijos (es decir, no hay dos programas
-que terminan en dónde uno es una extensión propia del otro)
-hablamos de complejidad de Kolmogorov {\em libre de prefijos}
-(denotada con $K$) y cuando no se impone ninguna restricción en
-el dominio, hablamos de complejidad de Kolmogorov plana (denotada
-con $C$). La necesidad de trabajar con dominios libres de prefijos es
-técnica y está vinculada con la utilidad de la complejidad de Kolmogorov 
-para definir nociones de aleatoriedad.
+% Desde el punto de 
+% vista teórico, la riqueza de la Complejidad de Kolmogorov, y su intrincada conexión con la teoría de la computabilidad,
+% aparece cuando el lenguaje de programación subyacente es 
+% Turing-completo, 
+% es decir, es capaz de definir cualquier función parcial
+% computable. En la teoría, los lenguajes de programación se
+% formalizan con máquinas de Turing y los lenguajes Turing-completos
+% como máquinas universales. 
+% Cuando el dominio de los programas (máquinas) es libre de prefijos (es decir, no hay dos programas
+% que terminan en dónde uno es una extensión propia del otro)
+% hablamos de complejidad de Kolmogorov {\em libre de prefijos}
+% (denotada con $K$) y cuando no se impone ninguna restricción en
+% el dominio, hablamos de complejidad de Kolmogorov plana (denotada
+% con $C$). La necesidad de trabajar con dominios libres de prefijos es
+% técnica y está vinculada con la utilidad de la complejidad de Kolmogorov 
+% para definir nociones de aleatoriedad.
 % Esta noción de complejidad es absoluta, pues si bien existe una
 % complejidad distinta por cada máquina universal subyacente, todas
-% estas son iguales salvo una constante aditiva \cite{C94,li2013introduction}.
+% estas son iguales salvo una constante aditiva~\cite{C94,li2013introduction}.
 
-A continuación veremos las definiciones formales de la Complejidad de Kolmogorov y de los
-principales elementos de la Teoría algorítmica de la información.
+% A continuación veremos las definiciones formales de la Complejidad de Kolmogorov y de los
+% principales elementos de la Teoría Algorítmica de la Información.
 
 % Los orígenes del estudio de la aleatoriedad algorítmica se remontan
 % a los trabajos de von Mises de principios del siglo {\small XX}
-% \cite{M19}, en dónde argumentaba que las secuencias aleatorias deben
+%~\cite{M19}, en dónde argumentaba que las secuencias aleatorias deben
 % tener ciertas propiedades de estocasticidad desde el punto de vista
 % de la teoría clásica de la probabilidad.
 
@@ -201,7 +199,7 @@ principales elementos de la Teoría algorítmica de la información.
 % clarificaciones de precisamente qué constituye lo aleatorio fueron
 % hechas recién pasada la mitad del siglo {\small XX}.
 
-% Martin-L\"of \cite{M66} introdujo una noción de aleatoriedad basado
+% Martin-L\"of~\cite{M66} introdujo una noción de aleatoriedad basado
 % en tests estadísticos. La idea es que una secuencia aleatoria
 % debería pasar todo posible test estadístico razonable. Martin-L\"of
 % formaliza esta noción de {\em test estadístico razonable} como un
@@ -209,7 +207,7 @@ principales elementos de la Teoría algorítmica de la información.
 % es que una secuencia es aleatoria cuando evita (es decir, logra
 % escapar de) todos esos conjuntos efectivos de medida $0$.
 
-% Independientemente, Chaitin \cite{C76b} introdujo la noción de
+% Independientemente, Chaitin~\cite{C76b} introdujo la noción de
 % aleatoriedad en términos de la complejidad de Kolmogorov (en
 % realidad, de una variante de esa complejidad que se denomina
 % complejidad {\em libre de prefijos}): las secuencias
@@ -223,161 +221,197 @@ principales elementos de la Teoría algorítmica de la información.
 % efectivo} está involucrada en todas las definiciones de aleatoriedad. 
 
 \subsection{Complejidad de Kolmogorov} \label{INTRO:KOLMOGOROV}
-\widesanti{Introducir la noción formal. Empezar por $K_M$, con $M$ una máquina específica. Luego la $K_U$, con $U$ universal. Dar la versión plana y la libre de prefijos (puesto que esa es la que se usa para el coding theorem). Dar el coding theorem sin demo, solo enunciado.}
+% \widesanti{Introducir la noción formal. Empezar por $K_M$, con $M$ una máquina específica. Luego la $K_U$, con $U$ universal. Dar la versión plana y la libre de prefijos (puesto que esa es la que se usa para el coding theorem). Dar el coding theorem sin demo, solo enunciado.}
 
 
-\widesanti{Podés retomar los ejemplos de $\sigma_1$, $\sigma_2$, $\sigma_3$ de más arriba y explicar que programas cortos los generan. O podés exagerarlos a más bits. Esto da idea de la diferencia entre la descripción y lo descripto (aunque es cierto que la tesis es sobre aprendizaje con POCOS datos...) Para los programas, alcanza con un pseudo código o incluso descripción informal, pero dado que es una tesis en computación, también podés usar un lenguaje verdadero, Python, ponele. Podés también poner alguna otra cadena, $\sigma_4$ en donde haga falta anidar loops, porque eso es importante para el cap 2. Por ejemplo, 000111000 1 000111000 1 000111000}
+% \widesanti{Podés retomar los ejemplos de $\sigma_1$, $\sigma_2$, $\sigma_3$ de más arriba y explicar que programas cortos los generan. O podés exagerarlos a más bits. Esto da idea de la diferencia entre la descripción y lo descripto (aunque es cierto que la tesis es sobre aprendizaje con POCOS datos...) Para los programas, alcanza con un pseudo código o incluso descripción informal, pero dado que es una tesis en computación, también podés usar un lenguaje verdadero, Python, ponele. Podés también poner alguna otra cadena, $\sigma_4$ en donde haga falta anidar loops, porque eso es importante para el cap 2. Por ejemplo, 000111000 1 000111000 1 000111000}
 
 
-\widesanti{Esto que sigue es parte de mi tesis. Podés simplemente traducirlo y dejarlo tal cual. 
-Ojo que hay cosas de más... y muchos comandos latex :P}
+% \widesanti{Esto que sigue es parte de mi tesis. Podés simplemente traducirlo y dejarlo tal cual. 
+% Ojo que hay cosas de más... y muchos comandos latex :P}
 
 
-In this section we introduce the plain and \pfree \kolcomp and we
-mention some known results and standard notation that will be used
-repeatedly in the rest of this thesis. Some other important
-results will be introduced when necessary.
+% In this section we introduce the plain and \pfree \kolcomp and we
+% mention some known results and standard notation that will be used
+% repeatedly in the rest of this thesis. Some other important
+% results will be introduced when necessary.
 
-In algorithmic information theory, programs are regarded as
-algorithmic descriptions of strings. As we mentioned in
-section~\ref{intro:sec:recursion}, we say that a program $\pra$
-{\em $\M$-describes} a string $\sta$ when it is executed in a
-Turing machine $\M$ and produces $\sta$ as output. In general
-there is more than one program describing the same output $\sta$.
-The idea of the \kolcomp introduced in~\cite{kolmogorov1965three,solomonoff1964formal,chaitin1975theory} is to
-take the length of a shortest description as a measure of the
-complexity of the string.
+En esta sección introducimos la definición formal de \kolcomp y mencionamos algunos resultados que se relacionan con el desarrollo de esta tesis. Suponemos que el lector está familiarizado con los elementos básicos de la teoría de la computación, en particular con las máquinas de Turing. Para más información sobre estos temas, se pueden consultar textos clásicos como~\cite{O99,R87,S87}.
 
-\begin{definicion}[Plain \kolcomp]\label{intro:def:plainC}
+Como ya dijimos, en la Teoría Algorítmica de la Información, los programas son vistos como descripciones algorítmicas de palabras. Decimos que un programa $\pra$
+{\em $\M$-describe} una palabra $\sta$ cuando, al ser ejecutado en una máquina $\M$, produce $\sta$ como salida. En general
+hay más de un programa que describe la salida $\sta$.
+La idea de la \kolcomp introducida en~\cite{kolmogorov1965three,solomonoff1964formal,chaitin1975theory} es tomar la longitud de la descripción más corta como una medida de la complejidad de la palabra. Si $\pra$ es un programa de una máquina de Turing, notamos $\len{\pra}$ a la {\em longitud} de $\pra$, es decir, a la cantidad de símbolos que tiene. Por $\words$ notamos al conjunto de palabras finitas formadas por los símbolos $0$ y $1$. Las definiciones que siguen fijan en $\words$ al alfabeto de programas y al de descripciones como por simplicidad. Sin embargo todas estas definiciones siguen teniendo sentido cuando los alfabetos de los programas son distintos a los de las palabras que describen; el único requerimiento es que ambos alfabetos sean finitos.
+%
+\begin{definicion}[\kolcomp]\label{intro:def:plainC}
 $\CM\colon\words \to \nat$, 
-the {\em plain
-\kolcomp with respect to the Turing machine $\M$}, is defined as
+La {\em 
+\kolcomp con respecto a la máquina $\M$}, se define como
 $$
 \CM(\sta)=
     \begin{cases}
-    \min \{\len{\pra}\colon \M(\pra)=\sta \} & \textrm{if $\sta$ is in the range of $\M$};\\
-    \infty & \textrm{otherwise.}
+    \min \{\len{\pra}\colon \M(\pra)=\sta \} & \textrm{si $\sta$ está en el rango de $\M$};\\
+    \infty & \textrm{caso contrario.}
     \end{cases}
 $$
 \end{definicion}
 
 
+% \widesanti{acá hablar solo de la complejidad plana. Decir que la complejidad relativa a una máquina universal es la más chica entre todas las complejidades (salvo cte aditiva). Decir que para algunas máquinas particulares la complejidad es una función computable y dar un ejemplo simple - podria ser una máquina que dado n representando un número en binario, devuelve 0000... n veces; o una máquina que sencillamente copia la entrada en la salida. Decir algo sobre el counting como está acá 
 
+% https://www.dropbox.com/s/w95pz1euie8a39r/Li-Vitanyi.pdf?dl=0
 
-\widesanti{acá hablar solo de la complejidad plana. Decir que la complejidad relativa a una máquina universal es la más chica entre todas las complejidades (salvo cte aditiva). Decir que para algunas máquinas particulares la complejidad es una función computable y dar un ejemplo simple - podria ser una máquina que dado n representando un número en binario, devuelve 0000... n veces; o una máquina que sencillamente copia la entrada en la salida. Decir algo sobre el counting como está acá 
+% en Def 2.2.1 y párrafo siguiente (pag 116)
 
-https://www.dropbox.com/s/w95pz1euie8a39r/Li-Vitanyi.pdf?dl=0
+% Tal vez podemos decir que la def de Kolmogorov complexity induce la idea de MDL. 
 
-en Def 2.2.1 y párrafo siguiente (pag 116)
+% No hablar nada de prefix machines o prefix complexity en la intro. Sacar lo de Craft Chaitin y lo de oráculos.
 
-Tal vez podemos decir que la def de Kolmogorov complexity induce la idea de MDL. No sé como lo tenías pensado... veo que hay un cap sobre MDL. En algún lugar de la intro, hacer la conexión entre nuestras definiciones de MDL y la def de Kolm compl (eg para definir la la compl kolm relativa a la máquina $M$, ($C_M$) la semántica de un programa $p$ es el resultado de su ejecución en  $M$, $\sem{p}_M=M(p)$)
-
-
-No hablar nada de prefix machines o prefix complexity en la intro. Sacar lo de Craft Chaitin y lo de oráculos.
-
-Pasar la def. de prefix machines, prefix complexity y coding thm al cap 3
-}
+% Pasar la def. de prefix machines, prefix complexity y coding thm al cap 3
+% }
 
 
 \begin{definicion}[\Optity]\label{intro:def:optimal}
-\index{Turing!machine!universal@\opt} $\U$ is a {\em \opt} \pfree
-(resp.\ classical) Turing machine if and only if
+\index{Turing!machine!universal@\opt} $\U$ es una máquina de Turing {\em \opt}  si y solo si
 $$
 (\forall e)(\exists c_e)(\forall \pra)(\exists \prb_{e,\pra})\,
 [\U(\prb_{e,\pra})=\T_e(\pra) \ \wedge \len{\prb_{e,\pra}}\leq
 \len{\pra}+c_e],
 $$
-where $\T_0,\T_1,\T_2,\dots$ is an enumeration of all the \pfree
-(resp.\ classical) Turing machines
+donde $\T_0,\T_1,\T_2,\dots$ es una enumeración de todas las máquinas de Turing.
 \end{definicion}
 
-When working with oracles, $\U$ will be \opt if it may simulate
-{\em any} other machine with {\em any} oracle, so it is {\em
-universally universal}. In the case of an \pfree \opt machine,
-$\U^A$ will be \pfree for all $A\subseteq\nat$.
+% When working with oracles, $\U$ will be \opt if it may simulate
+% {\em any} other machine with {\em any} oracle, so it is {\em
+% universally universal}. In the case of an \pfree \opt machine,
+% $\U^A$ will be \pfree for all $A\subseteq\nat$.
 
-In general we use the same letter $\U$ for denoting both a
-classical \opt machine and a \pfree \opt machine; it will always
-be clear from the context which one we refer to. In~\cite{chaitin1975theory}
-Chaitin called these machines {\em optimal universal}, because
-they permit us to define the \kolcomp in an {\em optimal} way:
+% In general we use the same letter $\U$ for denoting both a
+% classical \opt machine and a \pfree \opt machine; it will always
+% be clear from the context which one we refer to. In~\cite{chaitin1975theory}
+% Chaitin called these machines {\em optimal universal}, because
+% they permit us to define the \kolcomp in an {\em optimal} way:
 
-\widesergio{Def1, 3 y 4 pero con las maquinas comunes nada prefijos. Y pasar la 2 y teorema de codificacion. Buscar si Counting aplica a complejidad comun. Si es así quedan, sino salen. Sacar definicion 5. Mover Coding Teorem y sacar definicion 7 que ya no aplica}
 
-\begin{teorema}[Invariance]\label{intro:thm:invariance}
-\index{Invariance Theorem} If $\U$ is \opt \pfree (resp.\
-classical) Turing machine then for any \pfree (resp.\ classical)
-Turing machine $\M$ there is a constant $c$ such that for all
-$\sta\in\words$, $\KU(\sta)\leq \KM(\sta)+c$ (resp.\
-$\CU(\sta)\leq \CM(\sta)+c$).
+
+Un lenguaje de programación es {\em Turing-completo} si permite definir cualquier función parcial computable. Python, C o Haskell son lenguajes Turing-computables. Los lenguajes Turing-completos inducen una definición de máquina universal. Por simplicidad, tomemos como alfabeto de programas el código ASCII y supongamos que $\U$ es la máquina que interpreta programas en Python. El siguiente programa 
+\begin{verbatim}
+    s=""
+    for i in range(30):
+        s=s+"10"
+    print(s)
+\end{verbatim}
+describe la cadena $\sigma_1$ descripta más arriba. Este programa tiene longitud 44, de modo que $\CU(\sta_1)\leq 44$. Por otro lado, el siguiente programa
+\begin{verbatim}
+    s=""
+    for i in range(30):
+        s=s+"0"
+        if i%3==0:
+            s=s+"0"
+        else:
+            s=s+"1"
+    print(s)
+\end{verbatim}
+tiene longitud 82 y describe a la secuencia $\sigma_2$ y por lo tanto $\CU(\sta_2)\leq 82$. Finalmente, el programa
+\begin{verbatim}
+    print("001111100100011111001010111100011110100000100100011010101010")
+\end{verbatim}
+tiene longitud 69 y por lo tanto $\CU(\sta_3)\leq 69$. Notar que en todas las menciones a $\CU$ en los ejemplos anteriores consideramos cotas superiores; efectivamente, no estamos seguros de que los programas que describimos sean los minimales.
+
+Extendamos ahora las secuencias $\sigma_1$, $\sigma_2$ y $\sigma_3$ a $\sigma_1'$, $\sigma_2'$ y $\sigma_3'$ respectivamente, con 120 bits en lugar de 60. Tendremos descripciones de la misma longitud para $\sigma_1'$ y $\sigma_2'$ (basta reemplazar `30' por `60' en el código. Sin embargo, la mejor descripción que nos viene a la mente para $\sigma_3'$ es un programa que sencillamente escriba $\sigma_3'$ textualmente, que tiene cerca de 120 símbolos.
+
+Un resultado fundamental de la Teoría Algorítmica de la Información es que la complejidad de Kolmogorov relativa a una máquina universal no es computable. Sin embargo, si suponemos que $\sigma_3'$ fue generada al azar, entonces la teoría indica que con alta probabilidad, $\CU(\sigma_3)$ será cercana a la longitud de la cadena descripta, es decir, cercana a 120.
+
+% Observar que el argumento anterior no varía su esencia si consideramos un alfabeto binario para el conjunto de programas, como indica la teoría. En efecto, cada símbolo usado para definir un programa de Python podría ser transformado en una palabra de 7 bits mediante el código ASCII, por ejemplo. Así, tendríamos que multiplicar por 7 las cotas a la complejidad que mencionamos más arriba.
+
+
+Decimos que una cadena $\sta$ es $c$-compleja con respecto a $\M$ si $\CM(\sta)\geq |\sta|-c$. Por un simple argumento de conteo sobre programas sobre un alfabeto binario (para otros alfabetos, el resultado es similar), se puede ver que para cualquier máquina $\M$, la cantidad de cadenas $\sta$ de longitud $n$ que son $c$-complejas con respecto a $\M$ es como mínimo $2^n-2^{n-c}+1$. Entonces hay como mínimo 1 cadena de longitud $n$ que es 0-compleja, como mínimo la mitad de las cadenas de longitud $n$ son 1-complejas, por lo menos tres cuartos de las de las cadenas de longitud $n$ son 2-complejas. En general, de las $2^n$ cadenas de longitud $n$, la parte $(1-1/2^c)$ son $c$-complejas.
+
+% Siguiendo con el ejemplo de la máquina universal sobre el lenguaje Python, observemos que la cantidad de programas de tamaño a lo sumo $n$ es 
+% $$
+% \sum_{k=0}^n r^k=\frac{1-r^{n+1}}{1-r}
+% $$
+% donde $r$ es la cantidad de elementos del alfabeto de programas --en el caso de ASCII, será $r=2^7=128$.
+
+Como dijimos antes, la complejidad de Kolmogorov relativa a una máquina universal (o a un lenguaje Turing-completo, como Python en el ejemplo anterior) no es computable. Sin embargo, para lenguajes que no son Turing-completos, diseñados con un propósito específico de describir ciertos tipos de objetos, la complejidad asociada se podría volver computable. En esta tesis se explota en repetidas ocasiones este hecho fundamental.
+
+Terminamos esta sección con un resultado fundamental de la teoría:
+%
+\begin{teorema}[Invariancia]\label{intro:thm:invariance}
+\index{Invariance Theorem} Si $\U$ es una máquina de Turing \opt entonces para toda máquina de Turing $\M$ hay una constante $c$ tal que para todo
+$\CU(\sta)\leq \CM(\sta)+c$.
 \end{teorema}
+%
+Entonces para cualesquiera dos máquinas universales $\U$ y $\V$, la
+\kolcomp con respecto a $\U$ y a $\V$ es la misma salvo una constante aditiva, es decir, hay una constante  $c$ tal que 
+$\abs{\CU(\sta)-\CV(\sta)}\leq c$ para cualquier palabra $\sta\in\words$. Así, la complejidad de Kolmogorov pasa a ser una noción absoluta, si se acepta una variación hasta la constante $c$. 
 
-Hence for any two \pfree \opt machines $\U$ and $\V$, the \pfree
-\kolcomp with respect to $\U$ and $\V$ is the same up to an
-additive constant, i.e.\ there is some constant $c$ such that
-$\abs{\KU(\sta)-\KV(\sta)}\leq c$ for any $\sta\in\words$. Of
-course the same is true for classical machines and $\C$. If there
-is no need to refer to the underlying \opt machine $\U$, one just
-writes \glossary{$\K$}$\K$ for $\KU$ and \glossary{$\C$}$\C$ for
-$\CU$. In this way, $\K$ and $\C$ become an {\em absolute} measure
-of the complexity of the strings.
+La riqueza de la Teoría de la Información Algorítmica en relación a nociones de aleatoriedad y vínculos con la Teoría de la Computabilidad se da cuando analizamos la complejidad de Kolmogorov relativa una máquina universal/lenguaje Turing-completo --cualquiera de ellos, gracias al teorema anterior. En esta tesis se estudia la complejidad de Kolmogorov relativa a lenguajes específicos, no universales, suficientemente expresivos como para describir distintos aspectos del objeto de estudio, pero suficientemente simples como para lograr una noción de complejidad que resulte computable.
 
-To illustrate some useful application of the Invariance Theorem,
-let us see some upper bounds for $\K$ and $\C$. Imagine a
-classical machine $\M$ that reads the input $\sta$ and writes
-$\sta$ as its own output. Then $\CM(\sta)=\len{\sta}$ for all
-$\sta\in\words$ and by the Invariance
-Theorem~\ref{intro:thm:invariance} this shows that for all $\sta$,
-$\C(\sta)\leq \len{\sta}+c$ for some constant $c$. With \pfree
-machines the situation is a bit different because the machine has
-to discover by itself where the end of the input is. Suppose $\U$
-is any \opt \pfree machine and suppose $\pra_\sta$ is a minimal
-$\U$-description of $\len{\sta}$. This just means that
-$\U(\pra_\sta)=\len{\sta}$ and $\len{\pra_\sta}=\K(\len{\sta})$.
-Then there is a \pfree machine $\N$ that with input
-$\pra_\sta\sta$ can do the following: fist simulate $\U$ step by
-step. Each time $\U$ asks for reading one more bit, $\N$ obeys and
-reads from its own input. Eventually $\U$ will read the whole
-$\pra_\sta$ and will terminate with $\U(\pra_\sta)=\len{\sta}$ as
-output. Now $\N$ (which is still running) knows that exactly
-$\len{\sta}$ more bits need to be read from the input. So $\N$
-reads $\len{\sta}$ bits from the input and recovers $\sta$.
-Afterwards, $\N$ writes $\sta$ in the output and terminates. This
-shows that $\N(\pra_\sta\sta)=\sta$. Of course, if the input is
-wrong, the computation may go wrong, for example $\N$ can try to
-read beyond the end of the input and then crashes. However, when
-the input is of the form $\pra_\sta\sta$, $\N$ always outputs
-$\sta$. By the invariance Theorem \ref{intro:thm:invariance} this
-shows that $\K(\sta)\leq \len{\pra_\sta\sta} + d =
-\K(\len{\sta})+\len{\sta}+d$ for some constant $d$. These upper
-bounds on $\C$ and $\K$ will be repeatedly used in the thesis. We
-will also use that for any $n$ there is a string $\sta$ of length
-$n$ such that $\K(\sta)\geq n$. This is true because there are at
-most $2^n-1$ programs of length less than $n$ but $2^n$ strings of
-length $n$. The same holds for $\C$. In fact,
-Chaitin~\cite{chaitin1975theory,C87b} showed that there is a constant $c$ such
-that for all $d\in\nat$ and all $n$
-$$
-\size{\{ \sta \colon \len{\sta}=n \wedge \K(\sta)\leq n + \K(n)-d
-\}} \leq 2^{n-d+c}
-$$
-This result is usually called \index{Counting Theorem}Counting\santi{estos resultados de 'counting' pueden ser interesantes porque justifican algo que decimos en el cap 2. Buscar mi comentario con ***}
-Theorem, tells us that only a small fraction of all the strings of
-length $n$ have \pfree \kolcomp below $n+\K(n)-d$, when we take
-$d$ much bigger than $c$.
-Observe that if we let $d=n-b$, we obtain
-$$
-\size{\{ \sta \colon \len{\sta}=n \wedge \K(\sta)\leq \K(n)+b
-\}} \leq 2^{b+c}
-$$
-and this last upper bound depends on $b$ and $c$, but not on $n$.
 
-As we explained in the last paragraph, one way to bound the
-\kolcomp is to explicitly design specific machines, like $\M$ or
-$\N$ and explain their behavior. Another powerful method to
-implicitly build \pfree machines and upper bound the \pfree
-\kolcomp is via a Kraft-Chaitin set. This method consists of an
-effective interpretation of an inequality of Kraft~\cite{K49}:
+% Of
+% course the same is true for classical machines and $\C$. If there
+% is no need to refer to the underlying \opt machine $\U$, one just
+% writes \glossary{$\K$}$\K$ for $\KU$ and \glossary{$\C$}$\C$ for
+% $\CU$. In this way, $\K$ and $\C$ become an {\em absolute} measure
+% of the complexity of the strings.
+
+% To illustrate some useful application of the Invariance Theorem,
+% let us see some upper bounds for $\K$ and $\C$. Imagine a
+% classical machine $\M$ that reads the input $\sta$ and writes
+% $\sta$ as its own output. Then $\CM(\sta)=\len{\sta}$ for all
+% $\sta\in\words$ and by the Invariance
+% Theorem~\ref{intro:thm:invariance} this shows that for all $\sta$,
+% $\C(\sta)\leq \len{\sta}+c$ for some constant $c$. With \pfree
+% machines the situation is a bit different because the machine has
+% to discover by itself where the end of the input is. Suppose $\U$
+% is any \opt \pfree machine and suppose $\pra_\sta$ is a minimal
+% $\U$-description of $\len{\sta}$. This just means that
+% $\U(\pra_\sta)=\len{\sta}$ and $\len{\pra_\sta}=\K(\len{\sta})$.
+% Then there is a \pfree machine $\N$ that with input
+% $\pra_\sta\sta$ can do the following: fist simulate $\U$ step by
+% step. Each time $\U$ asks for reading one more bit, $\N$ obeys and
+% reads from its own input. Eventually $\U$ will read the whole
+% $\pra_\sta$ and will terminate with $\U(\pra_\sta)=\len{\sta}$ as
+% output. Now $\N$ (which is still running) knows that exactly
+% $\len{\sta}$ more bits need to be read from the input. So $\N$
+% reads $\len{\sta}$ bits from the input and recovers $\sta$.
+% Afterwards, $\N$ writes $\sta$ in the output and terminates. This
+% shows that $\N(\pra_\sta\sta)=\sta$. Of course, if the input is
+% wrong, the computation may go wrong, for example $\N$ can try to
+% read beyond the end of the input and then crashes. However, when
+% the input is of the form $\pra_\sta\sta$, $\N$ always outputs
+% $\sta$. By the invariance Theorem \ref{intro:thm:invariance} this
+% shows that $\K(\sta)\leq \len{\pra_\sta\sta} + d =
+% \K(\len{\sta})+\len{\sta}+d$ for some constant $d$. These upper
+% bounds on $\C$ and $\K$ will be repeatedly used in the thesis. We
+% will also use that for any $n$ there is a string $\sta$ of length
+% $n$ such that $\K(\sta)\geq n$. This is true because there are at
+% most $2^n-1$ programs of length less than $n$ but $2^n$ strings of
+% length $n$. The same holds for $\C$. In fact,
+% Chaitin~\cite{chaitin1975theory,C87b} showed that there is a constant $c$ such
+% that for all $d\in\nat$ and all $n$
+% $$
+% \size{\{ \sta \colon \len{\sta}=n \wedge \K(\sta)\leq n + \K(n)-d
+% \}} \leq 2^{n-d+c}
+% $$
+% This result is usually called \index{Counting Theorem}Counting\santi{estos resultados de 'counting' pueden ser interesantes porque justifican algo que decimos en el cap 2. Buscar mi comentario con ***}
+% Theorem, tells us that only a small fraction of all the strings of
+% length $n$ have \pfree \kolcomp below $n+\K(n)-d$, when we take
+% $d$ much bigger than $c$.
+% Observe that if we let $d=n-b$, we obtain
+% $$
+% \size{\{ \sta \colon \len{\sta}=n \wedge \K(\sta)\leq \K(n)+b
+% \}} \leq 2^{b+c}
+% $$
+% and this last upper bound depends on $b$ and $c$, but not on $n$.
+
+% As we explained in the last paragraph, one way to bound the
+% \kolcomp is to explicitly design specific machines, like $\M$ or
+% $\N$ and explain their behavior. Another powerful method to
+% implicitly build \pfree machines and upper bound the \pfree
+% \kolcomp is via a Kraft-Chaitin set. This method consists of an
+% effective interpretation of an inequality of Kraft~\cite{K49}:
 
 %\begin{definicion}[Kraft-Chaitin set]\label{intro:KCset}
 %\index{Kraft-Chaitin} A \ce\ set
@@ -405,14 +439,21 @@ effective interpretation of an inequality of Kraft~\cite{K49}:
 %states that there is a constant $c$ such that for all $i$,
 %$\K(\sta_i)\leq\min\{m\colon\pair{m}{\sta_i}\in W\}+c$.
 
-\bigskip
 
 
-\subsubsection{Inducción de Solomonoff}
-\widesanti{Algo corto. Está bien explicado en el Vitanyi}
+\subsection{MDL}
+\widesanti{
 
-\subsubsection{MDL}
-\widesanti{Acá hay varios trabajos para referenciar. Se puede mover parte de la intro de capítulo 2. Sería bueno poner la descripción del lenguaje de geometría, como ejemplo de lenguaje específico no Turing completo que describe secuencias espaciales. Estaría bueno dar la semántica formal (yo la tenía en algún lado), puesto que es una tesis en computación. Esta misma semántica se vuelve a dar en el cap 2, pero simplificada, dado que son solo 2 puntos.} 
+Hacer explicito que hay un lenguaje de descripción por un lado y objetos descriptos por otro. Hacer la conexión entre nuestras definiciones de MDL y la def de Kolm compl (eg para definir la la compl kolm relativa a la máquina $M$, ($C_M$) la semántica de un programa $p$ es el resultado de su ejecución en  $M$, $\sem{p}_M=M(p)$). Algo puse en el cap de Kolmogorov.
+
+Poner referencias, aunque no sé bien cuales. Ver el Vitanyi.
+}
+ 
+\subsection{Inducción de Solomonoff}
+\widesanti{Algo corto. Está bien explicado en el Vitanyi
+
+Ahora que releo, me pregunto si hace falta... ¿Lo usamos en la tesis?
+}
 
 
 \section{Sin ubicar:}
@@ -428,9 +469,9 @@ Probabilities defined over richly structured symbolic representations: spaces, g
 Hierarchical models, transfer learning, herramientas papers
 
 
-La mayoría de los estudios de LoT se han centrado en el aspecto compositivo del lenguaje, que se ha modelado dentro de un \cite{tenenbaum2011grow} bayesiano o un marco \cite{marie2016, goldsmith2002probabilistic, romano2013language, goldsmith2001unsupervised} de longitud mínima de descripción (MDL).
+La mayoría de los estudios de LoT se han centrado en el aspecto compositivo del lenguaje, que se ha modelado dentro de un~\cite{tenenbaum2011grow} bayesiano o un marco~\cite{marie2016, goldsmith2002probabilistic, romano2013language, goldsmith2001unsupervised} de longitud mínima de descripción (MDL).
 
-El método común es definir una gramática con un conjunto de producciones basadas en operaciones que son intuitivas para los investigadores y luego estudiar cómo diferentes procesos de inferencia coinciden con patrones regulares en el aprendizaje humano. Un estudio reciente \cite{piantadosi2016logical} pone el foco en el proceso de cómo elegir empíricamente el conjunto de producciones y cómo diferentes definiciones de LoT pueden crear diferentes patrones de aprendizaje. 
+El método común es definir una gramática con un conjunto de producciones basadas en operaciones que son intuitivas para los investigadores y luego estudiar cómo diferentes procesos de inferencia coinciden con patrones regulares en el aprendizaje humano. Un estudio reciente~\cite{piantadosi2016logical} pone el foco en el proceso de cómo elegir empíricamente el conjunto de producciones y cómo diferentes definiciones de LoT pueden crear diferentes patrones de aprendizaje. 
 
 \subsection{Ciencia Cognitiva Bayesiana}
 \label{INTRO:BAYES}
