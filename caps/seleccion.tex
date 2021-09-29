@@ -102,7 +102,6 @@ donde $P(d_i \mid p_i) = 1 $ si $\sem{p_i} = d_i$ (el programa $p_i$ computa $d_
 %Calculating $P(\theta \mid D)$ directly is, however, not tractable since it requires to sum over all possible combinations of programs $\Prog$ for each of the possible values of $\theta$. To this aim, then, we used a Gibbs Sampling~\cite{geman1984stochastic} algorithm for PCFGs via Markov Chain Monte Carlo (MCMC) similar to the one proposed at~\cite{johnson2007bayesian}, which alternates in each step of the chain between the two conditional distributions:
 
 Sin embargo, calcular $P(\theta \mid D)$ de manera directa no es computacionalmente tratable ya que requiere sumar todas las posibles combinaciones de programas $\Prog$ para cada uno de los posibles valores de $\theta$. Para este objetivo, utilizamos entonces el algoritmo de muestreo de Gibbs~\cite{geman1984stochastic} para PCFGs a través del Método de Monte Carlo basado en cadenas de Markov (MCMC, por sus siglas en inglés) similar al propuesto en~\cite{johnson2007bayesian}. Este método nos permite obtener una secuencia de muestras aleatorias para aproximar la distribución $P(\theta \mid D)$ a partir de la toma de muestras de manera alternada entre las distribuciones condicionales $P(\Prog \mid \theta, D)$ y $P(\theta \mid \Prog, D)$, las cuales sí pueden calcularse de manera directa. Dado que los algoritmos MCMC como este generan una secuencia de muestras donde cada una se correlaciona con muestras cercanas, las muestras del comienzo de la cadena suelen descartarse hasta que los valores se estabilizan (iteraciones de \textit{burn in}).
-
 %
 \begin{eqnarray*}
 \label{eqE}
@@ -429,22 +428,20 @@ $$
 %The classical notion of universality from computability theory is redefined in the algorithmic information theory. We will use the word {\em \opt} for denoting machines like $\V$ defined in(\ref{intro:eqn:usualUniversalMachine}) that somehow simulate every other machine at no noticeable extra cost in the length.
 
 Cuando $\M$ es una máquina autodelimitante universal, hablaremos directamente de complejidad de Kolmgorov libre de prefijos y la denotaremos como $\K$. La complejidad $\K$ está relacionada con la probabilidad de que una máquina libre de prefijos produzca una cadena dada. Esta probabilidad se define como \glossary{$P$}:
-
+%
 \begin{eqnarray}
 P_{\M}(\sta)&=&\measure{\open{\{\pra\colon\M(\pra)=\sta\}}}\nonumber\\
 &=&\sum_{\pra\colon\M(\pra)=\sta}2^{-\len{\pra}}.\label{intro:eqn:coding}
 \end{eqnarray}
-
+%
 Para todo $\sta$, podemos ver que $2^{-\K(\sta)}\leq P_{\U}(\sta)$, ya que una descripción-$\M$ más corta de $\sta$ ya contribuye a la suma en la ecuación (\ref{intro:eqn:coding}). El siguiente resultado, conocido como el Teorema de la Codificación \cite{levin1974laws,G74,chaitin1975theory}, establece que la otra desigualdad también es verdadera, excepto por una constante multiplicativa.
-
+%
 \begin{teorema}[\index{Coding Theorem}Teorema de Codificación]\label{intro:thm:coding} Para cada máquina libre de prefijos $\M$, se puede encontrar una constante $c$ tal que $ (\forall
 \sta\in\words)\ 2^{c-\K(\sta)}\geq P_{\M}(\sta). $
 \end{teorema}
-
+%
 Para más información sobre el Teorema de Codificación, se puede consultar \cite{li2013introduction}.
 \cite{DHBook}.
-
-\bigskip
 
 %\index{Program-size complexity@\kolcomp!\computable@\comp approximation} Although $\K$ and $\C$ are not \comp functions, they can be \recly approximated from above using the step by step approximation of $\U$. \glossary{$\K_s$}$\K_s(\sta)$ is the approximation at stage $s$ of $\K(\sta)$ defined by $\K_s(\sta)=\min\{\len{\pra}\colon \U_s(\pra)=\sta\}\cup\{\infty\}$. Observe that $\K_s(\sta)\to\K(\sta)$ when $s\to\infty$. The same holds for \glossary{$\C_s$}${\C_s}$.
 
