@@ -285,7 +285,6 @@ $\sem{I}_n \eqdef \underbrace{\sem{P}_{n_0} \concat \dots \concat \sem{P}_{n_i}}
 \end{itemize}
 
 Finalmente, si $P=$ \verb#[# $I$ \verb#]#, entonces $\sem{P}_n\eqdef\sem{I}_n$, 
-
 y si $P=$\verb#[# $I_1$ \verb#,# $I_2$ \verb#,# \dots \verb#,# $I_\ell$ \verb#]# con $\ell>1$, entonces
 
 \begin{center}
@@ -325,7 +324,7 @@ $$
 
 
 
-\paragraph{Ejemplos}
+\paragraph{Ejemplos}\santi{estos ejemplos no tendrían que estar antes del paragraph de complejidad?}
 
 \begin{itemize}
 \item  $\llbracket$\verb#[+1,-1]#$\rrbracket_1 = 21$
@@ -439,7 +438,7 @@ En la Figura \ref{fig:grambin} definimos la gramática para $\grambin$. Los {\em
 \label{fig:grambin}
 \end{figure}
 
-\paragraph{La semántica de \grambin}
+\paragraph{La semántica de \grambin.}
 
 Al igual que en \grambin, la semántica de un programa $P$ viene dada por un par $(P,n)$, donde $P$ es un programa válido de \grambin y $n$ es un número natural entre 0 y 1 en este caso. Denotaremos con $\sem{P}_n$ a la semántica de tal par, y será una secuencia no vacía de números naturales sobre el alfabeto $\{0,1\}$. Intuitivamente, $\sem{P}_n$ representa o describe una secuencia binaria, cuando se `ejecuta' $P$ a partir del símbolo $0$ o del símbolo $1$. 
 
@@ -454,7 +453,7 @@ La definición de la gramática \grambin respeta las mismas reglas que \gramgeo.
 
 \end{itemize}
 
-Formalmente,
+Formalmente,\santi{podemos simplemente poner $1-n$? y aclarar que $n$ es 0 o 1}
 
 \begin{tabular}{cc}
     \begin{minipage}[t]{0.45\textwidth}
@@ -469,7 +468,7 @@ Formalmente,
 
 La semántica de las producciones básicas se mantiene igual que en \gramgeo.
 
-\paragraph{Complejidad para \grambin} 
+\paragraph{Complejidad para \grambin.} 
 
 Si $\alpha$ es un programa o una instrucción de \grambin, definimos el {\em tamaño} de $\alpha$, notado $|\alpha|$ exactamente igual que para \grambin. Es decir:
 %
