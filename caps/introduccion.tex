@@ -293,8 +293,7 @@ donde $\T_0,\T_1,\T_2,\dots$ es una enumeración de todas las máquinas de Turin
 % they permit us to define the \kolcomp in an {\em optimal} way:
 
 
-
-Un lenguaje de programación es {\em Turing-completo} si permite definir cualquier función parcial computable. Python, C o Haskell son lenguajes Turing-computables. Los lenguajes Turing-completos inducen una definición de máquina universal. Por simplicidad, tomemos como alfabeto de programas el código ASCII y supongamos que $\U$ es la máquina que interpreta programas en Python. El siguiente programa 
+Las máquinas universales existen y son aquellas que permiten `simular' cualquier otra máquina. Análogamente, un lenguaje de programación es {\em Turing-completo} si permite definir cualquier función parcial computable. Python, C o Haskell son lenguajes Turing-computables. Los lenguajes Turing-completos inducen una definición de máquina universal. Por simplicidad, tomemos como alfabeto de programas el código ASCII y supongamos que $\U$ es la máquina que interpreta programas en Python. El siguiente programa 
 \begin{verbatim}
     s=""
     for i in range(30):
@@ -314,12 +313,18 @@ describe la cadena $\sigma_1$ descripta más arriba. Este programa tiene longitu
 \end{verbatim}
 tiene longitud 82 y describe a la secuencia $\sigma_2$ y por lo tanto $\CU(\sta_2)\leq 82$. Finalmente, el programa
 \begin{verbatim}
-    print("001111100100011111001010111100011110100000100100011010101010")
+    print("001111100100011111001010111
+    100011110100000100100011010101010")
 \end{verbatim}
 tiene longitud 69 y por lo tanto $\CU(\sta_3)\leq 69$. Notar que en todas las menciones a $\CU$ en los ejemplos anteriores consideramos cotas superiores; efectivamente, no estamos seguros de que los programas que describimos sean los minimales.
 
-Extendamos ahora las secuencias $\sigma_1$, $\sigma_2$ y $\sigma_3$ a $\sigma_1'$, $\sigma_2'$ y $\sigma_3'$ respectivamente, con 120 bits en lugar de 60. Tendremos descripciones de la misma longitud para $\sigma_1'$ y $\sigma_2'$ (basta reemplazar `30' por `60' en el código. Sin embargo, la mejor descripción que nos viene a la mente para $\sigma_3'$ es un programa que sencillamente escriba $\sigma_3'$ textualmente, que tiene cerca de 120 símbolos.
-
+Extendamos ahora las secuencias $\sigma_1$, $\sigma_2$ y $\sigma_3$ a $\sigma_1'$, $\sigma_2'$ y $\sigma_3'$ respectivamente, con 120 bits en lugar de 60. Tendremos descripciones de la misma longitud para $\sigma_1'$ y $\sigma_2'$ (basta reemplazar `30' por `60' en el código. Sin embargo, la mejor descripción que nos viene a la mente para $\sigma_3'$ es un programa que sencillamente escriba $\sigma_3'$ textualmente, que tiene cerca de 120 símbolos:
+\begin{verbatim}
+    print("001111100100011111001010111
+    1000111101000001001000110101010101
+    1101111111001001011110000011110001
+    0110101101100110001110011")
+\end{verbatim}
 Un resultado fundamental de la Teoría Algorítmica de la Información es que la complejidad de Kolmogorov relativa a una máquina universal no es computable. Sin embargo, si suponemos que $\sigma_3'$ fue generada al azar, entonces la teoría indica que con alta probabilidad, $\CU(\sigma_3)$ será cercana a la longitud de la cadena descripta, es decir, cercana a 120.
 
 % Observar que el argumento anterior no varía su esencia si consideramos un alfabeto binario para el conjunto de programas, como indica la teoría. En efecto, cada símbolo usado para definir un programa de Python podría ser transformado en una palabra de 7 bits mediante el código ASCII, por ejemplo. Así, tendríamos que multiplicar por 7 las cotas a la complejidad que mencionamos más arriba.
