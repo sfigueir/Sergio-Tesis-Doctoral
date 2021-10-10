@@ -5,7 +5,7 @@
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 
-\usepackage[utf8]{inputenc}
+\usepackage[utf8x]{inputenc}
 \usepackage[spanish]{babel}
 
 \decimalpoint
@@ -20,6 +20,7 @@
 \usepackage{hyperref}
 \usepackage{glossaries}
 \usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
 \usepackage{fancyvrb}
 \usepackage{algorithm2e}
 
@@ -125,10 +126,11 @@
         \include{app_plos_comp_bio}
         \include{app_plos_one}
         \include{app_behavior_research_methods}
+    \addcontentsline{toc}{chapter}{Bibliografía}
     \bibliographystyle{plain-spanish}
     %\bibliographystyle{apa}
     \bibliography{biblio}
-    \addcontentsline{toc}{chapter}{Bibliografía}
+    
     
 
 \end{document}

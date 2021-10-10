@@ -10,7 +10,7 @@
 
 %Most studies of LoTs have focused on the compositional aspect of the language, which has either been modeled within a Bayesian~\cite{tenenbaum2011grow} or a Minimum Description Length (MDL) framework~\cite{amalric2017language,goldsmith2002probabilistic,romano2013language,goldsmith2001unsupervised}.
 
-La mayoría de los estudios de \lot se han centrado en el aspecto compositivo del lenguaje, modelando la composición a través de técnicas de inferencia bayesiana~\cite{tenenbaum2011grow} o de longitud mínima de descripción (MDL, por sus siglas en inglés)~\cite{amalric2017language,goldsmith2002probabilistic,romano2013language,goldsmith2001unsupervised}.\santi{MDL ya habrá sido introducida}
+La mayoría de los estudios de \lot se han centrado en el aspecto compositivo del lenguaje, modelando la composición a través de técnicas de inferencia bayesiana~\cite{tenenbaum2011grow} o de longitud mínima de descripción (MDL)~\cite{amalric2017language,goldsmith2002probabilistic,romano2013language,goldsmith2001unsupervised}.
 
 %The common method is to define a grammar with a set of productions based on operations that are intuitive to researchers and then study how different inference processes match regular patterns in human learning. A recent study~\cite{piantadosi2016logical} puts the focus on the process of how to empirically choose the set of productions and how different LoT definitions can create different patterns of learning. Here, we move along that direction but use Bayesian inference to individuate the LoT instead of comparing several of them by hand.
 
@@ -19,7 +19,7 @@ El método más común es definir una gramática con un conjunto de producciones
 
 %Broadly, our aim is to propose a method to select the set of atomic symbols in an inferential process by pruning and trimming from a broad repertoire. More precisely, we test whether Bayesian inference can be used to decide the proper set of productions in a LoT defined by a context free grammar. These productions are derived from the subjects' experimental data. In order to do this, a researcher builds a broader language with two sets of productions: 1) those for which she has a strong prior conviction that they should be used in the cognitive task, and 2) other productions that could be used to structure the data and extract regularities even if she believes are not part of the human reasoning repertoire for the task. With the new broader language, she should then turn the context free grammar that defines it into a probabilistic context free grammar (PCFG) and use Bayesian analysis to infer the probability of each production in order to choose the set that best explains the data.
 
-En términos generales, nuestro objetivo es proponer un método para seleccionar el conjunto de símbolos atómicos en un proceso de inferencia, seleccionándolos y recortándolos de un repertorio más amplio. Más precisamente, nos interesa probar si la inferencia bayesiana puede utilizarse para decidir el conjunto adecuado de producciones en un \lot definido por una gramática libre de contexto, derivando las producciones a elegir de los datos experimentales de los sujetos del experimento. Para hacer esto, un investigador debería construir un lenguaje suficientemente amplio con dos conjuntos de producciones: 1) aquellas para las que tiene una fuerte convicción previa de que podrían ser utilizadas en la tarea cognitiva a estudiar, y 2) otras producciones que podrían utilizarse para estructurar los datos y extraer regularidades incluso si cree que no son parte del repertorio de razonamiento humano para la tarea. Con el nuevo lenguaje más amplio, debería convertir la gramática libre de contexto que lo define en una gramática probabilística libre de contexto (PCFG, por sus siglas en inglés) y utilizar el análisis bayesiano para inferir la probabilidad de cada producción y, así, el conjunto que mejor explique los datos.
+En términos generales, nuestro objetivo es proponer un método para seleccionar el conjunto de símbolos atómicos en un proceso de inferencia, seleccionándolos y recortándolos de un repertorio más amplio. Más precisamente, nos interesa probar si la inferencia bayesiana puede utilizarse para decidir el conjunto adecuado de producciones en un \lot definido por una gramática libre de contexto, derivando las producciones a elegir de los datos experimentales de los sujetos del experimento. Para hacer esto, un investigador debería construir un lenguaje suficientemente amplio con dos conjuntos de producciones: 1) aquellas para las que tiene una fuerte convicción previa de que podrían ser utilizadas en la tarea cognitiva a estudiar, y 2) otras producciones que podrían utilizarse para estructurar los datos y extraer regularidades incluso si cree que no son parte del repertorio de razonamiento humano para la tarea. Con el nuevo lenguaje más amplio, debería convertir la gramática libre de contexto que lo define en una gramática libre de contexto probabilística (PCFG) y utilizar el análisis bayesiano para inferir la probabilidad de cada producción y, así, el conjunto que mejor explique los datos.
 
 %In the next section we formalize this procedure and then apply it on the \textit{language of geometry} presented by Amalric et al. in a recent study about geometrical sequence learning~\cite{amalric2017language}. This LoT defines a language with some basic geometric instructions as the grammar productions and then models their composition within the MDL framework. Our method, however, can be applied to any LoT model that defines a grammar, independently of whether its compositional aspect is modeled using a Bayesian framework or a MDL approach.
 
@@ -51,7 +51,7 @@ Como se explicó anteriormente, nuestro objetivo es derivar las producciones de 
 
 %To infer the probability for each production based on the observed data, we need to add a vector of probabilities $\theta$ associated with each production in order to convert the context free grammar $\gram$ into a probabilistic context free grammar (PCFG)~\cite{manning1999foundations}.
 
-Para inferir la probabilidad de cada producción a partir de los datos observados, necesitamos agregar un vector de probabilidades $\theta$ asociado con cada producción para convertir a la gramática libre de contexto $\gram$ en una gramática probabilística libre de contexto (PCFG)~\cite{manning1999foundations}.
+Para inferir la probabilidad de cada producción a partir de los datos observados, necesitamos agregar un vector de probabilidades $\theta$ asociado con cada producción para convertir a la gramática libre de contexto $\gram$ en una gramática libre de contexto probabilística~\cite{manning1999foundations}.
 
 %Let $D = (d_1, d_2, \dots, d_n)$ denote the list of concepts produced by the subjects in an experiment. This means that each $d_i$ is a concept produced by a subject in each trial. Then, $P(\theta \mid D)$, the posterior probability of the weights of each production after the observed data, can be calculated by marginalizing over the possible programs that compute $D$:
 
@@ -305,7 +305,7 @@ Para permitir que la MCMC converja más rápido (y luego comparar la probabilida
 
 %To get an idea of the expressiveness of the grammar to generate different programs for a sequence and the cost of computing them, it is worth mentioning that there are more than 159 million programs that compute the 292 unique sequences generated by the subjects in the experiment, and that for each sequence there is an average of 546,713 programs (min = $10,749$, max = $5,500,026$, $\sigma$ = $693,618$).
 
-Para tener una intuición de la expresividad de la gramática para generar diferentes programas para una secuencia y el costo de calcularlos, vale la pena mencionar que hay más de 159 millones de programas que computan las 292 secuencias únicas generadas por los sujetos en el experimento y que, para cada secuencia, hay un promedio de 546,713 programas (mín = $10,749$, máx = $5,500,026$, $\sigma$ = $693,618$).\santi{revisar separador de miles vs decimales. uniformar}
+Para tener una intuición de la expresividad de la gramática para generar diferentes programas para una secuencia y el costo de calcularlos, vale la pena mencionar que hay más de 159 millones de programas que computan las 292 secuencias únicas generadas por los sujetos en el experimento y que, para cada secuencia, hay un promedio de 546713 programas (mín = $10749$, máx = $5500026$, $\sigma$ = $693618$).
 
 %Figura~\ref{fig:inferredtheta} shows the inferred $\theta$ for the observed sequences from subjects, with a unit concentration parameter for the Dirichlet prior, $\alpha = (1, \dots, 1)$. Each bar shows the mean probability and the standard error of each of the atomic productions after 50 steps of the MCMC, leaving the first 10 steps out as burn-in.
 
@@ -328,7 +328,6 @@ Aunque 50 pasos puedan parecer pocos para que converja un algoritmo de MCMC, nue
     \caption{$\theta_{{\tt +0}}$ inferido. Probabilidad inferida para {\tt +0} en cada paso para cuatro cadenas de MCMC.}
     \label{fig:convergetheta}
 \end{figure}
-\sergio{La Figura tiene que remplazar CONCAT por la coma: ,}
 
 %Figura~\ref{fig:inferredtheta} shows a remarkable difference between the probability of the productions that were originally used based on geometrical intuitions and the ad-hoc productions. The plot also shows that each clockwise production has almost the same probability as its corresponding anticlockwise production, and a similar relation appears between horizontal and vertical symmetry (H and V) and symmetries around diagonal axes (A and B). This is important because the original experiment was designed to balance such behavior; the inferred grammar reflects this.
 
@@ -344,11 +343,10 @@ La Figura~\ref{fig:thetaGrouped} muestra el mismo $\theta$ inferido pero agrupad
     \caption{$\theta_i$ inferido agrupado por familia. Probabilidad inferida para cada producción en \gramgeoprima, agrupada por familia.}
     \label{fig:thetaGrouped}
 \end{figure}
-\sergio{Cambiar CONCAT por la coma en la figura}
 
 %We then ran the same inference method using observed sequences from other experiments but only with the original grammar productions (i.e.\ setting aside the ad-hoc productions). We compared the result of inferring over our previously analyzed sequences generated by adults with sequences generated by children (experiment 2 from ~\cite{amalric2017language}) and the actual expected sequences for an ideal player.
 
-Luego ejecutamos el mismo método de inferencia utilizando las secuencia observadas en otros experimentos, pero sólo con las producciones gramaticales originales (es decir, dejando de lado las producciones ad-hoc). Comparamos el resultado de inferir sobre nuestras secuencias previamente analizadas (que habían sido generadas por adultos) con aquellas generadas por niños (el Experimento 2 de~\cite{amalric2017language}) y con las secuencias esperadas para un jugador ideal, es decir, un jugador que siempre elige para cada secuencia $s$ un programa $p$ tal que $\mdlgeo(s) = |p|$ con probabilidad uniforme entre todos los programas mínimos para esa secuencia.\santi{falta decir que $[[p]]=s$?}
+Luego ejecutamos el mismo método de inferencia utilizando las secuencia observadas en otros experimentos, pero sólo con las producciones gramaticales originales (es decir, dejando de lado las producciones ad-hoc). Comparamos el resultado de inferir sobre nuestras secuencias previamente analizadas (que habían sido generadas por adultos) con aquellas generadas por niños (el Experimento 2 de~\cite{amalric2017language}) y con las secuencias esperadas para un jugador ideal, es decir, un jugador que siempre elige para cada secuencia $s$ un programa $p$ tal que $\mdlgeo(s) = |p|$ y $\sem{p}=s$ con probabilidad uniforme entre todos los programas mínimos para esa secuencia.
 
 %Figura~\ref{fig:adultVsChildren} shows the probabilities for each atomic production that is inferred after each population. The figure denotes that different populations can converge to different probabilities and thus different LoTs. Specifically, it is worth mentioning that the ideal learner indeed uses more repetition productions than simple concatenations when compared to adults. In the same way, adults use more repetitions than children. This could mean that the ideal learner is capable of reproducing the sequences by recursively embedding other smaller programs, whereas adults and children more so have problems understanding or learning the smaller concept that can explain all the sequences from the experiments, which is consistent with the results from the MDL model in~\cite{amalric2017language}.
 
@@ -361,7 +359,6 @@ La Figura~\ref{fig:adultVsChildren} muestra las probabilidades para cada producc
     \caption{$\theta_i$ inferido para el jugador ideal, adultos y niños. Probabilidad inferida para cada producción de \gramgeo para las diferentes poblaciones.}
     \label{fig:adultVsChildren}
 \end{figure}
-\sergio{Cambiar concat por coma}
 
 %It is worth mentioning that in~\cite{amalric2017language} the complete grammar for the \textit{language of geometry} could explain adults' behavior but had problems to reproduce the children's patterns for some sequences. However, they also showed that penalizing the rotational symmetry (P) could adequately explain children's behavior. In Figura~\ref{fig:adultVsChildren}, we see that the mean value of (P) for children is 0.06 whereas in adults it's 0.05 (a two-sample t-test reveals t = -12.6, p = 10-19). This might not necessarily be contradictory, as the model for children in~\cite{amalric2017language} was used to predict the next symbol of a sequence after seeing its prefix by adding a penalization for extensions that use the rotational symmetry in the {\em minimal} program of each sequence. On the other hand, the Bayesian model in this work tries to explain the observed sequences produced by children considering the probability of a sequence summing over {\em all} the possible programs that can generate it and not just the ones with minimal size. Thus, a production like (P) that might not be part of the minimal program for a sequence might not necessarily be less probable when considering the entire distribution of programs for that same sequence.
 
@@ -423,7 +420,7 @@ $$
 
 %The classical notion of universality from computability theory is redefined in the algorithmic information theory. We will use the word {\em \opt} for denoting machines like $\V$ defined in(\ref{intro:eqn:usualUniversalMachine}) that somehow simulate every other machine at no noticeable extra cost in the length.
 
-La misma definición \ref{intro:def:optimal} de universalidad dada en aplica a las máquinas libre de prefijos, y, al igual que con las máquinas usuales, existen máquinas universales libres de prefijos. Del mismo modo, el Teorema \ref{intro:thm:invariance} de invariancia también sigue valiendo para el universo de las máquinas libres de prefijos. Cuando $\M$ es una máquina libre de prefijos universal, hablaremos directamente de complejidad de Kolmogorov libre de prefijos y la denotaremos como $\K$. La complejidad $\K$ está relacionada con la probabilidad de que una máquina libre de prefijos produzca una cadena dada. Esta probabilidad se define como \glossary{$P$}:\santi{cambie un poco esta parte}
+La misma definición \ref{intro:def:optimal} de universalidad dada en aplica a las máquinas libre de prefijos, y, al igual que con las máquinas usuales, existen máquinas universales libres de prefijos. Del mismo modo, el Teorema \ref{intro:thm:invariance} de invariancia también sigue valiendo para el universo de las máquinas libres de prefijos. Cuando $\M$ es una máquina libre de prefijos universal, hablaremos directamente de complejidad de Kolmogorov libre de prefijos y la denotaremos como $\K$. La complejidad $\K$ está relacionada con la probabilidad de que una máquina libre de prefijos produzca una cadena dada. Esta probabilidad se define como \glossary{$P$}:
 %
 \begin{eqnarray}
 P_{\M}(\sta)&=&\measure{\open{\{\pra\colon\M(\pra)=\sta\}}}\nonumber\\
@@ -513,7 +510,7 @@ La Figura~\ref{fig:codR} muestra la probabilidad media $P_{\gramgeo}(x)$ para to
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{Fig6}
+    \includegraphics[width=1\textwidth]{Fig6}
     \caption{Probabilidad media $P_{\gramgeo}(x)$ para todas las secuencias $x$ con el mismo valor de $\mdlgeo(x)$.
     Subfigura A: secuencias con $|x| = 4$.
     Subfigura B: secuencias con $|x| = 5$.

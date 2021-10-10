@@ -296,35 +296,9 @@ $\rrbracket_m$
 \noindent donde $m\in\{0,\dots,7\}$ es el último símbolo de la secuencia $\sem{I_1}_n$ 
 
 
-\paragraph{Complejidad para \gramgeo.} 
-Si $\alpha$ es un programa o una instrucción de \gramgeo, definimos el {\em tamaño} de $\alpha$, notado $|\alpha|$ de la siguiente manera:
-%
-\begin{itemize}
-\item Si $\alpha$ es una instrucción atómica, $|\alpha|\eqdef 2$.
-
-\item Si $\alpha$ es una instrucción de la forma 
-\verb#REP0[#$P$\verb#]^#$k$, con $P$ un programa, 
-entonces $|\alpha|\eqdef |P|+\lceil \log k\rceil$.
-
-\item Si $\alpha$ es una instrucción de la forma 
-\verb#REP1<#$A$\verb#>[#$P$\verb#]^#$k$ o de la forma 
-\verb#REP2<#$A$\verb#>[#$P$\verb#]^#$k$ 
-con $P$ un programa y $A$ una instrucción atómica, 
-entonces $|\alpha|\eqdef |P|+\lceil \log k\rceil+|A|$.
-
-\item Si $\alpha$ es un programa de la forma
-\verb#[# $I_1$ \verb#,# $I_2$ \verb#,# \dots \verb#,# $I_\ell$ \verb#]#
-entonces $|\alpha|\eqdef \sum_{i=1}^\ell|I_i|$.
-\end{itemize}
-%
-Si $s$ es una secuencia no vacía sobre $\{0,\dots,7\}$, definimos la {\em $\gramgeo$-complejidad de la descripción mínima} de $s$, notada $\mdlgeo(s)$, como el tamaño del programa que, ejecutado desde 0, produce la secuencia $s$, es decir,
-$$
-\mdlgeo(s)\eqdef\min\{|P|\mid P\in\gramgeo,\sem{P}_0=s\}.
-$$
 
 
-
-\paragraph{Ejemplos}\santi{estos ejemplos no tendrían que estar antes del paragraph de complejidad?}
+\paragraph{Ejemplos}
 
 \begin{itemize}
 \item  $\llbracket$\verb#[+1,-1]#$\rrbracket_1 = 21$
@@ -370,9 +344,32 @@ En el cuadro~\ref{PART1:Tabla:MDL} mostramos la complejidad \mdlgeo(s) para algu
 \end{table}
 
 
+\paragraph{Complejidad para \gramgeo.} 
+Si $\alpha$ es un programa o una instrucción de \gramgeo, definimos el {\em tamaño} de $\alpha$, notado $|\alpha|$ de la siguiente manera:
+%
+\begin{itemize}
+\item Si $\alpha$ es una instrucción atómica, $|\alpha|\eqdef 2$.
 
+\item Si $\alpha$ es una instrucción de la forma 
+\verb#REP0[#$P$\verb#]^#$k$, con $P$ un programa, 
+entonces $|\alpha|\eqdef |P|+\lceil \log k\rceil$.
 
-\color{black}
+\item Si $\alpha$ es una instrucción de la forma 
+\verb#REP1<#$A$\verb#>[#$P$\verb#]^#$k$ o de la forma 
+\verb#REP2<#$A$\verb#>[#$P$\verb#]^#$k$ 
+con $P$ un programa y $A$ una instrucción atómica, 
+entonces $|\alpha|\eqdef |P|+\lceil \log k\rceil+|A|$.
+
+\item Si $\alpha$ es un programa de la forma
+\verb#[# $I_1$ \verb#,# $I_2$ \verb#,# \dots \verb#,# $I_\ell$ \verb#]#
+entonces $|\alpha|\eqdef \sum_{i=1}^\ell|I_i|$.
+\end{itemize}
+%
+Si $s$ es una secuencia no vacía sobre $\{0,\dots,7\}$, definimos la {\em $\gramgeo$-complejidad de la descripción mínima} de $s$, notada $\mdlgeo(s)$, como el tamaño del programa que, ejecutado desde 0, produce la secuencia $s$, es decir,
+$$
+\mdlgeo(s)\eqdef\min\{|P|\mid P\in\gramgeo,\sem{P}_0=s\}.
+$$
+
 
 \section*{El lenguaje de geometría en secuencias binarias: \grambin}
 
@@ -453,16 +450,21 @@ La definición de la gramática \grambin respeta las mismas reglas que \gramgeo.
 
 \end{itemize}
 
-Formalmente,\santi{podemos simplemente poner $1-n$? y aclarar que $n$ es 0 o 1}
+Formalmente, 
 
 \begin{tabular}{cc}
     \begin{minipage}[t]{0.45\textwidth}
         \begin{itemize}
         \item $\llbracket$\verb#+0#$\rrbracket_n  \eqdef  n$ 
-        \item $\llbracket$\verb#B#$ \rrbracket_n  \eqdef  1-n \mod 2$  
+        \item $\llbracket$\verb#B#$ \rrbracket_n  \eqdef  1-n $  
         \end{itemize}
     \end{minipage}
+    \begin{minipage}[t]{0.45\textwidth}
+        \par\smallskip
+        con $n \in \{0,1\}$
+    \end{minipage}
 \end{tabular}
+
 
 \medskip
 

@@ -7,13 +7,13 @@ En las últimas dos décadas distintas técnicas de ingeniería reversa del apre
 
 ¿Cómo pueden las personas adquirir un vasto universo de conceptos con muy poca exposición aparente? Una posible solución a este enigma, conocida como el problema de Platón~\cite{chomsky1986knowledge, chomsky2006cognitive}, surge del aprendizaje automático probabilístico. Este enfoque está arrojando algo de luz sobre cómo los humanos pueden construir modelos y abstracciones bajo incertidumbre y a partir de datos escasos~\cite{tenenbaum2011grow,ghahramani2015probabilistic}, y está renovando la hipótesis de Jerry Fodor que afirma que el pensamiento toma forma en una especie de lenguaje mental del pensamiento (\lot, por sus siglas en inglés) compuesto por un conjunto limitado de símbolos atómicos que se pueden combinar para formar estructuras más complejas siguiendo reglas combinatorias~\cite{fodor1975language}.
 
-Nuestra investigación se suscribe a una de las líneas actuales del aprendizaje automático probabilístico conocida como lenguajes del pensamiento probabilísticos~\cite{goodman2014concepts}, un esquema general para expresar modelos probabilísticos y métodos de inferencia sobre lenguajes formales. En nuestro caso, como programas informáticos\santi{esta oración quedó desconectada. ¿a qué aplican los programas informáticos?}. Esto significa que en nuestros modelos asumimos que el \lot es un lenguaje de programación capaz de generar programas para modelar conceptos en el mundo. Con nuestro trabajo pretendemos mejorar nuestro entendimiento del proceso de aprendizaje a partir de cuerpos ralos de datos y desarrollar nuevos métodos y algoritmos de programación probabilística para replicar esta notable capacidad humana. 
+Nuestra investigación se suscribe a una de las líneas actuales del aprendizaje automático probabilístico conocida como lenguajes del pensamiento probabilísticos~\cite{goodman2014concepts}, un esquema general para expresar modelos probabilísticos y métodos de inferencia sobre lenguajes formales. En nuestro caso, estos lenguajes definen cada uno un lenguaje de programación que, al computarse según su propia semántica, representan conceptos del mundo. Con nuestro trabajo pretendemos mejorar nuestro entendimiento del proceso de aprendizaje a partir de cuerpos ralos de datos y desarrollar nuevos métodos y algoritmos de programación probabilística para replicar esta notable capacidad humana. 
 
 
 \section{Aportes de esta tesis}
 
 \paragraph{Una teoría de la memoria para secuencias binarias: evidencia de un algoritmo de compresión mental en humanos~\cite{planton2021memory}.} 
-La capacidad de la memoria de trabajo se puede mejorar recodificando la información memorizada en forma condensada. En el Capítulo~\ref{chapter:BIN}, ponemos a prueba la teoría de que los adultos humanos codifican secuencias binarias de estímulos en la memoria utilizando un \lot y un algoritmo de compresión recursivo. La teoría predice que la complejidad psicológica de una secuencia dada debería ser proporcional a la longitud de su descripción más corta en el lenguaje propuesto \grambin, que puede capturar cualquier patrón anidado de repeticiones y alternancias usando un número limitado de instrucciones. El lenguaje \grambin es una versión simplificada para el dominio de las secuencias binarias del lenguaje de geometría, \gramgeo, propuesto en~\cite{amalric2017language}. Cinco experimentos examinan la capacidad de la teoría para predecir la memoria de los adultos humanos para una variedad de secuencias auditivas y visuales. Pusimos a prueba la memoria utilizando un paradigma de violación de secuencia en el que los participantes intentaron detectar violaciones ocasionales en una secuencia que de otro modo sería fija\santi{'que de otro modo sería fija' no se entiende}. Tanto las calificaciones de complejidad subjetiva como el rendimiento de detección de violaciones objetivas fueron bien predichas por nuestra medida teórica de complejidad, que resulta ser la complejidad de Kolmogorov para el lenguaje específico de geometría en cadenas binarias, \grambin. Los resultados apoyan la hipótesis de que, más allá de la extracción de conocimiento estadístico, la codificación de secuencias humanas se basa en una compresión interna que utiliza estructuras anidadas similares a las del \lot propuesto.
+La capacidad de la memoria de trabajo se puede mejorar recodificando la información memorizada en forma condensada. En el Capítulo~\ref{chapter:BIN}, ponemos a prueba la teoría de que los adultos humanos codifican secuencias binarias de estímulos en la memoria utilizando un \lot y un algoritmo de compresión recursivo. La teoría predice que la complejidad psicológica de una secuencia dada debería ser proporcional a la longitud de su descripción más corta en el lenguaje propuesto \grambin, que puede capturar cualquier patrón anidado de repeticiones y alternancias usando un número limitado de instrucciones. El lenguaje \grambin es una versión simplificada para el dominio de las secuencias binarias del lenguaje de geometría, \gramgeo, propuesto en~\cite{amalric2017language}. Cinco experimentos examinan la capacidad de la teoría para predecir la memoria de los adultos humanos para una variedad de secuencias auditivas y visuales. Pusimos a prueba la memoria utilizando un paradigma de violación de secuencia en el que los participantes intentaron detectar violaciones ocasionales en una secuencia fija. Tanto las calificaciones de complejidad subjetiva como el rendimiento de detección de violaciones objetivas fueron bien predichas por nuestra medida teórica de complejidad, que resulta ser la complejidad de Kolmogorov para el lenguaje específico de geometría en cadenas binarias, \grambin. Los resultados apoyan la hipótesis de que, más allá de la extracción de conocimiento estadístico, la codificación de secuencias humanas se basa en una compresión interna que utiliza estructuras anidadas similares a las del \lot propuesto.
 
 
 \paragraph{Validación Bayesiana de producciones gramaticales para el \lot~\cite{romano2018bayesian}.} 
@@ -33,61 +33,174 @@ El objetivo de programar agentes inteligentes y el estudio de la mente humana ha
 
 Los investigadores han modelado el aprendizaje de clases conceptuales para los objetos principalmente con dos enfoques clásicos: en términos de similitud con un ejemplo genérico o prototipo~\cite{rosch1999principles, nosofsky1986attention, rosch1976structural, rosch1975family} o basándose en una representación simbólica de reglas~\cite{boole1854investigation, fodor1975language, gentner1983structure}.
 
-Los enfoques basados en modelos prototipos proponen que los humanos construyen una representación promedio o protípica para cada clase conceptual y basan la clasificación de un ejemplo en función de la distancia relativa a cada clase~\cite{wilson2001encyclopedia}. 
-
-Los enfoques simbólicos sostienen que los pensamientos\santi{sinónimo? para no repetir...} son representaciones simbólicas en un lenguaje del pensamiento (\lot) compuesto por un conjunto limitado de símbolos atómicos que pueden combinarse para formar estructuras nuevas y más complejas siguiendo reglas combinatorias~\cite{fodor1975language,nosofsky1994rule, tenenbaum2011grow, maddox1993comparing}. \sergio{Explicar critica conexionismo y surgimiento teoría computacional de la mente?} 
+Los trabajos basados en modelos prototipos proponen que los humanos construyen una representación promedio o protípica para cada clase conceptual y basan la clasificación de un ejemplo en función de la distancia relativa a cada clase~\cite{wilson2001encyclopedia}. Mientras que los enfoques simbólicos sostienen que los pensamientos son representaciones simbólicas en un \textit{lenguaje del pensamiento} (\lot) compuesto por un conjunto limitado de símbolos atómicos que pueden combinarse para formar estructuras nuevas y más complejas siguiendo reglas combinatorias~\cite{fodor1975language,nosofsky1994rule, tenenbaum2011grow, maddox1993comparing}. 
 
 El \lot no es necesariamente único, la forma que adopta se ha modelado de muchas formas diferentes según el dominio del problema: aprendizaje de conceptos numéricos~\cite{piantadosi2012bootstrapping}, aprendizaje de secuencias~\cite{amalric2017language, yildirim2015learning, romano2013language}, aprendizaje de conceptos visuales~\cite{ellis2015unsupervised}, aprendizaje de teorías~\cite{ullman2012theory}, etc. De hecho, en la parte \ref{parte:secuencias} de esta tesis, trabajaremos con dos modelos distintos de \lot: para el dominio de secuencias binarias en el capítulo \ref{chapter:BIN}, y para el dominio de secuencias geométricas en el capítulo~\ref{chapter:PO}.
 
-A pesar de las críticas y objeciones~\cite{blackburn1984spreading,loewer1991meaning,knowles1998language,aydede1997language,wilson2001encyclopedia}\sergio{tiene sentido desarrollarlas? Papers y pagina 171 de The MIT encyclopedia}, los enfoques simbólicos --en general-- y la hipótesis \lot{ }--en particular-- han ganado una atención renovada con resultados recientes que podrían explicar el proceso de aprendizaje en diferentes dominios como un proceso de inferencia estadística sobre un espacio de hipótesis estructurado y componible~\cite{tenenbaum2011grow,piantadosi2016four}. Las investigaciones indican que --como mínimo-- dos sistemas distintos pueden ser parte de la base del aprendizaje de secuencias\santi{no me quedó claro el hilo conductor. Acá estas hablando de secuencias específicamente pero con los dos enfoques que describiste más arriba? Usás 'aprendizaje estadístico' para referirte a lo que antes llamaste 'enfoque basado en prototipos'?} en el cerebro humano: el aprendizaje estadístico y el aprendizaje basado en reglas~\cite{f4,f67,f85}. Lo que se desconoce es si operan de forma independiente o conjunta, y si alguno es favorecido por sobre el otro en función de la naturaleza de la información a codificar. Argumentamos que cualquier intento por descubrir los mecanismos cognitivos específicos detrás del aprendizaje de reglas en humanos, especialmente en comparación con otras especies, debe tener también en cuenta la contribución de un sistema menos abstracto (sin embargo, poderoso) de predicción basado en las propiedades estadísticas de los eventos. 
+A pesar de las críticas y objeciones~\cite{blackburn1984spreading,loewer1991meaning,knowles1998language,aydede1997language,wilson2001encyclopedia}, los enfoques simbólicos --en general-- y la hipótesis \lot{ }--en particular-- han ganado una atención renovada con resultados recientes que podrían explicar el proceso de aprendizaje en diferentes dominios como un proceso de inferencia estadística sobre un espacio de hipótesis estructurado y componible~\cite{tenenbaum2011grow,piantadosi2016four}, fusionando de esta manera la expresividad de los lenguajes formales con la flexibilidad y el poder de los mecanismos de inferencia probabilística.
+
+%Las investigaciones indican que --como mínimo-- dos sistemas distintos pueden ser parte de la base del aprendizaje de secuencias\santi{no me quedó claro el hilo conductor. Acá estas hablando de secuencias específicamente pero con los dos enfoques que describiste más arriba? Usás 'aprendizaje estadístico' para referirte a lo que antes llamaste 'enfoque basado en prototipos'?} en el cerebro humano: el aprendizaje estadístico y el aprendizaje basado en reglas~\cite{f4,f67,f85}. Lo que se desconoce es si operan de forma independiente o conjunta, y si alguno es favorecido por sobre el otro en función de la naturaleza de la información a codificar. Argumentamos que cualquier intento por descubrir los mecanismos cognitivos específicos detrás del aprendizaje de reglas en humanos, especialmente en comparación con otras especies, debe tener también en cuenta la contribución de un sistema menos abstracto (sin embargo, poderoso) de predicción basado en las propiedades estadísticas de los eventos. 
 
 Los lenguajes simbólicos pueden describir un vasto conjunto de conceptos a partir de un pequeño conjunto de primitivas y reglas combinatorias. Podemos entenderlo con un ejemplo relativamente simple en el dominio de las formas. Un lenguaje combinatorio similar a Logo~\cite{abelson1974logo} puede combinar símbolos de operaciones como ``mover", ``lápiz arriba", ``lápiz abajo'' o ``rotar" para generar un conjunto infinito de expresiones (o programas) que, cuando se evalúan, pueden trasmitir todo tipo de formas.
 
 Una pregunta natural, sobre la que profundizaremos en la parte \ref{parte:conceptos}, es si las primitivas de un \lot son universales --tanto a través de diferentes individuos como a lo largo del desarrollo-- o si, en cambio, el repertorio semántico de un lenguaje es dinámico y está moldeado por la experiencia. De hecho, es probable que nuestra capacidad para representar automáticamente conceptos de manera sucinta no se deba a un lenguaje eficiente innato en nuestra mente. En cambio, proponemos que esta capacidad surge como un subproducto de nuestro cerebro que aprende rápidamente representaciones eficientes de los conceptos que generalmente encontramos en la vida cotidiana. Examinaremos la hipótesis de que los humanos tienen la capacidad de recombinar rápidamente proposiciones en su \lot, agregando nuevas primitivas a su lenguaje. En otras palabras, ese aprendizaje conduce a un proceso de compilación de rutinas en funciones dentro de el \lot.
 
-En el ejemplo del lenguaje Logo se puede imaginar que si las producciones que dibujan cuadrados son muy frecuentes, sería eficaz dedicar un nuevo símbolo a esta producción. El nuevo símbolo ``cuadrado'' es una construcción jerárquica de {\em segundo orden} de las primitivas de {\em primer orden} del lenguaje. Tiene un costo (el de incrementar el léxico del lenguaje) pero en el nuevo lenguaje, dibujar un cuadrado puede ser instanciado con un programa muy corto (simplemente, {\em cuadrado})\santi{está bien, pero surge la pregunta del tamaño del cuadrado; podemos decir más arriba que compila un cuadrado de tamaño fijo} y por lo tanto usa menos memoria. De hecho, un lenguaje de nivel superior nos permite alcanzar un nivel superior de abstracción al liberar la memoria y el poder de procesamiento, haciendo así pensables pensamientos más complejos~\cite{minsky1967computation, murphy1988comprehending}.
+En el ejemplo del lenguaje Logo se puede imaginar que si las producciones que dibujan cuadrados son muy frecuentes, sería eficaz dedicar un nuevo símbolo a esta producción. El nuevo símbolo ``cuadrado'' es una construcción jerárquica de {\em segundo orden} de las primitivas de {\em primer orden} del lenguaje. Tiene un costo (el de incrementar el léxico del lenguaje) pero en el nuevo lenguaje, dibujar un cuadrado puede ser instanciado con un programa muy corto (simplemente, {\em cuadrado})\santi{está bien, pero surge la pregunta del tamaño del cuadrado; podemos decir más arriba que compila un cuadrado de tamaño fijo} \sergio{me parece que confundiría la precisión a la idea que transmitimos, tampoco veníamos hablando de grados de rotar, etc. era más bien una explicación general de la idea}y por lo tanto usa menos memoria. De hecho, un lenguaje de nivel superior nos permite alcanzar un nivel superior de abstracción al liberar la memoria y el poder de procesamiento, haciendo así pensables pensamientos más complejos~\cite{minsky1967computation, murphy1988comprehending}.
 
 La mayor parte del trabajo en la literatura sobre \lot, aunque incluye naturalmente un mecanismo de aprendizaje, tiende a acercarse al \lot como un sistema estable que deben descubrir los experimentadores, que prueban diferentes plantillas candidatas y seleccionan la que mejor se ajusta a los datos después del entrenamiento ~\cite{goodman2008rational, kemp2012exploring, piantadosi2016logical}. Aún así, queda por descubrir cómo las diferentes trayectorias de la experiencia pueden dar forma a la adquisición de manera diferente y pueden cambiar constantemente el repertorio de un \lot después de cada exposición.
 
 Un lenguaje que describe conceptos (como las formas) también proporciona una noción natural de su complejidad~\cite{kolmogorov1968three} y se ha observado que aprendemos conceptos de objetos con más facilidad cuando hay reglas `más simples' que pueden explicar esas agrupaciones~\cite{shepard1961learning, nosofsky1994comparing, rehder2005eyetracking, lewandowsky2011working, feldman2000minimization, blair2003easy, minda2001prototypes}. Un concepto es simple, relativo a ese lenguaje, cuando puede ser descripto por un programa corto. Por el contrario, es complejo cuando todas sus descripciones requieren una secuencia larga de instrucciones. Por ejemplo, en el caso de Logo, un cuadrado se puede codificar simplemente como un bucle de cuatro desplazamientos seguidos de rotaciones de 90 grados. En cambio, describir una cara requerirá de un programa más largo y, por lo tanto, será un concepto más complejo de describir. Sin embargo, este concepto se podría describir de manera más simple en un lenguaje en el que el icono de una cara (o de una nariz, boca, etc.) estuvieran disponibles como primitivas de ese lenguaje. 
 
-Para poder formalizar la definición del \lot y las nociones de complejidad asociadas a un lenguaje que utilizaremos a lo largo de esta tesis, presentaremos a continuación las nociones necesarias de gramática de un lenguaje y de la complejidad de Kolmogorov.
+De hecho, la correlación entre la dificultad subjetiva de los conceptos y su complejidad se ha utilizado como vehículo general para estudiar el LoT  en varios dominios ~\cite{piantadosi2016logical, leeuwenberg1971perceptual, amalric2017language, lupyan2007language}. Aunque a menudo está implícito, la estrategia general es (\textit{1)} asumir un lenguaje; (\textit{2)} encontrar el programa compatible más corto para algunos conceptos en ese lenguaje; (\textit{3)} comparar la duración de estos programas con la dificultad subjetiva de los conceptos; y finalmente (\textit{4)} repetir este proceso para varios lenguajes dentro de un universo de posibles candidatos y elegir el lenguaje que mejor se ajuste en \textit{(3)}. Como se mencionó anteriormente, la longitud del programa dependerá de las primitivas del lenguaje en el que está escrito este programa, por lo que diferentes \lot hacen diferentes predicciones y se vuelve necesario profundizar su estudio.
 
-\widesergio{Hasta acá}
+Para poder formalizar la definición del \lot y las nociones de complejidad asociadas a un lenguaje que utilizaremos a lo largo de esta tesis, presentaremos a continuación las nociones de gramática de un lenguaje y de la complejidad de Kolmogorov.
 
-\section{Gramáticas}
+\section{Gramáticas Libres de Contexto}
+
+El estudió de los lenguajes y la teoría gramatical lleva una larga tradición que se remonta a P{\=a}ṇini y su trabajo sobre el sánscrito, Aṣṭ{\=a}dhy{\=a}y{\=\i} en el siglo IV A.C. \cite{katre1989}. Si bien existen diversos formalismos y herramientas para modelar los lenguajes, las más utilizados para modelar la estructura constituyente de un lenguaje son las gramáticas libres de contexto (CFG, por sus siglas en inglés) \cite{keselj2009speech}, formalizadas de manera independiente en la década de los años 1950 por Chomsky \cite{chomsky1956three} y Backus \cite{backus1959syntax}.
+
+Una CFG tiene un léxico de símbolos (terminales y no terminales) y un conjunto de reglas o producciones que explican cómo esos símbolos pueden ordenarse y combinarse para formar las oraciones y palabras válidas del lenguaje. Por ejemplo, para modelar que el sintagma nominal (SN) de una oración puede expresarse con un nombre propio (NP) o un determinante (DET) seguido de un sustantivo (SUST) puede utilizarse el siguiente conjunto de reglas:
+
+\begin{itemize}
+    \item[] SN $\to$ NP
+    \item[] SN $\to$ DET SUST
+\end{itemize}
+
+Los símbolos SN, NP, DET, SUST se los conoce como símbolos no terminales, ya que no constituyen palabras válidas del lenguaje sino que representan abstracciones para agrupar otros símbolos en una misma idea o unidad constituyente de la sintaxis del lenguaje. A su vez las reglas, pueden ser anidadas de manera recursiva para combinarse entre sí y formar nuevas expresiones válidas. Por ejemplo, podemos agregar las siguientes producciones:
+
+\begin{itemize}
+    \item[] NP $\to$ \textit{Chatran}
+    \item[] DET $\to$ \textit{El}
+    \item[] SUST $\to$ \textit{gato}
+    \item[] SUST $\to$ \textit{felino}
+\end{itemize}
+
+De esta manera podemos derivar la oración \textit{El gato} a partir de la aplicación de las producciones anteriores en lo que se conoce como un árbol de derivación (Fig.~\ref{intro:arbol}). En este caso, los símbolos finales (\textit{Chatran, El, gato, felino}) se los conoce como símbolos terminales y son las palabras válidas del lenguaje. 
+
+Para definir qué oraciones son válidas o gramaticales de un lenguaje es importante designar uno de los símbolos no terminales como el símbolo inicial, al que usualmente se le asigna la letra S. De esta manera, todas las oraciones que pueden derivarse a partir del símbolo inicial, utilizando las producciones de la gramática, serán las oraciones gramaticales que forman el lenguaje descripto. 
+
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}[level/.style={sibling distance = 6cm/#1,
+    level distance = 0.8cm},scale=1.0, transform shape]
+\node  {S}
+child
+{
+    node {SN}
+    child
+    {
+        node {DET}
+        child {
+            node {$El$}
+        }
+    }
+    child{
+        node {SUST}
+        child {
+            node {$gato$}
+        }
+    }
+};
+\end{tikzpicture}
+    \caption{Árbol de derivación de \textit{El gato}}
+    \label{intro:arbol}
+\end{figure}
+
+\begin{definicion}[CFG]
+Formalmente, una gramática libre de contexto $\gram$ se define como una 4-tupla $\gram = (N, \Sigma, S, R)$, donde:
+\begin{itemize}
+    \item $N$: conjunto de símbolos no terminales
+    \item $\Sigma$: conjunto de símbolos terminales $(\Sigma \cap N = \emptyset)$
+    \item $S$: símbolo inicial $(S \in N)$
+    \item $R : N \times (N \cup \Sigma)^{\ast} $: conjunto de reglas o producciones \sergio{verificar santi notación}
+\end{itemize}
+
+\end{definicion}
+
+\begin{definicion}[Derivación Directa]
+Sean $r \in R : (A \to \beta)$ una producción, y $\beta, \gamma \in (N \cup \Sigma)^{\ast}$ cualquier par de cadenas, decimos que $\alpha A \gamma$ deriva directamente a $\alpha \beta \gamma$ y lo notamos $\alpha A \gamma \Rightarrow \alpha \beta \gamma$
+\end{definicion}
+
+\begin{definicion}[Derivación]
+Sean $\alpha_1, \alpha_2 \cdots \alpha_m \in (N \cup \Sigma)^{\ast}$, $m \geq 1$, tal que:
+
+$$
+\alpha_1 \Rightarrow \alpha_2, \alpha_2 \Rightarrow \alpha_3, \cdots, \alpha_{m-1} \Rightarrow \alpha_m
+$$
+
+decimos que $\alpha_1$ deriva $\alpha_m$ y lo notamos como $\alpha_1 \xRightarrow{\ast} \alpha_m$
+\end{definicion}
+
+\begin{definicion}[Lenguaje libre de contexto]
+Sea $\gram$ una gramática libre de contexto, definimos al lenguaje de la gramática $L_\gram = \{w | w \in \Sigma^{\ast}, S \xRightarrow{\ast} w \}$ como el conjunto de los símbolos terminales que pueden derivarse a partir del símbolo inicial. A su vez, un lenguaje $L$ es libre de contexto si existe una gramática libre de contexto $\gram$ tal que $L = L_\gram$.
+\end{definicion}
 
 
-\textbf{Explicar gramáticas}\\
-\textbf{Explicar diferencia entre sintaxis y semántica}\\
+\subsection{Gramática libre de contexto probabilística}
 
-El proyecto de análisis bayesiano del aprendizaje de conceptos de modelos LoT utilizando inferencia bayesiana en un espacio de hipótesis estructurado gramaticalmente~\cite{goodman2008rational}. Cada propuesta de LoT suele formalizarse mediante una gramática libre de contexto $ \gram $ que define las funciones o programas válidos que se pueden generar, como en cualquier otro lenguaje de programación. Un programa es un árbol de derivación de $ \gram $ que debe interpretarse o ejecutarse de acuerdo con una semántica determinada para obtener una descripción real del concepto en la tarea cognitiva en cuestión. Por lo tanto, cada concepto es luego representado por cualquiera de los programas que lo describen y se define un proceso de inferencia bayesiano para inferir de los datos observados la distribución de programas válidos en $ \gram $ que describen los conceptos.
+Las gramáticas libres de contexto probabilísticas (PCFG, por sus siglas en inglés) \cite{booth1969probabilistic} son uno de los formalismos más simples y a la vez poderosos para construir modelos probabilísticos de la estructura sintáctica de un lenguaje. Pueden entenderse como una extensión de las gramáticas libres de contexto donde cada regla tiene asociada una probabilidad que indica cuán probable es su uso para la derivación de un símbolo.
 
-\subsection{Composición}
-Los lenguajes combinatorios pueden describir un vasto conjunto de conceptos a partir de un pequeño conjunto de primitivas. Esto se puede entender en un ejemplo relativamente simple en el dominio de las formas. Un lenguaje combinatorio y simbólico similar a Logo ~\cite{abelson1974logo} puede combinar operaciones como "mover", "pluma arriba", "pluma abajo" o "rotar" para generar un conjunto infinito de expresiones (o programas) que, cuando se evalúa, puede transmitir todo tipo de formas.
+\begin{definicion}[PCFG]
+Una gramática libre de contexto probabilística $\gram$ se define como una 5-tupla $\gram = (N, \Sigma, S, R, P)$, donde:
+\begin{itemize}
+    \item $N, \Sigma, S, R$ tienen el mismo significado que en las gramáticas libres de contextos
+    \item $P : R \times [0,1]$ es la distribución de probabilidad $P$ que expresa la probabilidad de derivación de cada regla $P(\beta | A)$ con $(A \to \beta) \in R$.
+\end{itemize}
+Por lo tanto, si consideramos todas las posibles derivaciones de un símbolo, la suma de sus probabilidades debe ser 1:
+$$
+\sum_{\beta} P (A \to \beta) = 1
+$$
+\end{definicion}
 
-Un lenguaje que describe conceptos (como formas) también proporciona una noción natural de su complejidad~\cite{kolmogorov1968three}. Un concepto es simple, relativo a ese lenguaje, cuando puede describirse mediante un programa corto. Por el contrario, es complejo cuando todas sus descripciones requieren una larga secuencia de instrucciones. Por ejemplo, en el caso del lenguaje Logo, un cuadrado puede simplemente instruirse como un bucle de cuatro desplazamientos seguidos de rotaciones de 90 grados. En este lenguaje, el icono de un rostro se implementará mediante un programa mucho más largo y, por lo tanto, será más complejo. Sin embargo, este concepto sería más sencillo cuando se describiera en un lenguaje en el que el icono de un rostro (o los símbolos de nariz, boca, etc.) estén disponibles como primitivos en el lenguaje.
+El modelo de PCFG permite asignar probabilidades a las derivaciones (o árboles de derivación) y a las palabras del lenguaje lo cual lo convierten en una herramienta interesante para el modelado de lenguajes y su aplicación en distintos problemas como el reconocimiento de voz, traducciones automáticas, verificación y corrección de oraciones, etc.
 
-En el dominio de los conceptos booleanos, se estudió una amplia gama de variedades lógicas de conceptos en ~\cite{feldman2003simplicity}, revelando una ley sorprendentemente simple: la dificultad subjetiva de un concepto booleano para un aprendiz humano es directamente proporcional a la longitud del programa compatible más corto en el lenguaje de la lógica proposicional (es decir, variables booleanas combinadas con los operadores \textit{and}, \textit {or} y \textit{not}). Este resultado puede sugerir que el LoT humano está equipado con reglas y símbolos similares a los que se encuentran en la lógica proposicional. De hecho, la correlación entre la dificultad subjetiva de los conceptos y su complejidad se ha utilizado como vehículo general para estudiar el LoT humano en varios dominios ~\cite{piantadosi2016logical, leeuwenberg1971perceptual, amalric2017language, romano2018, lupyan2007language}. Aunque a menudo está implícito, la estrategia general es (\textit{1)} asumir un idioma; (\textit{2)} encontrar el programa compatible más corto para algunos conceptos en ese idioma; (\textit{3)} comparar la duración de estos programas con la dificultad subjetiva de los conceptos; y finalmente (\textit{4)} repetir este proceso para varios idiomas dentro de un universo de posibles candidatos y elegir el idioma que mejor se ajuste en \textit{(3)}. Como se mencionó anteriormente, la longitud del programa depende de las primitivas del lenguaje en el que está escrito este programa, por lo que diferentes lenguajes hacen diferentes predicciones.
+La probabilidad de un árbol de derivación $T$ para una cadena $c$ del lenguaje está definida como el producto de la probabilidad de todas las reglas $\alpha_{i} \Rightarrow \beta_i$ usadas en su derivación, es decir:
+
+$$
+P(T,c) = \prod_{i = 1}^{n} P(\alpha_{i} \Rightarrow \beta_i)
+$$
+
+Las asunciones del modelo por lo tanto implican que la probabilidad de un subárbol no depende en qué lugar de la cadena ocurre ni tampoco depende de ningún símbolo terminal o no-terminal por fuera del subárbol.
+
+A su vez, $P(T,c) = P(T) P(c|T) = P(T)$ dado que $P(c|T) = 1$ porque cada árbol de derivación $T$ deriva una única cadena $c$ y dijimos que $T$ era un árbol de derivación de $c$. Para calcular la probabilidad de una cadena $c$, por lo tanto, alcanza con sumar la probabilidad de todos los árboles de derivación que pueden producir esa cadena:
+
+$$
+P(c) = \sum_{T : \text{ árbol de derivación de } S \xRightarrow{\ast} c } P (T)
+$$
 
 
 
-\section{Teoría algorítmica de la información}
+\subsection{Semántica}
 
-\intro{mandar a intro}{
-Un enfoque más formal para la estimación de la complejidad de los patrones, conocido como \textit{complejidad algorítmica}, \textit{complejidad del tamaño del programa} o \textit{complejidad de Kolmogorov} (CK), fue propuesto por Kolmogorov~\cite{kolmogorov1965three}, Chaitin~\cite{chaitin1969length} y Solomonof~\cite{solomonoff1964formal}, en el marco de la \textit{teoría algorítmica de la información}. Estos matemáticos definieron a la complejidad de una secuencia como la longitud del programa computacional más corto capaz de producirlo. Estrictamente hablando, la complejidad algorítmica se define en relación un lenguaje descriptivo (o lenguaje de programación). Cuando este lenguaje es Turing completo, lo que significa que se puede simular cualquier otra máquina de Turing en él, hablamos de CK universal o CK simplemente. Sin embargo, cuando el lenguaje de codificación tiene un poder expresivo reducido (es decir, cuando es una máquina específica en lugar de una máquina universal), la complejidad algorítmica se puede calcular y utilizar como una medida subjetiva de complejidad~\cite{romano2013language}\sergio{nosotros}. Recientemente, se propuso una aproximación a CK utilizando el \textit{teorema de codificación}, que relaciona la complejidad algorítmica de una secuencia con la probabilidad de que una máquina universal produzca esa secuencia~\cite{f43,f44,f45,f46}. La propuesta proporciona una medida de complejidad algorítmica para un gran conjunto de secuencias cortas. Esta propuesta se presentó como la mejor aproximación de “una medida final de aleatoriedad” y puede reproducir los sesgos observados cuando se les pide a los individuos que juzguen la aleatoriedad de los patrones o que produzcan patrones aleatorios~\cite{f44,f45}.
-}
+Los modelos probabilísticos de \lot permiten realizar inferencia sobre un espacio de hipótesis estructurado gramaticalmente~\cite{goodman2008rational}. Cada propuesta de \lot suele formalizarse mediante una gramática libre de contexto $ \gram $ que define las funciones o programas válidos que se pueden generar, como en cualquier otro lenguaje de programación. Sin embargo, para representar conceptos es necesario unir estos elementos sintácticos con el conocimiento semántico que tenemos del mundo. Es decir, el programa (o árbol de derivación de $ \gram $) debe interpretarse o ejecutarse de acuerdo con una semántica determinada para obtener una descripción del concepto en la tarea cognitiva en cuestión. En esta tesis asumimos que los \lot no sólo tienen una sintaxis definida por su gramática, sino que tienen una semántica determinada que les permite representar nuestro entendimiento del mundo.
 
-Como se indicó anteriormente, una propuesta estrictamente relacionada con la CK es que los sujetos humanos comprimen las secuencias internamente, no necesariamente usando un conjunto de instrucciones de un lenguaje universal, sino usando una variedad de primitivas similares a las de una computadora tales como bucles y otras rutinas que forman un \textit{lenguaje del pensamiento} (LoT, por sus siglas en inglés) \santi{Repe} interno específico~\cite{fodor1975language} lo suficientemente fuerte para describir cualquier secuencia del dominio, pero no tan complejo como el de una Máquina de Turing universal y, por lo tanto, lo suficientemente débil como para permitir que la complejidad pueda ser computada de manera exacta. Dicho lenguaje permitiría la combinación de primitivas simples en patrones complejos de encajes o reglas recursivas. Los modelos de LoT se han propuesto muy temprano~\cite{f33}. Simon y Kotovsky~\cite{f48} utilizaron conceptos como ``igual'', ``siguiente'' (en el alfabeto) y la capacidad de recorrer una serie para construir una representación formal de la memoria humana para secuencias de letras (por ejemplo, ``cadaeafa...''). Del mismo modo, Restle~\cite{f37} utilizó las operaciones ``repetir'', ``transposición'' y ``reflexión''. También se utilizaron lenguajes similares basados en repeticiones con variaciones para codificar figuras geométricas lineales y formas 2D y 3D más elaboradas~\cite{f33,leeuwenberg1971perceptual}. Más recientemente, se han utilizado con éxito propuestas similares para estudiar diferentes aspectos del aprendizaje humano, en particular el aprendizaje de conceptos~\cite{feldman2000minimization,f51, piantadosi2012bootstrapping,piantadosi2016four,f54}. \santi{media tesis es sobre esto. Referenciar a los capítulos correspondientes} Se ha mostrado que la complejidad Booleana, es decir, la longitud de la expresión lógica más corta que captura el concepto (una noción estrechamente relacionada con CK) captura el comportamiento humano en el aprendizaje de conceptos lógicos~\cite{feldman2000minimization,feldman2003simplicity}.
+En nuestro ejemplo de Logo, podíamos combinar las operaciones como `mover", ``lápiz arriba", ``lápiz abajo'' o ``rotar" en distintos programas (o expresiones), pero sólo al ser evaluados es cuando estos programas pueden transmitir las distintas formas o conceptos que el lenguaje busca modelar.
 
-\paragraph{Ubicar 2}
+En esta tesis, utilizaremos definiciones formales para representar la semántica de nuestras gramáticas $\gram$ donde el dominio serán los programas válidos de $\gram$ y el codominio los objetos a representar en cada tarea. En la parte I, trabajaremos con los lenguajes \gramgeo y \grambin que permiten modelar secuencias en un octágono y secuencias binarias, respectivamente. En la parte II, utilizaremos la lógica proposicional \grambool para representar valuaciones booleanas. 
 
-En pocas palabras, la suposición es que para minimizar la carga de memoria, los participantes comprimen mentalmente la estructura de la secuencia utilizando el lenguaje formal propuesto.\santi{Esta es la visión de Mariano, la que dice que usamos este lenguaje... Para mí, es simplemente que este lenguaje lo puede explicar y que nuestra cabeza podría estar usando otro. Tal vez valga la pena una pequeña digresión sobre esto en las conclusiones.} El uso de un número mínimo de operaciones primitivas y la selección de la representación más corta, están en sintonía con el principio de simplicidad (propuesto como un componente esencial del aprendizaje) el cual define que las hipótesis más simples son las más favorecidas~\cite{f32,feldman2003simplicity}.
+\widesergio{No sé si se puede decir mucho más}
 
-\widesanti{De esto que sigue podés dejar todo, algo o eliminarlo por completo}
+%Un lenguaje que describe conceptos (como formas) también proporciona una noción natural de su complejidad~\cite{kolmogorov1968three}. Un concepto es simple, relativo a ese lenguaje, cuando puede describirse mediante un programa corto. Por el contrario, es complejo cuando todas sus descripciones requieren una larga secuencia de instrucciones. Por ejemplo, en el caso del lenguaje Logo, un cuadrado puede simplemente instruirse como un bucle de cuatro desplazamientos seguidos de rotaciones de 90 grados. En este lenguaje, el icono de un rostro se implementará mediante un programa mucho más largo y, por lo tanto, será más complejo. Sin embargo, este concepto sería más sencillo cuando se describiera en un lenguaje en el que el icono de un rostro (o los símbolos de nariz, boca, etc.) estén disponibles como primitivos en el lenguaje.
+
+%En el dominio de los conceptos booleanos, se estudió una amplia gama de variedades lógicas de conceptos en ~\cite{feldman2003simplicity}, revelando una ley sorprendentemente simple: la dificultad subjetiva de un concepto booleano para un aprendiz humano es directamente proporcional a la longitud del programa compatible más corto en el lenguaje de la lógica proposicional (es decir, variables booleanas combinadas con los operadores \textit{and}, \textit {or} y \textit{not}). Este resultado puede sugerir que el LoT humano está equipado con reglas y símbolos similares a los que se encuentran en la lógica proposicional. De hecho, la correlación entre la dificultad subjetiva de los conceptos y su complejidad se ha utilizado como vehículo general para estudiar el LoT humano en varios dominios ~\cite{piantadosi2016logical, leeuwenberg1971perceptual, amalric2017language, romano2018, lupyan2007language}. Aunque a menudo está implícito, la estrategia general es (\textit{1)} asumir un idioma; (\textit{2)} encontrar el programa compatible más corto para algunos conceptos en ese idioma; (\textit{3)} comparar la duración de estos programas con la dificultad subjetiva de los conceptos; y finalmente (\textit{4)} repetir este proceso para varios idiomas dentro de un universo de posibles candidatos y elegir el idioma que mejor se ajuste en \textit{(3)}. Como se mencionó anteriormente, la longitud del programa depende de las primitivas del lenguaje en el que está escrito este programa, por lo que diferentes lenguajes hacen diferentes predicciones.
+
+
+
+%\section{Teoría algorítmica de la información}
+
+%\intro{mandar a intro}{
+%Un enfoque más formal para la estimación de la complejidad de los patrones, conocido como \textit{complejidad algorítmica}, \textit{complejidad del tamaño del programa} o \textit{complejidad de Kolmogorov} (CK), fue propuesto por Kolmogorov~\cite{kolmogorov1965three}, Chaitin~\cite{chaitin1969length} y Solomonof~\cite{solomonoff1964formal}, en el marco de la \textit{teoría algorítmica de la información}. Estos matemáticos definieron a la complejidad de una secuencia como la longitud del programa computacional más corto capaz de producirlo. Estrictamente hablando, la complejidad algorítmica se define en relación un lenguaje descriptivo (o lenguaje de programación). Cuando este lenguaje es Turing completo, lo que significa que se puede simular cualquier otra máquina de Turing en él, hablamos de CK universal o CK simplemente. Sin embargo, cuando el lenguaje de codificación tiene un poder expresivo reducido (es decir, cuando es una máquina específica en lugar de una máquina universal), la complejidad algorítmica se puede calcular y utilizar como una medida subjetiva de complejidad~\cite{romano2013language}\sergio{nosotros}. Recientemente, se propuso una aproximación a CK utilizando el \textit{teorema de codificación}, que relaciona la complejidad algorítmica de una secuencia con la probabilidad de que una máquina universal produzca esa secuencia~\cite{f43,f44,f45,f46}. La propuesta proporciona una medida de complejidad algorítmica para un gran conjunto de secuencias cortas. Esta propuesta se presentó como la mejor aproximación de “una medida final de aleatoriedad” y puede reproducir los sesgos observados cuando se les pide a los individuos que juzguen la aleatoriedad de los patrones o que produzcan patrones aleatorios~\cite{f44,f45}.
+%}
+
+%Como se indicó anteriormente, una propuesta estrictamente relacionada con la CK es que los sujetos humanos comprimen las secuencias internamente, no necesariamente usando un conjunto de instrucciones de un lenguaje universal, sino usando una variedad de primitivas similares a las de una computadora tales como bucles y otras rutinas que forman un \textit{lenguaje del pensamiento} (LoT, por sus siglas en inglés) \santi{Repe} interno específico~\cite{fodor1975language} lo suficientemente fuerte para describir cualquier secuencia del dominio, pero no tan complejo como el de una Máquina de Turing universal y, por lo tanto, lo suficientemente débil como para permitir que la complejidad pueda ser computada de manera exacta. Dicho lenguaje permitiría la combinación de primitivas simples en patrones complejos de encajes o reglas recursivas. Los modelos de LoT se han propuesto muy temprano~\cite{f33}. Simon y Kotovsky~\cite{f48} utilizaron conceptos como ``igual'', ``siguiente'' (en el alfabeto) y la capacidad de recorrer una serie para construir una representación formal de la memoria humana para secuencias de letras (por ejemplo, ``cadaeafa...''). Del mismo modo, Restle~\cite{f37} utilizó las operaciones ``repetir'', ``transposición'' y ``reflexión''. También se utilizaron lenguajes similares basados en repeticiones con variaciones para codificar figuras geométricas lineales y formas 2D y 3D más elaboradas~\cite{f33,leeuwenberg1971perceptual}. Más recientemente, se han utilizado con éxito propuestas similares para estudiar diferentes aspectos del aprendizaje humano, en particular el aprendizaje de conceptos~\cite{feldman2000minimization,f51, piantadosi2012bootstrapping,piantadosi2016four,f54}. \santi{media tesis es sobre esto. Referenciar a los capítulos correspondientes} Se ha mostrado que la complejidad Booleana, es decir, la longitud de la expresión lógica más corta que captura el concepto (una noción estrechamente relacionada con CK) captura el comportamiento humano en el aprendizaje de conceptos lógicos~\cite{feldman2000minimization,feldman2003simplicity}.
+
+%\paragraph{Ubicar 2}
+
+%En pocas palabras, la suposición es que para minimizar la carga de memoria, los participantes comprimen mentalmente la estructura de la secuencia utilizando el lenguaje formal propuesto.\santi{Esta es la visión de Mariano, la que dice que usamos este lenguaje... Para mí, es simplemente que este lenguaje lo puede explicar y que nuestra cabeza podría estar usando otro. Tal vez valga la pena una pequeña digresión sobre esto en las conclusiones.} El uso de un número mínimo de operaciones primitivas y la selección de la representación más corta, están en sintonía con el principio de simplicidad (propuesto como un componente esencial del aprendizaje) el cual define que las hipótesis más simples son las más favorecidas~\cite{f32,feldman2003simplicity}.
+
 
 \section{Teoría Algorítmica de la Información}
-\widesanti{escribí toda esta sección (28 sept.). Puse ejemplos de programas en pythopn porque me pareció que ayudaba. Si no te gusta, lo sacamos. Obviamente, podes cambiarla como te parezca}
+
 
 Cuando vemos las palabras de 60 bits
 \begin{align*}
@@ -241,7 +354,7 @@ En esta sección introducimos la definición formal de \kolcomp y mencionamos al
 Como ya dijimos, en la Teoría Algorítmica de la Información, los programas son vistos como descripciones algorítmicas de palabras. Decimos que un programa $\pra$
 {\em $\M$-describe} una palabra $\sta$ cuando, al ser ejecutado en una máquina $\M$, produce $\sta$ como salida. En general
 hay más de un programa que describe la salida $\sta$.
-La idea de la \kolcomp introducida en~\cite{kolmogorov1965three,solomonoff1964formal,chaitin1975theory} es tomar la longitud de la descripción más corta como una medida de la complejidad de la palabra. Si $\pra$ es un programa de una máquina de Turing, notamos $\len{\pra}$ a la {\em longitud} de $\pra$, es decir, a la cantidad de símbolos que tiene. Por $\words$ notamos al conjunto de palabras finitas formadas por los símbolos $0$ y $1$. Las definiciones que siguen fijan en $\words$ al alfabeto de programas y al de descripciones como por simplicidad. Sin embargo todas estas definiciones siguen teniendo sentido cuando los alfabetos de los programas son distintos a los de las palabras que describen; el único requerimiento es que ambos alfabetos sean finitos.
+La idea de la \kolcomp introducida en~\cite{kolmogorov1965three,solomonoff1964formal,chaitin1975theory} es tomar la longitud de la descripción más corta como una medida de la complejidad de la palabra. Si $\pra$ es un programa de una máquina de Turing, notamos $\len{\pra}$ a la {\em longitud} de $\pra$, es decir, a la cantidad de símbolos que tiene. Por $\words$ notamos al conjunto de palabras finitas formadas por los símbolos $0$ y $1$. Las definiciones que siguen fijan en $\words$ al alfabeto de programas y al de descripciones por simplicidad. Sin embargo, todas estas definiciones siguen teniendo sentido cuando los alfabetos de los programas son distintos a los de las palabras que describen; el único requerimiento es que ambos alfabetos sean finitos.
 %
 \begin{definicion}[\kolcomp]\label{intro:def:plainC}
 $\CM\colon\words \to \nat$, 
@@ -293,7 +406,7 @@ donde $\T_0,\T_1,\T_2,\dots$ es una enumeración de todas las máquinas de Turin
 % they permit us to define the \kolcomp in an {\em optimal} way:
 
 
-Las máquinas universales existen y son aquellas que permiten `simular' cualquier otra máquina. Análogamente, un lenguaje de programación es {\em Turing-completo} si permite definir cualquier función parcial computable. Python, C o Haskell son lenguajes Turing-computables. Los lenguajes Turing-completos inducen una definición de máquina universal. Por simplicidad, tomemos como alfabeto de programas el código ASCII y supongamos que $\U$ es la máquina que interpreta programas en Python. El siguiente programa 
+Las máquinas universales existen y son aquellas que permiten `simular' cualquier otra máquina. Análogamente, un lenguaje de programación es {\em Turing-completo} si permite definir cualquier función parcial computable. Python, C o Haskell son lenguajes Turing-completos. Los lenguajes Turing-completos inducen una definición de máquina universal. Por simplicidad, tomemos como alfabeto de programas el código ASCII y supongamos que $\U$ es la máquina que interpreta programas en Python. El siguiente programa 
 \begin{verbatim}
     s=""
     for i in range(30):
@@ -445,43 +558,43 @@ La riqueza de la Teoría de la Información Algorítmica en relación a nociones
 %$\K(\sta_i)\leq\min\{m\colon\pair{m}{\sta_i}\in W\}+c$.
 
 
+\widesergio{Tiene sentido poner MDL e Inferencia Bayesiana en la intro, o tiene más sentido que queden en el contexto de los capítulos 1 y 2 como están ahora? En la carpeta papers puse un capítulo de Artificial Intelligence, A Modern Approach que sintetiza los dos temas. Podría ser eso si es que suma}
 
-\subsection{MDL}
+
+\section{MDL}
 \widesanti{
 
 Hacer explicito que hay un lenguaje de descripción por un lado y objetos descriptos por otro. Hacer la conexión entre nuestras definiciones de MDL y la def de Kolm compl (eg para definir la la compl kolm relativa a la máquina $M$, ($C_M$) la semántica de un programa $p$ es el resultado de su ejecución en  $M$, $\sem{p}_M=M(p)$). Algo puse en el cap de Kolmogorov.
 
 Poner referencias, aunque no sé bien cuales. Ver el Vitanyi.
 }
+
+\section{Inferencia Bayesiana}
  
-\subsection{Inducción de Solomonoff}
-\widesanti{Algo corto. Está bien explicado en el Vitanyi
-
-Ahora que releo, me pregunto si hace falta... ¿Lo usamos en la tesis?
-}
+\widesergio{Puedo hablar de la regla de Bayes, los prior y los poterior. No sé igual si aporta mucho más de lo que ya está explicado en el capítulo 2}
 
 
-\section{Sin ubicar:}
-"The infite use of finite means" (Humboldt's sobre el lenguaje)
+%\section{Sin ubicar:}
+%"The infite use of finite means" (Humboldt's sobre el lenguaje)
 
-1) How does abstract knowledge guide learning and inference from sparse data?
-Bayesian inference in probabilistic generative models
+%1) How does abstract knowledge guide learning and inference from sparse data?
+%Bayesian inference in probabilistic generative models
 
-2) What form does that knowledge take, across different domains and tasks?
-Probabilities defined over richly structured symbolic representations: spaces, graphs, grammars, logical predicates
+%2) What form does that knowledge take, across different domains and tasks?
+%Probabilities defined over richly structured symbolic representations: spaces, graphs, grammars, logical predicates
 
-3) How is that knowledge itself constructed / updated / validated?
-Hierarchical models, transfer learning, herramientas papers
+%3) How is that knowledge itself constructed / updated / validated?
+%Hierarchical models, transfer learning, herramientas papers
 
 
-La mayoría de los estudios de LoT se han centrado en el aspecto compositivo del lenguaje, que se ha modelado dentro de un~\cite{tenenbaum2011grow} bayesiano o un marco~\cite{marie2016, goldsmith2002probabilistic, romano2013language, goldsmith2001unsupervised} de longitud mínima de descripción (MDL).
+%La mayoría de los estudios de LoT se han centrado en el aspecto compositivo del lenguaje, que se ha modelado dentro de un~\cite{tenenbaum2011grow} bayesiano o un marco~\cite{marie2016, goldsmith2002probabilistic, romano2013language, goldsmith2001unsupervised} de longitud mínima de descripción (MDL).
 
-El método común es definir una gramática con un conjunto de producciones basadas en operaciones que son intuitivas para los investigadores y luego estudiar cómo diferentes procesos de inferencia coinciden con patrones regulares en el aprendizaje humano. Un estudio reciente~\cite{piantadosi2016logical} pone el foco en el proceso de cómo elegir empíricamente el conjunto de producciones y cómo diferentes definiciones de LoT pueden crear diferentes patrones de aprendizaje. 
+%El método común es definir una gramática con un conjunto de producciones basadas en operaciones que son intuitivas para los investigadores y luego estudiar cómo diferentes procesos de inferencia coinciden con patrones regulares en el aprendizaje humano. Un estudio reciente~\cite{piantadosi2016logical} pone el foco en el proceso de cómo elegir empíricamente el conjunto de producciones y cómo diferentes definiciones de LoT pueden crear diferentes patrones de aprendizaje. 
 
-\subsection{Ciencia Cognitiva Bayesiana}
-\label{INTRO:BAYES}
-\subsubsection{Rational analysis y plot}
+%\subsection{Ciencia Cognitiva Bayesiana}
+%\label{INTRO:BAYES}
+%\subsubsection{Rational analysis y plot}
 
-Aunque el estudio actual se basa en el uso de un lenguaje fijo, con reglas y pesos asociados, alguna evidencia sugiere que una mejor descripción del comportamiento se puede lograr incorporando un componente probabilístico al modelado. Este enfoque, defendido por~\cite{piantadosi2016four} bajo el término lenguaje de pensamiento probabilístico (pLoT), consiste en utilizar inferencia probabilística bayesiana para estimar la probabilidad de la existencia de algún conjunto de reglas (un lenguaje formal propuesto), dada los datos observados. Se ha demostrado que es especialmente eficaz para modelar el aprendizaje de conceptos,por ejemplo, replicando los patrones de errores a lo largo del aprendizaje~\cite{goodman2008rational,piantadosi2012bootstrapping,piantadosi2016logical}. Este enfoque también se adoptó para investigar cómo los seres humanos evalúan la aleatoriedad en su entorno. Los sesgos humanos en los juicios subjetivos de aleatoriedad~\cite{f114,f115} podrían explicarse asumiendo que la representación de la aleatoriedad resulta de una inferencia estadística sobre los procesos que generaron la secuencia, es decir, una estimación de la probabilidad de que un proceso regular dado lo produjo~\cite{f21}. Un buen ajuste al comportamiento humano fue obtenido sin utilizar toda la potencia de las máquinas de Turing, sino simplemente autómatas de estado finito con una pila, que son capaces de reconocer la repetición, la alternancia o la simetría~\cite{f18,f117}. Por lo tanto, a pesar de las diferencias fundamentales (en particular, los lenguajes deterministas versus probabilísticos), la teoría pLOT comparte con nuestro enfoque la necesidad de considerar tipos similares de operaciones primitivas. Dados los fuertes vínculos entre aleatoriedad y complejidad subjetivas, podemos esperar razonablemente que nuestro lenguaje formal también puede predecir si un patrón se percibe como aleatorio o no; esta posibilidad permanece para ser probado en trabajos futuros.
+%Aunque el estudio actual se basa en el uso de un lenguaje fijo, con reglas y pesos asociados, alguna evidencia sugiere que una mejor descripción del comportamiento se puede lograr incorporando un componente probabilístico al modelado. Este enfoque, defendido por~\cite{piantadosi2016four} bajo el término lenguaje de pensamiento probabilístico (pLoT), consiste en utilizar inferencia probabilística bayesiana para estimar la probabilidad de la existencia de algún conjunto de reglas (un lenguaje formal propuesto), dada los datos observados. Se ha demostrado que es especialmente eficaz para modelar el aprendizaje de conceptos,por ejemplo, replicando los patrones de errores a lo largo del aprendizaje~\cite{goodman2008rational,piantadosi2012bootstrapping,piantadosi2016logical}. Este enfoque también se adoptó para investigar cómo los seres humanos evalúan la aleatoriedad en su entorno. Los sesgos humanos en los juicios subjetivos de aleatoriedad~\cite{f114,f115} podrían explicarse asumiendo que la representación de la aleatoriedad resulta de una inferencia estadística sobre los procesos que generaron la secuencia, es decir, una estimación de la probabilidad de que un proceso regular dado lo produjo~\cite{f21}. Un buen ajuste al comportamiento humano fue obtenido sin utilizar toda la potencia de las máquinas de Turing, sino simplemente autómatas de estado finito con una pila, que son capaces de reconocer la repetición, la alternancia o la simetría~\cite{f18,f117}. Por lo tanto, a pesar de las diferencias fundamentales (en particular, los lenguajes deterministas versus probabilísticos), la teoría pLOT comparte con nuestro enfoque la necesidad de considerar tipos similares de operaciones primitivas. Dados los fuertes vínculos entre aleatoriedad y complejidad subjetivas, podemos esperar razonablemente que nuestro lenguaje formal también puede predecir si un patrón se percibe como aleatorio o no; esta posibilidad permanece para ser probado en trabajos futuros.
 
-Como se mencionó anteriormente, el enfoque pLOT permite encontrar los conceptos y reglas más probables en un espacio de hipótesis estructurado gramaticalmente que contiene varios candidatos utilizando la inferencia bayesiana, parece ser un enfoque muy prometedor para ese propósito~\cite{goodman2008rational,piantadosi2016four,romano2018bayesian}. 
+%Como se mencionó anteriormente, el enfoque pLOT permite encontrar los conceptos y reglas más probables en un espacio de hipótesis estructurado gramaticalmente que contiene varios candidatos utilizando la inferencia bayesiana, parece ser un enfoque muy prometedor para ese propósito~\cite{goodman2008rational,piantadosi2016four,romano2018bayesian}. 

@@ -46,7 +46,7 @@ En nuestro experimento, los participantes se dividen en dos grupos de tal manera
 En este capítulo, utilizaremos la gramática \grambool con cuatro variables proposicionales, $\propvars=\{p_1,\dots,p_4\}$, y definiremos la gramática \gramboolxor como una extensión de \grambool con el operador adicional $\oxor$ para denotar la disyunción exclusiva.
 
 \paragraph{La gramática \gramboolxor.}
-Para un conjunto fijo $\propvars=\{p_1,\dots,p_4\}$ de variables proposicionales, definimos la gramática de la lógica proposicional $\gramboolxor$ en la Figura \ref{PCFG}.
+Para un conjunto fijo $\propvars=\{p_1,\dots,p_4\}$ de variables proposicionales, definimos la gramática de la lógica proposicional $\gramboolxor$ agregando a $\grambool$ la producción $\bool \to (\bool \oxor \bool)$ tal como puede verse en la Figura \ref{PCFG}.
 %
 \begin{figure}[h!]
 \begin{center}
@@ -104,14 +104,11 @@ En la Figura~\ref{semaforos} representamos un concepto $\con$ como se muestra en
 
 %In Figura~\ref{semaforos} we depict a concept $\con$ (variables are represented by colors) such that $\#\con=4$. One can see that the formula $x_3$ is not compatible with $\con$ but $x_1 \oand x_2$, or $x_1 \oand x_2 \oand (x_3 \oor \lnot x_3)$, are compatible with $\con$. $\overline \con$ may be described by $\lnot x_1\oor \lnot x_2$.
 
-\widesergio{Cambiar complejidad y gramática para sólo extender}
-\paragraph{Complejidad para \gramboolxor.} Definimos $|\varphi|$, el {\em tamaño} de la fórmula $\varphi\in\gramboolxor$, del mismo modo que en \grambool pero con un operador adicional :
+\paragraph{Complejidad para \gramboolxor.} Para el caso de la complejidad, definimos $|\varphi|$, el {\em tamaño} de la fórmula $\varphi\in\gramboolxor$, del mismo modo que en \grambool pero agregando un valor al operador adicional :
 \begin{eqnarray*}
-|p_i| &\eqdef& 1\\
-|\lnot p_i| &\eqdef& 1\\
-|\varphi*\psi| &\eqdef& 1+|\varphi|+|\psi|
+|\varphi\oxor\psi| &\eqdef& 1+|\varphi|+|\psi|
 \end{eqnarray*}
-donde $*\in\{\wedge,\vee,\oxor\}$.
+
 
 Si $\con$ es un conjunto de valuaciones sobre $\propvars$, definimos la {\em $\gramboolxor$-complejidad de la descripción mínima} de $\con$, notada $\mdlboolxor(\con)$, como el tamaño de la fórmula más corta cuya semántica es $\con$, es decir,
 $$
@@ -236,13 +233,12 @@ El grupo objetivo codificó \testa de manera más eficiente que el grupo control
 
 
 \begin{figure}[t!]
-      \includegraphics[scale=0.25]{model_free-3.pdf}
+      \includegraphics[scale=0.4]{model_free-3.pdf}
       \centering
       %\caption{Concept learning time $(a)$ and difficulty predicted $(b)$, $(c)$ for the two test concepts (\testa and \testb). Error bars are s.e.m.\ across subjects.}
       \caption{Tiempo de aprendizaje del concepto $(a)$ y dificultad pronosticada $(b)$, $(c)$ para los dos conceptos de evaluación (\testa y \testb). Las barras de error son s.e.m.\ entre los sujetos}
       \label{model free}
    \end{figure}
-\sergio{Traducir figura}   
 \section{Modelo}
 
 %When presented with a concept (e.g.~Figura~\ref{semaforos}), our model generates logical formulas and evaluate them to true or false for that concept, keeping the formula only if it is true. To generate formulas, the model uses a symbolic language in which each rule (symbols and operators) is associated with a probability of being used. The probability of generating a formula is proportional to the product of the probabilities of the rules required for building it, and therefore it decreases exponentially with its length. Furthermore, if one of the rules has a very low probability of being used, formulas that require it will also have very low probability.
@@ -376,18 +372,17 @@ $$
 Dado el valor a priori bajo del parámetro de la regla $ \oxor $, la probabilidad a posteriori de las fórmulas de tipo $ (x_{i} \oand \neg x_{j}) \oor (\neg x_{i} \oand x_{j}) $, que no usa el operador $ \oxor $, es mucho mayor que la probabilidad a posteriori de $ x_{i} \oxor x_{j} $. Por lo tanto, en la Figura~\ref{results} vemos una gran dificultad predicha por el modelo dinámico para este concepto (dado que la probabilidad a posteriori se encuentra principalmente sobre estas fórmulas más largas sin $ \oxor $, ver ecuación \eqref{expected length}).
 \begin{figure}
       \centering
-      \includegraphics[scale=.30]{results-3.pdf}
+      \includegraphics[scale=.45]{results-3.pdf}
       \caption{
       % Learning times and model predictions for target and control groups (see Table~\ref{conceptos} for concept details). The predicted difficulties of each model were calculated using $d_\con$. Error bars are s.e.m.
       Tiempos de aprendizaje y predicciones de modelos para grupos objetivo y control (consultar la Tabla~\ref{conceptos} para obtener detalles de los conceptos). Las dificultades predichas de cada modelo se calcularon utilizando $ d_\con $. Las barras de error son s.e.m.
       }
       \label{results}
 \end{figure}
-\sergio{traducir figura}
 
 \begin{figure}
         \centering
-        \includegraphics[scale=1]{dirichlet_evol-2.pdf}
+        \includegraphics[scale=1.5]{dirichlet_evol-2.pdf}
         \caption{
         % Evolution of Dirichlet parameters of different rules after each concept experienced by the target group.
         Evolución de los parámetros de Dirichlet de diferentes reglas después de cada concepto experimentado por el grupo objetivo.
