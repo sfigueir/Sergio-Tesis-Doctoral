@@ -167,13 +167,38 @@ $$
 
 
 
-\subsection{Semántica}
+\subsection{Semántica}\label{sub:semantica}
 
-Los modelos probabilísticos de \lot permiten realizar inferencia sobre un espacio de hipótesis estructurado gramaticalmente~\cite{goodman2008rational}. Cada propuesta de \lot suele formalizarse mediante una gramática libre de contexto $ \gram $ que define las funciones o programas válidos que se pueden generar, como en cualquier otro lenguaje de programación. Sin embargo, para representar conceptos es necesario unir estos elementos sintácticos con el conocimiento semántico que tenemos del mundo. Es decir, el programa (o árbol de derivación de $ \gram $) debe interpretarse o ejecutarse de acuerdo con una semántica determinada para obtener una descripción del concepto en la tarea cognitiva en cuestión. En esta tesis asumimos que los \lot no sólo tienen una sintaxis definida por su gramática, sino que tienen una semántica determinada que les permite representar nuestro entendimiento del mundo.
+Los modelos probabilísticos de \lot permiten realizar inferencia sobre un espacio de hipótesis estructurado gramaticalmente~\cite{goodman2008rational}. Cada propuesta de \lot suele formalizarse mediante una gramática libre de contexto $ \gram $ que define las funciones o programas válidos que se pueden generar, como en cualquier otro lenguaje de programación. Sin embargo, para representar conceptos es necesario unir estos elementos sintácticos con el conocimiento semántico que tenemos del mundo. Es decir, el programa (o árbol de derivación de $ \gram $) debe interpretarse o ejecutarse de acuerdo con una semántica determinada para obtener una descripción del concepto en la tarea cognitiva en cuestión. Esta tesis se basa fuertemente en que los \lot no sólo tienen una sintaxis definida por su gramática, sino que tienen una semántica determinada que les permite representar nuestro entendimiento del mundo.
 
-En nuestro ejemplo de Logo, podíamos combinar las operaciones como `mover", ``lápiz arriba", ``lápiz abajo'' o ``rotar" en distintos programas (o expresiones), pero sólo al ser evaluados es cuando estos programas pueden transmitir las distintas formas o conceptos que el lenguaje busca modelar.
+En nuestro ejemplo de Logo, podíamos combinar las operaciones como `mover'', ``lápiz arriba'', ``lápiz abajo'' o ``rotar'' en distintos programas (o expresiones), pero sólo al ser evaluados es cuando estos programas pueden transmitir las distintas formas o conceptos que el lenguaje busca modelar.
 
-En esta tesis, utilizaremos definiciones formales para representar la semántica de nuestras gramáticas $\gram$ donde el dominio serán los programas válidos de $\gram$ y el codominio los objetos a representar en cada tarea. En la parte I, trabajaremos con los lenguajes \gramgeo y \grambin que permiten modelar secuencias en un octágono y secuencias binarias, respectivamente. En la parte II, utilizaremos la lógica proposicional \grambool para representar conceptos booleanos. 
+\widesanti{agregué algo de acá en adelante}
+
+
+Para un segundo ejemplo más concreto, consideremos la gramática del lenguaje Python. Una palabra de dicho lenguaje será cualquier programa válido. Así, una expresión (programa) como 
+%
+\begin{verbatim}
+    s=""
+    for i in range(30):
+        s=s+"10"
+    print(s)
+\end{verbatim}
+%
+tendrá como semántica lo que este programa devuelve o imprime por pantalla, en este caso, la cadena
+$$
+01010101010101010101010101010101010101010101010101010101010.
+$$
+
+Es fundamental distinguir entre el espacio sintáctico de las descripciones o programas, que viene dado por una gramática $\gram$ por un lado, y el espacio de los objetos descriptos $\+O$ por otro. Aunque los dos espacios tendrán algún tipo de representación simbólica, pueden estar construidos sobre alfabetos distintos. Dada una gramática $\gram$ y un objeto a representar $x$ perteneciente al lenguaje definido por $\gram$, usaremos la notación $\sem{x}_\gram\in\+O$ para referirnos a la semántica de $x$ asignada por $\gram$. La naturaleza de $x$ dependerá, desde luego, del problema a analizar. 
+
+La semántica $\sem{x}_\gram$ debe ser {\em formal}, esto es, con un significado matemático preciso único. La semántica de $x$ vendrá dada por los elementos que la componen, de acuerdo al árbol sintáctico que $\gram$ le asigne a $x$. Así, las definiciones de semántica $\sem{x}_\gram$ tendrán la forma de definiciones recursivas, que utilizan definiciones $\sem{y}_\gram$, donde $y$ es una subestructura de $x$ que dependerá, de $\gram$.
+
+% En esta tesis, utilizaremos definiciones formales para representar la semántica de nuestras gramáticas $\gram$ donde el dominio serán los programas válidos de $\gram$ y el codominio los objetos a representar en cada tarea. 
+
+
+La división entre $\gram$ y $\+O$ es central en esta tesis.
+En la parte~\ref{parte:secuencias}, trabajaremos con los lenguajes \gramgeo y \grambin en el rol de $\gram$, que permiten modelar el espacio $\+O$ de secuencias en un octágono y secuencias binarias, respectivamente. En la parte~\ref{parte:conceptos}, utilizaremos la lógica proposicional \grambool como gramática de descripción $\gram$ para representar el espacio $\+O$ de conceptos booleanos. 
 
 \widesergio{No sé si se puede decir mucho más}
 
@@ -354,8 +379,7 @@ hay más de un programa que describe la salida $\sta$.
 La idea de la \kolcomp introducida en~\cite{kolmogorov1965three,solomonoff1964formal,chaitin1975theory} es tomar la longitud de la descripción más corta como una medida de la complejidad de la palabra. Si $\pra$ es un programa de una máquina de Turing, notamos $\len{\pra}$ a la {\em longitud} de $\pra$, es decir, a la cantidad de símbolos que tiene. Por $\words$ notamos al conjunto de palabras finitas formadas por los símbolos $0$ y $1$. Las definiciones que siguen fijan en $\words$ al alfabeto de programas y al de descripciones por simplicidad. Sin embargo, todas estas definiciones siguen teniendo sentido cuando los alfabetos de los programas son distintos a los de las palabras que describen; el único requerimiento es que ambos alfabetos sean finitos.
 %
 \begin{definicion}[\kolcomp]\label{intro:def:plainC}
-$\CM\colon\words \to \nat$, 
-La {\em 
+$\CM\colon\words \to \nat$, la {\em 
 \kolcomp con respecto a la máquina $\M$}, se define como
 $$
 \CM(\sta)=
@@ -558,13 +582,28 @@ La riqueza de la Teoría de la Información Algorítmica en relación a nociones
 \widesergio{Tiene sentido poner MDL e Inferencia Bayesiana en la intro, o tiene más sentido que queden en el contexto de los capítulos 1 y 2 como están ahora? En la carpeta papers puse un capítulo de Artificial Intelligence, A Modern Approach que sintetiza los dos temas. Podría ser eso si es que suma}
 
 
-\section{MDL}
+\subsection{Longitud mínima de descripción}
+
 \widesanti{
-
-Hacer explicito que hay un lenguaje de descripción por un lado y objetos descriptos por otro. Hacer la conexión entre nuestras definiciones de MDL y la def de Kolm compl (eg para definir la la compl kolm relativa a la máquina $M$, ($C_M$) la semántica de un programa $p$ es el resultado de su ejecución en  $M$, $\sem{p}_M=M(p)$). Algo puse en el cap de Kolmogorov.
-
-Poner referencias, aunque no sé bien cuales. Ver el Vitanyi.
+Puse esto que sigue. 
+Falta algo de intro. Poner referencias, aunque no sé bien cuales. Ver el Vitanyi.
 }
+
+Retomemos las nociones de gramática $\gram$ y espacio de objetos $\+O$ de \S\ref{sub:semantica}. 
+
+A cada expresión / programa $x$ del lenguaje definido por $\gram$ le asignaremos un {\em tamaño}, notado $|x|$, que será un número natural. En términos generales, la idea es que contará la cantidad de símbolos de $x$, aunque la definición precisa podría dar más peso a ciertos símbolos por sobre otros. Es importante observar que el tamaño de un objeto $x$ es independiente de su semántica, en tanto es una propiedad de una descripción y no del objeto descripto.
+
+En analogía con la complejidad de Kolmogorov de la Definición~\ref{intro:def:plainC} definimos la {\em longitud mínima de descripción} (MDL por sus siglas en inglés) relativa a $\gram$ como la función $\mdl{\gram}:\+O\to\nat$ definida de esta forma:
+%
+\begin{equation}\label{eqn:mdl}
+\mdl{\gram}(o)\eqdef\min\{|x|\mid x\in\gram,\sem{\gram}{x}=o\}.
+\end{equation}
+%
+Así, $\mdl{\gram}(o)$ será el tamaño de la descripción más corta que tenga $o$ entre las expresiones de $\gram$. Trabajaremos siempre con objetos que tengan al menos una descripción en $\gram$. Esta noción de complejidad sí utiliza la semántica asociada a $\gram$. Desde luego, la definición precisa dependerá de los lenguajes estudiados y del espacio de objetos que se quieran modelar: la definición \eqref{eqn:mdl} es simplemente un marco que será instanciado en distintos lenguajes y semánticas a lo largo de la tesos. Es importante notar que la definición \eqref{eqn:mdl} no es otra cosa más que la complejidad de Kolmogorov relativa a una máquina de Turing específica, posiblemente Turing-incompleta. De hecho, para las investigaciones que siguen, los lenguajes propuestos estarán específicamente diseñados para entender una pequeña porción del mundo, aquella que queremos modelar, y los lenguajes serán siempre Turing-incompletos. Una propiedad necesaria será que la función $\mdl{\gram}$ sea computable, e incluso implementable eficientemente.
+
+
+
+
 
 \section{Inferencia Bayesiana}
  
