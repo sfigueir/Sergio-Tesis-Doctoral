@@ -50,28 +50,38 @@ Para un conjunto fijo $\propvars=\{p_1,\dots,p_4\}$ de variables proposicionales
 %
 \begin{figure}[h!]
 \begin{center}
-\textbf{Producciones originales de \grambool}
-\end{center}
-\vspace{-.5cm}
-\begin{eqnarray*}
-\start &\to&\bool\\
-\bool &\to&(\bool \oand \bool) \\
-\bool &\to&(\bool \oor \bool) \\
-\bool &\to&\atom\\
-\atom &\to& p_i \\
-\atom &\to&\lnot p_i
-\end{eqnarray*}
-\begin{center}
-donde $i\in\{1,\dots,4\}$\\
+\begin{tabular}{ccc}
 
-\medskip
+    \begin{minipage}[t]{0.45\textwidth}
+    {\bf Producciones\\originales de \grambool}
 
-\textbf{Producción adicional}
+    \medskip
+
+    \begin{tabular}{rcl}
+    $\start$ &$\to$&$\bool$\\
+    $\bool$ &$\to$&$(\bool \oand \bool)$ \\
+    $\bool$ &$\to$&$(\bool \oor \bool) $\\
+    $\bool$ &$\to$&$\atom$\\
+    $\atom$ &$\to$&$ p_i $\\
+    $\atom$ &$\to$&$\lnot p_i$
+    \end{tabular}
+    
+    donde $i\in\{1,\dots,4\}$
+    \end{minipage}
+
+    \begin{minipage}[t]{0.25\textwidth}
+
+    {\bf Producción\\adicional}
+
+    \medskip
+
+    \begin{tabular}{rcl}
+    $\bool$ &$\to$&$(\bool \oxor \bool)$
+    \end{tabular}
+    \end{minipage}
+
+\end{tabular}
 \end{center}
-\vspace{-.5cm}
-\begin{eqnarray*}
-\bool &\to&(\bool \oxor \bool)
-\end{eqnarray*}
 
 \caption{La gramática \gramboolxor para la lógica proposicional.}
 \label{PCFG}
