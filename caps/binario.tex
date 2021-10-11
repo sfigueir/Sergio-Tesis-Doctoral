@@ -116,7 +116,7 @@ En el experimento 1, seleccionamos 10 secuencias auditivas de 16 elementos, un n
    \caption{(A) Ejemplo de un patrón de secuencia larga de 16 elementos, con su representación más corta en \grambin y la estructura de árbol derivada de esta expresión (que ilustra la representación jerárquica). También se indica la complejidad \mdlbin de esta secuencia. (B) Diseño experimental de la tarea de detección de violaciones: se representa una sesión con la secuencia AABBABABAABBABAB, con un ejemplo de elemento desviado objetivo (A reemplazado por B, en la posición 9) y un ejemplo de elemento súper-desviador objetivo (C en la posición 13). Las desviaciones podían ocurrir únicamente en las posiciones 9, 11, 13 o 15}
    \label{PlosBIO-F1}
 \end{figure}
-\santi{qué es ISI?}\sergio{IEE sería en español, Intervalo entre estímulos}
+\santi{qué es ISI?}\sergio{IEE sería en español, Intervalo entre estímulos}\santi{ahí lo cambié sin siglas}
 
 \begin{figure}[t!]
    \includegraphics[scale=1]{journal.pcbi.1008598.g002_SP.PNG}
@@ -354,7 +354,7 @@ La complejidad, o la ``compresibilidad'', de una secuencia se puede evaluar de v
 $$
 \text{complejidad de fragmentos} = \sum_{i = 1}^{K} \log_2(1+L_i) 
 $$
-donde $K$ es el número de fragmentos y $L_i$ la longitud de la i-ésima traza. Se debe tener en cuenta que --al contrario que en~\cite{f34}, cuyas secuencias estaban compuestas de dígitos y los fragmentos definidos en incrementos constantes (positivos o negativos) de un dígito respecto del siguiente (por ejemplo, ``1234'', ``7531'' son ambos un sólo fragmento o traza)-- aquí simplemente definimos los fragmentos como repeticiones consecutivas del mismo elemento. Por ejemplo, la secuencia ``AAABAA'' tiene 3 fragmentos, y una complejidad de fragmentos = $\log_2(4) + \log_2(2) + \log_2(3)$.
+donde $K$ es el número de fragmentos y $L_i$ la longitud de la $i$-ésima traza. Se debe tener en cuenta que --al contrario que en~\cite{f34}, cuyas secuencias estaban compuestas de dígitos y los fragmentos definidos en incrementos constantes (positivos o negativos) de un dígito respecto del siguiente (por ejemplo, ``1234'', ``7531'' son ambos un sólo fragmento o traza)-- aquí simplemente definimos los fragmentos como repeticiones consecutivas del mismo elemento. Por ejemplo, la secuencia ``AAABAA'' tiene 3 fragmentos, y una complejidad de fragmentos = $\log_2(4) + \log_2(2) + \log_2(3)$.
 
 %Entropy is a measure of information that quantifies the uncertainty of a distribution. Here, we compute the Shannon entropy of the probability of pairs of items, (AA, AB, BA, BB), in order to capture the effect of order-1 transition probabilities (85). Given that the probability of a given pair is defined as, H is computed as follow:
 %H = ...

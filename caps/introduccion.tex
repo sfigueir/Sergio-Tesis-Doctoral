@@ -45,7 +45,7 @@ Los lenguajes simbólicos pueden describir un vasto conjunto de conceptos a part
 
 Una pregunta natural, sobre la que profundizaremos en la parte \ref{parte:conceptos}, es si las primitivas de un \lot son universales --tanto a través de diferentes individuos como a lo largo del desarrollo-- o si, en cambio, el repertorio semántico de un lenguaje es dinámico y está moldeado por la experiencia. De hecho, es probable que nuestra capacidad para representar automáticamente conceptos de manera sucinta no se deba a un lenguaje eficiente innato en nuestra mente. En cambio, proponemos que esta capacidad surge como un subproducto de nuestro cerebro que aprende rápidamente representaciones eficientes de los conceptos que generalmente encontramos en la vida cotidiana. Examinaremos la hipótesis de que los humanos tienen la capacidad de recombinar rápidamente proposiciones en su \lot, agregando nuevas primitivas a su lenguaje. En otras palabras, ese aprendizaje conduce a un proceso de compilación de rutinas en funciones dentro de el \lot.
 
-En el ejemplo del lenguaje Logo se puede imaginar que si las producciones que dibujan cuadrados son muy frecuentes, sería eficaz dedicar un nuevo símbolo a esta producción. El nuevo símbolo ``cuadrado'' es una construcción jerárquica de {\em segundo orden} de las primitivas de {\em primer orden} del lenguaje. Tiene un costo (el de incrementar el léxico del lenguaje) pero en el nuevo lenguaje, dibujar un cuadrado puede ser instanciado con un programa muy corto (simplemente, {\em cuadrado})\santi{está bien, pero surge la pregunta del tamaño del cuadrado; podemos decir más arriba que compila un cuadrado de tamaño fijo} \sergio{me parece que confundiría la precisión a la idea que transmitimos, tampoco veníamos hablando de grados de rotar, etc. era más bien una explicación general de la idea}y por lo tanto usa menos memoria. De hecho, un lenguaje de nivel superior nos permite alcanzar un nivel superior de abstracción al liberar la memoria y el poder de procesamiento, haciendo así pensables pensamientos más complejos~\cite{minsky1967computation, murphy1988comprehending}.
+En el ejemplo del lenguaje Logo se puede imaginar que si las producciones que dibujan cuadrados son muy frecuentes, sería eficaz dedicar un nuevo símbolo a esta producción. El nuevo símbolo ``cuadrado'' es una construcción jerárquica de {\em segundo orden} de las primitivas de {\em primer orden} del lenguaje. Tiene un costo (el de incrementar el léxico del lenguaje) pero en el nuevo lenguaje, dibujar un cuadrado puede ser instanciado con un programa muy corto (simplemente, {\em cuadrado})\santi{está bien, pero surge la pregunta del tamaño del cuadrado; podemos decir más arriba que compila un cuadrado de tamaño fijo} \sergio{me parece que confundiría la precisión a la idea que transmitimos, tampoco veníamos hablando de grados de rotar, etc. era más bien una explicación general de la idea}\santi{tenés razón}y por lo tanto usa menos memoria. De hecho, un lenguaje de nivel superior nos permite alcanzar un nivel superior de abstracción al liberar la memoria y el poder de procesamiento, haciendo así pensables pensamientos más complejos~\cite{minsky1967computation, murphy1988comprehending}.
 
 La mayor parte del trabajo en la literatura sobre \lot, aunque incluye naturalmente un mecanismo de aprendizaje, tiende a acercarse al \lot como un sistema estable que deben descubrir los experimentadores, que prueban diferentes plantillas candidatas y seleccionan la que mejor se ajusta a los datos después del entrenamiento ~\cite{goodman2008rational, kemp2012exploring, piantadosi2016logical}. Aún así, queda por descubrir cómo las diferentes trayectorias de la experiencia pueden dar forma a la adquisición de manera diferente y pueden cambiar constantemente el repertorio de un \lot después de cada exposición.
 
@@ -57,47 +57,47 @@ Para poder formalizar la definición del \lot y las nociones de complejidad asoc
 
 \section{Gramáticas Libres de Contexto}
 
-El estudió de los lenguajes y la teoría gramatical lleva una larga tradición que se remonta a P{\=a}ṇini y su trabajo sobre el sánscrito, Aṣṭ{\=a}dhy{\=a}y{\=\i} en el siglo IV A.C. \cite{katre1989}. Si bien existen diversos formalismos y herramientas para modelar los lenguajes, las más utilizados para modelar la estructura constituyente de un lenguaje son las gramáticas libres de contexto (CFG, por sus siglas en inglés) \cite{keselj2009speech}, formalizadas de manera independiente en la década de los años 1950 por Chomsky \cite{chomsky1956three} y Backus \cite{backus1959syntax}.
+El estudio de los lenguajes y la teoría gramatical lleva una larga tradición que se remonta a P{\=a}ṇini y su trabajo sobre el sánscrito, Aṣṭ{\=a}dhy{\=a}y{\=\i} \santi{se escribe así o es algo de pronunciación? :P}en el siglo IV A.C. \cite{katre1989}. Si bien existen diversos formalismos y herramientas para modelar los lenguajes, los más utilizados para modelar la estructura constituyente de un lenguaje son las gramáticas libres de contexto (CFG, por sus siglas en inglés) \cite{keselj2009speech}, formalizadas de manera independiente en la década de los años 1950 por Chomsky \cite{chomsky1956three} y Backus \cite{backus1959syntax}.
 
-Una CFG tiene un léxico de símbolos (terminales y no terminales) y un conjunto de reglas o producciones que explican cómo esos símbolos pueden ordenarse y combinarse para formar las oraciones y palabras válidas del lenguaje. Por ejemplo, para modelar que el sintagma nominal (SN) de una oración puede expresarse con un nombre propio (NP) o un determinante (DET) seguido de un sustantivo (SUST) puede utilizarse el siguiente conjunto de reglas:
+Una CFG tiene un léxico de símbolos (terminales y no terminales) y un conjunto de reglas o producciones que explican cómo esos símbolos pueden ordenarse y combinarse para formar las oraciones y palabras válidas del lenguaje. Por ejemplo, para modelar que el sintagma nominal (\textsc{sn}) de una oración puede expresarse con un nombre propio (\textsc{np}) o un determinante (\textsc{det}) seguido de un sustantivo (\textsc{sust}) puede utilizarse el siguiente conjunto de reglas:
+%
+\begin{align*}
+    \textsc{sn} &\to \textsc{np}\\
+    \textsc{sn} &\to \textsc{det}\ \textsc{sust}
+\end{align*}
+%
+A los símbolos \textsc{sn}, \textsc{np}, \textsc{det}, \textsc{sust} se los conoce como símbolos no terminales, ya que no constituyen palabras válidas del lenguaje sino que representan abstracciones para agrupar otros símbolos en una misma idea o unidad constituyente de la sintaxis del lenguaje. A su vez las reglas, pueden ser anidadas de manera recursiva para combinarse entre sí y formar nuevas expresiones válidas. Por ejemplo, podemos agregar las siguientes producciones:
+%
+\begin{align*}
+    \textsc{np}   &\to \textit{Chatran}\\
+    \textsc{det}  &\to \textit{El}\\
+    \textsc{sust} &\to \textit{gato}\\
+    \textsc{sust} &\to \textit{felino}
+\end{align*}
+%
+De esta manera podemos derivar la oración \textit{El gato} a partir de la aplicación de las producciones anteriores en lo que se conoce como un árbol de derivación (Figura~\ref{intro:arbol}). En este caso, los símbolos finales (\textit{Chatran, El, gato, felino}) se los conoce como símbolos terminales y son las palabras válidas del lenguaje. 
 
-\begin{itemize}
-    \item[] SN $\to$ NP
-    \item[] SN $\to$ DET SUST
-\end{itemize}
-
-Los símbolos SN, NP, DET, SUST se los conoce como símbolos no terminales, ya que no constituyen palabras válidas del lenguaje sino que representan abstracciones para agrupar otros símbolos en una misma idea o unidad constituyente de la sintaxis del lenguaje. A su vez las reglas, pueden ser anidadas de manera recursiva para combinarse entre sí y formar nuevas expresiones válidas. Por ejemplo, podemos agregar las siguientes producciones:
-
-\begin{itemize}
-    \item[] NP $\to$ \textit{Chatran}
-    \item[] DET $\to$ \textit{El}
-    \item[] SUST $\to$ \textit{gato}
-    \item[] SUST $\to$ \textit{felino}
-\end{itemize}
-
-De esta manera podemos derivar la oración \textit{El gato} a partir de la aplicación de las producciones anteriores en lo que se conoce como un árbol de derivación (Fig.~\ref{intro:arbol}). En este caso, los símbolos finales (\textit{Chatran, El, gato, felino}) se los conoce como símbolos terminales y son las palabras válidas del lenguaje. 
-
-Para definir qué oraciones son válidas o gramaticales de un lenguaje es importante designar uno de los símbolos no terminales como el símbolo inicial, al que usualmente se le asigna la letra S. De esta manera, todas las oraciones que pueden derivarse a partir del símbolo inicial, utilizando las producciones de la gramática, serán las oraciones gramaticales que forman el lenguaje descripto. 
+Para definir qué oraciones de un lenguaje son válidas o gramaticales  es importante designar uno de los símbolos no terminales como el símbolo inicial, al que usualmente se le asigna la letra $S$. De esta manera, todas las oraciones que pueden derivarse a partir del símbolo inicial, utilizando las producciones de la gramática, serán las oraciones gramaticales que forman el lenguaje descripto. 
 
 \begin{figure}[h!]
     \centering
     \begin{tikzpicture}[level/.style={sibling distance = 6cm/#1,
     level distance = 0.8cm},scale=1.0, transform shape]
-\node  {S}
+\node  {$S$}
 child
 {
-    node {SN}
+    node {\textsc{sn}}
     child
     {
-        node {DET}
+        node {\textsc{det}}
         child {
-            node {$El$}
+            node {\em El}
         }
     }
     child{
-        node {SUST}
+        node {\textsc{sust}}
         child {
-            node {$gato$}
+            node {\em gato}
         }
     }
 };
@@ -107,7 +107,7 @@ child
 \end{figure}
 
 \begin{definicion}[CFG]
-Formalmente, una gramática libre de contexto $\gram$ se define como una 4-tupla $\gram = (N, \Sigma, S, R)$, donde:
+Formalmente, una {\em gramática libre de contexto} $\gram$ se define como una 4-tupla $\gram = (N, \Sigma, S, R)$, donde:
 \begin{itemize}
     \item $N$: conjunto de símbolos no terminales
     \item $\Sigma$: conjunto de símbolos terminales $(\Sigma \cap N = \emptyset)$
@@ -118,21 +118,19 @@ Formalmente, una gramática libre de contexto $\gram$ se define como una 4-tupla
 \end{definicion}
 
 \begin{definicion}[Derivación Directa]
-Sean $r \in R : (A \to \beta)$ una producción, y $\beta, \gamma \in (N \cup \Sigma)^{\ast}$ cualquier par de cadenas, decimos que $\alpha A \gamma$ deriva directamente a $\alpha \beta \gamma$ y lo notamos $\alpha A \gamma \Rightarrow \alpha \beta \gamma$
+Sean $r \in R : (A \to \beta)$ una producción, y $\beta, \gamma \in (N \cup \Sigma)^{\ast}$ cualquier par de cadenas, decimos que $\alpha A \gamma$ {\em deriva directamente} a $\alpha \beta \gamma$ y lo notamos $\alpha A \gamma \Rightarrow \alpha \beta \gamma$
 \end{definicion}
 
 \begin{definicion}[Derivación]
 Sean $\alpha_1, \alpha_2 \cdots \alpha_m \in (N \cup \Sigma)^{\ast}$, $m \geq 1$, tal que:
-
 $$
-\alpha_1 \Rightarrow \alpha_2, \alpha_2 \Rightarrow \alpha_3, \cdots, \alpha_{m-1} \Rightarrow \alpha_m
+\alpha_1 \Rightarrow \alpha_2\quad,\quad \alpha_2 \Rightarrow \alpha_3\quad,\quad \cdots\quad,\quad \alpha_{m-1} \Rightarrow \alpha_m
 $$
-
 decimos que $\alpha_1$ deriva $\alpha_m$ y lo notamos como $\alpha_1 \xRightarrow{\ast} \alpha_m$
 \end{definicion}
 
 \begin{definicion}[Lenguaje libre de contexto]
-Sea $\gram$ una gramática libre de contexto, definimos al lenguaje de la gramática $L_\gram = \{w | w \in \Sigma^{\ast}, S \xRightarrow{\ast} w \}$ como el conjunto de los símbolos terminales que pueden derivarse a partir del símbolo inicial. A su vez, un lenguaje $L$ es libre de contexto si existe una gramática libre de contexto $\gram$ tal que $L = L_\gram$.
+Sea $\gram$ una gramática libre de contexto. Definimos al lenguaje de la gramática $L_\gram = \{w \mid w \in \Sigma^{\ast}, S \xRightarrow{\ast} w \}$ como el conjunto de los símbolos terminales que pueden derivarse a partir del símbolo inicial. A su vez, un lenguaje $L$ es libre de contexto si existe una gramática libre de contexto $\gram$ tal que $L = L_\gram$.
 \end{definicion}
 
 
@@ -144,28 +142,27 @@ Las gramáticas libres de contexto probabilísticas (PCFG, por sus siglas en ing
 Una gramática libre de contexto probabilística $\gram$ se define como una 5-tupla $\gram = (N, \Sigma, S, R, P)$, donde:
 \begin{itemize}
     \item $N, \Sigma, S, R$ tienen el mismo significado que en las gramáticas libres de contextos
-    \item $P : R \times [0,1]$ es la distribución de probabilidad $P$ que expresa la probabilidad de derivación de cada regla $P(\beta | A)$ con $(A \to \beta) \in R$.
+    \item $P : R \times [0,1]$ es la distribución de probabilidad $P$ que expresa la probabilidad de derivación de cada regla $P(\beta \mid A)$ con $(A \to \beta) \in R$.
 \end{itemize}
 Por lo tanto, si consideramos todas las posibles derivaciones de un símbolo, la suma de sus probabilidades debe ser 1:
 $$
-\sum_{\beta} P (A \to \beta) = 1
+\sum_{\beta} P (A \to \beta) = 1.
 $$
 \end{definicion}
+El modelo de PCFG permite asignar probabilidades a las derivaciones (o árboles de derivación) y a las palabras del lenguaje, lo cual lo convierten en una herramienta interesante para el modelado de lenguajes y su aplicación en distintos problemas como el reconocimiento de voz, traducciones automáticas, verificación y corrección de oraciones, etc.
 
-El modelo de PCFG permite asignar probabilidades a las derivaciones (o árboles de derivación) y a las palabras del lenguaje lo cual lo convierten en una herramienta interesante para el modelado de lenguajes y su aplicación en distintos problemas como el reconocimiento de voz, traducciones automáticas, verificación y corrección de oraciones, etc.
-
-La probabilidad de un árbol de derivación $T$ para una cadena $c$ del lenguaje está definida como el producto de la probabilidad de todas las reglas $\alpha_{i} \Rightarrow \beta_i$ usadas en su derivación, es decir:
-
+La probabilidad de un árbol de derivación $T$ para una cadena $c$ del lenguaje está definida como el producto de la probabilidad de todas las reglas $\alpha_{i} \Rightarrow \beta_i$ usadas en su derivación, es decir,
 $$
-P(T,c) = \prod_{i = 1}^{n} P(\alpha_{i} \Rightarrow \beta_i)
+P(T,c) = \prod_{i = 1}^{n} P(\alpha_{i} \Rightarrow \beta_i).
 $$
+\widesanti{quedaría mejor $\prod_{\alpha \Rightarrow \beta\in T} P(\alpha \Rightarrow \beta)$? No sería simplemente $P(T)$?}
+\widesanti{$c$ no depende de $T$? Por qué la notación $P(T,c)$?}
+Las suposiciones del modelo, por lo tanto, implican que la probabilidad de un subárbol no depende en qué lugar de la cadena ocurre ni tampoco depende de ningún símbolo terminal o no-terminal por fuera del subárbol.
 
-Las asunciones del modelo por lo tanto implican que la probabilidad de un subárbol no depende en qué lugar de la cadena ocurre ni tampoco depende de ningún símbolo terminal o no-terminal por fuera del subárbol.
-
-A su vez, $P(T,c) = P(T) P(c|T) = P(T)$ dado que $P(c|T) = 1$ porque cada árbol de derivación $T$ deriva una única cadena $c$ y dijimos que $T$ era un árbol de derivación de $c$. Para calcular la probabilidad de una cadena $c$, por lo tanto, alcanza con sumar la probabilidad de todos los árboles de derivación que pueden producir esa cadena:
-
+A su vez, $P(T,c) = P(T) P(c\mid T) = P(T)$ dado que $P(c\mid T) = 1$ porque cada árbol de derivación $T$ deriva una única cadena $c$ y dijimos que $T$ era un árbol de derivación de $c$. Para calcular la probabilidad de una cadena $c$, por lo tanto, alcanza con sumar la probabilidad de todos los árboles de derivación que pueden producir esa cadena:
+%
 $$
-P(c) = \sum_{T : \text{ árbol de derivación de } S \xRightarrow{\ast} c } P (T)
+P(c) = \sum_{\substack{T\ \mid \text{ árbol de}\\\text{derivación} \\  \text{de } S \xRightarrow{\ast} c }}   P (T).
 $$
 
 
