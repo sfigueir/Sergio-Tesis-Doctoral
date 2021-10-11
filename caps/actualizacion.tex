@@ -93,7 +93,6 @@ Las {\em fórmulas} de \gramboolxor serán las palabras del lenguaje definido po
 \paragraph{La semántica de \gramboolxor.}
 
 Al igual que en \grambool, la {\em semántica} de una fórmula $\varphi$ será el conjunto (finito) de valuaciones sobre $\propvars$ que hacen verdadera a $\varphi$. Todos los operadores conservan la misma semántica y se agrega la definición formal de $\oxor$ (disyunción exclusiva):
-
 %
 \begin{eqnarray*}
 \sem{\varphi\oxor\psi} &=& \sem{\varphi\oor\psi}\cap \overline{\sem{\varphi\oand\psi}}\\
@@ -112,7 +111,7 @@ Al igual que en \grambool, la {\em semántica} de una fórmula $\varphi$ será e
 
 En la Figura~\ref{semaforos} representamos un concepto $\con$ como se muestra en el experimento. Cada objeto (valuación) sobre $\propvars=\{p_1,p_2,p_3,p_4\}$ se representa como un semáforo ($p_1$ = verde, $p_2$ = azul, $p_3$ = rojo, $p_4$ = naranja). Que la valuación sea verdadera para $p_i$ se representa con la luz correspondiente encendida; y que sea falsa, con luz apagada. Los objetos que pertenecen a $\con$ se resaltan con un borde grueso. 
 
-\begin{figure}[h!]
+\begin{figure}[h]
 \includegraphics[scale=.6]{../figuras/pre/notacion.pdf}
 \caption{Ilustración de las características $\{p_1,p_2,p_3,p_4\}$, el ejemplo $(1,0,1,1)$, y un concepto (los ejemplos positivos están marcados con bordes gruesos y los ejemplos negativos con bordes delgados). Se puede ver que la fórmula $p_3$ no es compatible con $\con$ pero $p_1 \oand p_2$, o $p_1 \oand p_2 \oand (p_3 \oor \lnot p_3)$, sí son compatibles con $\con$. $\overline \con$ puede describirse mediante $\lnot p_1\oor \lnot p_2$ }\label{semaforos}
 \end{figure}
@@ -132,7 +131,11 @@ $$
 
 Como $\grambool$ es un sublenguaje de $\gramboolxor$, tenemos que $\mdl{\gramboolxor}(\con)\leq\mdl{\grambool}(\con)$ para cualquier concepto $\con$.
 
-\paragraph*{Ejemplo.}El concepto $\con=\{$ $(1,0,0,0),$ $(1,0,1,0),$ $(1,0,0,1),$ $(1,0,0,1),$ $(0,1,0,0),$ $(0,1,1,0),$ $(0,1,0,1),$ $(0,1,0,1)$ $\}$,
+\paragraph*{Ejemplo.}El concepto 
+\begin{align*}
+\con=&\{(1,0,0,0),(1,0,1,0),(1,0,0,1),(1,0,0,1)\\
+&(0,1,0,0),(0,1,1,0),(0,1,0,1),(0,1,0,1)\},
+\end{align*}
 %which expresses that $x_1$ is true or $x_2$ is true but not both can be described in \gramboolxor as $\varphi=x_{1} \oxor x_{2}$, of length 3. In fact, one can check that this is the shortest formula compatible with $\con$, and so $\mdl{\gramboolxor}(\con)=3$. If we now switch to \grambool, we can no longer describe $\con$ as $x_{1} \oxor x_{2}$, since $\oxor$ is not part of its signature. However, in \grambool, the concept $\con$ may be described by  formula $\psi=(x_{1} \oand \neg x_{2}) \oor (x_{2} \oand \neg x_{1})$, of size 7. Since this formula has minimal size, we have that $\mdl{\grambool}(\con)=7$.
 que expresa que $p_1$ es verdadero o $p_2$ es verdadero, pero no ambos, puede describirse en \gramboolxor como $\varphi=p_{1} \oxor p_{2}$, de tamaño 3. De hecho, se puede comprobar que esta es la fórmula más corta que describe a $\con$ (en el sentido de que $\sem{\varphi}=\con$), por lo que $\mdl{\gramboolxor}(\con)=3$. Si ahora cambiamos a \grambool, ya no podemos describir a $\con$ como $p_{1} \oxor p_{2}$, dado que $\oxor$ no es parte del lenguaje. Sin embargo, en \grambool, el concepto $\con$ puede describirse mediante la fórmula $\psi=(p_{1} \oand \neg p_{2}) \oor (p_{2} \oand \neg p_{1})$, de tamaño 7. Dado que esta fórmula tiene tamaño mínimo para ese concepto en \grambool, tenemos que $\mdl{\grambool}(\con)=7$.
 
@@ -171,23 +174,6 @@ que expresa que $p_1$ es verdadero o $p_2$ es verdadero, pero no ambos, puede de
 %\end{table*}
 
 
-\begin{center}
-\begin{table}[]\small
-\begin{tabular}{|c|c||c|c|c||c|c|c|}
-\hline
-\textbf{}                 & \textbf{Prueba} & \textbf{\begin{tabular}[c]{@{}c@{}}Grupo\\ Objetivo\end{tabular}} & \textbf{$\mdl{\gramboolxor}$} & \textbf{$\mdl{\grambool}$} & \textbf{\begin{tabular}[c]{@{}c@{}}Grupo\\ Control\end{tabular}} & \textbf{$\mdl{\gramboolxor}$} & \textbf{$\mdl{\grambool}$} \\ \hline
-\multirow{4}{*}{\parbox[t]{2mm}{\rotatebox[origin=c]{90}{Entrenamiento\ \ \ \ \ \\ \ \  }}} & 1               & \begin{tabular}[c]{@{}c@{}}\targeta \\ $p_{i}$\end{tabular}                     & 1              & 1               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \cline{2-8} 
-                          & 2               & \begin{tabular}[c]{@{}c@{}}\targetb\\ $p_{i} \oxor p_{j}$\end{tabular}                     & 3              & 7               & \begin{tabular}[c]{@{}c@{}}\controlb\\ $p_{i} \oor p_{j}$\end{tabular}                    & 3              & 3               \\ \cline{2-8} 
-                          & 3               & \begin{tabular}[c]{@{}c@{}}\targetc \\ $p_{i} \oxor p_{j} \oxor p_{k}$\end{tabular}                     & 5              & 19              & \begin{tabular}[c]{@{}c@{}}\controlc\\ $p_{i} \oor (p_{j} \oand p_{k})$\end{tabular}                    & 5              & 5               \\ \cline{2-8} 
-                          & 4               & \begin{tabular}[c]{@{}c@{}}\targetd\\ $p_{k} \oxor p_{l}$\end{tabular}                     & 3              & 7               & \begin{tabular}[c]{@{}c@{}}\controld\\$p_{k} \oor p_{l}$\end{tabular}                    & 3              & 3               \\ \hline
-\multirow{2}{*}{\parbox[t]{2mm}{\rotatebox[origin=c]{90}{Evaluación}}}     & 5               & \begin{tabular}[c]{@{}c@{}}\testa\\ $p_{i} \oand (p_{j} \oxor p_{k})$\end{tabular}                     & 5              & 9               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \cline{2-8} 
-                          & 6               & \begin{tabular}[c]{@{}c@{}}\testb\\ $p_{i} \oand (p_{j} \oor p_{k})$\end{tabular}                     & 5              & 5               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \hline
-\end{tabular}
-\caption{Secuencia de conceptos presentados en el experimento: \targeta, \targetb, \targetc, \targetd, \testa, \testb para el grupo objetivo y  \controla, \controlb, \controlc, \controld, \testa, \testb para el grupo control. Cada concepto $\con$ está representado por una fórmula mínima $\varphi$ tal que $\sem{\varphi}=\con$}
-\label{conceptos}
-\end{table}
-\end{center}
-
 
 %55 participants participated in the experiment over the world wide web using the Amazon Mechanical Turk crowd sourcing platform. All were US residents over the age of 18 and had more than 95\% of past tasks successfully approved by other requesters. 44 participants completed the experiment through all the stages and declared not cheating (using pen, screenshots or a similar method to copy the answers) at the end of the experiment. Only data from these participants were used in the analyses reported below.\footnote{The learning times of all participants can be found in https://figshare.com/s/04d338adbbc4b1e83bf0.}
 
@@ -198,6 +184,25 @@ Un total de 55 personas participaron en el experimento a través de internet uti
 Los participantes se dividieron aleatoriamente en un grupo de control ($N=21$) y en un grupo objetivo ($N=23$). A ambos grupos se les presentaron diferentes secuencias de seis conceptos. Para cada concepto, hubo una fase de {\em aprendizaje} y una fase de {\em entrenamiento-feedback}. La media del tiempo empleado en cada concepto fue de 167$\pm$20 s.e.m.\ segundos, y la duración promedio de la tarea fue de 21$\pm$4 s.e.m.\ minutos. 
 
 %During the learning phase, all 16 items were presented in the screen (in random order), and items belonging to the concept were identified with bold boundaries, as shown in  Figura~\ref{semaforos}. Participants were told that only the items with bold boundaries were `blickets' (or `tufas', etc.: we used different words for each concept in the sequence), and asked them to try to identify what a blicket was. During the testing phase, the 16 items were shuffled in the screen, and participants were asked to click on items that were blickets. If they made mistakes after submitting their answer, they were directed to the feedback phase, in which items that were incorrectly classified were indicated with a red cross. After having studied the feedback, participants were redirected to the testing screen, where items were reshuffled. When every item was correctly classified, participants were asked to give a verbal description of the concept and then continued on to the following concept after a resting period. We characterize the subjective difficulty of each concept as the time the participant spent in learning, testing and feedback phases for that concept (excluding the time spent in the verbal description).
+
+
+
+\begin{center}
+\begin{table}[h]\small
+\begin{tabular}{|c|c||c|c|c||c|c|c|}
+\hline
+\textbf{}                 & \textbf{Prueba} & \textbf{\begin{tabular}[c]{@{}c@{}}Grupo\\ Objetivo\end{tabular}} & \textbf{$\mdl{\gramboolxor}$} & \textbf{$\mdl{\grambool}$} & \textbf{\begin{tabular}[c]{@{}c@{}}Grupo\\ Control\end{tabular}} & \textbf{$\mdl{\gramboolxor}$} & \textbf{$\mdl{\grambool}$} \\ \hline
+\multirow{4}{*}{\parbox[t]{2mm}{\rotatebox[origin=c]{90}{Entrenamiento\ \  \ \\ \ \  }}} & 1               & \begin{tabular}[c]{@{}c@{}}\targeta \\ $p_{i}$\end{tabular}                     & 1              & 1               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \cline{2-8} 
+                          & 2               & \begin{tabular}[c]{@{}c@{}}\targetb\\ $p_{i} \oxor p_{j}$\end{tabular}                     & 3              & 7               & \begin{tabular}[c]{@{}c@{}}\controlb\\ $p_{i} \oor p_{j}$\end{tabular}                    & 3              & 3               \\ \cline{2-8} 
+                          & 3               & \begin{tabular}[c]{@{}c@{}}\targetc \\ $p_{i} \oxor p_{j} \oxor p_{k}$\end{tabular}                     & 5              & 19              & \begin{tabular}[c]{@{}c@{}}\controlc\\ $p_{i} \oor (p_{j} \oand p_{k})$\end{tabular}                    & 5              & 5               \\ \cline{2-8} 
+                          & 4               & \begin{tabular}[c]{@{}c@{}}\targetd\\ $p_{k} \oxor p_{l}$\end{tabular}                     & 3              & 7               & \begin{tabular}[c]{@{}c@{}}\controld\\$p_{k} \oor p_{l}$\end{tabular}                    & 3              & 3               \\ \hline
+\multirow{2}{*}{\parbox[t]{2mm}{\rotatebox[origin=c]{90}{Eval.\ }}}     & 5               & \begin{tabular}[c]{@{}c@{}}\testa\\ $p_{i} \oand (p_{j} \oxor p_{k})$\end{tabular}                     & 5              & 9               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \cline{2-8} 
+                          & 6               & \begin{tabular}[c]{@{}c@{}}\testb\\ $p_{i} \oand (p_{j} \oor p_{k})$\end{tabular}                     & 5              & 5               & \multicolumn{3}{c|}{$\longleftarrow$ ídem}                                                                           \\ \hline
+\end{tabular}
+\caption{Secuencia de conceptos presentados en el experimento: \targeta, \targetb, \targetc, \targetd, \testa, \testb para el grupo objetivo y  \controla, \controlb, \controlc, \controld, \testa, \testb para el grupo control. Cada concepto $\con$ está representado por una fórmula mínima $\varphi$ tal que $\sem{\varphi}=\con$}
+\label{conceptos}
+\end{table}
+\end{center}
 
 Durante la fase de {\em aprendizaje}, los 16 ejemplos (correspondientes a las 16 valuaciones posibles sobre $\propvars$ se presentaban en la pantalla (en orden aleatorio), y los elementos pertenecientes al concepto se identificaban con los bordes resaltados, como se muestra en la Figura~\ref{semaforos}. A los participantes se les decía que sólo los ejemplos resaltados eran `blickets' (o `tufas', etc.: usamos diferentes palabras para cada concepto en la secuencia), y se les pedía que intentaran identificar qué era un `blicket'. Durante la etapa de {\em entrenamiento}, los 16 ejemplos eran mezclados y mostrados en la pantalla, y se les pedía que hicieran clic en aquellos ejemplos que eran blickets. Si al enviar su respuesta cometían errores, se los dirigía a la pantalla de {\em feedback} donde los ejemplos que se clasificaron incorrectamente se marcaban con una cruz roja. Luego de haber estudiado la respuesta, los participantes eran redirigidos a la pantalla de prueba, donde los ejemplos eran nuevamente mezclados y mostrados en pantalla para su selección. Esto se repetía hasta que los participantes seleccionaran correctamente todos los ejemplos. Una vez que la selección era correcta, se les pedía que dieran una descripción verbal del concepto y luego continuaban con el siguiente concepto tras un breve período de descanso. Caracterizamos la dificultad subjetiva de cada concepto como el tiempo que un participante pasó en las fases de {\em aprendizaje} y e {\em entrenamiento-feedback} para cada concepto (excluyendo el tiempo dedicado a la descripción verbal). Una visión esquemática del experimento se puede ver en la Figura~\ref{fig:experimentoPRE}.
 
