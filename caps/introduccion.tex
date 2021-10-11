@@ -57,7 +57,7 @@ Para poder formalizar la definición del \lot y las nociones de complejidad asoc
 
 \section{Gramáticas Libres de Contexto}
 
-El estudio de los lenguajes y la teoría gramatical lleva una larga tradición que se remonta a P{\=a}ṇini y su trabajo sobre el sánscrito, Aṣṭ{\=a}dhy{\=a}y{\=\i} \santi{se escribe así o es algo de pronunciación? :P} \sergio{Sí, aparece siempre así en los libros y en la Wikipedia incluso} en el siglo IV A.C. \cite{katre1989}. Si bien existen diversos formalismos y herramientas para modelar los lenguajes, los más utilizados para modelar la estructura constituyente de un lenguaje son las gramáticas libres de contexto (CFG, por sus siglas en inglés) \cite{keselj2009speech}, formalizadas de manera independiente en la década de los años 1950 por Chomsky \cite{chomsky1956three} y Backus \cite{backus1959syntax}.
+El estudio de los lenguajes y la teoría gramatical lleva una larga tradición que se remonta a P{\=a}ṇini y su trabajo sobre el sánscrito, Aṣṭ{\=a}dhy{\=a}y{\=\i} en el siglo IV A.C. \cite{katre1989}. Si bien existen diversos formalismos y herramientas para modelar los lenguajes, los más utilizados para modelar la estructura constituyente de un lenguaje son las gramáticas libres de contexto (CFG, por sus siglas en inglés) \cite{keselj2009speech}, formalizadas de manera independiente en la década de los años 1950 por Chomsky \cite{chomsky1956three} y Backus \cite{backus1959syntax}.
 
 Una CFG tiene un léxico de símbolos (terminales y no terminales) y un conjunto de reglas o producciones que explican cómo esos símbolos pueden ordenarse y combinarse para formar las oraciones y palabras válidas del lenguaje. Por ejemplo, para modelar que el sintagma nominal (\textsc{sn}) de una oración puede expresarse con un nombre propio (\textsc{np}) o un determinante (\textsc{det}) seguido de un sustantivo (\textsc{sust}) puede utilizarse el siguiente conjunto de reglas:
 %
@@ -112,7 +112,7 @@ Formalmente, una {\em gramática libre de contexto} $\gram$ se define como una 4
     \item $N$: conjunto de símbolos no terminales
     \item $\Sigma$: conjunto de símbolos terminales $(\Sigma \cap N = \emptyset)$
     \item $S$: símbolo inicial $(S \in N)$
-    \item $R : N \times (N \cup \Sigma)^{\ast} $: conjunto de reglas o producciones \sergio{verificar santi notación}
+    \item $R : N \times (N \cup \Sigma)^{\ast} $: conjunto de reglas o producciones 
 \end{itemize}
 
 \end{definicion}
@@ -577,7 +577,7 @@ La riqueza de la Teoría de la Información Algorítmica en relación a nociones
 
 
 
-\subsection{Longitud mínima de descripción}
+\section{Longitud mínima de descripción}
 
 
 Para cada fenómeno siempre puede haber un número grande, posiblemente infinito, de explicaciones. Como vimos en  \S\ref{sub:semantica}, en un modelo de \lot este espacio está formalizado por la gramática $\gram$ que define las hipótesis válidas y el espacio de objetos $\+O$ que interpreta esas hipótesis en descripciones sobre los objetos a explicar. 
@@ -599,7 +599,6 @@ Así, $\mdl{\gram}(o)$ será el tamaño de la descripción más corta que tenga 
 
 
 \section{Inferencia Bayesiana}\label{sec:bayes}
-\santi{quedó un arranque como continuación del anterior, pero están a distintos niveles} 
 Otro mecanismo de selección de hipótesis comúnmente utilizado es la inferencia bayesiana. En este caso, a diferencia de MDL, las predicciones que realizaremos no se basarán en la mejor explicación, sino que utilizará todas las explicaciones posibles sobre un objeto pesadas por su probabilidad de ocurrencia. 
 
 A diferencia de la estadística clásica o frecuentista que construye métodos estadísticos para decidir la probabilidad de obtener ciertos datos bajo ciertas suposiciones mínimas, la inferencia bayesiana trata de asignar probabilidades a las hipótesis en sí utilizando toda la información disponible~\cite{carlin2008bayesian}.
@@ -618,8 +617,6 @@ Por último, a $P(d\mid h)$ se la conoce como la {\em función de verosimilitud}
 
 Muchas veces la cantidad de hipótesis a integrar hacen que no sea eficiente o plausible calcular la distribución entera de probabilidad de todas las hipótesis de manera exacta. Para esto, existen diversos mecanismos de aproximación de la distribución de probabilidad como el muestreo de Gibbs que utilizaremos en el capítulo~\ref{chapter:PO}. Uno de los mecanismos más sencillos es utilizar la hipótesis más probable, conocido comúnmente como {\em máximo a posteriori} (MAP). Es decir, $P(d\mid H) \approx P(d\mid h_{\rm MAP})$. En el caso en que $H$ contenga sólo hipótesis determinísticas, es decir, donde $P(d\mid h_i)$ es 1 si $h_i$ explica $d$ y $0$ sino, entonces $h_{\rm MAP}$ es la hipótesis más probable. En este caso MAP elige como hipótesis más simple a la más probable mientras que MDL lo hace con la hipótesis más pequeña en términos de su tamaño.
 
-\sergio{No sé si este párrafo suma o no. Lo hice para dejar planteado que hay relación entre MDL e Inferencia Bayesiana}
-\santi{suma!}
 
 %\section{Sin ubicar:}
 %"The infite use of finite means" (Humboldt's sobre el lenguaje)
