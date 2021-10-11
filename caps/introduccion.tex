@@ -45,7 +45,7 @@ Los lenguajes simbólicos pueden describir un vasto conjunto de conceptos a part
 
 Una pregunta natural, sobre la que profundizaremos en la parte \ref{parte:conceptos}, es si las primitivas de un \lot son universales --tanto a través de diferentes individuos como a lo largo del desarrollo-- o si, en cambio, el repertorio semántico de un lenguaje es dinámico y está moldeado por la experiencia. De hecho, es probable que nuestra capacidad para representar automáticamente conceptos de manera sucinta no se deba a un lenguaje eficiente innato en nuestra mente. En cambio, proponemos que esta capacidad surge como un subproducto de nuestro cerebro que aprende rápidamente representaciones eficientes de los conceptos que generalmente encontramos en la vida cotidiana. Examinaremos la hipótesis de que los humanos tienen la capacidad de recombinar rápidamente proposiciones en su \lot, agregando nuevas primitivas a su lenguaje. En otras palabras, ese aprendizaje conduce a un proceso de compilación de rutinas en funciones dentro de el \lot.
 
-En el ejemplo del lenguaje Logo se puede imaginar que si las producciones que dibujan cuadrados son muy frecuentes, sería eficaz dedicar un nuevo símbolo a esta producción. El nuevo símbolo ``cuadrado'' es una construcción jerárquica de {\em segundo orden} de las primitivas de {\em primer orden} del lenguaje. Tiene un costo (el de incrementar el léxico del lenguaje) pero en el nuevo lenguaje, dibujar un cuadrado puede ser instanciado con un programa muy corto (simplemente, {\em cuadrado})\santi{está bien, pero surge la pregunta del tamaño del cuadrado; podemos decir más arriba que compila un cuadrado de tamaño fijo} \sergio{me parece que confundiría la precisión a la idea que transmitimos, tampoco veníamos hablando de grados de rotar, etc. era más bien una explicación general de la idea}\santi{tenés razón}y por lo tanto usa menos memoria. De hecho, un lenguaje de nivel superior nos permite alcanzar un nivel superior de abstracción al liberar la memoria y el poder de procesamiento, haciendo así pensables pensamientos más complejos~\cite{minsky1967computation, murphy1988comprehending}.
+En el ejemplo del lenguaje Logo se puede imaginar que si las producciones que dibujan cuadrados son muy frecuentes, sería eficaz dedicar un nuevo símbolo a esta producción. El nuevo símbolo ``cuadrado'' es una construcción jerárquica de {\em segundo orden} de las primitivas de {\em primer orden} del lenguaje. Tiene un costo (el de incrementar el léxico del lenguaje) pero en el nuevo lenguaje, dibujar un cuadrado puede ser instanciado con un programa muy corto (simplemente, {\em cuadrado}) y por lo tanto usa menos memoria. De hecho, un lenguaje de nivel superior nos permite alcanzar un nivel superior de abstracción al liberar la memoria y el poder de procesamiento, haciendo así pensables pensamientos más complejos~\cite{minsky1967computation, murphy1988comprehending}.
 
 La mayor parte del trabajo en la literatura sobre \lot, aunque incluye naturalmente un mecanismo de aprendizaje, tiende a acercarse al \lot como un sistema estable que deben descubrir los experimentadores, que prueban diferentes plantillas candidatas y seleccionan la que mejor se ajusta a los datos después del entrenamiento ~\cite{goodman2008rational, kemp2012exploring, piantadosi2016logical}. Aún así, queda por descubrir cómo las diferentes trayectorias de la experiencia pueden dar forma a la adquisición de manera diferente y pueden cambiar constantemente el repertorio de un \lot después de cada exposición.
 
@@ -57,7 +57,7 @@ Para poder formalizar la definición del \lot y las nociones de complejidad asoc
 
 \section{Gramáticas Libres de Contexto}
 
-El estudio de los lenguajes y la teoría gramatical lleva una larga tradición que se remonta a P{\=a}ṇini y su trabajo sobre el sánscrito, Aṣṭ{\=a}dhy{\=a}y{\=\i} \santi{se escribe así o es algo de pronunciación? :P}en el siglo IV A.C. \cite{katre1989}. Si bien existen diversos formalismos y herramientas para modelar los lenguajes, los más utilizados para modelar la estructura constituyente de un lenguaje son las gramáticas libres de contexto (CFG, por sus siglas en inglés) \cite{keselj2009speech}, formalizadas de manera independiente en la década de los años 1950 por Chomsky \cite{chomsky1956three} y Backus \cite{backus1959syntax}.
+El estudio de los lenguajes y la teoría gramatical lleva una larga tradición que se remonta a P{\=a}ṇini y su trabajo sobre el sánscrito, Aṣṭ{\=a}dhy{\=a}y{\=\i} \santi{se escribe así o es algo de pronunciación? :P} \sergio{Sí, aparece siempre así en los libros y en la Wikipedia incluso} en el siglo IV A.C. \cite{katre1989}. Si bien existen diversos formalismos y herramientas para modelar los lenguajes, los más utilizados para modelar la estructura constituyente de un lenguaje son las gramáticas libres de contexto (CFG, por sus siglas en inglés) \cite{keselj2009speech}, formalizadas de manera independiente en la década de los años 1950 por Chomsky \cite{chomsky1956three} y Backus \cite{backus1959syntax}.
 
 Una CFG tiene un léxico de símbolos (terminales y no terminales) y un conjunto de reglas o producciones que explican cómo esos símbolos pueden ordenarse y combinarse para formar las oraciones y palabras válidas del lenguaje. Por ejemplo, para modelar que el sintagma nominal (\textsc{sn}) de una oración puede expresarse con un nombre propio (\textsc{np}) o un determinante (\textsc{det}) seguido de un sustantivo (\textsc{sust}) puede utilizarse el siguiente conjunto de reglas:
 %
@@ -151,15 +151,14 @@ $$
 \end{definicion}
 El modelo de PCFG permite asignar probabilidades a las derivaciones (o árboles de derivación) y a las palabras del lenguaje, lo cual lo convierten en una herramienta interesante para el modelado de lenguajes y su aplicación en distintos problemas como el reconocimiento de voz, traducciones automáticas, verificación y corrección de oraciones, etc.
 
-La probabilidad de un árbol de derivación $T$ para una cadena $c$ del lenguaje está definida como el producto de la probabilidad de todas las reglas $\alpha_{i} \Rightarrow \beta_i$ usadas en su derivación, es decir,
+Es importante destacar que todo árbol de derivación $T$ describe una única cadena $c$. Es decir, $P(T,c) = P(T) P(c\mid T) = P(T)$. La probabilidad de un árbol de derivación $P(T)$ está definida como el producto de la probabilidad de todas las reglas $\alpha_{i} \Rightarrow \beta_i$ usadas en su derivación, es decir,
 $$
-P(T,c) = \prod_{i = 1}^{n} P(\alpha_{i} \Rightarrow \beta_i).
+P(T) = \prod_{\alpha \Rightarrow \beta\in T} P(\alpha \Rightarrow \beta).
 $$
-\widesanti{quedaría mejor $\prod_{\alpha \Rightarrow \beta\in T} P(\alpha \Rightarrow \beta)$? No sería simplemente $P(T)$?}
-\widesanti{$c$ no depende de $T$? Por qué la notación $P(T,c)$?}
+
 Las suposiciones del modelo, por lo tanto, implican que la probabilidad de un subárbol no depende en qué lugar de la cadena ocurre ni tampoco depende de ningún símbolo terminal o no-terminal por fuera del subárbol.
 
-A su vez, $P(T,c) = P(T) P(c\mid T) = P(T)$ dado que $P(c\mid T) = 1$ porque cada árbol de derivación $T$ deriva una única cadena $c$ y dijimos que $T$ era un árbol de derivación de $c$. Para calcular la probabilidad de una cadena $c$, por lo tanto, alcanza con sumar la probabilidad de todos los árboles de derivación que pueden producir esa cadena:
+Para calcular la probabilidad de una cadena $c$ alcanza entonces con sumar la probabilidad de todos los árboles de derivación que pueden producir esa cadena:
 %
 $$
 P(c) = \sum_{\substack{T\ \mid \text{ árbol de}\\\text{derivación} \\  \text{de } S \xRightarrow{\ast} c }}   P (T).
@@ -173,7 +172,6 @@ Los modelos probabilísticos de \lot permiten realizar inferencia sobre un espac
 
 En nuestro ejemplo de Logo, podíamos combinar las operaciones como `mover'', ``lápiz arriba'', ``lápiz abajo'' o ``rotar'' en distintos programas (o expresiones), pero sólo al ser evaluados es cuando estos programas pueden transmitir las distintas formas o conceptos que el lenguaje busca modelar.
 
-\widesanti{agregué algo de acá en adelante}
 
 
 Para un segundo ejemplo más concreto, consideremos la gramática del lenguaje Python. Una palabra de dicho lenguaje será cualquier programa válido. Así, una expresión (programa) como 
@@ -200,7 +198,6 @@ La semántica $\sem{x}_\gram$ debe ser {\em formal}, esto es, con un significado
 La división entre $\gram$ y $\+O$ es central en esta tesis.
 En la parte~\ref{parte:secuencias}, trabajaremos con los lenguajes \gramgeo y \grambin en el rol de $\gram$, que permiten modelar el espacio $\+O$ de secuencias en un octágono y secuencias binarias, respectivamente. En la parte~\ref{parte:conceptos}, utilizaremos la lógica proposicional \grambool como gramática de descripción $\gram$ para representar el espacio $\+O$ de conceptos booleanos. 
 
-\widesergio{No sé si se puede decir mucho más}
 
 %Un lenguaje que describe conceptos (como formas) también proporciona una noción natural de su complejidad~\cite{kolmogorov1968three}. Un concepto es simple, relativo a ese lenguaje, cuando puede describirse mediante un programa corto. Por el contrario, es complejo cuando todas sus descripciones requieren una larga secuencia de instrucciones. Por ejemplo, en el caso del lenguaje Logo, un cuadrado puede simplemente instruirse como un bucle de cuatro desplazamientos seguidos de rotaciones de 90 grados. En este lenguaje, el icono de un rostro se implementará mediante un programa mucho más largo y, por lo tanto, será más complejo. Sin embargo, este concepto sería más sencillo cuando se describiera en un lenguaje en el que el icono de un rostro (o los símbolos de nariz, boca, etc.) estén disponibles como primitivos en el lenguaje.
 
@@ -579,8 +576,6 @@ La riqueza de la Teoría de la Información Algorítmica en relación a nociones
 %$\K(\sta_i)\leq\min\{m\colon\pair{m}{\sta_i}\in W\}+c$.
 
 
-\widesergio{Tiene sentido poner MDL e Inferencia Bayesiana en la intro, o tiene más sentido que queden en el contexto de los capítulos 1 y 2 como están ahora? En la carpeta papers puse un capítulo de Artificial Intelligence, A Modern Approach que sintetiza los dos temas. Podría ser eso si es que suma}
-
 
 \subsection{Longitud mínima de descripción}
 
@@ -589,17 +584,21 @@ Puse esto que sigue.
 Falta algo de intro. Poner referencias, aunque no sé bien cuales. Ver el Vitanyi.
 }
 
-Retomemos las nociones de gramática $\gram$ y espacio de objetos $\+O$ de \S\ref{sub:semantica}. 
+Para cada fenómeno siempre puede haber un número grande, posiblemente infinito, de explicaciones. Como vimos en  \S\ref{sub:semantica}, en un modelo de \lot este espacio está formalizado por la gramática $\gram$ que define las hipótesis válidas y el espacio de objetos $\+O$ que interpreta esas hipótesis en descripciones sobre los objetos a explicar. 
+
+Una vez definido el espacio de hipótesis es importante definir el mecanismo de selección entre ellas. Uno de los principios más populares es el de la navaja de Ockham que postula que debe elegirse la hipótesis más simple entre todas las posibles explicaciones de un fenómeno. Este principio de selección de hipótesis fue formalizado por Rissanen y Wallace \cite{} en el método de longitud de descripción mínima (MDL por sus siglas en inglés) el cual postula que dado un conjunto de objetos en $\+O$ y una enumeración de explicaciones en $\gram$, la mejor explicación es la que minimiza la suma del tamaño en bits de la descripción y del objeto al ser codificado 
+
+\widesanti{decir que MDL es un principio, pero que nosotros usamos esa palabra para referirnos a una complejidad, "aproximación" de la complejidad de Kolm}
 
 A cada expresión / programa $x$ del lenguaje definido por $\gram$ le asignaremos un {\em tamaño}, notado $|x|$, que será un número natural. En términos generales, la idea es que contará la cantidad de símbolos de $x$, aunque la definición precisa podría dar más peso a ciertos símbolos por sobre otros. Es importante observar que el tamaño de un objeto $x$ es independiente de su semántica, en tanto es una propiedad de una descripción y no del objeto descripto.
 
-En analogía con la complejidad de Kolmogorov de la Definición~\ref{intro:def:plainC} definimos la {\em longitud mínima de descripción} (MDL por sus siglas en inglés) relativa a $\gram$ como la función $\mdl{\gram}:\+O\to\nat$ definida de esta forma:
+En analogía con la complejidad de Kolmogorov de la Definición~\ref{intro:def:plainC} definimos la {\em longitud mínima de descripción} relativa a $\gram$ como la función $\mdl{\gram}:\+O\to\nat$ definida de esta forma:
 %
 \begin{equation}\label{eqn:mdl}
-\mdl{\gram}(o)\eqdef\min\{|x|\mid x\in\gram,\sem{\gram}{x}=o\}.
+\mdl{\gram}(o)\eqdef\min\{|x|\mid x\in\gram,\sem{x}{\gram}=o\}.
 \end{equation}
 %
-Así, $\mdl{\gram}(o)$ será el tamaño de la descripción más corta que tenga $o$ entre las expresiones de $\gram$. Trabajaremos siempre con objetos que tengan al menos una descripción en $\gram$. Esta noción de complejidad sí utiliza la semántica asociada a $\gram$. Desde luego, la definición precisa dependerá de los lenguajes estudiados y del espacio de objetos que se quieran modelar: la definición \eqref{eqn:mdl} es simplemente un marco que será instanciado en distintos lenguajes y semánticas a lo largo de la tesos. Es importante notar que la definición \eqref{eqn:mdl} no es otra cosa más que la complejidad de Kolmogorov relativa a una máquina de Turing específica, posiblemente Turing-incompleta. De hecho, para las investigaciones que siguen, los lenguajes propuestos estarán específicamente diseñados para entender una pequeña porción del mundo, aquella que queremos modelar, y los lenguajes serán siempre Turing-incompletos. Una propiedad necesaria será que la función $\mdl{\gram}$ sea computable, e incluso implementable eficientemente.
+Así, $\mdl{\gram}(o)$ será el tamaño de la descripción más corta que tenga $o$ entre las expresiones de $\gram$. Trabajaremos siempre con objetos que tengan al menos una descripción en $\gram$. Esta noción de complejidad sí utiliza la semántica asociada a $\gram$. Desde luego, la definición precisa dependerá de los lenguajes estudiados y del espacio de objetos que se quieran modelar: la definición \eqref{eqn:mdl} es simplemente un marco que será instanciado en distintos lenguajes y semánticas a lo largo de la tesis. Es importante notar que la definición \eqref{eqn:mdl} no es otra cosa más que la complejidad de Kolmogorov relativa a una máquina de Turing específica, posiblemente Turing-incompleta. De hecho, para las investigaciones que siguen, los lenguajes propuestos estarán específicamente diseñados para entender una pequeña porción del mundo, aquella que queremos modelar, y los lenguajes serán siempre Turing-incompletos. Una propiedad necesaria será que la función $\mdl{\gram}$ sea computable, e incluso implementable eficientemente.
 
 
 
