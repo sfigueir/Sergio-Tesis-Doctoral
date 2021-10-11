@@ -28,7 +28,7 @@ Una {\em valuación} es una función $v:\propvars\to\{0,1\}$. Equivalentemente, 
 
 La {\em semántica} de una fórmula $\varphi$ será un conjunto (finito) de valuaciones sobre $\propvars$. Intuitivamente, este conjunto será su {\em extensión}, es decir, el conjunto de valuaciones (sobre el conjunto \propvars) que hacen verdadera a $\varphi$. 
 %
-Formalmente, la semántica de una fórmula $\varphi\in\grambool$ (para el conjunto $\propvars$ fijo) se nota $\sem{\varphi}$ y se define recursivamente del siguiente modo:
+Formalmente, la semántica de una fórmula $\varphi\in\grambool$ (para el conjunto $\propvars$ fijo) se nota $\sem{\varphi}$  y se define recursivamente del siguiente modo:
 %
 \begin{eqnarray*}
 \sem{p_i} &=& \{ v\in\{0,1\}^k \mid v(i)=1\}\\
@@ -37,8 +37,12 @@ Formalmente, la semántica de una fórmula $\varphi\in\grambool$ (para el conjun
 \sem{\varphi\vee\psi} &=& \sem{\varphi}\cup\sem{\psi}
 \end{eqnarray*}
 %
-Esta definición formaliza la idea intuitiva de los operadores de conjunción ($\wedge$), y disyunción ($\vee$). Observar que en \grambool la negación solo aparece en frente de una variable proposicional. Por ejemplo, si $k=3$ (es decir, $\propvars=\{p_1,p_2,p_3\}$) entonces $\sem{p_2}=\{(0,1,0), (1,1,0), (0,1,1), (1,1,1)\}$,  $\sem{p_3}=\{(0,0,1), (0,1,1), (1,0,1), (1,1,1)\}$, y $\sem{p_2\wedge p_3}=\{(0,1,1), (1,1,1)\}$.
-
+Esta definición formaliza la idea intuitiva de los operadores de conjunción ($\wedge$), y disyunción ($\vee$). Observar que en \grambool la negación solo aparece en frente de una variable proposicional. Por ejemplo, si $k=3$ (es decir, $\propvars=\{p_1,p_2,p_3\}$) entonces 
+\begin{align*}
+\sem{p_2}&=\{(0,1,0), (1,1,0), (0,1,1), (1,1,1)\},\\
+\sem{p_3}&=\{(0,0,1), (0,1,1), (1,0,1), (1,1,1)\}, \textrm{ y}\\
+\sem{p_2\wedge p_3}&=\{(0,1,1), (1,1,1)\}.
+\end{align*}
 Llamamos {\em concepto} a un conjunto de valuaciones sobre la gramática \grambool. El complemento de $\con$ se denota $\overline \con$ y se define como $\overline \con=\{0,1\}^\propvars\setminus \con$. Puesto que el conjunto de conectivos de \grambool es adecuado, cualquier concepto $\con$ podrá ser expresado por una fórmula $\varphi\in\grambool$, y diremos que que una fórmula $\varphi$ es {\em compatible} con el concepto $\con$ si $\sem{\varphi}=\con$. A menudo identificaremos conceptos con cualquier fórmula compatible con ella, por lo que hablaremos de ``concepto $\varphi$'' para referirnos a ``concepto $\sem{\varphi}$''. Sin embargo, cabe señalar que para cada concepto $\con$ existirán infinitas fórmulas que lo expresan.
 
 \paragraph{Complejidad para \grambool.} Definimos $|\varphi|$, el {\em tamaño} de la fórmula $\varphi\in\grambool$, del siguiente modo:
