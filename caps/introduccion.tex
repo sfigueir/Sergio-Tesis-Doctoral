@@ -602,7 +602,7 @@ Así, $\mdl{\gram}(o)$ será el tamaño de la descripción más corta que tenga 
  
 Otro mecanismo de selección de hipótesis comúnmente utilizado es la inferencia bayesiana. En este caso, a diferencia de MDL, las predicciones que realizaremos no se basarán en la mejor explicación, sino que utilizará todas las explicaciones posibles sobre un objeto pesadas por su probabilidad de ocurrencia. 
 
-A diferencia de la estadística clásica o frecuentista que construye métodos estadísticos para decidir la probabilidad de obtener ciertos datos bajo ciertas asunciones mínimas, la inferencia bayesiana trata de asignar probabilidades a las hipótesis en sí utilizando toda la información disponible.
+A diferencia de la estadística clásica o frecuentista que construye métodos estadísticos para decidir la probabilidad de obtener ciertos datos bajo ciertas asunciones mínimas, la inferencia bayesiana trata de asignar probabilidades a las hipótesis en sí utilizando toda la información disponible \cite{carlin2008bayesian}.
 
 Para conocer la probabilidad de una hipótesis $h$ dado un conjunto de datos $d$, la inferencia bayesiana utiliza simplemente el Teorema de Bayes:
 
@@ -610,17 +610,17 @@ $$
 P(h|d) = \frac{P(d|h) * p(h)}{P(d)}
 $$
 
-En estos casos se conoce a $P(h|d)$ como la probabilidad a posteriori dado los datos $d$ y esta reescritura en función de $P(d|h)$,$P(h)$ y $P(d)$ nos permitirá a lo largo de esta tesis elegir y comprar distintas hipótesis a partir de los datos.
+En estos casos se conoce a $P(h|d)$ como la probabilidad a posteriori dado los datos $d$ y esta reescritura en función de $P(d|h)$, $P(h)$ y $P(d)$ nos permitirá a lo largo de esta tesis elegir y comparar distintas hipótesis a partir de los datos.
 
-A $P(h)$ se la conoce como probabilidad a priori, y representa la probabilidad de una hipótesis antes de cualquier observación. Esta distribución denota de manera explícita el conocimiento que se asume sobre las hipótesis antes de realizar la inferencia. Las distribuciones a priori se pueden crear a partir de experimentos o conocimientos previos, a partir de la decisión subjetiva de un experimentador, generando un equilibrio entre los resultados cuando no hay información disponible y/o utilizar una de las distribuciones a priori conjugadas para simplifica el cálculo de la distribución a posteriori. En esta tesis, utilizaremos algunas distribuciones a priori conjugadas como la Dirichlet y definiremos la probabilidad a priori de las hipótesis de una gramática $\gram$ a partir de la probabilidad de su árbol de derivación según lo visto en \S\ref{sub:pcfg}.
+A $P(h)$ se la conoce como probabilidad a priori, y representa la probabilidad de una hipótesis antes de cualquier observación. Esta distribución denota de manera explícita el conocimiento que se asume sobre las hipótesis antes de realizar la inferencia. Las distribuciones a priori se pueden crear a partir de experimentos o conocimientos previos, a partir de la decisión subjetiva de un experimentador, generando un equilibrio entre los resultados cuando no hay información disponible y/o utilizar alguna de las distribuciones a priori conjugadas para simplifica el cálculo de la distribución a posteriori. En esta tesis, utilizaremos algunas distribuciones a priori conjugadas como la Dirichlet y definiremos la probabilidad a priori de las hipótesis de una gramática $\gram$ a partir de la probabilidad de su árbol de derivación según lo visto en \S\ref{sub:pcfg}.
 
 La distribución $P(d)$ se la conoce como distribución marginal de los datos, y es la probabilidad de observar los datos bajo todas las hipótesis. El cálculo de esta probabilidad implica integrar todas las posibles hipótesis, lo cual no siempre es posible, pero es importante notar que al comparar la probabilidad de dos hipótesis, este valor es constante y se puede prescindir de su cálculo. 
 
 Por último, a $P(d|h)$ se la conoce como la función de verosimilitud y es la probabilidad de que se observen los datos $d$ cuando la hipótesis $h$ es verdadera. Para esta probabilidad es fundamental en nuestra tesis la definición de semántica en \S\ref{sub:semantica} que describe los objetos $\+O$. Una regla simple será definir que $P(d|h)$ es 1 cuando la hipótesis explique los datos y 0 cuando no, es decir, será 1 si $\sem{h}_\gram = d$.
 
-Muchas veces la cantidad de hipótesis a integrar hacen que no sea eficiente o plausible calcular la distribución entera de probabilidad de todas las hipótesis de manera exacta. Para esto, existen diversos mecanismos de aproximación de la distribución de probabilidad. Uno de los más sencillos es utilizar la hipótesis más probable, conocido comúnmente como máximo a posteriori (MAP). Es decir, $P(d|H) \approx P(d|h_{MAP})$. En el caso que $H$ contenga sólo hipótesis determinísticas, es decir, donde $P(d|h_i)$ es 1 si $h_i$ explica $d$ y $0$ sino, entonces $h_{MAP}$ es la hipótesis más probable. En este caso $MAP$ elige como hipótesis más simple a la más probable mientras que $MDL$ lo hace con la hipótesis más pequeña en términos de su tamaño.
+Muchas veces la cantidad de hipótesis a integrar hacen que no sea eficiente o plausible calcular la distribución entera de probabilidad de todas las hipótesis de manera exacta. Para esto, existen diversos mecanismos de aproximación de la distribución de probabilidad como el muestreo de Gibbs que utilizaremos en el capítulo~\ref{chapter:PO}. Uno de los mecanismos más sencillos es utilizar la hipótesis más probable, conocido comúnmente como máximo a posteriori (MAP). Es decir, $P(d|H) \approx P(d|h_{MAP})$. En el caso que $H$ contenga sólo hipótesis determinísticas, es decir, donde $P(d|h_i)$ es 1 si $h_i$ explica $d$ y $0$ sino, entonces $h_{MAP}$ es la hipótesis más probable. En este caso $MAP$ elige como hipótesis más simple a la más probable mientras que $MDL$ lo hace con la hipótesis más pequeña en términos de su tamaño.
 
-\sergio{No sé si este párrafo suma o no. }
+\sergio{No sé si este párrafo suma o no. Lo hice para dejar planteado que hay relación entre MDL e Inferencia Bayesiana}
 
 %\section{Sin ubicar:}
 %"The infite use of finite means" (Humboldt's sobre el lenguaje)
