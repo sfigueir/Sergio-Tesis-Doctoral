@@ -1,13 +1,13 @@
 %!TEX root = ../main.tex
 
-En los Capítulos \ref{chapter:BIN} y \ref{chapter:PO} trabajaremos con dos modelos de \lot para la representación de secuencias. Ambos trabajos se basan en variantes del \textit{lenguaje de geometría} presentado en~\cite{amalric2017language} para modelar el rendimiento humano de la memoria de trabajo en el dominio espacial de secuencias en un octágono regular. Se ha demostrado previamente que este lenguaje predice para tres grupos poblacionales distintos (adultos educados, un pueblo del Amazonas sin educación formal y niños pequeños) qué secuencias aparecen como regulares y cómo se desempeñan en la tarea explícita de completar las secuencias mostradas~\cite{amalric2017language} o en la tarea implícita de seguimiento ocular de las secuencias~\cite{f60}. La complejidad de la secuencia, definida como una longitud mínima de descripción a partir de la gramática, también predijo la activación del cerebro humano en un amplio circuito cortical que incluía la corteza frontal inferior justo dorsal al área de Broca~\cite{f60}.
+En los Capítulos~\ref{chapter:BIN} y~\ref{chapter:PO} trabajaremos con dos modelos de \lot para la representación de secuencias. Ambos trabajos se basan en variantes del \textit{lenguaje de geometría} presentado en~\cite{amalric2017language} para modelar el rendimiento humano de la memoria de trabajo en el dominio espacial de secuencias en un octágono regular. Se ha demostrado previamente que este lenguaje predice para tres grupos poblacionales distintos (adultos educados, un pueblo del Amazonas sin educación formal y niños pequeños) qué secuencias aparecen como regulares y cómo se desempeñan en la tarea explícita de completar las secuencias mostradas~\cite{amalric2017language} o en la tarea implícita de seguimiento ocular de las secuencias~\cite{f60}. La complejidad de la secuencia, definida como una longitud mínima de descripción a partir de la gramática, también predijo la activación del cerebro humano en un amplio circuito cortical que incluía la corteza frontal inferior justo dorsal al área de Broca~\cite{f60}.
 
 \section*{El lenguaje de geometría \gramgeo}
 
 El \textit{lenguaje de geometría} permite la generación de programas que pueden codificar cualquier secuencia de ubicaciones espaciales en un octágono. Utiliza instrucciones primitivas (o producciones atómicas) que definen la magnitud y la dirección del siguiente paso (por ejemplo, \verb#+1# representa el siguiente elemento en el sentido de las agujas del reloj; \verb#+2#, el segundo elemento en el sentido de las agujas del reloj), así como la reflexión sobre algunos ejes (por ejemplo, \verb#H# representa la simetría horizontal, eligiendo la ubicación simétrica a lo largo de un eje horizontal). Además, estos elementos pueden concatenarse o repetirse, por ejemplo, \verb#REP0[+1]^8# describe un giro completo en el sentido de las agujas el reloj alrededor del octágono a partir de la repetición de la instrucción \verb#+1# ocho veces. Finalmente, estas instrucciones pueden anidarse arbitrariamente dando lugar a programas complejos a partir de la composición de subexpresiones.
 
 \paragraph{La gramática \gramgeo.}
-En la Figura \ref{fig:gramgeo} definimos la gramática para $\gramgeo$. Los {\em programas} de \gramgeo serán las palabras válidas del lenguaje definido por \gramgeo. Usaremos indistintamente \gramgeo para referirnos a la gramática o al lenguaje que representa (quedando siempre claro del contexto cuál de las dos aplica).
+En la Figura~\ref{fig:gramgeo} definimos la gramática para $\gramgeo$. Los {\em programas} de \gramgeo serán las palabras válidas del lenguaje definido por \gramgeo. Usaremos indistintamente \gramgeo para referirnos a la gramática o al lenguaje que representa (quedando siempre claro del contexto cuál de las dos aplica).
 
 \renewcommand{\thefigure}{PI.1}
 \begin{figure}
@@ -86,7 +86,7 @@ En la Figura \ref{fig:gramgeo} definimos la gramática para $\gramgeo$. Los {\em
 
 
 \paragraph{La semántica de \gramgeo.}
-Un programa $P$ por sí solo no tiene semántica, sino que la semántica viene dada por un par $(P,n)$, donde $P$ es un programa válido de \gramgeo y $n$ es un número natural entre 0 y 7. Denotaremos con $\sem{P}_n$ a la semántica de tal par, y será una secuencia no vacía de números naturales sobre el alfabeto $\{0,\dots,7\}$. Intuitivamente, $\sem{P}_n$ representa o describe un camino en el octágono de la Figura \ref{fig:circle}, cuando se `ejecuta' $P$ a partir del punto $n$. El mismo programa $P$ podrá describir distintas secuencias dependiendo del valor de $n$. 
+Un programa $P$ por sí solo no tiene semántica, sino que la semántica viene dada por un par $(P,n)$, donde $P$ es un programa válido de \gramgeo y $n$ es un número natural entre 0 y 7. Denotaremos con $\sem{P}_n$ a la semántica de tal par, y será una secuencia no vacía de números naturales sobre el alfabeto $\{0,\dots,7\}$. Intuitivamente, $\sem{P}_n$ representa o describe un camino en el octágono de la Figura~\ref{fig:circle}, cuando se `ejecuta' $P$ a partir del punto $n$. El mismo programa $P$ podrá describir distintas secuencias dependiendo del valor de $n$. 
 
 \renewcommand{\thefigure}{PI.2}
 \begin{figure}[ht]
@@ -374,7 +374,7 @@ En el Capítulo~\ref{chapter:PO}, probamos la hipótesis de que el lenguaje \gra
 Para tales secuencias, el lenguaje puede ser despojado de la mayoría de sus instrucciones atómicas. Sólo mantuvimos las operaciones de permanecer en la misma posición (\verb#+0#), y de pasar al otro elemento (aquí denotado \verb#B#, es decir, la instrucción de alternancia, pero equivalente a la simetría de puntos \verb#P# en el lenguaje original). Por otro lado, se mantuvieron las tres variantes de repeticiones: \verb#REP0#, \verb#REP1# y \verb#REP2#, así como la capacidad de anidamiento de expresiones. 
 
 \paragraph{La gramática \grambin.}
-En la Figura \ref{fig:grambin} definimos la gramática para $\grambin$. Los {\em programas} de \grambin serán las palabras válidas del lenguaje definido por \grambin. Al igual que para el lenguaje anterior, usaremos indistintamente \grambin para referirnos a la gramática o al propio lenguaje que representa (quedando siempre claro del contexto cuál de las dos aplica).
+En la Figura~\ref{fig:grambin} definimos la gramática para $\grambin$. Los {\em programas} de \grambin serán las palabras válidas del lenguaje definido por \grambin. Al igual que para el lenguaje anterior, usaremos indistintamente \grambin para referirnos a la gramática o al propio lenguaje que representa (quedando siempre claro del contexto cuál de las dos aplica).
 
 \renewcommand{\thefigure}{PI.3}
 \begin{figure}

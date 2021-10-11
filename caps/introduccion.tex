@@ -136,7 +136,7 @@ Sea $\gram$ una gramática libre de contexto. Definimos al lenguaje de la gramá
 
 \subsection{Gramática libre de contexto probabilística}\label{sub:pcfg}
 
-Las gramáticas libres de contexto probabilísticas (PCFG, por sus siglas en inglés) \cite{booth1969probabilistic} son uno de los formalismos más simples y a la vez poderosos para construir modelos probabilísticos de la estructura sintáctica de un lenguaje. Pueden entenderse como una extensión de las gramáticas libres de contexto donde cada regla tiene asociada una probabilidad que indica cuán probable es su uso para la derivación de un símbolo.
+Las gramáticas libres de contexto probabilísticas (PCFG, por sus siglas en inglés)~\cite{booth1969probabilistic} son uno de los formalismos más simples y a la vez poderosos para construir modelos probabilísticos de la estructura sintáctica de un lenguaje. Pueden entenderse como una extensión de las gramáticas libres de contexto donde cada regla tiene asociada una probabilidad que indica cuán probable es su uso para la derivación de un símbolo.
 
 \begin{definicion}[PCFG]
 Una gramática libre de contexto probabilística $\gram$ se define como una 5-tupla $\gram = (N, \Sigma, S, R, P)$, donde:
@@ -517,7 +517,7 @@ La riqueza de la Teoría de la Información Algorítmica en relación a nociones
 % wrong, the computation may go wrong, for example $\N$ can try to
 % read beyond the end of the input and then crashes. However, when
 % the input is of the form $\pra_\sta\sta$, $\N$ always outputs
-% $\sta$. By the invariance Theorem \ref{intro:thm:invariance} this
+% $\sta$. By the invariance Theorem~\ref{intro:thm:invariance} this
 % shows that $\K(\sta)\leq \len{\pra_\sta\sta} + d =
 % \K(\len{\sta})+\len{\sta}+d$ for some constant $d$. These upper
 % bounds on $\C$ and $\K$ will be repeatedly used in the thesis. We
@@ -582,7 +582,7 @@ La riqueza de la Teoría de la Información Algorítmica en relación a nociones
 
 Para cada fenómeno siempre puede haber un número grande, posiblemente infinito, de explicaciones. Como vimos en  \S\ref{sub:semantica}, en un modelo de \lot este espacio está formalizado por la gramática $\gram$ que define las hipótesis válidas y el espacio de objetos $\+O$ que interpreta esas hipótesis en descripciones sobre los objetos a explicar. 
 
-Una vez definido el espacio de hipótesis es importante definir un mecanismo de selección entre ellas. Uno de los principios más populares es el de la navaja de Ockham que postula que debe elegirse la hipótesis más simple entre todas las posibles explicaciones de un fenómeno. Este principio de selección de hipótesis fue formalizado por Rissanen \cite{rissanen1978modeling} y Wallace \cite{wallace1968information} en el método de longitud de descripción mínima (MDL por sus siglas en inglés) el cual postula que dado un objeto y una enumeración de explicaciones, la mejor explicación es la que minimiza la suma del tamaño en bits de la gramática $\gram$ y del tamaño en bits de la descripción del objeto $o \in \+O$. En términos de la complejidad de Kolmogorov, el principio ideal de MDL seleccionará, dentro de las hipótesis $H$ que explican a $o$, la que minimiza $K(H) + K(o|H)$. Para mayor información sobre modelos ideales y prácticos de MDL, puede referirse a \cite{grunwald2007minimum,li2013introduction}.
+Una vez definido el espacio de hipótesis es importante definir un mecanismo de selección entre ellas. Uno de los principios más populares es el de la navaja de Ockham que postula que debe elegirse la hipótesis más simple entre todas las posibles explicaciones de un fenómeno. Este principio de selección de hipótesis fue formalizado por Rissanen~\cite{rissanen1978modeling} y Wallace~\cite{wallace1968information} en el método de longitud de descripción mínima (MDL por sus siglas en inglés) el cual postula que dado un objeto y una enumeración de explicaciones, la mejor explicación es la que minimiza la suma del tamaño en bits de la gramática $\gram$ y del tamaño en bits de la descripción del objeto $o \in \+O$. En términos de la complejidad de Kolmogorov, el principio ideal de MDL seleccionará, dentro de las hipótesis $H$ que explican a $o$, la que minimiza $K(H) + K(o|H)$. Para mayor información sobre modelos ideales y prácticos de MDL, puede referirse a~s\cite{grunwald2007minimum,li2013introduction}.
 
 En nuestro trabajo seleccionaremos descripciones dentro de una misma gramática, por lo cual, debemos definir sólo cómo calcular el tamaño de los programas definidos por $\gram$. A cada hipótesis / programa $x$ del lenguaje definido por $\gram$ le asignaremos un {\em tamaño}, notado $|x|$, que será un número natural. En términos generales, la idea es que contará la cantidad de símbolos de $x$, aunque la definición precisa podría dar más peso a ciertos símbolos por sobre otros. Es importante observar que el tamaño de un objeto $x$ es independiente de su semántica, en tanto es una propiedad de una descripción y no del objeto descripto.
 
