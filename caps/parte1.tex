@@ -1,6 +1,6 @@
 %!TEX root = ../main.tex
 
-En los capítulos \ref{chapter:BIN} y \ref{chapter:PO} trabajaremos con dos modelos de \lot para la representación de secuencias. Ambos trabajos se basan en variantes del \textit{lenguaje de geometría} presentado en~\cite{amalric2017language} para modelar el rendimiento humano de la memoria de trabajo en el dominio espacial de secuencias en un octágono regular. Se ha demostrado previamente que este lenguaje predice para tres grupos poblacionales distintos (adultos educados, un pueblo del Amazonas sin educación formal y niños pequeños) qué secuencias aparecen como regulares y cómo se desempeñan en la tarea explícita de completar las secuencias mostradas~\cite{amalric2017language} o en la tarea implícita de seguimiento ocular de las secuencias~\cite{f60}. La complejidad de la secuencia, definida como una longitud mínima de descripción a partir de la gramática, también predijo la activación del cerebro humano en un amplio circuito cortical que incluía la corteza frontal inferior justo dorsal al área de Broca~\cite{f60}.
+En los Capítulos \ref{chapter:BIN} y \ref{chapter:PO} trabajaremos con dos modelos de \lot para la representación de secuencias. Ambos trabajos se basan en variantes del \textit{lenguaje de geometría} presentado en~\cite{amalric2017language} para modelar el rendimiento humano de la memoria de trabajo en el dominio espacial de secuencias en un octágono regular. Se ha demostrado previamente que este lenguaje predice para tres grupos poblacionales distintos (adultos educados, un pueblo del Amazonas sin educación formal y niños pequeños) qué secuencias aparecen como regulares y cómo se desempeñan en la tarea explícita de completar las secuencias mostradas~\cite{amalric2017language} o en la tarea implícita de seguimiento ocular de las secuencias~\cite{f60}. La complejidad de la secuencia, definida como una longitud mínima de descripción a partir de la gramática, también predijo la activación del cerebro humano en un amplio circuito cortical que incluía la corteza frontal inferior justo dorsal al área de Broca~\cite{f60}.
 
 \section*{El lenguaje de geometría \gramgeo}
 
@@ -369,7 +369,7 @@ $$
 
 \section*{El lenguaje de geometría en secuencias binarias: \grambin}
 
-En el capítulo \ref{chapter:PO}, probamos la hipótesis de que el lenguaje \gramgeo, cuando se reduce a sólo dos ubicaciones, es suficiente para dar cuenta de la codificación humana en un tipo completamente diferente de secuencias: un dominio no espacial (auditivo y visual) de secuencias binarias compuestas por sólo dos estados arbitrarios A y B en lugar de las ocho ubicaciones del octágono. 
+En el Capítulo~\ref{chapter:PO}, probamos la hipótesis de que el lenguaje \gramgeo, cuando se reduce a sólo dos ubicaciones, es suficiente para dar cuenta de la codificación humana en un tipo completamente diferente de secuencias: un dominio no espacial (auditivo y visual) de secuencias binarias compuestas por sólo dos estados arbitrarios A y B en lugar de las ocho ubicaciones del octágono. 
 
 Para tales secuencias, el lenguaje puede ser despojado de la mayoría de sus instrucciones atómicas. Sólo mantuvimos las operaciones de permanecer en la misma posición (\verb#+0#), y de pasar al otro elemento (aquí denotado \verb#B#, es decir, la instrucción de alternancia, pero equivalente a la simetría de puntos \verb#P# en el lenguaje original). Por otro lado, se mantuvieron las tres variantes de repeticiones: \verb#REP0#, \verb#REP1# y \verb#REP2#, así como la capacidad de anidamiento de expresiones. 
 
@@ -437,7 +437,7 @@ En la Figura \ref{fig:grambin} definimos la gramática para $\grambin$. Los {\em
 
 Al igual que en \grambin, la semántica de un programa $P$ viene dada por un par $(P,n)$, donde $P$ es un programa válido de \grambin y $n$ es un número natural entre 0 y 1 en este caso. Denotaremos con $\sem{P}_n$ a la semántica de tal par, y será una secuencia no vacía de números naturales sobre el alfabeto $\{0,1\}$. Intuitivamente, $\sem{P}_n$ representa o describe una secuencia binaria, cuando se `ejecuta' $P$ a partir del símbolo $0$ o del símbolo $1$. 
 
-Si bien aquí utilizaremos los símbolos $0$ y $1$ en la definición de la semántica para mostrar su relación con el lenguaje anterior, en el capítulo~\ref{chapter:BIN} nos referiremos a los símbolos $A$ y $B$ de las secuencias binarias para facilitar la lectura.
+Si bien aquí utilizaremos los símbolos $0$ y $1$ en la definición de la semántica para mostrar su relación con el lenguaje anterior, en el Capítulo~\ref{chapter:BIN} nos referiremos a los símbolos $A$ y $B$ de las secuencias binarias para facilitar la lectura.
 
 La definición de la gramática \grambin respeta las mismas reglas que \gramgeo. Simplemente, se reducen las instrucción atómicas a sólo dos opciones: 
 \begin{itemize}
