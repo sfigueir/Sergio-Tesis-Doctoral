@@ -134,7 +134,7 @@ Sea $\gram$ una gramática libre de contexto. Definimos al lenguaje de la gramá
 \end{definicion}
 
 
-\subsection{Gramática libre de contexto probabilística}
+\subsection{Gramática libre de contexto probabilística}\label{sub:pcfg}
 
 Las gramáticas libres de contexto probabilísticas (PCFG, por sus siglas en inglés) \cite{booth1969probabilistic} son uno de los formalismos más simples y a la vez poderosos para construir modelos probabilísticos de la estructura sintáctica de un lenguaje. Pueden entenderse como una extensión de las gramáticas libres de contexto donde cada regla tiene asociada una probabilidad que indica cuán probable es su uso para la derivación de un símbolo.
 
@@ -188,7 +188,7 @@ $$
 01010101010101010101010101010101010101010101010101010101010.
 $$
 
-Es fundamental distinguir entre el espacio sintáctico de las descripciones o programas, que viene dado por una gramática $\gram$ por un lado, y el espacio de los objetos descriptos $\+O$ por otro. Aunque los dos espacios tendrán algún tipo de representación simbólica, pueden estar construidos sobre alfabetos distintos. Dada una gramática $\gram$ y un objeto a representar $x$ perteneciente al lenguaje definido por $\gram$, usaremos la notación $\sem{x}_\gram\in\+O$ para referirnos a la semántica de $x$ asignada por $\gram$. La naturaleza de $x$ dependerá, desde luego, del problema a analizar. 
+Es fundamental distinguir entre el espacio sintáctico de las descripciones o programas, que viene dado por una gramática $\gram$ por un lado, y el espacio de los objetos descriptos $\+O$ por otro. Aunque los dos espacios tendrán algún tipo de representación simbólica, pueden estar construidos sobre alfabetos distintos. Dada una gramática $\gram$ y un objeto a representar $x$ perteneciente al lenguaje definido por $\gram$, usaremos la notación $\sem{x}_\gram\in\+O$ para referirnos a la semántica de $x$ asignada por $\gram$ (cuando la gramática subyacente quede clara del contexto, lo notaremos simplemente $\sem{x}$). La naturaleza de $x$ dependerá, desde luego, del problema a analizar. 
 
 La semántica $\sem{x}_\gram$ debe ser {\em formal}, esto es, con un significado matemático preciso único. La semántica de $x$ vendrá dada por los elementos que la componen, de acuerdo al árbol sintáctico que $\gram$ le asigne a $x$. Así, las definiciones de semántica $\sem{x}_\gram$ tendrán la forma de definiciones recursivas, que utilizan definiciones $\sem{y}_\gram$, donde $y$ es una subestructura de $x$ que dependerá, de $\gram$.
 
@@ -579,26 +579,20 @@ La riqueza de la Teoría de la Información Algorítmica en relación a nociones
 
 \subsection{Longitud mínima de descripción}
 
-\widesanti{
-Puse esto que sigue. 
-Falta algo de intro. Poner referencias, aunque no sé bien cuales. Ver el Vitanyi.
-}
 
 Para cada fenómeno siempre puede haber un número grande, posiblemente infinito, de explicaciones. Como vimos en  \S\ref{sub:semantica}, en un modelo de \lot este espacio está formalizado por la gramática $\gram$ que define las hipótesis válidas y el espacio de objetos $\+O$ que interpreta esas hipótesis en descripciones sobre los objetos a explicar. 
 
-Una vez definido el espacio de hipótesis es importante definir el mecanismo de selección entre ellas. Uno de los principios más populares es el de la navaja de Ockham que postula que debe elegirse la hipótesis más simple entre todas las posibles explicaciones de un fenómeno. Este principio de selección de hipótesis fue formalizado por Rissanen y Wallace \cite{} en el método de longitud de descripción mínima (MDL por sus siglas en inglés) el cual postula que dado un conjunto de objetos en $\+O$ y una enumeración de explicaciones en $\gram$, la mejor explicación es la que minimiza la suma del tamaño en bits de la descripción y del objeto al ser codificado 
+Una vez definido el espacio de hipótesis es importante definir un mecanismo de selección entre ellas. Uno de los principios más populares es el de la navaja de Ockham que postula que debe elegirse la hipótesis más simple entre todas las posibles explicaciones de un fenómeno. Este principio de selección de hipótesis fue formalizado por Rissanen \cite{rissanen1978modeling} y Wallace \cite{wallace1968information} en el método de longitud de descripción mínima (MDL por sus siglas en inglés) el cual postula que dado un objeto y una enumeración de explicaciones, la mejor explicación es la que minimiza la suma del tamaño en bits de la gramática $\gram$ y del tamaño en bits de la descripción del objeto $o \in \gram$. En términos de la complejidad de Kolmogorov, el principio ideal de MDL seleccionará dentro de la hipótesis $H$ que explican a $o$, la que minimiza $K(H) + K(o|H)$. Para mayor información sobre modelos ideales y prácticos de MDL, puede referirse a \cite{grunwald2007minimum,li2013introduction}.
 
-\widesanti{decir que MDL es un principio, pero que nosotros usamos esa palabra para referirnos a una complejidad, "aproximación" de la complejidad de Kolm}
-
-A cada expresión / programa $x$ del lenguaje definido por $\gram$ le asignaremos un {\em tamaño}, notado $|x|$, que será un número natural. En términos generales, la idea es que contará la cantidad de símbolos de $x$, aunque la definición precisa podría dar más peso a ciertos símbolos por sobre otros. Es importante observar que el tamaño de un objeto $x$ es independiente de su semántica, en tanto es una propiedad de una descripción y no del objeto descripto.
+En nuestro trabajo seleccionaremos descripciones dentro de una misma gramática, por lo cual, debemos definir sólo cómo calcular el tamaño de los programas definidos por $\gram$. A cada hipótesis / programa $x$ del lenguaje definido por $\gram$ le asignaremos un {\em tamaño}, notado $|x|$, que será un número natural. En términos generales, la idea es que contará la cantidad de símbolos de $x$, aunque la definición precisa podría dar más peso a ciertos símbolos por sobre otros. Es importante observar que el tamaño de un objeto $x$ es independiente de su semántica, en tanto es una propiedad de una descripción y no del objeto descripto.
 
 En analogía con la complejidad de Kolmogorov de la Definición~\ref{intro:def:plainC} definimos la {\em longitud mínima de descripción} relativa a $\gram$ como la función $\mdl{\gram}:\+O\to\nat$ definida de esta forma:
 %
 \begin{equation}\label{eqn:mdl}
-\mdl{\gram}(o)\eqdef\min\{|x|\mid x\in\gram,\sem{x}{\gram}=o\}.
+\mdl{\gram}(o)\eqdef\min\{|x|\mid x\in\gram,\sem{x}_{\gram}=o\}.
 \end{equation}
 %
-Así, $\mdl{\gram}(o)$ será el tamaño de la descripción más corta que tenga $o$ entre las expresiones de $\gram$. Trabajaremos siempre con objetos que tengan al menos una descripción en $\gram$. Esta noción de complejidad sí utiliza la semántica asociada a $\gram$. Desde luego, la definición precisa dependerá de los lenguajes estudiados y del espacio de objetos que se quieran modelar: la definición \eqref{eqn:mdl} es simplemente un marco que será instanciado en distintos lenguajes y semánticas a lo largo de la tesis. Es importante notar que la definición \eqref{eqn:mdl} no es otra cosa más que la complejidad de Kolmogorov relativa a una máquina de Turing específica, posiblemente Turing-incompleta. De hecho, para las investigaciones que siguen, los lenguajes propuestos estarán específicamente diseñados para entender una pequeña porción del mundo, aquella que queremos modelar, y los lenguajes serán siempre Turing-incompletos. Una propiedad necesaria será que la función $\mdl{\gram}$ sea computable, e incluso implementable eficientemente.
+Así, $\mdl{\gram}(o)$ será el tamaño de la descripción más corta que tenga $o$ entre las expresiones de $\gram$. Trabajaremos siempre con objetos que tengan al menos una descripción en $\gram$. Esta noción de complejidad sí utiliza la semántica asociada a $\gram$. Desde luego, la definición precisa dependerá de los lenguajes estudiados y del espacio de objetos que se quieran modelar: la definición \eqref{eqn:mdl} es simplemente un marco que será instanciado en distintos lenguajes y semánticas a lo largo de la tesis --incluso en algunos casos, como en las gramáticas de la Parte \ref{parte:secuencias}, la semántica dependerá también de `puntos de evaluación'. Es importante notar que la definición \eqref{eqn:mdl} no es otra cosa más que la complejidad de Kolmogorov relativa a una máquina de Turing específica, posiblemente Turing-incompleta. De hecho, para las investigaciones que siguen, los lenguajes propuestos estarán específicamente diseñados para entender una pequeña porción del mundo, aquella que queremos modelar, y los lenguajes serán siempre Turing-incompletos. Una propiedad necesaria será que la función $\mdl{\gram}$ sea computable, e incluso implementable eficientemente.
 
 
 
@@ -606,8 +600,25 @@ Así, $\mdl{\gram}(o)$ será el tamaño de la descripción más corta que tenga 
 
 \section{Inferencia Bayesiana}
  
-\widesergio{Puedo hablar de la regla de Bayes, los prior y los poterior. No sé igual si aporta mucho más de lo que ya está explicado en el capítulo 2}
+Otro mecanismo de selección de hipótesis comúnmente utilizado es la inferencia bayesiana. En este caso, a diferencia de MDL, las predicciones que realizaremos no se basarán en la mejor explicación, sino que utilizará todas las explicaciones posibles sobre un objeto pesadas por su probabilidad de ocurrencia. 
 
+A diferencia de la estadística clásica o frecuentista que construye métodos estadísticos para decidir la probabilidad de obtener ciertos datos bajo ciertas asunciones mínimas, la inferencia bayesiana trata de asignar probabilidades a las hipótesis en sí utilizando toda la información disponible.
+
+Para conocer la probabilidad de una hipótesis $h$ dado un conjunto de datos $d$, la inferencia bayesiana utiliza simplemente el Teorema de Bayes:
+
+$$
+P(h|d) = \frac{P(d|h) * p(h)}{P(d)}
+$$
+
+En estos casos se conoce a $P(h|d)$ como la probabilidad a posteriori dado los datos $d$ y esta reescritura en función de $P(d|h)$,$P(h)$ y $P(d)$ nos permitirá a lo largo de esta tesis elegir y comprar distintas hipótesis a partir de los datos.
+
+A $P(h)$ se la conoce como probabilidad a priori, y representa la probabilidad de una hipótesis antes de cualquier observación. Esta distribución denota de manera explícita el conocimiento que se asume sobre las hipótesis antes de realizar la inferencia. Las distribuciones a priori se pueden crear a partir de experimentos o conocimientos previos, a partir de la decisión subjetiva de un experimentador, generando un equilibrio entre los resultados cuando no hay información disponible y/o utilizar una de las distribuciones a priori conjugadas para simplifica el cálculo de la distribución a posteriori. En esta tesis, utilizaremos algunas distribuciones a priori conjugadas como la Dirichlet y definiremos la probabilidad a priori de las hipótesis de una gramática $\gram$ a partir de la probabilidad de su árbol de derivación según lo visto en \S\ref{sub:pcfg}.
+
+La distribución $P(d)$ se la conoce como distribución marginal de los datos, y es la probabilidad de observar los datos bajo todas las hipótesis. El cálculo de esta probabilidad implica integrar todas las posibles hipótesis, lo cual no siempre es posible, pero es importante notar que al comparar la probabilidad de dos hipótesis, este valor es constante y se puede prescindir de su cálculo. 
+
+Por último, a $P(d|h)$ se la conoce como la función de verosimilitud y es la probabilidad de que se observen los datos $d$ cuando la hipótesis $h$ es verdadera. Para esta probabilidad es fundamental en nuestra tesis la definición de semántica en \S\ref{sub:semantica} que describe los objetos $\+O$. Una regla simple será definir que $P(d|h)$ es 1 cuando la hipótesis explique los datos y 0 cuando no, es decir, será 1 si $\sem{h}_\gram = d$.
+
+Muchas veces la cantidad de hipótesis a integrar hacen que no sea eficiente o plausible calcular la distribución entera de probabilidad de todas las hipótesis de manera exacta. Para esto, existen diversos mecanismos de aproximación de la distribución de probabilidad. Uno de los más sencillos es utilizar la hipótesis más probable, conocido comúnmente como máximo a posteriori (MAP). Es decir, $P(d|H) \approx P(d|h_{MAP})$. En el caso que $H$ contenga sólo hipótesis determinísticas, es decir, donde $P(d|h_i)$ es 1 si $h_i$ explica $d$ y $0$ sino, entonces $h_{MAP}$ es la hipótesis más probable. En este caso $MAP$ elige como hipótesis más simple a la más probable mientras que $MDL$ lo hace con la hipótesis más pequeña en términos de su tamaño.
 
 %\section{Sin ubicar:}
 %"The infite use of finite means" (Humboldt's sobre el lenguaje)
