@@ -481,9 +481,11 @@ Si $\alpha$ es un programa o una instrucción de \grambin, definimos el {\em tam
 \verb#REP0[#$P$\verb#]^#$k$, con $P$ un programa, 
 entonces $|\alpha|\eqdef |P|+\lceil \log k\rceil$.
 
-\item Si $\alpha$ es una instrucción de la forma 
-\verb#REP1<#$A$\verb#>[#$P$\verb#]^#$k$ o de la forma 
+\item Si $\alpha$ es una instrucción de algunas de las formas
+\begin{center}
+\verb#REP1<#$A$\verb#>[#$P$\verb#]^#$k$\quad o\quad 
 \verb#REP2<#$A$\verb#>[#$P$\verb#]^#$k$ 
+\end{center}
 con $P$ un programa y $A$ una instrucción atómica, 
 entonces $|\alpha|\eqdef |P|+\lceil \log k\rceil+|A|$.
 
