@@ -162,8 +162,6 @@ Además, \gramgeo tiene tres producciones que representan distintas formas de re
     $n \leftarrow$ último símbolo de $cadena$
     }
 \end{algorithm}
-
-
 \end{center}
 
 
@@ -311,21 +309,19 @@ $\rrbracket_m$
 
 \item  $\llbracket$\verb#[REP0[+1]^4, REP0[-2, REP0[+1]^3 ]^2]#$\rrbracket_0 = 123423453456$
 
-\item  $\llbracket$\verb#REP1<+1>[REP0[+1]^4]^3#$\rrbracket_0 = 123423453456$
+\item  $\llbracket$\verb#REP1<+1>[REP0[+1]^4]^3#$\rrbracket_0 = 123423453456=$
 
 $= 1234 \ \ \concat \ \ \llbracket$\verb#+1#$\rrbracket_1 \concat \llbracket$\verb#+1#$\rrbracket_2 \concat \llbracket$\verb#+1#$\rrbracket_3 \concat \llbracket$\verb#+1#$\rrbracket_4 \ \ \concat \ \ \llbracket$\verb#+1#$\rrbracket_2 \concat \llbracket$\verb#+1#$\rrbracket_3 \concat \llbracket$\verb#+1#$\rrbracket_4 \concat \llbracket$\verb#+1#$\rrbracket_5$
 
-\item  $\llbracket$\verb#REP2<-1>[REP0[V]^2]^4#$\rrbracket_3 = 43526170$ 
+\item  $\llbracket$\verb#REP2<-1>[REP0[V]^2]^4#$\rrbracket_3 = 43526170=$ 
 
 $= \llbracket$\verb#REP0[V]^2]#$ \rrbracket_3 \concat \llbracket$ \verb#REP0[V]^2]#$ \rrbracket_2 \concat \llbracket$ \verb#REP0[V]^2]#$ \rrbracket_1 \concat \llbracket$ \verb#REP0[V]^2]#$ \rrbracket_0$
 
-\item  $\llbracket$ \verb#REP1<-1>[REP0[V]^2]^4#$\rrbracket_3 = 43322110$
+\item  $\llbracket$ \verb#REP1<-1>[REP0[V]^2]^4#$\rrbracket_3 = 43322110=$
 
 $= 43 \ \ \concat \ \ \llbracket$\verb#-1#$\rrbracket_4 \concat \llbracket$\verb#-1#$\rrbracket_3 \ \ \concat \ \ \llbracket$\verb#-1#$\rrbracket_3 \concat \llbracket$\verb#-1#$\rrbracket_2 \ \ \concat \ \ \llbracket$\verb#-1#$\rrbracket_2 \concat \llbracket$\verb#-1#$\rrbracket_1 $
 
 \end{itemize}
-
-
 En el cuadro~\ref{PART1:Tabla:MDL} mostramos la complejidad \mdlgeo(s) para algunas secuencias $s$ junto con distintos programas $p \in$ \gramgeo tal que $\sem{p}_0=s$ y $|p|=\mdlgeo(s) $.
 
 
@@ -383,9 +379,9 @@ En la Figura \ref{fig:grambin} definimos la gramática para $\grambin$. Los {\em
 \renewcommand{\thefigure}{PI.3}
 \begin{figure}
 \begin{center}
-\begin{tabular}{cc}
+\begin{tabular}{ccc}
 
-    \begin{minipage}[t]{0.35\textwidth}
+    \begin{minipage}[t]{0.3\textwidth}
     {\bf Símbolo inicial}
 
     \medskip
@@ -393,9 +389,10 @@ En la Figura \ref{fig:grambin} definimos la gramática para $\grambin$. Los {\em
     \begin{tabular}{rcl}
     \start & $\to$ & \verb#[#\inst\verb#]# %& símbolo inicial 
     \end{tabular}
+    \end{minipage}
 
-    \bigskip
 
+    \begin{minipage}[t]{0.4\textwidth}
     {\bf Producciones básicas}
 
     \medskip
@@ -416,14 +413,15 @@ En la Figura \ref{fig:grambin} definimos la gramática para $\grambin$. Los {\em
     \\
     \end{tabular}
     \end{minipage}
-    
-    \begin{minipage}[t]{0.35\textwidth}
 
-    {\bf Producciones atómicas}
+    
+    \begin{minipage}[t]{0.3\textwidth}
+
+    {\bf Producciones\\atómicas}
 
     \medskip
 
-    \begin{tabular}{rcl}    \\
+    \begin{tabular}{rcl}   
     \atom  & $\to$ & \verb#+0# %& permanecer en la misma posición 
     \\
     \atom  & $\to$ & \verb#B # %& simetría alrededor del otro eje diagonal 
@@ -451,19 +449,11 @@ La definición de la gramática \grambin respeta las mismas reglas que \gramgeo.
 \end{itemize}
 
 Formalmente, 
-
-\begin{tabular}{cc}
-    \begin{minipage}[t]{0.45\textwidth}
-        \begin{itemize}
-        \item $\llbracket$\verb#+0#$\rrbracket_n  \eqdef  n$ 
-        \item $\llbracket$\verb#B#$ \rrbracket_n  \eqdef  1-n $  
-        \end{itemize}
-    \end{minipage}
-    \begin{minipage}[t]{0.45\textwidth}
-        \par\smallskip
-        con $n \in \{0,1\}$
-    \end{minipage}
-\end{tabular}
+\begin{itemize}
+\item $\llbracket$\verb#+0#$\rrbracket_n  \eqdef  n$ 
+\item $\llbracket$\verb#B#$ \rrbracket_n  \eqdef  1-n $  
+\end{itemize}
+con $n \in \{0,1\}.$
 
 
 \medskip
