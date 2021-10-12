@@ -20,13 +20,13 @@ donde $i\in\{1,\dots,k\}$.
 \label{fig:grambool}
 \end{figure}
 %
-Las {\em fórmulas} de \grambool serán las palabras del lenguaje definido por \grambool. Usaremos indistintamente \grambool para referirnos a la gramática o al lenguaje que representa (quedando siempre claro del contexto cuál de las dos aplica).
+Las {\em fórmulas} de \grambool serán las palabras del lenguaje definido por \grambool. Usaremos indistintamente \grambool para referirnos a la gramática o al lenguaje $L_\grambool$ que representa (quedando siempre claro del contexto cuál de las dos aplica).
 
 
 \paragraph{La semántica de \grambool.}
 Una {\em valuación} es una función $v:\propvars\to\{0,1\}$. Equivalentemente, una valuación puede ser vista como un vector $v$ en $\{0,1\}^k$, donde notamos con $v(i)$ a la $i$-ésima coordenada de $v$. Informalmente, una valuación asigna valores de verdad a las variables proposicionales de $\propvars$ (la $i$-ésima coordenada de una valuación $v$ es $1$ si y solo si la variable proposicional $p_i$ es verdadera según $v$) y permite derivar el valor de verdad de fórmulas de $\grambool$.  
 
-La {\em semántica} de una fórmula $\varphi$ será un conjunto (finito) de valuaciones sobre $\propvars$. Intuitivamente, este conjunto será su {\em extensión}, es decir, el conjunto de valuaciones (sobre el conjunto \propvars) que hacen verdadera a $\varphi$. 
+La {\em semántica} de una fórmula $\varphi$ será un conjunto (finito) de valuaciones sobre $\propvars$. Este conjunto será su {\em extensión}, es decir, el conjunto de valuaciones (sobre el conjunto \propvars) que hacen verdadera a $\varphi$. 
 %
 Formalmente, la semántica de una fórmula $\varphi\in\grambool$ (para el conjunto $\propvars$ fijo) se nota $\sem{\varphi}$  y se define recursivamente del siguiente modo:
 %
@@ -55,7 +55,7 @@ donde $*\in\{\wedge,\vee\}$.
 
 Si $\con$ es un conjunto de valuaciones sobre $\propvars$, definimos la {\em $\grambool$-complejidad de la descripción mínima} de $\con$, notada $\mdlbool(\con)$, como el tamaño de la fórmula más corta cuya semántica es $\con$, es decir,
 $$
-\mdlbool(\con)\eqdef\min\{|\varphi|\mid \varphi\in\grambool,\sem{\varphi}=\con\}.
+\mdlbool(\con)\eqdef\min\{|\varphi|\mid \varphi\in L_\grambool,\sem{\varphi}=\con\}.
 $$
 Por ejemplo, se puede ver que si $\con=\{(0,1,1), (1,1,1)\}$, entonces $\mdlbool(\con)=3$, que corresponde a la fórmula minimal $p_2\wedge p_3$, de tamaño 3. Observar que la complejidad de un concepto se refiere al tamaño de alguna de las fórmulas minimales cuya semántica coincide con dicho concepto, pero que podría haber más de una fórmula minimal.
 

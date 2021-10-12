@@ -7,7 +7,7 @@ En los Capítulos~\ref{chapter:BIN} y~\ref{chapter:PO} trabajaremos con dos mode
 El \textit{lenguaje de geometría} permite la generación de programas que pueden codificar cualquier secuencia de ubicaciones espaciales en un octágono. Utiliza instrucciones primitivas (o producciones atómicas) que definen la magnitud y la dirección del siguiente paso (por ejemplo, \verb#+1# representa el siguiente elemento en el sentido de las agujas del reloj; \verb#+2#, el segundo elemento en el sentido de las agujas del reloj), así como la reflexión sobre algunos ejes (por ejemplo, \verb#H# representa la simetría horizontal, eligiendo la ubicación simétrica a lo largo de un eje horizontal). Además, estos elementos pueden concatenarse o repetirse, por ejemplo, \verb#REP0[+1]^8# describe un giro completo en el sentido de las agujas el reloj alrededor del octágono a partir de la repetición de la instrucción \verb#+1# ocho veces. Finalmente, estas instrucciones pueden anidarse arbitrariamente dando lugar a programas complejos a partir de la composición de subexpresiones.
 
 \paragraph{La gramática \gramgeo.}
-En la Figura~\ref{fig:gramgeo} definimos la gramática para $\gramgeo$. Los {\em programas} de \gramgeo serán las palabras válidas del lenguaje definido por \gramgeo. Usaremos indistintamente \gramgeo para referirnos a la gramática o al lenguaje que representa (quedando siempre claro del contexto cuál de las dos aplica).
+En la Figura~\ref{fig:gramgeo} definimos la gramática para $\gramgeo$. Los {\em programas} de \gramgeo serán las palabras válidas del lenguaje definido por \gramgeo. Usaremos indistintamente \gramgeo para referirnos a la gramática o al lenguaje $L_\gramgeo$ que representa (quedando siempre claro del contexto cuál de las dos aplica).
 
 \renewcommand{\thefigure}{PI.1}
 \begin{figure}
@@ -322,7 +322,7 @@ $= \llbracket$\verb#REP0[V]^2]#$ \rrbracket_3 \concat \llbracket$ \verb#REP0[V]^
 $= 43 \ \ \concat \ \ \llbracket$\verb#-1#$\rrbracket_4 \concat \llbracket$\verb#-1#$\rrbracket_3 \ \ \concat \ \ \llbracket$\verb#-1#$\rrbracket_3 \concat \llbracket$\verb#-1#$\rrbracket_2 \ \ \concat \ \ \llbracket$\verb#-1#$\rrbracket_2 \concat \llbracket$\verb#-1#$\rrbracket_1 $
 
 \end{itemize}
-En el cuadro~\ref{PART1:Tabla:MDL} mostramos la complejidad \mdlgeo(s) para algunas secuencias $s$ junto con distintos programas $p \in$ \gramgeo tal que $\sem{p}_0=s$ y $|p|=\mdlgeo(s) $.
+En el cuadro~\ref{PART1:Tabla:MDL} mostramos la complejidad $\mdlgeo(s)$ para algunas secuencias $s$ junto con distintos programas $p \in$ \gramgeo tal que $\sem{p}_0=s$ y $|p|=\mdlgeo(s) $.
 
 
 \renewcommand{\thetable}{PI.1}
@@ -363,18 +363,18 @@ entonces $|\alpha|\eqdef \sum_{i=1}^\ell|I_i|$.
 %
 Si $s$ es una secuencia no vacía sobre $\{0,\dots,7\}$, definimos la {\em $\gramgeo$-complejidad de la descripción mínima} de $s$, notada $\mdlgeo(s)$, como el tamaño del programa que, ejecutado desde 0, produce la secuencia $s$, es decir,
 $$
-\mdlgeo(s)\eqdef\min\{|P|\mid P\in\gramgeo,\sem{P}_0=s\}.
+\mdlgeo(s)\eqdef\min\{|P|\mid P\in L_\gramgeo,\sem{P}_0=s\}.
 $$
 
 
 \section*{El lenguaje de geometría en secuencias binarias: \grambin}
 
-En el Capítulo~\ref{chapter:PO}, probamos la hipótesis de que el lenguaje \gramgeo, cuando se reduce a sólo dos ubicaciones, es suficiente para dar cuenta de la codificación humana en un tipo completamente diferente de secuencias: un dominio no espacial (auditivo y visual) de secuencias binarias compuestas por sólo dos estados arbitrarios A y B en lugar de las ocho ubicaciones del octágono. 
+En el Capítulo~\ref{chapter:PO}, probamos la hipótesis de que el lenguaje \gramgeo, cuando se reduce a sólo dos ubicaciones, es suficiente para dar cuenta de la codificación humana en un tipo completamente diferente de secuencias: un dominio no espacial (auditivo y visual) de secuencias binarias compuestas por sólo dos estados arbitrarios A y B en lugar de las ocho ubicaciones del octágono de la Figura~\ref{fig:circle}. 
 
 Para tales secuencias, el lenguaje puede ser despojado de la mayoría de sus instrucciones atómicas. Sólo mantuvimos las operaciones de permanecer en la misma posición (\verb#+0#), y de pasar al otro elemento (aquí denotado \verb#B#, es decir, la instrucción de alternancia, pero equivalente a la simetría de puntos \verb#P# en el lenguaje original). Por otro lado, se mantuvieron las tres variantes de repeticiones: \verb#REP0#, \verb#REP1# y \verb#REP2#, así como la capacidad de anidamiento de expresiones. 
 
 \paragraph{La gramática \grambin.}
-En la Figura~\ref{fig:grambin} definimos la gramática para $\grambin$. Los {\em programas} de \grambin serán las palabras válidas del lenguaje definido por \grambin. Al igual que para el lenguaje anterior, usaremos indistintamente \grambin para referirnos a la gramática o al propio lenguaje que representa (quedando siempre claro del contexto cuál de las dos aplica).
+En la Figura~\ref{fig:grambin} definimos la gramática para $\grambin$. Los {\em programas} de \grambin serán las palabras válidas de $L_\grambin$, el lenguaje definido por \grambin. Al igual que para el lenguaje anterior, usaremos indistintamente \grambin para referirnos a la gramática o al propio lenguaje $L_\grambin$ que representa (quedando siempre claro del contexto cuál de las dos aplica).
 
 \renewcommand{\thefigure}{PI.3}
 \begin{figure}
@@ -486,7 +486,7 @@ entonces $|\alpha|\eqdef \sum_{i=1}^\ell|I_i|$.
 %
 Si $s$ es una secuencia no vacía sobre $\{0,1\}$, definimos la {\em $\grambin$-complejidad de la descripción mínima} de $s$, notada $\mdlbin(s)$, como el tamaño del programa que, ejecutado desde 0, produce la secuencia $s$, es decir,
 $$
-\mdlbin(s)\eqdef\min\{|P|\mid P\in\grambin,\sem{P}_0=s\}.
+\mdlbin(s)\eqdef\min\{|P|\mid P\in L_\grambin,\sem{P}_0=s\}.
 $$
 
 
