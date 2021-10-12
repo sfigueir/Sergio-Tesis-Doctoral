@@ -66,7 +66,7 @@ Una CFG tiene un léxico de símbolos (terminales y no terminales) y un conjunto
     \textsc{sn} &\to \textsc{det}\ \textsc{sust}
 \end{align*}
 %
-A los símbolos \textsc{sn}, \textsc{np}, \textsc{det}, \textsc{sust} se los conoce como símbolos no terminales, ya que no constituyen palabras válidas del lenguaje sino que representan abstracciones para agrupar otros símbolos en una misma idea o unidad constituyente de la sintaxis del lenguaje. A su vez las reglas, pueden ser anidadas de manera recursiva para combinarse entre sí y formar nuevas expresiones válidas. Por ejemplo, podemos agregar las siguientes producciones:
+A los símbolos \textsc{sn}, \textsc{np}, \textsc{det}, \textsc{sust} se los conoce como símbolos {\em no terminales}, ya que no constituyen palabras válidas del lenguaje sino que representan abstracciones para agrupar otros símbolos en una misma idea o unidad constituyente de la sintaxis del lenguaje. A su vez las reglas, pueden ser anidadas de manera recursiva para combinarse entre sí y formar nuevas expresiones válidas. Por ejemplo, podemos agregar las siguientes producciones:
 %
 \begin{align*}
     \textsc{np}   &\to \textit{Chatran}\\
@@ -75,9 +75,9 @@ A los símbolos \textsc{sn}, \textsc{np}, \textsc{det}, \textsc{sust} se los con
     \textsc{sust} &\to \textit{felino}
 \end{align*}
 %
-De esta manera podemos derivar la oración \textit{El gato} a partir de la aplicación de las producciones anteriores en lo que se conoce como un árbol de derivación (Figura~\ref{intro:arbol}). En este caso, los símbolos finales (\textit{Chatran, El, gato, felino}) se los conoce como símbolos terminales y son las palabras válidas del lenguaje. 
+De esta manera podemos derivar la oración \textit{El gato} a partir de la aplicación de las producciones anteriores en lo que se conoce como un árbol de derivación (Figura~\ref{intro:arbol}). En este caso, los símbolos finales (\textit{Chatran, El, gato, felino}) se los conoce como {\em símbolos terminales} y son las palabras válidas del lenguaje. 
 
-Para definir qué oraciones de un lenguaje son válidas o gramaticales  es importante designar uno de los símbolos no terminales como el símbolo inicial, al que usualmente se le asigna la letra $S$. De esta manera, todas las oraciones que pueden derivarse a partir del símbolo inicial, utilizando las producciones de la gramática, serán las oraciones gramaticales que forman el lenguaje descripto. 
+Para definir qué oraciones de un lenguaje son válidas o gramaticales  es importante designar uno de los símbolos no terminales como el símbolo inicial, al que usualmente se le asigna la letra $S$ o \start. De esta manera, todas las oraciones que pueden derivarse a partir del símbolo inicial, utilizando las producciones de la gramática, serán las oraciones gramaticales que forman el lenguaje descripto. 
 
 \begin{figure}[h!]
     \centering
@@ -112,21 +112,22 @@ Formalmente, una {\em gramática libre de contexto} $\gram$ se define como una 4
     \item $N$: conjunto de símbolos no terminales
     \item $\Sigma$: conjunto de símbolos terminales $(\Sigma \cap N = \emptyset)$
     \item $S$: símbolo inicial $(S \in N)$
-    \item $R : N \times (N \cup \Sigma)^{\ast} $: conjunto de reglas o producciones 
+    \item $R \subseteq N \times (N \cup \Sigma)^{\ast} $: conjunto de reglas o producciones 
 \end{itemize}
-
 \end{definicion}
+En la definición precedente, $(N \cup \Sigma)^{\ast}$ representa la yuxtaposición de finitos símbolos de $N$ o $\Sigma$. Notaremos $(A \to \beta)$ a las tuplas $(A,\beta)\in R$. 
+
 
 \begin{definicion}[Derivación Directa]
-Sean $r \in R : (A \to \beta)$ una producción, y $\beta, \gamma \in (N \cup \Sigma)^{\ast}$ cualquier par de cadenas, decimos que $\alpha A \gamma$ {\em deriva directamente} a $\alpha \beta \gamma$ y lo notamos $\alpha A \gamma \Rightarrow \alpha \beta \gamma$
+Sean $(A \to \beta) \in R$ una producción, y $\beta, \gamma \in (N \cup \Sigma)^{\ast}$ cualquier par de cadenas, decimos que $\alpha A \gamma$ {\em deriva directamente} a $\alpha \beta \gamma$ y lo notamos $\alpha A \gamma \Rightarrow \alpha \beta \gamma$.
 \end{definicion}
 
 \begin{definicion}[Derivación]
-Sean $\alpha_1, \alpha_2 \cdots \alpha_m \in (N \cup \Sigma)^{\ast}$, $m \geq 1$, tal que:
+Sean $\alpha_1, \alpha_2, \dots, \alpha_m \in (N \cup \Sigma)^{\ast}$, $m \geq 1$, tal que:
 $$
 \alpha_1 \Rightarrow \alpha_2\quad,\quad \alpha_2 \Rightarrow \alpha_3\quad,\quad \cdots\quad,\quad \alpha_{m-1} \Rightarrow \alpha_m
 $$
-decimos que $\alpha_1$ deriva $\alpha_m$ y lo notamos como $\alpha_1 \xRightarrow{\ast} \alpha_m$
+decimos que $\alpha_1$ {\em deriva} $\alpha_m$ y lo notamos como $\alpha_1 \xRightarrow{\ast} \alpha_m$
 \end{definicion}
 
 \begin{definicion}[Lenguaje libre de contexto]
@@ -139,36 +140,37 @@ Sea $\gram$ una gramática libre de contexto. Definimos al lenguaje de la gramá
 Las gramáticas libres de contexto probabilísticas (PCFG, por sus siglas en inglés)~\cite{booth1969probabilistic} son uno de los formalismos más simples y a la vez poderosos para construir modelos probabilísticos de la estructura sintáctica de un lenguaje. Pueden entenderse como una extensión de las gramáticas libres de contexto donde cada regla tiene asociada una probabilidad que indica cuán probable es su uso para la derivación de un símbolo.
 
 \begin{definicion}[PCFG]
-Una gramática libre de contexto probabilística $\gram$ se define como una 5-tupla $\gram = (N, \Sigma, S, R, P)$, donde:
+Una {\em gramática libre de contexto probabilística} $\gram$ se define como una 5-tupla $\gram = (N, \Sigma, S, R, P)$, donde:
 \begin{itemize}
-    \item $N, \Sigma, S, R$ tienen el mismo significado que en las gramáticas libres de contextos
-    \item $P : R \times [0,1]$ es la distribución de probabilidad $P$ que expresa la probabilidad de derivación de cada regla $P(\beta \mid A)$ con $(A \to \beta) \in R$.
+    \item $N, \Sigma, S, R$ tienen el mismo significado que en las gramáticas libres de contextos.
+    \item $P : R \to [0,1]$  es la distribución de probabilidad $P$ que expresa la probabilidad de derivación de cada regla $P(\beta \mid A)$ con $(A \to \beta) \in R$.
 \end{itemize}
-Por lo tanto, si consideramos todas las posibles derivaciones de un símbolo, la suma de sus probabilidades debe ser 1:
+Por lo tanto, si consideramos todas las posibles derivaciones de un símbolo $A$, la suma de sus probabilidades debe ser 1:
 $$
 \sum_{\beta} P (A \to \beta) = 1.
 $$
 \end{definicion}
 El modelo de PCFG permite asignar probabilidades a las derivaciones (o árboles de derivación) y a las palabras del lenguaje, lo cual lo convierten en una herramienta interesante para el modelado de lenguajes y su aplicación en distintos problemas como el reconocimiento de voz, traducciones automáticas, verificación y corrección de oraciones, etc.
 
-Es importante destacar que todo árbol de derivación $T$ describe una única cadena $c$. Es decir, $P(T,c) = P(T) P(c\mid T) = P(T)$. La probabilidad de un árbol de derivación $P(T)$ está definida como el producto de la probabilidad de todas las reglas $\alpha_{i} \Rightarrow \beta_i$ usadas en su derivación, es decir,
+Es importante destacar que todo árbol de derivación $T$ describe una única cadena $c$. Es decir, $P(T,c) = P(T) P(c\mid T) = P(T)$. La probabilidad de un árbol de derivación $P(T)$ está definida como el producto de la probabilidad de todas las reglas $\alpha \Rightarrow \beta$ usadas en su derivación, es decir,
 $$
 P(T) = \prod_{\alpha \Rightarrow \beta\in T} P(\alpha \Rightarrow \beta).
 $$
+\widesanti{las ultimas 3 apariciones de $\Rightarrow$ deberían ser $\to$ y ser $\alpha$ siemore un no terminal?}
 
 Las suposiciones del modelo, por lo tanto, implican que la probabilidad de un subárbol no depende en qué lugar de la cadena ocurre ni tampoco depende de ningún símbolo terminal o no-terminal por fuera del subárbol.
 
 Para calcular la probabilidad de una cadena $c$ alcanza entonces con sumar la probabilidad de todos los árboles de derivación que pueden producir esa cadena:
 %
 $$
-P(c) = \sum_{\substack{T\ \mid \text{ árbol de}\\\text{derivación} \\  \text{de } S \xRightarrow{\ast} c }}   P (T).
+P(c) = \sum_{\substack{T \text{ es un árbol}\\\text{de derivación} \\  \text{de } S \xRightarrow{\ast} c }}   P (T).
 $$
 
 
 
 \subsection{Semántica}\label{sub:semantica}
 
-Los modelos probabilísticos de \lot permiten realizar inferencia sobre un espacio de hipótesis estructurado gramaticalmente~\cite{goodman2008rational}. Cada propuesta de \lot suele formalizarse mediante una gramática libre de contexto $ \gram $ que define las funciones o programas válidos que se pueden generar, como en cualquier otro lenguaje de programación. Sin embargo, para representar conceptos es necesario unir estos elementos sintácticos con el conocimiento semántico que tenemos del mundo. Es decir, el programa (o árbol de derivación de $ \gram $) debe interpretarse o ejecutarse de acuerdo con una semántica determinada para obtener una descripción del concepto en la tarea cognitiva en cuestión. Esta tesis se basa fuertemente en que los \lot no sólo tienen una sintaxis definida por su gramática, sino que tienen una semántica determinada que les permite representar nuestro entendimiento del mundo.
+Los modelos probabilísticos de \lot permiten realizar inferencia sobre un espacio de hipótesis estructurado gramaticalmente~\cite{goodman2008rational}. Cada propuesta de \lot suele formalizarse mediante una gramática libre de contexto $ \gram $ que define las funciones o programas válidos que se pueden generar, como en cualquier otro lenguaje de programación. Sin embargo, para representar conceptos es necesario unir estos elementos sintácticos con el conocimiento semántico que tenemos del mundo. Es decir, el programa (o árbol de derivación de $ \gram $) debe interpretarse o ejecutarse de acuerdo con una semántica determinada para obtener una descripción del concepto en la tarea cognitiva en cuestión. Esta tesis se basa fuertemente en que los \lot no sólo tienen una sintaxis definida por su gramática, sino que tienen una {\em semántica} determinada que les permite representar nuestro entendimiento del mundo.
 
 En nuestro ejemplo de Logo, podíamos combinar las operaciones como `mover'', ``lápiz arriba'', ``lápiz abajo'' o ``rotar'' en distintos programas (o expresiones), pero sólo al ser evaluados es cuando estos programas pueden transmitir las distintas formas o conceptos que el lenguaje busca modelar.
 
@@ -188,9 +190,9 @@ $$
 01010101010101010101010101010101010101010101010101010101010.
 $$
 
-Es fundamental distinguir entre el espacio sintáctico de las descripciones o programas, que viene dado por una gramática $\gram$ por un lado, y el espacio de los objetos descriptos $\+O$ por otro. Aunque los dos espacios tendrán algún tipo de representación simbólica, pueden estar construidos sobre alfabetos distintos. Dada una gramática $\gram$ y un objeto a representar $x$ perteneciente al lenguaje definido por $\gram$, usaremos la notación $\sem{x}_\gram\in\+O$ para referirnos a la semántica de $x$ asignada por $\gram$ (cuando la gramática subyacente quede clara del contexto, lo notaremos simplemente $\sem{x}$). La naturaleza de $x$ dependerá, desde luego, del problema a analizar. 
+Es fundamental distinguir entre el espacio sintáctico de las descripciones o programas, que viene dado por una gramática $\gram$ por un lado, y el espacio de los objetos descriptos $\+O$ por otro. Aunque los dos espacios tendrán algún tipo de representación simbólica, pueden estar construidos sobre alfabetos distintos y tener propiedades muy distintas. Dada una gramática $\gram$ y un objeto a representar $x\in L_\gram$, usaremos la notación $\sem{x}_\gram\in\+O$ para referirnos a la semántica de $x$ asignada por $\gram$ (cuando la gramática subyacente quede clara del contexto, lo notaremos simplemente $\sem{x}$). La naturaleza de $x$ y de su semántica dependerá, desde luego, del problema a analizar. 
 
-La semántica $\sem{x}_\gram$ debe ser {\em formal}, esto es, con un significado matemático preciso único. La semántica de $x$ vendrá dada por los elementos que la componen, de acuerdo al árbol de derivación que $\gram$ le asigne a $x$. Así, las definiciones de semántica $\sem{x}_\gram$ tendrán la forma de definiciones recursivas, que utilizan definiciones $\sem{y}_\gram$, donde $y$ es una subestructura de $x$ que dependerá, de $\gram$.
+La semántica $\sem{x}_\gram$ debe ser {\em formal}, esto es, con un significado matemático preciso único. La semántica de $x$ vendrá dada por los elementos que la componen, de acuerdo al árbol de derivación que $\gram$ le asigne a $x$. En caso de haber más de un árbol de derivación para $x$, la semántica deberá estar bien definida, esto es, deberá depender solo de $x$ y no de sus árboles de derivación. Así, las definiciones de semántica $\sem{x}_\gram$ tendrán la forma de definiciones recursivas, que utilizan definiciones $\sem{y}_\gram$, donde $y$ es una subestructura de $x$.
 
 % En esta tesis, utilizaremos definiciones formales para representar la semántica de nuestras gramáticas $\gram$ donde el dominio serán los programas válidos de $\gram$ y el codominio los objetos a representar en cada tarea. 
 
@@ -231,7 +233,7 @@ tenemos la sensación de que  $\sigma_2$ y  $\sigma_3$
 son {\em más difíciles} o {\em más complejas} que $\sigma_1$, y quizá que $\sigma_2$ es más simple que $\sigma_3$. Sin embargo, en términos de
 teoría de la medida, cada una es igual de probable, si provienen de una fuente que emite bits 
 con probabilidad uniforme. 
-La intuición es que las palabras sencillas tienen patrones reconocibles (como $\sigma_1$, y, aunque más oculto, $\sigma_2$) mientras que las más complejas no (o al menos no tienen patrones simples). Lo cierto es que $\sigma_3$ fue generada tirando una moneda y anotando 0 si salía cara y 1 si salía ceca. Nuestra intuición también nos dice que lo más probable es que una palabra generada mediante este procedimiento no tenga patrones reconocibles.
+La intuición es que las palabras sencillas tienen patrones reconocibles (como $\sigma_1$, y, aunque más oculto, $\sigma_2$) mientras que las más complejas no --o al menos no tienen patrones reconocibles `simples'. Lo cierto es que $\sigma_3$ fue generada tirando una moneda y anotando 0 si salía cara y 1 si salía ceca. Nuestra intuición también nos dice que lo más probable es que una palabra generada mediante este procedimiento no tenga patrones reconocibles.
 
 Entender por qué
 algunas secuencias parecen aleatorias o complejas mientras que otras no, es una cuestión
@@ -252,7 +254,7 @@ teoría de la computación.
 
 La Teoría Algorítmica de la Información, también
 conocida como Teoría de Largo de Programa fue iniciada
-independientemente en la década del 60 por Kolmogorov~\cite{kolmogorov1965three},
+independientemente en la década de 1960 por Kolmogorov~\cite{kolmogorov1965three},
 Solomonoff~\cite{solomonoff1964formal} y Chaitin~\cite{chaitin1969length}. 
 Esta teoría define una
 noción de complejidad de cada palabra teniendo en cuenta la longitud
@@ -277,11 +279,11 @@ un lenguaje de descripción subyacente. La teoría algorítmica de la informaci�
 adopta a los lenguajes de programación como lenguajes de descripción. Sin embargo, 
 hay que notar que una definición en la misma dirección puede aplicarse para 
 otros objetos en el rol de las palabras binarias (por ejemplo, conjuntos de valuaciones 
-Booleanas) y otros lenguajes de descripción en el rol de lenguajes de programación
+booleanas) y otros lenguajes de descripción en el rol de lenguajes de programación
 (por ejemplo, fórmulas de la lógica proposicional). En todo caso, es fundamental
 que los lenguajes de descripción tengan una semántica formal para evitar paradojas
 como la de Berry, que propone definir $n$ como el primer número natural que no sea 
-descriptible con menos de 90 caracteres (por definición la descripción más corta de $n$ debe tener al menos 91 letras, y sin embargo su definición ``el primer número natural que no sea descriptible con menos de cincuenta caracteres'' evidentemente lo describe y tiene 83 caracteres).
+descriptible con menos de 90 caracteres (por definición, la descripción más corta de $n$ debe tener al menos 91 letras, y sin embargo su definición ``el primer número natural que no sea descriptible con menos de cincuenta caracteres'' evidentemente lo describe y tiene 83 caracteres).
 
 % Desde el punto de 
 % vista teórico, la riqueza de la Complejidad de Kolmogorov, y su intrincada conexión con la teoría de la computabilidad,
@@ -424,7 +426,7 @@ donde $\T_0,\T_1,\T_2,\dots$ es una enumeración de todas las máquinas de Turin
 % they permit us to define the \kolcomp in an {\em optimal} way:
 
 
-Las máquinas universales existen y son aquellas que permiten `simular' cualquier otra máquina. Análogamente, un lenguaje de programación es {\em Turing-completo} si permite definir cualquier función parcial computable. Python, C o Haskell son lenguajes Turing-completos. Los lenguajes Turing-completos inducen una definición de máquina universal. Por simplicidad, tomemos como alfabeto de programas el código ASCII y supongamos que $\U$ es la máquina que interpreta programas en Python. El siguiente programa 
+Las máquinas universales existen y son aquellas que permiten `simular' cualquier otra máquina. Análogamente, un lenguaje de programación se dice {\em Turing-completo} si permite representar cualquier función parcial computable. Python, C o Haskell son lenguajes Turing-completos. Los lenguajes Turing-completos inducen una definición de máquina universal. Por simplicidad, tomemos como alfabeto de programas el código ASCII y supongamos que $\U$ es la máquina que interpreta programas en Python. El siguiente programa 
 \begin{verbatim}
     s=""
     for i in range(30):
@@ -469,7 +471,7 @@ Decimos que una cadena $\sta$ es $c$-compleja con respecto a $\M$ si $\CM(\sta)\
 % $$
 % donde $r$ es la cantidad de elementos del alfabeto de programas --en el caso de ASCII, será $r=2^7=128$.
 
-Como dijimos antes, la complejidad de Kolmogorov relativa a una máquina universal (o a un lenguaje Turing-completo, como Python en el ejemplo anterior) no es computable. Sin embargo, para lenguajes que no son Turing-completos, diseñados con un propósito específico de describir ciertos tipos de objetos, la complejidad asociada se podría volver computable. En esta tesis se explota en repetidas ocasiones este hecho fundamental.
+Como dijimos antes, la complejidad de Kolmogorov relativa a una máquina universal (o a un lenguaje Turing-completo, como Python en el ejemplo anterior) no es computable. Sin embargo, para lenguajes que no son Turing-completos, diseñados con un propósito específico de describir ciertos tipos de objetos, la complejidad asociada se podría volver computable. En esta tesis se explota en repetidas ocasiones este hecho.
 
 Terminamos esta sección con un resultado fundamental de la teoría:
 %
