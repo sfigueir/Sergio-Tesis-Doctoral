@@ -118,7 +118,7 @@ En la Figura~\ref{semaforos} representamos un concepto $\con$ como se muestra en
 
 %In Figura~\ref{semaforos} we depict a concept $\con$ (variables are represented by colors) such that $\#\con=4$. One can see that the formula $x_3$ is not compatible with $\con$ but $x_1 \oand x_2$, or $x_1 \oand x_2 \oand (x_3 \oor \lnot x_3)$, are compatible with $\con$. $\overline \con$ may be described by $\lnot x_1\oor \lnot x_2$.
 
-\paragraph{Complejidad para \gramboolxor.} Para el caso de la complejidad, definimos $|\varphi|$, el {\em tamaño} de la fórmula $\varphi\in\gramboolxor$, del mismo modo que en \grambool pero agregando un valor al operador adicional :
+\paragraph{Complejidad para \gramboolxor.} Para el caso de la complejidad, definimos $|\varphi|$, el {\em tamaño} de la fórmula $\varphi\in\gramboolxor$, del mismo modo que en \grambool pero agregando un valor al operador adicional:
 \begin{eqnarray*}
 |\varphi\oxor\psi| &\eqdef& 1+|\varphi|+|\psi|.
 \end{eqnarray*}
@@ -126,7 +126,7 @@ En la Figura~\ref{semaforos} representamos un concepto $\con$ como se muestra en
 
 Si $\con$ es un conjunto de valuaciones sobre $\propvars$, definimos la {\em $\gramboolxor$-complejidad de la descripción mínima} de $\con$, notada $\mdlboolxor(\con)$, como el tamaño de la fórmula más corta cuya semántica es $\con$, es decir,
 $$
-\mdlboolxor(\con)\eqdef\min\{|\varphi|\mid \varphi\in L_\gramboolxor,\sem{\varphi}=\con\}.
+\mdlboolxor(\con)\eqdef\min\{|\varphi|\mid \varphi\in L_{\gramboolxor},\sem{\varphi}=\con\}.
 $$
 
 Como $\grambool$ es un sublenguaje de $\gramboolxor$, tenemos que $\mdl{\gramboolxor}(\con)\leq\mdl{\grambool}(\con)$ para cualquier concepto $\con$.

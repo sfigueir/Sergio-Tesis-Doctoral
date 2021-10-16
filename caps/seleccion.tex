@@ -278,8 +278,8 @@ $\sem{P}_n$ seguirá siendo una secuencia no vacía de números naturales sobre 
 La semántica de todas las instrucciones se mantienen igual que en \gramgeo, y se introduce la semántica para las nuevas instrucciones atómicas ad-hoc:
 
 \begin{itemize}
-\item $\llbracket$\verb#DOUBLE#$\rrbracket_n  \eqdef  n * 2 \mod 8$ 
-\item $\llbracket$\verb#-DOUBLE#$\rrbracket_n  \eqdef  n * -2 \mod 8$  
+\item $\llbracket$\verb#DOUBLE#$\rrbracket_n  \eqdef  n \cdot 2 \mod 8$ 
+\item $\llbracket$\verb#-DOUBLE#$\rrbracket_n  \eqdef  -n \cdot 2 \mod 8$  
 \item $\llbracket$\verb#SQUARE#$\rrbracket_n  \eqdef  n^2 \mod 8$  
 \item $\llbracket$\verb#GAMMA#$\rrbracket_n  \eqdef  \Gamma(n+1) \mod 8$  \textit{($\Gamma$ = función gamma)}
 \item $\llbracket$\verb#PI#$\rrbracket_n  \eqdef  n\text{-ésimo dígito de } \pi \mod 8$  
@@ -423,7 +423,7 @@ $$
 
 %The classical notion of universality from computability theory is redefined in the algorithmic information theory. We will use the word {\em \opt} for denoting machines like $\V$ defined in(\ref{intro:eqn:usualUniversalMachine}) that somehow simulate every other machine at no noticeable extra cost in the length.
 
-La misma definición~\ref{intro:def:optimal} de universalidad dada en aplica a las máquinas libre de prefijos, y, al igual que con las máquinas usuales, existen máquinas universales libres de prefijos. Del mismo modo, el Teorema~\ref{intro:thm:invariance} de invariancia también sigue valiendo para el universo de las máquinas libres de prefijos. Cuando $\M$ es una máquina libre de prefijos universal, hablaremos directamente de complejidad de Kolmogorov libre de prefijos y la denotaremos como $\K$. La complejidad $\K$ está relacionada con la probabilidad de que una máquina libre de prefijos produzca una cadena dada. Esta probabilidad se define como \glossary{$P$}:
+La misma Definición~\ref{intro:def:optimal} de universalidad dada en aplica a las máquinas libre de prefijos, y, al igual que con las máquinas usuales, existen máquinas universales libres de prefijos. Del mismo modo, el Teorema~\ref{intro:thm:invariance} de invariancia también sigue valiendo para el universo de las máquinas libres de prefijos. Cuando $\M$ es una máquina libre de prefijos universal, hablaremos directamente de complejidad de Kolmogorov libre de prefijos y la denotaremos como $\K$. La complejidad $\K$ está relacionada con la probabilidad de que una máquina libre de prefijos produzca una cadena dada. Esta probabilidad se define como:
 %
 \begin{eqnarray}
 P_{\M}(\sta)&=&\measure{\open{\{\pra\colon\M(\pra)=\sta\}}}\nonumber\\
@@ -502,7 +502,7 @@ Aquí, calculamos tanto $P_{\gramgeo}(x)$ como $\mdlgeo(x)$ de una manera efecti
 
 %To calculate $P_{\gramgeo}(x)$ we are not interested in the normalization factor of $P(x \mid \prog) P(\prog \mid \theta)$ because we are just trying to measure the relationship between $P_{\gramgeo}$ and $\mdlgeo$ in terms of the Coding Theorem. Note, however, that calculating $P_{\gramgeo}(x)$ involves calculating all programs that compute each of the sequences as in our previous experiment. To make this tractable we calculated $P_{\gramgeo}(x)$ for 10,000 unique random sequences for each of the possible sequence lengths from the experiment (i.e., up to eight). When the length of the sequence did not allow 10,000 unique combinations, we used all the possible sequences of that length.
 
-Para calcular $P_{\gramgeo}(x)$ no nos interesa el factor de normalización de $P(x \mid \prog) P(\prog \mid \theta)$ porque sólo estamos tratando de medir la relación entre $P_{\gramgeo}$ y $\mdlgeo$ en términos del Teorema de Codificación. Sin embargo, hay que tener en cuenta que el cálculo de $P_{\gramgeo}(x)$ implica calcular todos los programas que computan cada una de las secuencias como en nuestro experimento anterior. Para hacer esto tratable, calculamos $P_{\gramgeo}(x)$ para 10.000 secuencias aleatorias únicas para cada una de las posibles longitudes de las secuencias del experimento (es decir, hasta ocho). Cuando la longitud de la secuencia no permitió 10.000 combinaciones únicas, utilizamos todas las posibles secuencias de esa longitud.
+Para calcular $P_{\gramgeo}(x)$ no nos interesa el factor de normalización de $$P(x \mid \prog) P(\prog \mid \theta)$$ porque sólo estamos tratando de medir la relación entre $P_{\gramgeo}$ y $\mdlgeo$ en términos del Teorema de Codificación. Sin embargo, hay que tener en cuenta que el cálculo de $P_{\gramgeo}(x)$ implica calcular todos los programas que computan cada una de las secuencias como en nuestro experimento anterior. Para hacer esto tratable, calculamos $P_{\gramgeo}(x)$ para 10.000 secuencias aleatorias únicas para cada una de las posibles longitudes de las secuencias del experimento (es decir, hasta ocho). Cuando la longitud de la secuencia no permitió 10.000 combinaciones únicas, utilizamos todas las posibles secuencias de esa longitud.
 
 %\subsection{Coding Theorem Results}
 \subsection{Resultados del Teorema de Codificación}
@@ -515,11 +515,11 @@ La Figura~\ref{fig:codR} muestra la probabilidad media $P_{\gramgeo}(x)$ para to
     \centering
     \includegraphics[width=1\textwidth]{Fig6}
     \caption{Probabilidad media $P_{\gramgeo}(x)$ para todas las secuencias $x$ con el mismo valor de $\mdlgeo(x)$.
-    Subfigura A: secuencias con $|x| = 4$.
-    Subfigura B: secuencias con $|x| = 5$.
-    Subfigura C: secuencias con $|x| = 6$.
-    Subfigura D: secuencias con $|x| = 7$.
-    Subfigura E: secuencias con $|x| = 8$.}
+    A: secuencias con $|x| = 4$.
+    B: secuencias con $|x| = 5$.
+    C: secuencias con $|x| = 6$.
+    D: secuencias con $|x| = 7$.
+    E: secuencias con $|x| = 8$.}
     \label{fig:codR}
 \end{figure}
 

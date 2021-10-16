@@ -15,7 +15,7 @@ Para un conjunto fijo $\propvars=\{p_1,\dots,p_k\}$ de variables proposicionales
 \atom &\to& p_i \\
 \atom &\to&\lnot p_i 
 \end{eqnarray*}
-donde $i\in\{1,\dots,k\}$.
+\centering donde $i\in\{1,\dots,k\}$.
 \caption{La gramática \grambool para la lógica proposicional.}
 \label{fig:grambool}
 \end{figure}
@@ -49,9 +49,9 @@ Llamamos {\em concepto} a un conjunto de valuaciones sobre la gramática \grambo
 \begin{eqnarray*}
 |p_i| &\eqdef& 1\\
 |\lnot p_i| &\eqdef& 1\\
-|\varphi*\psi| &\eqdef& 1+|\varphi|+|\psi|
+|\varphi\star\psi| &\eqdef& 1+|\varphi|+|\psi|
 \end{eqnarray*}
-donde $*\in\{\wedge,\vee\}$.
+donde $\star\in\{\wedge,\vee\}$.
 
 Si $\con$ es un conjunto de valuaciones sobre $\propvars$, definimos la {\em $\grambool$-complejidad de la descripción mínima} de $\con$, notada $\mdlbool(\con)$, como el tamaño de la fórmula más corta cuya semántica es $\con$, es decir,
 $$
