@@ -113,7 +113,7 @@ En la Figura~\ref{semaforos} representamos un concepto $\con$ como se muestra en
 
 \begin{figure}[h]
 \includegraphics[scale=.6]{../figuras/pre/notacion.pdf}
-\caption{Ilustración de las características $\{p_1,p_2,p_3,p_4\}$, el ejemplo $(1,0,1,1)$, y un concepto (los ejemplos positivos están marcados con bordes gruesos y los ejemplos negativos con bordes delgados). Se puede ver que la fórmula $p_3$ no es compatible con $\con$ pero $p_1 \oand p_2$, o $p_1 \oand p_2 \oand (p_3 \oor \lnot p_3)$, sí son compatibles con $\con$. $\overline \con$ puede describirse mediante $\lnot p_1\oor \lnot p_2$ }\label{semaforos}
+\caption{Ilustración de las características $\{p_1,p_2,p_3,p_4\}$, el ejemplo $(1,0,1,1)$, y un concepto (los ejemplos positivos están marcados con bordes gruesos y los ejemplos negativos con bordes delgados). Se puede ver que la fórmula $p_3$ no es compatible con $\con$ pero $p_1 \oand p_2$, o $p_1 \oand p_2 \oand (p_3 \oor \lnot p_3)$, sí son compatibles con $\con$. $\overline \con$ puede describirse mediante $\lnot p_1\oor \lnot p_2$.}\label{semaforos}
 \end{figure}
 
 %In Figura~\ref{semaforos} we depict a concept $\con$ (variables are represented by colors) such that $\#\con=4$. One can see that the formula $x_3$ is not compatible with $\con$ but $x_1 \oand x_2$, or $x_1 \oand x_2 \oand (x_3 \oor \lnot x_3)$, are compatible with $\con$. $\overline \con$ may be described by $\lnot x_1\oor \lnot x_2$.
@@ -133,7 +133,7 @@ Como $\grambool$ es un sublenguaje de $\gramboolxor$, tenemos que $\mdl{\gramboo
 
 \paragraph*{Ejemplo.}El concepto 
 \begin{align*}
-\con=&\{(1,0,0,0),(1,0,1,0),(1,0,0,1),(1,0,0,1)\\
+\con=\{&(1,0,0,0),(1,0,1,0),(1,0,0,1),(1,0,0,1)\\
 &(0,1,0,0),(0,1,1,0),(0,1,0,1),(0,1,0,1)\},
 \end{align*}
 %which expresses that $x_1$ is true or $x_2$ is true but not both can be described in \gramboolxor as $\varphi=x_{1} \oxor x_{2}$, of length 3. In fact, one can check that this is the shortest formula compatible with $\con$, and so $\mdl{\gramboolxor}(\con)=3$. If we now switch to \grambool, we can no longer describe $\con$ as $x_{1} \oxor x_{2}$, since $\oxor$ is not part of its signature. However, in \grambool, the concept $\con$ may be described by  formula $\psi=(x_{1} \oand \neg x_{2}) \oor (x_{2} \oand \neg x_{1})$, of size 7. Since this formula has minimal size, we have that $\mdl{\grambool}(\con)=7$.
@@ -376,7 +376,7 @@ El parámetro Dirichlet de la regla $i$ en la tarea $t+1$ es igual al parámetro
  %
 %This Bayesian learning mechanism increases the probability of using rules that allow concepts to be succinctly described. This happens because these formulas have higher probability $P(\form\mid \textbf{D})$ than longer formulas, so the Dirichlet parameters of the rules that build these formulas increase more strongly than those of the rules that build longer formulas.   
 %
-Este mecanismo de aprendizaje Bayesiano aumenta la probabilidad de utilizar reglas que permitan describir conceptos de manera sucinta. Esto sucede porque estas fórmulas tienen mayor probabilidad $P(\form\mid \textbf{D})$ que fórmulas más largas, por lo que los parámetros Dirichlet de las reglas que construyen estas fórmulas aumentan con más fuerza que los de las reglas que construyen fórmulas más largas.   
+Este mecanismo de aprendizaje bayesiano aumenta la probabilidad de utilizar reglas que permitan describir conceptos de manera sucinta. Esto sucede porque estas fórmulas tienen mayor probabilidad $P(\form\mid \textbf{D})$ que fórmulas más largas, por lo que los parámetros Dirichlet de las reglas que construyen estas fórmulas aumentan con más fuerza que los de las reglas que construyen fórmulas más largas.   
 
 % \section{Results}
 \section{Resultados}
